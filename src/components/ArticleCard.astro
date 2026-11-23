@@ -1,0 +1,78 @@
+---
+import type { Article } from '../lib/content';
+import { articleUrl, slugOf } from '../lib/content';
+import { formatKab, formatYear } from '../lib/dates';
+import { getEra } from '../lib/eras';
+import { findImage } from '../lib/images';
+
+interface Props {
+  article: Article;
+  featured?: boolean;
+}
+const { article, featured = false } = Astro.props;
+const d = article.data;
+const slug = slugOf(article);
+const img = featured
+  ? (findImage(`lekh/${slug}`) ?? findImage(`lekh/${slug}-sm`))
+  : (findImage(`lekh/${slug}-sm`) ?? findImage(`lekh/${slug}`));
+---
+<a class={`article-card era-${d.era}${featured ? ' featured' : ''}`} href={articleUrl(article)} data-slug={slug}>
+  <div class="media">
+    {img ? (
+      <img src={img} alt="" width={featured ? 1600 : 640} height={featured ? 900 : 360} loading="lazy" decoding="async" />
+    ) : (
+      <div class="placeholder" aria-hidden="true"><span>{formatYear(d.kab.start)}</span></div>
+    )}
+    <span class="read-badge">✓ पढ़ा</span>
+  </div>
+  <div class="body">
+    <p class="meta"><span class="era-chip">{getEra(d.era).label}</span><span>{formatKab(d.kab)}</span></p>
+    <h3 class="title">{d.title}</h3>
+    <p class="saar">{d.saar}</p>
+  </div>
+</a>
+
+<script>
+  import { browserProgress } from '../lib/progress';
+  const read = new Set(browserProgress().getRead());
+  document.querySelectorAll<HTMLElement>('[data-slug]').forEach((el) => {
+    if (read.has(el.dataset.slug!)) el.classList.add('is-read');
+  });
+</script>
+
+<style>
+  .article-card {
+    display: flex; flex-direction: column; overflow: hidden; text-decoration: none; color: var(--fg);
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .article-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .media { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-alt); }
+  .media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+  .article-card:hover .media img { transform: scale(1.04); }
+  .placeholder {
+    width: 100%; height: 100%; display: grid; place-items: center;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--era) 30%, var(--card)), color-mix(in srgb, var(--era) 8%, var(--card)));
+  }
+  .placeholder span { font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; color: var(--era); opacity: .55; }
+  .body { padding: 1.1rem 1.25rem 1.35rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+  .meta { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin: 0; font-size: .85rem; color: var(--muted); }
+  .title { font-size: 1.25rem; margin: .1rem 0 0; line-height: 1.4; }
+  .saar {
+    margin: 0; color: var(--muted); font-size: .98rem; line-height: 1.65;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .read-badge {
+    display: none; position: absolute; top: .75rem; right: .75rem; font-size: .78rem; font-weight: 700;
+    background: rgba(255, 255, 255, .92); color: #14532d; padding: .15rem .6rem; border-radius: 0;
+  }
+  :global(.article-card.is-read) .read-badge { display: block; }
+
+  .featured .title { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+  .featured .saar { font-size: 1.05rem; -webkit-line-clamp: 4; }
+  @media (min-width: 900px) {
+    .featured { flex-direction: row; grid-column: 1 / -1; }
+    .featured .media { aspect-ratio: auto; flex: 1.35; min-height: 340px; }
+    .featured .body { flex: 1; padding: 2rem 2.25rem; justify-content: center; gap: .75rem; }
+  }
+</style>

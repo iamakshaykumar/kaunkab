@@ -1,0 +1,74 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ProgressCount from '../../components/ProgressCount.astro';
+import { articleUrl, getSeriesArticles, getSeriesList, slugOf, type Article, type Series } from '../../lib/content';
+import { formatKab } from '../../lib/dates';
+import { findImage } from '../../lib/images';
+
+export async function getStaticPaths() {
+  const list = await getSeriesList();
+  return Promise.all(
+    list.map(async (series) => {
+      const id = series.id.replace(/^hi\//, '');
+      return { params: { id }, props: { series, id, items: await getSeriesArticles(id) } };
+    }),
+  );
+}
+
+interface Props {
+  series: Series;
+  id: string;
+  items: Article[];
+}
+const { series, id, items } = Astro.props;
+const img = findImage(`series/${id}`);
+---
+<Base title={series.data.title} description={series.data.description} image={img}>
+  <PageHero kicker={`शृंखला · ${items.length} भाग`} title={series.data.title} lead={series.data.description} image={img}>
+    <div class="hero-actions">
+      {items[0] && <a class="btn btn-primary" href={articleUrl(items[0])}>भाग 1 से शुरू करें →</a>}
+      <ProgressCount slugs={items.map(slugOf)} />
+    </div>
+  </PageHero>
+  <div class="container">
+    <ol class="steps">
+      {items.map((a, i) => {
+        const thumb = findImage(`lekh/${slugOf(a)}-sm`) ?? findImage(`lekh/${slugOf(a)}`);
+        return (
+          <li class={`era-${a.data.era}`} data-slug={slugOf(a)}>
+            <span class="num diamond">{i + 1}</span>
+            <a class="step" href={articleUrl(a)}>
+              {thumb && <img src={thumb} alt="" width="640" height="360" loading="lazy" />}
+              <span class="txt">
+                <span class="when">{formatKab(a.data.kab)}</span>
+                <strong>{a.data.title}</strong>
+                <span class="muted">{a.data.saar}</span>
+              </span>
+            </a>
+          </li>
+        );
+      })}
+    </ol>
+    <p><a href="/series">← सभी शृंखलाएँ</a></p>
+  </div>
+</Base>
+
+<style>
+  .hero-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .steps { list-style: none; padding: 0; margin: 0 0 2rem; display: grid; gap: 1.25rem; position: relative; }
+  .steps::before { content: ''; position: absolute; left: 1.2rem; top: 1rem; bottom: 1rem; width: 2px; background: var(--border); }
+  .steps li { display: grid; grid-template-columns: 2.4rem 1fr; gap: 1.25rem; align-items: center; position: relative; }
+  .num { width: 2.6rem; height: 2.6rem; background: var(--era); color: var(--on-accent); z-index: 1; }
+  .step {
+    display: grid; grid-template-columns: 200px 1fr; gap: 1.25rem; text-decoration: none; color: var(--fg); align-items: center;
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow); transition: box-shadow .2s, transform .2s;
+  }
+  .step:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+  .step img { width: 200px; aspect-ratio: 16 / 10; object-fit: cover; border-radius: var(--radius-sm); }
+  .txt { display: flex; flex-direction: column; gap: .25rem; }
+  .when { font-size: .85rem; font-weight: 700; color: var(--era); }
+  .txt strong { font-family: var(--font-display); font-size: 1.3rem; }
+  .txt .muted { font-size: .95rem; }
+  @media (max-width: 700px) { .step { grid-template-columns: 1fr; } .step img { width: 100%; } }
+</style>

@@ -1,0 +1,105 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArticleHeader from '../../components/ArticleHeader.astro';
+import ArticleAside from '../../components/ArticleAside.astro';
+import Sources from '../../components/Sources.astro';
+import Quiz from '../../components/Quiz.astro';
+import SeriesNav from '../../components/SeriesNav.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import EditLink from '../../components/EditLink.astro';
+import MarkRead from '../../components/MarkRead.astro';
+import Ornament from '../../components/Ornament.astro';
+import { editUrl, getArticles, getSeriesArticles, slugOf, type Article } from '../../lib/content';
+import { relatedArticles } from '../../lib/related';
+import { t } from '../../i18n/hi';
+import { findImage } from '../../lib/images';
+
+export async function getStaticPaths() {
+  const articles = await getArticles();
+  return articles.map((article) => ({ params: { slug: slugOf(article) }, props: { article, articles } }));
+}
+
+interface Props {
+  article: Article;
+  articles: Article[];
+}
+const { article, articles } = Astro.props;
+const d = article.data;
+const { Content, headings } = await render(article);
+const words = (article.body ?? '').split(/\s+/).filter(Boolean).length;
+const readingMinutes = Math.max(1, Math.round(words / 180));
+
+const series = d.series ? await getEntry('series', `hi/${d.series.id}`) : undefined;
+const seriesArticles = d.series ? await getSeriesArticles(d.series.id) : [];
+
+const flat = (a: Article) => ({ id: a.id, era: a.data.era, tags: a.data.tags, series: a.data.series, entry: a });
+const related = relatedArticles(flat(article), articles.map(flat), 3).map((x) => x.entry);
+---
+<Base title={d.title} description={d.saar} image={findImage(`lekh/${slugOf(article)}`)}>
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+  <article class="container" data-pagefind-body>
+    <ArticleHeader article={article} readingMinutes={readingMinutes} />
+
+    <div class="layout">
+      <div class="main">
+        <div class="prose">
+          <Content />
+        </div>
+        <Ornament />
+
+        <div data-pagefind-ignore>
+          <MarkRead slug={slugOf(article)} />
+          {series && seriesArticles.length > 1 && (
+            <SeriesNav series={series} articles={seriesArticles} currentId={article.id} />
+          )}
+          {d.quiz?.length ? <Quiz quiz={d.quiz} /> : null}
+        </div>
+
+        <Sources sources={d.sources} />
+        <EditLink href={editUrl(article)} />
+      </div>
+      <div data-pagefind-ignore>
+        <ArticleAside article={article} headings={headings} editHref={editUrl(article)} />
+      </div>
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="related" data-pagefind-ignore>
+      <div class="container">
+        <p class="kicker">आगे पढ़ें</p>
+        <h2>{t.related}</h2>
+        <div class="grid">
+          {related.map((a) => <ArticleCard article={a} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<script>
+  const bar = document.querySelector<HTMLElement>('.progress-bar span');
+  if (bar) {
+    const update = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - innerHeight;
+      bar.style.transform = `scaleX(${max > 0 ? Math.min(1, h.scrollTop / max) : 0})`;
+    };
+    addEventListener('scroll', update, { passive: true });
+    update();
+  }
+</script>
+
+<style>
+  .progress-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 30; }
+  .progress-bar span { display: block; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 4rem; align-items: start; }
+  .main { min-width: 0; }
+  .related { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 3.5rem 0 1rem; margin-top: 4rem; }
+  .related h2 { margin-top: 0; }
+  @media (max-width: 1000px) {
+    .layout { grid-template-columns: 1fr; gap: 0; }
+    .layout > div:last-child { order: -1; margin-bottom: 2rem; }
+  }
+</style>

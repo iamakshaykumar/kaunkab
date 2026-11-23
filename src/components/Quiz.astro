@@ -1,0 +1,84 @@
+---
+import { t } from '../i18n/hi';
+interface Props {
+  quiz: { q: string; options: string[]; answer: number }[];
+}
+const { quiz } = Astro.props;
+---
+<section class="quiz" aria-labelledby="quiz-h" data-quiz>
+  <div class="qhead">
+    <p class="kicker">अपनी समझ जाँचें</p>
+    <h2 id="quiz-h">{t.quiz}</h2>
+    <p class="muted">{quiz.length} सवाल · सही विकल्प पर क्लिक करें</p>
+  </div>
+  {quiz.map((item, qi) => (
+    <fieldset class="q" data-answer={item.answer}>
+      <legend><span class="num diamond">{qi + 1}</span>{item.q}</legend>
+      <div class="opts">
+        {item.options.map((opt, oi) => (
+          <button type="button" class="opt" data-index={oi}>
+            <span class="letter">{String.fromCharCode(2325 + oi * 1)}</span>{opt}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  ))}
+  <p class="score" hidden data-total={quiz.length}></p>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-quiz]').forEach((quiz) => {
+    const scoreEl = quiz.querySelector<HTMLElement>('.score')!;
+    const total = Number(scoreEl.dataset.total);
+    let answered = 0;
+    let correct = 0;
+    quiz.querySelectorAll<HTMLFieldSetElement>('.q').forEach((q) => {
+      const answer = Number(q.dataset.answer);
+      q.querySelectorAll<HTMLButtonElement>('.opt').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          if (q.dataset.done) return;
+          q.dataset.done = '1';
+          const chosen = Number(btn.dataset.index);
+          q.querySelectorAll<HTMLButtonElement>('.opt').forEach((b) => {
+            b.disabled = true;
+            if (Number(b.dataset.index) === answer) b.classList.add('right');
+          });
+          if (chosen === answer) correct++;
+          else btn.classList.add('wrong');
+          answered++;
+          if (answered === total) {
+            const msg = correct === total ? 'शानदार!' : correct >= total / 2 ? 'बहुत अच्छे!' : 'एक बार फिर पढ़कर देखें';
+            scoreEl.textContent = `आपका स्कोर: ${correct}/${total} — ${msg}`;
+            scoreEl.hidden = false;
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .quiz { margin: 2.5rem 0; padding: 1.75rem; border-radius: var(--radius); background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow); }
+  .qhead { margin-bottom: 1.5rem; }
+  .qhead h2 { margin: 0; }
+  .qhead .muted { margin: .25rem 0 0; font-size: .92rem; }
+  fieldset { border: 0; padding: 0; margin: 0 0 1.5rem; }
+  legend { display: flex; gap: .65rem; align-items: flex-start; font-weight: 600; font-size: 1.08rem; margin-bottom: .75rem; padding: 0; }
+  .num { width: 2rem; height: 2rem; font-size: .85rem; background: var(--accent); color: var(--on-accent); margin-top: -.15rem; }
+  .opts { display: grid; gap: .6rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 560px) { .opts { grid-template-columns: 1fr; } }
+  .opt {
+    display: flex; align-items: center; gap: .65rem; font: inherit; text-align: left; padding: .7rem .9rem; border-radius: var(--radius-sm); cursor: pointer;
+    background: var(--bg); color: var(--fg); border: 1.5px solid var(--border); transition: border-color .15s, background .15s;
+  }
+  .letter { flex: none; width: 1.6rem; height: 1.6rem; border-radius: 0; display: grid; place-items: center; font-size: .85rem; font-weight: 700; background: var(--bg-alt); color: var(--muted); }
+  .opt:hover:not(:disabled) { border-color: var(--accent); background: var(--card); }
+  .opt:disabled { cursor: default; opacity: .7; }
+  .opt.right { background: #dcfce7; border-color: #16a34a; color: #14532d; opacity: 1; }
+  .opt.wrong { background: #fee2e2; border-color: #dc2626; color: #7f1d1d; opacity: 1; }
+  .opt.right .letter { background: #16a34a; color: #fff; }
+  .opt.wrong .letter { background: #dc2626; color: #fff; }
+  .opt.right::after { content: '✓'; margin-left: auto; font-weight: 700; }
+  .opt.wrong::after { content: '✗'; margin-left: auto; font-weight: 700; }
+  .score { font-weight: 700; font-size: 1.1rem; margin: 0; padding: 1rem 1.25rem; border-radius: var(--radius-sm); background: var(--accent-soft); color: var(--fg); }
+</style>

@@ -1,0 +1,64 @@
+---
+import { ERAS, eraRangeLabel } from '../lib/eras';
+import { slugOf, type Article } from '../lib/content';
+import ProgressCount from './ProgressCount.astro';
+import { findImage } from '../lib/images';
+
+interface Props {
+  articles: Article[];
+}
+const { articles } = Astro.props;
+---
+<div class="era-tiles">
+  {ERAS.map((e) => {
+    const list = articles.filter((a) => a.data.era === e.id);
+    const img = findImage(`kaal/${e.id}`);
+    return (
+      <a class={`tile era-${e.id}`} href={`/kaal/${e.id}`}>
+        {img && <img src={img} alt="" width="1200" height="800" loading="lazy" decoding="async" />}
+        <div class="shade" />
+        <div class="content">
+          <span class="range">{eraRangeLabel(e.id)}</span>
+          <strong>{e.label}</strong>
+          <span class="blurb">{e.blurb}</span>
+          <span class="foot">
+            <span>{list.length} लेख</span>
+            <ProgressCount slugs={list.map(slugOf)} />
+            <span class="go" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  .era-tiles { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); }
+  .tile {
+    position: relative; display: flex; min-height: 440px; border-radius: var(--radius); overflow: hidden;
+    text-decoration: none; color: #fff; background: var(--era); box-shadow: var(--shadow); isolation: isolate;
+  }
+  .tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform .6s ease; }
+  .tile:hover img { transform: scale(1.06); }
+  .shade {
+    position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, rgba(10, 7, 5, 0) 20%, rgba(10, 7, 5, .55) 52%, rgba(10, 7, 5, .93) 100%);
+  }
+  .content { margin-top: auto; padding: 1.6rem; display: flex; flex-direction: column; gap: .45rem; }
+  .range {
+    align-self: flex-start; font-size: .8rem; font-weight: 700; letter-spacing: .03em; padding: .2rem .75rem;
+    border-radius: 0; background: rgba(255, 255, 255, .18); backdrop-filter: blur(6px);
+  }
+  strong { font-family: var(--font-display); font-size: 2.3rem; line-height: 1.25; }
+  .blurb { font-size: 1rem; opacity: .9; line-height: 1.6; }
+  .foot { display: flex; align-items: center; gap: .6rem; font-weight: 600; font-size: .92rem; margin-top: .6rem; }
+  .go {
+    margin-left: auto; width: 2.4rem; height: 2.4rem; display: grid; place-items: center; border-radius: 0;
+    background: #fff; color: #1a0f08; font-size: 1.15rem; transition: transform .2s ease;
+  }
+  .tile:hover .go { transform: translateX(4px); }
+  @media (max-width: 900px) {
+    .era-tiles { grid-template-columns: 1fr; }
+    .tile { min-height: 320px; }
+  }
+</style>

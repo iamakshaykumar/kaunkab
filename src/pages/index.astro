@@ -1,0 +1,223 @@
+---
+import Base from '../layouts/Base.astro';
+import OnThisDay from '../components/OnThisDay.astro';
+import DidYouKnow from '../components/DidYouKnow.astro';
+import EraTiles from '../components/EraTiles.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import ProgressCount from '../components/ProgressCount.astro';
+import Ornament from '../components/Ornament.astro';
+import { byPublishedDesc, getArticles, getSeriesArticles, getSeriesList, slugOf } from '../lib/content';
+import { formatYear } from '../lib/dates';
+import { t } from '../i18n/hi';
+import { findImage } from '../lib/images';
+
+const heroImg = findImage('hero');
+const articles = await getArticles();
+const latest = [...articles].sort(byPublishedDesc).slice(0, 7);
+const [featured, ...rest] = latest;
+const seriesList = await Promise.all(
+  (await getSeriesList()).map(async (s) => {
+    const id = s.id.replace(/^hi\//, '');
+    return { s, id, img: findImage(`series/${id}`), items: await getSeriesArticles(id) };
+  }),
+);
+const span = articles.length
+  ? `${formatYear(articles[0].data.kab.start)} से ${formatYear(articles[articles.length - 1].data.kab.start)} तक`
+  : '';
+const repo = 'https://github.com/iamakshaykumar/kaunkab';
+---
+<Base title={t.siteName}>
+  <section class={heroImg ? 'hero has-img' : 'hero'}>
+    {heroImg && <img class="hero-bg" src={heroImg} alt="" width="1672" height="941" fetchpriority="high" />}
+    <div class="hero-shade"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow">ओपन सोर्स · मुफ़्त · स्रोतों के साथ</p>
+      <h1>भारत का इतिहास,<br /><span>कौन, कब, कहाँ</span></h1>
+      <Ornament light align="left" />
+      <p class="lead">सिंधु घाटी से स्वतंत्रता तक — सरल हिंदी में लिखी, समुदाय द्वारा जाँची गई कहानियाँ। हर लेख के साथ स्रोत और एक छोटा क्विज़।</p>
+      <div class="cta">
+        <a class="btn btn-primary btn-lg" href="/timeline">{t.timeline} देखें →</a>
+        <a class="btn btn-ghost-light btn-lg" href="/khoj">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          {t.search}
+        </a>
+      </div>
+      <dl class="stats">
+        <div><dt>लेख</dt><dd>{articles.length}</dd></div>
+        <div><dt>काल</dt><dd>3</dd></div>
+        <div><dt>शृंखलाएँ</dt><dd>{seriesList.length}</dd></div>
+        <div class="wide"><dt>समय-विस्तार</dt><dd>{span}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section today">
+      <OnThisDay />
+      <DidYouKnow />
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">इतिहास के तीन दौर</p>
+          <h2>काल के अनुसार पढ़ें</h2>
+          <Ornament align="left" />
+        </div>
+        <a class="link-arrow" href="/timeline">पूरी समयरेखा →</a>
+      </div>
+      <EraTiles articles={articles} />
+    </section>
+
+    {featured && (
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">ताज़ा</p>
+            <h2>{t.latest}</h2>
+            <Ornament align="left" />
+          </div>
+          <a class="link-arrow" href="/timeline">सभी लेख →</a>
+        </div>
+        <div class="latest">
+          <ArticleCard article={featured} featured />
+          {rest.map((a) => <ArticleCard article={a} />)}
+        </div>
+      </section>
+    )}
+
+    {seriesList.length > 0 && (
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">क्रम से पढ़ें</p>
+            <h2>{t.series}</h2>
+            <Ornament align="left" />
+            <p>एक विषय को शुरू से अंत तक समझने के लिए चुने गए लेख।</p>
+          </div>
+          <a class="link-arrow" href="/series">{t.allSeries} →</a>
+        </div>
+        <div class="series-grid">
+          {seriesList.map(({ s, id, img, items }) => (
+            <a class="series-card" href={`/series/${id}`}>
+              <div class="s-media">
+                {img && <img src={img} alt="" width="1200" height="675" loading="lazy" decoding="async" />}
+                <span class="parts">{items.length} भाग</span>
+              </div>
+              <div class="s-body">
+                <h3>{s.data.title}</h3>
+                <p>{s.data.description}</p>
+                <ol>
+                  {items.map((a) => <li>{a.data.title}</li>)}
+                </ol>
+                <span class="s-foot"><ProgressCount slugs={items.map(slugOf)} /><span class="link-arrow">शुरू करें →</span></span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <section class="contribute">
+    <div class="jaali band-top"></div>
+    <div class="container contribute-inner">
+      <div>
+        <p class="kicker light">समुदाय से बनता है</p>
+        <h2>इतिहास लिखने में हाथ बँटाइए</h2>
+        <Ornament light align="left" />
+        <p class="c-lead">कौन कब पूरी तरह ओपन सोर्स है। कोई गलती दिखे या कोई विषय छूटा हो — GitHub पर कुछ ही क्लिक में सुधार भेजें। प्रोग्रामिंग जानना ज़रूरी नहीं।</p>
+        <div class="cta">
+          <a class="btn btn-primary btn-lg" href="/yogdan">{t.contribute} →</a>
+          <a class="btn btn-ghost-light btn-lg" href={repo}>GitHub पर देखें</a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><b class="diamond">1</b><span><strong>लेख चुनें</strong> किसी भी लेख के नीचे "इस पेज को सुधारें" पर क्लिक करें।</span></li>
+        <li><b class="diamond">2</b><span><strong>बदलाव करें</strong> GitHub पर सीधे ब्राउज़र में लिखें, स्रोत जोड़ें।</span></li>
+        <li><b class="diamond">3</b><span><strong>भेज दें</strong> समीक्षा के बाद आपका योगदान साइट पर आ जाएगा।</span></li>
+      </ol>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    padding: clamp(4rem, 10vw, 7.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+    background: radial-gradient(900px 400px at 15% 0%, var(--accent-soft), transparent), var(--bg-alt);
+  }
+  .hero.has-img { color: #fff; background: var(--ink); min-height: min(88vh, 760px); display: flex; align-items: flex-end; }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+  .hero-shade { display: none; }
+  .has-img .hero-shade {
+    display: block; position: absolute; inset: 0; z-index: -1;
+    background:
+      linear-gradient(90deg, rgba(12, 8, 5, .88) 0%, rgba(12, 8, 5, .62) 45%, rgba(12, 8, 5, .1) 100%),
+      linear-gradient(0deg, rgba(12, 8, 5, .7) 0%, transparent 45%);
+  }
+  .hero-inner { position: relative; }
+  .eyebrow {
+    display: inline-block; margin: 0 0 1.25rem; font-size: .85rem; font-weight: 700; letter-spacing: .06em;
+    padding: .3rem .9rem; border-radius: 0; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25);
+  }
+  .hero:not(.has-img) .eyebrow { background: var(--card); border-color: var(--border); color: var(--accent); }
+  .hero h1 { font-size: clamp(2.4rem, 6.5vw, 4.6rem); line-height: 1.2; margin: 0 0 .25rem; max-width: 14ch; }
+  .hero h1 span { color: #fdba74; }
+  .hero:not(.has-img) h1 span { color: var(--accent); }
+  .lead { font-size: clamp(1.05rem, 1.6vw, 1.3rem); max-width: 54ch; opacity: .92; margin: 1.25rem 0 2rem; line-height: 1.75; }
+  .cta { display: flex; gap: .75rem; flex-wrap: wrap; }
+  .btn-lg { padding: .85rem 1.6rem; font-size: 1.05rem; }
+  .stats {
+    display: flex; flex-wrap: wrap; gap: 0; margin: 3rem 0 0; padding: 0;
+    border-top: 1px solid rgba(255,255,255,.2); max-width: 760px;
+  }
+  .hero:not(.has-img) .stats { border-color: var(--border); }
+  .stats div { padding: 1.1rem 2rem 0 0; margin-right: 2rem; }
+  .stats dt { font-size: .82rem; opacity: .7; font-weight: 600; letter-spacing: .04em; }
+  .stats dd { margin: 0; font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; line-height: 1.3; }
+  .stats .wide dd { font-size: 1.15rem; padding-top: .5rem; }
+
+  .today { display: grid; gap: 1.5rem; grid-template-columns: 1.35fr 1fr; }
+  @media (max-width: 900px) { .today { grid-template-columns: 1fr; } }
+
+  .latest { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 1000px) { .latest { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .latest { grid-template-columns: 1fr; } }
+
+  .series-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); }
+  .series-card {
+    display: flex; flex-direction: column; overflow: hidden; text-decoration: none; color: var(--fg);
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .series-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .s-media { position: relative; aspect-ratio: 21 / 9; background: var(--bg-alt); overflow: hidden; }
+  .s-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .parts { position: absolute; left: 1rem; top: 1rem; background: rgba(255,255,255,.92); color: #1a0f08; font-weight: 700; font-size: .82rem; padding: .2rem .7rem; border-radius: 0; }
+  .s-body { padding: 1.4rem 1.6rem 1.6rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
+  .s-body h3 { margin: 0; font-size: 1.5rem; }
+  .s-body p { margin: 0; color: var(--muted); }
+  .s-body ol { margin: .5rem 0 0; padding-left: 1.2rem; color: var(--fg); font-weight: 500; display: grid; gap: .2rem; }
+  .s-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; }
+
+  .contribute { margin-top: 5rem; background: var(--ink); color: var(--on-ink); padding: 0 0 4.5rem; position: relative; overflow: hidden; }
+  .contribute::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(700px 300px at 90% 10%, color-mix(in srgb, var(--accent) 40%, transparent), transparent 70%);
+  }
+  .band-top { margin-bottom: 4rem; position: relative; z-index: 1; }
+  .contribute-inner { position: relative; display: grid; gap: 3rem; grid-template-columns: 1.2fr 1fr; align-items: center; }
+  .contribute h2 { margin: 0 0 1rem; font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+  .kicker.light { color: #fdba74; }
+  .c-lead { opacity: .8; font-size: 1.1rem; max-width: 52ch; margin: 0 0 2rem; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .steps li {
+    display: flex; gap: 1rem; align-items: flex-start; padding: 1.1rem 1.25rem; border-radius: var(--radius-sm);
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  }
+  .steps b { background: #fdba74; color: #1a0f08; }
+  .steps strong { display: block; font-size: 1.05rem; }
+  .steps span { opacity: .85; }
+  @media (max-width: 900px) { .contribute-inner { grid-template-columns: 1fr; } }
+</style>

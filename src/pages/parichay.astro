@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { t } from '../i18n/hi';
+---
+<Base title={t.about} description="कौन कब क्या है और कैसे काम करता है।">
+  <PageHero kicker="हमारे बारे में" title={t.about} lead="भारतीय इतिहास — सरल हिंदी में, स्रोतों के साथ, सबके लिए मुफ़्त।" />
+  <div class="container prose">
+    <p>
+      <strong>कौन कब</strong> भारतीय इतिहास को सरल हिंदी में, स्रोतों के साथ पढ़ने की एक मुफ़्त और ओपन सोर्स जगह है।
+      यहाँ हर लेख बताता है — <em>कौन</em> थे, <em>कब</em> हुआ, <em>कहाँ</em> हुआ, और यह आज क्यों मायने रखता है।
+    </p>
+    <h2>हमारे सिद्धांत</h2>
+    <ul>
+      <li><strong>हर बात का स्रोत:</strong> हर लेख में कम से कम एक विश्वसनीय स्रोत होना ज़रूरी है।</li>
+      <li><strong>सरल भाषा:</strong> छात्र से लेकर दादा-दादी तक, सबके लिए।</li>
+      <li><strong>संतुलन:</strong> जहाँ इतिहासकारों में मतभेद है, वहाँ अलग-अलग मत बताए जाते हैं।</li>
+      <li><strong>खुलापन:</strong> कोई भी गलती सुधार सकता है या नया लेख जोड़ सकता है।</li>
+    </ul>
+    <h2>यह कैसे चलता है?</h2>
+    <p>
+      पूरी साइट <a href="https://github.com/iamakshaykumar/kaunkab">GitHub</a> पर है। लेख साधारण टेक्स्ट (Markdown) फ़ाइलें हैं।
+      कोई भी बदलाव "Pull Request" के ज़रिए आता है, जिसे समीक्षा के बाद जोड़ा जाता है। साइट GitHub Pages पर मुफ़्त होस्ट होती है —
+      न कोई विज्ञापन, न कोई लॉगिन, न आपका डेटा कहीं भेजा जाता है।
+    </p>
+    <h2>लाइसेंस</h2>
+    <p>
+      लेख <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.hi">CC BY-SA 4.0</a> के तहत हैं — आप इन्हें श्रेय देकर
+      उपयोग और साझा कर सकते हैं। कोड MIT लाइसेंस के तहत है।
+    </p>
+    <p><a class="btn btn-primary" href="/yogdan">{t.contribute} →</a></p>
+  </div>
+</Base>

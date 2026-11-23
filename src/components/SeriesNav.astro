@@ -1,0 +1,49 @@
+---
+import type { Article, Series } from '../lib/content';
+import { articleUrl } from '../lib/content';
+import { t } from '../i18n/hi';
+
+interface Props {
+  series: Series;
+  articles: Article[];
+  currentId: string;
+}
+const { series, articles, currentId } = Astro.props;
+const idx = articles.findIndex((a) => a.id === currentId);
+const prev = idx > 0 ? articles[idx - 1] : undefined;
+const next = idx >= 0 && idx < articles.length - 1 ? articles[idx + 1] : undefined;
+---
+<nav class="series-nav" aria-label={t.series}>
+  <div class="top">
+    <p class="kicker">{t.series} · भाग {idx + 1}/{articles.length}</p>
+    <a class="title" href={`/series/${series.id.replace(/^hi\//, '')}`}>{series.data.title}</a>
+  </div>
+  <ol class="steps">
+    {articles.map((a, i) => (
+      <li class={i < idx ? 'past' : a.id === currentId ? 'current' : ''}>
+        <span class="n diamond">{i + 1}</span>
+        {a.id === currentId ? <span class="t">{a.data.title}</span> : <a class="t" href={articleUrl(a)}>{a.data.title}</a>}
+      </li>
+    ))}
+  </ol>
+  <div class="pn">
+    {prev ? <a class="btn" href={articleUrl(prev)}>← {prev.data.title}</a> : <span></span>}
+    {next ? <a class="btn btn-primary" href={articleUrl(next)}>{t.next}: {next.data.title} →</a> : null}
+  </div>
+</nav>
+
+<style>
+  .series-nav { margin: 2.5rem 0; padding: 1.5rem; border-radius: var(--radius); background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow); }
+  .top { margin-bottom: 1.1rem; display: flex; flex-direction: column; align-items: flex-start; }
+  .title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; color: var(--fg); text-decoration: none; }
+  .title:hover { color: var(--accent); }
+  .steps { list-style: none; margin: 0 0 1.25rem; padding: 0; display: grid; gap: .5rem; }
+  .steps li { display: flex; align-items: center; gap: .75rem; }
+  .n { width: 2.2rem; height: 2.2rem; font-size: .85rem; background: var(--bg-alt); color: var(--muted); }
+  .past .n { background: var(--accent-soft); color: var(--accent); }
+  .current .n { background: var(--accent); color: var(--on-accent); }
+  .t { color: var(--fg); text-decoration: none; }
+  a.t:hover { color: var(--accent); text-decoration: underline; }
+  .current .t { font-weight: 700; }
+  .pn { display: flex; justify-content: space-between; gap: .75rem; flex-wrap: wrap; border-top: 1px solid var(--border); padding-top: 1.1rem; }
+</style>

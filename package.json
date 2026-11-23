@@ -1,0 +1,27 @@
+{
+  "name": "kaunkab",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "check": "astro check",
+    "image": "node scripts/add-image.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.6",
+    "astro": "^5.18.2",
+    "pagefind": "^1.6.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}

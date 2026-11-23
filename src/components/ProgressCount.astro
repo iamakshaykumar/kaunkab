@@ -1,0 +1,28 @@
+---
+interface Props {
+  slugs: string[];
+}
+const { slugs } = Astro.props;
+---
+<span class="progress-count" data-progress-slugs={JSON.stringify(slugs)} hidden></span>
+
+<script>
+  import { browserProgress } from '../lib/progress';
+  const read = new Set(browserProgress().getRead());
+  document.querySelectorAll<HTMLElement>('[data-progress-slugs]').forEach((el) => {
+    const slugs: string[] = JSON.parse(el.dataset.progressSlugs || '[]');
+    const n = slugs.filter((s) => read.has(s)).length;
+    if (slugs.length === 0) return;
+    el.textContent = `${n}/${slugs.length} पढ़े`;
+    el.hidden = false;
+    if (n === slugs.length) el.classList.add('complete');
+  });
+</script>
+
+<style>
+  .progress-count {
+    display: inline-block; font-size: .8rem; padding: .05rem .55rem; border-radius: 0;
+    background: var(--accent-soft); color: var(--fg); border: 1px solid var(--border);
+  }
+  .progress-count.complete { background: #dcfce7; color: #14532d; border-color: #16a34a; }
+</style>

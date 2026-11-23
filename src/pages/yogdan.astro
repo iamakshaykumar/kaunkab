@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { ERAS, eraRangeLabel } from '../lib/eras';
+import PageHero from '../components/PageHero.astro';
+import { t } from '../i18n/hi';
+const repo = 'https://github.com/iamakshaykumar/kaunkab';
+---
+<Base title={t.contribute} description="कौन कब में गलती सुधारें या नया लेख जोड़ें — GitHub के ज़रिए।">
+  <PageHero kicker="समुदाय" title={t.contribute} lead="कौन कब समुदाय से बनता है। आपको प्रोग्रामिंग आने की ज़रूरत नहीं — बस एक मुफ़्त GitHub अकाउंट चाहिए।" />
+  <div class="container prose">
+    <p><a class="btn btn-primary" href="https://github.com/signup">मुफ़्त GitHub अकाउंट बनाएँ</a></p>
+
+    <h2>1. छोटी गलती सुधारें (2 मिनट)</h2>
+    <ol>
+      <li>किसी भी लेख के नीचे <strong>"{t.editPage}"</strong> पर क्लिक करें।</li>
+      <li>GitHub पर फ़ाइल खुलेगी — पेंसिल (Edit) आइकन से बदलाव करें।</li>
+      <li>नीचे बदलाव के बारे में एक लाइन लिखें और <strong>"Propose changes"</strong> दबाएँ।</li>
+      <li>फिर <strong>"Create pull request"</strong> दबाएँ। बस! समीक्षा के बाद आपका बदलाव साइट पर आ जाएगा।</li>
+    </ol>
+
+    <h2>2. नया लेख लिखें</h2>
+    <ol>
+      <li><a href={`${repo}/blob/main/templates/article.md`}>लेख टेम्पलेट</a> खोलें और उसकी सामग्री कॉपी करें।</li>
+      <li><a href={`${repo}/new/main/src/content/articles/hi`}>यहाँ नई फ़ाइल बनाएँ</a> — नाम रोमन अक्षरों में, जैसे <code>vijaynagar-samrajya.md</code>।</li>
+      <li>टेम्पलेट चिपकाएँ, जानकारी भरें, और Pull Request बनाएँ।</li>
+    </ol>
+
+    <h2>काल की सीमाएँ</h2>
+    <ul>
+      {ERAS.map((e) => <li><code>{e.id}</code> — {e.label}: {eraRangeLabel(e.id)}</li>)}
+    </ul>
+    <p class="muted">ई.पू. (BCE) के साल ऋण संख्या में लिखें, जैसे 322 ई.पू. = <code>-322</code>।</p>
+
+    <h2>ज़रूरी नियम</h2>
+    <ul>
+      <li>हर लेख में <strong>कम से कम एक स्रोत</strong> दें — NCERT, विश्वसनीय किताबें या वेबसाइटें।</li>
+      <li><strong>अपने शब्दों में लिखें</strong> — कहीं से कॉपी-पेस्ट न करें।</li>
+      <li>जहाँ इतिहासकारों में मतभेद हो, वहाँ अलग-अलग मत बताएँ।</li>
+    </ul>
+
+    <h2>अपने आप जाँच</h2>
+    <p>
+      Pull Request बनते ही एक स्वचालित जाँच चलती है। अगर कोई ज़रूरी जानकारी छूट गई (जैसे स्रोत) या काल और साल मेल नहीं खाते,
+      तो वहाँ हिंदी में साफ़ संदेश दिखेगा। उसे ठीक करके फ़ाइल फिर से सेव करें।
+    </p>
+    <p>
+      <a class="btn btn-primary" href={`${repo}/blob/main/CONTRIBUTING.md`}>पूरी गाइड पढ़ें</a>
+      <a class="btn" href={`${repo}/issues/new/choose`}>विषय सुझाएँ / गलती बताएँ</a>
+    </p>
+  </div>
+</Base>

@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Timeline from '../components/Timeline.astro';
+import { getArticles } from '../lib/content';
+import { t } from '../i18n/hi';
+
+const articles = await getArticles();
+---
+<Base title={t.timeline} description="सिंधु घाटी से स्वतंत्रता तक — भारतीय इतिहास की घटनाएँ एक ही समयरेखा पर।">
+  <PageHero
+    kicker="कालक्रम"
+    title={t.timeline}
+    lead="सिंधु घाटी से स्वतंत्रता तक — सभी लेख एक ही धारा में। किसी भी घटना पर क्लिक करके पूरा लेख पढ़ें।"
+  />
+  <div class="container">
+    <Timeline articles={articles} />
+  </div>
+</Base>

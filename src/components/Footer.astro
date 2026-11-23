@@ -1,0 +1,70 @@
+---
+import { t } from '../i18n/hi';
+const repo = 'https://github.com/iamakshaykumar/kaunkab';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="jaali"></div>
+  <div class="container cols">
+    <div class="brand">
+      <p class="word">कौन<b>कब</b></p>
+      <p class="tag">{t.tagline}। एक मुफ़्त, ओपन सोर्स परियोजना — समुदाय द्वारा लिखी और सुधारी गई।</p>
+      <a class="gh" href={repo}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+        GitHub पर देखें
+      </a>
+    </div>
+    <div>
+      <p class="h">{t.eras}</p>
+      <ul>
+        <li><a href="/kaal/prachin">{t.prachin}</a></li>
+        <li><a href="/kaal/madhyakaal">{t.madhyakaal}</a></li>
+        <li><a href="/kaal/adhunik">{t.adhunik}</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="h">पढ़ें</p>
+      <ul>
+        <li><a href="/timeline">{t.timeline}</a></li>
+        <li><a href="/series">{t.allSeries}</a></li>
+        <li><a href="/khoj">{t.search}</a></li>
+        <li><a href="/rss.xml">RSS फ़ीड</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="h">जुड़ें</p>
+      <ul>
+        <li><a href="/yogdan">{t.contribute}</a></li>
+        <li><a href={`${repo}/issues/new/choose`}>विषय सुझाएँ</a></li>
+        <li><a href={`${repo}/issues/new/choose`}>गलती बताएँ</a></li>
+        <li><a href="/parichay">{t.about}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container bottom">
+    <span>© {year} कौन कब योगदानकर्ता</span>
+    <span>
+      सामग्री <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.hi">CC BY-SA 4.0</a> · कोड MIT लाइसेंस
+    </span>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: var(--ink); color: var(--on-ink); padding: 0 0 1.5rem; margin-top: 0; border-top: 1px solid rgba(255,255,255,.08); }
+  .site-footer a { color: inherit; text-decoration: none; opacity: .75; }
+  .site-footer a:hover { opacity: 1; text-decoration: underline; }
+  .jaali { margin-bottom: 3.5rem; }
+  .cols { display: grid; gap: 2.5rem; grid-template-columns: 1.6fr 1fr 1fr 1fr; }
+  .word { font-family: var(--font-display); font-weight: 700; font-size: 1.8rem; margin: 0 0 .5rem; }
+  .word b { color: #fb923c; }
+  .tag { opacity: .7; max-width: 36ch; margin: 0 0 1.25rem; }
+  .gh { display: inline-flex; align-items: center; gap: .5rem; border: 1px solid rgba(255,255,255,.25); padding: .45rem 1rem; border-radius: 0; opacity: 1 !important; }
+  .h { font-weight: 700; margin: 0 0 .75rem; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; opacity: .55; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+  .bottom {
+    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,.12); margin-top: 3rem; padding-top: 1.25rem; font-size: .88rem; opacity: .65;
+  }
+  .bottom a { opacity: 1; text-decoration: underline; }
+  @media (max-width: 800px) { .cols { grid-template-columns: 1fr 1fr; } .brand { grid-column: 1 / -1; } }
+</style>

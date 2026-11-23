@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { t } from '../i18n/hi';
+---
+<Base title={t.notFound}>
+  <div class="container" style="text-align:center; padding: 4rem 0;">
+    <h1>{t.notFound}</h1>
+    <p class="muted">शायद यह पन्ना इतिहास में खो गया है।</p>
+    <p><a class="btn btn-primary" href="/">{t.backHome}</a> <a class="btn" href="/khoj">{t.search}</a></p>
+  </div>
+</Base>

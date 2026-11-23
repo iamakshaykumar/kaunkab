@@ -1,0 +1,55 @@
+---
+import { t } from '../i18n/hi';
+interface Props {
+  slug: string;
+}
+const { slug } = Astro.props;
+---
+<div class="mark-read" data-mark-read={slug}>
+  <div>
+    <p class="q">लेख पूरा पढ़ लिया?</p>
+    <p class="muted s">इसे अपनी पढ़ी हुई सूची में जोड़ें — यह सिर्फ़ आपके ब्राउज़र में सेव होता है।</p>
+  </div>
+  <button type="button" class="btn btn-primary">{t.markRead}</button>
+</div>
+
+<script>
+  import { browserProgress } from '../lib/progress';
+  const box = document.querySelector<HTMLElement>('[data-mark-read]');
+  if (box) {
+    const slug = box.dataset.markRead!;
+    const btn = box.querySelector('button')!;
+    const progress = browserProgress();
+    const done = () => {
+      btn.textContent = 'पढ़ लिया ✓';
+      btn.disabled = true;
+      box.classList.add('done');
+    };
+    const mark = () => {
+      progress.markRead(slug);
+      done();
+    };
+    if (progress.isRead(slug)) done();
+    btn.addEventListener('click', mark);
+    const onScroll = () => {
+      const h = document.documentElement;
+      if ((h.scrollTop + innerHeight) / h.scrollHeight >= 0.8) {
+        mark();
+        removeEventListener('scroll', onScroll);
+      }
+    };
+    addEventListener('scroll', onScroll, { passive: true });
+  }
+</script>
+
+<style>
+  .mark-read {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    margin: 2.5rem 0; padding: 1.25rem 1.5rem; border-radius: var(--radius); background: var(--bg-alt); border: 1px solid var(--border);
+  }
+  .q { margin: 0; font-weight: 700; font-size: 1.1rem; }
+  .s { margin: .15rem 0 0; font-size: .92rem; }
+  .mark-read button:disabled { cursor: default; transform: none; box-shadow: none; }
+  .mark-read.done { border-color: #16a34a; }
+  .mark-read.done button { background: #16a34a; border-color: #16a34a; color: #fff; }
+</style>

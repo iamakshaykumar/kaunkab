@@ -1,0 +1,28 @@
+---
+import { t } from '../i18n/hi';
+interface Props {
+  href: string;
+}
+const { href } = Astro.props;
+---
+<div class="edit">
+  <div>
+    <p class="h">कोई गलती दिखी या कुछ जोड़ना चाहते हैं?</p>
+    <p class="muted">यह लेख समुदाय द्वारा लिखा गया है। आप भी इसे बेहतर बना सकते हैं।</p>
+  </div>
+  <div class="actions">
+    <a class="btn" href={href} rel="noopener" target="_blank">{t.editPage}</a>
+    <a class="how" href="/yogdan">कैसे?</a>
+  </div>
+</div>
+
+<style>
+  .edit {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+    margin-top: 2rem; padding: 1.25rem 1.5rem; border: 1px dashed var(--border); border-radius: var(--radius);
+  }
+  .h { margin: 0; font-weight: 700; }
+  .muted { margin: .15rem 0 0; font-size: .92rem; }
+  .actions { display: flex; align-items: center; gap: 1rem; }
+  .how { font-size: .92rem; }
+</style>

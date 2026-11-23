@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import ProgressCount from '../../components/ProgressCount.astro';
+import { ERAS, eraRangeLabel, eraTitle, type EraInfo } from '../../lib/eras';
+import { getArticles, slugOf } from '../../lib/content';
+import { findImage } from '../../lib/images';
+
+export function getStaticPaths() {
+  return ERAS.map((era) => ({ params: { era: era.id }, props: { era } }));
+}
+
+interface Props {
+  era: EraInfo;
+}
+const { era } = Astro.props;
+const list = (await getArticles()).filter((a) => a.data.era === era.id);
+const others = ERAS.filter((e) => e.id !== era.id);
+---
+<Base title={eraTitle(era.id)} description={era.blurb} image={findImage(`kaal/${era.id}`)}>
+  <PageHero kicker={eraRangeLabel(era.id)} title={eraTitle(era.id)} lead={era.blurb} image={findImage(`kaal/${era.id}`)} era={era.id}>
+    <p class="count">{list.length} लेख <ProgressCount slugs={list.map(slugOf)} /></p>
+  </PageHero>
+  <div class="container">
+    {list.length > 0 ? (
+      <div class="grid">{list.map((a) => <ArticleCard article={a} />)}</div>
+    ) : (
+      <p class="card">इस काल में अभी कोई लेख नहीं है। <a href="/yogdan">पहला लेख आप लिखिए!</a></p>
+    )}
+
+    <div class="others">
+      {others.map((e) => (
+        <a class={`other era-${e.id}`} href={`/kaal/${e.id}`}>
+          <span class="muted">{eraRangeLabel(e.id)}</span>
+          <strong>{eraTitle(e.id)} →</strong>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .count { display: flex; align-items: center; gap: .6rem; margin: 1.25rem 0 0; font-weight: 600; }
+  .others { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); margin-top: 3.5rem; }
+  .other { display: flex; flex-direction: column; gap: .2rem; padding: 1.25rem 1.5rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--card); text-decoration: none; border-left: 5px solid var(--era); }
+  .other strong { font-family: var(--font-display); font-size: 1.35rem; color: var(--era); }
+  .other:hover { box-shadow: var(--shadow); }
+</style>

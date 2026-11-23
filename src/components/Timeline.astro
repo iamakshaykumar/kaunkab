@@ -1,0 +1,132 @@
+---
+import { ERAS, eraRangeLabel, eraTitle } from '../lib/eras';
+import { articleUrl, slugOf, type Article } from '../lib/content';
+import { formatKab, formatYear } from '../lib/dates';
+import { findImage } from '../lib/images';
+import Ornament from './Ornament.astro';
+
+interface Props {
+  articles: Article[];
+}
+const { articles } = Astro.props;
+const groups = ERAS.map((e) => ({ era: e, items: articles.filter((a) => a.data.era === e.id) })).filter(
+  (g) => g.items.length > 0,
+);
+---
+<div class="tl-wrap" data-timeline>
+  <div class="filters" role="group" aria-label="काल चुनें">
+    <button type="button" class="chip-btn active" data-filter="all">सभी <span>{articles.length}</span></button>
+    {groups.map((g) => (
+      <button type="button" class={`chip-btn era-${g.era.id}`} data-filter={g.era.id}>
+        <span class="era-dot"></span>{g.era.label} <span>{g.items.length}</span>
+      </button>
+    ))}
+  </div>
+
+  <div class="tl">
+    {groups.map((g) => (
+      <section class={`band era-${g.era.id}`} data-era={g.era.id}>
+        <header class="band-head">
+          <span class="band-pill">{eraRangeLabel(g.era.id)}</span>
+          <h2>{eraTitle(g.era.id)}</h2>
+          <Ornament />
+          <p>{g.era.blurb}</p>
+        </header>
+        <ol class="events">
+          {g.items.map((a, i) => {
+            const img = findImage(`lekh/${slugOf(a)}-sm`) ?? findImage(`lekh/${slugOf(a)}`);
+            return (
+              <li class={`event ${i % 2 ? 'right' : 'left'}`} data-slug={slugOf(a)}>
+                <span class="year">{formatYear(a.data.kab.start)}</span>
+                <span class="dot" aria-hidden="true"></span>
+                <a href={articleUrl(a)} class="ev-card">
+                  {img && <img src={img} alt="" width="640" height="360" loading="lazy" decoding="async" />}
+                  <span class="ev-body">
+                    <span class="when">{formatKab(a.data.kab)}</span>
+                    <strong>{a.data.title}</strong>
+                    <span class="saar">{a.data.saar}</span>
+                    <span class="read">✓ पढ़ा</span>
+                  </span>
+                </a>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    ))}
+  </div>
+</div>
+
+<script>
+  import { browserProgress } from '../lib/progress';
+  const read = new Set(browserProgress().getRead());
+  document.querySelectorAll<HTMLElement>('.event[data-slug]').forEach((el) => {
+    if (read.has(el.dataset.slug!)) el.classList.add('is-read');
+  });
+  document.querySelectorAll<HTMLElement>('[data-timeline]').forEach((root) => {
+    const buttons = root.querySelectorAll<HTMLButtonElement>('[data-filter]');
+    const bands = root.querySelectorAll<HTMLElement>('[data-era]');
+    buttons.forEach((b) =>
+      b.addEventListener('click', () => {
+        const f = b.dataset.filter;
+        buttons.forEach((x) => x.classList.toggle('active', x === b));
+        bands.forEach((band) => (band.hidden = f !== 'all' && band.dataset.era !== f));
+      }),
+    );
+  });
+</script>
+
+<style>
+  .filters {
+    position: sticky; top: 72px; z-index: 5; display: flex; gap: .5rem; flex-wrap: wrap; padding: .9rem 0;
+    background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); margin-bottom: 1rem;
+  }
+  .chip-btn {
+    display: inline-flex; align-items: center; gap: .4rem; font: inherit; font-size: .95rem; font-weight: 600; cursor: pointer;
+    padding: .45rem 1rem; border-radius: 0; border: 1px solid var(--border); background: var(--card); color: var(--fg);
+  }
+  .chip-btn span:last-child { font-size: .8rem; opacity: .6; }
+  .chip-btn:hover { border-color: var(--accent); }
+  .chip-btn.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .chip-btn.active .era-dot { box-shadow: 0 0 0 2px var(--bg); }
+
+  .band { padding: 2rem 0 1rem; }
+  .band[hidden] { display: none; }
+  .band-head { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
+  .band-pill { display: inline-block; font-size: .82rem; font-weight: 700; padding: .25rem .8rem; border-radius: 0; color: var(--era); background: color-mix(in srgb, var(--era) 12%, transparent); }
+  .band-head h2 { margin: .6rem 0 .4rem; color: var(--era); font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
+  .band-head p { margin: 1rem 0 0; color: var(--muted); }
+
+  .events { list-style: none; margin: 0; padding: 0; position: relative; }
+  .events::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; transform: translateX(-50%); background: linear-gradient(var(--era), color-mix(in srgb, var(--era) 30%, transparent)); border-radius: 0; }
+  .event { position: relative; display: grid; grid-template-columns: 1fr 64px 1fr; align-items: center; margin-bottom: 2rem; }
+  .dot { grid-column: 2; justify-self: center; width: 18px; height: 18px; border-radius: 50%; background: var(--card); border: 4px solid var(--era); z-index: 1; }
+  .year { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; color: var(--era); }
+  .left .ev-card { grid-column: 1; grid-row: 1; }
+  .left .year { grid-column: 3; grid-row: 1; }
+  .right .ev-card { grid-column: 3; grid-row: 1; }
+  .right .year { grid-column: 1; grid-row: 1; text-align: right; }
+  .ev-card {
+    display: grid; grid-template-columns: 140px 1fr; gap: 1rem; text-decoration: none; color: var(--fg);
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: .85rem; box-shadow: var(--shadow);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
+  }
+  .ev-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--era); }
+  .ev-card img { width: 140px; height: 100%; min-height: 100px; object-fit: cover; border-radius: var(--radius-sm); }
+  .ev-body { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+  .when { font-size: .82rem; font-weight: 700; color: var(--era); }
+  .ev-body strong { font-family: var(--font-display); font-size: 1.15rem; line-height: 1.35; }
+  .saar { font-size: .9rem; color: var(--muted); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .read { display: none; font-size: .78rem; font-weight: 700; color: #16a34a; }
+  .is-read .read { display: inline; }
+
+  @media (max-width: 860px) {
+    .events::before { left: 9px; transform: none; }
+    .event { grid-template-columns: 18px 1fr; column-gap: 1rem; row-gap: .4rem; align-items: start; }
+    .dot { grid-column: 1; grid-row: 1; margin-top: .35rem; }
+    .left .year, .right .year { grid-column: 2; grid-row: 1; text-align: left; font-size: 1.15rem; }
+    .left .ev-card, .right .ev-card { grid-column: 2; grid-row: 2; }
+    .ev-card { grid-template-columns: 96px 1fr; }
+    .ev-card img { width: 96px; min-height: 80px; }
+  }
+</style>

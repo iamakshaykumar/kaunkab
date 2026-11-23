@@ -1,0 +1,61 @@
+---
+import { t } from '../i18n/hi';
+---
+<section class="dyk" data-did-you-know aria-live="polite">
+  <div class="head">
+    <span class="icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+    </span>
+    <div>
+      <p class="kicker">{t.didYouKnow}</p>
+      <p class="sub">रोज़ एक नया तथ्य</p>
+    </div>
+  </div>
+  <div data-body class="body"><div class="skeleton"></div></div>
+</section>
+
+<script>
+  import { pickDaily } from '../lib/daily';
+
+  interface Fact { text: string; slug: string; title: string }
+  const root = document.querySelector<HTMLElement>('[data-did-you-know]');
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+
+  async function load() {
+    if (!root) return;
+    const body = root.querySelector<HTMLElement>('[data-body]')!;
+    try {
+      const facts: Fact[] = await (await fetch('/data/jaankari.json')).json();
+      const f = pickDaily(facts, new Date());
+      body.innerHTML = f
+        ? `<blockquote class="fact">${esc(f.text)}</blockquote><a class="more" href="/lekh/${esc(f.slug)}">पढ़ें: ${esc(f.title)} →</a>`
+        : '<p class="empty">जल्द ही नए तथ्य आएँगे।</p>';
+    } catch {
+      body.innerHTML = '<p class="empty">अभी जानकारी लोड नहीं हो सकी।</p>';
+    }
+  }
+  load();
+</script>
+
+<style>
+  .dyk {
+    position: relative; overflow: hidden; border-radius: var(--radius); padding: 1.5rem;
+    display: flex; flex-direction: column; gap: 1.1rem; color: var(--on-ink);
+    background:
+      radial-gradient(500px 220px at 100% 0%, color-mix(in srgb, var(--madhyakaal) 45%, transparent), transparent 70%),
+      var(--ink);
+    box-shadow: var(--shadow);
+  }
+  .head { display: flex; align-items: center; gap: .85rem; }
+  .icon { width: 46px; height: 46px; border-radius: 0; display: grid; place-items: center; background: rgba(255,255,255,.1); color: #5eead4; flex: none; }
+  .kicker { margin: 0; color: #5eead4; }
+  .sub { margin: 0; opacity: .65; font-size: .95rem; }
+  .skeleton { height: 120px; border-radius: var(--radius-sm); background: rgba(255,255,255,.06); }
+  .body :global(.fact) {
+    margin: 0; font-family: var(--font-display); font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.75;
+    border-left: 3px solid #5eead4; padding-left: 1rem;
+  }
+  .body :global(.more) { display: inline-block; margin-top: 1rem; color: #fff; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.4); }
+  .body :global(.more:hover) { border-color: #fff; }
+  .body :global(.empty) { opacity: .7; margin: 0; }
+</style>
