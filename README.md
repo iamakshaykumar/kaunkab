@@ -43,7 +43,7 @@ templates/article.md       template for new articles
 
 ## Deployment
 
-On every push to `main`, `.github/workflows/deploy.yml` builds the site and deploys it to GitHub Pages. Hosting costs nothing.
+On every push to `main` or `master`, `.github/workflows/deploy.yml` builds the site and deploys it to GitHub Pages. Hosting costs nothing.
 
 **One-time setup (required, or links and assets will 404):**
 
