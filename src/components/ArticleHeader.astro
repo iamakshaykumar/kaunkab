@@ -13,7 +13,7 @@ interface Props {
 const { article, readingMinutes } = Astro.props;
 const d = article.data;
 const era = getEra(d.era);
-const img = findImage(`lekh/${slugOf(article)}`);
+const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
 ---
 <header class={`article-header era-${d.era}`}>
   <nav class="crumbs" aria-label="ब्रेडक्रम्ब">
