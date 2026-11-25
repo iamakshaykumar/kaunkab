@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -250, end: 600, circa: true, label: "तीसरी सदी ई.पू. (अशोक का मंदिर) से लगभग 5वीं–6ठी सदी ई. (वर्तमान मंदिर) तक" }
 published: 2026-11-24
 kaun: [गौतम बुद्ध, अशोक, फ़ाह्यान, अलेक्ज़ेंडर कनिंघम, जोसेफ़ डेविड बेगलर, अनागारिक धर्मपाल]
-kahan: [बोधगया (गया ज़िला, बिहार)]
+kahan: ["बोधगया (गया ज़िला, बिहार)"]
 saar: बिहार के बोधगया में स्थित महाबोधि मंदिर उस स्थान पर बना है जहाँ परंपरा के अनुसार सिद्धार्थ गौतम ने बोधि वृक्ष के नीचे ज्ञान प्राप्त किया था। यहाँ पहला मंदिर सम्राट अशोक ने बनवाया; आज का लगभग 55 मीटर ऊँचा ईंटों का मंदिर गुप्त काल का माना जाता है। 2002 में यह यूनेस्को विश्व धरोहर बना।
 tags: [bauddh-dharm, bihar, maurya, gupta, vastukala, vishwa-dharohar]
-series: { id: prachin-gyan-aur-kala, order: 1 }
+series: { id: prachin-gyan-aur-kala, order: 1 }
 sources:
   - title: "Mahabodhi Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mahabodhi_Temple

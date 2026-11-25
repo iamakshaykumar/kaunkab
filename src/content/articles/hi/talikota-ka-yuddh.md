@@ -4,10 +4,10 @@ era: madhyakaal
 kab: { start: 1565, month: 1, day: 23, label: "23 जनवरी 1565 (तिथि पर कुछ मतभेद)" }
 published: 2026-11-25
 kaun: [आलिया राम राय, सदाशिव राय, तिरुमल देव राय, हुसैन निज़ाम शाह प्रथम, अली आदिलशाह प्रथम, इब्राहिम क़ुतुब शाह, अली बरीद शाह]
-kahan: [रक्कसगी-तंगडगी (कृष्णा नदी के पास, कर्नाटक), तालीकोटा, हम्पी (विजयनगर), पेनुकोंडा]
+kahan: ["रक्कसगी-तंगडगी (कृष्णा नदी के पास, कर्नाटक)", तालीकोटा, हम्पी (विजयनगर), पेनुकोंडा]
 saar: "जनवरी 1565 में कृष्णा नदी के पास रक्कसगी-तंगडगी में दक्कन की चार सल्तनतों की संयुक्त सेना ने विजयनगर की सेना को हराया। विजयनगर के वास्तविक शासक आलिया राम राय मारे गए और राजधानी विजयनगर (हम्पी) को लूटा गया। साम्राज्य बना रहा, पर उसका केंद्र दक्षिण की ओर खिसक गया।"
 tags: [yuddh, vijaynagar-samrajya, dakkan-saltanat, dakshin-bharat, hampi]
-series: { id: dakshin-ke-rajvansh, order: 9 }
+series: { id: dakshin-ke-rajvansh, order: 10 }
 sources:
   - title: "Battle of Talikota — Wikipedia"
     url: https://en.wikipedia.org/wiki/Battle_of_Talikota

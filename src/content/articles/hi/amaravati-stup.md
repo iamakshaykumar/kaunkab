@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -250, end: 250, circa: true, label: "लगभग तीसरी सदी ई.पू. से 250 ई. तक (कई चरणों में)" }
 published: 2026-11-24
 kaun: [कॉलिन मैकेंज़ी, वासिरेड्डी वेंकटाद्रि नायुडु, वॉल्टर एलियट]
-kahan: [अमरावती (पलनाडु ज़िला, आंध्र प्रदेश), धरणीकोटा (प्राचीन धान्यकटक), कृष्णा नदी]
+kahan: ["अमरावती (पलनाडु ज़िला, आंध्र प्रदेश)", धरणीकोटा (प्राचीन धान्यकटक), कृष्णा नदी]
 saar: आंध्र प्रदेश में कृष्णा नदी के किनारे अमरावती में बना महान स्तूप दक्षिण भारत का सबसे प्रसिद्ध बौद्ध स्मारक था, जो तीसरी सदी ई.पू. से लगभग 250 ई. तक कई चरणों में बना और सजा। 18वीं-19वीं सदी में यह लगभग नष्ट हो गया, और इसकी नक़्क़ाशीदार पट्टिकाएँ आज मुख्यतः चेन्नई के सरकारी संग्रहालय और लंदन के ब्रिटिश म्यूज़ियम में हैं।
 tags: [bauddh-dharm, andhra-pradesh, satavahan, kala, murtikala, stup]
-series: { id: prachin-dakshin-bharat, order: 5 }
+series: { id: prachin-dakshin-bharat, order: 5 }
 sources:
   - title: "Amaravati Stupa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Amaravati_Stupa

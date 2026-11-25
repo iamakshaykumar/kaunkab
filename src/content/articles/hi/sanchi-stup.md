@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -250, end: -50, circa: true, label: "तीसरी सदी ई.पू. (अशोक) से लगभग पहली सदी ई.पू. (तोरण द्वार) तक" }
 published: 2026-11-24
 kaun: [अशोक, सातकर्णि, हेनरी टेलर, अलेक्ज़ेंडर कनिंघम, जॉन मार्शल]
-kahan: [साँची (रायसेन ज़िला, मध्य प्रदेश), विदिशा]
+kahan: ["साँची (रायसेन ज़िला, मध्य प्रदेश)", विदिशा]
 saar: मध्य प्रदेश में भोपाल के पास साँची की पहाड़ी पर बना महान स्तूप भारत की सबसे पुरानी पत्थर की इमारतों में से है। इसकी नींव तीसरी सदी ई.पू. में सम्राट अशोक ने रखी, शुंग काल में इसे बड़ा किया गया और सातवाहन काल में इसके चार नक़्क़ाशीदार तोरण द्वार बने। आज यह यूनेस्को विश्व धरोहर है।
 tags: [bauddh-dharm, madhyapradesh, maurya, vastukala, vishwa-dharohar]
-series: { id: prachin-gyan-aur-kala, order: 2 }
+series: { id: prachin-gyan-aur-kala, order: 2 }
 sources:
   - title: "Buddhist Monuments at Sanchi — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/524/

@@ -7,7 +7,7 @@ kaun: [महात्मा गांधी, लॉर्ड इरविन, �
 kahan: [लंदन, दिल्ली, कराची]
 saar: 1930 से 1932 के बीच ब्रिटिश सरकार ने भारत के भावी संविधान पर चर्चा के लिए लंदन में तीन गोलमेज़ सम्मेलन बुलाए। कांग्रेस ने पहले और तीसरे का बहिष्कार किया, जबकि 5 मार्च 1931 के गांधी-इरविन समझौते के बाद गांधीजी दूसरे सम्मेलन में कांग्रेस के एकमात्र प्रतिनिधि बनकर गए। सम्मेलन अल्पसंख्यक प्रतिनिधित्व के सवाल पर अटके, पर इन्हीं से भारत सरकार अधिनियम 1935 की राह बनी।
 tags: [gol-mez-sammelan, gandhi, swatantrata-sangram, samvidhanik-sudhar, ambedkar]
-series: { id: azadi-ki-raah, order: 10 }
+series: { id: azadi-ki-raah, order: 11 }
 sources:
   - title: "बिपन चंद्र व अन्य — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: सविनय अवज्ञा 1930–31"
   - title: "Round Table Conferences (India) — Wikipedia"

@@ -4,10 +4,10 @@ era: madhyakaal
 kab: { start: 1117, circa: true, label: "1117 ई. से (बेलूर मंदिर का आरंभ)" }
 published: 2026-11-24
 kaun: [विष्णुवर्धन, शांतला देवी, केतमल्ल, दासोज, चावण, रामानुजाचार्य]
-kahan: [बेलूर (हासन ज़िला, कर्नाटक), हलेबिडु (द्वारसमुद्र), सोमनाथपुर, यगची नदी]
+kahan: ["बेलूर (हासन ज़िला, कर्नाटक)", हलेबिडु (द्वारसमुद्र), सोमनाथपुर, यगची नदी]
 saar: "कर्नाटक के होयसल राजा विष्णुवर्धन ने 1117 ई. में बेलूर का चेन्नकेशव मंदिर बनवाना शुरू किया, और कुछ ही वर्ष बाद उनकी राजधानी द्वारसमुद्र (हलेबिडु) में होयसलेश्वर मंदिर बनने लगा। तारे जैसे नक्शे और सेलखड़ी पत्थर पर बेहद बारीक नक्काशी वाले ये मंदिर 2023 में सोमनाथपुर के केशव मंदिर के साथ यूनेस्को विश्व धरोहर बने।"
 tags: [mandir, vastukala, karnataka, hoysala-vansh, dakshin-bharat, vishwa-dharohar]
-series: { id: dakshin-ke-rajvansh, order: 4 }
+series: { id: dakshin-ke-rajvansh, order: 4 }
 sources:
   - title: "Sacred Ensembles of the Hoysalas — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sacred_Ensembles_of_the_Hoysalas

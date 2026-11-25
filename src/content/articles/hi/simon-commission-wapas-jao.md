@@ -7,7 +7,7 @@ kaun: [जॉन साइमन, क्लेमेंट एटली, लॉ�
 kahan: [बंबई, लाहौर, लखनऊ, मद्रास, कलकत्ता]
 saar: 1927 में ब्रिटिश सरकार ने भारत में संवैधानिक सुधारों पर विचार के लिए सात सदस्यों वाला साइमन कमीशन बनाया, जिसमें एक भी भारतीय नहीं था। 3 फ़रवरी 1928 को इसके बंबई पहुँचते ही पूरे देश में हड़ताल हुई और 'साइमन वापस जाओ' के नारे गूँजने लगे।
 tags: [swatantrata-sangram, simon-commission, congress, lajpat-rai, samvidhan]
-series: { id: azadi-ki-raah, order: 7 }
+series: { id: azadi-ki-raah, order: 8 }
 sources:
   - title: "बिपन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: साइमन कमीशन का बहिष्कार और नेहरू रिपोर्ट"
   - title: "Simon Commission — Wikipedia"

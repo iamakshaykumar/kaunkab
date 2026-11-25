@@ -4,10 +4,10 @@ era: adhunik
 kab: { start: 1824, month: 10, day: 23 }
 published: 2026-11-24
 kaun: [रानी चेन्नम्मा, मल्लसर्ज, शिवलिंगप्पा, संगोल्ली रायण्णा, सेंट जॉन थैकरे]
-kahan: [कित्तूर (बेलगावी, कर्नाटक), धारवाड़, बैलहोंगल, नंदगड़]
+kahan: ["कित्तूर (बेलगावी, कर्नाटक)", धारवाड़, बैलहोंगल, नंदगड़]
 saar: अक्टूबर 1824 में कित्तूर की रानी चेन्नम्मा ने दत्तक पुत्र के उत्तराधिकार को नकारने वाली ईस्ट इंडिया कंपनी के ख़िलाफ़ हथियार उठाए। 23 अक्टूबर की पहली भिड़ंत में धारवाड़ का कलेक्टर थैकरे मारा गया। दिसंबर में क़िला गिर गया, पर उनके सेनानायक संगोल्ली रायण्णा ने वर्षों तक संघर्ष जारी रखा।
 tags: [veerangana, karnataka, angrezi-shasan, east-india-company, pratirodh]
-series: { id: angrezon-ke-viruddh-vidroh, order: 1 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 2 }
 sources:
   - title: "Kittur Chennamma — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kittur_Chennamma

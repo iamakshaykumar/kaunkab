@@ -7,7 +7,7 @@ kaun: [रानी दुर्गावती, दलपत शाह, वी�
 kahan: [गढ़ा-मंडला, जबलपुर, सिंगौरगढ़, नरई नाला]
 saar: 16वीं सदी में गढ़ा-मंडला (गोंडवाना) की संरक्षिका रानी दुर्गावती ने न्याय, समृद्धि और जल संरक्षण का आदर्श शासन दिया। 24 जून 1564 को मुग़ल आक्रमणकारी सेना के सामने घुटने टेकने के बजाय उन्होंने मातृभूमि की रक्षा में रणभूमि में अमर बलिदान दिया।
 tags: [veerangana, gondwana, madhyapradesh, yuddh]
-series: { id: kshetriya-shaktiyan, order: 7 }
+series: { id: kshetriya-shaktiyan, order: 8 }
 sources:
   - title: "अबुल फ़ज़ल — अकबरनामा: गढ़ा के राज्य और रानी दुर्गावती का सैन्य विवरण"
     url: https://archive.org/details/akbarnamavol200abluoft

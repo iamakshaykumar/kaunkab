@@ -4,10 +4,10 @@ era: madhyakaal
 kab: { start: 1627, end: 1656, label: "लगभग 1627–1656 ई." }
 published: 2026-11-25
 kaun: [यूसुफ़ आदिल ख़ाँ, इब्राहिम आदिल शाह द्वितीय, मुहम्मद आदिल शाह, मलिक याक़ूत, ताज सुल्ताना]
-kahan: [बीजापुर (विजयपुरा, कर्नाटक), नौरसपुर]
+kahan: ["बीजापुर (विजयपुरा, कर्नाटक)", नौरसपुर]
 saar: बीजापुर का गोल गुंबज आदिलशाही सुल्तान मुहम्मद आदिल शाह (शासन 1627–1656) का मक़बरा है। इसका लगभग 44 मीटर बाहरी व्यास वाला गुंबद अपने समय के सबसे बड़े गुंबदों में था, और इसकी 'फुसफुसाहट गैलरी' में धीमी आवाज़ भी दूर तक सुनाई देती है।
 tags: [adilshahi, dakkan-saltanat, bijapur, karnataka, sthapatya, makbara]
-series: { id: dakshin-ke-rajvansh, order: 11 }
+series: { id: dakshin-ke-rajvansh, order: 13 }
 sources:
   - title: "रिचर्ड एम. ईटन — A Social History of the Deccan, 1300–1761 (The New Cambridge History of India)"
   - title: "जॉर्ज मिशेल और मार्क ज़ेब्रोव्स्की — Architecture and Art of the Deccan Sultanates (The New Cambridge History of India)"

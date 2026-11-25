@@ -7,7 +7,7 @@ kaun: [लल द्यद (लल्लेश्वरी), सिद्ध श
 kahan: [पांद्रेठन (श्रीनगर के पास), कश्मीर घाटी]
 saar: चौदहवीं सदी की कश्मीरी संत-कवयित्री लल द्यद ने छोटे-छोटे 'वाख' रचे, जो कश्मीरी भाषा की सबसे पुरानी जीवित कविता माने जाते हैं। कश्मीर शैव दर्शन से जुड़ी उनकी वाणी आज भी हिंदू और मुसलमान दोनों के बीच समान आदर से गाई-सुनी जाती है।
 tags: [bhakti, sant-kavi, kashmir, kashmiri-sahitya, shaiv-darshan, mahila-itihas]
-series: { id: bhakti-aur-sufi, order: 8 }
+series: { id: bhakti-aur-sufi, order: 10 }
 sources:
   - title: "George Grierson और Lionel D. Barnett — Lallā-Vākyāni, or The Wise Sayings of Lal Děd (Royal Asiatic Society Monographs, खंड 17, लंदन, 1920)"
     url: https://catalog.hathitrust.org/Record/100324960

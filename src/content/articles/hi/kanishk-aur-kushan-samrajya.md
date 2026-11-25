@@ -7,7 +7,7 @@ kaun: [कनिष्क प्रथम, अश्वघोष, चरक, व
 kahan: [पुरुषपुर (पेशावर), मथुरा, कश्मीर, तक्षशिला]
 saar: ईसा की पहली और दूसरी शताब्दी में कुषाण सम्राट कनिष्क ने मध्य एशिया से गंगा के मैदान तक फैले विशाल साम्राज्य पर शासन किया। उन्होंने रेशम मार्ग (Silk Route) पर नियंत्रण रखा और गांधार व मथुरा कला तथा महायान बौद्ध धर्म को संरक्षण दिया।
 tags: [samrajya, silk-route, bauddh-dharm, kala]
-series: { id: maurya-se-gupta, order: 5 }
+series: { id: maurya-se-gupta, order: 6 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 2: राजा, किसान और नगर"
     url: https://ncert.nic.in/textbook/pdf/lehs102.pdf

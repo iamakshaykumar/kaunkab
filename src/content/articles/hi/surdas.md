@@ -7,7 +7,7 @@ kaun: [सूरदास, वल्लभाचार्य, विट्ठल
 kahan: [ब्रज, गोवर्धन, सीही (हरियाणा), मथुरा]
 saar: सोलहवीं सदी के कवि सूरदास ने ब्रजभाषा में कृष्ण की बाल-लीलाओं और राधा-कृष्ण के प्रेम पर ऐसे पद रचे जिन्होंने ब्रजभाषा को साहित्य की भाषा बना दिया। 'सूरसागर' में संकलित उनके पद आज भी मंदिरों और संगीत-सभाओं में गाए जाते हैं।
 tags: [bhakti-andolan, krishna-bhakti, sant-kavi, hindi-sahitya, braj-bhasha]
-series: { id: bhakti-aur-sufi, order: 11 }
+series: { id: bhakti-aur-sufi, order: 14 }
 sources:
   - title: "Kenneth E. Bryant और John Stratton Hawley — Sur's Ocean: Poems from the Early Tradition (Murty Classical Library of India, Harvard University Press, 2015)"
   - title: "जॉन स्ट्रैटन हॉली — Three Bhakti Voices: Mirabai, Surdas, and Kabir in Their Times and Ours (Oxford University Press, 2005)"

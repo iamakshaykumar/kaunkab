@@ -7,7 +7,7 @@ kaun: [रामानुजाचार्य, यादवप्रकाश, 
 kahan: [श्रीपेरुंबुदूर, कांचीपुरम, श्रीरंगम, मेलुकोटे (कर्नाटक)]
 saar: ग्यारहवीं-बारहवीं सदी के आचार्य रामानुज ने वेदांत की 'विशिष्टाद्वैत' व्याख्या दी, जिसमें ईश्वर, जीव और जगत तीनों को वास्तविक माना गया और भक्ति को मोक्ष का मार्ग बताया गया। श्रीरंगम को केंद्र बनाकर उन्होंने श्रीवैष्णव परंपरा को व्यवस्थित रूप दिया, जिसका प्रभाव बाद के भक्ति आंदोलन पर पड़ा।
 tags: [darshan, vedant, bhakti, dharm, dakshin-bharat, vaishnav]
-series: { id: bhakti-aur-sufi, order: 3 }
+series: { id: bhakti-aur-sufi, order: 4 }
 sources:
   - title: "Ramanuja — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ramanuja

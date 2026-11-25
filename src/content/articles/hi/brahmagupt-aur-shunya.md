@@ -4,10 +4,10 @@ era: prachin
 kab: { start: 628, label: "ब्राह्मस्फुटसिद्धांत की रचना, 628 ई." }
 published: 2026-11-24
 kaun: [ब्रह्मगुप्त, व्याघ्रमुख, भास्कर द्वितीय, अल-फ़ज़ारी]
-kahan: [भिल्लमाल (भीनमाल, राजस्थान), उज्जैन]
+kahan: ["भिल्लमाल (भीनमाल, राजस्थान)", उज्जैन]
 saar: 628 ई. में भिल्लमाल (आज का भीनमाल) के गणितज्ञ-खगोलशास्त्री ब्रह्मगुप्त ने 'ब्राह्मस्फुटसिद्धांत' लिखा। यह पहला ज्ञात ग्रंथ है जिसमें शून्य को एक स्वतंत्र संख्या मानकर उसके साथ जोड़-घटाव और गुणा के नियम दिए गए और ऋणात्मक संख्याओं का भी व्यवस्थित गणित बताया गया।
 tags: [vigyan, ganit, khagol, sanskrit, rajasthan]
-series: { id: prachin-gyan-aur-kala, order: 12 }
+series: { id: prachin-gyan-aur-kala, order: 14 }
 sources:
   - title: "Brahmagupta — Wikipedia"
     url: https://en.wikipedia.org/wiki/Brahmagupta

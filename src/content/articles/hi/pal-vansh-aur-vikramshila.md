@@ -4,10 +4,10 @@ era: madhyakaal
 kab: { start: 750, end: 1161, circa: true }
 published: 2026-11-24
 kaun: [गोपाल, धर्मपाल, देवपाल, अतिश दीपंकर]
-kahan: [बंगाल, बिहार, विक्रमशिला (भागलपुर), नालंदा, सोमपुर (पहाड़पुर, बांग्लादेश)]
+kahan: [बंगाल, बिहार, विक्रमशिला (भागलपुर), नालंदा, "सोमपुर (पहाड़पुर, बांग्लादेश)"]
 saar: "आठवीं शताब्दी के मध्य में बंगाल की अराजकता के बीच गोपाल के उदय से पाल वंश की शुरुआत हुई। धर्मपाल जैसे शासकों ने विक्रमशिला महाविहार जैसे विद्या-केंद्र स्थापित किए, जिनका प्रभाव तिब्बत तक पहुँचा।"
 tags: [pal-vansh, bauddh-dharm, shiksha, bihar, bangal, samrajya]
-series: { id: harsh-se-tarain, order: 5 }
+series: { id: harsh-se-tarain, order: 5 }
 sources:
   - title: "Pala dynasty — Encyclopaedia Britannica"
     url: https://www.britannica.com/topic/Pala-dynasty

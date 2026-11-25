@@ -7,7 +7,7 @@ kaun: [महेंद्रवर्मन प्रथम, नरसिंह�
 kahan: [मामल्लपुरम (महाबलीपुरम), चेंगलपट्टु ज़िला, तमिलनाडु, कोरोमंडल तट]
 saar: चेन्नई से लगभग 60 किलोमीटर दक्षिण में बंगाल की खाड़ी के किनारे बसे मामल्लपुरम में पल्लव राजाओं ने सातवीं-आठवीं सदी में ग्रेनाइट चट्टानों को काटकर रथ, गुफा-मंडप और विशाल उभरी मूर्तियाँ बनवाईं, और फिर पत्थर जोड़कर तट मंदिर खड़ा किया। 1984 में यह स्मारक-समूह यूनेस्को विश्व धरोहर बना।
 tags: [dakshin-bharat, pallava, mandir-kala, dravid-shaili, vishwa-dharohar, tamilnadu]
-series: { id: prachin-dakshin-bharat, order: 7 }
+series: { id: prachin-dakshin-bharat, order: 8 }
 sources:
   - title: "Group of Monuments at Mahabalipuram — Wikipedia"
     url: https://en.wikipedia.org/wiki/Group_of_Monuments_at_Mahabalipuram

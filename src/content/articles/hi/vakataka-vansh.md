@@ -4,10 +4,10 @@ era: prachin
 kab: { start: 250, end: 500, circa: true, label: "लगभग 250–500 ई." }
 published: 2026-11-24
 kaun: [विंध्यशक्ति, प्रवरसेन प्रथम, रुद्रसेन द्वितीय, प्रभावतीगुप्त, प्रवरसेन द्वितीय, हरिषेण, वराहदेव]
-kahan: [विदर्भ (महाराष्ट्र), नंदिवर्धन (नगरधन, नागपुर के पास), प्रवरपुर, वत्सगुल्म (वाशिम), अजंता]
+kahan: [विदर्भ (महाराष्ट्र), "नंदिवर्धन (नगरधन, नागपुर के पास)", प्रवरपुर, वत्सगुल्म (वाशिम), अजंता]
 saar: "तीसरी से पाँचवीं शताब्दी तक दक्कन के बड़े हिस्से पर शासन करने वाला वाकाटक वंश गुप्तों का समकालीन और संबंधी था। चंद्रगुप्त द्वितीय की पुत्री प्रभावतीगुप्त ने यहाँ संरक्षिका के रूप में राज चलाया, और राजा हरिषेण के समय अजंता की कई प्रसिद्ध गुफाएँ बनीं।"
 tags: [vakataka, dakkan, maharashtra, gupta-kaal, ajanta, vastukala]
-series: { id: maurya-se-gupta, order: 7 }
+series: { id: maurya-se-gupta, order: 8 }
 sources:
   - title: "Vakataka dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vakataka_dynasty

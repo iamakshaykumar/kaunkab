@@ -7,7 +7,7 @@ kaun: [लॉर्ड कर्ज़न, रवींद्रनाथ टै
 kahan: [कलकत्ता, ढाका, पूर्वी बंगाल और असम]
 saar: 16 अक्टूबर 1905 को वायसराय लॉर्ड कर्ज़न ने बंगाल प्रांत को दो भागों में बाँट दिया। इसके विरोध में उठे स्वदेशी और बहिष्कार आंदोलन ने राष्ट्रीय आंदोलन को जन-आंदोलन का रूप दिया, और अंततः 1911 में विभाजन रद्द करना पड़ा।
 tags: [swatantrata-sangram, swadeshi, bangal, bahishkar]
-series: { id: sudhar-aur-rashtriya-chetna, order: 9 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 11 }
 sources:
   - title: "NCERT, आधुनिक भारत का इतिहास / भारत और समकालीन विश्व — राष्ट्रवाद से संबंधित अध्याय"
   - title: "बिपिन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: स्वदेशी आंदोलन"

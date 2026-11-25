@@ -7,7 +7,7 @@ kaun: [लाला हरदयाल, सोहन सिंह भकना, 
 kahan: [सैन फ़्रांसिस्को (अमेरिका), एस्टोरिया (ओरेगन), वैंकूवर (कनाडा), बजबज (बंगाल), लाहौर, पंजाब]
 saar: 1913 में अमेरिका और कनाडा में बसे भारतीयों — ख़ासकर पंजाबी किसानों और मज़दूरों — ने ग़दर पार्टी बनाई, जिसका लक्ष्य सशस्त्र क्रांति से अंग्रेज़ी राज को उखाड़ फेंकना था। 1915 की उसकी योजना विफल रही, पर करतार सिंह सराभा जैसे शहीदों ने आगे की क्रांतिकारी पीढ़ी को प्रेरित किया।
 tags: [swatantrata-sangram, kranti, pravasi-bharatiya, punjab, gadar]
-series: { id: krantikari-andolan, order: 4 }
+series: { id: krantikari-andolan, order: 5 }
 sources:
   - title: "बिपन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: ग़दर आंदोलन"
   - title: "Ghadar Movement — Wikipedia"

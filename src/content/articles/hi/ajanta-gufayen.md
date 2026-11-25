@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -200, end: 480, circa: true, label: "लगभग दूसरी सदी ई.पू. से पाँचवीं सदी ई. के अंत तक" }
 published: 2026-11-24
 kaun: [हरिषेण (वाकाटक सम्राट), वराहदेव, जॉन स्मिथ]
-kahan: [अजंता (छत्रपति संभाजीनगर ज़िला, महाराष्ट्र), वाघोरा नदी]
+kahan: ["अजंता (छत्रपति संभाजीनगर ज़िला, महाराष्ट्र)", वाघोरा नदी]
 saar: महाराष्ट्र में वाघोरा नदी की घोड़े की नाल जैसी घाटी में चट्टान काटकर बनाई गई लगभग 30 बौद्ध गुफ़ाएँ अपने भित्ति-चित्रों के लिए विश्व-प्रसिद्ध हैं। ये दो चरणों में बनीं — सातवाहन काल में और फिर पाँचवीं सदी में वाकाटक शासन के दौरान।
 tags: [kala, bauddh-dharm, maharashtra, vishwa-dharohar, gufa]
-series: { id: prachin-gyan-aur-kala, order: 3 }
+series: { id: prachin-gyan-aur-kala, order: 3 }
 sources:
   - title: "Ajanta Caves — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/242/

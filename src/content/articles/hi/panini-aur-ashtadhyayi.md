@@ -7,7 +7,7 @@ kaun: [पाणिनि, कात्यायन, पतंजलि, दा�
 kahan: [शलातुर (गांधार), तक्षशिला]
 saar: गांधार के शलातुर गाँव के पाणिनि ने लगभग पाँचवीं-चौथी सदी ई.पू. में संस्कृत भाषा के नियमों को लगभग चार हज़ार छोटे सूत्रों में बाँध दिया। उनकी 'अष्टाध्यायी' आज भी संस्कृत व्याकरण की आधारशिला है और आधुनिक भाषाविज्ञान के विद्वान भी इसकी सूक्ष्मता से चकित होते हैं।
 tags: [sahitya, sanskrit, vyakaran, gandhar, vigyan]
-series: { id: vaidik-se-magadh, order: 9 }
+series: { id: vaidik-se-magadh, order: 10 }
 sources:
   - title: "Pāṇini — Wikipedia"
     url: https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini

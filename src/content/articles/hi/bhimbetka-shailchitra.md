@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -10000, circa: true, label: "लगभग 10,000 ई.पू. (सबसे पुराने चित्र, मध्यपाषाण काल) से ऐतिहासिक काल तक; मानव-निवास इससे भी बहुत पुराना" }
 published: 2026-11-24
 kaun: [विष्णु श्रीधर वाकणकर, डब्ल्यू. किनकेड]
-kahan: [भीमबेटका (रायसेन ज़िला, मध्य प्रदेश), रातापानी वन्यजीव अभयारण्य, विंध्य पर्वतमाला]
+kahan: ["भीमबेटका (रायसेन ज़िला, मध्य प्रदेश)", रातापानी वन्यजीव अभयारण्य, विंध्य पर्वतमाला]
 saar: मध्य प्रदेश में भोपाल के पास विंध्य की पहाड़ियों में फैले भीमबेटका के सैकड़ों शैलाश्रयों में हज़ारों साल पुराने चित्र बने हैं — शिकार, नृत्य, जानवर और घुड़सवार। 1957 में वी. एस. वाकणकर ने इनके प्रागैतिहासिक महत्व को पहचाना और 2003 में यह यूनेस्को विश्व धरोहर बना।
 tags: [shailchitra, pragitihasik, madhyapradesh, vishwa-dharohar, puratattva]
-series: { id: sabhyata-ki-shuruaat, order: 1 }
+series: { id: sabhyata-ki-shuruaat, order: 1 }
 sources:
   - title: "Bhimbetka rock shelters — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bhimbetka_rock_shelters

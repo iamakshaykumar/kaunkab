@@ -7,7 +7,7 @@ kaun: [सोमवंशी राजा ययाति (जजाति क�
 kahan: [भुवनेश्वर (ओडिशा), बिंदुसागर सरोवर, एकाम्र क्षेत्र]
 saar: "भुवनेश्वर का लिंगराज मंदिर ओडिशा की कलिंग स्थापत्य शैली का सबसे परिपक्व उदाहरण माना जाता है। लगभग 55 मीटर ऊँचे शिखर वाला यह शिव मंदिर 11वीं शताब्दी में सोमवंशी शासकों के समय बना और बाद में गंग शासकों ने इसका विस्तार किया। यहाँ शिव की पूजा हरिहर (शिव-विष्णु) रूप में भी की जाती है।"
 tags: [mandir, vastukala, odisha, kalinga-shaili, shiv-upasana]
-series: { id: mandir-sthapatya, order: 5 }
+series: { id: mandir-sthapatya, order: 6 }
 sources:
   - title: "Lingaraja Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Lingaraja_Temple

@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -600, end: 470, circa: true, label: "लगभग छठी सदी ई.पू. से पाँचवीं सदी ई. तक" }
 published: 2026-11-24
 kaun: [आंभि, चंद्रगुप्त मौर्य, अशोक, जीवक, अलेक्ज़ेंडर कनिंघम, जॉन मार्शल]
-kahan: [तक्षशिला (रावलपिंडी ज़िला, पंजाब, पाकिस्तान), गांधार]
+kahan: ["तक्षशिला (रावलपिंडी ज़िला, पंजाब, पाकिस्तान)", गांधार]
 saar: आज के पाकिस्तान में रावलपिंडी के पास स्थित तक्षशिला प्राचीन गांधार का प्रमुख नगर था, जहाँ से भारत, मध्य एशिया और ईरान को जोड़ने वाले व्यापार-मार्ग गुज़रते थे। यह अपने प्रसिद्ध आचार्यों के कारण दूर-दूर तक शिक्षा का केंद्र माना जाता था। इसके खंडहर 1980 से यूनेस्को विश्व धरोहर हैं।
 tags: [gandhara, shiksha, nagar, puratattva, vishwa-dharohar]
-series: { id: vaidik-se-magadh, order: 5 }
+series: { id: vaidik-se-magadh, order: 5 }
 sources:
   - title: "Taxila — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/139/

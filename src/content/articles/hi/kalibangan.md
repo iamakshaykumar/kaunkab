@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -3500, end: -1750, circa: true, label: "लगभग 3500 – 1750 ई.पू. (अनुमानित; कालक्रम पर विद्वानों में मतभेद)" }
 published: 2026-11-25
 kaun: [लुइजी पियो तेस्सितोरी, अमलानंद घोष, बी. बी. लाल, बी. के. थापर]
-kahan: [कालीबंगा (हनुमानगढ़ ज़िला, राजस्थान), घग्गर नदी]
+kahan: ["कालीबंगा (हनुमानगढ़ ज़िला, राजस्थान)", घग्गर नदी]
 saar: राजस्थान के हनुमानगढ़ ज़िले में घग्गर नदी के किनारे बसा कालीबंगा उन गिने-चुने स्थलों में है जहाँ हड़प्पा सभ्यता से पहले और हड़प्पा काल — दोनों की बस्तियाँ एक के ऊपर एक मिली हैं। यहाँ दुनिया के सबसे पुराने ज्ञात जुते हुए खेत और कतार में बनी अग्नि-वेदियाँ मिली हैं।
 tags: [sindhu-ghati, harappa, rajasthan, puratattva, krishi, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 4 }
+series: { id: sabhyata-ki-shuruaat, order: 5 }
 sources:
   - title: "Kalibangan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kalibangan

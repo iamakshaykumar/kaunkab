@@ -7,7 +7,7 @@ kaun: [आदि शंकराचार्य, गोविंद भगवत
 kahan: [कालडी (केरल), शृंगेरी, द्वारका, पुरी, ज्योतिर्मठ, केदारनाथ]
 saar: "केरल के कालडी में जन्मे आदि शंकराचार्य ने उपनिषद, ब्रह्मसूत्र और भगवद्गीता पर भाष्य लिखकर अद्वैत वेदांत को व्यवस्थित रूप दिया। परंपरा उन्हें देश के चार कोनों में मठों की स्थापना का श्रेय देती है।"
 tags: [darshan, vedant, dharm, kerala, sant]
-series: { id: bhakti-aur-sufi, order: 2 }
+series: { id: bhakti-aur-sufi, order: 3 }
 sources:
   - title: "Neil Dalal — Śaṅkara, Stanford Encyclopedia of Philosophy (2021)"
     url: https://plato.stanford.edu/entries/shankara/

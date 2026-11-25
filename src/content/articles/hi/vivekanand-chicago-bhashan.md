@@ -7,7 +7,7 @@ kaun: [स्वामी विवेकानंद, रामकृष्ण 
 kahan: [शिकागो (अमेरिका), आर्ट इंस्टीट्यूट ऑफ़ शिकागो, कलकत्ता]
 saar: 11 सितंबर 1893 को शिकागो में आयोजित विश्व धर्म महासभा के उद्घाटन सत्र में स्वामी विवेकानंद ने "अमेरिका के बहनो और भाइयो" से अपना भाषण शुरू किया। सहिष्णुता और सभी धर्मों की स्वीकृति के उनके संदेश ने पश्चिम में भारत और वेदांत की नई छवि बनाई।
 tags: [dharm, punarjagaran, vivekanand, videsh]
-series: { id: sudhar-aur-rashtriya-chetna, order: 8 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 9 }
 sources:
   - title: "Swami Vivekananda — Wikipedia"
     url: https://en.wikipedia.org/wiki/Swami_Vivekananda

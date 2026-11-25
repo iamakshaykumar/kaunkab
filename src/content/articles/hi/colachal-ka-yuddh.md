@@ -4,10 +4,10 @@ era: madhyakaal
 kab: { start: 1741, month: 8, day: 10 }
 published: 2026-11-24
 kaun: [मार्तंड वर्मा, रामय्यन दलवा, यूस्टेकियस डी लैनॉय, गुस्ताफ़ विलेम फ़ान इम्हॉफ़]
-kahan: [कोलाचल (कुलचल, कन्याकुमारी ज़िला), त्रावणकोर, पद्मनाभपुरम, उदयगिरि क़िला]
+kahan: ["कोलाचल (कुलचल, कन्याकुमारी ज़िला)", त्रावणकोर, पद्मनाभपुरम, उदयगिरि क़िला]
 saar: अगस्त 1741 में त्रावणकोर के राजा मार्तंड वर्मा की सेना ने दक्षिणी तट पर कोलाचल में डच ईस्ट इंडिया कंपनी की सेना को आत्मसमर्पण के लिए मजबूर किया। यह किसी भारतीय राज्य द्वारा एक यूरोपीय शक्ति पर दुर्लभ निर्णायक जीत थी, जिसके बाद मालाबार में डच प्रभाव घटने लगा।
 tags: [travancore, kerala, dakshin-bharat, dutch, yuddh, nausena]
-series: { id: company-raj, order: 2 }
+series: { id: company-raj, order: 2 }
 sources:
   - title: "Battle of Colachel — Wikipedia"
     url: https://en.wikipedia.org/wiki/Battle_of_Colachel

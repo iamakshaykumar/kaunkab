@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -303, end: -290, circa: true, label: "लगभग 303 ई.पू. के बाद (यात्रा की ठीक तिथि अनिश्चित)" }
 published: 2026-11-24
 kaun: [मेगस्थनीज़, चंद्रगुप्त मौर्य, सेल्यूकस प्रथम, एरियन, स्ट्रैबो]
-kahan: [पाटलिपुत्र (पटना, बिहार), अराकोसिया (कंधार क्षेत्र)]
+kahan: ["पाटलिपुत्र (पटना, बिहार)", अराकोसिया (कंधार क्षेत्र)]
 saar: यूनानी राजदूत मेगस्थनीज़ सेल्यूकस प्रथम की ओर से चंद्रगुप्त मौर्य के दरबार में आया और उसने भारत पर 'इंडिका' नाम का ग्रंथ लिखा। मूल ग्रंथ खो चुका है, पर एरियन, स्ट्रैबो और डायोडोरस जैसे बाद के लेखकों के उद्धरणों में इसके अंश बचे हैं — जिनमें पाटलिपुत्र का वर्णन और भारतीय समाज के "सात वर्ग" प्रसिद्ध हैं।
 tags: [maurya, chandragupt-maurya, yunani, videshi-yatri, pataliputra]
-series: { id: maurya-samrajya-ki-kahani, order: 5 }
+series: { id: maurya-samrajya-ki-kahani, order: 5 }
 sources:
   - title: "Megasthenes — Wikipedia"
     url: https://en.wikipedia.org/wiki/Megasthenes

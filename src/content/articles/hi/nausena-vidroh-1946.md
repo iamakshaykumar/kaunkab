@@ -7,7 +7,7 @@ kaun: [एम. एस. ख़ान, मदन सिंह, बलाई चं
 kahan: [बंबई (मुंबई), कराची, कलकत्ता, मद्रास]
 saar: 18 फ़रवरी 1946 को बंबई के नौसैनिक प्रशिक्षण केंद्र एचएमआईएस तलवार में ख़राब भोजन और नस्लीय अपमान के विरोध में शुरू हुई नाविकों की हड़ताल कुछ ही दिनों में रॉयल इंडियन नेवी के दर्जनों जहाज़ों और तटीय ठिकानों तक फैल गई। 23 फ़रवरी को नाविकों ने आत्मसमर्पण किया, पर इस विद्रोह ने दिखा दिया कि ब्रिटिश राज अब भारतीय सैनिकों की वफ़ादारी पर भरोसा नहीं कर सकता।
 tags: [vidroh-1946, swatantrata-sangram, nausena, bombay, angrezi-shasan]
-series: { id: azadi-ki-raah, order: 14 }
+series: { id: azadi-ki-raah, order: 17 }
 sources:
   - title: "Royal Indian Navy mutiny — Wikipedia"
     url: https://en.wikipedia.org/wiki/Royal_Indian_Navy_mutiny

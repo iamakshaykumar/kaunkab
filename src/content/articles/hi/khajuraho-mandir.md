@@ -4,10 +4,10 @@ era: madhyakaal
 kab: { start: 950, end: 1050, circa: true, label: "मुख्य निर्माण काल: लगभग 950–1050 ई." }
 published: 2026-11-24
 kaun: [चंदेल वंश, यशोवर्मन, धंग, विद्याधर, टी. एस. बर्ट]
-kahan: [खजुराहो (छतरपुर ज़िला, मध्य प्रदेश), बुंदेलखंड]
+kahan: ["खजुराहो (छतरपुर ज़िला, मध्य प्रदेश)", बुंदेलखंड]
 saar: "दसवीं-ग्यारहवीं शताब्दी में बुंदेलखंड के चंदेल राजाओं ने खजुराहो में हिंदू और जैन मंदिरों का एक भव्य समूह बनवाया। नागर शैली के ऊँचे शिखरों और बारीक मूर्तिकला के लिए प्रसिद्ध ये मंदिर 1986 से यूनेस्को विश्व धरोहर हैं।"
 tags: [mandir, vastukala, chandel-vansh, madhyapradesh, jain-dharm, vishwa-dharohar]
-series: { id: mandir-sthapatya, order: 2 }
+series: { id: mandir-sthapatya, order: 3 }
 sources:
   - title: "Khajuraho Group of Monuments — Wikipedia"
     url: https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments

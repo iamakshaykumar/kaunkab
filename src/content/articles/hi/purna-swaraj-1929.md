@@ -7,7 +7,7 @@ kaun: [जवाहरलाल नेहरू, महात्मा गां
 kahan: [लाहौर, रावी नदी का तट]
 saar: दिसंबर 1929 में लाहौर अधिवेशन में जवाहरलाल नेहरू की अध्यक्षता में कांग्रेस ने 'पूर्ण स्वराज' यानी पूर्ण स्वतंत्रता को अपना लक्ष्य घोषित किया। 26 जनवरी 1930 को देशभर में पहला स्वतंत्रता दिवस मनाया गया।
 tags: [swatantrata-sangram, congress, nehru, purna-swaraj]
-series: { id: azadi-ki-raah, order: 8 }
+series: { id: azadi-ki-raah, order: 9 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: महात्मा गांधी और राष्ट्रीय आंदोलन"
     url: https://ncert.nic.in/textbook/pdf/lehs302.pdf

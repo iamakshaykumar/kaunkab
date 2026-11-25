@@ -4,10 +4,10 @@ era: prachin
 kab: { start: -2650, end: -1450, circa: true, label: "लगभग 2650 – 1450 ई.पू. (उत्खनन का मूल कालक्रम; नए अध्ययन शुरुआत और पहले मानते हैं)" }
 published: 2026-11-24
 kaun: [जगत पति जोशी, रवींद्र सिंह बिष्ट, शंभूदान गढ़वी]
-kahan: [धोलावीरा (खडीर बेट, भचाऊ तालुका, कच्छ ज़िला, गुजरात), कच्छ का बड़ा रण]
+kahan: ["धोलावीरा (खडीर बेट, भचाऊ तालुका, कच्छ ज़िला, गुजरात)", कच्छ का बड़ा रण]
 saar: गुजरात के कच्छ के रण में खडीर बेट द्वीप पर बसा धोलावीरा हड़प्पा सभ्यता के सबसे बड़े नगरों में से एक था। लगभग पूरी तरह पत्थर से बने इस नगर में बाँधों और जलाशयों की अनोखी जल-व्यवस्था मिली है, और यहीं से सिंधु लिपि के दस बड़े चिह्नों वाला एक "साइनबोर्ड" भी मिला। 2021 में यह यूनेस्को विश्व धरोहर बना।
 tags: [sindhu-ghati, harappa, gujarat, puratattva, jal-prabandhan, vishwa-dharohar]
-series: { id: sabhyata-ki-shuruaat, order: 6 }
+series: { id: sabhyata-ki-shuruaat, order: 7 }
 sources:
   - title: "Dholavira — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dholavira

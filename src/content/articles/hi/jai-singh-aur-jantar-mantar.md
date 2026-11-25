@@ -7,7 +7,7 @@ kaun: [सवाई जयसिंह द्वितीय, विद्या
 kahan: [आमेर, जयपुर, दिल्ली, उज्जैन, वाराणसी, मथुरा]
 saar: आमेर के कछवाहा शासक सवाई जयसिंह द्वितीय (1688–1743) ने 1727 में योजनाबद्ध नगर जयपुर की नींव रखी और दिल्ली, जयपुर, उज्जैन, वाराणसी व मथुरा में खगोलीय वेधशालाएँ — जंतर-मंतर — बनवाईं। जयपुर का जंतर-मंतर 2010 से यूनेस्को विश्व धरोहर है।
 tags: [rajput, jaipur, khagol-vigyan, jantar-mantar, vastukala, unesco]
-series: { id: mughal-shikhar-aur-patan, order: 7 }
+series: { id: mughal-shikhar-aur-patan, order: 9 }
 sources:
   - title: "Jai Singh II — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jai_Singh_II
