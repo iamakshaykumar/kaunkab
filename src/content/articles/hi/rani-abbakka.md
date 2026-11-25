@@ -7,7 +7,7 @@ kaun: [रानी अब्बक्का चौटा, तिरुमल �
 kahan: [उल्लाल, मंगलौर, तुलुनाडु (तटीय कर्नाटक)]
 saar: सोलहवीं सदी में तटीय कर्नाटक के बंदरगाह उल्लाल की रानी अब्बक्का चौटा ने पुर्तगालियों को कर देने से इनकार किया और कई बार उनके हमलों का सामना किया। लोक-परंपरा उन्हें 'अभय रानी' कहती है, हालाँकि इतिहास में एक से अधिक 'अब्बक्का' रानियों की कहानियाँ आपस में घुल-मिल गई हैं।
 tags: [veerangana, portugali, karnataka, tulunadu, mahila-itihas, nausena]
-series: { id: kshetriya-shaktiyan, order: 10 }
+series: { id: kshetriya-shaktiyan, order: 13 }
 sources:
   - title: "Abbakka Chowta — Wikipedia"
     url: https://en.wikipedia.org/wiki/Abbakka_Chowta

@@ -7,7 +7,7 @@ kaun: [इरावतम महादेवन, अस्को पारपो
 kahan: ["हड़प्पा (पंजाब, पाकिस्तान)", "मोहनजोदड़ो (सिंध, पाकिस्तान)", "धोलावीरा (कच्छ, गुजरात)", "लोथल (गुजरात)"]
 saar: सिंधु घाटी सभ्यता के लोग मुहरों, ठीकरों और ताम्र-पट्टिकाओं पर छोटे-छोटे चिह्नों की पंक्तियाँ खोदते थे। हज़ारों लेख मिलने और लगभग 400 से अधिक अलग चिह्न पहचान लिए जाने के बावजूद यह लिपि आज तक पढ़ी नहीं जा सकी है — न इसकी भाषा पता है, न यह पूरी तरह तय है कि यह किसी भाषा को लिखती भी थी या नहीं।
 tags: [sindhu-ghati, harappa, lipi, abhilekh, puratatva, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 5 }
+series: { id: sabhyata-ki-shuruaat, order: 6 }
 sources:
   - title: "Indus script — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indus_script

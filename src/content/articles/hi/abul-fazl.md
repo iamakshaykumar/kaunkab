@@ -7,7 +7,7 @@ kaun: [अबुल फ़ज़ल, शेख़ मुबारक, फ़ै�
 kahan: [आगरा, फ़तेहपुर सीकरी, दक्कन, नरवर, आंतरी (मध्य प्रदेश)]
 saar: अकबर के दरबारी इतिहासकार और सलाहकार अबुल फ़ज़ल ने 'अकबरनामा' और उसका तीसरा खंड 'आईन-ए-अकबरी' लिखा, जो मुग़ल शासन-व्यवस्था का सबसे विस्तृत समकालीन विवरण है। 1602 में दक्कन से लौटते समय शहज़ादे सलीम की प्रेरणा पर उनकी हत्या कर दी गई।
 tags: [mughal-samrajya, akbar, itihas-lekhan, farsi-sahitya, navratna, abul-fazl]
-series: { id: mughal-samrajya-ka-uday, order: 14 }
+series: { id: mughal-samrajya-ka-uday, order: 15 }
 sources:
   - title: "Abu'l-Fazl ibn Mubarak — Wikipedia"
     url: https://en.wikipedia.org/wiki/Abu%27l-Fazl_ibn_Mubarak

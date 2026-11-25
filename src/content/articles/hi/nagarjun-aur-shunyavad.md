@@ -7,7 +7,7 @@ kaun: [नागार्जुन, आर्यदेव, चंद्रकी
 kahan: [दक्षिण भारत, "श्रीपर्वत (आंध्र प्रदेश, परंपरा के अनुसार)"]
 saar: दक्षिण भारत के बौद्ध दार्शनिक नागार्जुन (लगभग 150–250 ई.) ने माध्यमक दर्शन की नींव रखी। उनकी 'मूलमध्यमककारिका' सिखाती है कि कोई भी वस्तु अपने आप में, स्वतंत्र स्वभाव के साथ नहीं होती — सब कुछ दूसरी चीज़ों पर निर्भर होकर उत्पन्न होता है, और यही 'शून्यता' है। तिब्बती परंपरा उन्हें 'दूसरा बुद्ध' कहती है।
 tags: [bauddh-dharm, mahayan, darshan, nagarjun, dakshin-bharat, prachin-bharat]
-series: { id: maurya-se-gupta, order: 8 }
+series: { id: maurya-se-gupta, order: 10 }
 sources:
   - title: "Nagarjuna — Wikipedia"
     url: https://en.wikipedia.org/wiki/Nagarjuna

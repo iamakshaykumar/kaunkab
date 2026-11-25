@@ -7,7 +7,7 @@ kaun: [एच. डी. सांकलिया, एम. के. ढवलीक
 kahan: [आहाड़ और गिलुंद (राजस्थान), नवदाटोली और कायथा (मध्य प्रदेश), इनामगाँव और दायमाबाद (महाराष्ट्र)]
 saar: हड़प्पा नगरों के समकालीन और उनके बाद, पश्चिमी और मध्य भारत में ऐसे किसान समुदाय फले-फूले जो पत्थर के औज़ारों के साथ ताँबे का भी उपयोग करते थे। राजस्थान की आहाड़-बनास, मध्य प्रदेश की मालवा और महाराष्ट्र की जोरवे संस्कृति इन्हीं "ताम्रपाषाण" संस्कृतियों के प्रमुख उदाहरण हैं।
 tags: [tamrapashan, puratattva, krishi, rajasthan, maharashtra, madhyapradesh, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 10 }
+series: { id: sabhyata-ki-shuruaat, order: 11 }
 sources:
   - title: "Ahar–Banas culture — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ahar–Banas_culture

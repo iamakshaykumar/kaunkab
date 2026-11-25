@@ -7,7 +7,7 @@ kaun: [जवाहरलाल नेहरू, एदुआर गूबेर
 kahan: [चंदननगर, पांडिचेरी, कारैकल, माहे, यानम, "किझूर (पुदुच्चेरी)"]
 saar: आज़ादी के बाद भारत में फ़्रांस की पाँच बस्तियाँ बची थीं। 1949 के जनमत संग्रह के बाद चंदननगर 1950 में व्यवहारिक रूप से और 1952 में क़ानूनी रूप से भारत का हिस्सा बना। पांडिचेरी, कारैकल, माहे और यानम 18 अक्टूबर 1954 के किझूर मतदान के बाद 1 नवंबर 1954 को वास्तविक रूप से भारत को सौंपे गए, जबकि क़ानूनी हस्तांतरण 16 अगस्त 1962 को पूरा हुआ।
 tags: [french-india, puducherry, chandannagar, upniveshvad, swatantra-bharat, vilay, kizhoor]
-series: { id: naye-bharat-ka-nirman, order: 8 }
+series: { id: naye-bharat-ka-nirman, order: 10 }
 sources:
   - title: "French India — Wikipedia"
     url: https://en.wikipedia.org/wiki/French_India

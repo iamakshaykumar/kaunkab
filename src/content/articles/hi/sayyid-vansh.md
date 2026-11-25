@@ -7,7 +7,7 @@ kaun: [ख़िज़्र ख़ान, मुबारक शाह, मु�
 kahan: [दिल्ली, मुल्तान, बदायूँ, सरहिंद]
 saar: तैमूर के आक्रमण से टूटी दिल्ली सल्तनत पर 28 मई 1414 को मुल्तान के सूबेदार ख़िज़्र ख़ान ने अधिकार किया और सैयद वंश की नींव रखी। चार शासकों वाला यह वंश 1451 तक चला, पर दिल्ली के आसपास के छोटे इलाक़े तक सिमटा रहा। अंत में आलम शाह ने गद्दी बहलोल लोदी को सौंप दी।
 tags: [dilli-saltanat, sayyid-vansh, sultan, uttar-bharat]
-series: { id: dilli-saltanat-ki-kahani, order: 12 }
+series: { id: dilli-saltanat-ki-kahani, order: 15 }
 sources:
   - title: "Sayyid dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sayyid_dynasty

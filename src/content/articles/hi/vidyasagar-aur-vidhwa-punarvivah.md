@@ -7,7 +7,7 @@ kaun: [ईश्वरचंद्र विद्यासागर, लॉर�
 kahan: [कलकत्ता (कोलकाता), "बीरसिंह (मेदिनीपुर, बंगाल)"]
 saar: संस्कृत के प्रकांड विद्वान ईश्वरचंद्र विद्यासागर ने शास्त्रों के तर्क और जनमत के सहारे हिंदू विधवाओं के पुनर्विवाह के अधिकार के लिए आंदोलन चलाया। उनके प्रयासों से 26 जुलाई 1856 को हिंदू विधवा पुनर्विवाह अधिनियम लागू हुआ, जो सती-निषेध (1829) के बाद सबसे बड़ा सामाजिक सुधार क़ानून था।
 tags: [samaj-sudhar, mahila-itihas, bangal, punarjagaran, kanoon]
-series: { id: sudhar-aur-rashtriya-chetna, order: 4 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 6 }
 sources:
   - title: "Hindu Widows' Remarriage Act, 1856 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Hindu_Widows%27_Remarriage_Act,_1856

@@ -7,7 +7,7 @@ kaun: [अजातशत्रु, उदयिन (उदयभद्र), म
 kahan: ["पाटलिपुत्र (पटना, बिहार)", कुम्हरार, बुलंदीबाग़]
 saar: गंगा और सोन नदियों के संगम के पास एक छोटे दुर्ग "पाटलिग्राम" के रूप में शुरू हुआ पाटलिपुत्र आगे चलकर मगध, नंद, मौर्य और गुप्त राजाओं की राजधानी बना। यूनानी राजदूत मेगस्थनीज़ ने इसे भारत का सबसे बड़ा नगर बताया, और पटना के कुम्हरार में मिला मौर्यकालीन "80 स्तंभों वाला सभा-भवन" इसकी भव्यता का गवाह है।
 tags: [pataliputra, magadh, maurya, patna, bihar, nagar, puratattva, prachin-bharat]
-series: { id: maurya-samrajya-ki-kahani, order: 6 }
+series: { id: maurya-samrajya-ki-kahani, order: 7 }
 sources:
   - title: "Pataliputra — Wikipedia"
     url: https://en.wikipedia.org/wiki/Pataliputra

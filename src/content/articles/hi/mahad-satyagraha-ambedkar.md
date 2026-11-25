@@ -7,7 +7,7 @@ kaun: [डॉ. भीमराव आंबेडकर, सुरेंद्�
 kahan: ["महाड (रायगढ़, महाराष्ट्र)", चवदार तालाब]
 saar: 20 मार्च 1927 को डॉ. भीमराव आंबेडकर ने महाड के सार्वजनिक चवदार तालाब से पानी पीकर अछूत माने जाने वाले समुदायों के समान अधिकार का दावा किया। 25 दिसंबर 1927 को इसी आंदोलन में मनुस्मृति का प्रतीकात्मक दहन किया गया।
 tags: [samaj-sudhar, ambedkar, satyagraha, dalit-andolan]
-series: { id: sudhar-aur-rashtriya-chetna, order: 16 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 23 }
 sources:
   - title: "डॉ. बाबासाहेब आंबेडकर: लेखन और भाषण (Writings and Speeches), महाराष्ट्र सरकार"
   - title: "धनंजय कीर — डॉ. आंबेडकर: जीवन और मिशन (Dr. Ambedkar: Life and Mission)"

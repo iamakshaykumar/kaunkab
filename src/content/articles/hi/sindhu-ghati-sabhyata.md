@@ -7,7 +7,7 @@ kaun: [दयाराम साहनी, राखालदास बनर्
 kahan: [हड़प्पा, मोहनजोदड़ो, लोथल, धोलावीरा, कालीबंगा]
 saar: दुनिया की सबसे पुरानी नगरीय सभ्यताओं में से एक, जिसके योजनाबद्ध शहर, पक्की ईंटों के घर और ढकी हुई नालियाँ आज भी लोगों को हैरान करती हैं।
 tags: [sabhyata, nagar, puratattva]
-series: { id: sabhyata-ki-shuruaat, order: 3 }
+series: { id: sabhyata-ki-shuruaat, order: 4 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 1: ईंटें, मनके तथा अस्थियाँ"
   - title: "Indus Valley Civilisation — Wikipedia"

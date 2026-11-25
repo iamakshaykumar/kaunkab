@@ -7,7 +7,7 @@ kaun: [महाराजा रणजीत सिंह, महा सिं�
 kahan: [लाहौर, गुजरांवाला, अमृतसर, मुल्तान, कश्मीर, पेशावर]
 saar: 7 जुलाई 1799 को उन्नीस वर्षीय रणजीत सिंह ने लाहौर पर अधिकार किया और 1801 में पंजाब के महाराजा बने। अगले चार दशकों में उन्होंने बिखरी सिख मिसलों को जोड़कर सतलुज से ख़ैबर तक फैला शक्तिशाली सिख साम्राज्य खड़ा किया।
 tags: [samrajya, sikh-dharm, punjab]
-series: { id: sikh-itihas, order: 10 }
+series: { id: sikh-itihas, order: 11 }
 sources:
   - title: "Ranjit Singh — Encyclopaedia Britannica"
     url: https://www.britannica.com/biography/Ranjit-Singh-Sikh-maharaja

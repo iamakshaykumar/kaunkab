@@ -7,7 +7,7 @@ kaun: [चंगेज़ ख़ान, जलालुद्दीन मंग
 kahan: [सिंधु नदी, लाहौर, मुल्तान, दिल्ली, सीरी, अमरोहा, रावी नदी]
 saar: "1221 में चंगेज़ ख़ान की सेना सिंधु तक पहुँची और अगले लगभग 85 वर्षों तक मंगोल उत्तर-पश्चिम भारत के लिए सबसे बड़ा बाहरी ख़तरा बने रहे। लाहौर 1241 में लूटा गया और 1299 तथा 1303 में मंगोल दिल्ली तक आ पहुँचे। इल्तुतमिश की सावधान कूटनीति, बलबन की सीमा-रक्षा और अलाउद्दीन ख़िलजी की विशाल स्थायी सेना ने अंततः 1306 तक इस ख़तरे को रोक दिया।"
 tags: [mangol, dilli-saltanat, yuddh, seema-raksha, khilji-vansh]
-series: { id: dilli-saltanat-ki-kahani, order: 6 }
+series: { id: dilli-saltanat-ki-kahani, order: 8 }
 sources:
   - title: "Mongol invasions of India — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mongol_invasions_of_India

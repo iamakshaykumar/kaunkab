@@ -7,7 +7,7 @@ kaun: [मॉर्टिमर व्हीलर, अलेक्ज़ें�
 kahan: ["ब्रह्मगिरि (चित्रदुर्ग, कर्नाटक)", "आदिचनल्लूर (थूथुकुडी, तमिलनाडु)", "हिरेबेनकल (कोप्पल, कर्नाटक)", हल्लूर (कर्नाटक)]
 saar: दक्षिण भारत के लौह युग में लोग अपने मृतकों को बड़े-बड़े पत्थरों से बनी क़ब्रों — डोलमेन, सिस्ट, पत्थर-घेरों और कलशों — में दफ़नाते थे। इन्हें "महापाषाण" (मेगालिथ) कहा जाता है। ब्रह्मगिरि, आदिचनल्लूर और हिरेबेनकल इस संस्कृति के प्रसिद्ध स्थल हैं।
 tags: [mahapashan, lauh-yug, dakshin-bharat, puratattva, karnataka, tamilnadu, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 11 }
+series: { id: sabhyata-ki-shuruaat, order: 12 }
 sources:
   - title: "Brahmagiri archaeological site — Wikipedia"
     url: https://en.wikipedia.org/wiki/Brahmagiri_archaeological_site

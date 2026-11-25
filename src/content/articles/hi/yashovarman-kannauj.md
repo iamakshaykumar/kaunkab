@@ -7,7 +7,7 @@ kaun: [यशोवर्मन, वाक्पतिराज, भवभूत
 kahan: [कन्नौज, "मगध और गौड़ (बंगाल)", कश्मीर]
 saar: "हर्षवर्धन की मृत्यु के बाद कई दशकों तक कन्नौज में कोई बड़ी शक्ति नहीं उभरी। आठवीं सदी के पूर्वार्ध में यशोवर्मन ने कन्नौज को फिर उत्तर भारत की राजनीति के केंद्र में ला खड़ा किया। उनकी विजयों का बखान वाक्पति के प्राकृत काव्य 'गउडवहो' में है, पर कश्मीर के ललितादित्य से हार के बाद उनकी शक्ति टूट गई।"
 tags: [kannauj, rajvansh, prakrit-sahitya, kashmir, uttar-bharat]
-series: { id: harsh-se-tarain, order: 4 }
+series: { id: harsh-se-tarain, order: 5 }
 sources:
   - title: "Yashovarman — Wikipedia"
     url: https://en.wikipedia.org/wiki/Yashovarman

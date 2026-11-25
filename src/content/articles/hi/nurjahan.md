@@ -7,7 +7,7 @@ kaun: [नूरजहाँ (मेहरुन्निसा), जहाँ�
 kahan: [क़ंधार, आगरा, लाहौर, कश्मीर]
 saar: 1611 में जहाँगीर से विवाह के बाद मेहरुन्निसा 'नूरजहाँ' बनीं और मुग़ल दरबार की सबसे प्रभावशाली हस्तियों में गिनी जाने लगीं। उनके नाम से सिक्के ढले, शाही फ़रमान जारी हुए, और आगरा में अपने पिता एतमादुद्दौला के लिए बनवाया उनका मक़बरा मुग़ल स्थापत्य का एक रत्न है।
 tags: [mughal-samrajya, jahangir, mahila-itihas, sthapatya, agra]
-series: { id: mughal-shikhar-aur-patan, order: 2 }
+series: { id: mughal-shikhar-aur-patan, order: 3 }
 sources:
   - title: "Ruby Lal — Empress: The Astonishing Reign of Nur Jahan (W. W. Norton, 2018)"
   - title: "जहाँगीर — तुज़ुक-ए-जहाँगीरी (जहाँगीरनामा), अनु. W. M. Thackston"

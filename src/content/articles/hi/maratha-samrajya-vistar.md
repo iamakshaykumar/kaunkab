@@ -7,7 +7,7 @@ kaun: [छत्रपति शाहू, पेशवा बालाजी �
 kahan: [पुणे (शनिवार वाड़ा), भोपाल, दिल्ली, अटक, पानीपत]
 saar: छत्रपति शिवाजी महाराज द्वारा स्थापित हिंदवी स्वराज्य 18वीं सदी में पेशवाओं के नेतृत्व में एक अखिल भारतीय साम्राज्य में बदल गया। 'कटक से अटक' तक मराठा पताका फहराई और मराठे 18वीं सदी की सबसे बड़ी शक्ति बने।
 tags: [maratha, peshwa, samrajya-vistar]
-series: { id: maratha-shakti, order: 6 }
+series: { id: maratha-shakti, order: 9 }
 sources:
   - title: "जी. एस. सरदेसाई — न्यू हिस्ट्री ऑफ द मराठाज (New History of the Marathas, भाग 2)"
     url: https://archive.org/details/in.ernet.dli.2015.42468

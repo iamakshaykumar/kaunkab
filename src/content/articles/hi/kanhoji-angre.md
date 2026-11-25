@@ -7,7 +7,7 @@ kaun: [कान्होजी आंग्रे, छत्रपति शा
 kahan: [विजयदुर्ग, कुलाबा (अलीबाग), सुवर्णदुर्ग, खांदेरी, कोंकण तट]
 saar: कान्होजी आंग्रे लगभग 1698 से 1729 तक मराठा नौसेना के प्रमुख (सरखेल) रहे। विजयदुर्ग, कुलाबा और सुवर्णदुर्ग जैसे सागरी क़िलों से उन्होंने कोंकण तट पर मराठा नियंत्रण बनाए रखा और अंग्रेज़, पुर्तगाली, डच और जंजीरा के सिद्दियों की चुनौतियों का सामना किया।
 tags: [maratha, nausena, konkan, samudri-durg, angrez, portugali]
-series: { id: maratha-shakti, order: 5 }
+series: { id: maratha-shakti, order: 8 }
 sources:
   - title: "Kanhoji Angre — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kanhoji_Angre

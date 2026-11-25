@@ -7,7 +7,7 @@ kaun: [जहाँगीर, सर टॉमस रो, शहज़ादा 
 kahan: [सूरत, अजमेर, मांडू, अहमदाबाद, आगरा]
 saar: 1615 में इंग्लैंड के राजा जेम्स प्रथम के राजदूत सर टॉमस रो सूरत पहुँचे और जनवरी 1616 में अजमेर में मुग़ल बादशाह जहाँगीर से मिले। लगभग तीन साल की कोशिशों के बाद भी कोई औपचारिक संधि नहीं हुई, पर सूरत में अंग्रेज़ी व्यापार को सुरक्षा मिली — यह ईस्ट इंडिया कंपनी की भारत-यात्रा का शुरुआती पड़ाव था।
 tags: [mughal-samrajya, east-india-company, vyapar, videshi-yatri, surat]
-series: { id: mughal-shikhar-aur-patan, order: 1 }
+series: { id: mughal-shikhar-aur-patan, order: 2 }
 sources:
   - title: "Thomas Roe — Wikipedia"
     url: https://en.wikipedia.org/wiki/Thomas_Roe

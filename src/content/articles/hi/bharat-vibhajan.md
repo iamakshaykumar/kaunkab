@@ -7,7 +7,7 @@ kaun: [लॉर्ड माउंटबेटन, सिरिल रैडक
 kahan: [पंजाब, बंगाल, दिल्ली, लाहौर, अमृतसर, कलकत्ता, कुरुक्षेत्र]
 saar: 3 जून 1947 को माउंटबेटन योजना के साथ तय हुआ कि ब्रिटिश भारत दो देशों — भारत और पाकिस्तान — में बँटेगा। पंजाब और बंगाल के बीच से खींची गई रैडक्लिफ़ रेखा के दोनों ओर करोड़ों लोग घर छोड़ने पर मजबूर हुए और भीषण हिंसा में लाखों जानें गईं। यह आधुनिक इतिहास के सबसे बड़े और दर्दनाक विस्थापनों में से एक था।
 tags: [bharat-vibhajan, swatantrata-1947, sharnarthi, punjab, bangal, radcliffe-rekha]
-series: { id: azadi-ki-raah, order: 22 }
+series: { id: azadi-ki-raah, order: 28 }
 sources:
   - title: "बिपन चंद्र व अन्य — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: स्वतंत्रता और विभाजन"
   - title: "Partition of India — Wikipedia"

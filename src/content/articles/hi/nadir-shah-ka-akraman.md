@@ -7,7 +7,7 @@ kaun: [नादिर शाह, मुहम्मद शाह, सआदत 
 kahan: [करनाल, दिल्ली, लाहौर, काबुल]
 saar: 24 फ़रवरी 1739 को ईरान के शासक नादिर शाह ने करनाल में मुग़ल बादशाह मुहम्मद शाह की विशाल सेना को तीन घंटे से भी कम समय में हरा दिया। इसके बाद दिल्ली में हुए क़त्ल-ए-आम और मयूर सिंहासन व कोहिनूर की लूट ने मुग़ल साम्राज्य की कमज़ोरी पूरी दुनिया के सामने खोल दी।
 tags: [mughal-samrajya, videshi-akraman, dilli, iran, yuddh]
-series: { id: mughal-shikhar-aur-patan, order: 11 }
+series: { id: mughal-shikhar-aur-patan, order: 16 }
 sources:
   - title: "Battle of Karnal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Battle_of_Karnal

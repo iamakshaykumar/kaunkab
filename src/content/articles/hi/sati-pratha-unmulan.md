@@ -7,7 +7,7 @@ kaun: [लॉर्ड विलियम बेंटिक, राजा र�
 kahan: [कलकत्ता, बंगाल प्रेसिडेंसी, मद्रास, बंबई, लंदन]
 saar: 4 दिसंबर 1829 को गवर्नर-जनरल लॉर्ड विलियम बेंटिक की परिषद ने बंगाल रेग्युलेशन XVII पारित कर विधवाओं को जीवित जलाने या दफ़नाने की प्रथा — सती — को अवैध और दंडनीय घोषित किया। राजा राममोहन राय के वर्षों लंबे अभियान ने इसकी ज़मीन तैयार की; रूढ़िवादी गुटों की अपील 1832 में प्रिवी काउंसिल ने ख़ारिज कर दी।
 tags: [samaj-sudhar, sati-pratha, rammohun-roy, angrezi-shasan, mahila-adhikar, bengal]
-series: { id: company-raj, order: 14 }
+series: { id: company-raj, order: 15 }
 sources:
   - title: "Bengal Sati Regulation, 1829 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bengal_Sati_Regulation,_1829

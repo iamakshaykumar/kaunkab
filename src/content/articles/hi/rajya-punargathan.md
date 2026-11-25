@@ -7,7 +7,7 @@ kaun: [पोट्टि श्रीरामुलु, जवाहरला�
 kahan: [मद्रास, कुरनूल, आंध्र राज्य, हैदराबाद, केरल, मैसूर, बंबई]
 saar: तेलुगुभाषी राज्य की माँग पर पोट्टि श्रीरामुलु के 58 दिन के अनशन और दिसंबर 1952 में उनकी मृत्यु के बाद 1953 में आंध्र राज्य बना। फिर राज्य पुनर्गठन आयोग की सिफ़ारिशों पर 1 नवंबर 1956 से भारत का नक्शा भाषा के आधार पर नए सिरे से खींचा गया।
 tags: [swatantra-bharat, rajya-punargathan, bhasha, andhra-pradesh, sriramulu]
-series: { id: naye-bharat-ka-nirman, order: 7 }
+series: { id: naye-bharat-ka-nirman, order: 9 }
 sources:
   - title: "रामचंद्र गुहा — भारत: गांधी के बाद (India After Gandhi), अध्याय: Ideas of India / Redrawing the Map"
   - title: "बिपिन चंद्र, मृदुला मुखर्जी, आदित्य मुखर्जी — आज़ादी के बाद का भारत (India Since Independence), अध्याय: राज्यों का पुनर्गठन"

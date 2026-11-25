@@ -7,7 +7,7 @@ kaun: [बिंबिसार, अजातशत्रु, उदयिन, �
 kahan: ["राजगृह (राजगीर, बिहार)", मगध, अंग (चंपा), वैशाली, पाटलिपुत्र]
 saar: छठी-पाँचवीं सदी ई.पू. में हर्यक वंश के राजा बिंबिसार और उनके पुत्र अजातशत्रु ने मगध को सोलह महाजनपदों में सबसे शक्तिशाली बना दिया। राजगृह इनकी राजधानी थी, और बुद्ध व महावीर इन्हीं के समकालीन थे। इसी नींव पर आगे नंद और मौर्य साम्राज्य खड़े हुए।
 tags: [magadh, mahajanapad, bauddh-dharm, jain-dharm, bihar, rajvansh]
-series: { id: vaidik-se-magadh, order: 10 }
+series: { id: vaidik-se-magadh, order: 11 }
 sources:
   - title: "Haryanka dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Haryanka_dynasty

@@ -7,7 +7,7 @@ kaun: [समुद्रगुप्त, हरिषेण, चंद्रग
 kahan: [प्रयागराज (इलाहाबाद) का क़िला, कौशांबी, आर्यावर्त, दक्षिणापथ]
 saar: प्रयागराज के क़िले में खड़े अशोक के एक प्राचीन स्तंभ पर, लगभग छह सौ साल बाद, गुप्त सम्राट समुद्रगुप्त के दरबारी कवि हरिषेण ने संस्कृत में एक लंबी प्रशस्ति खुदवाई। यह अभिलेख समुद्रगुप्त के अभियानों, उनकी नीति और उनके समय के भारत के राजनीतिक नक़्शे का सबसे महत्वपूर्ण स्रोत है।
 tags: [gupta, shilalekh, prashasti, samudragupt, prayagraj, sanskrit]
-series: { id: maurya-se-gupta, order: 12 }
+series: { id: maurya-se-gupta, order: 14 }
 sources:
   - title: "Allahabad Pillar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Allahabad_Pillar

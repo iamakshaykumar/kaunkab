@@ -7,7 +7,7 @@ kaun: [दयाराम साहनी, जॉन मार्शल, मा�
 kahan: ["हड़प्पा (साहीवाल ज़िला, पंजाब, पाकिस्तान)", रावी नदी]
 saar: पाकिस्तान के पंजाब में रावी नदी के पुराने मार्ग के पास बसा हड़प्पा वह पहला नगर है जिसकी खुदाई से सिंधु घाटी सभ्यता दुनिया के सामने आई। 1921 में दयाराम साहनी की खुदाई के बाद इसी नगर के नाम पर पूरी सभ्यता को "हड़प्पा सभ्यता" कहा जाने लगा।
 tags: [sindhu-ghati, harappa, puratattva, nagar-niyojan, pakistan, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 4 }
+series: { id: sabhyata-ki-shuruaat, order: 5 }
 sources:
   - title: "Harappa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Harappa

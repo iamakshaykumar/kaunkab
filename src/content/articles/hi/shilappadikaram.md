@@ -7,7 +7,7 @@ kaun: [इलंगो अडिगल, कन्नगी, कोवलन, म
 kahan: [पुहार (कावेरीपट्टिनम), मदुरै, वंजी, तमिलनाडु, केरल, श्रीलंका]
 saar: शिलप्पदिकारम (नूपुर की कथा) तमिल भाषा का सबसे पुराना महाकाव्य माना जाता है। परंपरा इसे इलंगो अडिगल की रचना बताती है। इसमें कोवलन और कन्नगी की कहानी है, जो पुहार से मदुरै और फिर चेर देश तक जाती है और तीनों तमिल राज्यों के जीवन का चित्र खींचती है। इसका रचना-काल विवादित है।
 tags: [sahitya, tamil, sangam, mahakavya, dakshin-bharat, kannagi]
-series: { id: prachin-dakshin-bharat, order: 4 }
+series: { id: prachin-dakshin-bharat, order: 5 }
 sources:
   - title: "Silappatikaram — Wikipedia"
     url: https://en.wikipedia.org/wiki/Silappatikaram

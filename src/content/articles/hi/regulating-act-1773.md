@@ -7,7 +7,7 @@ kaun: [लॉर्ड नॉर्थ, वॉरेन हेस्टिंग
 kahan: [लंदन, कलकत्ता (फ़ोर्ट विलियम), मद्रास, बंबई]
 saar: 1773 में ब्रिटिश संसद ने लॉर्ड नॉर्थ की सरकार के समय रेग्युलेटिंग एक्ट पारित कर पहली बार ईस्ट इंडिया कंपनी के भारतीय शासन पर नियंत्रण की व्यवस्था की। बंगाल के गवर्नर वॉरेन हेस्टिंग्स 'फ़ोर्ट विलियम (बंगाल) के गवर्नर-जनरल' बने, मद्रास और बंबई उनके अधीन आए, और 1774 में कलकत्ता में सुप्रीम कोर्ट की स्थापना हुई। इसकी कमियाँ दूर करने के लिए 1784 में पिट्स इंडिया एक्ट आया।
 tags: [angrezi-shasan, east-india-company, warren-hastings, kanoon, calcutta]
-series: { id: company-raj, order: 5 }
+series: { id: company-raj, order: 6 }
 sources:
   - title: "Regulating Act 1773 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Regulating_Act_of_1773

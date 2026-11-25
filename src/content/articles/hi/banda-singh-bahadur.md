@@ -7,7 +7,7 @@ kaun: [बंदा सिंह बहादुर, गुरु गोबि�
 kahan: [नांदेड़, समाना, चप्पड़ चिड़ी, सरहिंद, लोहगढ़, गुरदास नंगल, दिल्ली]
 saar: नांदेड़ में 1708 में गुरु गोबिंद सिंह से मिलने के बाद बैरागी साधु माधो दास 'बंदा सिंह बहादुर' बने और पंजाब लौटकर मुग़ल सत्ता को चुनौती दी। 1710 में सरहिंद जीतकर उन्होंने लोहगढ़ को राजधानी बनाया, अपने सिक्के चलाए और किसानों को ज़मीन के अधिकार दिए। 1716 में दिल्ली में उन्हें मृत्युदंड दिया गया।
 tags: [sikh-itihas, mughal-samrajya, punjab, kisan, sirhind]
-series: { id: sikh-itihas, order: 8 }
+series: { id: sikh-itihas, order: 9 }
 sources:
   - title: "Banda Singh Bahadur — Wikipedia"
     url: https://en.wikipedia.org/wiki/Banda_Singh_Bahadur

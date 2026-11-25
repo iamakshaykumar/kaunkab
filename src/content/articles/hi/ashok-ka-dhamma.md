@@ -7,7 +7,7 @@ kaun: [अशोक (देवानंपिय पियदसि), जेम�
 kahan: ["गिरनार (जूनागढ़, गुजरात)", "धौली (ओडिशा)", "शाहबाज़गढ़ी (पाकिस्तान)", "कंधार (अफ़ग़ानिस्तान)", "कालसी (देहरादून, उत्तराखंड)", "मास्की (रायचूर, कर्नाटक)"]
 saar: कलिंग युद्ध के बाद मौर्य सम्राट अशोक ने 'धम्म' को शासन का आधार बनाया — अहिंसा, माता-पिता और बड़ों का आदर, सभी संप्रदायों के प्रति सहिष्णुता और प्रजा का कल्याण। ये संदेश उन्होंने चट्टानों और पत्थर के स्तंभों पर खुदवाए, जिन्हें 1830 के दशक में जेम्स प्रिंसेप ने ब्राह्मी लिपि पढ़कर फिर से दुनिया के सामने रखा।
 tags: [maurya, ashok, dhamma, abhilekh, brahmi, bauddh-dharm, prachin-bharat]
-series: { id: maurya-samrajya-ki-kahani, order: 9 }
+series: { id: maurya-samrajya-ki-kahani, order: 10 }
 sources:
   - title: "Edicts of Ashoka — Wikipedia"
     url: https://en.wikipedia.org/wiki/Edicts_of_Ashoka

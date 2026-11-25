@@ -7,7 +7,7 @@ kaun: [सावित्रीबाई फुले, ज्योतिरा�
 kahan: [नायगाँव (सातारा), पुणे (भिडे वाड़ा), महाराष्ट्र]
 saar: 1848 में पुणे के भिडे वाड़ा में सावित्रीबाई और ज्योतिराव फुले ने लड़कियों के लिए स्कूल शुरू किया, जिसे भारतीयों द्वारा चलाए गए पहले बालिका विद्यालयों में गिना जाता है। जाति और स्त्री-भेदभाव के विरुद्ध उनके संघर्ष ने 1873 में सत्यशोधक समाज का रूप लिया।
 tags: [samaj-sudhar, stri-shiksha, phule, satyashodhak-samaj, maharashtra]
-series: { id: sudhar-aur-rashtriya-chetna, order: 3 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 4 }
 sources:
   - title: "धनंजय कीर — Mahatma Jotirao Phooley: Father of the Indian Social Revolution"
   - title: "रोज़लिंड ओ'हैनलन — Caste, Conflict and Ideology: Mahatma Jotirao Phule and Low Caste Protest in Nineteenth-Century Western India"

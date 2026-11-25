@@ -7,7 +7,7 @@ kaun: [फ़िरोज़ शाह तुग़लक़, मुहम्म
 kahan: [दिल्ली (फ़िरोज़ाबाद / फ़िरोज़ शाह कोटला), हिसार, फ़तेहाबाद, जौनपुर, टोपरा, मेरठ, हौज़ ख़ास, थट्टा]
 saar: "फ़िरोज़ शाह तुग़लक़ ने 1351 से 1388 तक दिल्ली सल्तनत पर शासन किया। उन्होंने नहरें खुदवाईं, फ़िरोज़ाबाद और हिसार जैसे नगर बसाए और अशोक के दो स्तंभ टोपरा और मेरठ से दिल्ली लाकर खड़े करवाए। उनके कल्याणकारी कामों की प्रशंसा होती है, पर धार्मिक कट्टरता और पदों को वंशानुगत बनाने की नीति की आलोचना भी होती है।"
 tags: [dilli-saltanat, tughlaq-vansh, sultan, prashasan, nahar]
-series: { id: dilli-saltanat-ki-kahani, order: 10 }
+series: { id: dilli-saltanat-ki-kahani, order: 13 }
 sources:
   - title: "Firuz Shah Tughlaq — Wikipedia"
     url: https://en.wikipedia.org/wiki/Firuz_Shah_Tughlaq

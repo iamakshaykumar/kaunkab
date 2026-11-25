@@ -7,7 +7,7 @@ kaun: [बाल गंगाधर तिलक, गोपाल गणेश �
 kahan: [रत्नागिरी, पुणे, बंबई, "मांडले (बर्मा)", सूरत]
 saar: बाल गंगाधर तिलक (1856–1920) कांग्रेस के गरमपंथी धड़े के सबसे प्रभावशाली नेता थे, जिन्हें जनता ने 'लोकमान्य' की उपाधि दी। 'केसरी' और 'मराठा' अख़बारों, सार्वजनिक गणेशोत्सव और शिवाजी उत्सव के ज़रिए उन्होंने राष्ट्रवाद को आम लोगों तक पहुँचाया। राजद्रोह के मुक़दमों में दो बार जेल गए; मांडले की छह साल की क़ैद में 'गीता रहस्य' लिखा। 'स्वराज मेरा जन्मसिद्ध अधिकार है' का नारा उनके नाम से अमर है।
 tags: [swatantrata-sangram, congress, garamdal, maharashtra, angrezi-shasan]
-series: { id: sudhar-aur-rashtriya-chetna, order: 12 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 14 }
 sources:
   - title: "Stanley Wolpert — Tilak and Gokhale: Revolution and Reform in the Making of Modern India (1962)"
   - title: "Bal Gangadhar Tilak — Wikipedia"

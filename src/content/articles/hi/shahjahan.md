@@ -7,7 +7,7 @@ kaun: [शाहजहाँ, जहाँगीर, नूरजहाँ, म�
 kahan: [लाहौर, आगरा, बुरहानपुर, दौलताबाद, क़ंधार, बल्ख़, शाहजहानाबाद (दिल्ली)]
 saar: 14 फ़रवरी 1628 को आगरा में गद्दी पर बैठे शाहजहाँ के तीस वर्ष के शासन को मुग़ल वैभव का शिखर माना जाता है — तख़्त-ए-ताऊस, ताजमहल और शाहजहानाबाद इसी दौर की देन हैं। पर दक्कन का अकाल, मध्य एशिया और क़ंधार के महँगे अभियान भी इसी काल में हुए, और 1658 में पुत्र औरंगज़ेब ने उन्हें आगरा क़िले में क़ैद कर दिया।
 tags: [mughal-samrajya, shahjahan, agra, sthapatya, uttaradhikar-yuddh]
-series: { id: mughal-shikhar-aur-patan, order: 3 }
+series: { id: mughal-shikhar-aur-patan, order: 5 }
 sources:
   - title: "Shah Jahan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Shah_Jahan

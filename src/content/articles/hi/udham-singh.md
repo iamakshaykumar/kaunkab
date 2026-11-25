@@ -7,7 +7,7 @@ kaun: [उधम सिंह, माइकल ओ'डायर, लॉर्ड
 kahan: [सुनाम (पंजाब), अमृतसर, कैक्सटन हॉल (लंदन), पेंटनविल जेल (लंदन)]
 saar: 13 मार्च 1940 को उधम सिंह ने लंदन के कैक्सटन हॉल में पंजाब के पूर्व लेफ़्टिनेंट गवर्नर माइकल ओ'डायर को गोली मार दी, जिन्हें वे जलियाँवाला बाग़ हत्याकांड के लिए ज़िम्मेदार मानते थे। 31 जुलाई 1940 को पेंटनविल जेल में उन्हें फाँसी दी गई।
 tags: [swatantrata-sangram, kranti, punjab, jallianwala-bagh, udham-singh]
-series: { id: krantikari-andolan, order: 13 }
+series: { id: krantikari-andolan, order: 14 }
 sources:
   - title: "अनीता आनंद — The Patient Assassin: A True Tale of Massacre, Revenge and the Raj"
   - title: "बिपिन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence)"

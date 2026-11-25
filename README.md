@@ -6,6 +6,8 @@
 
 भारतीय इतिहास — सरल हिंदी में, स्रोतों के साथ। एक ओपन सोर्स, समुदाय द्वारा लिखी जाने वाली वेबसाइट।
 
+**An initiative of AMGR Foundation.**
+
 **Kaun Kab** is an open-source, Hindi-first website about Indian history. Articles are Markdown files contributed via GitHub pull requests. The site is fully static and hosted free on GitHub Pages.
 
 ## Features

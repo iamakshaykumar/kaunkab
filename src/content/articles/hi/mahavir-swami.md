@@ -7,7 +7,7 @@ kaun: [वर्धमान महावीर, सिद्धार्थ, �
 kahan: ["कुंडग्राम (वैशाली के पास, बिहार)", जृंभिकग्राम, पावापुरी (बिहार)]
 saar: वर्धमान महावीर जैन परंपरा के चौबीसवें और अंतिम तीर्थंकर हैं। वैशाली के पास एक क्षत्रिय कुल में जन्मे वर्धमान ने तीस वर्ष की आयु में घर छोड़ा, लगभग साढ़े बारह वर्ष की कठोर तपस्या के बाद कैवल्य ज्ञान पाया और लगभग तीस वर्ष तक अहिंसा और अपरिग्रह का उपदेश दिया। पावापुरी में उनका निर्वाण हुआ।
 tags: [jain-dharm, mahavir, darshan, bihar, dharm, prachin-bharat]
-series: { id: vaidik-se-magadh, order: 8 }
+series: { id: vaidik-se-magadh, order: 9 }
 sources:
   - title: "Mahavira — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mahavira

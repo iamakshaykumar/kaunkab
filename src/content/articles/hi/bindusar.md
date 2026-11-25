@@ -7,7 +7,7 @@ kaun: [बिंदुसार, चंद्रगुप्त मौर्य,
 kahan: [पाटलिपुत्र, तक्षशिला, मगध]
 saar: चंद्रगुप्त मौर्य के पुत्र और अशोक के पिता बिंदुसार ने लगभग 297 से 273 ई.पू. तक मौर्य साम्राज्य पर शासन किया। यूनानी लेखक उन्हें 'अमित्रोकेटीज़' कहते थे। सेल्यूकस वंश के दूत डाइमेकस उनके दरबार में रहे, और बौद्ध ग्रंथ उनके दरबार में एक आजीवक भविष्यवक्ता का ज़िक्र करते हैं।
 tags: [maurya, magadh, samrajya, bihar, yunani-sampark, prachin-bharat]
-series: { id: maurya-samrajya-ki-kahani, order: 7 }
+series: { id: maurya-samrajya-ki-kahani, order: 8 }
 sources:
   - title: "Bindusara — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bindusara

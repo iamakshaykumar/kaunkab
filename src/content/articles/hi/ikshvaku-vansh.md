@@ -7,7 +7,7 @@ kaun: [वासिष्ठीपुत्र चांतमूल, चां�
 kahan: ["विजयपुरी (नागार्जुनकोंडा, आंध्र प्रदेश)", कृष्णा नदी घाटी, "अमरावती (आंध्र प्रदेश)"]
 saar: सातवाहनों के पतन के बाद लगभग तीसरी शताब्दी ई. में कृष्णा नदी की घाटी में आंध्र इक्ष्वाकु वंश उभरा, जिसकी राजधानी विजयपुरी (आज का नागार्जुनकोंडा) थी। राजा वैदिक यज्ञ करते थे, पर राजपरिवार की स्त्रियों के दान से विजयपुरी दक्षिण भारत के सबसे बड़े बौद्ध केंद्रों में से एक बन गई। इसके अवशेष आज नागार्जुन सागर बाँध की झील के बीच एक टापू पर सुरक्षित हैं।
 tags: [ikshvaku, andhra-pradesh, dakshin-bharat, bauddh-dharm, rajvansh, puratatva, prachin-bharat]
-series: { id: maurya-se-gupta, order: 9 }
+series: { id: maurya-se-gupta, order: 11 }
 sources:
   - title: "Andhra Ikshvaku — Wikipedia"
     url: https://en.wikipedia.org/wiki/Andhra_Ikshvaku

@@ -7,7 +7,7 @@ kaun: [सुभाष चंद्र बोस, जानकीनाथ ब�
 kahan: [कटक, कलकत्ता, कैम्ब्रिज, मांडले, हरिपुरा, त्रिपुरी, काबुल, बर्लिन, सिंगापुर, ताइहोकू (ताइपे)]
 saar: 23 जनवरी 1897 को कटक में जन्मे सुभाष चंद्र बोस ने 1921 में आईसीएस की नौकरी ठुकराकर राष्ट्रीय आंदोलन की राह पकड़ी। दो बार कांग्रेस अध्यक्ष बने, गांधीजी से मतभेद के बाद फ़ॉरवर्ड ब्लॉक बनाया और जनवरी 1941 में नज़रबंदी से निकलकर विदेश पहुँचे। 1945 में उनकी मृत्यु एक विमान दुर्घटना में बताई गई, जिस पर आज भी बहस है।
 tags: [subhas-chandra-bose, netaji, swatantrata-sangram, congress, forward-bloc, azad-hind-fauj, jeevani]
-series: { id: azadi-ki-raah, order: 15 }
+series: { id: azadi-ki-raah, order: 19 }
 sources:
   - title: "लियोनार्ड ए. गॉर्डन — Brothers Against the Raj: A Biography of Indian Nationalists Sarat and Subhas Chandra Bose (1990)"
   - title: "सुगत बोस — His Majesty's Opponent: Subhas Chandra Bose and India's Struggle against Empire (2011)"

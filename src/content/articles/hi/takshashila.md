@@ -7,7 +7,7 @@ kaun: [आंभि, चंद्रगुप्त मौर्य, अशो�
 kahan: ["तक्षशिला (रावलपिंडी ज़िला, पंजाब, पाकिस्तान)", गांधार]
 saar: आज के पाकिस्तान में रावलपिंडी के पास स्थित तक्षशिला प्राचीन गांधार का प्रमुख नगर था, जहाँ से भारत, मध्य एशिया और ईरान को जोड़ने वाले व्यापार-मार्ग गुज़रते थे। यह अपने प्रसिद्ध आचार्यों के कारण दूर-दूर तक शिक्षा का केंद्र माना जाता था। इसके खंडहर 1980 से यूनेस्को विश्व धरोहर हैं।
 tags: [gandhar, shiksha, nagar, puratattva, vishwa-dharohar]
-series: { id: vaidik-se-magadh, order: 6 }
+series: { id: vaidik-se-magadh, order: 7 }
 sources:
   - title: "Taxila — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/139/

@@ -7,7 +7,7 @@ kaun: [मयूरशर्मा, काकुत्स्थवर्मा, 
 kahan: ["बनवासी (उत्तर कन्नड़, कर्नाटक)", "तालगुंद (शिवमोग्गा, कर्नाटक)", "हल्मिडी (हासन, कर्नाटक)", कांचीपुरम]
 saar: लगभग 345 ई. में ब्राह्मण मयूरशर्मा ने पल्लवों से अपमानित होकर हथियार उठाए और बनवासी में कदंब राज्य की नींव रखी। कदंबों को कन्नड़ को राजकाज में अपनाने वाला पहला स्थानीय राजवंश माना जाता है; तालगुंद का संस्कृत स्तंभ-लेख और हल्मिडी का कन्नड़ शिलालेख इनके इतिहास के मुख्य स्रोत हैं।
 tags: [kadamba, dakshin-bharat, karnataka, kannada, abhilekh, rajvansh, prachin-bharat]
-series: { id: prachin-dakshin-bharat, order: 8 }
+series: { id: prachin-dakshin-bharat, order: 9 }
 sources:
   - title: "Kadamba dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kadamba_dynasty

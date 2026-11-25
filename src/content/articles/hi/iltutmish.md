@@ -7,7 +7,7 @@ kaun: [शम्सुद्दीन इल्तुतमिश, क़ुत�
 kahan: [दिल्ली, बदायूँ, तराइन, उच्छ और मुल्तान, लखनौती (बंगाल), रणथंभौर, ग्वालियर]
 saar: "इल्तुतमिश ने 1211 से 1236 तक दिल्ली पर शासन किया। ग़ुलाम के रूप में बिके इस तुर्क ने प्रतिद्वंद्वियों को हराकर दिल्ली को सल्तनत की स्थायी राजधानी बनाया, मंगोल संकट से राज्य को बचाया, इक़्ता व्यवस्था को संगठित किया और चाँदी का टंका तथा ताँबे का जीतल चलाया। उन्होंने अपनी बेटी रज़िया को उत्तराधिकारी चुना।"
 tags: [dilli-saltanat, mamluk-vansh, sultan, prashasan, sikke]
-series: { id: dilli-saltanat-ki-kahani, order: 3 }
+series: { id: dilli-saltanat-ki-kahani, order: 5 }
 sources:
   - title: "Iltutmish — Wikipedia"
     url: https://en.wikipedia.org/wiki/Iltutmish

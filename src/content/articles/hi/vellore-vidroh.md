@@ -7,7 +7,7 @@ kaun: [सर जॉन क्रैडॉक, लॉर्ड विलिय�
 kahan: [वेल्लोर क़िला (तमिलनाडु), अर्काट, मद्रास प्रेसीडेंसी]
 saar: 10 जुलाई 1806 की आधी रात के बाद वेल्लोर क़िले में मद्रास सेना के भारतीय सिपाहियों ने नए वर्दी-नियमों के विरोध में बग़ावत कर दी। विद्रोह एक ही दिन में कुचल दिया गया, लेकिन इसे 1857 से आधी सदी पहले भारतीय सिपाहियों का पहला बड़ा विद्रोह माना जाता है।
 tags: [sipahi-vidroh, tamilnadu, angrezi-shasan, east-india-company, tipu-sultan]
-series: { id: company-raj, order: 13 }
+series: { id: company-raj, order: 14 }
 sources:
   - title: "Vellore mutiny — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vellore_mutiny

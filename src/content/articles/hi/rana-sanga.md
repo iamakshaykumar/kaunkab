@@ -7,7 +7,7 @@ kaun: [राणा सांगा (संग्राम सिंह प्�
 kahan: [चित्तौड़गढ़, "खातोली, कोटा", गागरोन (झालावाड़), बयाना, खानवा, कालपी]
 saar: 1482 में जन्मे राणा सांगा 1508 के आसपास मेवाड़ की गद्दी पर बैठे और अपने समय के उत्तर भारत के सबसे शक्तिशाली राजपूत शासक बने। उन्होंने खातोली में इब्राहिम लोदी को और गागरोन में मालवा के सुल्तान को हराया। 1527 में खानवा में बाबर से हार के कुछ महीनों बाद 1528 में उनका देहांत हो गया।
 tags: [rajput, mewar, sisodiya-vansh, rajasthan, yuddh, chittorgarh]
-series: { id: kshetriya-shaktiyan, order: 9 }
+series: { id: kshetriya-shaktiyan, order: 10 }
 sources:
   - title: "Rana Sanga — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rana_Sanga

@@ -7,7 +7,7 @@ kaun: [शाहजहाँ, उस्ताद अहमद लाहौरी
 kahan: [शाहजहानाबाद (पुरानी दिल्ली), यमुना तट, चाँदनी चौक]
 saar: 1639 में मुग़ल बादशाह शाहजहाँ ने राजधानी आगरा से दिल्ली लाने का निर्णय लिया और यमुना के किनारे लाल बलुआ पत्थर का विशाल क़िला-महल बनवाया, जो 1648 में पूरा हुआ। इसके चारों ओर बसा नगर शाहजहानाबाद कहलाया। 1947 से स्वतंत्रता दिवस पर यहीं से राष्ट्रीय ध्वज फहराया जाता है।
 tags: [mughal-samrajya, shahjahan, vastukala, vishwa-dharohar, dilli]
-series: { id: mughal-shikhar-aur-patan, order: 5 }
+series: { id: mughal-shikhar-aur-patan, order: 7 }
 sources:
   - title: "Red Fort — Wikipedia"
     url: https://en.wikipedia.org/wiki/Red_Fort

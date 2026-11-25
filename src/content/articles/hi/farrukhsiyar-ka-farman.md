@@ -7,7 +7,7 @@ kaun: [फ़र्रुख़सियर, जॉन सरमन, विल�
 kahan: [दिल्ली, कलकत्ता, मुर्शिदाबाद, बंगाल, बंबई, मद्रास]
 saar: 1717 में मुग़ल बादशाह फ़र्रुख़सियर ने अंग्रेज़ ईस्ट इंडिया कंपनी को फ़रमान देकर बंगाल में केवल 3,000 रुपये सालाना के बदले बिना चुंगी व्यापार की छूट दी। आगे चलकर इसी छूट के दुरुपयोग ने बंगाल के नवाबों और कंपनी के बीच टकराव की ज़मीन तैयार की।
 tags: [east-india-company, mughal-samrajya, bangal, vyapar, farrukhsiyar, angrezi-shasan]
-series: { id: mughal-shikhar-aur-patan, order: 9 }
+series: { id: mughal-shikhar-aur-patan, order: 12 }
 sources:
   - title: "Farrukh Siyar's Farman — Banglapedia"
     url: https://en.banglapedia.org/index.php/Farrukh_Siyar%E2%80%99s_Farman

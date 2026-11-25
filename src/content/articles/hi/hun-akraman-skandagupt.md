@@ -7,7 +7,7 @@ kaun: [स्कंदगुप्त, कुमारगुप्त प्र�
 kahan: [भितरी (ग़ाज़ीपुर), जूनागढ़, एरण, ग्वालियर, साकल (सियालकोट), सोंदनी (मंदसौर), गांधार]
 saar: पाँचवीं सदी के मध्य में मध्य एशिया से आए हूणों ने उत्तर-पश्चिम भारत पर धावा बोला। गुप्त सम्राट स्कंदगुप्त (लगभग 455–467 ई.) ने उन्हें पीछे धकेला, जिसका गौरवगान भितरी स्तंभ लेख में है। पर छठी सदी के आरंभ में अलखान हूण राजा तोरमाण और मिहिरकुल मध्य भारत तक पहुँच गए, जब तक लगभग 528 ई. में यशोधर्मन ने मिहिरकुल को हरा नहीं दिया।
 tags: [gupta, hun, skandagupt, shilalekh, aakraman, uttar-bharat]
-series: { id: maurya-se-gupta, order: 16 }
+series: { id: maurya-se-gupta, order: 18 }
 sources:
   - title: "Skandagupta — Wikipedia"
     url: https://en.wikipedia.org/wiki/Skandagupta

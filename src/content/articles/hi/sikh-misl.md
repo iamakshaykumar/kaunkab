@@ -7,7 +7,7 @@ kaun: [नवाब कपूर सिंह, जस्सा सिंह आ�
 kahan: [अमृतसर, लाहौर, कुप्प (मालेरकोटला के पास), दिल्ली, पंजाब]
 saar: 1748 में अमृतसर के सरबत ख़ालसा में सिख जत्थों को ग्यारह मिसलों में संगठित कर उनकी संयुक्त सेना 'दल ख़ालसा' बनाई गई। अफ़ग़ान आक्रमणों और मुग़ल पतन के बीच इन मिसलों ने पंजाब के बड़े हिस्से पर अधिकार किया, जिन्हें 1799 के बाद रणजीत सिंह ने एक राज्य में जोड़ा।
 tags: [sikh-itihas, misl, dal-khalsa, punjab, ahmad-shah-abdali, amritsar]
-series: { id: sikh-itihas, order: 9 }
+series: { id: sikh-itihas, order: 10 }
 sources:
   - title: "Sikh Confederacy (Misl) — Wikipedia"
     url: https://en.wikipedia.org/wiki/Misl

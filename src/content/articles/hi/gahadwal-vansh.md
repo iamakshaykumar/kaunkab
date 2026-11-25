@@ -7,7 +7,7 @@ kaun: [चंद्रदेव, गोविंदचंद्र, कुमा
 kahan: [वाराणसी, कन्नौज, सारनाथ, "चंदावर (फ़िरोज़ाबाद के पास, उत्तर प्रदेश)"]
 saar: "गहड़वाल वंश ने लगभग 1089 से 1194 ई. तक वाराणसी और कन्नौज से गंगा घाटी के बड़े हिस्से पर शासन किया। गोविंदचंद्र के समय यह राज्य अपने चरम पर था। 1194 में चंदावर के युद्ध में जयचंद्र की हार और मृत्यु के साथ इस वंश की शक्ति टूट गई।"
 tags: [rajvansh, rajput, kannauj, varanasi, chandawar-yuddh, ghori]
-series: { id: harsh-se-tarain, order: 17 }
+series: { id: harsh-se-tarain, order: 18 }
 sources:
   - title: "Gahadavala dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Gahadavala_dynasty

@@ -7,7 +7,7 @@ kaun: [अवंतिवर्मन, सुय्य, मंत्री श�
 kahan: [कश्मीर घाटी, "अवंतिपुर (अवंतीपोरा, पुलवामा)", सुय्यपुर (सोपोर), वितस्ता (झेलम) नदी]
 saar: "अवंतिवर्मन (शासन 855–883 ई.) ने कश्मीर में उत्पल वंश की नींव रखी और लंबे गृहयुद्ध के बाद राज्य को स्थिरता दी। उनके मंत्री और अभियंता सुय्य ने वितस्ता (झेलम) नदी की सफ़ाई, तटबंधों और सिंचाई की ऐसी योजनाएँ बनाईं जिनसे बाढ़ घटी और खेती बढ़ी। उनकी बसाई राजधानी अवंतिपुर के मंदिर-खंडहर आज भी मौजूद हैं।"
 tags: [kashmir, utpal-vansh, sinchai, mandir, rajatarangini]
-series: { id: harsh-se-tarain, order: 10 }
+series: { id: harsh-se-tarain, order: 11 }
 sources:
   - title: "Avantivarman (Utpala dynasty) — Wikipedia"
     url: https://en.wikipedia.org/wiki/Avantivarman_(Utpala_dynasty)

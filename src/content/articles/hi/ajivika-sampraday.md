@@ -7,7 +7,7 @@ kaun: [मक्खलि गोसाल, महावीर स्वामी
 kahan: [श्रावस्ती (उत्तर प्रदेश), "बराबर और नागार्जुनी पहाड़ियाँ (जहानाबाद, बिहार)"]
 saar: बुद्ध और महावीर के समय उभरे श्रमण संप्रदायों में आजीविक एक प्रमुख संप्रदाय था, जिसके सबसे प्रसिद्ध आचार्य मक्खलि गोसाल थे। ये लोग मानते थे कि सब कुछ "नियति" से पहले से तय है। मौर्य सम्राट अशोक और उनके पोते दशरथ ने बिहार की बराबर-नागार्जुनी पहाड़ियों में इनके लिए गुफाएँ दान कीं।
 tags: [ajivika, shraman-parampara, darshan, maurya, bihar, prachin-bharat]
-series: { id: vaidik-se-magadh, order: 9 }
+series: { id: vaidik-se-magadh, order: 10 }
 sources:
   - title: "Ājīvika — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ajivika
