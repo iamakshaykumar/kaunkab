@@ -7,17 +7,18 @@ kaun: [विजयालय चोल, राजराज प्रथम, र�
 kahan: [तंजावुर, गंगैकोंड चोलपुरम, कावेरी डेल्टा]
 saar: चोल शासकों ने दक्षिण भारत में एक शक्तिशाली राज्य बनाया और समुद्री व्यापार तथा नौसैनिक अभियानों से उसका प्रभाव दूर तक फैलाया। उनके मंदिर और अभिलेख मध्यकालीन दक्षिण भारत के इतिहास के महत्वपूर्ण स्रोत हैं।
 tags: [dakshin-bharat, samrajya, mandir]
+series: { id: dakshin-ke-rajvansh, order: 1 }
 image:
-  src: https://commons.wikimedia.org/wiki/Special:FilePath/11th_century_Chola_era_Gangaikonda_Cholapuram_temple,_Tamilnadu,_India.jpg
-  alt: गंगैकोंड चोलपुरम के चोलकालीन मंदिर का विशाल प्रवेशद्वार
-  credit: "चित्र: Nithi Anand / Wikimedia Commons, CC BY 2.0"
+  src: /images/lekh/chola-samrajya.webp
+  alt: "तंजावुर में राजराज प्रथम द्वारा बनवाए गए बृहदीश्वर मंदिर का ऊँचा विमान"
+  credit: "चित्र: Marcllendr / Wikimedia Commons / CC BY-SA 4.0"
 sources:
   - title: "Chola Dynasty (9th–13th Century) — Smithsonian National Museum of Asian Art"
     url: https://asia-archive.si.edu/learn/india-shiva-nataraja-lord-of-the-dance/chola-dynasty/
   - title: "Great Living Chola Temples — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/250/
-  - title: "चित्र: Gangaikonda Cholapuram temple — Wikimedia Commons"
-    url: https://commons.wikimedia.org/wiki/File:11th_century_Chola_era_Gangaikonda_Cholapuram_temple,_Tamilnadu,_India.jpg
+  - title: "चित्र: Brihadisvara Temple, Thanjavur — Wikimedia Commons"
+    url: https://commons.wikimedia.org/wiki/File:Brihadisvara_Temple_Thanjavur_Full_View.jpg
 quiz:
   - q: "चोल साम्राज्य का प्रमुख केंद्र किस नदी के उपजाऊ डेल्टा में था?"
     options: ["कावेरी", "सिंधु", "झेलम", "नर्मदा"]

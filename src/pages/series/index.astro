@@ -20,7 +20,7 @@ const list = await Promise.all(
       <a class="row" href={`/series/${id}`}>
         <div class="media">{img && <img src={img} alt="" width="1200" height="675" loading="lazy" />}</div>
         <div class="body">
-          <p class="kicker">{items.length} भाग</p>
+          <p class="kicker">{s.data.order ? `शृंखला ${s.data.order} · ` : ""}{items.length} भाग</p>
           <h2>{s.data.title}</h2>
           <p class="muted">{s.data.description}</p>
           <ol>{items.map((a) => <li>{a.data.title}</li>)}</ol>

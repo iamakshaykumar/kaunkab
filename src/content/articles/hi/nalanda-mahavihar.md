@@ -7,6 +7,7 @@ kaun: [कुमारगुप्त प्रथम, हर्षवर्ध�
 kahan: [नालंदा (बिहार), राजगीर, पाटलिपुत्र]
 saar: गुप्त काल में पाँचवीं सदी ई. के आसपास स्थापित नालंदा महाविहार लगभग सात सौ वर्षों तक एशिया का सबसे प्रसिद्ध बौद्ध शिक्षा केंद्र रहा। चीन, कोरिया, तिब्बत और दक्षिण-पूर्व एशिया से विद्यार्थी यहाँ पढ़ने आते थे। इसके खंडहर आज यूनेस्को विश्व धरोहर हैं।
 tags: [shiksha, bauddh-dharm, bihar, gupta, vishwa-dharohar]
+series: { id: prachin-gyan-aur-kala, order: 6 }
 sources:
   - title: "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/1502/

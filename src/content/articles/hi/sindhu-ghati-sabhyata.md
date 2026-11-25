@@ -7,10 +7,15 @@ kaun: [दयाराम साहनी, राखालदास बनर्
 kahan: [हड़प्पा, मोहनजोदड़ो, लोथल, धोलावीरा, कालीबंगा]
 saar: दुनिया की सबसे पुरानी नगरीय सभ्यताओं में से एक, जिसके योजनाबद्ध शहर, पक्की ईंटों के घर और ढकी हुई नालियाँ आज भी लोगों को हैरान करती हैं।
 tags: [sabhyata, nagar, puratattva]
+series: { id: sabhyata-ki-shuruaat, order: 3 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 1: ईंटें, मनके तथा अस्थियाँ"
   - title: "Indus Valley Civilisation — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indus_Valley_Civilisation
+image:
+  src: /images/lekh/sindhu-ghati-sabhyata.webp
+  alt: "मोहनजोदड़ो के खंडहर — पकी ईंटों से बना विशाल स्नानागार, आसपास की इमारतों की दीवारें और पीछे टीले पर बौद्ध स्तूप"
+  credit: "चित्र: Saqib Qayyum / Wikimedia Commons / CC BY-SA 3.0"
 quiz:
   - q: "हड़प्पा की खोज किस वर्ष शुरू हुई?"
     options: ["1857", "1921", "1947", "1800"]

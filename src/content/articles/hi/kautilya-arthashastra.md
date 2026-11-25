@@ -7,6 +7,7 @@ kaun: [कौटिल्य (चाणक्य / विष्णुगुप�
 kahan: [पाटलिपुत्र, तक्षशिला, मैसूर]
 saar: अर्थशास्त्र राज्य चलाने, अर्थव्यवस्था, क़ानून, कूटनीति और युद्ध-नीति पर लिखा गया संस्कृत ग्रंथ है, जिसे परंपरा चंद्रगुप्त मौर्य के मंत्री कौटिल्य (चाणक्य) की रचना मानती है। सदियों तक लुप्त माने गए इस ग्रंथ की पांडुलिपि 1905 में मैसूर में आर. शामशास्त्री ने पहचानी।
 tags: [maurya, prashasan, arthvyavastha, sanskrit, prachin-bharat]
+series: { id: maurya-samrajya-ki-kahani, order: 3 }
 sources:
   - title: "Arthashastra — Wikipedia"
     url: https://en.wikipedia.org/wiki/Arthashastra

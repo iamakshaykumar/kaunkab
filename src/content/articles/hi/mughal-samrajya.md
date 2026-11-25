@@ -7,17 +7,18 @@ kaun: [बाबर, अकबर, जहाँगीर, शाहजहाँ,
 kahan: [दिल्ली, आगरा, फ़तेहपुर सीकरी]
 saar: 1526 में बाबर की विजय से शुरू हुआ मुग़ल शासन अलग-अलग दौर में उत्तर भारत और उपमहाद्वीप के बड़े हिस्से तक फैला। इसकी प्रशासनिक व्यवस्था, दरबारी संस्कृति और स्थापत्य ने भारतीय इतिहास पर गहरी छाप छोड़ी।
 tags: [mughal, samrajya, madhyakaal]
+series: { id: mughal-samrajya-ka-uday, order: 1 }
 image:
-  src: https://commons.wikimedia.org/wiki/Special:FilePath/Red_Fort_Delhi_India.jpg
-  alt: दिल्ली के लाल किले का बाहरी दृश्य
-  credit: "चित्र: Vishnu Vardhan Rao 9 / Wikimedia Commons, CC BY-SA 4.0"
+  src: /images/lekh/mughal-samrajya.webp
+  alt: "अबुल फ़ज़ल बादशाह अकबर को दरबार में अकबरनामा भेंट करते हुए — मंडप में गद्दी पर बैठे अकबर, चारों ओर दरबारी और नीचे आँगन में घोड़ा व सेवक (अकबरनामा का मुग़ल लघुचित्र, चित्रकार गोवर्धन)"
+  credit: "चित्र: गोवर्धन (मुग़ल दरबारी चित्रकार) / Wikimedia Commons / सार्वजनिक डोमेन"
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-2 (कक्षा 12), अध्याय 9: राजा और इतिहासकार — मुग़ल दरबार"
     url: https://www.ncert.nic.in/textbook/pdf/lehs204.pdf
   - title: "Mughal Empire — Encyclopaedia Britannica"
     url: https://www.britannica.com/place/Mughal-dynasty
-  - title: "चित्र: Red Fort Delhi India — Wikimedia Commons"
-    url: https://commons.wikimedia.org/wiki/File:Red_Fort_Delhi_India.jpg
+  - title: "चित्र: Abu'l Fazl presenting the Akbarnama to Akbar — Wikimedia Commons"
+    url: https://commons.wikimedia.org/wiki/File:AbulFazlPresentingAkbarnama.jpg
 quiz:
   - q: "1526 में बाबर ने किस युद्ध में इब्राहिम लोदी को हराया?"
     options: ["पानीपत की पहली लड़ाई", "खानवा की लड़ाई", "हल्दीघाटी की लड़ाई", "तालीकोटा की लड़ाई"]

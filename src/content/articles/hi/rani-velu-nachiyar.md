@@ -7,6 +7,7 @@ kaun: [रानी वेलु नाचियार, मुत्तु व�
 kahan: [शिवगंगा (तमिलनाडु), रामनाथपुरम, कालैयारकोइल, विरुपाक्षी (डिंडीगुल के पास)]
 saar: रामनाथपुरम की राजकुमारी और शिवगंगा की रानी वेलु नाचियार ने 1772 में पति की मृत्यु और राज्य छिन जाने के बाद लगभग आठ साल निर्वासन में तैयारी की। हैदर अली और मरुदु बंधुओं की मदद से उन्होंने लगभग 1780 में शिवगंगा वापस जीत लिया। तमिल स्मृति में वे अंग्रेज़ों से लड़ने वाली आरंभिक रानियों में गिनी जाती हैं।
 tags: [veerangana, tamil-nadu, angrezi-shasan, east-india-company, pratirodh]
+series: { id: company-raj, order: 6 }
 sources:
   - title: "Velu Nachiyar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Velu_Nachiyar

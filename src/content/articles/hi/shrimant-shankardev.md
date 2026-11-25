@@ -7,6 +7,7 @@ kaun: [श्रीमंत शंकरदेव, माधवदेव, म�
 kahan: [बरदोवा (नगाँव, असम), माजुली, कोच राज्य, भेलाडोंगा (कूचबिहार)]
 saar: पंद्रहवीं-सोलहवीं सदी के संत, कवि, नाटककार और संगीतकार श्रीमंत शंकरदेव ने असम में 'एक शरण नाम धर्म' का प्रचार किया, जिसमें एक ईश्वर कृष्ण की शरण और नाम-कीर्तन को केंद्र में रखा गया। उनके स्थापित नामघर, सत्र, अंकीया नाट, बरगीत और सत्रीया नृत्य आज भी असमिया समाज और संस्कृति की रीढ़ हैं।
 tags: [bhakti, vaishnav, assam, purvottar-bharat, sant-kavi, natya]
+series: { id: bhakti-aur-sufi, order: 9 }
 sources:
   - title: "Sankardev — Wikipedia"
     url: https://en.wikipedia.org/wiki/Srimanta_Sankardeva

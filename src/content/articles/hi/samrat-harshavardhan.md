@@ -7,6 +7,7 @@ kaun: [हर्षवर्धन, बाणभट्ट, ह्वेन त�
 kahan: [थानेश्वर, कन्नौज, प्रयाग, नालंदा]
 saar: गुप्त साम्राज्य के पतन के बाद 7वीं शताब्दी में सम्राट हर्षवर्धन ने उत्तर भारत को एक शक्तिशाली साम्राज्य में बांधा। कन्नौज को राजधानी बनाकर उन्होंने साहित्य, विद्या और दानशीलता का स्वर्णिम युग रचा।
 tags: [samrajya, kannauj, sahitya]
+series: { id: harsh-se-tarain, order: 1 }
 sources:
   - title: "बाणभट्ट — हर्षचरित (7वीं शताब्दी की संस्कृत जीवनी)"
     url: https://archive.org/details/harshacaritaofba00banauoft
@@ -17,8 +18,8 @@ sources:
     url: https://www.britannica.com/biography/Harsha
 image:
   src: /images/lekh/samrat-harshavardhan.webp
-  alt: "सम्राट हर्ष द्वारा संरक्षित प्राचीन नालंदा महाविहार के भव्य अवशेष"
-  credit: "चित्र: Wikimedia Commons, CC BY-SA 4.0"
+  alt: "सम्राट हर्षवर्धन (606–647 ई.) का चाँदी का सिक्का: एक ओर राजा का बाईं ओर मुख किया सिर, दूसरी ओर पंखे जैसी पूँछ वाले गरुड़ की आकृति"
+  credit: "चित्र: Classical Numismatic Group (CNG) / Wikimedia Commons / CC BY-SA 3.0"
 quiz:
   - q: "सम्राट हर्षवर्धन के दरबारी कवि बाणभट्ट ने उनकी कौन-सी प्रसिद्ध जीवनी लिखी?"
     options: ["हर्षचरित", "राजतरंगिणी", "पृथ्वीराज रासो", "रत्नावली"]

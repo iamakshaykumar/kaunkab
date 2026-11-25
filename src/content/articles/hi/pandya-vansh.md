@@ -7,6 +7,7 @@ kaun: [नेडुंजेलियन, कडुंगोन, अरिके
 kahan: [मदुरै, कोरकई, तमिरबरनी नदी, कलुगुमलै, तिरुनेलवेली]
 saar: तमिलनाडु के दक्षिणी भाग में मदुरै से शासन करने वाला पांड्य वंश भारत के सबसे लंबे चलने वाले राजवंशों में से एक है। मेगस्थनीज़ और अशोक के अभिलेखों से लेकर संगम कविताओं तक इसके प्रमाण मिलते हैं। छठी सदी में इसका पुनरुत्थान हुआ और तेरहवीं सदी में यह दक्षिण भारत की सबसे बड़ी शक्ति बना।
 tags: [dakshin-bharat, tamilnadu, sangam, madurai, vyapar, chola]
+series: { id: prachin-dakshin-bharat, order: 2 }
 sources:
   - title: "Pandya dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Pandya_dynasty

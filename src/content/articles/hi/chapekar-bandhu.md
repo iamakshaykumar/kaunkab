@@ -7,6 +7,7 @@ kaun: [दामोदर हरि चापेकर, बालकृष्ण
 kahan: [पुणे, चिंचवड, गणेशखिंड, यरवदा जेल]
 saar: 1896–97 की प्लेग महामारी के दौरान पुणे में प्लेग समिति की कठोर और अपमानजनक कार्रवाइयों से आक्रोशित दामोदर और बालकृष्ण चापेकर ने 22 जून 1897 को प्लेग कमिश्नर डब्ल्यू. सी. रैंड और लेफ़्टिनेंट आयर्स्ट को गोली मार दी। तीनों चापेकर भाइयों को फाँसी हुई।
 tags: [krantikari, maharashtra, pune, plague, angrezi-shasan, tilak]
+series: { id: krantikari-andolan, order: 2 }
 sources:
   - title: "Chapekar brothers — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chapekar_brothers

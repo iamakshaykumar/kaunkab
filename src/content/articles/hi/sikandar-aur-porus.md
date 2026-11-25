@@ -7,6 +7,7 @@ kaun: [सिकंदर (अलेक्ज़ेंडर), पोरस (प
 kahan: [झेलम नदी (हाइडेस्पीज़), तक्षशिला, ब्यास नदी (हाइफ़ेसिस)]
 saar: 326 ई.पू. में मकदूनिया के सिकंदर और पंजाब के राजा पोरस के बीच झेलम नदी के किनारे भीषण युद्ध हुआ। पोरस हारे, पर उनकी वीरता से प्रभावित होकर सिकंदर ने उन्हें उनका राज्य लौटा दिया। इसके कुछ समय बाद ब्यास नदी पर सिकंदर की थकी हुई सेना ने आगे बढ़ने से इनकार कर दिया।
 tags: [yuddh, yunani-akraman, punjab, sikandar]
+series: { id: maurya-samrajya-ki-kahani, order: 1 }
 sources:
   - title: "Battle of the Hydaspes — Encyclopaedia Britannica"
     url: https://www.britannica.com/event/Battle-of-the-Hydaspes

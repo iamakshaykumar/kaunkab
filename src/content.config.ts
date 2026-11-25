@@ -60,7 +60,7 @@ const articles = defineCollection({
 
 const series = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/series' }),
-  schema: z.object({ title: z.string(), description: z.string() }),
+  schema: z.object({ title: z.string(), description: z.string(), order: z.number().int().optional() }),
 });
 
 export const collections = { articles, series };

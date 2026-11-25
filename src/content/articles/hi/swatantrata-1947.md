@@ -7,11 +7,15 @@ kaun: [जवाहरलाल नेहरू, महात्मा गां
 kahan: [दिल्ली, कोलकाता]
 saar: लंबे संघर्ष के बाद 15 अगस्त 1947 को भारत स्वतंत्र हुआ। लेकिन आज़ादी के साथ देश का विभाजन भी हुआ, जिसमें लाखों लोग बेघर हुए और बड़ी संख्या में लोगों की जान गई।
 tags: [swatantrata-sangram, british-raj, vibhajan]
-series: { id: azadi-ki-raah, order: 3 }
+series: { id: azadi-ki-raah, order: 14 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: विभाजन को समझना"
   - title: "Indian Independence Act 1947 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indian_Independence_Act_1947
+image:
+  src: /images/lekh/swatantrata-1947.webp
+  alt: "14-15 अगस्त 1947 की मध्यरात्रि को संविधान सभा में 'नियति से साक्षात्कार' भाषण देते जवाहरलाल नेहरू, सामने आकाशवाणी के माइक्रोफ़ोन और बैठे हुए सदस्य"
+  credit: "चित्र: अज्ञात फ़ोटोग्राफ़र / Wikimedia Commons / सार्वजनिक डोमेन"
 quiz:
   - q: "स्वतंत्र भारत के पहले प्रधानमंत्री कौन बने?"
     options: ["सरदार पटेल", "जवाहरलाल नेहरू", "डॉ. राजेंद्र प्रसाद", "मौलाना आज़ाद"]

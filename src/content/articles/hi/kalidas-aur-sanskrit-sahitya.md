@@ -7,6 +7,7 @@ kaun: [कालिदास, चंद्रगुप्त द्विती�
 kahan: [उज्जयिनी (उज्जैन), मालवा]
 saar: कालिदास संस्कृत के सबसे प्रसिद्ध कवि और नाटककार माने जाते हैं। अभिज्ञानशाकुंतलम्, मेघदूत, रघुवंश और कुमारसंभव जैसी उनकी रचनाएँ लगभग चौथी–पाँचवीं सदी ई. के गुप्त काल से जोड़ी जाती हैं और आज भी भारतीय साहित्य की धरोहर हैं।
 tags: [sahitya, sanskrit, gupta, kalidas, natak]
+series: { id: maurya-se-gupta, order: 11 }
 sources:
   - title: "Kalidasa — Encyclopaedia Britannica"
     url: https://www.britannica.com/biography/Kalidasa

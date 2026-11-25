@@ -7,6 +7,7 @@ kaun: [राजा दाहिर, मुहम्मद बिन क़ा�
 kahan: [देबल, अरोर (रोहड़ी के पास), ब्राह्मणाबाद, मुल्तान, सिंध]
 saar: 711–713 ई. में उमय्यद ख़िलाफ़त के सेनापति मुहम्मद बिन क़ासिम ने सिंध के राजा दाहिर को हराकर सिंध और मुल्तान पर अधिकार कर लिया। यह भारतीय उपमहाद्वीप में अरबों का पहला स्थायी राज्य था, पर इसके आगे अरबों का विस्तार प्रतिहार और चालुक्य जैसे भारतीय राज्यों ने रोक दिया।
 tags: [sindh, arab, yuddh, umayyad, raja-dahir]
+series: { id: harsh-se-tarain, order: 3 }
 sources:
   - title: "Muhammad ibn al-Qasim — Wikipedia"
     url: https://en.wikipedia.org/wiki/Muhammad_ibn_al-Qasim

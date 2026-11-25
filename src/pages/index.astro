@@ -98,7 +98,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
           <a class="link-arrow" href="/series">{t.allSeries} →</a>
         </div>
         <div class="series-grid">
-          {seriesList.map(({ s, id, img, items }) => (
+          {seriesList.slice(0, 6).map(({ s, id, img, items }) => (
             <a class="series-card" href={`/series/${id}`}>
               <div class="s-media">
                 {img && <img src={img} alt="" width="1200" height="675" loading="lazy" decoding="async" />}
@@ -108,7 +108,8 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
                 <h3>{s.data.title}</h3>
                 <p>{s.data.description}</p>
                 <ol>
-                  {items.map((a) => <li>{a.data.title}</li>)}
+                  {items.slice(0, 5).map((a) => <li>{a.data.title}</li>)}
+                  {items.length > 5 && <li class="more">और {items.length - 5} भाग…</li>}
                 </ol>
                 <span class="s-foot"><ProgressCount slugs={items.map(slugOf)} /><span class="link-arrow">शुरू करें →</span></span>
               </div>
@@ -199,6 +200,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
   .s-body h3 { margin: 0; font-size: 1.5rem; }
   .s-body p { margin: 0; color: var(--muted); }
   .s-body ol { margin: .5rem 0 0; padding-left: 1.2rem; color: var(--fg); font-weight: 500; display: grid; gap: .2rem; }
+  .s-body ol li.more { list-style: none; margin-left: -1.2rem; color: var(--muted); font-weight: 400; }
   .s-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; }
 
   .contribute { margin-top: 5rem; background: var(--ink); color: var(--on-ink); padding: 0 0 4.5rem; position: relative; overflow: hidden; }

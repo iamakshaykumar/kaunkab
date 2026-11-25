@@ -7,10 +7,11 @@ kaun: [आंडाल, रामानुज, कबीर, गुरु ना
 kahan: [दक्षिण भारत, वाराणसी, पंजाब, राजस्थान, बंगाल]
 saar: भक्ति परंपराओं में कवियों और संतों ने ईश्वर के प्रति निजी प्रेम और भक्ति को अलग-अलग भाषाओं में व्यक्त किया। यह कोई एक संगठन या एक समान आंदोलन नहीं था; इसकी धाराएँ कई सदियों और क्षेत्रों में विकसित हुईं।
 tags: [bhakti, dharm, sahitya]
+series: { id: bhakti-aur-sufi, order: 1 }
 image:
-  src: https://commons.wikimedia.org/wiki/Special:FilePath/Painting_of_Kabir_with_Ravidas,_Mughal,_1625.jpg
-  alt: 1625 की मुग़ल शैली की चित्रकला में कबीर और रैदास
-  credit: "चित्र: अज्ञात कलाकार / राष्ट्रीय संग्रहालय, नई दिल्ली / Wikimedia Commons; सार्वजनिक डोमेन"
+  src: /images/lekh/bhakti-andolan.webp
+  alt: "लगभग 1625 के मुग़ल शैली के चित्र में करघे पर बुनते कबीर और उनके पास बैठे रैदास"
+  credit: "चित्र: अज्ञात कलाकार, राष्ट्रीय संग्रहालय, नई दिल्ली / Wikimedia Commons / सार्वजनिक डोमेन"
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-2 (कक्षा 12), अध्याय 6: भक्ति-सूफ़ी परंपराएँ"
   - title: "चित्र: Painting of Kabir with Ravidas — Wikimedia Commons"

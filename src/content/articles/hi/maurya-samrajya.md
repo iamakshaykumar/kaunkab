@@ -7,11 +7,15 @@ kaun: [चंद्रगुप्त मौर्य, चाणक्य, ब�
 kahan: [पाटलिपुत्र, मगध]
 saar: चंद्रगुप्त मौर्य और चाणक्य ने नंद वंश को हराकर भारत का पहला विशाल साम्राज्य बनाया, जिसकी राजधानी पाटलिपुत्र थी।
 tags: [samrajya, magadh, maurya]
-series: { id: maurya-se-gupta, order: 1 }
+series: { id: maurya-samrajya-ki-kahani, order: 2 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 2: राजा, किसान और नगर"
   - title: "Maurya Empire — Wikipedia"
     url: https://en.wikipedia.org/wiki/Maurya_Empire
+image:
+  src: /images/lekh/maurya-samrajya.webp
+  alt: "बिहार की बराबर पहाड़ियों में मौर्य काल में चट्टान काटकर बनाई गई लोमस ऋषि गुफा का प्रवेश-द्वार — लकड़ी की झोपड़ी जैसी मेहराब और उस पर हाथियों की नक्काशीदार पंक्ति"
+  credit: "चित्र: Photo Dharma (Anandajoti) / Wikimedia Commons / CC BY 2.0"
 quiz:
   - q: "मौर्य साम्राज्य की राजधानी कौन-सी थी?"
     options: ["उज्जैन", "तक्षशिला", "पाटलिपुत्र", "दिल्ली"]

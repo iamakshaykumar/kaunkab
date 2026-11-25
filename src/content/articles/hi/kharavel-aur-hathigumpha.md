@@ -7,6 +7,7 @@ kaun: [खारवेल, सातकर्णि]
 kahan: [उदयगिरि पहाड़ी (भुवनेश्वर, ओडिशा), कलिंग, मगध]
 saar: ओडिशा में भुवनेश्वर के पास उदयगिरि पहाड़ी की हाथीगुम्फा गुफा पर खुदा सत्रह पंक्तियों का प्राकृत अभिलेख कलिंग के राजा खारवेल के शासन का साल-दर-साल ब्योरा देता है। यह खारवेल के बारे में जानकारी का मुख्य स्रोत है और प्राचीन भारत के सबसे महत्वपूर्ण अभिलेखों में गिना जाता है।
 tags: [odisha, shilalekh, jain-dharm, prachin-bharat, gufa]
+series: { id: maurya-se-gupta, order: 4 }
 sources:
   - title: "Hathigumpha inscription — Wikipedia"
     url: https://en.wikipedia.org/wiki/Hathigumpha_inscription

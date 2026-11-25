@@ -7,6 +7,7 @@ kaun: [महेंद्रवर्मन प्रथम, नरसिंह�
 kahan: [कांचीपुरम, महाबलीपुरम (मामल्लापुरम), बादामी]
 saar: चौथी से आठवीं शताब्दी के दौरान पल्लव राजवंश ने दक्षिण भारत में द्रविड़ मंदिर वास्तुकला की नींव रखी। नरसिंहवर्मन प्रथम 'महामल्ल' के काल में महाबलीपुरम में समुद्र किनारे विशाल ग्रेनाइट चट्टानों को काटकर एकाश्मक रथ और भव्य तटीय मंदिर बनाए गए।
 tags: [dakshin-bharat, mandir-kala, dravid-shaili]
+series: { id: prachin-dakshin-bharat, order: 4 }
 sources:
   - title: "Group of Monuments at Mahabalipuram — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/249/
@@ -16,8 +17,8 @@ sources:
     url: https://www.britannica.com/topic/Pallava-dynasty
 image:
   src: /images/lekh/pallava-vansh.webp
-  alt: "महाबलीपुरम में स्थित पल्लवकालीन पंच पांडव एकाश्मक रथ मंदिर"
-  credit: "चित्र: G41rn8 / Wikimedia Commons, CC BY-SA 4.0"
+  alt: "महाबलीपुरम का तट मंदिर — आठवीं सदी में पल्लव राजा नरसिंहवर्मन द्वितीय (राजसिंह) के समय पत्थर से बना, दो सीढ़ीनुमा शिखरों वाला मंदिर और सामने नंदी की मूर्तियाँ"
+  credit: "चित्र: Bernard Gagnon / Wikimedia Commons / CC BY-SA 3.0"
 quiz:
   - q: "पल्लव साम्राज्य की प्रसिद्ध राजधानी कौन-सी थी, जो विद्या और रेशम का बड़ा केंद्र बनी?"
     options: ["मदुरै", "कांचीपुरम", "तंजावुर", "वारंगल"]

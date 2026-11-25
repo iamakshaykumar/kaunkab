@@ -7,6 +7,7 @@ kaun: [सरदार वल्लभभाई पटेल, वी.पी. म
 kahan: [नई दिल्ली, जूनागढ़, हैदराबाद, भोपाल, कश्मीर, त्रावणकोर]
 saar: 1947 में आज़ादी के साथ ही भारत के सामने 565 देशी रियासतों के रूप में टुकड़े-टुकड़े होने का ख़तरा था। गृह मंत्री सरदार वल्लभभाई पटेल ने अपनी फौलादी इच्छाशक्ति और वी.पी. मेनन के कूटनीतिक कौशल से 'अखंड भारत' का सपना साकार किया।
 tags: [swatantrata, sardar-patel, ekikaran, adhunik-bharat]
+series: { id: naye-bharat-ka-nirman, order: 2 }
 sources:
   - title: "वी. पी. मेनन — द स्टोरी ऑफ द इंटीग्रेशन ऑफ द इंडियन स्टेट्स (The Integration of the Indian States)"
     url: https://archive.org/details/TheStoryOfTheIntegrationOfTheIndianStatesByV.P.Menon
@@ -16,8 +17,8 @@ sources:
   - title: "विलय पत्र (Instrument of Accession) — National Archives of India"
 image:
   src: /images/lekh/riyasaton-ka-ekikaran.webp
-  alt: "भारत के लौह पुरुष और प्रथम गृह मंत्री सरदार वल्लभभाई पटेल"
-  credit: "चित्र: प्रेस सूचना ब्यूरो (PIB), भारत सरकार / सार्वजनिक डोमेन"
+  alt: "दिसंबर 1947 में जयपुर पहुँचने पर सरदार वल्लभभाई पटेल का स्वागत करते सैनिक वर्दी में जयपुर के महाराजा (श्वेत-श्याम तस्वीर)"
+  credit: "चित्र: फ़ोटो डिवीज़न, सूचना एवं प्रसारण मंत्रालय, भारत सरकार / Wikimedia Commons / सार्वजनिक डोमेन (PD-India)"
 quiz:
   - q: "भारत की 565 रियासतों का एकीकरण कर आधुनिक भारत के निर्माता बने सरदार पटेल को किस नाम से जाना जाता है?"
     options: ["लौह पुरुष (Iron Man of India)", "नेताजी", "देशबंधु", "लोकमान्य"]

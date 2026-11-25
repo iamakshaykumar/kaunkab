@@ -7,6 +7,7 @@ kaun: [शिवाजी, अफ़ज़ल ख़ान, अली आदि�
 kahan: [प्रतापगढ़ (सातारा, महाराष्ट्र), जावली, बीजापुर, पन्हाला, कोल्हापुर]
 saar: 10 नवंबर 1659 को प्रतापगढ़ क़िले के नीचे शिवाजी और बीजापुर के सेनापति अफ़ज़ल ख़ान की मुलाक़ात हुई, जिसमें अफ़ज़ल ख़ान मारा गया। इसके तुरंत बाद मराठा सेना ने जावली के जंगलों में आदिलशाही सेना को हराया। इस जीत ने शिवाजी को दक्कन की एक बड़ी शक्ति के रूप में स्थापित किया।
 tags: [maratha, shivaji, bijapur, adilshahi, yuddh, durg]
+series: { id: maratha-shakti, order: 1 }
 sources:
   - title: "Battle of Pratapgarh — Wikipedia"
     url: https://en.wikipedia.org/wiki/Battle_of_Pratapgarh

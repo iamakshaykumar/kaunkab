@@ -7,17 +7,18 @@ kaun: [हरिहर, बुक्का राय, कृष्णदेव �
 kahan: [विजयनगर, हम्पी, तुंगभद्रा नदी]
 saar: चौदहवीं शताब्दी में दक्षिण भारत में उभरा विजयनगर साम्राज्य अपनी राजधानी, मंदिरों और दूर-दूर तक फैले व्यापार के लिए प्रसिद्ध हुआ। 1565 की लड़ाई के बाद राजधानी उजड़ गई, पर उसका स्थापत्य आज भी हम्पी में दिखाई देता है।
 tags: [dakshin-bharat, samrajya, hampi]
+series: { id: dakshin-ke-rajvansh, order: 5 }
 image:
-  src: https://commons.wikimedia.org/wiki/Special:FilePath/Hampi_virupaksha_temple.jpg
-  alt: हम्पी में विरुपाक्ष मंदिर का गोपुरम और आसपास के ऐतिहासिक स्मारक
-  credit: "चित्र: Apadegal / Wikimedia Commons, CC BY-SA 3.0"
+  src: /images/lekh/vijayanagar-samrajya.webp
+  alt: "हम्पी के विट्ठल मंदिर परिसर में पत्थर का बना गरुड़ रथ — नक़्क़ाशीदार पहिये, आगे पत्थर के हाथी और पीछे मंडप"
+  credit: "चित्र: Corrector007 / Wikimedia Commons / CC BY-SA 4.0"
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-2 (कक्षा 12), अध्याय 7: एक साम्राज्य की राजधानी — विजयनगर"
     url: https://www.ncert.nic.in/textbook/pdf/lehs203.pdf
   - title: "Group of Monuments at Hampi — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/241/
-  - title: "चित्र: Hampi virupaksha temple — Wikimedia Commons"
-    url: https://commons.wikimedia.org/wiki/File:Hampi_virupaksha_temple.jpg
+  - title: "चित्र: Stone Chariot at Vittala temple, Hampi — Wikimedia Commons"
+    url: https://commons.wikimedia.org/wiki/File:Stone_Chariot_at_Vittala_temple,_Hampi.jpg
 quiz:
   - q: "विजयनगर साम्राज्य की राजधानी के अवशेष आज कहाँ देखे जा सकते हैं?"
     options: ["हम्पी", "मदुरै", "तंजावुर", "वारंगल"]

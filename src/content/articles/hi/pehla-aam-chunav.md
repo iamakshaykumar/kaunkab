@@ -7,6 +7,7 @@ kaun: [सुकुमार सेन, जवाहरलाल नेहरू
 kahan: [चीनी तहसील (हिमाचल प्रदेश), बंबई, दिल्ली, संपूर्ण भारत]
 saar: 25 अक्टूबर 1951 से 21 फ़रवरी 1952 के बीच हुए स्वतंत्र भारत के पहले आम चुनाव में 21 वर्ष से अधिक आयु के हर नागरिक को वोट का अधिकार मिला। लगभग 17.3 करोड़ मतदाताओं, कम साक्षरता और कठिन भूगोल के बावजूद मुख्य चुनाव आयुक्त सुकुमार सेन के नेतृत्व में हुआ यह चुनाव दुनिया का तब तक का सबसे बड़ा लोकतांत्रिक प्रयोग माना गया।
 tags: [chunav-1952, loktantra, chunav-ayog, nehru, swatantra-bharat]
+series: { id: naye-bharat-ka-nirman, order: 3 }
 sources:
   - title: "1951–52 Indian general election — Wikipedia"
     url: https://en.wikipedia.org/wiki/1951%E2%80%9352_Indian_general_election

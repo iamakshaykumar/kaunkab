@@ -7,6 +7,7 @@ kaun: [रघुनाथराव, नाना फडणवीस, महा�
 kahan: [पुणे, वडगाँव, सालबाई, बसई (वसई), असई, खड़की, कोरेगाँव, बिठूर]
 saar: अठारहवीं सदी के अंत में भारत की सबसे बड़ी देशी शक्ति मराठा संघ और ईस्ट इंडिया कंपनी के बीच तीन युद्ध हुए। पहले युद्ध में बराबरी रही, पर दूसरे और तीसरे युद्ध के बाद 1818 में पेशवाई समाप्त हो गई और कंपनी भारत की सर्वोच्च शक्ति बन गई।
 tags: [maratha, peshwa, angrezi-shasan, east-india-company, yuddh, maharashtra]
+series: { id: maratha-shakti, order: 10 }
 sources:
   - title: "First Anglo-Maratha War — Wikipedia"
     url: https://en.wikipedia.org/wiki/First_Anglo-Maratha_War

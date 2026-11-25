@@ -7,11 +7,15 @@ kaun: [चंद्रगुप्त प्रथम, समुद्रगु�
 kahan: [पाटलिपुत्र, उज्जैन, नालंदा]
 saar: गुप्त काल को अक्सर भारत का "स्वर्ण युग" कहा जाता है — इस दौर में कला, साहित्य, गणित और खगोल विज्ञान में असाधारण काम हुआ।
 tags: [samrajya, vigyan, sahitya, magadh]
-series: { id: maurya-se-gupta, order: 3 }
+series: { id: maurya-se-gupta, order: 8 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 2: राजा, किसान और नगर"
   - title: "Gupta Empire — Wikipedia"
     url: https://en.wikipedia.org/wiki/Gupta_Empire
+image:
+  src: /images/lekh/gupta-kaal.webp
+  alt: "ललितपुर ज़िले के देवगढ़ में गुप्तकालीन दशावतार मंदिर — लाल बलुआ पत्थर का गर्भगृह, नक्काशीदार प्रवेश-द्वार और ऊँचे चबूतरे पर चढ़ती सीढ़ियाँ"
+  credit: "चित्र: Work2win / Wikimedia Commons / CC BY-SA 4.0"
 quiz:
   - q: "समुद्रगुप्त की विजयों का वर्णन किस अभिलेख में है?"
     options: ["प्रयाग (इलाहाबाद) स्तंभ लेख", "तेरहवाँ शिलालेख", "हाथीगुम्फा अभिलेख", "कुतुब मीनार"]

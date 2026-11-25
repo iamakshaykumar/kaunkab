@@ -7,11 +7,15 @@ kaun: [सम्राट अशोक, महेंद्र, संघमि�
 kahan: [कलिंग (ओडिशा), पाटलिपुत्र, सारनाथ]
 saar: कलिंग युद्ध के भयानक विनाश ने सम्राट अशोक को बदल दिया। उन्होंने युद्ध छोड़कर "धम्म" का रास्ता अपनाया और अपने संदेश शिलालेखों पर खुदवाए।
 tags: [maurya, bauddh, yuddh, shilalekh]
-series: { id: maurya-se-gupta, order: 2 }
+series: { id: maurya-samrajya-ki-kahani, order: 6 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 2: राजा, किसान और नगर"
   - title: "Kalinga War — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kalinga_War
+image:
+  src: /images/lekh/ashok-aur-kalinga-yuddh.webp
+  alt: "धौली (भुवनेश्वर, ओडिशा) की चट्टान पर ब्राह्मी लिपि में खुदा अशोक का शिलालेख"
+  credit: "चित्र: Bhajish Bharathan / Wikimedia Commons / CC BY-SA 4.0"
 quiz:
   - q: "कलिंग आज के किस राज्य का हिस्सा है?"
     options: ["गुजरात", "ओडिशा", "पंजाब", "केरल"]

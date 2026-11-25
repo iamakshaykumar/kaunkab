@@ -12,6 +12,10 @@ sources:
   - title: "NCERT, हमारे अतीत-III (कक्षा 8), अध्याय: राष्ट्रीय आंदोलन का संघटन"
   - title: "Jallianwala Bagh massacre — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre
+image:
+  src: /images/lekh/jallianwala-bagh.webp
+  alt: "जलियाँवाला बाग़ की ईंटों की दीवार, जिस पर 1919 की गोलीबारी से बने गोलियों के निशान सफ़ेद चौखटों से चिह्नित हैं"
+  credit: "चित्र: Ahoun Xinjitsu / Wikimedia Commons / CC BY-SA 4.0"
 quiz:
   - q: "जलियाँवाला बाग़ में गोली चलाने का आदेश किसने दिया?"
     options: ["लॉर्ड कर्ज़न", "जनरल डायर", "लॉर्ड माउंटबेटन", "लॉर्ड डलहौज़ी"]

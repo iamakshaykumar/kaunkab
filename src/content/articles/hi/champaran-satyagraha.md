@@ -7,7 +7,7 @@ kaun: [महात्मा गांधी, राजकुमार शुक
 kahan: [चंपारण (बिहार), मोतिहारी, बेतिया]
 saar: 1917 में बिहार के चंपारण ज़िले में नील की खेती के लिए मजबूर किए जा रहे किसानों के पक्ष में महात्मा गांधी ने भारत में अपना पहला सत्याग्रह किया। इसके परिणामस्वरूप शोषणकारी तिनकठिया प्रथा समाप्त हुई।
 tags: [swatantrata-sangram, gandhi, satyagraha, kisan-andolan]
-series: { id: azadi-ki-raah, order: 117 }
+series: { id: azadi-ki-raah, order: 1 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: महात्मा गांधी और राष्ट्रीय आंदोलन"
     url: https://ncert.nic.in/textbook/pdf/lehs302.pdf

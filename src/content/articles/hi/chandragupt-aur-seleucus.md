@@ -7,6 +7,7 @@ kaun: [चंद्रगुप्त मौर्य, सेल्यूकस 
 kahan: [सिंधु नदी का क्षेत्र, गांधार, अराकोसिया (कंधार क्षेत्र), गेड्रोसिया (मकरान), पाटलिपुत्र]
 saar: सिकंदर की मृत्यु के बाद उसके पूर्वी साम्राज्य पर अधिकार जमाने निकले सेल्यूकस प्रथम का सामना लगभग 305 ई.पू. में चंद्रगुप्त मौर्य से हुआ। संघर्ष का अंत एक संधि से हुआ, जिसमें सेल्यूकस ने सिंधु के पश्चिम के कुछ प्रदेश मौर्यों को दिए और बदले में 500 युद्ध-हाथी पाए। इसके बाद दोनों राज्यों के बीच दूत आने-जाने लगे।
 tags: [maurya, chandragupt-maurya, yunani, kootniti, samrajya]
+series: { id: maurya-samrajya-ki-kahani, order: 4 }
 sources:
   - title: "Seleucid–Mauryan war — Wikipedia"
     url: https://en.wikipedia.org/wiki/Seleucid%E2%80%93Mauryan_war

@@ -7,10 +7,15 @@ kaun: [क़ुतुबुद्दीन ऐबक, इल्तुतमि�
 kahan: [दिल्ली, दौलताबाद]
 saar: 1206 से 1526 तक दिल्ली से पाँच राजवंशों ने शासन किया। इसी दौर में क़ुतुब मीनार बनी और रज़िया सुल्तान दिल्ली की पहली महिला शासक बनीं।
 tags: [samrajya, dilli, saltanat]
+series: { id: dilli-saltanat-ki-kahani, order: 1 }
 sources:
   - title: "NCERT, हमारे अतीत-II (कक्षा 7), अध्याय: दिल्ली के सुल्तान"
   - title: "Delhi Sultanate — Wikipedia"
     url: https://en.wikipedia.org/wiki/Delhi_Sultanate
+image:
+  src: /images/lekh/dilli-saltanat.webp
+  alt: "दिल्ली में ग़यासुद्दीन तुग़लक़ द्वारा बनवाए गए तुग़लक़ाबाद क़िले की ढलवाँ पत्थर की विशाल प्राचीर और बुर्ज, आसपास हरियाली और पेड़"
+  credit: "चित्र: Pinakpani / Wikimedia Commons / CC BY-SA 4.0"
 quiz:
   - q: "दिल्ली सल्तनत का पहला राजवंश कौन-सा था?"
     options: ["लोदी", "तुग़लक़", "ख़िलजी", "मामलुक (ग़ुलाम) वंश"]

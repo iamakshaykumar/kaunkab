@@ -7,6 +7,7 @@ kaun: [सुकाफा (चाओलुंग सुकाफा), सुत�
 kahan: [मोंग माओ (युन्नान), पटकाई पहाड़ियाँ, नामरूप, चराइदेउ (असम)]
 saar: तेरहवीं सदी में ताई राजकुमार सुकाफा अपने साथियों के साथ पटकाई पहाड़ियाँ पार करके 1228 में ब्रह्मपुत्र घाटी पहुँचे और अहोम राज्य की नींव रखी, जिसने लगभग छह सौ वर्ष असम पर शासन किया। उनकी बसाई राजधानी चराइदेउ के अहोम राजाओं के 'मोइदाम' 2024 में यूनेस्को विश्व धरोहर बने।
 tags: [ahom, assam, purvottar-bharat, rajvansh, vishwa-dharohar]
+series: { id: kshetriya-shaktiyan, order: 1 }
 sources:
   - title: "Sukaphaa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sukaphaa

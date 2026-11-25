@@ -7,6 +7,7 @@ kaun: [शेरशाह सूरी, हुमायूँ]
 kahan: [सासाराम, कन्नौज, दिल्ली, कालिंजर]
 saar: मात्र पाँच वर्षों (1540-1545) के शासनकाल में शेरशाह सूरी ने मुग़ल बादशाह हुमायूँ को निर्वासित कर सूर साम्राज्य की स्थापना की। उनकी ग्रैंड ट्रंक रोड, भू-राजस्व प्रणाली और 'रुपिया' मुद्रा ने भारत की आधुनिक प्रशासनिक नींव तैयार की।
 tags: [prashasan, suri-samrajya, gt-road]
+series: { id: mughal-samrajya-ka-uday, order: 6 }
 sources:
   - title: "अब्बास ख़ान सरवानी — तारीख़-ए-शेरशाही (16वीं सदी का समकालीन इतिहास)"
     url: https://archive.org/details/historyofindiaas04elli
@@ -16,8 +17,8 @@ sources:
     url: https://www.britannica.com/biography/Sher-Shah-of-Sur
 image:
   src: /images/lekh/shershah-suri.webp
-  alt: "शेर के साथ शेरशाह सूरी का ऐतिहासिक लघुचित्र"
-  credit: "चित्र: ब्रिटिश लाइब्रेरी / Wikimedia Commons, सार्वजनिक डोमेन"
+  alt: "सासाराम (बिहार) में कृत्रिम झील के बीच ऊँचे चबूतरे पर बना शेरशाह सूरी का अठकोणीय मक़बरा, बड़ा गुंबद और कोनों पर छतरियाँ"
+  credit: "चित्र: Paramanu Sarkar / Wikimedia Commons / CC BY-SA 4.0"
 quiz:
   - q: "शेरशाह सूरी का मूल (बचपन का) नाम क्या था?"
     options: ["फ़रीद ख़ान", "बहादुर शाह", "सलीम शाह", "ख़ुर्रम"]

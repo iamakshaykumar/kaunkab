@@ -7,6 +7,7 @@ kaun: [डॉ. भीमराव आंबेडकर, महात्मा �
 kahan: [यरवदा जेल (पुणे), लंदन]
 saar: अगस्त 1932 के 'कम्युनल अवॉर्ड' में दलित वर्गों (तब 'डिप्रेस्ड क्लासेज़') को पृथक निर्वाचन दिया गया, जिसके विरोध में गांधी ने यरवदा जेल में आमरण अनशन किया। 24 सितंबर 1932 को डॉ. आंबेडकर और हिंदू नेताओं के बीच हुए पूना पैक्ट में पृथक निर्वाचन की जगह संयुक्त निर्वाचन के साथ आरक्षित सीटों की व्यवस्था तय हुई।
 tags: [ambedkar, gandhi, dalit-andolan, arakshan, swatantrata-sangram]
+series: { id: azadi-ki-raah, order: 10 }
 sources:
   - title: "बी. आर. आंबेडकर — What Congress and Gandhi Have Done to the Untouchables (1945)"
   - title: "धनंजय कीर — डॉ. आंबेडकर: जीवन और मिशन (Dr. Ambedkar: Life and Mission)"

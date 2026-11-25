@@ -7,6 +7,7 @@ kaun: [संत ज्ञानेश्वर (ज्ञानदेव), न�
 kahan: [आपेगाँव, पैठण, नेवासा, आळंदी, पंढरपुर (महाराष्ट्र)]
 saar: तेरहवीं सदी के संत ज्ञानेश्वर ने किशोर अवस्था में ही भगवद्गीता पर मराठी में 'ज्ञानेश्वरी' नाम की टीका रची, जिससे गहन दर्शन आम लोगों की भाषा में पहुँचा। परंपरा के अनुसार उन्होंने लगभग 21 वर्ष की आयु में आळंदी में संजीवन समाधि ली; उन्हें वारकरी परंपरा का संस्थापक-स्तंभ माना जाता है।
 tags: [bhakti, sant-kavi, marathi-sahitya, varkari, maharashtra]
+series: { id: bhakti-aur-sufi, order: 7 }
 sources:
   - title: "Dnyaneshwar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dnyaneshwar

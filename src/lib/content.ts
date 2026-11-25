@@ -20,7 +20,9 @@ export async function getArticles(): Promise<Article[]> {
 
 export async function getSeriesList(): Promise<Series[]> {
   const all = await getCollection('series', (e) => e.id.startsWith(`${LANG}/`));
-  return all.sort((a, b) => a.data.title.localeCompare(b.data.title, 'hi'));
+  return all.sort(
+    (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999) || a.data.title.localeCompare(b.data.title, 'hi'),
+  );
 }
 
 export async function getSeriesArticles(id: string): Promise<Article[]> {

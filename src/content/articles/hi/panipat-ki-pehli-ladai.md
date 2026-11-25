@@ -7,10 +7,15 @@ kaun: [बाबर, इब्राहिम लोदी]
 kahan: [पानीपत (हरियाणा)]
 saar: 21 अप्रैल 1526 को बाबर ने तोपखाने और नई युद्ध-नीति के बल पर इब्राहिम लोदी की बड़ी सेना को हराया। इसी जीत से भारत में मुग़ल साम्राज्य की नींव पड़ी।
 tags: [yuddh, mughal, dilli, saltanat]
+series: { id: mughal-samrajya-ka-uday, order: 3 }
 sources:
   - title: "NCERT, हमारे अतीत-II (कक्षा 7), अध्याय: मुग़ल साम्राज्य"
   - title: "First Battle of Panipat — Wikipedia"
     url: https://en.wikipedia.org/wiki/First_Battle_of_Panipat
+image:
+  src: /images/lekh/panipat-ki-pehli-ladai.webp
+  alt: "बाबरनामा (1598) का दो पन्नों का मुग़ल लघुचित्र: पानीपत की पहली लड़ाई (1526) — दाईं ओर छत्र के नीचे घोड़े पर सवार बाबर, तोपों की कतारें और तीरंदाज़; बाईं ओर हाथियों और घुड़सवारों के बीच घमासान"
+  credit: "चित्र: मुग़ल चित्रकार (बाबरनामा, 1598) / Wikimedia Commons / सार्वजनिक डोमेन"
 quiz:
   - q: "पानीपत की पहली लड़ाई में बाबर ने किसे हराया?"
     options: ["राणा सांगा", "इब्राहिम लोदी", "हेमू", "शेरशाह सूरी"]
