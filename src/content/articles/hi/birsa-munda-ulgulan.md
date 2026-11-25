@@ -7,7 +7,7 @@ kaun: [बिरसा मुंडा, सुगना मुंडा, कर�
 kahan: ["उलिहातू (खूँटी, झारखंड)", चाईबासा, डोम्बारी बुरु, खूँटी, राँची, छोटानागपुर]
 saar: मुंडा आदिवासी नेता बिरसा मुंडा ने छोटानागपुर में ज़मीन, जंगल और आत्मसम्मान की रक्षा के लिए 'उलगुलान' (महाविद्रोह) का नेतृत्व किया, जो 1899 के क्रिसमस के आसपास भड़का। फ़रवरी 1900 में गिरफ़्तार बिरसा की 9 जून 1900 को राँची जेल में मृत्यु हो गई।
 tags: [adivasi-andolan, munda, ulgulan, jharkhand, angrez-virodh]
-series: { id: angrezon-ke-viruddh-vidroh, order: 11 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 13 }
 sources:
   - title: "कुमार सुरेश सिंह — Birsa Munda and His Movement 1874–1901 (The Dust-Storm and the Hanging Mist)"
   - title: "शरत चंद्र रॉय — The Mundas and Their Country (1912)"

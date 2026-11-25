@@ -7,7 +7,7 @@ kaun: [लुइजी पियो तेस्सितोरी, अमला
 kahan: ["कालीबंगा (हनुमानगढ़ ज़िला, राजस्थान)", घग्गर नदी]
 saar: राजस्थान के हनुमानगढ़ ज़िले में घग्गर नदी के किनारे बसा कालीबंगा उन गिने-चुने स्थलों में है जहाँ हड़प्पा सभ्यता से पहले और हड़प्पा काल — दोनों की बस्तियाँ एक के ऊपर एक मिली हैं। यहाँ दुनिया के सबसे पुराने ज्ञात जुते हुए खेत और कतार में बनी अग्नि-वेदियाँ मिली हैं।
 tags: [sindhu-ghati, harappa, rajasthan, puratattva, krishi, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 5 }
+series: { id: sabhyata-ki-shuruaat, order: 6 }
 sources:
   - title: "Kalibangan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kalibangan

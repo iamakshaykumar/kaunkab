@@ -7,7 +7,7 @@ kaun: [औरंगज़ेब, शाहजहाँ, दारा शिक�
 kahan: [धरमत, सामूगढ़, आगरा, दिल्ली, औरंगाबाद, बीजापुर, गोलकुंडा, ख़ुल्दाबाद]
 saar: उत्तराधिकार के ख़ूनी युद्ध में भाइयों को हराकर औरंगज़ेब 1658 में मुग़ल बादशाह बने और लगभग पचास वर्ष राज किया। उनके समय साम्राज्य अपने सबसे बड़े विस्तार पर पहुँचा, पर दक्कन के लंबे युद्धों, विद्रोहों और विवादित धार्मिक नीतियों ने उसकी नींव भी कमज़ोर की।
 tags: [mughal-samrajya, aurangzeb, dakkan, maratha, uttaradhikar-yuddh]
-series: { id: mughal-shikhar-aur-patan, order: 6 }
+series: { id: mughal-shikhar-aur-patan, order: 7 }
 sources:
   - title: "Aurangzeb — Wikipedia"
     url: https://en.wikipedia.org/wiki/Aurangzeb

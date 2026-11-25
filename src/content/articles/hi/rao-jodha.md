@@ -7,7 +7,7 @@ kaun: [राव जोधा, राव रणमल, राणा कुंभ
 kahan: [मंडोर, जोधपुर, मेहरानगढ़, चित्तौड़गढ़, मारवाड़ (राजस्थान)]
 saar: राठौड़ शासक राव जोधा ने पिता की हत्या और निर्वासन के बाद मंडोर वापस जीता और 12 मई 1459 को एक ऊँची पहाड़ी पर मेहरानगढ़ दुर्ग की नींव रखी। उसी के नीचे बसा नगर उनके नाम पर जोधपुर कहलाया और मारवाड़ की राजधानी बना।
 tags: [marwar, rathore, rajput, rajasthan, jodhpur, kila, rao-jodha]
-series: { id: kshetriya-shaktiyan, order: 6 }
+series: { id: kshetriya-shaktiyan, order: 8 }
 sources:
   - title: "Rao Jodha — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rao_Jodha

@@ -7,7 +7,7 @@ kaun: [ललितादित्य मुक्तापीड, यशोव�
 kahan: [कश्मीर, परिहासपुर, "मार्तंड (मट्टन, अनंतनाग)", कन्नौज]
 saar: "कार्कोट वंश के ललितादित्य मुक्तापीड ने आठवीं शताब्दी में कश्मीर को उत्तर भारत की एक बड़ी शक्ति बनाया। उन्होंने कन्नौज के यशोवर्मन को हराया, चीन के तांग दरबार से संबंध रखे और मार्तंड का प्रसिद्ध सूर्य मंदिर बनवाया। उनकी कई विजय-कथाएँ कल्हण की राजतरंगिणी से आती हैं, जिनमें इतिहास और किंवदंती मिली हुई है।"
 tags: [kashmir, karkota-vansh, mandir, surya-upasana, rajatarangini]
-series: { id: harsh-se-tarain, order: 4 }
+series: { id: harsh-se-tarain, order: 5 }
 sources:
   - title: "Lalitaditya Muktapida — Wikipedia"
     url: https://en.wikipedia.org/wiki/Lalitaditya_Muktapida

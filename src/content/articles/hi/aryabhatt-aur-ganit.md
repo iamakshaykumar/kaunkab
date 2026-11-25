@@ -7,7 +7,7 @@ kaun: [आर्यभट, भास्कर प्रथम, ब्रह्�
 kahan: [कुसुमपुर (पाटलिपुत्र)]
 saar: पाँचवीं सदी के महान गणितज्ञ-खगोलशास्त्री आर्यभट ने मात्र 23 वर्ष की आयु में 'आर्यभटीय' लिखा। इसमें स्थानीय मान वाली गणना, π का लगभग सटीक मान, ज्या (साइन) सारणी, पृथ्वी के अपनी धुरी पर घूमने और ग्रहणों के वैज्ञानिक कारण जैसे विचार मिलते हैं।
 tags: [vigyan, ganit, khagol, gupta]
-series: { id: prachin-gyan-aur-kala, order: 10 }
+series: { id: prachin-gyan-aur-kala, order: 12 }
 sources:
   - title: "Aryabhata — Encyclopaedia Britannica"
     url: https://www.britannica.com/biography/Aryabhata-I

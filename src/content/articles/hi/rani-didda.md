@@ -7,7 +7,7 @@ kaun: [दिद्दा, क्षेमगुप्त, सिंहराज
 kahan: [कश्मीर, श्रीनगर, लोहर (पुंछ क्षेत्र)]
 saar: लोहर के राजा सिंहराज की पुत्री दिद्दा कश्मीर के राजा क्षेमगुप्त की रानी बनीं। 958 ई. में पति की मृत्यु के बाद उन्होंने पहले पुत्र और फिर तीन पोतों के नाम पर राज चलाया, और 980 से 1003 ई. तक स्वयं कश्मीर की शासिका रहीं। कल्हण की राजतरंगिणी उन्हें निर्मम पर कुशल राजनीतिज्ञ के रूप में दिखाती है।
 tags: [kashmir, rani, rajatarangini, lohar-vansh, mahila-shasak]
-series: { id: harsh-se-tarain, order: 9 }
+series: { id: harsh-se-tarain, order: 11 }
 sources:
   - title: "Didda — Wikipedia"
     url: https://en.wikipedia.org/wiki/Didda

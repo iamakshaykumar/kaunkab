@@ -7,7 +7,7 @@ kaun: [गुरु अर्जन देव, गुरु राम दास,
 kahan: [गोइंदवाल, अमृतसर (हरमंदिर साहिब), तरनतारन, लाहौर]
 saar: सिखों के पाँचवें गुरु अर्जन देव (गुरु 1581–1606) ने अमृतसर में हरमंदिर साहिब का निर्माण पूरा कराया और 1604 में आदि ग्रंथ का संपादन कर उसे वहाँ स्थापित किया। 1606 में मुग़ल बादशाह जहाँगीर के आदेश पर लाहौर में हिरासत में उनकी मृत्यु हुई; सिख परंपरा उन्हें पहला शहीद गुरु मानती है।
 tags: [sikh-itihas, sikh-guru, adi-granth, mughal-samrajya, punjab]
-series: { id: sikh-itihas, order: 2 }
+series: { id: sikh-itihas, order: 3 }
 sources:
   - title: "Guru Arjan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Guru_Arjan

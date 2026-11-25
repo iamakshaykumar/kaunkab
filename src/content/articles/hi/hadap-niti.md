@@ -7,7 +7,7 @@ kaun: [लॉर्ड डलहौज़ी, रानी लक्ष्मी
 kahan: [सतारा, झाँसी, नागपुर, संबलपुर, जैतपुर, अवध (लखनऊ)]
 saar: गवर्नर-जनरल लॉर्ड डलहौज़ी (1848–1856) ने यह नियम कड़ाई से लागू किया कि यदि किसी आश्रित रियासत के शासक का अपना पुत्र न हो तो गोद लिए उत्तराधिकारी को मान्यता नहीं मिलेगी और राज्य कंपनी के अधिकार में चला जाएगा। इसी 'हड़प नीति' से सतारा, झाँसी और नागपुर जैसे राज्य छीने गए, और 1856 में 'कुशासन' के आरोप पर अवध भी मिला लिया गया। इससे उपजा असंतोष 1857 के संग्राम का एक बड़ा कारण बना।
 tags: [angrezi-shasan, east-india-company, riyasat, sangram-1857, prashasan]
-series: { id: company-raj, order: 13 }
+series: { id: company-raj, order: 16 }
 sources:
   - title: "Doctrine of lapse — Wikipedia"
     url: https://en.wikipedia.org/wiki/Doctrine_of_lapse

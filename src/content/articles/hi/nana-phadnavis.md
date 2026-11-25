@@ -7,7 +7,7 @@ kaun: [नाना फडणवीस, पेशवा नारायणरा
 kahan: [सातारा, पुणे, पानीपत, सालबाई, खर्डा, मेणवली]
 saar: बालाजी जनार्दन भानु, जिन्हें नाना फडणवीस के नाम से जाना जाता है, 1773 में पेशवा नारायणराव की हत्या के बाद लगभग तीन दशक तक पुणे की पेशवाई के वास्तविक संचालक रहे। 'बारभाई' परिषद, वित्तीय प्रबंधन और कूटनीति के सहारे उन्होंने रघुनाथराव और अंग्रेज़ों के गठजोड़ को रोका और मराठा संघ को जोड़े रखा। 13 मार्च 1800 को उनकी मृत्यु के बाद मराठा शक्ति तेज़ी से बिखरी।
 tags: [maratha, peshwa, kootniti, anglo-maratha-yuddh, pune]
-series: { id: maratha-shakti, order: 12 }
+series: { id: maratha-shakti, order: 13 }
 sources:
   - title: "Nana Fadnavis — Wikipedia"
     url: https://en.wikipedia.org/wiki/Nana_Fadnavis

@@ -7,7 +7,7 @@ kaun: [चंद्रगुप्त प्रथम, समुद्रगु�
 kahan: [पाटलिपुत्र, उज्जैन, नालंदा]
 saar: गुप्त काल को अक्सर भारत का "स्वर्ण युग" कहा जाता है — इस दौर में कला, साहित्य, गणित और खगोल विज्ञान में असाधारण काम हुआ।
 tags: [samrajya, vigyan, sahitya, magadh]
-series: { id: maurya-se-gupta, order: 9 }
+series: { id: maurya-se-gupta, order: 11 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 2: राजा, किसान और नगर"
   - title: "Gupta Empire — Wikipedia"

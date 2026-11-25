@@ -7,7 +7,7 @@ kaun: [सम्राट अशोक, एफ. ओ. ओर्टेल, जव�
 kahan: ["सारनाथ (वाराणसी, उत्तर प्रदेश)", सारनाथ पुरातत्व संग्रहालय]
 saar: लगभग 250 ई.पू. में मौर्य सम्राट अशोक ने सारनाथ में, जहाँ बुद्ध ने पहला उपदेश दिया था, एक पत्थर का स्तंभ खड़ा करवाया। उसके शीर्ष पर पीठ से पीठ सटाए बैठे चार सिंहों वाली चमकदार प्रतिमा — सिंहशीर्ष — 26 जनवरी 1950 को भारत का राजकीय चिह्न बनी।
 tags: [maurya, ashok, bauddh-dharm, vastukala, uttar-pradesh, rashtriya-pratik]
-series: { id: maurya-samrajya-ki-kahani, order: 9 }
+series: { id: maurya-samrajya-ki-kahani, order: 10 }
 sources:
   - title: "Lion Capital of Ashoka — Wikipedia"
     url: https://en.wikipedia.org/wiki/Lion_Capital_of_Ashoka

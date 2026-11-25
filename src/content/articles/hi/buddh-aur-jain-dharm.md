@@ -7,7 +7,7 @@ kaun: [गौतम बुद्ध, वर्धमान महावीर]
 kahan: [लुंबिनी, बोधगया, सारनाथ, वैशाली, पावापुरी]
 saar: छठी शताब्दी ई.पू. में जटिल यज्ञीय कर्मकांडों और सामाजिक बंधनों के विरुद्ध बौद्ध और जैन धर्म का उदय हुआ। अहिंसा, नैतिक आचरण और समता के इस विचार ने पूरे विश्व को प्रभावित किया।
 tags: [dharm, darshan, prachin-bharat]
-series: { id: vaidik-se-magadh, order: 6 }
+series: { id: vaidik-se-magadh, order: 7 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 4: विचारक, विश्वास और इमारतें"
     url: https://ncert.nic.in/textbook/pdf/lehs104.pdf

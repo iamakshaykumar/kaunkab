@@ -7,7 +7,7 @@ kaun: [अकबर, शेख़ सलीम चिश्ती, जहाँ�
 kahan: [फ़तेहपुर सीकरी, आगरा (उत्तर प्रदेश)]
 saar: 1571 में अकबर ने आगरा के पास सीकरी गाँव में सूफ़ी संत शेख़ सलीम चिश्ती के सम्मान में नई राजधानी बसाई। लाल बलुआ पत्थर से बनी इस नगरी में जामा मस्जिद, बुलंद दरवाज़ा, दीवान-ए-ख़ास और पंच महल जैसी इमारतें हैं, पर लगभग 14 वर्ष बाद ही दरबार यहाँ से चला गया।
 tags: [mughal-samrajya, akbar, sthapatya, vishwa-dharohar, uttar-pradesh]
-series: { id: mughal-samrajya-ka-uday, order: 9 }
+series: { id: mughal-samrajya-ka-uday, order: 10 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-2 (कक्षा 12), अध्याय: शासक और इतिवृत्त — मुग़ल दरबार"
   - title: "Catherine B. Asher — Architecture of Mughal India (The New Cambridge History of India)"

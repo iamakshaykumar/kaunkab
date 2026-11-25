@@ -7,7 +7,7 @@ kaun: [महादजी शिंदे, शाह आलम द्वित�
 kahan: [उज्जैन, ग्वालियर, दिल्ली, सालबाई, वानवडी (पुणे)]
 saar: पानीपत की तीसरी लड़ाई (1761) में घायल होकर बचे महादजी शिंदे ने अगले तीन दशकों में उत्तर भारत में मराठा प्रभुत्व फिर से स्थापित किया। 1771–72 में वे मुग़ल बादशाह शाह आलम द्वितीय को दिल्ली लौटा लाए, 1782 में सालबाई की संधि में मध्यस्थ बने और यूरोपीय ढंग की सेना खड़ी कर उत्तर भारत की सबसे शक्तिशाली हस्ती बन गए।
 tags: [maratha, peshwa, mughal-samrajya, dilli, gwalior, madhyapradesh]
-series: { id: maratha-shakti, order: 11 }
+series: { id: maratha-shakti, order: 12 }
 sources:
   - title: "Mahadaji Shinde — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mahadaji_Shinde

@@ -7,7 +7,7 @@ kaun: [महात्मा गांधी, सरोजिनी नायड
 kahan: [साबरमती आश्रम, दांडी, धरासणा]
 saar: 12 मार्च 1930 को महात्मा गांधी ने 78 अनुयायियों के साथ साबरमती से 240 मील पैदल चलकर दांडी समुद्र तट पर नमक क़ानून तोड़ा। इस अहिंसक कदम ने देशव्यापी सविनय अवज्ञा आंदोलन का बिगुल फूंका।
 tags: [swatantrata-sangram, gandhi, satyagraha]
-series: { id: azadi-ki-raah, order: 10 }
+series: { id: azadi-ki-raah, order: 11 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: महात्मा गांधी और राष्ट्रीय आंदोलन"
     url: https://ncert.nic.in/textbook/pdf/lehs302.pdf

@@ -7,7 +7,7 @@ kaun: [अलाउद्दीन हसन बहमन शाह, फ़ि�
 kahan: [गुलबर्गा (कलबुर्गी), बीदर, दौलताबाद, दक्कन]
 saar: 1347 में दिल्ली के सुल्तान मुहम्मद बिन तुग़लक़ के ख़िलाफ़ दक्कन के अमीरों के विद्रोह से बहमनी सल्तनत का जन्म हुआ। गुलबर्गा और फिर बीदर से लगभग 180 वर्ष तक चली इस सल्तनत ने वज़ीर महमूद गवाँ के समय अपना चरम देखा और अंत में पाँच दक्कनी सल्तनतों में बँट गई।
 tags: [bahmani-saltanat, dakkan, saltanat, mahmud-gawan, karnataka]
-series: { id: dakshin-ke-rajvansh, order: 8 }
+series: { id: dakshin-ke-rajvansh, order: 10 }
 sources:
   - title: "सतीश चंद्र — मध्यकालीन भारत: सल्तनत से मुग़ल तक, भाग 1"
   - title: "H. K. Sherwani — The Bahmanis of the Deccan"

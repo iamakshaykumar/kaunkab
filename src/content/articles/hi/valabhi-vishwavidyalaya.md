@@ -7,7 +7,7 @@ kaun: [भट्टार्क, ध्रुवसेन प्रथम, ध�
 kahan: ["वलभी (वल्लभीपुर, भावनगर ज़िला, गुजरात)", सौराष्ट्र, नालंदा]
 saar: लगभग 475 ई. में गुप्तों के सेनापति भट्टार्क ने सौराष्ट्र में मैत्रक वंश की नींव रखी, जिसकी राजधानी वलभी थी। तीन सदियों तक चले इस राज्य में वलभी एक बड़ा बंदरगाह-नगर और बौद्ध शिक्षा का प्रसिद्ध केंद्र बना, जिसकी तुलना चीनी यात्री इत्सिंग ने नालंदा से की।
 tags: [shiksha, bauddh-dharm, gujarat, jain-dharm, maitrak, gupta]
-series: { id: prachin-gyan-aur-kala, order: 9 }
+series: { id: prachin-gyan-aur-kala, order: 10 }
 sources:
   - title: "Valabhi University — Wikipedia"
     url: https://en.wikipedia.org/wiki/Valabhi_University

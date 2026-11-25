@@ -7,7 +7,7 @@ kaun: [खुदीराम बोस, प्रफुल्ल चाकी, �
 kahan: [मुज़फ़्फ़रपुर (बिहार), वैनी (अब खुदीराम बोस पूसा स्टेशन), मोकामा घाट, मिदनापुर (बंगाल)]
 saar: 30 अप्रैल 1908 को खुदीराम बोस और प्रफुल्ल चाकी ने मुज़फ़्फ़रपुर में जज किंग्सफ़ोर्ड को निशाना बनाकर एक बग्घी पर बम फेंका, पर उसमें दो अंग्रेज़ महिलाएँ सवार थीं जिनकी मौत हो गई। मुक़दमे के बाद 11 अगस्त 1908 को 18 वर्ष के खुदीराम को फाँसी दी गई।
 tags: [swatantrata-sangram, kranti, bangal, anushilan-samiti, khudiram-bose]
-series: { id: krantikari-andolan, order: 3 }
+series: { id: krantikari-andolan, order: 4 }
 sources:
   - title: "बिपिन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: क्रांतिकारी आतंकवाद का पहला दौर"
   - title: "सुमित सरकार — The Swadeshi Movement in Bengal, 1903–1908"

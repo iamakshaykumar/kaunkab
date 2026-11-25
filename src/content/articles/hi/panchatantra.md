@@ -7,7 +7,7 @@ kaun: [विष्णु शर्मा (परंपरागत रचयि
 kahan: [प्राचीन भारत, सासानी ईरान, बग़दाद]
 saar: "पंचतंत्र पशु-पक्षियों की कहानियों के ज़रिए नीति और व्यवहार-बुद्धि सिखाने वाला संस्कृत ग्रंथ है, जिसे परंपरा विष्णु शर्मा से जोड़ती है। इसका समय अनुमानतः लगभग 300 ई. माना जाता है। छठी शताब्दी में इसका पहलवी अनुवाद और आठवीं शताब्दी में अरबी 'कलीला व दिमना' बना, जिसके रास्ते ये कहानियाँ यूरोप तक पहुँचीं।"
 tags: [sahitya, sanskrit, kahaniyan, niti, anuvad]
-series: { id: prachin-gyan-aur-kala, order: 11 }
+series: { id: prachin-gyan-aur-kala, order: 13 }
 sources:
   - title: "Panchatantra — Wikipedia"
     url: https://en.wikipedia.org/wiki/Panchatantra

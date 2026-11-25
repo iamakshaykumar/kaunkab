@@ -7,7 +7,7 @@ kaun: [विमल शाह, भीम प्रथम, वस्तुपा�
 kahan: ["दिलवाड़ा (माउंट आबू, सिरोही ज़िला, राजस्थान)", अणहिलवाड़ पाटन]
 saar: "राजस्थान के माउंट आबू में बने दिलवाड़ा के पाँच श्वेतांबर जैन मंदिर सफ़ेद संगमरमर की बारीक नक्काशी के लिए प्रसिद्ध हैं। इनमें सबसे पुराना विमल वसही (लगभग 1031 ई.) चौलुक्य राजा भीम प्रथम के मंत्री विमल शाह ने और लूण वसही (1230 ई.) वाघेला शासक के मंत्री भाइयों वस्तुपाल-तेजपाल ने बनवाया।"
 tags: [mandir, vastukala, jain-dharm, rajasthan, solanki-vansh]
-series: { id: mandir-sthapatya, order: 5 }
+series: { id: mandir-sthapatya, order: 6 }
 sources:
   - title: "Dilwara Temples — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dilwara_Temples

@@ -7,7 +7,7 @@ kaun: [टीपू सुल्तान, हैदर अली, लॉर्�
 kahan: [श्रीरंगपट्टनम (कर्नाटक), मैसूर, देवनहल्ली, मंगलौर]
 saar: हैदर अली के पुत्र टीपू सुल्तान 1782 में मैसूर के शासक बने और लगभग दो दशकों तक ईस्ट इंडिया कंपनी के सबसे दृढ़ विरोधी रहे। 4 मई 1799 को श्रीरंगपट्टनम की रक्षा करते हुए उनकी मृत्यु के साथ ही दक्षिण भारत में अंग्रेज़ों का रास्ता खुल गया।
 tags: [yuddh, angrezi-shasan, mysore, dakshin-bharat]
-series: { id: company-raj, order: 7 }
+series: { id: company-raj, order: 8 }
 sources:
   - title: "NCERT, हमारे अतीत-III (कक्षा 8), अध्याय 2: व्यापार से साम्राज्य तक"
   - title: "Tipu Sultan — Encyclopaedia Britannica"

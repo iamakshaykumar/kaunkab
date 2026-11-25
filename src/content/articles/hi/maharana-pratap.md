@@ -7,7 +7,7 @@ kaun: [महाराणा प्रताप, उदयसिंह द्व
 kahan: [कुंभलगढ़, गोगुंदा, हल्दीघाटी, चावंड, मेवाड़ (राजस्थान)]
 saar: 1572 में गोगुंदा में मेवाड़ की गद्दी पर बैठे महाराणा प्रताप ने अकबर की अधीनता स्वीकार करने से इनकार किया। हल्दीघाटी के बाद भी उन्होंने अरावली की पहाड़ियों से संघर्ष जारी रखा, मेवाड़ का बड़ा भाग वापस लिया और 1597 में चावंड में उनका देहांत हुआ।
 tags: [mewar, rajput, rajasthan, maharana-pratap, mughal-samrajya, akbar]
-series: { id: kshetriya-shaktiyan, order: 9 }
+series: { id: kshetriya-shaktiyan, order: 12 }
 sources:
   - title: "Maharana Pratap — Wikipedia"
     url: https://en.wikipedia.org/wiki/Maharana_Pratap

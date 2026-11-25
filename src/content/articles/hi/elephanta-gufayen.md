@@ -7,7 +7,7 @@ kaun: [कलचुरि राजा कृष्णराज (संभाव
 kahan: [घारापुरी (एलिफेंटा द्वीप), मुंबई बंदरगाह, महाराष्ट्र]
 saar: मुंबई के पास समुद्र में बसे घारापुरी द्वीप पर चट्टान काटकर बनाई गई एलिफेंटा की गुफाएँ शिव को समर्पित हैं। इनकी सबसे प्रसिद्ध मूर्ति तीन मुखों वाले सदाशिव (त्रिमूर्ति) की है। अधिकतर विद्वान इन्हें पाँचवीं-छठी सदी का मानते हैं, और 1987 में इन्हें यूनेस्को विश्व धरोहर घोषित किया गया।
 tags: [vastukala, mandir, vishwa-dharohar, maharashtra, guha-mandir]
-series: { id: prachin-gyan-aur-kala, order: 13 }
+series: { id: prachin-gyan-aur-kala, order: 15 }
 sources:
   - title: "Elephanta Caves — Wikipedia"
     url: https://en.wikipedia.org/wiki/Elephanta_Caves

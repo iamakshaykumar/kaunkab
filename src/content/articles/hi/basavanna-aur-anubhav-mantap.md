@@ -7,7 +7,7 @@ kaun: [बसवन्ना (बसवेश्वर), बिज्जल द�
 kahan: [बसवन बागेवाड़ी, "कल्याण (आज का बसवकल्याण, कर्नाटक)", कूडलसंगम]
 saar: बारहवीं सदी में कलचुरि राजा बिज्जल के दरबार में मंत्री रहे बसवन्ना ने कल्याण में 'अनुभव मंटप' नाम की सभा को केंद्र बनाकर शिव-भक्तों का एक ऐसा आंदोलन खड़ा किया जो जाति-भेद, कर्मकांड और ऊँच-नीच पर सवाल उठाता था। उनके और उनके साथियों के कन्नड़ 'वचन' आज भी लिंगायत परंपरा और कन्नड़ साहित्य की धरोहर हैं।
 tags: [bhakti, vachana-sahitya, lingayat, karnataka, samaj-sudhar, dakshin-bharat]
-series: { id: bhakti-aur-sufi, order: 5 }
+series: { id: bhakti-aur-sufi, order: 6 }
 sources:
   - title: "Basava — Wikipedia"
     url: https://en.wikipedia.org/wiki/Basava

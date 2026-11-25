@@ -7,7 +7,7 @@ kaun: [शाहजहाँ, मुमताज़ महल, उस्ता�
 kahan: [आगरा (यमुना तट), बुरहानपुर, मकराना]
 saar: मुग़ल बादशाह शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में आगरा में यमुना के किनारे ताजमहल बनवाया। लगभग 1632 से शुरू होकर 1650 के दशक तक चले इस निर्माण में हज़ारों कारीगरों ने सफ़ेद संगमरमर, जड़ाऊ पत्थर और सुंदर सुलेख से मुग़ल स्थापत्य की सबसे प्रसिद्ध इमारत रची।
 tags: [mughal-samrajya, sthapatya, agra, vishwa-dharohar, shahjahan]
-series: { id: mughal-shikhar-aur-patan, order: 3 }
+series: { id: mughal-shikhar-aur-patan, order: 4 }
 sources:
   - title: "NCERT, हमारे अतीत-II (कक्षा 7), अध्याय: शासक और इमारतें"
   - title: "एब्बा कॉख — The Complete Taj Mahal and the Riverfront Gardens of Agra (टेम्स एंड हडसन, 2006)"

@@ -7,7 +7,7 @@ kaun: [याज्ञवल्क्य, गार्गी वाचक्न�
 kahan: [विदेह (मिथिला), कुरु-पांचाल, गंगा का मैदान]
 saar: उपनिषद वैदिक साहित्य के अंतिम भाग हैं, जिनमें यज्ञ-कर्मकांड से हटकर जीवन, आत्मा और ब्रह्मांड के मूल सत्य पर गहरा चिंतन मिलता है। बृहदारण्यक और छांदोग्य जैसे प्रारंभिक उपनिषदों में याज्ञवल्क्य, गार्गी और उद्दालक के संवाद भारतीय दर्शन की नींव बने।
 tags: [darshan, vaidik-kaal, sanskrit, dharm, sahitya, prachin-bharat]
-series: { id: vaidik-se-magadh, order: 2 }
+series: { id: vaidik-se-magadh, order: 3 }
 sources:
   - title: "Upanishads — Wikipedia"
     url: https://en.wikipedia.org/wiki/Upanishads

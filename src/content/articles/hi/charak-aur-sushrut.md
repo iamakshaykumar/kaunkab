@@ -7,7 +7,7 @@ kaun: [चरक, अग्निवेश, आत्रेय पुनर्�
 kahan: [वाराणसी (काशी), तक्षशिला, कश्मीर]
 saar: चरक संहिता और सुश्रुत संहिता आयुर्वेद के दो सबसे प्रसिद्ध प्राचीन ग्रंथ हैं। चरक संहिता मुख्यतः रोगों के निदान, आहार और उपचार पर केंद्रित है, जबकि सुश्रुत संहिता शल्य-चिकित्सा (सर्जरी), उसके औज़ारों और प्रशिक्षण के विस्तृत वर्णन के लिए जानी जाती है। दोनों ग्रंथ कई सदियों में विकसित होकर अपने वर्तमान रूप में पहुँचे।
 tags: [vigyan, ayurved, sanskrit, prachin-bharat, shiksha]
-series: { id: prachin-gyan-aur-kala, order: 4 }
+series: { id: prachin-gyan-aur-kala, order: 5 }
 sources:
   - title: "Charaka Samhita — Wikipedia"
     url: https://en.wikipedia.org/wiki/Charaka_Samhita

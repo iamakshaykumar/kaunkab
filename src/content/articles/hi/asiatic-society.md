@@ -7,7 +7,7 @@ kaun: [सर विलियम जोन्स, रॉबर्ट चैम�
 kahan: [कलकत्ता (कोलकाता), पार्क स्ट्रीट]
 saar: 15 जनवरी 1784 को कलकत्ता में न्यायाधीश और भाषाविद् सर विलियम जोन्स ने एशिया के इतिहास, भाषाओं और संस्कृति के अध्ययन के लिए 'एशियाटिक सोसाइटी' की स्थापना की। इसकी पत्रिकाओं और संग्रहों से भारतीय इतिहास के अध्ययन को नई दिशा मिली — यहीं के सचिव जेम्स प्रिंसेप ने 1830 के दशक में ब्राह्मी लिपि पढ़कर अशोक के अभिलेखों का रास्ता खोला। औपनिवेशिक ज्ञान-राजनीति की आलोचना के बावजूद यह संस्था आज भी कोलकाता में सक्रिय है।
 tags: [shiksha, punarjagaran, puratattva, east-india-company, bangal, lipi]
-series: { id: company-raj, order: 9 }
+series: { id: company-raj, order: 10 }
 sources:
   - title: "The Asiatic Society — Wikipedia"
     url: https://en.wikipedia.org/wiki/The_Asiatic_Society

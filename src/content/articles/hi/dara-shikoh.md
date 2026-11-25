@@ -7,7 +7,7 @@ kaun: [दारा शिकोह, शाहजहाँ, औरंगज़�
 kahan: [अजमेर, आगरा, लाहौर, सामूगढ़, देवराई, दिल्ली]
 saar: शाहजहाँ के सबसे बड़े पुत्र दारा शिकोह मुग़ल गद्दी के घोषित उत्तराधिकारी होने के साथ-साथ सूफ़ी विचारक और विद्वान भी थे। उन्होंने 'मजमा-उल-बहरैन' में इस्लाम और वेदांत की तुलना की और 1657 में उपनिषदों का फ़ारसी अनुवाद 'सिर्र-ए-अकबर' कराया। उत्तराधिकार युद्ध में औरंगज़ेब से हारने के बाद 1659 में उन्हें मृत्युदंड दिया गया।
 tags: [mughal-samrajya, dara-shikoh, sufi, upanishad, uttaradhikar-yuddh, aurangzeb]
-series: { id: mughal-shikhar-aur-patan, order: 5 }
+series: { id: mughal-shikhar-aur-patan, order: 6 }
 sources:
   - title: "Dara Shikoh — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dara_Shikoh

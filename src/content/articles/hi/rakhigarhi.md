@@ -7,7 +7,7 @@ kaun: [अमरेंद्र नाथ, वसंत शिंदे, वा�
 kahan: ["राखीगढ़ी (हिसार क्षेत्र, हरियाणा)", घग्गर का मैदान]
 saar: हरियाणा का राखीगढ़ी गाँव हड़प्पा सभ्यता के सबसे बड़े ज्ञात स्थलों में गिना जाता है। यहाँ हड़प्पा-पूर्व से लेकर परिपक्व हड़प्पा काल तक की बस्ती, नियोजित सड़कें, नालियाँ और एक बड़ा क़ब्रिस्तान मिला है। 2019 में यहीं के एक कंकाल से पहली बार किसी हड़प्पाई व्यक्ति का प्राचीन डीएनए पढ़ा गया।
 tags: [sindhu-ghati, harappa, haryana, puratattva, dna, prachin-bharat]
-series: { id: sabhyata-ki-shuruaat, order: 6 }
+series: { id: sabhyata-ki-shuruaat, order: 7 }
 sources:
   - title: "Rakhigarhi — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rakhigarhi

@@ -7,7 +7,7 @@ kaun: [गुरु हरगोबिंद, गुरु अर्जन द�
 kahan: [गुरु की वडाली, अमृतसर, ग्वालियर क़िला, करतारपुर, कीरतपुर साहिब]
 saar: 1606 में पिता गुरु अर्जन देव की शहादत के बाद ग्यारह वर्ष की आयु में छठे गुरु बने हरगोबिंद ने 'मीरी' और 'पीरी' की दो तलवारें धारण कीं और अमृतसर में अकाल तख़्त की स्थापना की। उन्होंने सिख समुदाय को आत्मरक्षा के लिए संगठित किया और शाहजहाँ के समय मुग़ल सेनाओं से कई लड़ाइयाँ लड़ीं।
 tags: [sikh-itihas, sikh-guru, amritsar, akal-takht, mughal-samrajya, guru-hargobind]
-series: { id: sikh-itihas, order: 3 }
+series: { id: sikh-itihas, order: 4 }
 sources:
   - title: "Guru Hargobind — Wikipedia"
     url: https://en.wikipedia.org/wiki/Guru_Hargobind

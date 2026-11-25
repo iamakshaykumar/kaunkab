@@ -7,7 +7,7 @@ kaun: [तात्या टोपे, नाना साहब, रानी 
 kahan: [येवला (नासिक), बिठूर, कानपुर, कालपी, ग्वालियर, राजपूताना, पाड़ौन का जंगल, शिवपुरी]
 saar: नाना साहब के सहयोगी तात्या टोपे 1857 के संग्राम के सबसे जुझारू सेनानायकों में थे। कानपुर, कालपी और ग्वालियर की लड़ाइयों के बाद उन्होंने लगभग दस महीने तक राजपूताना और मध्य भारत में छापामार युद्ध चलाया। अप्रैल 1859 में विश्वासघात के बाद पकड़े गए और 18 अप्रैल 1859 को शिवपुरी में उन्हें फाँसी दी गई।
 tags: [sangram-1857, swatantrata-sangram, angrezi-shasan, maratha, madhyapradesh]
-series: { id: angrezon-ke-viruddh-vidroh, order: 9 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 11 }
 sources:
   - title: "Tatya Tope — Wikipedia"
     url: https://en.wikipedia.org/wiki/Tatya_Tope

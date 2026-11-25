@@ -7,7 +7,7 @@ kaun: [बिंबिसार, अजातशत्रु, प्रसेन
 kahan: [मगध, कोसल, वत्स, अवंति, वज्जि, गांधार, गंगा का मैदान]
 saar: लगभग छठी सदी ई.पू. में उत्तर भारत छोटे-छोटे जनपदों से आगे बढ़कर सोलह बड़े राज्यों — महाजनपदों — में बँट गया। बौद्ध ग्रंथ अंगुत्तर निकाय में इनकी सूची मिलती है। इनमें कुछ राजतंत्र थे और कुछ गणसंघ, और आगे चलकर मगध ने लगभग सभी को अपने में मिला लिया।
 tags: [mahajanapad, magadh, ganrajya, bauddh-dharm, prachin-bharat, bihar]
-series: { id: vaidik-se-magadh, order: 3 }
+series: { id: vaidik-se-magadh, order: 4 }
 sources:
   - title: "Mahajanapadas — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mahajanapadas

@@ -7,7 +7,7 @@ kaun: [धरणा शाह (धन्ना शाह), राणा कु�
 kahan: ["रणकपुर (पाली ज़िला, राजस्थान)", अरावली पर्वतमाला, मेवाड़]
 saar: "राजस्थान की अरावली पहाड़ियों में बना रणकपुर का चतुर्मुख जैन मंदिर प्रथम तीर्थंकर ऋषभनाथ (आदिनाथ) को समर्पित है। जैन व्यापारी धरणा शाह ने मेवाड़ के राणा कुंभा के संरक्षण में इसका निर्माण लगभग 1437 ई. में शुरू करवाया। सफ़ेद संगमरमर के लगभग 1,444 नक्काशीदार स्तंभ इसकी पहचान हैं।"
 tags: [mandir, jain-dharm, vastukala, rajasthan, mewar, rana-kumbha]
-series: { id: mandir-sthapatya, order: 9 }
+series: { id: mandir-sthapatya, order: 11 }
 sources:
   - title: "Ranakpur Jain temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ranakpur_Jain_temple

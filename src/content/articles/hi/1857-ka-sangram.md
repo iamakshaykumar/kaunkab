@@ -7,7 +7,7 @@ kaun: [मंगल पांडे, बहादुर शाह ज़फ़�
 kahan: [मेरठ, दिल्ली, झाँसी, कानपुर, लखनऊ]
 saar: 10 मई 1857 को मेरठ के सिपाहियों के विद्रोह से शुरू हुआ संग्राम उत्तर और मध्य भारत में फैल गया। इसके बाद ईस्ट इंडिया कंपनी का शासन ख़त्म हुआ और भारत सीधे ब्रिटिश ताज के अधीन आ गया।
 tags: [swatantrata-sangram, angrezi-shasan, yuddh]
-series: { id: angrezon-ke-viruddh-vidroh, order: 5 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 6 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: विद्रोही और राज"
   - title: "Indian Rebellion of 1857 — Wikipedia"

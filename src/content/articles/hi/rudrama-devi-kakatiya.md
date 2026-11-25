@@ -7,7 +7,7 @@ kaun: [रुद्रमा देवी, गणपतिदेव, प्र�
 kahan: [वारंगल (ओरुगल्लु), तेलंगाना, मोटुपल्ली बंदरगाह, चंदुपटला]
 saar: "काकतीय राजा गणपतिदेव की पुत्री रुद्रमा देवी ने तेरहवीं शताब्दी में लगभग 1262 से 1289 ई. तक वारंगल से शासन किया। वे दक्षिण भारत की गिनी-चुनी महिला शासकों में थीं, और इतालवी यात्री मार्को पोलो ने भी उनके राज्य का उल्लेख किया।"
 tags: [veerangana, kakatiya, telangana, dakshin-bharat, mahila-shasak]
-series: { id: dakshin-ke-rajvansh, order: 6 }
+series: { id: dakshin-ke-rajvansh, order: 7 }
 sources:
   - title: "Rudrama Devi — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rudrama_Devi

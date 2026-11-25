@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [पतंजलि, व्यास (भाष्यकार), वाचस्पति मिश्र, अल-बिरूनी, स्वामी विवेकानंद]
 saar: पतंजलि के नाम से प्रसिद्ध 'योगसूत्र' संस्कृत के लगभग 195-196 छोटे सूत्रों का संग्रह है, जो योग को 'चित्त की वृत्तियों के निरोध' के रूप में परिभाषित करता है और अष्टांग योग का मार्ग बताता है। इसकी तिथि विवादित है; अनेक आधुनिक विद्वान इसे लगभग चौथी-पाँचवीं सदी ई. का मानते हैं।
 tags: [darshan, yog, sanskrit, sahitya, patanjali]
-series: { id: prachin-gyan-aur-kala, order: 6 }
+series: { id: prachin-gyan-aur-kala, order: 7 }
 sources:
   - title: "Yoga Sutras of Patanjali — Wikipedia"
     url: https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali

@@ -7,7 +7,7 @@ kaun: [भिल्लम पंचम, सिंघण द्वितीय, �
 kahan: ["देवगिरि (आज का दौलताबाद, महाराष्ट्र)", कल्याणी, नर्मदा से तुंगभद्रा तक का दक्कन]
 saar: लगभग 1187 से 1317 तक देवगिरि के यादव (सेउण) राजाओं ने दक्कन के बड़े भाग पर राज किया। इनके दौर में हेमाद्रि जैसे विद्वान मंत्री हुए, मराठी भाषा को राजकीय महत्व मिला और ज्ञानेश्वरी रची गई। 1296 में अलाउद्दीन ख़िलजी का धावा इस राज्य के अंत की शुरुआत बना।
 tags: [yadav-vansh, devagiri, dakkan, maharashtra, rajvansh]
-series: { id: dakshin-ke-rajvansh, order: 5 }
+series: { id: dakshin-ke-rajvansh, order: 6 }
 sources:
   - title: "Seuna (Yadava) dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Seuna_(Yadava)_dynasty

@@ -7,7 +7,7 @@ kaun: [दादाभाई नौरोजी, लॉर्ड सैलिस
 kahan: [नवसारी (गुजरात), बंबई, लंदन, फ़िन्सबरी सेंट्रल (लंदन), कलकत्ता]
 saar: '"भारत के वयोवृद्ध पुरुष" (ग्रैंड ओल्ड मैन ऑफ़ इंडिया) कहे जाने वाले दादाभाई नौरोजी ने आँकड़ों के सहारे दिखाया कि ब्रिटिश शासन भारत का धन लगातार इंग्लैंड ले जा रहा है। 1892 में वे ब्रिटिश संसद (हाउस ऑफ़ कॉमन्स) में पहुँचने वाले पहले भारतीय बने और 1906 में कांग्रेस अध्यक्ष के रूप में स्वराज को लक्ष्य घोषित किया।'
 tags: [dadabhai-naoroji, dhan-nishkasan, congress, naramdal, arthik-rashtravad, swatantrata-sangram]
-series: { id: sudhar-aur-rashtriya-chetna, order: 7 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 8 }
 sources:
   - title: "बिपन चंद्र — भारत में आर्थिक राष्ट्रवाद का उदय और विकास (The Rise and Growth of Economic Nationalism in India)"
   - title: "दादाभाई नौरोजी — Poverty and Un-British Rule in India (लंदन, 1901)"

@@ -7,7 +7,7 @@ kaun: [लॉर्ड डलहौज़ी, ग्रेट इंडियन
 kahan: [बोरी बंदर (मुंबई), ठाणे]
 saar: 16 अप्रैल 1853 को बंबई के बोरी बंदर से ठाणे तक लगभग 34 किलोमीटर की दूरी पर भारत की पहली यात्री रेलगाड़ी चली। 14 डिब्बों और लगभग 400 यात्रियों वाली इस गाड़ी को तीन भाप इंजनों — साहिब, सिंध और सुल्तान — ने खींचा।
 tags: [angrezi-shasan, railway, mumbai, takneek, dalhousie]
-series: { id: company-raj, order: 14 }
+series: { id: company-raj, order: 17 }
 sources:
   - title: "History of rail transport in India — Wikipedia"
     url: https://en.wikipedia.org/wiki/History_of_rail_transport_in_India
