@@ -17,27 +17,27 @@ const year = new Date().getFullYear();
     <div>
       <p class="h">{t.eras}</p>
       <ul>
-        <li><a href="/kaal/prachin">{t.prachin}</a></li>
-        <li><a href="/kaal/madhyakaal">{t.madhyakaal}</a></li>
-        <li><a href="/kaal/adhunik">{t.adhunik}</a></li>
+        <li><a href="/kaal/prachin/">{t.prachin}</a></li>
+        <li><a href="/kaal/madhyakaal/">{t.madhyakaal}</a></li>
+        <li><a href="/kaal/adhunik/">{t.adhunik}</a></li>
       </ul>
     </div>
     <div>
       <p class="h">पढ़ें</p>
       <ul>
-        <li><a href="/timeline">{t.timeline}</a></li>
-        <li><a href="/series">{t.allSeries}</a></li>
-        <li><a href="/khoj">{t.search}</a></li>
+        <li><a href="/timeline/">{t.timeline}</a></li>
+        <li><a href="/series/">{t.allSeries}</a></li>
+        <li><a href="/khoj/">{t.search}</a></li>
         <li><a href="/rss.xml">RSS फ़ीड</a></li>
       </ul>
     </div>
     <div>
       <p class="h">जुड़ें</p>
       <ul>
-        <li><a href="/yogdan">{t.contribute}</a></li>
+        <li><a href="/yogdan/">{t.contribute}</a></li>
         <li><a href={`${repo}/issues/new/choose`}>विषय सुझाएँ</a></li>
         <li><a href={`${repo}/issues/new/choose`}>गलती बताएँ</a></li>
-        <li><a href="/parichay">{t.about}</a></li>
+        <li><a href="/parichay/">{t.about}</a></li>
       </ul>
     </div>
   </div>
@@ -66,5 +66,9 @@ const year = new Date().getFullYear();
     border-top: 1px solid rgba(255,255,255,.12); margin-top: 3rem; padding-top: 1.25rem; font-size: .88rem; opacity: .65;
   }
   .bottom a { opacity: 1; text-decoration: underline; }
-  @media (max-width: 800px) { .cols { grid-template-columns: 1fr 1fr; } .brand { grid-column: 1 / -1; } }
+  @media (max-width: 800px) {
+    .cols { grid-template-columns: 1fr 1fr; } .brand { grid-column: 1 / -1; }
+    ul { gap: 0; }
+    ul a { display: inline-flex; align-items: center; min-height: 44px; }
+  }
 </style>

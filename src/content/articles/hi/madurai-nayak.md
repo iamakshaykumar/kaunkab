@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [विश्वनाथ नायक, अरियनाथ मुदलियार, तिरुमल नायक, रानी मंगम्मल, विजयरंग चोक्कनाथ, रानी मीनाक्षी, चंदा साहब]
 kahan: [मदुरै, तिरुचिरापल्ली, रामनाथपुरम, तमिलनाडु]
 saar: 1529 में विजयनगर सम्राट कृष्णदेव राय ने विश्वनाथ नायक को मदुरै का सूबेदार बनाया। उनके वंशजों ने लगभग दो सदियों तक दक्षिण तमिल देश पर राज किया, पालयम व्यवस्था बनाई और मीनाक्षी मंदिर व तिरुमल नायक महल जैसी भव्य इमारतें बनवाईं। 1736 में चंदा साहब के क़ब्ज़े के साथ इनका स्वतंत्र शासन समाप्त हुआ।
-tags: [nayak-vansh, madurai, dakshin-bharat, vijayanagar, tamilnadu, sthapatya]
+tags: [nayak-vansh, madurai, dakshin-bharat, vijaynagar-samrajya, tamilnadu, sthapatya]
 series: { id: dakshin-ke-rajvansh, order: 11 }
 sources:
   - title: "Madurai Nayak dynasty — Wikipedia"

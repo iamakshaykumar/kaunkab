@@ -4,8 +4,10 @@ import PageHero from '../../components/PageHero.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import ProgressCount from '../../components/ProgressCount.astro';
 import { ERAS, eraRangeLabel, eraTitle, type EraInfo } from '../../lib/eras';
-import { getArticles, slugOf } from '../../lib/content';
+import { articleUrl, getArticles, getSeriesArticles, getSeriesList, slugOf } from '../../lib/content';
 import { findImage } from '../../lib/images';
+import { getEntry, render } from 'astro:content';
+import { ORG_NAME, abs, breadcrumb, siteBase } from '../../lib/seo';
 
 export function getStaticPaths() {
   return ERAS.map((era) => ({ params: { era: era.id }, props: { era } }));
@@ -17,12 +19,83 @@ interface Props {
 const { era } = Astro.props;
 const list = (await getArticles()).filter((a) => a.data.era === era.id);
 const others = ERAS.filter((e) => e.id !== era.id);
+
+/** Series that have articles in this era, most articles first. */
+const eraSeries = (
+  await Promise.all(
+    (await getSeriesList()).map(async (s) => {
+      const id = s.id.replace(/^hi\//, '');
+      const items = await getSeriesArticles(id);
+      return { s, id, items, n: items.filter((a) => a.data.era === era.id).length };
+    }),
+  )
+)
+  .filter((x) => x.n > 0)
+  .sort((a, b) => b.n - a.n || (a.s.data.order ?? 999) - (b.s.data.order ?? 999));
+
+const intro = await getEntry('kaal', era.id);
+const Intro = intro?.body?.trim() ? (await render(intro)).Content : undefined;
+
+const SEO_TITLE: Record<string, string> = {
+  prachin: 'प्राचीन भारत का इतिहास',
+  madhyakaal: 'मध्यकालीन भारत का इतिहास',
+  adhunik: 'आधुनिक भारत का इतिहास',
+};
+const seoTitle = `${SEO_TITLE[era.id] ?? eraTitle(era.id)} (${eraRangeLabel(era.id)})`;
+const seoDescription = `${era.blurb} ${list.length} लेख और ${eraSeries.length} शृंखलाएँ, सरल हिंदी में और स्रोतों के साथ।`;
+const img = findImage(`kaal/${era.id}`);
+
+const site = siteBase(Astro.site);
+const url = `${site}/kaal/${era.id}/`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': url,
+      url,
+      name: SEO_TITLE[era.id] ?? eraTitle(era.id),
+      description: era.blurb,
+      inLanguage: 'hi',
+      isPartOf: { '@id': `${site}/#website` },
+      ...(img ? { image: abs(img, site) } : {}),
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: list.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: list.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${site}${articleUrl(a)}`, name: a.data.title })),
+      },
+    },
+    breadcrumb([
+      { name: ORG_NAME, url: `${site}/` },
+      { name: eraTitle(era.id), url },
+    ]),
+  ],
+};
 ---
-<Base title={eraTitle(era.id)} description={era.blurb} image={findImage(`kaal/${era.id}`)}>
-  <PageHero kicker={eraRangeLabel(era.id)} title={eraTitle(era.id)} lead={era.blurb} image={findImage(`kaal/${era.id}`)} era={era.id}>
+<Base title={seoTitle} description={seoDescription} image={img} jsonLd={jsonLd}>
+  <PageHero kicker={eraRangeLabel(era.id)} title={eraTitle(era.id)} lead={era.blurb} image={img} era={era.id}>
     <p class="count">{list.length} लेख <ProgressCount slugs={list.map(slugOf)} /></p>
   </PageHero>
   <div class="container">
+    {Intro && <div class="prose era-intro"><Intro /></div>}
+
+    {eraSeries.length > 0 && (
+      <section class="era-series">
+        <h2>{eraTitle(era.id)} की शृंखलाएँ</h2>
+        <p class="muted">किसी विषय को शुरू से अंत तक समझना हो तो इन शृंखलाओं से शुरुआत करें।</p>
+        <ul>
+          {eraSeries.map(({ s, id, items }) => (
+            <li>
+              <a href={`/series/${id}/`}>{s.data.title}</a>
+              <span class="muted"> · {items.length} भाग</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <h2 class="all-h">{eraTitle(era.id)} के सभी लेख</h2>
     {list.length > 0 ? (
       <div data-era-list>
         <div class="toolbar">
@@ -41,12 +114,12 @@ const others = ERAS.filter((e) => e.id !== era.id);
         <p class="empty card" hidden data-empty>कोई लेख नहीं मिला। कोई और शब्द आज़माएँ।</p>
       </div>
     ) : (
-      <p class="card">इस काल में अभी कोई लेख नहीं है। <a href="/yogdan">पहला लेख आप लिखिए!</a></p>
+      <p class="card">इस काल में अभी कोई लेख नहीं है। <a href="/yogdan/">पहला लेख आप लिखिए!</a></p>
     )}
 
     <div class="others">
       {others.map((e) => (
-        <a class={`other era-${e.id}`} href={`/kaal/${e.id}`}>
+        <a class={`other era-${e.id}`} href={`/kaal/${e.id}/`}>
           <span class="muted">{eraRangeLabel(e.id)}</span>
           <strong>{eraTitle(e.id)} →</strong>
         </a>
@@ -88,6 +161,14 @@ const others = ERAS.filter((e) => e.id !== era.id);
 </script>
 
 <style>
+  .era-intro { margin: 0 0 2.5rem; }
+  .era-series { margin: 0 0 2.5rem; }
+  .era-series h2, .all-h { margin: 0 0 .75rem; }
+  .era-series ul { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 0 1.5rem; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
+  .era-series li { border-bottom: 1px solid var(--border); }
+  .era-series a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none; }
+  .era-series a:hover { text-decoration: underline; }
+  .all-h { margin-top: 1rem; }
   .toolbar {
     position: sticky; top: var(--header-h); z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem;
     padding: .8rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid var(--border);

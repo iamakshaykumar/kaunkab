@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [हुमायूँ, बेगा बेगम (हाजी बेगम), मीरक मिर्ज़ा ग़ियास, सैयद मुहम्मद, अकबर]
 kahan: [निज़ामुद्दीन, दिल्ली]
 saar: दिल्ली में यमुना के पास बना हुमायूँ का मक़बरा भारतीय उपमहाद्वीप का पहला बड़ा बाग़-मक़बरा है। लगभग 1565 से 1572 के बीच फ़ारसी वास्तुकार मीरक मिर्ज़ा ग़ियास की योजना पर बनी इस इमारत ने आगे ताजमहल तक की मुग़ल वास्तुकला की राह तय की; 1993 में यह यूनेस्को विश्व धरोहर बना।
-tags: [mughal-samrajya, humayun, sthapatya, delhi, vishva-dharohar]
+tags: [mughal-samrajya, humayun, sthapatya, dilli, vishwa-dharohar]
 series: { id: mughal-samrajya-ka-uday, order: 8 }
 sources:
   - title: "Humayun's Tomb — Wikipedia"

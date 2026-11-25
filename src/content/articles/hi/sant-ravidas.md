@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [गुरु रविदास (रैदास), लोना देवी, रामानंद, कबीर, मीराबाई, अनंतदास]
 kahan: [सीर गोवर्धनपुर (वाराणसी), काशी, चित्तौड़]
 saar: पंद्रहवीं-सोलहवीं सदी के संत-कवि गुरु रविदास काशी के एक चर्मकार परिवार में जन्मे और निर्गुण भक्ति के प्रमुख स्वर बने। उन्होंने जाति-भेद को नकारते हुए 'बेगमपुरा' — दुख और भेदभाव से मुक्त नगर — की कल्पना की। उनके लगभग 40 पद गुरु ग्रंथ साहिब में शामिल हैं।
-tags: [bhakti, sant-kavi, nirgun-bhakti, varanasi, guru-granth-sahib, samajik-sudhar]
+tags: [bhakti, sant-kavi, nirgun-bhakti, varanasi, guru-granth-sahib, samaj-sudhar]
 series: { id: bhakti-aur-sufi, order: 12 }
 sources:
   - title: "Ravidas — Wikipedia"

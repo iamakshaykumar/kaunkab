@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [गोस्वामी तुलसीदास, नरहरिदास]
 kahan: [अयोध्या, वाराणसी (काशी), चित्रकूट, राजापुर]
 saar: सोलहवीं सदी के कवि-संत गोस्वामी तुलसीदास ने विक्रम संवत 1631 (1574 ई.) की रामनवमी को अवधी भाषा में 'रामचरितमानस' लिखना आरंभ किया। संस्कृत की जगह जनभाषा में लिखी इस रामकथा ने उत्तर भारत के घर-घर तक राम की कथा पहुँचाई और काशी की रामलीला परंपरा को जन्म दिया।
-tags: [bhakti-andolan, ram-bhakti, hindi-sahitya, awadhi, varanasi]
+tags: [bhakti, ram-bhakti, hindi-sahitya, awadhi, varanasi]
 series: { id: bhakti-aur-sufi, order: 17 }
 sources:
   - title: "Tulsidas — Wikipedia"

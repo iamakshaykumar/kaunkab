@@ -37,7 +37,7 @@ import { t } from '../i18n/hi';
       dateEl.textContent = formatDayMonth(r.month, r.day);
       body.innerHTML = r.events
         .map(
-          (e) => `<a class="ev" href="/lekh/${esc(e.slug)}">
+          (e) => `<a class="ev" href="/lekh/${esc(e.slug)}/">
             ${e.img ? `<img src="${esc(e.img)}" alt="" width="640" height="360" loading="lazy" />` : ''}
             <span class="txt">
               <span class="yr">${esc(formatYear(e.year))}</span>

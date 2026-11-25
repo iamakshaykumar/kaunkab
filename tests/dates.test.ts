@@ -25,3 +25,10 @@ describe('formatKab', () => {
     expect(formatKab({ start: 1526, month: 4 })).toBe('अप्रैल 1526 ई.');
   });
 });
+
+import { formatDate } from '../src/lib/dates';
+describe('formatDate', () => {
+  it('formats a date-only value without timezone drift', () => {
+    expect(formatDate(new Date('2026-11-25'))).toBe('25 नवंबर 2026');
+  });
+});

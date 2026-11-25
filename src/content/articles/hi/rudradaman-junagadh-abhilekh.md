@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [रुद्रदामन प्रथम, चष्टन, सुविशाख, पुष्यगुप्त, तुषास्फ, शातकर्णि, स्कंदगुप्त]
 kahan: [जूनागढ़ (गुजरात), गिरनार, सौराष्ट्र, उज्जैन]
 saar: लगभग 150 ई. में पश्चिमी क्षत्रप शासक रुद्रदामन प्रथम ने गिरनार के पास एक चट्टान पर संस्कृत में लंबा अभिलेख खुदवाया। इसमें मौर्य काल में बनी सुदर्शन झील के बाँध के टूटने और उसकी मरम्मत का विवरण है। यह पूरी तरह संस्कृत में लिखा गया पहला लंबा अभिलेख माना जाता है।
-tags: [shilalekh, kshatrap, gujarat, sanskrit, maurya, satavahana]
+tags: [shilalekh, kshatrap, gujarat, sanskrit, maurya, satavahan]
 series: { id: maurya-se-gupta, order: 7 }
 sources:
   - title: "Junagadh rock inscription of Rudradaman — Wikipedia"

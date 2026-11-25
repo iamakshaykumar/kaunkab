@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [सिमुक, शातकर्णि प्रथम, नागनिका, गौतमीपुत्र शातकर्णि, गौतमी बलश्री, वासिष्ठीपुत्र पुलुमावि, यज्ञश्री शातकर्णि]
 kahan: [प्रतिष्ठान (पैठण), नासिक, नानेघाट, अमरावती, कार्ले]
 saar: सातवाहन दक्कन (दक्षिण भारत के पठार) में साम्राज्य बनाने वाला पहला बड़ा राजवंश था। गौतमीपुत्र शातकर्णि जैसे शासकों ने शकों को हराया, और इस काल में व्यापार, बौद्ध गुफ़ा-विहार तथा प्राकृत साहित्य खूब फले-फूले।
-tags: [samrajya, dakshin-bharat, deccan, satavahan]
+tags: [samrajya, dakshin-bharat, dakkan, satavahan]
 series: { id: maurya-se-gupta, order: 4 }
 sources:
   - title: "Gautamiputra Shatakarni — Encyclopaedia Britannica"

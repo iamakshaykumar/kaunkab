@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [बाबर, अकबर, जहाँगीर, शाहजहाँ, औरंगज़ेब]
 kahan: [दिल्ली, आगरा, फ़तेहपुर सीकरी]
 saar: 1526 में बाबर की विजय से शुरू हुआ मुग़ल शासन अलग-अलग दौर में उत्तर भारत और उपमहाद्वीप के बड़े हिस्से तक फैला। इसकी प्रशासनिक व्यवस्था, दरबारी संस्कृति और स्थापत्य ने भारतीय इतिहास पर गहरी छाप छोड़ी।
-tags: [mughal, samrajya, madhyakaal]
+tags: [mughal-samrajya, samrajya, madhyakaal]
 series: { id: mughal-samrajya-ka-uday, order: 1 }
 image:
   src: /images/lekh/mughal-samrajya.webp

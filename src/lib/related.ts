@@ -2,18 +2,29 @@ interface Relatable {
   id: string;
   era: string;
   tags?: string[];
+  kaun?: string[];
+  kahan?: string[];
   series?: { id: string };
 }
 
-/** Score: +3 same series, +2 per shared tag, +1 same era. Zero-score items are dropped. */
+/**
+ * Related articles outside the current article's series (series siblings are
+ * already linked by the series navigation, so repeating them adds nothing).
+ * Score: +2 per shared tag, +2 per shared person (kaun), +1 per shared place
+ * (kahan), +1 same era. Zero-score items are dropped.
+ */
 export function relatedArticles<A extends Relatable>(current: A, all: A[], n = 3): A[] {
   const tags = new Set(current.tags ?? []);
+  const kaun = new Set(current.kaun ?? []);
+  const kahan = new Set(current.kahan ?? []);
   return all
     .filter((a) => a.id !== current.id)
+    .filter((a) => !current.series || a.series?.id !== current.series.id)
     .map((a) => {
       let score = 0;
-      if (current.series && a.series?.id === current.series.id) score += 3;
       score += 2 * (a.tags ?? []).filter((t) => tags.has(t)).length;
+      score += 2 * (a.kaun ?? []).filter((p) => kaun.has(p)).length;
+      score += (a.kahan ?? []).filter((p) => kahan.has(p)).length;
       if (a.era === current.era) score += 1;
       return { a, score };
     })

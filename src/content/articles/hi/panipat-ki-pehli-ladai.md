@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [बाबर, इब्राहिम लोदी]
 kahan: [पानीपत (हरियाणा)]
 saar: 21 अप्रैल 1526 को बाबर ने तोपखाने और नई युद्ध-नीति के बल पर इब्राहिम लोदी की बड़ी सेना को हराया। इसी जीत से भारत में मुग़ल साम्राज्य की नींव पड़ी।
-tags: [yuddh, mughal, dilli, saltanat]
+tags: [yuddh, mughal-samrajya, dilli, saltanat]
 series: { id: mughal-samrajya-ka-uday, order: 3 }
 sources:
   - title: "NCERT, हमारे अतीत-II (कक्षा 7), अध्याय: मुग़ल साम्राज्य"

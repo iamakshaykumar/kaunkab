@@ -28,7 +28,7 @@ import { t } from '../i18n/hi';
       const facts: Fact[] = await (await fetch('/data/jaankari.json')).json();
       const f = pickDaily(facts, new Date());
       body.innerHTML = f
-        ? `<blockquote class="fact">${esc(f.text)}</blockquote><a class="more" href="/lekh/${esc(f.slug)}">पढ़ें: ${esc(f.title)} →</a>`
+        ? `<blockquote class="fact">${esc(f.text)}</blockquote><a class="more" href="/lekh/${esc(f.slug)}/">पढ़ें: ${esc(f.title)} →</a>`
         : '<p class="empty">जल्द ही नए तथ्य आएँगे।</p>';
     } catch {
       body.innerHTML = '<p class="empty">अभी जानकारी लोड नहीं हो सकी।</p>';

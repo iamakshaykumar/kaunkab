@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [सैयद हसन अली ख़ाँ (अब्दुल्ला ख़ाँ), सैयद हुसैन अली ख़ाँ, फ़र्रुख़सियर, जहाँदार शाह, मुहम्मद शाह, निज़ाम-उल-मुल्क, बालाजी विश्वनाथ]
 kahan: [दिल्ली, आगरा, दक्कन, हसनपुर, बारहा (ऊपरी दोआब)]
 saar: बारहा के सैयद भाइयों अब्दुल्ला ख़ाँ और हुसैन अली ख़ाँ ने 1713 में फ़र्रुख़सियर को गद्दी दिलाई और फिर 1719 में उसे हटाकर मरवा दिया। सात साल तक बादशाह बनाने-बिगाड़ने वाले ये 'किंगमेकर' 1720 में मुहम्मद शाह और तूरानी अमीरों के गठजोड़ से हार गए।
-tags: [mughal-samrajya, mughal-patan, dilli, marathe, farrukhsiyar, sayyid-bandhu]
+tags: [mughal-samrajya, mughal-patan, dilli, maratha, farrukhsiyar, sayyid-bandhu]
 series: { id: mughal-shikhar-aur-patan, order: 7 }
 sources:
   - title: "Sayyid brothers — Wikipedia"

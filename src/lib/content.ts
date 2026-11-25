@@ -7,7 +7,7 @@ const LANG = 'hi';
 
 export const slugOf = (entry: { id: string }): string => entry.id.replace(/^[a-z]{2}\//, '');
 
-export const articleUrl = (entry: { id: string }): string => `/lekh/${slugOf(entry)}`;
+export const articleUrl = (entry: { id: string }): string => `/lekh/${slugOf(entry)}/`;
 
 export const editUrl = (entry: { id: string }): string =>
   `https://github.com/iamakshaykumar/kaunkab/edit/main/src/content/articles/${entry.id}.md`;

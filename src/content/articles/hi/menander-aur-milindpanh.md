@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [मिनांडर प्रथम (मिलिंद), नागसेन]
 kahan: [सागल (स्यालकोट), गांधार, बाजौर, पंजाब]
 saar: मिनांडर प्रथम सबसे प्रसिद्ध हिंद-यूनानी (इंडो-ग्रीक) राजा था, जिसने लगभग 165/155–130 ई.पू. में सागल (आज का स्यालकोट) से शासन किया। पालि ग्रंथ 'मिलिंदपन्ह' में बौद्ध भिक्षु नागसेन के साथ उसका दार्शनिक संवाद दर्ज है, जो यूनानी और भारतीय विचारों के मेल का अनोखा उदाहरण है।
-tags: [hind-yunani, bauddh-dharm, darshan, sikke, gandhara]
+tags: [hind-yunani, bauddh-dharm, darshan, sikke, gandhar]
 series: { id: maurya-se-gupta, order: 3 }
 sources:
   - title: "Menander I — Wikipedia"

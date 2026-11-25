@@ -1,7 +1,8 @@
 ---
 import type { Article } from '../lib/content';
 import { slugOf } from '../lib/content';
-import { formatKab } from '../lib/dates';
+import { formatDate, formatKab } from '../lib/dates';
+import { isoDate } from '../lib/seo';
 import { eraTitle, getEra } from '../lib/eras';
 import { findImage } from '../lib/images';
 import Ornament from './Ornament.astro';
@@ -9,16 +10,22 @@ import Ornament from './Ornament.astro';
 interface Props {
   article: Article;
   readingMinutes: number;
+  /** responsive banner variants */
+  srcset?: string;
+  sizes?: string;
+  series?: { title: string; id: string };
 }
-const { article, readingMinutes } = Astro.props;
+const { article, readingMinutes, srcset, sizes, series } = Astro.props;
 const d = article.data;
+const updated = d.updated && d.updated.getTime() !== d.published.getTime() ? d.updated : undefined;
 const era = getEra(d.era);
 const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
 ---
 <header class={`article-header era-${d.era}`}>
   <nav class="crumbs" aria-label="ब्रेडक्रम्ब">
     <a href="/">मुखपृष्ठ</a><span aria-hidden="true">/</span>
-    <a href={`/kaal/${d.era}`}>{eraTitle(d.era)}</a>
+    <a href={`/kaal/${d.era}/`}>{eraTitle(d.era)}</a>
+    {series && <><span aria-hidden="true">/</span><a href={`/series/${series.id}/`}>{series.title}</a></>}
   </nav>
   <h1>{d.title}</h1>
   <Ornament align="left" />
@@ -35,9 +42,16 @@ const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
       <span data-share-label>साझा करें</span>
     </button>
   </p>
+  <p class="byline">
+    {d.author && <span>लेखक: <strong>{d.author}</strong></span>}
+    {d.reviewedBy && <span>तथ्य-जाँच: <strong>{d.reviewedBy}</strong></span>}
+    {!d.author && <span>लेखन: <a href="/parichay/#sampadan">कौन कब संपादकीय टीम</a></span>}
+    <span>प्रकाशित: <time datetime={isoDate(d.published)}>{formatDate(d.published)}</time></span>
+    {updated && <span>अद्यतन: <time datetime={isoDate(updated)}>{formatDate(updated)}</time></span>}
+  </p>
   {img && (
     <figure class="banner">
-      <img src={img} alt={d.image?.alt ?? d.title} width="1600" height="900" fetchpriority="high" />
+      <img src={img} srcset={srcset} sizes={sizes} alt={d.image?.alt ?? d.title} width="1600" height="900" fetchpriority="high" />
       {d.image?.credit && <figcaption>{d.image.credit}</figcaption>}
     </figure>
   )}
@@ -71,14 +85,17 @@ const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
   }
   .share:hover { border-color: var(--accent); color: var(--accent); }
   @media (max-width: 560px) { .share { margin-left: 0; } }
-  .crumbs { display: flex; gap: .5rem; font-size: .9rem; color: var(--muted); margin-bottom: 1rem; }
-  .crumbs a { color: var(--muted); text-decoration: none; }
+  .crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 0 .5rem; font-size: .9rem; color: var(--muted); margin-bottom: .5rem; }
+  .crumbs a { color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+  .byline { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin: -1.25rem 0 2rem; font-size: .92rem; color: var(--muted); }
+  .byline strong { color: var(--fg); font-weight: 600; }
+  .share { min-height: 44px; }
   .crumbs a:hover { color: var(--accent); }
   h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); line-height: 1.2; margin: 0 0 .25rem; max-width: 22ch; }
   .saar { font-family: var(--font-body); font-size: clamp(1.1rem, 1.8vw, 1.35rem); line-height: 1.8; color: var(--muted); max-width: 60ch; margin: 1.25rem 0 1.25rem; }
   .meta { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; color: var(--muted); font-size: .95rem; margin: 0 0 2rem; }
   .banner { margin: 0 0 3rem; }
   .banner img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: var(--radius); display: block; box-shadow: var(--shadow-lg); }
-  .banner figcaption { font-size: .82rem; color: var(--muted); margin-top: .6rem; }
+  .banner figcaption { font-size: .875rem; color: var(--muted); margin-top: .6rem; }
   @media (max-width: 700px) { .banner img { aspect-ratio: 16 / 10; } }
 </style>

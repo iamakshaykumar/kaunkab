@@ -17,7 +17,7 @@ const list = await Promise.all(
   <PageHero kicker="क्रम से पढ़ें" title={t.allSeries} lead="एक विषय को शुरू से अंत तक समझने के लिए लेखों को क्रम से पढ़ें। हर शृंखला में आपकी प्रगति अपने आप सेव होती है।" />
   <div class="container list">
     {list.map(({ s, id, img, items }) => (
-      <a class="row" href={`/series/${id}`}>
+      <a class="row" href={`/series/${id}/`}>
         <div class="media">{img && <img src={img} alt="" width="1200" height="675" loading="lazy" />}</div>
         <div class="body">
           <p class="kicker">{s.data.order ? `शृंखला ${s.data.order} · ` : ""}{items.length} भाग</p>

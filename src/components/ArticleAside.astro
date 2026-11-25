@@ -18,7 +18,7 @@ const toc = headings.filter((h) => h.depth === 2);
     <p class="kicker">एक नज़र में</p>
     <dl>
       <div><dt>{t.kab}</dt><dd>{formatKab(d.kab)}</dd></div>
-      <div><dt>काल</dt><dd><a href={`/kaal/${d.era}`}>{getEra(d.era).label}</a></dd></div>
+      <div><dt>काल</dt><dd><a href={`/kaal/${d.era}/`}>{getEra(d.era).label}</a></dd></div>
       {d.kaun?.length ? <div><dt>{t.kaun}</dt><dd>{d.kaun.join(', ')}</dd></div> : null}
       {d.kahan?.length ? <div><dt>{t.kahan}</dt><dd>{d.kahan.join(', ')}</dd></div> : null}
     </dl>
@@ -78,10 +78,10 @@ const toc = headings.filter((h) => h.depth === 2);
   .toc summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: default; margin-bottom: .5rem; }
   .toc summary::-webkit-details-marker { display: none; }
   .toc summary .kicker { margin: 0; }
-  .toc .count { display: none; font-size: .82rem; color: var(--muted); }
+  .toc .count { display: none; font-size: .875rem; color: var(--muted); }
   .facts { background: var(--card); border: 1px solid var(--border); border-top: 4px solid var(--era); border-radius: var(--radius); padding: 1.25rem 1.35rem; box-shadow: var(--shadow); }
   dl { margin: 0; display: grid; gap: .85rem; }
-  dt { font-size: .78rem; font-weight: 700; letter-spacing: .05em; color: var(--muted); text-transform: uppercase; }
+  dt { font-size: .875rem; font-weight: 700; letter-spacing: .05em; color: var(--muted); text-transform: uppercase; }
   dd { margin: .1rem 0 0; font-weight: 600; line-height: 1.5; }
   dd a { color: var(--era); text-decoration: none; }
   .toc { padding: 0 .25rem; }

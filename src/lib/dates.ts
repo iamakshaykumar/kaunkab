@@ -29,3 +29,8 @@ export function formatKab(k: Kab): string {
   if (k.end !== undefined && k.end !== k.start) s = `${s} – ${formatYear(k.end)}`;
   return k.circa ? `लगभग ${s}` : s;
 }
+
+/** A calendar date (publish/update) as "25 नवंबर 2026". Uses UTC, since frontmatter dates are date-only. */
+export function formatDate(d: Date): string {
+  return `${d.getUTCDate()} ${HINDI_MONTHS[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}

@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [कृष्ण प्रथम, दंतिदुर्ग, राष्ट्रकूट वंश]
 kahan: [एलोरा (एलापुर), छत्रपति संभाजीनगर (औरंगाबाद), महाराष्ट्र]
 saar: "एलोरा की गुफा 16 का कैलाश मंदिर एक ही चट्टान को ऊपर से नीचे की ओर काटकर बनाया गया विशाल शिव मंदिर है। इसका निर्माण सामान्यतः राष्ट्रकूट राजा कृष्ण प्रथम (लगभग 756-773 ई.) के समय से जोड़ा जाता है।"
-tags: [rashtrakuta, mandir, vastukala, maharashtra, dakkan]
+tags: [rashtrakut, mandir, vastukala, maharashtra, dakkan]
 series: { id: mandir-sthapatya, order: 2 }
 sources:
   - title: "Kailasa temple, Ellora — Wikipedia"

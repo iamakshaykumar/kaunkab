@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [क़ुतुबुद्दीन ऐबक, इल्तुतमिश, फ़िरोज़ शाह तुग़लक़, अलाउद्दीन ख़िलजी]
 kahan: [महरौली (दिल्ली)]
 saar: लगभग 1199 में क़ुतुबुद्दीन ऐबक ने दिल्ली के महरौली में क़ुतुब मीनार की पहली मंज़िल बनवाई और उनके उत्तराधिकारी इल्तुतमिश ने लगभग 1220 तक तीन और मंज़िलें जोड़ीं। 72.5 मीटर ऊँची यह मीनार, पास की क़ुव्वत-उल-इस्लाम मस्जिद और गुप्तकालीन लौह स्तंभ आज यूनेस्को विश्व धरोहर हैं।
-tags: [dilli-saltanat, sthapatya, gulam-vansh, vishva-dharohar, dilli]
+tags: [dilli-saltanat, sthapatya, gulam-vansh, vishwa-dharohar, dilli]
 series: { id: dilli-saltanat-ki-kahani, order: 2 }
 sources:
   - title: "NCERT, हमारे अतीत-II (कक्षा 7), अध्याय: शासक और इमारतें"

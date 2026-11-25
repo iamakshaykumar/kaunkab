@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [राजेंद्र प्रथम, महिपाल (पाल), संग्राम विजयोत्तुंगवर्मन, महिंद पंचम]
 kahan: [गंगैकोंड चोलपुरम, बंगाल, "कडारम (केडा, मलेशिया)", श्रीविजय (सुमात्रा), श्रीलंका]
 saar: चोल सम्राट राजेंद्र प्रथम (शासन 1014–1044) के समय चोल सेनाएँ उत्तर में गंगा तक पहुँचीं और 1025 ई. में चोल नौसेना ने समुद्र पार दक्षिण-पूर्व एशिया के श्रीविजय राज्य पर धावा बोला। गंगा-विजय की स्मृति में उन्होंने 'गंगैकोंड चोलपुरम' नाम की नई राजधानी बसाई।
-tags: [chol, dakshin-bharat, yuddh, nausena, samrajya, vyapar]
+tags: [chola, dakshin-bharat, yuddh, nausena, samrajya, vyapar]
 series: { id: dakshin-ke-rajvansh, order: 3 }
 sources:
   - title: "Rajendra I — Wikipedia"

@@ -16,7 +16,7 @@ const next = idx >= 0 && idx < articles.length - 1 ? articles[idx + 1] : undefin
 <nav class="series-nav" aria-label={t.series}>
   <div class="top">
     <p class="kicker">{t.series} · भाग {idx + 1}/{articles.length}</p>
-    <a class="title" href={`/series/${series.id.replace(/^hi\//, '')}`}>{series.data.title}</a>
+    <a class="title" href={`/series/${series.id.replace(/^hi\//, '')}/`}>{series.data.title}</a>
   </div>
   <ol class="steps">
     {articles.map((a, i) => (

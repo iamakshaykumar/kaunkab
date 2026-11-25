@@ -29,6 +29,17 @@ const articles = defineCollection({
       era: z.enum(ERA_IDS),
       kab,
       published: z.coerce.date(),
+      /** last substantive revision (YYYY-MM-DD); shown on the page and used as dateModified */
+      updated: z.coerce.date().optional(),
+      /** byline: who wrote / who checked the facts */
+      author: z.string().optional(),
+      reviewedBy: z.string().optional(),
+      /** short meta description (120-160 chars); falls back to a trimmed `saar` */
+      description: z.string().max(170).optional(),
+      /** Wikidata ID of the main subject, e.g. Q8597 — emitted as schema.org sameAs */
+      wikidata: z.string().regex(/^Q\d+$/).optional(),
+      /** set to false to turn off automatic in-text links to other articles */
+      autolink: z.boolean().optional(),
       kaun: z.array(z.string()).optional(),
       kahan: z.array(z.string()).optional(),
       saar: z.string().min(10, 'saar (सारांश) कम से कम 10 अक्षर का होना चाहिए'),
@@ -63,4 +74,10 @@ const series = defineCollection({
   schema: z.object({ title: z.string(), description: z.string(), order: z.number().int().optional() }),
 });
 
-export const collections = { articles, series };
+/** Optional long intro for each era page (src/content/kaal/<era>.md, body only). */
+const kaal = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/kaal' }),
+  schema: z.object({ title: z.string().optional() }),
+});
+
+export const collections = { articles, series, kaal };

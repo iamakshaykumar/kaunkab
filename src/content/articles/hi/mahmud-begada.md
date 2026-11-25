@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [महमूद शाह प्रथम (महमूद बेगड़ा), रा मंडलीक तृतीय, रावल जयसिंह, मलिक अयाज़, फ़्रांसिस्को द अल्मेडा, मुज़फ़्फ़र शाह द्वितीय]
 kahan: [अहमदाबाद, जूनागढ़ (गिरनार), द्वारका, चंपानेर, पावागढ़, दीव, सरखेज (गुजरात)]
 saar: लगभग 13 वर्ष की आयु में गद्दी पर बैठे महमूद बेगड़ा ने 1459 से 1511 तक गुजरात पर राज किया। उन्होंने जूनागढ़ और पावागढ़ जैसे दुर्ग जीते, चंपानेर को नई राजधानी बनाया और पुर्तगालियों के विरुद्ध मिस्र के मामलूकों से गठबंधन किया, जो 1509 में दीव के समुद्री युद्ध में हार गया।
-tags: [gujarat-saltanat, gujarat, champaner, unesco-dharohar, purtgali, nausena]
+tags: [gujarat-saltanat, gujarat, champaner, vishwa-dharohar, portugali, nausena]
 series: { id: kshetriya-shaktiyan, order: 5 }
 sources:
   - title: "एम. एस. कॉमिसरियट — History of Gujarat, खंड 1"

@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [अलेक्ज़ेंडर कनिंघम, जोसेफ़ डेविड बेगलर, धनभूति]
 kahan: ["भरहुत (सतना ज़िला, मध्य प्रदेश)", भारतीय संग्रहालय (कोलकाता)]
 saar: मध्य प्रदेश के सतना ज़िले में स्थित भरहुत का बौद्ध स्तूप अपनी नक़्क़ाशीदार पत्थर की वेदिका और तोरण के लिए प्रसिद्ध है, जिन पर जातक कथाओं और बुद्ध के जीवन के दृश्य ब्राह्मी लिपि के "कैप्शन" के साथ उकेरे गए हैं। 1873 में अलेक्ज़ेंडर कनिंघम ने इसे खोजा, और आज इसका बड़ा हिस्सा कोलकाता के भारतीय संग्रहालय में है।
-tags: [bharhut, stup, bauddh-kala, shunga, madhya-pradesh, murtikala, prachin-bharat]
+tags: [bharhut, stup, bauddh-dharm, shunga, madhyapradesh, murtikala, prachin-bharat]
 series: { id: maurya-se-gupta, order: 2 }
 sources:
   - title: "Bharhut — Wikipedia"

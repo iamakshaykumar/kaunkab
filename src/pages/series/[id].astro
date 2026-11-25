@@ -5,6 +5,8 @@ import ProgressCount from '../../components/ProgressCount.astro';
 import { articleUrl, getSeriesArticles, getSeriesList, slugOf, type Article, type Series } from '../../lib/content';
 import { formatKab } from '../../lib/dates';
 import { findImage } from '../../lib/images';
+import { render } from 'astro:content';
+import { ORG_NAME, abs, breadcrumb, siteBase } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const list = await getSeriesList();
@@ -23,8 +25,40 @@ interface Props {
 }
 const { series, id, items } = Astro.props;
 const img = findImage(`series/${id}`);
+/** optional intro written in the series file body */
+const hasIntro = !!series.body?.trim();
+const { Content: Intro } = await render(series);
+
+const site = siteBase(Astro.site);
+const url = `${site}/series/${id}/`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      '@id': url,
+      url,
+      name: series.data.title,
+      description: series.data.description,
+      inLanguage: 'hi',
+      isPartOf: { '@id': `${site}/#website` },
+      ...(img ? { image: abs(img, site) } : {}),
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: items.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: items.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${site}${articleUrl(a)}`, name: a.data.title })),
+      },
+    },
+    breadcrumb([
+      { name: ORG_NAME, url: `${site}/` },
+      { name: 'सभी शृंखलाएँ', url: `${site}/series/` },
+      { name: series.data.title, url },
+    ]),
+  ],
+};
 ---
-<Base title={series.data.title} description={series.data.description} image={img}>
+<Base title={series.data.title} description={series.data.description} image={img} jsonLd={jsonLd}>
   <PageHero kicker={`शृंखला · ${items.length} भाग`} title={series.data.title} lead={series.data.description} image={img}>
     <div class="hero-actions">
       {items[0] && <a class="btn btn-primary" href={articleUrl(items[0])}>भाग 1 से शुरू करें →</a>}
@@ -32,6 +66,7 @@ const img = findImage(`series/${id}`);
     </div>
   </PageHero>
   <div class="container">
+    {hasIntro && <div class="prose intro"><Intro /></div>}
     <ol class="steps">
       {items.map((a, i) => {
         const thumb = findImage(`lekh/${slugOf(a)}-sm`) ?? findImage(`lekh/${slugOf(a)}`);
@@ -51,7 +86,7 @@ const img = findImage(`series/${id}`);
         );
       })}
     </ol>
-    <p><a href="/series">← सभी शृंखलाएँ</a></p>
+    <p><a href="/series/">← सभी शृंखलाएँ</a></p>
   </div>
 </Base>
 
@@ -64,6 +99,7 @@ const img = findImage(`series/${id}`);
 </script>
 
 <style>
+  .intro { margin: 0 0 2.5rem; }
   .hero-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
   .steps { list-style: none; padding: 0; margin: 0 0 2rem; display: grid; gap: 1.25rem; position: relative; }
   .steps::before { content: ''; position: absolute; left: 1.2rem; top: 1rem; bottom: 1rem; width: 2px; background: var(--border); }
@@ -81,7 +117,7 @@ const img = findImage(`series/${id}`);
   .txt .muted { font-size: .95rem; }
   .step strong { transition: color .2s; }
   .step:hover strong { color: var(--accent); }
-  .read { display: none; align-self: flex-start; font-size: .75rem; font-weight: 700; color: #15803d; background: #dcfce7; padding: 0 .45rem; }
+  .read { display: none; align-self: flex-start; font-size: .875rem; font-weight: 700; color: #15803d; background: #dcfce7; padding: 0 .45rem; }
   .is-read .read { display: inline-block; }
   .is-read .num { background: #15803d; }
   @media (max-width: 700px) {
@@ -92,6 +128,6 @@ const img = findImage(`series/${id}`);
     .step img { width: 88px; aspect-ratio: 1; }
     .txt strong { font-size: 1.05rem; line-height: 1.35; }
     .txt .muted { font-size: .86rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .when { font-size: .78rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+    .when { font-size: .875rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
   }
 </style>

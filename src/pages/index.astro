@@ -10,6 +10,7 @@ import { byPublishedDesc, getArticles, getSeriesArticles, getSeriesList, slugOf 
 import { formatYear } from '../lib/dates';
 import { t } from '../i18n/hi';
 import { findImage } from '../lib/images';
+import { LICENSE, ORG_NAME, siteBase } from '../lib/seo';
 
 const heroImg = findImage('hero');
 const articles = await getArticles();
@@ -25,10 +26,51 @@ const span = articles.length
   ? `${formatYear(articles[0].data.kab.start)} से ${formatYear(articles[articles.length - 1].data.kab.start)} तक`
   : '';
 const repo = 'https://github.com/iamakshaykumar/kaunkab';
+
+const heroSm = findImage('hero-sm');
+const heroSrcset = heroImg && heroSm ? `${heroSm} 800w, ${heroImg} 1672w` : undefined;
+const site = siteBase(Astro.site);
+const description = `कौन कब: सिंधु घाटी से स्वतंत्रता तक भारतीय इतिहास के ${articles.length} लेख, ${seriesList.length} शृंखलाएँ और समयरेखा — सरल हिंदी में, स्रोतों के साथ, मुफ़्त।`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${site}/#organization`,
+      name: ORG_NAME,
+      alternateName: 'Kaun Kab',
+      url: `${site}/`,
+      logo: { '@type': 'ImageObject', url: `${site}/logo.png`, width: 512, height: 512 },
+      description: t.tagline,
+      sameAs: [repo],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site}/#website`,
+      url: `${site}/`,
+      name: ORG_NAME,
+      alternateName: 'Kaun Kab',
+      description: t.tagline,
+      inLanguage: 'hi',
+      publisher: { '@id': `${site}/#organization` },
+      license: LICENSE,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: { '@type': 'EntryPoint', urlTemplate: `${site}/khoj/?q={search_term_string}` },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+  ],
+};
 ---
-<Base title={t.siteName}>
+<Base
+  title={t.siteName}
+  description={description}
+  jsonLd={jsonLd}
+  preload={heroImg ? { src: heroImg, srcset: heroSrcset, sizes: '100vw' } : undefined}
+>
   <section class={heroImg ? 'hero has-img' : 'hero'}>
-    {heroImg && <img class="hero-bg" src={heroImg} alt="" width="1672" height="941" fetchpriority="high" />}
+    {heroImg && <img class="hero-bg" src={heroImg} srcset={heroSrcset} sizes="100vw" alt="" width="1672" height="941" fetchpriority="high" />}
     <div class="hero-shade"></div>
     <div class="container hero-inner">
       <p class="eyebrow">ओपन सोर्स · मुफ़्त · स्रोतों के साथ</p>
@@ -36,8 +78,8 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
       <Ornament light align="left" />
       <p class="lead">सिंधु घाटी से स्वतंत्रता तक — सरल हिंदी में लिखी, समुदाय द्वारा जाँची गई कहानियाँ। हर लेख के साथ स्रोत और एक छोटा क्विज़।</p>
       <div class="cta">
-        <a class="btn btn-primary btn-lg" href="/timeline">{t.timeline} देखें →</a>
-        <a class="btn btn-ghost-light btn-lg" href="/khoj">
+        <a class="btn btn-primary btn-lg" href="/timeline/">{t.timeline} देखें →</a>
+        <a class="btn btn-ghost-light btn-lg" href="/khoj/">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           {t.search}
         </a>
@@ -64,7 +106,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
           <h2>काल के अनुसार पढ़ें</h2>
           <Ornament align="left" />
         </div>
-        <a class="link-arrow" href="/timeline">पूरी समयरेखा →</a>
+        <a class="link-arrow" href="/timeline/">पूरी समयरेखा →</a>
       </div>
       <EraTiles articles={articles} />
     </section>
@@ -77,7 +119,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
             <h2>{t.latest}</h2>
             <Ornament align="left" />
           </div>
-          <a class="link-arrow" href="/timeline">सभी लेख →</a>
+          <a class="link-arrow" href="/timeline/">सभी लेख →</a>
         </div>
         <div class="latest">
           <ArticleCard article={featured} featured />
@@ -95,11 +137,11 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
             <Ornament align="left" />
             <p>एक विषय को शुरू से अंत तक समझने के लिए चुने गए लेख।</p>
           </div>
-          <a class="link-arrow" href="/series">{t.allSeries} →</a>
+          <a class="link-arrow" href="/series/">{t.allSeries} →</a>
         </div>
         <div class="series-grid">
           {seriesList.slice(0, 6).map(({ s, id, img, items }) => (
-            <a class="series-card" href={`/series/${id}`}>
+            <a class="series-card" href={`/series/${id}/`}>
               <div class="s-media">
                 {img && <img src={img} alt="" width="1200" height="675" loading="lazy" decoding="async" />}
                 <span class="parts">{items.length} भाग</span>
@@ -129,7 +171,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
         <Ornament light align="left" />
         <p class="c-lead">कौन कब पूरी तरह ओपन सोर्स है। कोई गलती दिखे या कोई विषय छूटा हो — GitHub पर कुछ ही क्लिक में सुधार भेजें। प्रोग्रामिंग जानना ज़रूरी नहीं।</p>
         <div class="cta">
-          <a class="btn btn-primary btn-lg" href="/yogdan">{t.contribute} →</a>
+          <a class="btn btn-primary btn-lg" href="/yogdan/">{t.contribute} →</a>
           <a class="btn btn-ghost-light btn-lg" href={repo}>GitHub पर देखें</a>
         </div>
       </div>
@@ -175,7 +217,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
   }
   .hero:not(.has-img) .stats { border-color: var(--border); }
   .stats div { padding: 1.1rem 2rem 0 0; margin-right: 2rem; }
-  .stats dt { font-size: .82rem; opacity: .7; font-weight: 600; letter-spacing: .04em; }
+  .stats dt { font-size: .9rem; opacity: .7; font-weight: 600; letter-spacing: .04em; }
   .stats dd { margin: 0; font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; line-height: 1.3; }
   .stats .wide dd { font-size: 1.15rem; padding-top: .5rem; }
 
@@ -195,7 +237,7 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
   .series-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .s-media { position: relative; aspect-ratio: 21 / 9; background: var(--bg-alt); overflow: hidden; }
   .s-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .parts { position: absolute; left: 1rem; top: 1rem; background: rgba(255,255,255,.92); color: #1a0f08; font-weight: 700; font-size: .82rem; padding: .2rem .7rem; border-radius: 0; }
+  .parts { position: absolute; left: 1rem; top: 1rem; background: rgba(255,255,255,.92); color: #1a0f08; font-weight: 700; font-size: .875rem; padding: .2rem .7rem; border-radius: 0; }
   .s-body { padding: 1.4rem 1.6rem 1.6rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
   .s-body h3 { margin: 0; font-size: 1.5rem; }
   .s-body p { margin: 0; color: var(--muted); }

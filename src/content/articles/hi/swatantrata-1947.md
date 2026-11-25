@@ -6,7 +6,7 @@ published: 2026-11-24
 kaun: [जवाहरलाल नेहरू, महात्मा गांधी, सरदार वल्लभभाई पटेल, लॉर्ड माउंटबेटन]
 kahan: [दिल्ली, कोलकाता]
 saar: लंबे संघर्ष के बाद 15 अगस्त 1947 को भारत स्वतंत्र हुआ। लेकिन आज़ादी के साथ देश का विभाजन भी हुआ, जिसमें लाखों लोग बेघर हुए और बड़ी संख्या में लोगों की जान गई।
-tags: [swatantrata-sangram, british-raj, vibhajan]
+tags: [swatantrata-sangram, angrezi-shasan, vibhajan]
 series: { id: azadi-ki-raah, order: 20 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: विभाजन को समझना"

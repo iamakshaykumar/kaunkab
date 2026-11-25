@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import { t } from '../i18n/hi';
 ---
-<Base title={t.search} description="कौन कब के सभी लेखों में खोजें।">
+<Base title={t.search} description="कौन कब के सभी लेखों में खोजें।" noindex>
   <PageHero kicker="खोज" title="क्या ढूँढ रहे हैं?" lead={'किसी व्यक्ति, स्थान, घटना या साल से खोजें — जैसे "अशोक", "1857", "पानीपत"।'} />
   <div class="container search-wrap">
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
@@ -35,6 +35,7 @@ import { t } from '../i18n/hi';
         searching: '"[SEARCH_TERM]" खोज रहे हैं…',
       },
     });
+    document.querySelector('#search input')?.setAttribute('aria-label', 'कौन कब के लेखों में खोजें');
     const q = new URLSearchParams(location.search).get('q');
     if (q) ui.triggerSearch(q);
   });

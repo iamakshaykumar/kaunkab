@@ -83,19 +83,19 @@ h3 { font-size: 1.2rem; }
 .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
 
 .kicker {
-  font-family: var(--font-ui); font-size: .8rem; font-weight: 700; letter-spacing: .08em;
+  font-family: var(--font-ui); font-size: .875rem; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; color: var(--accent); margin: 0 0 .5rem;
 }
 .chip {
   display: inline-flex; align-items: center; gap: .35rem; padding: .15rem .65rem; border-radius: 0;
-  font-size: .8rem; font-weight: 600; background: var(--accent-soft); color: var(--fg);
+  font-size: .875rem; font-weight: 600; background: var(--accent-soft); color: var(--fg);
 }
 .era-prachin { --era: var(--prachin); }
 .era-madhyakaal { --era: var(--madhyakaal); }
 .era-adhunik { --era: var(--adhunik); }
 .era-dot { display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; background: var(--era, var(--accent)); margin-right: .35rem; flex: none; }
 .era-chip {
-  display: inline-flex; align-items: center; padding: .15rem .6rem; border-radius: 0; font-size: .78rem; font-weight: 700;
+  display: inline-flex; align-items: center; padding: .15rem .6rem; border-radius: 0; font-size: .875rem; font-weight: 700;
   color: var(--era); background: color-mix(in srgb, var(--era) 12%, transparent);
 }
 

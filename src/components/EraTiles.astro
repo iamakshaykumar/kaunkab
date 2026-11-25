@@ -14,7 +14,7 @@ const { articles } = Astro.props;
     const list = articles.filter((a) => a.data.era === e.id);
     const img = findImage(`kaal/${e.id}`);
     return (
-      <a class={`tile era-${e.id}`} href={`/kaal/${e.id}`}>
+      <a class={`tile era-${e.id}`} href={`/kaal/${e.id}/`}>
         {img && <img src={img} alt="" width="1200" height="800" loading="lazy" decoding="async" />}
         <div class="shade" />
         <div class="content">
@@ -46,7 +46,7 @@ const { articles } = Astro.props;
   }
   .content { margin-top: auto; padding: 1.6rem; display: flex; flex-direction: column; gap: .45rem; }
   .range {
-    align-self: flex-start; font-size: .8rem; font-weight: 700; letter-spacing: .03em; padding: .2rem .75rem;
+    align-self: flex-start; font-size: .875rem; font-weight: 700; letter-spacing: .03em; padding: .2rem .75rem;
     border-radius: 0; background: rgba(255, 255, 255, .18); backdrop-filter: blur(6px);
   }
   strong { font-family: var(--font-display); font-size: 2.3rem; line-height: 1.25; }

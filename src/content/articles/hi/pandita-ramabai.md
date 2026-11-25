@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [पंडिता रमाबाई, अनंत शास्त्री डोंगरे, बिपिन बिहारी मेधवी, मनोरमा बाई, बाल गंगाधर तिलक]
 kahan: [मंगलौर, कलकत्ता, पुणे, बंबई, केडगाँव (पुणे ज़िला)]
 saar: संस्कृत की विदुषी पंडिता रमाबाई ने 1889 में बाल-विधवाओं के लिए शारदा सदन खोला और बाद में केडगाँव में मुक्ति मिशन बसाया। स्त्री-शिक्षा और विधवाओं के अधिकारों की इस अग्रणी आवाज़ का धर्म-परिवर्तन उनके समय में तीखे विवाद का विषय भी बना।
-tags: [samajik-sudhar, stri-shiksha, vidhva, ramabai, maharashtra]
+tags: [samaj-sudhar, stri-shiksha, vidhva, ramabai, maharashtra]
 series: { id: sudhar-aur-rashtriya-chetna, order: 8 }
 sources:
   - title: "पंडिता रमाबाई — The High-Caste Hindu Woman (1887)"

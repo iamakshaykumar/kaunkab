@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: [वासुदेव बलवंत फड़के, लहुजी वस्ताद साल्वे, दौलतराव नाइक, मेजर हेनरी डेनियल]
 kahan: [शिरढोण (रायगढ़), पुणे, देवर नावडगी (कलादगी), अदन]
 saar: पुणे के एक सरकारी क्लर्क वासुदेव बलवंत फड़के ने 1879 में रामोशी और अन्य समुदायों के युवकों को साथ लेकर अंग्रेज़ी राज के विरुद्ध सशस्त्र विद्रोह छेड़ा। पकड़े जाने के बाद उन्हें आजीवन कालेपानी की सज़ा मिली और 17 फ़रवरी 1883 को अदन की जेल में उनकी मृत्यु हुई।
-tags: [krantikari, maharashtra, angrezi-shasan, sashastra-vidroh, akal, pune]
+tags: [kranti, maharashtra, angrezi-shasan, sashastra-vidroh, akal, pune]
 series: { id: krantikari-andolan, order: 1 }
 sources:
   - title: "Vasudev Balwant Phadke — Wikipedia"
