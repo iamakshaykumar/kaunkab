@@ -49,6 +49,7 @@ const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
     <span>प्रकाशित: <time datetime={isoDate(d.published)}>{formatDate(d.published)}</time></span>
     {updated && <span>अद्यतन: <time datetime={isoDate(updated)}>{formatDate(updated)}</time></span>}
   </p>
+  <slot />
   {img && (
     <figure class="banner">
       <img src={img} srcset={srcset} sizes={sizes} alt={d.image?.alt ?? d.title} width="1600" height="900" fetchpriority="high" />

@@ -10,6 +10,8 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import EditLink from '../../components/EditLink.astro';
 import MarkRead from '../../components/MarkRead.astro';
 import Ornament from '../../components/Ornament.astro';
+import StoryPlayer from '../../components/StoryPlayer.astro';
+import { findAudio } from '../../lib/audio';
 import { articleUrl, editUrl, getArticles, getSeriesArticles, slugOf, type Article } from '../../lib/content';
 import { crossLinksFor } from '../../lib/crossLinks';
 import { relatedArticles } from '../../lib/related';
@@ -59,6 +61,7 @@ const slug = slugOf(article);
 const imgPath = d.image?.src ?? findImage(`lekh/${slug}`);
 const imgMd = findImage(`lekh/${slug}-md`);
 const imgSm = findImage(`lekh/${slug}-sm`);
+const story = findAudio(slug);
 const bannerSrcset = imgPath && imgMd && imgSm ? `${imgSm} 640w, ${imgMd} 960w, ${imgPath} 1600w` : undefined;
 const bannerSizes = '(max-width: 1000px) 100vw, 840px';
 const site = siteBase(Astro.site);
@@ -90,6 +93,9 @@ const jsonLd = {
         : { '@id': `${site}/#website` },
       ...(d.series ? { position: d.series.order } : {}),
       isAccessibleForFree: true,
+      ...(story
+        ? { audio: { '@type': 'AudioObject', contentUrl: abs(story.src, site), encodingFormat: 'audio/mpeg', duration: `PT${story.seconds}S`, inLanguage: 'hi' } }
+        : {}),
       license: LICENSE,
       wordCount: words,
       timeRequired: `PT${readingMinutes}M`,
@@ -123,7 +129,9 @@ const jsonLd = {
 >
   <div class="progress-bar" aria-hidden="true"><span></span></div>
   <article class="container" data-pagefind-body>
-    <ArticleHeader article={article} readingMinutes={readingMinutes} srcset={bannerSrcset} sizes={bannerSizes} series={series ? { title: series.data.title, id: d.series!.id } : undefined} />
+    <ArticleHeader article={article} readingMinutes={readingMinutes} srcset={bannerSrcset} sizes={bannerSizes} series={series ? { title: series.data.title, id: d.series!.id } : undefined}>
+      {story && <StoryPlayer audio={story} title={d.title} />}
+    </ArticleHeader>
 
     <div class="layout">
       <div class="main">

@@ -1,0 +1,92 @@
+---
+import { MUSIC_CREDIT, formatDuration, type StoryAudio } from '../lib/audio';
+
+interface Props {
+  audio: StoryAudio;
+  title: string;
+}
+const { audio, title } = Astro.props;
+---
+<section class="story" data-story aria-label="यह कहानी सुनें" data-pagefind-ignore>
+  <button type="button" class="play" data-play aria-label={`"${title}" की कहानी सुनें`}>
+    <svg class="i-play" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+    <svg class="i-pause" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+  </button>
+  <div class="body">
+    <p class="head">
+      <strong>कहानी सुनें</strong>
+      <span class="meta"><span data-time>0:00</span> / {formatDuration(audio.seconds)}</span>
+      <button type="button" class="speed" data-speed aria-label="गति बदलें">1×</button>
+    </p>
+    <input type="range" class="seek" data-seek min="0" max={audio.seconds} value="0" step="1" aria-label="कहानी में आगे-पीछे जाएँ" />
+    <p class="credit">आवाज़: कंप्यूटर-जनित (AI) · <a href={MUSIC_CREDIT.url} rel="noopener">{MUSIC_CREDIT.text}</a></p>
+  </div>
+  <audio preload="none" src={audio.src} data-audio></audio>
+</section>
+
+<script>
+  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+  document.querySelectorAll<HTMLElement>('[data-story]').forEach((root) => {
+    const a = root.querySelector<HTMLAudioElement>('[data-audio]')!;
+    const play = root.querySelector<HTMLButtonElement>('[data-play]')!;
+    const seek = root.querySelector<HTMLInputElement>('[data-seek]')!;
+    const time = root.querySelector<HTMLElement>('[data-time]')!;
+    const speed = root.querySelector<HTMLButtonElement>('[data-speed]')!;
+    const rates = [1, 1.25, 1.5, 0.9];
+    let r = 0;
+    play.addEventListener('click', () => (a.paused ? a.play() : a.pause()));
+    a.addEventListener('play', () => root.classList.add('playing'));
+    a.addEventListener('pause', () => root.classList.remove('playing'));
+    a.addEventListener('ended', () => root.classList.remove('playing'));
+    a.addEventListener('loadedmetadata', () => { seek.max = String(Math.floor(a.duration)); });
+    a.addEventListener('timeupdate', () => {
+      time.textContent = fmt(a.currentTime);
+      seek.value = String(Math.floor(a.currentTime));
+      seek.style.setProperty('--p', `${(a.currentTime / (a.duration || +seek.max)) * 100}%`);
+    });
+    seek.addEventListener('input', () => { a.currentTime = +seek.value; });
+    speed.addEventListener('click', () => {
+      r = (r + 1) % rates.length;
+      a.playbackRate = rates[r];
+      speed.textContent = `${rates[r]}×`;
+    });
+  });
+</script>
+
+<style>
+  .story {
+    display: flex; gap: 1rem; align-items: center; margin: -.75rem 0 2rem; max-width: 760px; padding: 1rem 1.2rem;
+    background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--gold); box-shadow: var(--shadow);
+    font-family: var(--font-ui);
+  }
+  .play {
+    flex: none; width: 56px; height: 56px; border-radius: 50%; border: 0; cursor: pointer;
+    display: grid; place-items: center; color: #fff; background: var(--accent);
+    transition: transform .15s ease, filter .15s ease;
+  }
+  .play:hover { transform: scale(1.06); filter: brightness(1.08); }
+  .play:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .i-pause, .playing .i-play { display: none; }
+  .playing .i-pause { display: block; }
+  .body { flex: 1; min-width: 0; }
+  .head { display: flex; align-items: center; gap: .75rem; margin: 0 0 .35rem; flex-wrap: wrap; }
+  .head strong { font-size: 1.05rem; }
+  .meta { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
+  .speed {
+    margin-left: auto; font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; min-width: 3.2rem; min-height: 32px;
+    padding: .15rem .6rem; background: transparent; color: var(--fg); border: 1px solid var(--border);
+  }
+  .speed:hover { border-color: var(--accent); }
+  .seek {
+    --p: 0%; width: 100%; height: 6px; margin: .35rem 0; appearance: none; -webkit-appearance: none; cursor: pointer;
+    background: linear-gradient(to right, var(--accent) var(--p), var(--border) var(--p)); border-radius: 3px;
+  }
+  .seek::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); border: 2px solid var(--card); }
+  .seek::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 2px solid var(--card); }
+  .credit { margin: .2rem 0 0; font-size: .78rem; color: var(--muted); }
+  .credit a { color: inherit; }
+  @media (max-width: 600px) {
+    .story { padding: .85rem; gap: .8rem; }
+    .play { width: 48px; height: 48px; }
+  }
+</style>

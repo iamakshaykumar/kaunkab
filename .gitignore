@@ -5,3 +5,5 @@ dist/
 im/
 docs/
 kaunkab.com-audit/
+.audio-cache/
+audio-scripts/
