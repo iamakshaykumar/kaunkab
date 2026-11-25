@@ -1,11 +1,36 @@
 ---
 import Base from '../layouts/Base.astro';
+import Ornament from '../components/Ornament.astro';
 import { t } from '../i18n/hi';
 ---
 <Base title={t.notFound}>
-  <div class="container" style="text-align:center; padding: 4rem 0;">
+  <section class="container nf">
+    <p class="code" aria-hidden="true">४०४</p>
     <h1>{t.notFound}</h1>
-    <p class="muted">शायद यह पन्ना इतिहास में खो गया है।</p>
-    <p><a class="btn btn-primary" href="/">{t.backHome}</a> <a class="btn" href="/khoj">{t.search}</a></p>
-  </div>
+    <Ornament />
+    <p class="muted lead">शायद यह पन्ना इतिहास में खो गया है। नीचे से कोई रास्ता चुनें, या खोज कर देखें।</p>
+    <form class="find" action="/khoj" method="get" role="search">
+      <label class="sr-only" for="nf-q">{t.search}</label>
+      <input id="nf-q" name="q" type="search" placeholder="जैसे अशोक, 1857, पानीपत…" />
+      <button class="btn btn-primary" type="submit">{t.search}</button>
+    </form>
+    <nav class="ways" aria-label="सुझाए गए पन्ने">
+      <a href="/">{t.backHome}</a>
+      <a href="/timeline">{t.timeline}</a>
+      <a href="/series">{t.allSeries}</a>
+    </nav>
+  </section>
 </Base>
+
+<style>
+  .nf { text-align: center; padding: clamp(3rem, 8vw, 6rem) 0 2rem; max-width: 640px; }
+  .code { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: clamp(4.5rem, 14vw, 8rem); line-height: 1; color: var(--gold); opacity: .55; }
+  h1 { margin: .5rem 0 0; }
+  .lead { margin: 1.25rem auto 2rem; max-width: 46ch; }
+  .find { display: flex; gap: .5rem; max-width: 480px; margin: 0 auto 1.75rem; }
+  .find input { flex: 1; min-width: 0; font: inherit; padding: .65rem 1rem; border: 1px solid var(--border); background: var(--card); color: var(--fg); }
+  .find input:focus { outline: none; border-color: var(--accent); }
+  .ways { display: flex; justify-content: center; gap: .5rem 1.5rem; flex-wrap: wrap; font-weight: 600; }
+  .ways a { text-decoration: none; }
+  .ways a:hover { text-decoration: underline; }
+</style>

@@ -30,17 +30,47 @@ const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
     <span>{readingMinutes} मिनट में पढ़ें</span>
     <span aria-hidden="true">·</span>
     <span>{d.sources.length} स्रोत</span>
+    <button type="button" class="share" data-share data-title={d.title}>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>
+      <span data-share-label>साझा करें</span>
+    </button>
   </p>
   {img && (
     <figure class="banner">
       <img src={img} alt={d.image?.alt ?? d.title} width="1600" height="900" fetchpriority="high" />
-      <figcaption>{d.image?.credit ?? 'चित्र: AI द्वारा बनाया गया चित्रण (सांकेतिक)'}</figcaption>
+      {d.image?.credit && <figcaption>{d.image.credit}</figcaption>}
     </figure>
   )}
 </header>
 
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((btn) => {
+    const label = btn.querySelector<HTMLElement>('[data-share-label]')!;
+    btn.addEventListener('click', async () => {
+      const url = location.href.split('#')[0];
+      if (navigator.share) {
+        try { await navigator.share({ title: btn.dataset.title, url }); } catch {}
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(url);
+        label.textContent = 'लिंक कॉपी हो गया';
+      } catch {
+        label.textContent = 'कॉपी नहीं हो सका';
+      }
+      setTimeout(() => (label.textContent = 'साझा करें'), 2200);
+    });
+  });
+</script>
+
 <style>
   .article-header { padding: 2.5rem 0 0; }
+  .share {
+    display: inline-flex; align-items: center; gap: .4rem; margin-left: auto; cursor: pointer; font: inherit; font-size: .9rem; font-weight: 600;
+    padding: .35rem .85rem; background: var(--card); color: var(--fg); border: 1px solid var(--border); transition: border-color .15s, color .15s;
+  }
+  .share:hover { border-color: var(--accent); color: var(--accent); }
+  @media (max-width: 560px) { .share { margin-left: 0; } }
   .crumbs { display: flex; gap: .5rem; font-size: .9rem; color: var(--muted); margin-bottom: 1rem; }
   .crumbs a { color: var(--muted); text-decoration: none; }
   .crumbs a:hover { color: var(--accent); }

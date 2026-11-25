@@ -25,12 +25,14 @@ const toc = headings.filter((h) => h.depth === 2);
   </div>
 
   {toc.length > 1 && (
-    <nav class="toc" aria-label="इस लेख में">
-      <p class="kicker">इस लेख में</p>
-      <ol>
-        {toc.map((h) => <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>)}
-      </ol>
-    </nav>
+    <details class="toc" open data-toc-details>
+      <summary><span class="kicker">इस लेख में</span><span class="count">{toc.length} भाग</span></summary>
+      <nav aria-label="इस लेख में">
+        <ol>
+          {toc.map((h) => <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>)}
+        </ol>
+      </nav>
+    </details>
   )}
 
   <a class="edit" href={editHref} rel="noopener" target="_blank">
@@ -40,6 +42,16 @@ const toc = headings.filter((h) => h.depth === 2);
 </aside>
 
 <script>
+  const details = document.querySelector<HTMLDetailsElement>('[data-toc-details]');
+  const narrow = matchMedia('(max-width: 1000px)');
+  if (details) {
+    // collapsed on phones/tablets, always open in the desktop sidebar
+    const syncOpen = () => { details.open = !narrow.matches; };
+    syncOpen();
+    narrow.addEventListener('change', syncOpen);
+    details.querySelector('summary')?.addEventListener('click', (e) => { if (!narrow.matches) e.preventDefault(); });
+    details.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => { if (narrow.matches) details.open = false; }));
+  }
   const links = new Map<string, HTMLAnchorElement>();
   document.querySelectorAll<HTMLAnchorElement>('[data-toc]').forEach((a) => links.set(a.dataset.toc!, a));
   if (links.size && 'IntersectionObserver' in window) {
@@ -62,7 +74,11 @@ const toc = headings.filter((h) => h.depth === 2);
 </script>
 
 <style>
-  .aside { display: flex; flex-direction: column; gap: 1.25rem; position: sticky; top: 96px; }
+  .aside { display: flex; flex-direction: column; gap: 1.25rem; position: sticky; top: calc(var(--header-h) + 24px); max-height: calc(100vh - var(--header-h) - 48px); overflow-y: auto; scrollbar-width: thin; }
+  .toc summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: default; margin-bottom: .5rem; }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary .kicker { margin: 0; }
+  .toc .count { display: none; font-size: .82rem; color: var(--muted); }
   .facts { background: var(--card); border: 1px solid var(--border); border-top: 4px solid var(--era); border-radius: var(--radius); padding: 1.25rem 1.35rem; box-shadow: var(--shadow); }
   dl { margin: 0; display: grid; gap: .85rem; }
   dt { font-size: .78rem; font-weight: 700; letter-spacing: .05em; color: var(--muted); text-transform: uppercase; }
@@ -76,7 +92,16 @@ const toc = headings.filter((h) => h.depth === 2);
   .edit { display: inline-flex; align-items: center; gap: .5rem; font-size: .92rem; font-weight: 600; text-decoration: none; padding: 0 .25rem; }
   .edit:hover { text-decoration: underline; }
   @media (max-width: 1000px) {
-    .aside { position: static; }
-    .toc, .edit { display: none; }
+    .aside { position: static; max-height: none; overflow: visible; }
+    .edit { display: none; }
+    .toc { background: var(--card); border: 1px solid var(--border); padding: .85rem 1.1rem; }
+    .toc summary { cursor: pointer; margin: 0; }
+    .toc summary::after {
+      content: ''; width: .5rem; height: .5rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+      transform: rotate(45deg) translateY(-2px); transition: transform .2s ease; flex: none;
+    }
+    .toc[open] summary::after { transform: rotate(-135deg); }
+    .toc .count { display: inline; margin-left: auto; }
+    .toc nav { margin-top: .75rem; }
   }
 </style>

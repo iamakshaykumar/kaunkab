@@ -81,19 +81,21 @@ const related = relatedArticles(flat(article), articles.map(flat), 3).map((x) =>
 <script>
   const bar = document.querySelector<HTMLElement>('.progress-bar span');
   if (bar) {
+    let ticking = false;
     const update = () => {
       const h = document.documentElement;
       const max = h.scrollHeight - innerHeight;
       bar.style.transform = `scaleX(${max > 0 ? Math.min(1, h.scrollTop / max) : 0})`;
+      ticking = false;
     };
-    addEventListener('scroll', update, { passive: true });
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
     update();
   }
 </script>
 
 <style>
   .progress-bar { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 30; }
-  .progress-bar span { display: block; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; }
+  .progress-bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--accent)); transform: scaleX(0); transform-origin: 0 50%; }
   .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 4rem; align-items: start; }
   .main { min-width: 0; }
   .related { background: var(--bg-alt); border-top: 1px solid var(--border); padding: 3.5rem 0 1rem; margin-top: 4rem; }

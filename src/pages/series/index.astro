@@ -23,7 +23,10 @@ const list = await Promise.all(
           <p class="kicker">{s.data.order ? `शृंखला ${s.data.order} · ` : ""}{items.length} भाग</p>
           <h2>{s.data.title}</h2>
           <p class="muted">{s.data.description}</p>
-          <ol>{items.map((a) => <li>{a.data.title}</li>)}</ol>
+          <ol>
+            {items.map((a) => <li>{a.data.title}</li>)}
+            {items.length > 4 && <li class="more">और {items.length - 4} भाग…</li>}
+          </ol>
           <span class="foot"><ProgressCount slugs={items.map(slugOf)} /><span class="link-arrow">शुरू करें →</span></span>
         </div>
       </a>
@@ -45,5 +48,17 @@ const list = await Promise.all(
   .muted { margin: 0; }
   ol { margin: .75rem 0 0; padding-left: 1.2rem; font-weight: 500; display: grid; gap: .2rem; }
   .foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1.25rem; }
-  @media (max-width: 800px) { .row { grid-template-columns: 1fr; } .media { min-height: 0; aspect-ratio: 16 / 9; } }
+  .more { display: none; list-style: none; margin-left: -1.2rem; color: var(--muted); font-weight: 400; }
+  .media { overflow: hidden; }
+  .media img { transition: transform .6s var(--ease-out); }
+  .row:hover .media img { transform: scale(1.04); }
+  .row:hover h2 { color: var(--accent); }
+  h2 { transition: color .2s; }
+  @media (max-width: 800px) {
+    .row { grid-template-columns: 1fr; }
+    .media { min-height: 0; aspect-ratio: 16 / 9; }
+    .body { padding: 1.25rem 1.3rem 1.4rem; }
+    ol li:nth-child(n + 5):not(.more) { display: none; }
+    .more { display: list-item; }
+  }
 </style>

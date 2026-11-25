@@ -26,7 +26,7 @@ const img = featured
     <span class="read-badge">✓ पढ़ा</span>
   </div>
   <div class="body">
-    <p class="meta"><span class="era-chip">{getEra(d.era).label}</span><span>{formatKab(d.kab)}</span></p>
+    <p class="meta"><span class="era-chip">{getEra(d.era).label}</span><span class="clamp-1 when" title={formatKab(d.kab)}>{formatKab(d.kab)}</span></p>
     <h3 class="title">{d.title}</h3>
     <p class="saar">{d.saar}</p>
   </div>
@@ -56,7 +56,11 @@ const img = featured
   }
   .placeholder span { font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; color: var(--era); opacity: .55; }
   .body { padding: 1.1rem 1.25rem 1.35rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
-  .meta { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin: 0; font-size: .85rem; color: var(--muted); }
+  .meta { display: flex; align-items: center; gap: .6rem; margin: 0; font-size: .85rem; color: var(--muted); min-width: 0; }
+  .meta .era-chip { flex: none; }
+  .meta .when { min-width: 0; flex: 1; }
+  .article-card:hover .title { color: var(--accent); }
+  .title { transition: color .2s ease; }
   .title { font-size: 1.25rem; margin: .1rem 0 0; line-height: 1.4; }
   .saar {
     margin: 0; color: var(--muted); font-size: .98rem; line-height: 1.65;
@@ -68,6 +72,17 @@ const img = featured
   }
   :global(.article-card.is-read) .read-badge { display: block; }
 
+  /* phones: compact horizontal card so long lists stay scannable */
+  @media (max-width: 560px) {
+    .article-card:not(.featured) { flex-direction: row; }
+    .article-card:not(.featured) .media { flex: none; width: 112px; aspect-ratio: auto; }
+    .article-card:not(.featured) .placeholder span { font-size: 1.1rem; }
+    .article-card:not(.featured) .body { padding: .85rem 1rem .9rem; gap: .25rem; }
+    .article-card:not(.featured) .title { font-size: 1.05rem; }
+    .article-card:not(.featured) .saar { font-size: .88rem; -webkit-line-clamp: 2; }
+    .article-card:not(.featured) .meta { font-size: .78rem; gap: .45rem; }
+    .read-badge { top: .4rem; right: auto; left: .4rem; font-size: .7rem; }
+  }
   .featured .title { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
   .featured .saar { font-size: 1.05rem; -webkit-line-clamp: 4; }
   @media (min-width: 900px) {

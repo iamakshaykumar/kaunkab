@@ -202,6 +202,17 @@ const repo = 'https://github.com/iamakshaykumar/kaunkab';
   .s-body ol { margin: .5rem 0 0; padding-left: 1.2rem; color: var(--fg); font-weight: 500; display: grid; gap: .2rem; }
   .s-body ol li.more { list-style: none; margin-left: -1.2rem; color: var(--muted); font-weight: 400; }
   .s-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; }
+  .series-card:hover h3 { color: var(--accent); }
+  .s-body h3 { transition: color .2s; }
+  .s-media img { transition: transform .6s var(--ease-out); }
+  .series-card:hover .s-media img { transform: scale(1.04); }
+  @media (max-width: 640px) {
+    .s-media { aspect-ratio: 16 / 9; }
+    .s-body { padding: 1.1rem 1.2rem 1.25rem; }
+    .s-body h3 { font-size: 1.3rem; }
+    .s-body ol { display: none; }
+    .stats div { padding-right: 1.25rem; margin-right: 1.25rem; }
+  }
 
   .contribute { margin-top: 5rem; background: var(--ink); color: var(--on-ink); padding: 0 0 4.5rem; position: relative; overflow: hidden; }
   .contribute::before {

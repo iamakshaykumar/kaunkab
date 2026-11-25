@@ -44,6 +44,7 @@ const img = findImage(`series/${id}`);
                 <span class="when">{formatKab(a.data.kab)}</span>
                 <strong>{a.data.title}</strong>
                 <span class="muted">{a.data.saar}</span>
+                <span class="read">पढ़ा हुआ</span>
               </span>
             </a>
           </li>
@@ -53,6 +54,14 @@ const img = findImage(`series/${id}`);
     <p><a href="/series">← सभी शृंखलाएँ</a></p>
   </div>
 </Base>
+
+<script>
+  import { browserProgress } from '../../lib/progress';
+  const read = new Set(browserProgress().getRead());
+  document.querySelectorAll<HTMLElement>('.steps li[data-slug]').forEach((el) => {
+    if (read.has(el.dataset.slug!)) el.classList.add('is-read');
+  });
+</script>
 
 <style>
   .hero-actions { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
@@ -70,5 +79,19 @@ const img = findImage(`series/${id}`);
   .when { font-size: .85rem; font-weight: 700; color: var(--era); }
   .txt strong { font-family: var(--font-display); font-size: 1.3rem; }
   .txt .muted { font-size: .95rem; }
-  @media (max-width: 700px) { .step { grid-template-columns: 1fr; } .step img { width: 100%; } }
+  .step strong { transition: color .2s; }
+  .step:hover strong { color: var(--accent); }
+  .read { display: none; align-self: flex-start; font-size: .75rem; font-weight: 700; color: #15803d; background: #dcfce7; padding: 0 .45rem; }
+  .is-read .read { display: inline-block; }
+  .is-read .num { background: #15803d; }
+  @media (max-width: 700px) {
+    .steps li { grid-template-columns: 2rem 1fr; gap: .75rem; }
+    .steps::before { left: 1rem; }
+    .num { width: 2.1rem; height: 2.1rem; font-size: .85rem; }
+    .step { grid-template-columns: 88px 1fr; gap: .8rem; padding: .7rem; align-items: start; }
+    .step img { width: 88px; aspect-ratio: 1; }
+    .txt strong { font-size: 1.05rem; line-height: 1.35; }
+    .txt .muted { font-size: .86rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .when { font-size: .78rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+  }
 </style>

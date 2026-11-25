@@ -24,7 +24,22 @@ const others = ERAS.filter((e) => e.id !== era.id);
   </PageHero>
   <div class="container">
     {list.length > 0 ? (
-      <div class="grid">{list.map((a) => <ArticleCard article={a} />)}</div>
+      <div data-era-list>
+        <div class="toolbar">
+          <label class="find">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="sr-only">इस काल के लेखों में ढूँढें</span>
+            <input type="search" placeholder={`${list.length} लेखों में ढूँढें…`} data-find autocomplete="off" />
+          </label>
+          <div class="sort" role="group" aria-label="क्रम">
+            <button type="button" class="active" data-sort="asc" aria-pressed="true">पुराने पहले</button>
+            <button type="button" data-sort="desc" aria-pressed="false">नए पहले</button>
+          </div>
+          <p class="status" aria-live="polite" data-status></p>
+        </div>
+        <div class="grid" data-grid>{list.map((a) => <ArticleCard article={a} />)}</div>
+        <p class="empty card" hidden data-empty>कोई लेख नहीं मिला। कोई और शब्द आज़माएँ।</p>
+      </div>
     ) : (
       <p class="card">इस काल में अभी कोई लेख नहीं है। <a href="/yogdan">पहला लेख आप लिखिए!</a></p>
     )}
@@ -40,7 +55,58 @@ const others = ERAS.filter((e) => e.id !== era.id);
   </div>
 </Base>
 
+<script>
+  const root = document.querySelector<HTMLElement>('[data-era-list]');
+  if (root) {
+    const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+    const find = root.querySelector<HTMLInputElement>('[data-find]')!;
+    const status = root.querySelector<HTMLElement>('[data-status]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const cards = [...grid.children] as HTMLElement[];
+    const text = new Map(cards.map((c) => [c, (c.textContent ?? '').toLowerCase()]));
+    let t: number | undefined;
+    const apply = () => {
+      const q = find.value.trim().toLowerCase();
+      let n = 0;
+      cards.forEach((c) => {
+        const ok = !q || text.get(c)!.includes(q);
+        c.hidden = !ok;
+        if (ok) n++;
+      });
+      empty.hidden = n > 0;
+      status.textContent = q ? `${n} लेख मिले` : '';
+    };
+    find.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(apply, 120); });
+    root.querySelectorAll<HTMLButtonElement>('[data-sort]').forEach((b, _, all) =>
+      b.addEventListener('click', () => {
+        all.forEach((x) => { x.classList.toggle('active', x === b); x.setAttribute('aria-pressed', String(x === b)); });
+        const order = b.dataset.sort === 'desc' ? [...cards].reverse() : cards;
+        grid.append(...order);
+      }),
+    );
+  }
+</script>
+
 <style>
+  .toolbar {
+    position: sticky; top: var(--header-h); z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem;
+    padding: .8rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .find {
+    display: flex; align-items: center; gap: .5rem; flex: 1; max-width: 420px; padding: 0 .85rem;
+    background: var(--card); border: 1px solid var(--border); color: var(--muted); transition: border-color .15s;
+  }
+  .find:focus-within { border-color: var(--accent); }
+  .find input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: .95rem; color: var(--fg); padding: .55rem 0; }
+  .sort { display: inline-flex; margin-left: auto; border: 1px solid var(--border); background: var(--card); }
+  .sort button { font: inherit; font-size: .9rem; font-weight: 600; padding: .45rem .9rem; border: 0; background: transparent; color: var(--muted); cursor: pointer; transition: background .15s, color .15s; }
+  .sort button.active { background: var(--fg); color: var(--bg); }
+  .status { margin: 0; flex-basis: 100%; font-size: .88rem; color: var(--muted); }
+  .status:empty { display: none; }
+  .grid > :global([hidden]) { display: none; }
+  .empty { text-align: center; color: var(--muted); }
+  @media (max-width: 560px) { .find { max-width: none; flex-basis: 100%; } .sort { margin-left: 0; } }
   .count { display: flex; align-items: center; gap: .6rem; margin: 1.25rem 0 0; font-weight: 600; }
   .others { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); margin-top: 3.5rem; }
   .other { display: flex; flex-direction: column; gap: .2rem; padding: 1.25rem 1.5rem; border-radius: var(--radius); border: 1px solid var(--border); background: var(--card); text-decoration: none; border-left: 5px solid var(--era); }
