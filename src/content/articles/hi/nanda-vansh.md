@@ -7,7 +7,7 @@ kaun: [महापद्म नंद, धनानंद, चंद्रग�
 kahan: [पाटलिपुत्र, मगध, कलिंग, ब्यास नदी (पंजाब)]
 saar: लगभग 345 ई.पू. में महापद्म नंद ने मगध की गद्दी पर नंद वंश की नींव रखी। नंदों ने गंगा के मैदान में पहला बड़ा साम्राज्य खड़ा किया, जिसकी विशाल सेना और अपार धन की चर्चा यूनानी लेखकों तक ने की। लगभग 322 ई.पू. में चंद्रगुप्त मौर्य ने अंतिम नंद राजा धनानंद को हटाकर मौर्य वंश की स्थापना की।
 tags: [nanda, magadh, maurya, mahajanapad, bihar]
-series: { id: vaidik-se-magadh, order: 7 }
+series: { id: vaidik-se-magadh, order: 10 }
 sources:
   - title: "Nanda Empire — Wikipedia"
     url: https://en.wikipedia.org/wiki/Nanda_Empire

@@ -7,7 +7,7 @@ kaun: [बाल गंगाधर तिलक, एनी बेसेंट, 
 kahan: [बेलगाम, मद्रास (अड्यार), पूना, ऊटी (ऊटकमंड)]
 saar: 1916 में बाल गंगाधर तिलक और एनी बेसेंट ने अलग-अलग होम रूल लीग बनाकर ब्रिटिश साम्राज्य के भीतर भारत के लिए स्वशासन की माँग को जन-आंदोलन बना दिया। 'स्वराज मेरा जन्मसिद्ध अधिकार है' का नारा इसी दौर में गूँजा।
 tags: [swatantrata-sangram, tilak, annie-besant, congress, swaraj]
-series: { id: sudhar-aur-rashtriya-chetna, order: 8 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 10 }
 sources:
   - title: "बिपन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: प्रथम विश्व युद्ध के दौरान राष्ट्रीय आंदोलन — होम रूल लीग"
   - title: "All India Home Rule League — Wikipedia"

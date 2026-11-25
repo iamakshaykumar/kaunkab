@@ -7,7 +7,7 @@ kaun: [लिच्छवि, चेटक, महावीर, गौतम ब
 kahan: [वैशाली (बिहार), कुंडग्राम, राजगृह, कोल्हुआ]
 saar: छठी सदी ई.पू. के आसपास उत्तर बिहार में वज्जि संघ एक ऐसा राज्य था जहाँ कोई एक राजा नहीं, बल्कि कुलों के मुखियाओं की सभा शासन चलाती थी। लिच्छवियों के नेतृत्व वाले इस गणसंघ की राजधानी वैशाली थी। बुद्ध ने इसकी एकता की प्रशंसा की, और अंततः मगध के अजातशत्रु ने इसे जीत लिया।
 tags: [mahajanapad, gansangh, vaishali, licchavi, bihar, bauddh-dharm, jain-dharm]
-series: { id: vaidik-se-magadh, order: 2 }
+series: { id: vaidik-se-magadh, order: 4 }
 sources:
   - title: "Vajjika League — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vajjika_League

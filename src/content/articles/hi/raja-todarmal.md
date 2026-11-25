@@ -7,7 +7,7 @@ kaun: [राजा टोडरमल, अकबर, शेरशाह सू�
 kahan: [आगरा, फ़तेहपुर सीकरी, गुजरात, बंगाल, लाहौर, वाराणसी]
 saar: शेरशाह सूरी के यहाँ से काम शुरू करने वाले राजा टोडरमल अकबर के सबसे प्रसिद्ध राजस्व अधिकारी बने। 1580 में लागू ज़ब्त-दहसाला व्यवस्था में दस वर्ष की औसत उपज और क़ीमतों के आधार पर नक़द लगान तय किया गया, जो आगे मुग़ल प्रशासन की रीढ़ बनी।
 tags: [mughal-samrajya, akbar, bhu-rajasv, prashasan, todarmal]
-series: { id: mughal-samrajya-ka-uday, order: 9 }
+series: { id: mughal-samrajya-ka-uday, order: 10 }
 sources:
   - title: "अबुल फ़ज़ल — आइन-ए-अकबरी, अनु. एच. ब्लॉकमैन और एच. एस. जैरेट"
   - title: "इरफ़ान हबीब — The Agrarian System of Mughal India, 1556–1707"

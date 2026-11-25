@@ -7,7 +7,7 @@ kaun: [मलिक अंबर, चंगेज़ ख़ान (अहमद�
 kahan: [हरार (इथियोपिया), अहमदनगर, जुन्नर, खड़की (औरंगाबाद/छत्रपति संभाजीनगर), भातवडी, ख़ुल्दाबाद]
 saar: इथियोपिया में जन्मे और कई बार दास के रूप में बेचे गए मलिक अंबर ने 1600 के बाद बिखरी अहमदनगर सल्तनत को फिर खड़ा किया। मराठा घुड़सवारों के साथ छापामार युद्ध, भू-राजस्व सुधार और खड़की (आज का छत्रपति संभाजीनगर) नगर की स्थापना उनकी प्रमुख उपलब्धियाँ हैं।
 tags: [dakkan, ahmadnagar, nizamshahi, chhapamar-yuddh, maratha, mughal-samrajya]
-series: { id: kshetriya-shaktiyan, order: 6 }
+series: { id: kshetriya-shaktiyan, order: 8 }
 sources:
   - title: "Richard M. Eaton — A Social History of the Deccan, 1300–1761: Eight Indian Lives (अध्याय: Malik Ambar)"
   - title: "Radhey Shyam — Life and Times of Malik Ambar"

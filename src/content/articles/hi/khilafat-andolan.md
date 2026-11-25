@@ -7,7 +7,7 @@ kaun: [मौलाना मोहम्मद अली, मौलाना �
 kahan: [दिल्ली, लखनऊ, कराची, कलकत्ता, बंबई]
 saar: प्रथम विश्वयुद्ध के बाद तुर्की के सुल्तान-ख़लीफ़ा की सत्ता और इस्लाम के पवित्र स्थलों की हिफ़ाज़त के लिए भारतीय मुसलमानों ने ख़िलाफ़त आंदोलन चलाया। अली बंधुओं के नेतृत्व वाले इस आंदोलन ने गांधीजी के असहयोग आंदोलन से हाथ मिलाया और 1920–22 में हिंदू-मुस्लिम एकता का अभूतपूर्व दौर देखा गया।
 tags: [khilafat, asahyog, swatantrata-sangram, gandhi, hindu-muslim-ekta]
-series: { id: azadi-ki-raah, order: 3 }
+series: { id: azadi-ki-raah, order: 4 }
 sources:
   - title: "बिपन चंद्र व अन्य — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: ख़िलाफ़त और असहयोग आंदोलन"
   - title: "Khilafat Movement — Wikipedia"

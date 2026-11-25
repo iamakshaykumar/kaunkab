@@ -7,7 +7,7 @@ kaun: [महमूद ग़ज़नवी, भीम प्रथम (चौ�
 kahan: [ग़ज़नी (अफ़ग़ानिस्तान), सोमनाथ (प्रभास पाटन, गुजरात), मथुरा, कन्नौज, थानेसर]
 saar: "ग़ज़नी के सुल्तान महमूद ने ग्यारहवीं शताब्दी के आरंभ में उत्तर-पश्चिम और उत्तर भारत पर बार-बार धावे बोले। 1025-26 ई. में गुजरात के सोमनाथ मंदिर पर उसका आक्रमण भारतीय इतिहास की सबसे चर्चित घटनाओं में से एक है।"
 tags: [aakraman, somnath, gujarat, mandir, ghaznavi]
-series: { id: harsh-se-tarain, order: 9 }
+series: { id: harsh-se-tarain, order: 10 }
 sources:
   - title: "Maḥmūd (king of Ghazna) — Encyclopaedia Britannica"
     url: https://www.britannica.com/biography/Mahmud-king-of-Ghazna

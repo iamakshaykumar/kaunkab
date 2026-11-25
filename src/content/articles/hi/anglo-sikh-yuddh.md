@@ -7,7 +7,7 @@ kaun: [महाराजा दलीप सिंह, महारानी �
 kahan: [लाहौर, मुदकी, फ़िरोज़शाह, सोबराँव, मुल्तान, चिलियाँवाला, गुजरात (पंजाब)]
 saar: महाराजा रणजीत सिंह की मृत्यु के बाद कमज़ोर पड़े सिख राज्य और ईस्ट इंडिया कंपनी के बीच 1845–46 और 1848–49 में दो युद्ध हुए। दूसरे युद्ध के बाद 1849 में पंजाब कंपनी के राज्य में मिला लिया गया और बालक महाराजा दलीप सिंह गद्दी से हटा दिए गए।
 tags: [sikh-samrajya, punjab, angrezi-shasan, east-india-company, yuddh, ranjit-singh]
-series: { id: sikh-itihas, order: 6 }
+series: { id: sikh-itihas, order: 7 }
 sources:
   - title: "First Anglo-Sikh War — Wikipedia"
     url: https://en.wikipedia.org/wiki/First_Anglo-Sikh_War

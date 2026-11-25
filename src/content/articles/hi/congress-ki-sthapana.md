@@ -7,7 +7,7 @@ kaun: [ए. ओ. ह्यूम, व्योमेश चंद्र बन�
 kahan: [बंबई (मुंबई), गोकुलदास तेजपाल संस्कृत महाविद्यालय]
 saar: 28 दिसंबर 1885 को बंबई के गोकुलदास तेजपाल संस्कृत महाविद्यालय में 72 प्रतिनिधियों ने भारतीय राष्ट्रीय कांग्रेस की नींव रखी। व्योमेश चंद्र बनर्जी इसके पहले अध्यक्ष बने और यही संस्था आगे चलकर भारत के स्वतंत्रता आंदोलन का सबसे बड़ा मंच बनी।
 tags: [rashtriya-andolan, british-raj, congress, mumbai]
-series: { id: sudhar-aur-rashtriya-chetna, order: 5 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 6 }
 sources:
   - title: "NCERT, हमारे अतीत-III (कक्षा 8), अध्याय 9: राष्ट्रीय आंदोलन का संघटन — 1870 के दशक से 1947 तक"
   - title: "बिपिन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence)"

@@ -7,7 +7,7 @@ kaun: [रानी लक्ष्मीबाई, गंगाधर राव
 kahan: [झाँसी, वाराणसी, कालपी, ग्वालियर]
 saar: वाराणसी में जन्मी मणिकर्णिका आगे चलकर झाँसी की रानी लक्ष्मीबाई बनीं। हड़प नीति के तहत अपना राज्य छीने जाने के बाद 1857-58 के विद्रोह में उन्होंने अंग्रेज़ों से डटकर लोहा लिया और 18 जून 1858 को ग्वालियर के पास युद्ध करते हुए वीरगति पाई।
 tags: [veerangana, sangram-1857, british-raj, bundelkhand]
-series: { id: angrezon-ke-viruddh-vidroh, order: 4 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 5 }
 sources:
   - title: "NCERT, हमारे अतीत-III (कक्षा 8), अध्याय 5: जब जनता बग़ावत करती है — 1857 और उसके बाद"
   - title: "Lakshmi Bai — Encyclopaedia Britannica"

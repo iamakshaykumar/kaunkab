@@ -7,7 +7,7 @@ kaun: [सतगुरु राम सिंह, बाबा बालक स�
 kahan: [श्री भैणी साहिब (लुधियाना), मलौध, मलेरकोटला, रंगून (बर्मा)]
 saar: सतगुरु राम सिंह के नेतृत्व में पंजाब का नामधारी या 'कूका' आंदोलन धार्मिक सुधार से शुरू होकर विदेशी वस्तुओं, अदालतों और स्कूलों के बहिष्कार तक पहुँचा। जनवरी 1872 में मलेरकोटला पर हमले के बाद 65–66 कूकाओं को बिना मुक़दमे तोपों से उड़ा दिया गया।
 tags: [kuka-andolan, namdhari, punjab, angrezi-shasan, bahishkar, swadeshi]
-series: { id: sikh-itihas, order: 7 }
+series: { id: sikh-itihas, order: 8 }
 sources:
   - title: "Namdhari — Wikipedia"
     url: https://en.wikipedia.org/wiki/Namdhari

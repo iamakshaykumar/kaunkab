@@ -7,7 +7,7 @@ kaun: [गुरु तेग बहादुर, भाई मती दास,
 kahan: [अमृतसर, बकाला, आनंदपुर साहिब, चांदनी चौक (दिल्ली)]
 saar: सिखों के नौवें गुरु तेग बहादुर को 11 नवंबर 1675 को मुग़ल बादशाह औरंगज़ेब के आदेश पर दिल्ली के चांदनी चौक में मृत्युदंड दिया गया। सिख परंपरा उन्हें धर्म की स्वतंत्रता के लिए प्राण देने वाले 'हिंद दी चादर' के रूप में याद करती है।
 tags: [sikh-itihas, sikh-guru, mughal-samrajya, anandpur-sahib, dilli]
-series: { id: sikh-itihas, order: 2 }
+series: { id: sikh-itihas, order: 3 }
 sources:
   - title: "Guru Tegh Bahadur — Wikipedia"
     url: https://en.wikipedia.org/wiki/Guru_Tegh_Bahadur

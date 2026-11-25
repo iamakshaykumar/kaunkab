@@ -7,7 +7,7 @@ kaun: [कल्हण, चंपक, राजा जयसिंह, राज
 kahan: [कश्मीर, परिहासपुर]
 saar: "1148–49 ई. में कश्मीरी कवि कल्हण ने संस्कृत में 'राजतरंगिणी' (राजाओं की नदी) लिखी — आठ तरंगों में कश्मीर के राजाओं का क्रमबद्ध इतिहास। आरंभिक भाग किंवदंतियों से भरे हैं, पर बाद के भाग इतने विश्वसनीय हैं कि इसे भारत का पहला व्यवस्थित इतिहास-ग्रंथ कहा जाता है।"
 tags: [kashmir, sahitya, itihas-lekhan, sanskrit, rajatarangini]
-series: { id: harsh-se-tarain, order: 11 }
+series: { id: harsh-se-tarain, order: 12 }
 sources:
   - title: "Rajatarangini — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rajatarangini

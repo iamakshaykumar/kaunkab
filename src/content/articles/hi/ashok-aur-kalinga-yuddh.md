@@ -7,7 +7,7 @@ kaun: [सम्राट अशोक, महेंद्र, संघमि�
 kahan: [कलिंग (ओडिशा), पाटलिपुत्र, सारनाथ]
 saar: कलिंग युद्ध के भयानक विनाश ने सम्राट अशोक को बदल दिया। उन्होंने युद्ध छोड़कर "धम्म" का रास्ता अपनाया और अपने संदेश शिलालेखों पर खुदवाए।
 tags: [maurya, bauddh, yuddh, shilalekh]
-series: { id: maurya-samrajya-ki-kahani, order: 6 }
+series: { id: maurya-samrajya-ki-kahani, order: 7 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-1 (कक्षा 12), अध्याय 2: राजा, किसान और नगर"
   - title: "Kalinga War — Wikipedia"

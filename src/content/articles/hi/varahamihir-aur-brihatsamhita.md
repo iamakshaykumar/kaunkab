@@ -7,7 +7,7 @@ kaun: [वराहमिहिर, आदित्यदास, भट्टो
 kahan: [उज्जैन, अवंति (मालवा)]
 saar: छठी सदी के खगोलशास्त्री-गणितज्ञ वराहमिहिर ने 'पंचसिद्धांतिका' में अपने समय के पाँच खगोल-सिद्धांतों का सार लिखा और 'बृहत्संहिता' में मौसम, खेती, भवन-निर्माण, रत्न, मूर्तिकला जैसे अनगिनत विषय एक जगह समेट दिए। अवंति (उज्जैन) क्षेत्र से जुड़े इस विद्वान को बाद के अल-बिरूनी जैसे लेखकों ने भी आदर से याद किया।
 tags: [vigyan, khagol, ganit, sanskrit, malwa]
-series: { id: prachin-gyan-aur-kala, order: 9 }
+series: { id: prachin-gyan-aur-kala, order: 10 }
 sources:
   - title: "Varāhamihira — Wikipedia"
     url: https://en.wikipedia.org/wiki/Var%C4%81hamihira

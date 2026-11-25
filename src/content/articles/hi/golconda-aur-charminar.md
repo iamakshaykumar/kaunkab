@@ -7,7 +7,7 @@ kaun: [सुल्तान क़ुली क़ुतुब-उल-मुल
 kahan: [गोलकुंडा, हैदराबाद (तेलंगाना), कोल्लूर, मछलीपट्टनम]
 saar: बहमनी सल्तनत के टूटने पर 1518 में सुल्तान क़ुली ने गोलकुंडा में क़ुतुबशाही सल्तनत की नींव रखी। हीरों के व्यापार और समुद्री बंदरगाहों से समृद्ध इस राज्य ने 1591 में हैदराबाद बसाया और चारमीनार बनवाया। 1687 में आठ महीने की घेराबंदी के बाद औरंगज़ेब ने गोलकुंडा जीत लिया।
 tags: [qutubshahi, dakkan-saltanat, golconda, hyderabad, sthapatya, telangana]
-series: { id: dakshin-ke-rajvansh, order: 7 }
+series: { id: dakshin-ke-rajvansh, order: 10 }
 sources:
   - title: "एच. के. शेरवानी — History of the Qutb Shahi Dynasty"
   - title: "रिचर्ड एम. ईटन — A Social History of the Deccan, 1300–1761 (The New Cambridge History of India)"
