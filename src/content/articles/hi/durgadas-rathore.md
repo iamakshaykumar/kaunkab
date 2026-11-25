@@ -7,7 +7,7 @@ kaun: [दुर्गादास राठौड़, महाराजा अ
 kahan: [मारवाड़, जोधपुर, दिल्ली, मेवाड़, उज्जैन]
 saar: 1678 में मारवाड़ के महाराजा जसवंत सिंह की मृत्यु के बाद औरंगज़ेब ने मारवाड़ को सीधे मुग़ल नियंत्रण में ले लिया। सेनापति दुर्गादास राठौड़ ने शिशु उत्तराधिकारी अजीत सिंह को दिल्ली से बचाकर निकाला और लगभग तीन दशक तक छापामार संघर्ष चलाया, जिसके बाद 1707 में अजीत सिंह ने जोधपुर वापस पाया।
 tags: [rajput, rajasthan, marwar, mughal-samrajya, aurangzeb, yuddh]
-series: { id: kshetriya-shaktiyan, order: 21 }
+series: { id: kshetriya-shaktiyan, order: 24 }
 sources:
   - title: "Durgadas Rathore — Wikipedia"
     url: https://en.wikipedia.org/wiki/Durgadas_Rathore

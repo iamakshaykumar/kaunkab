@@ -7,7 +7,7 @@ kaun: [कुरुष (साइरस) महान, दारयवहु (�
 kahan: [गांधार, "हिंदुश (सिंधु घाटी)", "बेहिस्तून (ईरान)", "नक़्श-ए-रुस्तम (ईरान)", "पर्सेपोलिस (ईरान)", तक्षशिला]
 saar: छठी सदी ई.पू. के उत्तरार्ध में ईरान के हख़ामनी (एकेमेनिड) साम्राज्य ने भारतीय उपमहाद्वीप के उत्तर-पश्चिम पर अधिकार कर लिया। दारयवहु प्रथम के अभिलेखों में गांधार और हिंदुश (सिंधु क्षेत्र) उसके प्रांतों में गिने गए हैं। लगभग दो सदियों के इस संपर्क ने इस क्षेत्र में अरामाई लिपि, प्रशासनिक तौर-तरीक़े और नए विचार पहुँचाए, जिनकी छाप खरोष्ठी लिपि में दिखती है।
 tags: [hakhamani, iran, gandhar, sindh, abhilekh, videshi-akraman, prachin-bharat]
-series: { id: vaidik-se-magadh, order: 14 }
+series: { id: vaidik-se-magadh, order: 15 }
 sources:
   - title: "Achaemenid conquest of the Indus Valley — Wikipedia"
     url: https://en.wikipedia.org/wiki/Achaemenid_conquest_of_the_Indus_Valley

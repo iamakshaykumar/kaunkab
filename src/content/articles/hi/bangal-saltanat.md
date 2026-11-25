@@ -7,7 +7,7 @@ kaun: [शम्सुद्दीन इलियास शाह, सिकं
 kahan: [पांडुआ (मालदा), गौड़ (लखनौती), सोनारगाँव, "एकडाला, बंगाल", राजमहल]
 saar: 1352 में शम्सुद्दीन इलियास शाह ने लखनौती, सातगाँव और सोनारगाँव को मिलाकर एक स्वतंत्र बंगाल सल्तनत बनाई, जो लगभग सवा दो सौ वर्ष चली। पांडुआ और गौड़ इसकी राजधानियाँ रहीं। अलाउद्दीन हुसैन शाह जैसे सुल्तानों ने बांग्ला साहित्य को संरक्षण दिया, और 1576 में राजमहल के युद्ध के बाद बंगाल मुग़ल साम्राज्य में शामिल हो गया।
 tags: [saltanat-kaal, bangal, bangla-sahitya, sthapatya, kshetriya-saltanat, purvi-bharat]
-series: { id: kshetriya-shaktiyan, order: 2 }
+series: { id: kshetriya-shaktiyan, order: 4 }
 sources:
   - title: "Bengal Sultanate — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bengal_Sultanate

@@ -7,7 +7,7 @@ kaun: [कपिलेंद्र देव, हम्वीर देव, प�
 kahan: ["कटक (ओडिशा)", पुरी, राजमहेंद्रवरम, कोंडवीडु, उदयगिरि, कांची]
 saar: 1434 में कपिलेंद्र देव ने पूर्वी गंग वंश की जगह ओडिशा में सूर्यवंशी गजपति राजवंश की नींव रखी। अपने चरम पर यह राज्य गंगा के निकट से लेकर कावेरी तक फैला। पुरुषोत्तम देव और प्रतापरुद्र देव के समय पुरी का जगन्नाथ मंदिर, ओड़िया साहित्य और वैष्णव भक्ति फली-फूली, पर 1541 तक यह वंश समाप्त हो गया।
 tags: [gajapati, odisha, rajvansh, purv-bharat, jagannath, vaishnav]
-series: { id: kshetriya-shaktiyan, order: 6 }
+series: { id: kshetriya-shaktiyan, order: 8 }
 sources:
   - title: "Gajapati Kingdom — Wikipedia"
     url: https://en.wikipedia.org/wiki/Gajapati_Kingdom

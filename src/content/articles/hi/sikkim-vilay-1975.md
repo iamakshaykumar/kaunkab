@@ -7,7 +7,7 @@ kaun: [पाल्देन थोंडुप नामग्याल, का
 kahan: ["गंगटोक (सिक्किम)", नई दिल्ली]
 saar: सदियों तक नामग्याल वंश के चोग्याल (राजा) द्वारा शासित हिमालयी राज्य सिक्किम 1950 की संधि से भारत का संरक्षित राज्य था। 1973 के जन-आंदोलन, 1974 में 'सहयोगी राज्य' के दर्जे और 14 अप्रैल 1975 के जनमत संग्रह के बाद 36वें संविधान संशोधन से 16 मई 1975 को सिक्किम भारत का 22वाँ राज्य बना और राजशाही समाप्त हो गई।
 tags: [swatantra-bharat, sikkim, chogyal, rajya-vilay, samvidhan-sanshodhan, poorvottar]
-series: { id: badalta-bharat, order: 11 }
+series: { id: badalta-bharat, order: 14 }
 sources:
   - title: "Sunanda K. Datta-Ray — Smash and Grab: Annexation of Sikkim (1984)"
   - title: "Ranjan Gupta — Sikkim: The Merger with India, Asian Survey 15(9), 1975"

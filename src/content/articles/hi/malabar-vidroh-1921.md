@@ -7,7 +7,7 @@ kaun: [अली मुसलियार, वारियनकुन्नथ 
 kahan: [तिरूरंगाडी, पूकोट्टूर, "एरनाड और वल्लुवनाड तालुक (मलप्पुरम, केरल)", तिरूर, पोदनूर]
 saar: अगस्त 1921 में मद्रास प्रेसिडेंसी के मालाबार ज़िले में मप्पिला (मोपला) किसानों का विद्रोह भड़का, जिसकी जड़ें ज़मींदारी-काश्तकारी के शोषण और ख़िलाफ़त-असहयोग आंदोलन दोनों में थीं। इसमें अंग्रेज़ अधिकारियों, ज़मींदारों और कई जगह आम हिंदुओं पर हिंसा हुई, और अंग्रेज़ी दमन में हज़ारों विद्रोही मारे गए। इतिहासकार आज भी इसकी व्याख्या पर बँटे हुए हैं।
 tags: [malabar-vidroh, mappila, khilafat, kisan-andolan, kerala, angrezi-shasan, swatantrata-sangram]
-series: { id: azadi-ki-raah, order: 8 }
+series: { id: azadi-ki-raah, order: 9 }
 sources:
   - title: "के. एन. पणिक्कर — Against Lord and State: Religion and Peasant Uprisings in Malabar, 1836–1921 (ऑक्सफ़र्ड यूनिवर्सिटी प्रेस, 1989)"
   - title: "कॉनराड वुड — The Moplah Rebellion and Its Genesis (पीपुल्स पब्लिशिंग हाउस, 1987)"

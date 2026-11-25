@@ -7,7 +7,7 @@ kaun: [यशोधर्मन (विष्णुवर्धन), मिह�
 kahan: ["दशपुर (मंदसौर, मध्य प्रदेश)", "सोंधनी (मंदसौर)", मालवा]
 saar: "छठी शताब्दी में जब हूणों का दबाव उत्तर भारत पर था, तब मालवा के औलिकर वंश के यशोधर्मन ने लगभग 528 ई. में हूण शासक मिहिरकुल को हराया। मंदसौर के पास सोंधनी के विजय-स्तंभ और 532 ई. का मंदसौर शिलालेख उसकी कहानी के मुख्य स्रोत हैं।"
 tags: [hun, malwa, aulikar-vansh, shilalekh, madhyapradesh, yuddh, prachin-bharat]
-series: { id: maurya-se-gupta, order: 19 }
+series: { id: maurya-se-gupta, order: 22 }
 sources:
   - title: "Yasodharman — Wikipedia"
     url: https://en.wikipedia.org/wiki/Yashodharman

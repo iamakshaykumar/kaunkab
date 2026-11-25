@@ -7,7 +7,7 @@ kaun: [मलिक सरवर (ख़्वाजा जहाँ), मुब
 kahan: [जौनपुर (उत्तर प्रदेश), कन्नौज, बिहार, दिल्ली]
 saar: तुग़लक़ सल्तनत के कमज़ोर पड़ने पर 1394 में मलिक सरवर ने जौनपुर में शर्क़ी सल्तनत की नींव रखी। लगभग 85 वर्ष चली इस सल्तनत ने अटाला मस्जिद जैसी अनोखी इमारतें, विद्वानों और संगीत को संरक्षण दिया, जिससे जौनपुर 'शीराज़-ए-हिंद' कहलाया; 1479 में बहलोल लोदी ने इसे जीत लिया।
 tags: [saltanat-kaal, sharqi-vansh, jaunpur, uttar-pradesh, sthapatya, sangeet]
-series: { id: kshetriya-shaktiyan, order: 3 }
+series: { id: kshetriya-shaktiyan, order: 5 }
 sources:
   - title: "Jaunpur Sultanate — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jaunpur_Sultanate

@@ -7,7 +7,7 @@ kaun: [ख़ुदादाद ख़ान, दरवान सिंह न�
 kahan: ["फ़्रांस और बेल्जियम (पश्चिमी मोर्चा)", "गैलीपोली (तुर्की)", "मेसोपोटामिया (आज इराक़)", "मिस्र और फ़िलिस्तीन", "पूर्वी अफ़्रीका", "इंडिया गेट (नई दिल्ली)"]
 saar: अगस्त 1914 में ब्रिटेन के युद्ध में उतरते ही भारत भी अपने आप प्रथम विश्वयुद्ध में शामिल हो गया। दस लाख से अधिक भारतीय सैनिक और श्रमिक फ़्रांस, गैलीपोली, मेसोपोटामिया, मिस्र और पूर्वी अफ़्रीका के मोर्चों पर भेजे गए, जिनमें से 74 हज़ार से अधिक मारे गए। युद्ध के आर्थिक बोझ और टूटी उम्मीदों ने भारत में राष्ट्रीय आंदोलन को नई दिशा दी।
 tags: [vishwayuddh, angrezi-shasan, sena, swatantrata-sangram, india-gate, home-rule]
-series: { id: sudhar-aur-rashtriya-chetna, order: 21 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 27 }
 sources:
   - title: "Indian Army during World War I — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indian_Army_during_World_War_I

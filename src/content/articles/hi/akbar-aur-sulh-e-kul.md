@@ -7,7 +7,7 @@ kaun: [जलालुद्दीन मुहम्मद अकबर, अब
 kahan: [फ़तेहपुर सीकरी, आगरा, दिल्ली]
 saar: मुग़ल सम्राट अकबर ने एक बहुधार्मिक देश में स्थायित्व के लिए 'सुलह-ए-कुल' (सार्वभौमिक शांति) की नीति अपनाई। तीर्थयात्रा कर और जजिया की समाप्ति, इबादत खाना में सर्वधर्म संवाद और नवरत्नों के सहयोग ने उनके काल को समावेशी शासन का प्रतीक बना दिया।
 tags: [mughal-samrajya, darshan, prashasan, navratna]
-series: { id: mughal-samrajya-ka-uday, order: 7 }
+series: { id: mughal-samrajya-ka-uday, order: 8 }
 sources:
   - title: "अबुल फ़ज़ल — आईन-ए-अकबरी व अकबरनामा (16वीं सदी का समकालीन ग्रंथ)"
     url: https://archive.org/details/in.ernet.dli.2015.53928

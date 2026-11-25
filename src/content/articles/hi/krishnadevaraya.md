@@ -7,7 +7,7 @@ kaun: [कृष्णदेव राय, तुलुव नरस नाय�
 kahan: [हम्पी (विजयनगर), उदयगिरि, कोंडवीडु, रायचूर, तिरुमला, श्रीकाकुलम (आंध्र प्रदेश)]
 saar: "तुलुव वंश के कृष्णदेव राय ने 1509 से 1529 तक विजयनगर पर शासन किया। उन्होंने ओडिशा के गजपति और दक्कन के सुल्तानों के विरुद्ध सफल अभियान किए, 1520 में रायचूर जीता और तेलुगु काव्य 'आमुक्तमाल्यदा' लिखा। उनके दरबार के 'अष्टदिग्गज' कवियों के कारण उनका काल तेलुगु साहित्य का स्वर्ण युग कहलाता है।"
 tags: [vijaynagar-samrajya, dakshin-bharat, samrat, telugu-sahitya, hampi]
-series: { id: dakshin-ke-rajvansh, order: 11 }
+series: { id: dakshin-ke-rajvansh, order: 12 }
 sources:
   - title: "Krishnadevaraya — Wikipedia"
     url: https://en.wikipedia.org/wiki/Krishnadevaraya

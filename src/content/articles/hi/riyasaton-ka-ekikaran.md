@@ -7,7 +7,7 @@ kaun: [सरदार वल्लभभाई पटेल, वी.पी. म
 kahan: [नई दिल्ली, जूनागढ़, हैदराबाद, भोपाल, कश्मीर, त्रावणकोर]
 saar: 1947 में आज़ादी के साथ ही भारत के सामने 565 देशी रियासतों के रूप में टुकड़े-टुकड़े होने का ख़तरा था। गृह मंत्री सरदार वल्लभभाई पटेल ने अपनी फौलादी इच्छाशक्ति और वी.पी. मेनन के कूटनीतिक कौशल से 'अखंड भारत' का सपना साकार किया।
 tags: [swatantrata, sardar-patel, ekikaran, adhunik-bharat]
-series: { id: naye-bharat-ka-nirman, order: 4 }
+series: { id: naye-bharat-ka-nirman, order: 5 }
 sources:
   - title: "वी. पी. मेनन — द स्टोरी ऑफ द इंटीग्रेशन ऑफ द इंडियन स्टेट्स (The Integration of the Indian States)"
     url: https://archive.org/details/TheStoryOfTheIntegrationOfTheIndianStatesByV.P.Menon

@@ -7,7 +7,7 @@ kaun: [जवाहरलाल नेहरू, मोतीलाल नेह
 kahan: [इलाहाबाद, हैरो, कैम्ब्रिज, लाहौर, अहमदनगर क़िला, नई दिल्ली]
 saar: 14 नवंबर 1889 को इलाहाबाद में जन्मे जवाहरलाल नेहरू गांधीजी के सबसे निकट सहयोगियों में थे, जिन्होंने 1929 के लाहौर अधिवेशन में 'पूर्ण स्वराज' का प्रस्ताव रखा। आंदोलन के दौरान नौ वर्ष से ज़्यादा जेल में रहे और 'डिस्कवरी ऑफ़ इंडिया' जैसी किताबें लिखीं। 1947 से 1964 तक भारत के पहले प्रधानमंत्री के रूप में उन्होंने लोकतंत्र, योजना, विज्ञान-संस्थानों और गुटनिरपेक्षता की नींव रखी।
 tags: [jawaharlal-nehru, swatantrata-sangram, congress, pradhanmantri, swatantra-bharat, jeevani]
-series: { id: aazadi-ke-nayak, order: 6 }
+series: { id: aazadi-ke-nayak, order: 7 }
 sources:
   - title: "Jawaharlal Nehru — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jawaharlal_Nehru

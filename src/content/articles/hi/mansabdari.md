@@ -7,7 +7,7 @@ kaun: [अकबर, शाहजहाँ, औरंगज़ेब, अबु�
 kahan: [आगरा, फ़तेहपुर सीकरी, दिल्ली, दक्कन]
 saar: अकबर ने 1570 के दशक में मुग़ल अधिकारियों को 'मनसब' (पद या दर्जा) देने की एक व्यवस्थित प्रणाली खड़ी की, जिसमें हर अधिकारी का वेतन, प्रतिष्ठा और रखे जाने वाले घुड़सवारों की संख्या एक अंक से तय होती थी। वेतन अक्सर नक़द के बजाय 'जागीर' — किसी इलाक़े का भू-राजस्व वसूलने के अधिकार — के रूप में मिलता था। यही मनसबदारी-जागीरदारी व्यवस्था साम्राज्य की सेना और प्रशासन की रीढ़ बनी।
 tags: [mughal-samrajya, prashasan, akbar, bhu-rajasv, sena]
-series: { id: mughal-samrajya-ka-uday, order: 12 }
+series: { id: mughal-samrajya-ka-uday, order: 14 }
 sources:
   - title: "Mansabdar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mansabdar

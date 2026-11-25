@@ -7,7 +7,7 @@ kaun: [राजा भोज, सिंधुराज, मुंज, जयस
 kahan: [धार, मालवा, भोजपुर (रायसेन), उज्जैन]
 saar: परमार वंश के राजा भोज ने लगभग 1010 से 1055 ई. तक धार से मालवा पर शासन किया। वे योद्धा होने के साथ-साथ विद्वान और कला-संरक्षक के रूप में प्रसिद्ध हैं। व्याकरण, काव्यशास्त्र और वास्तुकला पर कई ग्रंथ उनके नाम से जुड़े हैं, और भोजपुर का भव्य शिव मंदिर उनकी देन माना जाता है।
 tags: [parmar, malwa, madhyapradesh, sahitya, vastukala]
-series: { id: harsh-se-tarain, order: 13 }
+series: { id: harsh-se-tarain, order: 14 }
 sources:
   - title: "Bhoja — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bhoja

@@ -7,7 +7,7 @@ kaun: [लाल बहादुर शास्त्री, अयूब ख�
 kahan: [कच्छ का रण, हाजी पीर दर्रा, छंब, अखनूर, लाहौर, खेमकरण, असल उत्तर, सियालकोट, चविंडा, "ताशकंद (उज़्बेकिस्तान, तत्कालीन सोवियत संघ)"]
 saar: अगस्त 1965 में पाकिस्तान ने 'ऑपरेशन जिब्राल्टर' के तहत कश्मीर में घुसपैठिए भेजे, जिसके बाद दोनों देशों के बीच पूर्ण युद्ध छिड़ गया। कश्मीर, पंजाब और सियालकोट के मोर्चों पर भीषण टैंक-युद्ध हुए। 23 सितंबर को संयुक्त राष्ट्र की अपील पर युद्धविराम हुआ और 10 जनवरी 1966 को सोवियत मध्यस्थता में शास्त्री और अयूब ख़ान ने ताशकंद घोषणा पर हस्ताक्षर किए।
 tags: [bharat-pak-yuddh, kashmir, lal-bahadur-shastri, tashkent, operation-gibraltar, swatantra-bharat]
-series: { id: badalta-bharat, order: 4 }
+series: { id: badalta-bharat, order: 5 }
 sources:
   - title: "Indo-Pakistani war of 1965 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indo-Pakistani_war_of_1965

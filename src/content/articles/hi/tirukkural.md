@@ -7,7 +7,7 @@ kaun: [तिरुवल्लुवर, परिमेलऴगर, "कॉ�
 kahan: [तमिऴकम, "कन्याकुमारी (तमिलनाडु)"]
 saar: "तिरुक्कुरल संत तिरुवल्लुवर से जुड़ा तमिल भाषा का प्रसिद्ध नीति-ग्रंथ है। इसमें 133 अध्यायों में बँटे 1330 छोटे दोहे (कुरल) हैं, जो धर्म, अर्थ-राजनीति और प्रेम — तीन भागों में जीवन की सीख देते हैं। इसका रचना-काल विवादित है, पर अधिकतर विद्वान इसे लगभग पाँचवीं सदी ई. के आसपास का मानते हैं।"
 tags: [sahitya, tamil-sahitya, niti-granth, dakshin-bharat, tamilnadu]
-series: { id: prachin-dakshin-bharat, order: 6 }
+series: { id: prachin-dakshin-bharat, order: 7 }
 sources:
   - title: "Kural — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kural

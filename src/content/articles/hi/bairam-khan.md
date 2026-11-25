@@ -7,7 +7,7 @@ kaun: [बैरम ख़ाँ, अकबर, हुमायूँ, हेम
 kahan: [कलानौर, पानीपत, दिल्ली, आगरा, पाटन (गुजरात)]
 saar: हुमायूँ के विश्वस्त सेनापति बैरम ख़ाँ 1556 में तेरह वर्ष के अकबर के संरक्षक (वकील) बने। उनके नेतृत्व में मुग़लों ने पानीपत की दूसरी लड़ाई में हेमू को हराकर उत्तर भारत में सत्ता फिर से जमाई। 1560 में अकबर ने उन्हें पद से हटा दिया और 1561 में हज के रास्ते पाटन में उनकी हत्या कर दी गई।
 tags: [mughal-samrajya, akbar, panipat, bairam-khan, sanrakshak]
-series: { id: mughal-samrajya-ka-uday, order: 8 }
+series: { id: mughal-samrajya-ka-uday, order: 9 }
 sources:
   - title: "Bairam Khan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bairam_Khan

@@ -7,7 +7,7 @@ kaun: [शिवाजी, संभाजी, औरंगज़ेब, मि�
 kahan: [पुरंदर क़िला, आगरा, मथुरा, राजगढ़]
 saar: 1665 में मिर्ज़ा राजा जय सिंह के दबाव में शिवाजी को पुरंदर की संधि कर 23 क़िले मुग़लों को सौंपने पड़े और आगरा जाकर औरंगज़ेब के दरबार में उपस्थित होना पड़ा। 12 मई 1666 के दरबार में अपमानित महसूस कर वे भड़क उठे और नज़रबंद कर दिए गए। अगस्त 1666 में वे पहरे से निकल भागे — यह पलायन मराठा इतिहास की सबसे चर्चित घटनाओं में है।
 tags: [maratha, shivaji, mughal-samrajya, aurangzeb, agra, sandhi]
-series: { id: maratha-shakti, order: 3 }
+series: { id: maratha-shakti, order: 5 }
 sources:
   - title: "Treaty of Purandar (1665) — Wikipedia"
     url: https://en.wikipedia.org/wiki/Treaty_of_Purandar_(1665)

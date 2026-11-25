@@ -7,7 +7,7 @@ kaun: [बहादुर शाह ज़फ़र, अकबर शाह द�
 kahan: [दिल्ली, लाल क़िला, हुमायूँ का मक़बरा, "रंगून (यांगून, म्यांमार)"]
 saar: 1837 में गद्दी पर बैठे बहादुर शाह ज़फ़र नाममात्र के बादशाह थे, जिनकी सत्ता लाल क़िले तक सिमटी थी। मई 1857 में विद्रोही सिपाहियों ने उन्हें अपना नेता घोषित किया। दिल्ली के पतन के बाद 20 सितंबर 1857 को वे पकड़े गए, 1858 में लाल क़िले में उन पर मुक़दमा चला और उन्हें रंगून निर्वासित कर दिया गया, जहाँ 7 नवंबर 1862 को उनकी मृत्यु हुई। वे एक संवेदनशील उर्दू शायर भी थे।
 tags: [mughal-samrajya, sangram-1857, swatantrata-sangram, angrezi-shasan, dilli, sahitya]
-series: { id: angrezon-ke-viruddh-vidroh, order: 7 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 10 }
 sources:
   - title: "Bahadur Shah Zafar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bahadur_Shah_Zafar

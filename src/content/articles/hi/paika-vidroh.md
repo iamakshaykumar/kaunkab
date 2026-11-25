@@ -7,7 +7,7 @@ kaun: [बख़्शी जगबंधु विद्याधर, राज
 kahan: [खुर्दा, बाणपुर, पुरी, कटक, घुमसर (ओडिशा)]
 saar: 1803 में ओडिशा पर अंग्रेज़ी अधिकार के बाद खुर्दा राज्य के पारंपरिक सैनिक 'पाइक' अपनी लगान-मुक्त ज़मीनें और प्रतिष्ठा खो बैठे। मार्च 1817 में खुर्दा के पूर्व सेनापति बख़्शी जगबंधु के नेतृत्व में उन्होंने विद्रोह किया, बाणपुर, खुर्दा और पुरी तक कंपनी के अधिकारियों को खदेड़ा। कुछ ही महीनों में विद्रोह दबा दिया गया, पर छिटपुट संघर्ष वर्षों चला; जगबंधु ने 1825 में आत्मसमर्पण किया।
 tags: [odisha, angrezi-shasan, east-india-company, vidroh, kisan-andolan]
-series: { id: angrezon-ke-viruddh-vidroh, order: 1 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 3 }
 sources:
   - title: "Paika Rebellion — Wikipedia"
     url: https://en.wikipedia.org/wiki/Paika_Rebellion

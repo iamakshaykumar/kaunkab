@@ -7,7 +7,7 @@ kaun: [मिहिर भोज, रामभद्र, महेंद्र�
 kahan: [कन्नौज, ग्वालियर, राजस्थान, मालवा]
 saar: गुर्जर-प्रतिहार राजा मिहिर भोज ने लगभग 836 से 885 ई. तक कन्नौज से शासन किया। उन्होंने कमज़ोर विरासत को उत्तर भारत के सबसे बड़े साम्राज्यों में से एक में बदल दिया। 'आदिवराह' उपाधि वाले उनके सिक्के दूर-दूर तक चले, और अरब व्यापारी सुलेमान ने उनकी शक्तिशाली घुड़सवार सेना का उल्लेख किया।
 tags: [pratihar, kannauj, rashtrakut, pal-vansh, yuddh, samrajya]
-series: { id: harsh-se-tarain, order: 9 }
+series: { id: harsh-se-tarain, order: 10 }
 sources:
   - title: "Mihira Bhoja — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mihira_Bhoja

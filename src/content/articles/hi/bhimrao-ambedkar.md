@@ -7,7 +7,7 @@ kaun: [भीमराव रामजी आंबेडकर, रामजी
 kahan: [महू, बंबई, न्यूयॉर्क, लंदन, महाड, पुणे, नागपुर, दिल्ली]
 saar: 14 अप्रैल 1891 को महू में एक महार परिवार में जन्मे भीमराव आंबेडकर ने छुआछूत का अपमान झेलते हुए कोलंबिया और लंदन से अर्थशास्त्र में डॉक्टरेट की उपाधियाँ लीं। महाड सत्याग्रह, पूना समझौते और दलित अधिकारों के लंबे संघर्ष के बाद वे संविधान की प्रारूप समिति के अध्यक्ष और देश के पहले क़ानून मंत्री बने। 14 अक्टूबर 1956 को नागपुर में लाखों अनुयायियों के साथ उन्होंने बौद्ध धर्म अपनाया।
 tags: [bhimrao-ambedkar, dalit-andolan, samvidhan, samajik-sudhar, bauddh-dharm, jeevani]
-series: { id: aazadi-ke-nayak, order: 7 }
+series: { id: aazadi-ke-nayak, order: 8 }
 sources:
   - title: "B. R. Ambedkar — Wikipedia"
     url: https://en.wikipedia.org/wiki/B._R._Ambedkar

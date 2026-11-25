@@ -7,7 +7,7 @@ kaun: [पुलकेशिन द्वितीय, मंगलेश, ह�
 kahan: [बादामी (वातापी), ऐहोल, नर्मदा नदी, वेंगी, कांची]
 saar: बादामी के चालुक्य राजा पुलकेशिन द्वितीय (लगभग 610–642 ई.) दक्षिण भारत के सबसे प्रतापी शासकों में थे। उन्होंने उत्तर भारत के सम्राट हर्षवर्धन को नर्मदा के तट पर रोक दिया, जिसके बाद नर्मदा दोनों साम्राज्यों की सीमा बन गई।
 tags: [chalukya, dakshin-bharat, samrajya, yuddh, karnataka]
-series: { id: prachin-dakshin-bharat, order: 11 }
+series: { id: prachin-dakshin-bharat, order: 13 }
 sources:
   - title: "Chalukya dynasty — Encyclopaedia Britannica"
     url: https://www.britannica.com/topic/Chalukya-dynasty

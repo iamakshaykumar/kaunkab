@@ -7,7 +7,7 @@ kaun: [बालाजी विश्वनाथ, छत्रपति शा
 kahan: [श्रीवर्धन (कोंकण), सतारा, पुणे, दिल्ली, सासवड]
 saar: कोंकण के श्रीवर्धन से आए बालाजी विश्वनाथ को 16 नवंबर 1713 को छत्रपति शाहू ने पेशवा नियुक्त किया। उन्होंने गृहयुद्ध में उलझे मराठा राज्य को स्थिर किया, कान्होजी आंग्रे को शाहू के पक्ष में लाए और 1719 में दिल्ली जाकर मुग़ल दरबार से चौथ, सरदेशमुखी और स्वराज्य की सनदें प्राप्त कीं। 12 अप्रैल 1720 को सासवड में उनकी मृत्यु हुई।
 tags: [maratha, peshwa, mughal-samrajya, chhatrapati-shahu, dakkan]
-series: { id: maratha-shakti, order: 10 }
+series: { id: maratha-shakti, order: 13 }
 sources:
   - title: "Balaji Vishwanath — Wikipedia"
     url: https://en.wikipedia.org/wiki/Balaji_Vishwanath

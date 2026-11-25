@@ -7,7 +7,7 @@ kaun: [पुलकेशिन द्वितीय, रविकीर्त�
 kahan: ["ऐहोल (बागलकोट ज़िला, कर्नाटक)", मलप्रभा नदी, बादामी, पट्टदकल]
 saar: "कर्नाटक में मलप्रभा नदी के किनारे बसे ऐहोल में 120 से अधिक पत्थर और गुफा मंदिर हैं, जहाँ चालुक्य काल में मंदिर निर्माण की नई-नई शैलियाँ आज़माई गईं। यहीं मेगुति जैन मंदिर की दीवार पर 634–635 ई. का रविकीर्ति का संस्कृत अभिलेख है, जो पुलकेशिन द्वितीय की प्रशंसा करता है।"
 tags: [chalukya, karnataka, vastukala, mandir, shilalekh, dakshin-bharat, jain-dharm]
-series: { id: prachin-dakshin-bharat, order: 12 }
+series: { id: prachin-dakshin-bharat, order: 14 }
 sources:
   - title: "Aihole — Wikipedia"
     url: https://en.wikipedia.org/wiki/Aihole

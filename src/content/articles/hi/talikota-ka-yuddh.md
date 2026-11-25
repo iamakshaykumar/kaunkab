@@ -7,7 +7,7 @@ kaun: [आलिया राम राय, सदाशिव राय, ति
 kahan: ["रक्कसगी-तंगडगी (कृष्णा नदी के पास, कर्नाटक)", तालीकोटा, हम्पी (विजयनगर), पेनुकोंडा]
 saar: "जनवरी 1565 में कृष्णा नदी के पास रक्कसगी-तंगडगी में दक्कन की चार सल्तनतों की संयुक्त सेना ने विजयनगर की सेना को हराया। विजयनगर के वास्तविक शासक आलिया राम राय मारे गए और राजधानी विजयनगर (हम्पी) को लूटा गया। साम्राज्य बना रहा, पर उसका केंद्र दक्षिण की ओर खिसक गया।"
 tags: [yuddh, vijaynagar-samrajya, dakkan-saltanat, dakshin-bharat, hampi]
-series: { id: dakshin-ke-rajvansh, order: 12 }
+series: { id: dakshin-ke-rajvansh, order: 13 }
 sources:
   - title: "Battle of Talikota — Wikipedia"
     url: https://en.wikipedia.org/wiki/Battle_of_Talikota

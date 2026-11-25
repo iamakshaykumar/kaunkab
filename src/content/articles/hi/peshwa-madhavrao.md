@@ -7,7 +7,7 @@ kaun: [पेशवा माधवराव प्रथम, रघुनाथ
 kahan: [पुणे, राक्षसभुवन, धारवाड़, दिल्ली, थेऊर]
 saar: पानीपत की तीसरी लड़ाई (1761) की करारी हार के बाद सोलह वर्ष की आयु में पेशवा बने माधवराव प्रथम ने चाचा रघुनाथराव की महत्वाकांक्षा, निज़ाम और मैसूर के हैदर अली — तीनों मोर्चों पर मराठा शक्ति को फिर खड़ा किया। उनके समय में मराठा सेनाएँ दिल्ली लौटीं, पर 1772 में मात्र सत्ताईस वर्ष की आयु में क्षयरोग से उनकी मृत्यु हो गई।
 tags: [maratha-samrajya, peshwa, panipat, nizam, hyder-ali, pune]
-series: { id: maratha-shakti, order: 13 }
+series: { id: maratha-shakti, order: 17 }
 sources:
   - title: "Madhavrao I — Wikipedia"
     url: https://en.wikipedia.org/wiki/Madhavrao_I

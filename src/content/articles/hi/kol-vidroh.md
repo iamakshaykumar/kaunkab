@@ -7,7 +7,7 @@ kaun: [बुधु भगत, जोआ भगत, सिंदराय मा
 kahan: [छोटानागपुर, सोनपुर परगना, तमाड़, राँची, सिंहभूम, पलामू, हज़ारीबाग, मानभूम]
 saar: 1831 के अंत में छोटानागपुर के मुंडा, हो, उराँव और भूमिज समुदायों ने बाहरी ठेकेदारों, महाजनों और कंपनी के नए प्रशासन के ख़िलाफ़ हथियार उठाए, जिसे अंग्रेज़ी रिकॉर्ड 'कोल विद्रोह' कहते हैं। 1832 में सेना ने इसे कुचल दिया, पर इसके बाद अंग्रेज़ों को इस क्षेत्र के लिए अलग प्रशासनिक व्यवस्था — दक्षिण-पश्चिम सीमांत एजेंसी — बनानी पड़ी।
 tags: [adivasi-andolan, munda, ho, jharkhand, angrez-virodh, vidroh]
-series: { id: angrezon-ke-viruddh-vidroh, order: 3 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 6 }
 sources:
   - title: "Kol uprising — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kol_uprising

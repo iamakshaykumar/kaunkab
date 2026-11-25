@@ -7,7 +7,7 @@ kaun: [मीराबाई, भोजराज, राणा सांगा, 
 kahan: [कुड़की और मेड़ता (मारवाड़), चित्तौड़ (मेवाड़), वृंदावन, द्वारका]
 saar: लगभग 1498 ई. में मारवाड़ के राठौड़ राजपरिवार में जन्मी मीराबाई ने राजमहल की मर्यादाओं के बीच भी कृष्ण को ही अपना सब कुछ माना। उनके राजस्थानी-ब्रज पद आज भी भक्ति संगीत का हिस्सा हैं, हालाँकि उनके जीवन की कई कहानियाँ इतिहास से ज़्यादा लोक-परंपरा हैं।
 tags: [bhakti, krishna-bhakti, rajasthan, mewar, mahila-itihas]
-series: { id: bhakti-aur-sufi, order: 19 }
+series: { id: bhakti-aur-sufi, order: 23 }
 sources:
   - title: "Meera — Wikipedia"
     url: https://en.wikipedia.org/wiki/Meera

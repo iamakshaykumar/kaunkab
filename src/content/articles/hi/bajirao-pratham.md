@@ -7,7 +7,7 @@ kaun: [पेशवा बाजीराव प्रथम, छत्रपत
 kahan: [पुणे, पालखेड, बुंदेलखंड, मालवा, दिल्ली, भोपाल, वसई, रावेरखेड़ी]
 saar: बीस वर्ष की आयु में 1720 में पेशवा बने बाजीराव प्रथम ने तेज़ घुड़सवार युद्ध-शैली से मराठा शक्ति को दक्कन से उत्तर भारत तक पहुँचाया। 1728 में पालखेड में निज़ाम को घेरकर संधि पर मजबूर किया, 1737 में दिल्ली के बाहरी इलाक़े तक धावा मारा और 1738 में मालवा पर अधिकार पाया।
 tags: [maratha, peshwa, bajirao, nizam, malwa, yuddh]
-series: { id: maratha-shakti, order: 11 }
+series: { id: maratha-shakti, order: 14 }
 sources:
   - title: "Baji Rao I — Wikipedia"
     url: https://en.wikipedia.org/wiki/Baji_Rao_I

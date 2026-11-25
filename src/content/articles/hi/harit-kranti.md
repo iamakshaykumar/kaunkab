@@ -7,7 +7,7 @@ kaun: [एम. एस. स्वामीनाथन, नॉर्मन बो
 kahan: [पंजाब, हरियाणा, पश्चिमी उत्तर प्रदेश, "भारतीय कृषि अनुसंधान संस्थान (पूसा), नई दिल्ली", मेक्सिको]
 saar: 1960 के दशक के मध्य में लगातार सूखे और खाद्यान्न आयात पर निर्भरता के बीच भारत ने मेक्सिको से लाए गए अधिक उपज वाले बौने गेहूँ के बीज, रासायनिक खाद और सिंचाई के सहारे खेती का नया तरीक़ा अपनाया। एम. एस. स्वामीनाथन और नॉर्मन बोरलॉग से जुड़ी इस 'हरित क्रांति' ने पंजाब, हरियाणा और पश्चिमी उत्तर प्रदेश में गेहूँ उत्पादन तेज़ी से बढ़ाया, पर इसके पर्यावरणीय और सामाजिक दुष्प्रभावों की आलोचना भी होती है।
 tags: [harit-kranti, krishi, swaminathan, punjab, gehun, arthvyavastha, swatantra-bharat]
-series: { id: badalta-bharat, order: 5 }
+series: { id: badalta-bharat, order: 6 }
 sources:
   - title: "Green Revolution in India — Wikipedia"
     url: https://en.wikipedia.org/wiki/Green_Revolution_in_India

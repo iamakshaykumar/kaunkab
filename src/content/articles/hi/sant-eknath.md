@@ -7,7 +7,7 @@ kaun: [संत एकनाथ, जनार्दन स्वामी, भ�
 kahan: ["पैठण (महाराष्ट्र)", गोदावरी नदी, "देवगिरि (दौलताबाद)", वाराणसी, पंढरपुर]
 saar: सोलहवीं सदी के मराठी संत एकनाथ ने पैठण में रहकर भागवत पुराण के ग्यारहवें स्कंध पर 'एकनाथी भागवत' रची, ज्ञानेश्वरी का शुद्ध पाठ तैयार किया और लगभग 300 भारूड़ जैसे लोकगीतों से भक्ति को आम लोगों तक पहुँचाया। वारकरी परंपरा में वे ज्ञानेश्वर-नामदेव और तुकाराम के बीच की कड़ी माने जाते हैं।
 tags: [bhakti, sant-kavi, marathi-sahitya, varkari, maharashtra]
-series: { id: bhakti-aur-sufi, order: 21 }
+series: { id: bhakti-aur-sufi, order: 26 }
 sources:
   - title: "Eknath — Wikipedia"
     url: https://en.wikipedia.org/wiki/Eknath

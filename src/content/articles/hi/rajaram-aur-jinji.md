@@ -7,7 +7,7 @@ kaun: [छत्रपति राजाराम, औरंगज़ेब, �
 kahan: [रायगढ़, जिंजी (तमिलनाडु), विशालगढ़, सतारा, सिंहगढ़, दोड्डेरी]
 saar: 1689 में संभाजी के पकड़े जाने और रायगढ़ की घेराबंदी के बीच छोटे भाई राजाराम ने मराठा राज्य की बागडोर संभाली और दूर दक्षिण के जिंजी क़िले को केंद्र बनाया। लगभग आठ साल चली जिंजी की घेराबंदी ने मुग़ल सेना को उलझाए रखा, जबकि संताजी और धनाजी जैसे सेनापतियों ने महाराष्ट्र से कर्नाटक तक मुग़लों पर छापामार हमले किए।
 tags: [maratha, maharashtra, mughal-samrajya, aurangzeb, dakshin-bharat, tamilnadu, yuddh]
-series: { id: maratha-shakti, order: 6 }
+series: { id: maratha-shakti, order: 9 }
 sources:
   - title: "Rajaram I — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rajaram_I

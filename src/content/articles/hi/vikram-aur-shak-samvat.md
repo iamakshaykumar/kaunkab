@@ -7,7 +7,7 @@ kaun: [विक्रमादित्य (परंपरा), कालक�
 kahan: [उज्जैन, मालवा, भारत, नेपाल]
 saar: "भारत में वर्ष गिनने के कई संवत चले। विक्रम संवत 57 ई.पू. से गिना जाता है और आज भी त्योहारों व पंचांग में चलता है; शक संवत 78 ई. से शुरू होता है और 1957 से भारत के राष्ट्रीय कैलेंडर का आधार है। गुप्त संवत (319–320 ई.) जैसे दूसरे संवत भी अभिलेखों की तिथियाँ समझने में मदद करते हैं।"
 tags: [kalganana, samvat, panchang, shilalekh, gupta, malwa, prachin-bharat]
-series: { id: maurya-se-gupta, order: 6 }
+series: { id: maurya-se-gupta, order: 7 }
 sources:
   - title: "Vikram Samvat — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vikram_Samvat

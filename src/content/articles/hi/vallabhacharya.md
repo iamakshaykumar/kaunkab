@@ -7,7 +7,7 @@ kaun: [वल्लभाचार्य, लक्ष्मण भट्ट, �
 kahan: [चंपारण्य (छत्तीसगढ़), वाराणसी, "गोकुल, ब्रज", गोवर्धन]
 saar: पंद्रहवीं-सोलहवीं सदी के दार्शनिक-आचार्य वल्लभाचार्य ने 'शुद्धाद्वैत' दर्शन और कृष्ण-भक्ति के 'पुष्टिमार्ग' की स्थापना की। उन्होंने संसार को माया नहीं, ईश्वर का ही सच्चा रूप माना और गृहस्थ जीवन में रहते हुए प्रेम-भक्ति का रास्ता दिखाया। ब्रज में श्रीनाथजी की सेवा और अष्टछाप कवियों की परंपरा उन्हीं से जुड़ी है।
 tags: [bhakti, vaishnav, pushtimarg, shuddhadvait, krishna-bhakti, braj, darshan]
-series: { id: bhakti-aur-sufi, order: 17 }
+series: { id: bhakti-aur-sufi, order: 20 }
 sources:
   - title: "Vallabha — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vallabhacharya

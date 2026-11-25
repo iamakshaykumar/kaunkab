@@ -7,7 +7,7 @@ kaun: [सर सैयद अहमद ख़ाँ, लॉर्ड लिट�
 kahan: [दिल्ली, बिजनौर, ग़ाज़ीपुर, अलीगढ़]
 saar: 1857 के बाद भारतीय मुसलमानों में आधुनिक शिक्षा फैलाने के लिए सर सैयद अहमद ख़ाँ ने साइंटिफ़िक सोसाइटी (1864) बनाई और 24 मई 1875 को अलीगढ़ में मोहम्मडन एंग्लो-ओरिएंटल स्कूल शुरू किया, जो 1877 में कॉलेज और 1920 में अलीगढ़ मुस्लिम विश्वविद्यालय बना। उनके शैक्षिक सुधार सराहे गए, जबकि कांग्रेस और राजनीति पर उनके विचार आज भी बहस का विषय हैं।
 tags: [shiksha, samaj-sudhar, punarjagaran, uttar-pradesh, angrezi-shasan]
-series: { id: sudhar-aur-rashtriya-chetna, order: 8 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 10 }
 sources:
   - title: "Syed Ahmad Khan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Syed_Ahmad_Khan

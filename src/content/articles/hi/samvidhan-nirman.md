@@ -7,7 +7,7 @@ kaun: [डॉ. बी.आर. अम्बेडकर, डॉ. राजें�
 kahan: ["संविधान सभा (संसद का सेंट्रल हॉल, नई दिल्ली)"]
 saar: 2 वर्ष 11 महीने 18 दिनों के ऐतिहासिक मंथन के बाद डॉ. बी.आर. अम्बेडकर और संविधान सभा के मनीषियों ने विश्व का सबसे बड़ा हस्तलिखित लोकतांत्रिक संविधान रचा, जो न्याय, स्वतंत्रता और समता की गारंटी देता है।
 tags: [samvidhan, loktantra, adhunik-bharat]
-series: { id: naye-bharat-ka-nirman, order: 3 }
+series: { id: naye-bharat-ka-nirman, order: 4 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: संविधान का निर्माण — एक नए युग की शुरुआत"
     url: https://ncert.nic.in/textbook/pdf/lehs304.pdf

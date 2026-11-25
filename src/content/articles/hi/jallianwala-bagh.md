@@ -7,7 +7,7 @@ kaun: [जनरल रेजिनाल्ड डायर, रवींद्
 kahan: [अमृतसर (पंजाब)]
 saar: 13 अप्रैल 1919, बैसाखी के दिन, अमृतसर के जलियाँवाला बाग़ में शांतिपूर्ण सभा पर जनरल डायर ने गोलियाँ चलवाईं। इस घटना ने पूरे देश को झकझोर दिया और स्वतंत्रता आंदोलन को नई ताक़त दी।
 tags: [swatantrata-sangram, angrezi-shasan, punjab]
-series: { id: azadi-ki-raah, order: 5 }
+series: { id: azadi-ki-raah, order: 6 }
 sources:
   - title: "NCERT, हमारे अतीत-III (कक्षा 8), अध्याय: राष्ट्रीय आंदोलन का संघटन"
   - title: "Jallianwala Bagh massacre — Wikipedia"

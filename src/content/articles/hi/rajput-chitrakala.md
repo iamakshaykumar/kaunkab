@@ -7,7 +7,7 @@ kaun: [साहिबदीन, निसारदीन, निहालचं
 kahan: [उदयपुर (मेवाड़), चावंड, बूँदी, कोटा, किशनगढ़, बसोहली, गुलेर, जसरोटा, कांगड़ा]
 saar: सत्रहवीं से उन्नीसवीं सदी तक राजस्थान और पंजाब की पहाड़ियों के राजपूत दरबारों में लघुचित्रों की कई शैलियाँ पनपीं। मेवाड़ के चटख रंग, बूँदी-कोटा के शिकार दृश्य, किशनगढ़ की 'बनी-ठनी', बसोहली की तेज़ रंगत और नैनसुख की कोमल कांगड़ा-पूर्व शैली — इन सबके केंद्र में कृष्ण-भक्ति, रागमाला और राज-दरबार का जीवन था।
 tags: [chitrakala, kala, rajput, rajasthan, krishna-bhakti, mewar]
-series: { id: kshetriya-shaktiyan, order: 16 }
+series: { id: kshetriya-shaktiyan, order: 19 }
 sources:
   - title: "Rajput painting — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rajput_painting

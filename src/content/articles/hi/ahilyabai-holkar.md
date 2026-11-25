@@ -7,7 +7,7 @@ kaun: [अहिल्याबाई होल्कर, मल्हारर�
 kahan: [चोंडी (महाराष्ट्र), इंदौर, महेश्वर, काशी (वाराणसी), मालवा]
 saar: पति, ससुर और पुत्र — तीनों को खो देने के बाद 1767 में अहिल्याबाई होल्कर ने मालवा के होल्कर राज्य की बागडोर संभाली और लगभग अट्ठाईस वर्ष तक महेश्वर से शासन किया। न्यायप्रिय प्रशासन, व्यापार-बुनाई को बढ़ावा और काशी विश्वनाथ समेत देश भर में मंदिरों, घाटों व धर्मशालाओं के निर्माण के लिए वे आज भी याद की जाती हैं।
 tags: [maratha, holkar, malwa, veerangana, mandir-nirman, sushasan]
-series: { id: maratha-shakti, order: 14 }
+series: { id: maratha-shakti, order: 18 }
 sources:
   - title: "Ahilyabai Holkar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ahilyabai_Holkar

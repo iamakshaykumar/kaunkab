@@ -7,7 +7,7 @@ kaun: [ह्वेनसांग (शुआनज़ांग), हर्ष�
 kahan: [नालंदा (बिहार), कन्नौज, प्रयाग, गांधार, कामरूप, चांगआन (चीन)]
 saar: चीनी बौद्ध भिक्षु ह्वेनसांग (शुआनज़ांग) 629 ई. में बौद्ध ग्रंथों की खोज में चीन से निकले और लगभग सोलह वर्ष बाद 645 ई. में लौटे। उन्होंने नालंदा में शिक्षा पाई, सम्राट हर्षवर्धन से मिले और अपने यात्रा-वृत्तांत में सातवीं सदी के भारत का विस्तृत चित्र छोड़ा।
 tags: [yatri, bauddh-dharm, nalanda, harshavardhan, china]
-series: { id: harsh-se-tarain, order: 3 }
+series: { id: harsh-se-tarain, order: 4 }
 sources:
   - title: "Xuanzang — Wikipedia"
     url: https://en.wikipedia.org/wiki/Xuanzang

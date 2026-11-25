@@ -7,7 +7,7 @@ kaun: [इंदिरा गांधी, शेख़ मुजीबुर �
 kahan: ["ढाका (रमना रेसकोर्स, अब सुहरावर्दी उद्यान)", पूर्वी पाकिस्तान, पश्चिम बंगाल, त्रिपुरा, असम, शिमला]
 saar: 1970 के चुनाव में अवामी लीग की जीत के बाद सत्ता न सौंपे जाने और 25 मार्च 1971 से पूर्वी पाकिस्तान में हुई सैनिक कार्रवाई से लाखों शरणार्थी भारत आए। 3 दिसंबर को पाकिस्तान के हवाई हमलों के बाद भारत-पाकिस्तान युद्ध छिड़ा, और 16 दिसंबर 1971 को ढाका में पाकिस्तान की पूर्वी कमान ने भारत और बांग्लादेश की संयुक्त कमान के सामने आत्मसमर्पण किया। जुलाई 1972 के शिमला समझौते से युद्ध के बाद के संबंधों का ढाँचा बना।
 tags: [bangladesh, bharat-pak-yuddh, indira-gandhi, mukti-bahini, shimla-samjhauta, swatantra-bharat]
-series: { id: badalta-bharat, order: 7 }
+series: { id: badalta-bharat, order: 9 }
 sources:
   - title: "Indo-Pakistani war of 1971 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indo-Pakistani_war_of_1971

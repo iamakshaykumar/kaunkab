@@ -7,7 +7,7 @@ kaun: [महाराजा हरि सिंह, शेख़ अब्द�
 kahan: [श्रीनगर, बारामूला, मुज़फ़्फ़राबाद, पुंछ, मीरपुर, गिलगित, स्कर्दू, उड़ी, ज़ोजिला]
 saar: अक्टूबर 1947 में पश्चिमोत्तर सीमांत के क़बायली लड़ाकों के हमले के बीच जम्मू-कश्मीर के महाराजा हरि सिंह ने भारत के साथ विलय-पत्र पर हस्ताक्षर किए और भारतीय सेना हवाई मार्ग से श्रीनगर पहुँची। इसके बाद भारत और पाकिस्तान के बीच पहला युद्ध हुआ, जो संयुक्त राष्ट्र की मध्यस्थता से 1 जनवरी 1949 के युद्धविराम पर रुका। राज्य का भविष्य आज तक दोनों देशों के बीच विवाद का विषय है।
 tags: [kashmir, jammu-kashmir, vilay-patra, bharat-pak-yuddh, riyasaton-ka-ekikaran, sanyukt-rashtra, swatantra-bharat]
-series: { id: naye-bharat-ka-nirman, order: 1 }
+series: { id: naye-bharat-ka-nirman, order: 2 }
 sources:
   - title: "Indo-Pakistani war of 1947–1948 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indo-Pakistani_war_of_1947%E2%80%931948

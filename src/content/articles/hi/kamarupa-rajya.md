@@ -7,7 +7,7 @@ kaun: [पुष्यवर्मन, भास्करवर्मन, हर
 kahan: ["प्राग्ज्योतिषपुर (गुवाहाटी, असम)", "हारुप्पेश्वर (तेज़पुर के पास)", "दुर्जया (गुवाहाटी के पास)", "निधानपुर (सिलहट, बांग्लादेश)"]
 saar: "कामरूप प्राचीन असम का राज्य था, जिस पर लगभग 350 से 1140 ई. तक वर्मन, म्लेच्छ (सालस्तंभ) और पाल वंशों ने शासन किया। इसका सबसे प्रसिद्ध राजा भास्करवर्मन (लगभग 600–650 ई.) हर्षवर्धन का मित्र था और उसने चीनी यात्री ह्वेनसांग को अपने दरबार में बुलाया।"
 tags: [assam, purvottar-bharat, rajvansh, harshavardhan, yatri, prachin-bharat]
-series: { id: harsh-se-tarain, order: 2 }
+series: { id: harsh-se-tarain, order: 3 }
 sources:
   - title: "Kamarupa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kamarupa

@@ -7,7 +7,7 @@ kaun: [जॉन मॉर्ले, लॉर्ड मिंटो, सत्�
 kahan: [लंदन, शिमला, कलकत्ता]
 saar: 1909 का भारतीय परिषद अधिनियम, जिसे भारत सचिव जॉन मॉर्ले और वायसराय लॉर्ड मिंटो के नाम पर मॉर्ले-मिंटो सुधार कहा जाता है, ने केंद्रीय और प्रांतीय विधान परिषदों को बड़ा किया और उनमें कुछ निर्वाचित सदस्य जोड़े। पर इसी अधिनियम ने मुसलमानों के लिए पृथक निर्वाचन की व्यवस्था की, जिसे आगे चलकर सांप्रदायिक राजनीति को बढ़ावा देने वाला कदम माना गया।
 tags: [swatantrata-sangram, angrezi-shasan, samvidhan, prithak-nirvachan, muslim-league, congress, naramdal]
-series: { id: sudhar-aur-rashtriya-chetna, order: 19 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 25 }
 sources:
   - title: "Indian Councils Act 1909 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indian_Councils_Act_1909

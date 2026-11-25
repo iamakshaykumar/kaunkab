@@ -7,7 +7,7 @@ kaun: [विंस्टन चर्चिल, लॉर्ड वेवेल
 kahan: [बंगाल, कलकत्ता, मिदनापुर, ओडिशा]
 saar: द्वितीय विश्व युद्ध के दौरान 1943 में बंगाल में भीषण अकाल पड़ा, जिसमें भूख और बीमारियों से अनुमानतः 8 लाख से 38 लाख तक लोग मारे गए। बर्मा का हाथ से निकलना, चक्रवात, युद्धकालीन महँगाई, 'डिनायल पॉलिसी' और सरकारी नीतियों की विफलता इसके प्रमुख कारण माने जाते हैं, जबकि इसके मूल कारणों पर इतिहासकारों और अर्थशास्त्रियों में आज भी बहस है।
 tags: [akal, bangal, dwitiya-vishwa-yuddh, angrezi-shasan, amartya-sen, arthvyavastha]
-series: { id: azadi-ki-raah, order: 23 }
+series: { id: azadi-ki-raah, order: 27 }
 sources:
   - title: "अमर्त्य सेन — Poverty and Famines: An Essay on Entitlement and Deprivation (ऑक्सफ़र्ड, 1981)"
   - title: "Famine Inquiry Commission (वुडहेड आयोग) — Report on Bengal (1945)"

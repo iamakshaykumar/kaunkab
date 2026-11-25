@@ -7,7 +7,7 @@ kaun: [महात्मा गांधी, मौलाना मोहम्
 kahan: [कलकत्ता, नागपुर, चौरी-चौरा (गोरखपुर), बारदोली]
 saar: 1920 में महात्मा गांधी के नेतृत्व में शुरू हुआ असहयोग आंदोलन ब्रिटिश शासन के विरुद्ध पहला देशव्यापी जन-आंदोलन था। फ़रवरी 1922 में चौरी-चौरा की हिंसक घटना के बाद गांधीजी ने इसे वापस ले लिया।
 tags: [swatantrata-sangram, gandhi, asahyog, khilafat]
-series: { id: azadi-ki-raah, order: 7 }
+series: { id: azadi-ki-raah, order: 8 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: महात्मा गांधी और राष्ट्रीय आंदोलन"
     url: https://ncert.nic.in/textbook/pdf/lehs302.pdf

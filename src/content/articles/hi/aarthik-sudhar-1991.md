@@ -7,7 +7,7 @@ kaun: [पी. वी. नरसिंह राव, मनमोहन सि�
 kahan: [नई दिल्ली, मुंबई, लंदन]
 saar: 1991 में भारत का विदेशी मुद्रा भंडार इतना घट गया कि वह मुश्किल से कुछ हफ़्तों के आयात के लिए बचा था। संकट से निकलने के लिए सोना गिरवी रखा गया और IMF से ऋण लिया गया। फिर प्रधानमंत्री पी. वी. नरसिंह राव और वित्त मंत्री मनमोहन सिंह ने जुलाई 1991 में रुपये के अवमूल्यन, नई औद्योगिक नीति और 24 जुलाई के बजट से 'लाइसेंस राज' ख़त्म करने और अर्थव्यवस्था खोलने की शुरुआत की।
 tags: [swatantra-bharat, arthvyavastha, udarikaran, license-raj, manmohan-singh, narasimha-rao, imf]
-series: { id: badalta-bharat, order: 12 }
+series: { id: badalta-bharat, order: 15 }
 sources:
   - title: "संजय बारू — 1991: How P. V. Narasimha Rao Made History (2016)"
   - title: "विनय सीतापति — Half-Lion: How P. V. Narasimha Rao Transformed India (2016)"

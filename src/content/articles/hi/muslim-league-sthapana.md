@@ -7,7 +7,7 @@ kaun: [आग़ा ख़ाँ तृतीय, नवाब सलीमु�
 kahan: ["ढाका (आज बांग्लादेश)", शिमला, अलीगढ़, लखनऊ]
 saar: अक्टूबर 1906 में आग़ा ख़ाँ के नेतृत्व में मुसलमान प्रतिनिधियों का एक दल शिमला में वायसराय लॉर्ड मिंटो से मिला और मुसलमानों के लिए अलग प्रतिनिधित्व की माँग रखी। कुछ ही सप्ताह बाद, 30 दिसंबर 1906 को ढाका में अखिल भारतीय मुहम्मडन शैक्षिक सम्मेलन के अवसर पर अखिल भारतीय मुस्लिम लीग की स्थापना हुई, जो आगे चलकर भारतीय राजनीति की एक प्रमुख शक्ति बनी।
 tags: [swatantrata-sangram, muslim-league, angrezi-shasan, prithak-nirvachan, bangal, dhaka]
-series: { id: sudhar-aur-rashtriya-chetna, order: 17 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 22 }
 sources:
   - title: "All-India Muslim League — Wikipedia"
     url: https://en.wikipedia.org/wiki/All-India_Muslim_League

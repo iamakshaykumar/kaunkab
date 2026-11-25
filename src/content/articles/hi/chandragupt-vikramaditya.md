@@ -7,7 +7,7 @@ kaun: [चंद्रगुप्त द्वितीय, समुद्र�
 kahan: [पाटलिपुत्र, उज्जैन, उदयगिरि (विदिशा), साँची, मालवा, गुजरात, मेहरौली (दिल्ली)]
 saar: समुद्रगुप्त के पुत्र चंद्रगुप्त द्वितीय ने लगभग 380 से 415 ई. तक शासन किया। उन्होंने पश्चिमी भारत के शक क्षत्रपों को हराकर गुजरात-मालवा को गुप्त साम्राज्य में मिलाया, चाँदी के सिक्के चलाए और 'विक्रमादित्य' की उपाधि ली। उदयगिरि की गुफाएँ और दिल्ली का लौह स्तंभ उनके समय की प्रसिद्ध निशानियाँ हैं।
 tags: [gupta, samrajya, shak, shilalekh, udayagiri, lauh-stambh]
-series: { id: maurya-se-gupta, order: 15 }
+series: { id: maurya-se-gupta, order: 16 }
 sources:
   - title: "Chandragupta II — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chandragupta_II

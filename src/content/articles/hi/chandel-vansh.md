@@ -7,7 +7,7 @@ kaun: [नन्नुक, यशोवर्मन, धंग, विद्य�
 kahan: [बुंदेलखंड, खजुराहो, कालिंजर, महोबा]
 saar: "चंदेल वंश ने नौवीं से चौदहवीं सदी तक बुंदेलखंड क्षेत्र (जेजाकभुक्ति) पर शासन किया। प्रतिहारों के सामंत के रूप में शुरू हुए चंदेल यशोवर्मन और धंग के समय स्वतंत्र और शक्तिशाली बने, विद्याधर ने महमूद ग़ज़नवी का सामना किया, और खजुराहो के मंदिर व कालिंजर का दुर्ग उनकी सबसे बड़ी पहचान बने।"
 tags: [rajvansh, rajput, chandel-vansh, bundelkhand, madhyapradesh, kalinjar]
-series: { id: harsh-se-tarain, order: 10 }
+series: { id: harsh-se-tarain, order: 11 }
 sources:
   - title: "Chandelas of Jejakabhukti — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chandelas_of_Jejakabhukti

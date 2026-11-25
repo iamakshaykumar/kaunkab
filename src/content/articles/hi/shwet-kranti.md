@@ -7,7 +7,7 @@ kaun: [वर्गीज़ कुरियन, त्रिभुवनदा�
 kahan: ["आनंद (खेड़ा ज़िला, गुजरात)", दिल्ली, मुंबई, कोलकाता, चेन्नई]
 saar: 1970 में राष्ट्रीय डेयरी विकास बोर्ड (NDDB) ने 'ऑपरेशन फ़्लड' शुरू किया, जो दुनिया का सबसे बड़ा डेयरी विकास कार्यक्रम बना। गुजरात के आनंद में अमूल के सहकारी मॉडल को पूरे देश में फैलाकर इसने भारत को दूध की कमी वाले देश से दुनिया का सबसे बड़ा दूध उत्पादक बना दिया।
 tags: [swatantra-bharat, shwet-kranti, operation-flood, amul, verghese-kurien, sahkarita, krishi]
-series: { id: badalta-bharat, order: 6 }
+series: { id: badalta-bharat, order: 7 }
 sources:
   - title: "बिपिन चंद्र, मृदुला मुखर्जी, आदित्य मुखर्जी — आज़ादी के बाद का भारत (India Since Independence), अध्याय: कृषि विकास"
   - title: "Verghese Kurien — I Too Had a Dream (आत्मकथा, गौरी सालवी को बताई गई), Roli Books, 2005"

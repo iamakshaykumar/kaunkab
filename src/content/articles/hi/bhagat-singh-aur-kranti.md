@@ -7,7 +7,7 @@ kaun: [भगत सिंह, चंद्रशेखर आज़ाद, स�
 kahan: [लाहौर, दिल्ली (सेंट्रल असेंबली), फिरोज़शाह कोटला, कानपुर]
 saar: 1928 में चंद्रशेखर आज़ाद और भगत सिंह के नेतृत्व में गठित HSRA ने आज़ादी की लड़ाई को 'इंक़लाब ज़िंदाबाद' का अमर नारा और समाजवादी वैचारिकी दी। 23 मार्च 1931 को भगत सिंह, सुखदेव और राजगुरु ने हँसते हुए फाँसी का फंदा चूमकर इतिहास रच दिया।
 tags: [swatantrata-sangram, bhagat-singh, kranti, hsra]
-series: { id: krantikari-andolan, order: 11 }
+series: { id: krantikari-andolan, order: 14 }
 sources:
   - title: "भगत सिंह के जेल दस्तावेज़ व निबंध — 'मैं नास्तिक क्यों हूँ' (Why I am an Atheist)"
     url: https://archive.org/details/whyiamanatheist_201912

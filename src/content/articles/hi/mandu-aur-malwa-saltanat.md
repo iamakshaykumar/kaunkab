@@ -7,7 +7,7 @@ kaun: [दिलावर ख़ान ग़ोरी, होशंग शा�
 kahan: [मांडू (धार ज़िला), धार, सारंगपुर, उज्जैन, "मालवा, मध्य प्रदेश"]
 saar: 1401 में दिलावर ख़ान ग़ोरी ने मालवा को दिल्ली से स्वतंत्र सल्तनत बनाया और उनके पुत्र होशंग शाह ने राजधानी विंध्य पर्वत के पठार पर बसे मांडू में बसाई। ग़ोरी और ख़िलजी सुल्तानों ने यहाँ जहाज़ महल, होशंग शाह का मक़बरा और जामी मस्जिद जैसी इमारतें बनवाईं। 1562 तक मालवा पूरी तरह मुग़ल साम्राज्य का हिस्सा बन गया।
 tags: [saltanat-kaal, malwa, mandu, madhya-pradesh, sthapatya, kshetriya-saltanat]
-series: { id: kshetriya-shaktiyan, order: 4 }
+series: { id: kshetriya-shaktiyan, order: 6 }
 sources:
   - title: "Malwa Sultanate — Wikipedia"
     url: https://en.wikipedia.org/wiki/Malwa_Sultanate

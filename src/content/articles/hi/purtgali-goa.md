@@ -7,7 +7,7 @@ kaun: [अफ़ोंसो द अल्बुकर्क, इस्माइ
 kahan: [गोवा, मांडवी नदी, "पुराना गोवा (वेल्हा गोवा)", बीजापुर, कोचीन]
 saar: 25 नवंबर 1510 को पुर्तगाली गवर्नर अफ़ोंसो द अल्बुकर्क ने बीजापुर सल्तनत से गोवा छीन लिया। 1530 से गोवा एशिया में पुर्तगाली साम्राज्य 'एस्तादो दा इंदिया' की राजधानी बना और समुद्री व्यापार पर 'कार्टाज़' जैसी व्यवस्थाओं से नियंत्रण का केंद्र रहा। पुर्तगाली शासन यहाँ 1961 तक चला।
 tags: [portugali, goa, samudri-vyapar, europe, upniveshvad]
-series: { id: kshetriya-shaktiyan, order: 12 }
+series: { id: kshetriya-shaktiyan, order: 15 }
 sources:
   - title: "Portuguese conquest of Goa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Portuguese_conquest_of_Goa

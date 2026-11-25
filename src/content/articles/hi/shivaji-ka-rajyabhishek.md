@@ -7,7 +7,7 @@ kaun: [छत्रपति शिवाजी महाराज, जीजा
 kahan: [रायगढ़ किला (महाराष्ट्र)]
 saar: 6 जून 1674 को रायगढ़ किले पर शिवाजी महाराज का राज्याभिषेक हुआ और उन्होंने "छत्रपति" की उपाधि धारण की। यह स्वतंत्र मराठा राज्य की औपचारिक घोषणा थी।
 tags: [maratha, swarajya, kila]
-series: { id: maratha-shakti, order: 4 }
+series: { id: maratha-shakti, order: 7 }
 sources:
   - title: "NCERT, हमारे अतीत-II (कक्षा 7), अध्याय: अठारहवीं शताब्दी में नए राजनीतिक गठन"
   - title: "Shivaji — Wikipedia"

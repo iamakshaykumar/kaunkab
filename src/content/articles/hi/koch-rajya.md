@@ -7,7 +7,7 @@ kaun: [विश्वसिंह, नरनारायण, "चिलार�
 kahan: [कामता राज्य, कूचबिहार, "नीलाचल पहाड़ी (गुवाहाटी)", ब्रह्मपुत्र घाटी, कोच हाजो]
 saar: सोलहवीं सदी में विश्वसिंह ने उत्तर बंगाल और पश्चिमी असम में कोच राज्य की नींव रखी। उनके पुत्र राजा नरनारायण और सेनापति चिलाराय के समय यह पूर्वोत्तर की सबसे बड़ी शक्ति बना, कामाख्या मंदिर फिर से बना और शंकरदेव के वैष्णव आंदोलन को संरक्षण मिला। 1581 के बाद राज्य कूचबिहार और कोच हाजो में बँट गया।
 tags: [koch-rajya, assam, bangal, purvottar-bharat, rajvansh, kamakhya]
-series: { id: kshetriya-shaktiyan, order: 11 }
+series: { id: kshetriya-shaktiyan, order: 14 }
 sources:
   - title: "Koch dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Koch_dynasty

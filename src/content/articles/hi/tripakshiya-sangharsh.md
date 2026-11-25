@@ -7,7 +7,7 @@ kaun: [वत्सराज, नागभट्ट द्वितीय, म�
 kahan: [कन्नौज, बंगाल-बिहार, मालवा, दक्कन, मुंगेर]
 saar: हर्षवर्धन के बाद कन्नौज उत्तर भारत की प्रतिष्ठा का प्रतीक बन गया। आठवीं सदी के अंत से लगभग डेढ़ सौ वर्षों तक गुर्जर-प्रतिहार, पाल और राष्ट्रकूट राजवंश इस नगर पर अधिकार के लिए लड़ते रहे। इसे इतिहास में 'त्रिपक्षीय संघर्ष' कहा जाता है।
 tags: [kannauj, pratihar, pal-vansh, rashtrakut, yuddh]
-series: { id: harsh-se-tarain, order: 8 }
+series: { id: harsh-se-tarain, order: 9 }
 sources:
   - title: "Tripartite Struggle — Wikipedia"
     url: https://en.wikipedia.org/wiki/Tripartite_Struggle

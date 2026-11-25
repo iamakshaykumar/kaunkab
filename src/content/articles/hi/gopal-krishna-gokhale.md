@@ -7,7 +7,7 @@ kaun: [गोपाल कृष्ण गोखले, महादेव ग�
 kahan: ["कोतलुक (रत्नागिरी, महाराष्ट्र)", पुणे, बंबई, कलकत्ता, बनारस, "डरबन (दक्षिण अफ़्रीका)"]
 saar: गोपाल कृष्ण गोखले (1866–1915) कांग्रेस के नरमपंथी धड़े के प्रमुख नेता थे, जो संवैधानिक तरीक़ों, तथ्यों और तर्क से अंग्रेज़ी शासन की आलोचना करते थे। 1905 में उन्होंने पुणे में 'सर्वेंट्स ऑफ़ इंडिया सोसाइटी' बनाई और उसी वर्ष बनारस कांग्रेस की अध्यक्षता की। केंद्रीय विधान परिषद में उनके बजट-भाषण और अनिवार्य प्राथमिक शिक्षा का विधेयक प्रसिद्ध हैं। महात्मा गांधी उन्हें अपना राजनीतिक गुरु मानते थे।
 tags: [congress, naramdal, swatantrata-sangram, samaj-sudhar, shiksha, maharashtra, gandhi]
-series: { id: sudhar-aur-rashtriya-chetna, order: 13 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 17 }
 sources:
   - title: "B. R. Nanda — Gokhale: The Indian Moderates and the British Raj (Princeton, 1977)"
   - title: "Gopal Krishna Gokhale — Wikipedia"

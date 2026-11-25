@@ -7,7 +7,7 @@ kaun: [जवाहरलाल नेहरू, महात्मा गां
 kahan: [दिल्ली, कोलकाता]
 saar: लंबे संघर्ष के बाद 15 अगस्त 1947 को भारत स्वतंत्र हुआ। लेकिन आज़ादी के साथ देश का विभाजन भी हुआ, जिसमें लाखों लोग बेघर हुए और बड़ी संख्या में लोगों की जान गई।
 tags: [swatantrata-sangram, angrezi-shasan, vibhajan]
-series: { id: azadi-ki-raah, order: 29 }
+series: { id: azadi-ki-raah, order: 34 }
 sources:
   - title: "NCERT, भारतीय इतिहास के कुछ विषय भाग-3 (कक्षा 12), अध्याय: विभाजन को समझना"
   - title: "Indian Independence Act 1947 — Wikipedia"

@@ -7,7 +7,7 @@ kaun: [मीर उस्मान अली ख़ान (निज़ाम),
 kahan: [हैदराबाद, सिकंदराबाद, सोलापुर, विजयवाड़ा, तेलंगाना, मराठवाड़ा]
 saar: हैदराबाद के निज़ाम ने 1947 में भारत में शामिल होने से इनकार किया। रज़ाकारों की हिंसा, तेलंगाना के किसान विद्रोह और लंबी विफल बातचीत के बाद 13 सितंबर 1948 को भारतीय सेना ने 'ऑपरेशन पोलो' शुरू किया, जिसे सरकार ने 'पुलिस कार्रवाई' कहा। 17 सितंबर को निज़ाम ने युद्धविराम घोषित किया और 18 सितंबर को हैदराबाद की सेना ने आत्मसमर्पण कर दिया।
 tags: [operation-polo, hyderabad, riyasaton-ka-ekikaran, sardar-patel, nizam, razakar, swatantra-bharat]
-series: { id: naye-bharat-ka-nirman, order: 5 }
+series: { id: naye-bharat-ka-nirman, order: 6 }
 sources:
   - title: "वी. पी. मेनन — The Story of the Integration of the Indian States (1956)"
   - title: "Operation Polo — Wikipedia"

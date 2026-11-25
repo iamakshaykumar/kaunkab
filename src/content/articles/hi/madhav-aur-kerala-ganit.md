@@ -7,7 +7,7 @@ kaun: [संगमग्राम के माधव, परमेश्वर
 kahan: ["संगमग्राम (इरिंजालकुडा के पास, केरल)", "तिरुर और त्रिशूर क्षेत्र (केरल)"]
 saar: "चौदहवीं-पंद्रहवीं सदी में केरल के गणितज्ञ-खगोलशास्त्री माधव ने ज्या (साइन), कोज्या (कोसाइन) और π के लिए अनंत श्रेणियाँ दीं — यूरोप में ऐसी श्रेणियाँ लगभग ढाई सौ साल बाद सामने आईं। उनकी शिष्य-परंपरा, जिसे 'केरल संप्रदाय' कहते हैं, में नीलकंठ सोमयाजी और ज्येष्ठदेव हुए, जिनकी मलयालम कृति 'युक्तिभाषा' में इन श्रेणियों की उपपत्तियाँ (प्रमाण) मिलती हैं।"
 tags: [ganit, khagol-vigyan, kerala, vigyan, anant-shreni]
-series: { id: dakshin-ke-rajvansh, order: 9 }
+series: { id: dakshin-ke-rajvansh, order: 10 }
 sources:
   - title: "Madhava of Sangamagrama — Wikipedia"
     url: https://en.wikipedia.org/wiki/Madhava_of_Sangamagrama

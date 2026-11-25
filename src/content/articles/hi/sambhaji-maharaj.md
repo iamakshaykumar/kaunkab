@@ -7,7 +7,7 @@ kaun: [छत्रपति संभाजी, छत्रपति शिव
 kahan: [पुरंदर, रायगढ़, पन्हाला, रामसेज, गोवा, संगमेश्वर, तुलापुर]
 saar: छत्रपति शिवाजी के बड़े पुत्र संभाजी 16 जनवरी 1681 को रायगढ़ में छत्रपति बने। नौ वर्षों तक उन्होंने एक साथ मुग़ल, सिद्दी, पुर्तगाली और मैसूर — कई मोर्चों पर संघर्ष किया। फ़रवरी 1689 में संगमेश्वर में पकड़े जाने के बाद 11 मार्च 1689 को तुलापुर में उन्हें मृत्युदंड दिया गया।
 tags: [maratha, chhatrapati, mughal-samrajya, aurangzeb, dakkan]
-series: { id: maratha-shakti, order: 5 }
+series: { id: maratha-shakti, order: 8 }
 sources:
   - title: "Sambhaji — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sambhaji

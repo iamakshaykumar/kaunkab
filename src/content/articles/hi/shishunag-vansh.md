@@ -7,7 +7,7 @@ kaun: [शिशुनाग, कालाशोक (काकवर्ण), न
 kahan: ["राजगृह (राजगीर, बिहार)", "वैशाली (बिहार)", "पाटलिपुत्र (पटना, बिहार)", "अवंति (उज्जैन, मध्य प्रदेश)"]
 saar: लगभग 413 ई.पू. में मंत्री शिशुनाग ने अंतिम हर्यक राजा को हटाकर मगध की गद्दी सँभाली और अवंति के प्रद्योत वंश को समाप्त कर उसे मगध में मिला लिया। उनके पुत्र कालाशोक के समय वैशाली में दूसरी बौद्ध संगीति हुई। लगभग 345 ई.पू. में नंद वंश ने इस वंश का अंत किया।
 tags: [magadh, shishunag, rajvansh, bauddh-dharm, bihar, prachin-bharat]
-series: { id: vaidik-se-magadh, order: 13 }
+series: { id: vaidik-se-magadh, order: 14 }
 sources:
   - title: "Shishunaga dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Shishunaga_dynasty

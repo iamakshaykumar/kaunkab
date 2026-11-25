@@ -7,7 +7,7 @@ kaun: [महात्मा गांधी, नाथूराम गोडस
 kahan: ["बिड़ला हाउस (अब गांधी स्मृति), नई दिल्ली", "लाल क़िला, दिल्ली", राजघाट, अंबाला जेल]
 saar: 30 जनवरी 1948 की शाम नई दिल्ली के बिड़ला हाउस में प्रार्थना सभा की ओर जाते हुए 78 वर्षीय महात्मा गांधी की नाथूराम गोडसे ने गोली मारकर हत्या कर दी। लाल क़िले में चले मुक़दमे में गोडसे और नारायण आप्टे को फाँसी तथा छह अन्य को आजीवन कारावास की सज़ा हुई। बाद में 1966 में बने कपूर आयोग ने षड्यंत्र और सुरक्षा में हुई चूकों की दोबारा जाँच की।
 tags: [gandhi, gandhi-ki-hatya, birla-house, swatantra-bharat, kapur-aayog, nathuram-godse]
-series: { id: naye-bharat-ka-nirman, order: 2 }
+series: { id: naye-bharat-ka-nirman, order: 3 }
 sources:
   - title: "Assassination of Mahatma Gandhi — Wikipedia"
     url: https://en.wikipedia.org/wiki/Assassination_of_Mahatma_Gandhi

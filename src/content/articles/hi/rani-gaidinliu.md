@@ -7,7 +7,7 @@ kaun: [रानी गाइदिन्ल्यू, हाइपौ जाद
 kahan: ["लोंगकाओ (नुंगकाओ), तामेंगलोंग (मणिपुर)", पुलोमी, इंफाल, शिलांग, "नागा पहाड़ियाँ (नागालैंड, मणिपुर, असम)"]
 saar: मणिपुर की रोंगमेई नागा युवती गाइदिन्ल्यू केवल 13 वर्ष की उम्र में अपने चचेरे भाई हाइपौ जादोनांग के हेराका आंदोलन से जुड़ीं और उनकी फाँसी के बाद अंग्रेज़ों के विरुद्ध संघर्ष की अगुआ बनीं। 1932 में गिरफ़्तारी के बाद उन्हें आजीवन कारावास मिला और लगभग 14 साल जेल में बीते। 1937 में जेल में मिलने आए नेहरू ने उन्हें 'रानी' कहा।
 tags: [rani-gaidinliu, heraka, naga, manipur, purvottar-bharat, adivasi-andolan, swatantrata-sangram]
-series: { id: krantikari-andolan, order: 8 }
+series: { id: krantikari-andolan, order: 11 }
 sources:
   - title: "Rani Gaidinliu — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rani_Gaidinliu

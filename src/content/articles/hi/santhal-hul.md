@@ -7,7 +7,7 @@ kaun: [सिदो मुर्मू, कान्हू मुर्मू, �
 kahan: ["भोगनाडीह (साहिबगंज, झारखंड)", दामिन-ए-कोह, राजमहल की पहाड़ियाँ, पाकुड़, वीरभूम]
 saar: 30 जून 1855 को भोगनाडीह में हज़ारों संथाल सिदो और कान्हू मुर्मू के नेतृत्व में इकट्ठा हुए और महाजनों, ज़मींदारों तथा अंग्रेज़ी प्रशासन के शोषण के विरुद्ध 'हूल' (विद्रोह) का एलान किया। कंपनी सरकार ने मार्शल लॉ लगाकर इसे कठोरता से कुचला, पर इसके बाद संथाल परगना ज़िला बना।
 tags: [adivasi-andolan, santhal, vidroh, jharkhand, angrez-virodh]
-series: { id: angrezon-ke-viruddh-vidroh, order: 4 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 7 }
 sources:
   - title: "रणजीत गुहा — Elementary Aspects of Peasant Insurgency in Colonial India"
   - title: "के. के. दत्त — The Santal Insurrection of 1855–57"

@@ -7,7 +7,7 @@ kaun: [महेंद्रवर्मन प्रथम, नरसिंह�
 kahan: [कांचीपुरम, महाबलीपुरम (मामल्लापुरम), बादामी]
 saar: चौथी से आठवीं शताब्दी के दौरान पल्लव राजवंश ने दक्षिण भारत में द्रविड़ मंदिर वास्तुकला की नींव रखी। नरसिंहवर्मन प्रथम 'महामल्ल' के काल में महाबलीपुरम में समुद्र किनारे विशाल ग्रेनाइट चट्टानों को काटकर एकाश्मक रथ और भव्य तटीय मंदिर बनाए गए।
 tags: [dakshin-bharat, mandir-kala, dravid-shaili]
-series: { id: prachin-dakshin-bharat, order: 8 }
+series: { id: prachin-dakshin-bharat, order: 9 }
 sources:
   - title: "Group of Monuments at Mahabalipuram — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/249/

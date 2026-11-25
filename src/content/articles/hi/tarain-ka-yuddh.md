@@ -7,7 +7,7 @@ kaun: [पृथ्वीराज चौहान तृतीय, मुहम
 kahan: [तराइन (हरियाणा), अजमेर, दिल्ली]
 saar: 1191 और 1192 ई. में लड़े गए तराइन के दो युद्धों ने भारत का राजनीतिक इतिहास बदल दिया। दूसरे युद्ध में मुहम्मद ग़ोरी की विजय ने उत्तर भारत में तुर्की सल्तनत की नींव रखी।
 tags: [yuddh, rajput, dilli-saltanat]
-series: { id: harsh-se-tarain, order: 21 }
+series: { id: harsh-se-tarain, order: 25 }
 sources:
   - title: "मिनहाज-ए-सिराज — तबकात-ए-नासिरी (13वीं सदी का समकालीन इतिहास ग्रंथ)"
     url: https://archive.org/details/tabaqat-i-nasiri-english

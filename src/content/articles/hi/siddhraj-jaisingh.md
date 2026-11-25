@@ -7,7 +7,7 @@ kaun: [सिद्धराज जयसिंह, कर्ण, मयणल�
 kahan: ["अणहिलवाड़ पाटन (गुजरात)", सिद्धपुर, धारा, सौराष्ट्र]
 saar: "चौलुक्य (सोलंकी) राजा सिद्धराज जयसिंह ने लगभग 1092 से 1142 ई. तक गुजरात पर शासन किया। उन्होंने मालवा के परमारों की राजधानी धारा जीती, सौराष्ट्र के राजा खेंगार को हराया और पाटन में सहस्रलिंग सरोवर तथा सिद्धपुर में रुद्रमहालय जैसे भव्य निर्माण करवाए। जैन आचार्य हेमचंद्र ने उन्हीं के नाम पर प्रसिद्ध व्याकरण 'सिद्धहेमशब्दानुशासन' रचा।"
 tags: [rajvansh, chaulukya, solanki, gujarat, rajput, jain-dharm]
-series: { id: harsh-se-tarain, order: 16 }
+series: { id: harsh-se-tarain, order: 18 }
 sources:
   - title: "Jayasimha Siddharaja — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jayasimha_Siddharaja
