@@ -627,8 +627,1136 @@
 "sec": 249,
 "hash": "b5b66ad37a19"
 },
+"iltutmish": {
+"sec": 243,
+"hash": "b1bd9f739761"
+},
+"ina-mukadma": {
+"sec": 253,
+"hash": "d545364890d3"
+},
+"india-house-shyamji-krishna-varma": {
+"sec": 251,
+"hash": "bacf221b394b"
+},
+"indira-gandhi": {
+"sec": 255,
+"hash": "a87ebefeba16"
+},
+"isro-antriksh-yatra": {
+"sec": 260,
+"hash": "6ac3516109d5"
+},
+"jagannath-mandir-puri": {
+"sec": 243,
+"hash": "57383ef8a200"
+},
+"jagdish-chandra-bose": {
+"sec": 257,
+"hash": "d2a89ec382fe"
+},
+"jahangir": {
+"sec": 258,
+"hash": "dbe8a96289b4"
+},
+"jahangir-aur-thomas-roe": {
+"sec": 244,
+"hash": "d0f1ac8e80a8"
+},
+"jai-singh-aur-jantar-mantar": {
+"sec": 235,
+"hash": "6f4763e0d1b9"
+},
+"jallianwala-bagh": {
+"sec": 209,
+"hash": "dcf7d926f2fb"
+},
+"jawaharlal-nehru": {
+"sec": 267,
+"hash": "fa39e94513ed"
+},
+"jayadev-gitagovind": {
+"sec": 224,
+"hash": "6aaa911a38d0"
+},
+"junagadh-vilay-1947": {
+"sec": 262,
+"hash": "8d8c82699df7"
+},
+"jyotiba-phule": {
+"sec": 251,
+"hash": "12bdb64185c8"
+},
+"kadamba-vansh": {
+"sec": 230,
+"hash": "e08a02661bf6"
+},
+"kailash-mandir-ellora": {
+"sec": 237,
+"hash": "3ce37e2a6b91"
+},
+"kakori-kand": {
+"sec": 238,
+"hash": "ac0bb7592695"
+},
+"kalachuri-tripuri": {
+"sec": 250,
+"hash": "7307f586cc25"
+},
+"kalhan-rajatarangini": {
+"sec": 233,
+"hash": "c473a2ac133e"
+},
+"kalibangan": {
+"sec": 239,
+"hash": "dbcc731378e4"
+},
+"kalidas-aur-sanskrit-sahitya": {
+"sec": 224,
+"hash": "5da871d01379"
+},
+"kalyani-chalukya": {
+"sec": 251,
+"hash": "d44322df861a"
+},
+"kamarupa-rajya": {
+"sec": 242,
+"hash": "f210d1d92c58"
+},
+"kamba-ramayanam": {
+"sec": 217,
+"hash": "4a218f69d956"
+},
+"kanheri-gufayen": {
+"sec": 233,
+"hash": "7bcf0c0236cb"
+},
+"kanhoji-angre": {
+"sec": 255,
+"hash": "472539e9dac5"
+},
+"kanishk-aur-kushan-samrajya": {
+"sec": 231,
+"hash": "b97db87c34d0"
+},
+"kargil-yuddh-1999": {
+"sec": 235,
+"hash": "135d38cd1897"
+},
+"kashmir-vilay-1947": {
+"sec": 256,
+"hash": "ba975105c96f"
+},
+"kautilya-arthashastra": {
+"sec": 244,
+"hash": "0020e82045ad"
+},
+"khajuraho-mandir": {
+"sec": 246,
+"hash": "4e9750372f92"
+},
+"khalsa-panth-sthapana": {
+"sec": 243,
+"hash": "94ca43c5705a"
+},
+"khanwa-ka-yuddh": {
+"sec": 235,
+"hash": "4b4f089c84d7"
+},
+"kharavel-aur-hathigumpha": {
+"sec": 241,
+"hash": "4e7e6179f80f"
+},
+"kheda-satyagraha": {
+"sec": 255,
+"hash": "7a3e16fc0669"
+},
+"khilafat-andolan": {
+"sec": 255,
+"hash": "2e8500a3c6f6"
+},
+"khudiram-bose": {
+"sec": 242,
+"hash": "5fa2e1d99e60"
+},
+"kittur-rani-chennamma": {
+"sec": 242,
+"hash": "1f9c502183de"
+},
+"koch-rajya": {
+"sec": 255,
+"hash": "a1e220fcf92e"
+},
+"kol-vidroh": {
+"sec": 252,
+"hash": "366fe60d37b3"
+},
+"komagata-maru": {
+"sec": 250,
+"hash": "cfbc215dd243"
+},
+"konark-surya-mandir": {
+"sec": 244,
+"hash": "3a5b77458d6c"
+},
+"krishnadevaraya": {
+"sec": 261,
+"hash": "f850707440e6"
+},
+"kuka-andolan": {
+"sec": 251,
+"hash": "8c7afc5292ae"
+},
+"kunwar-singh": {
+"sec": 248,
+"hash": "9627f22a907e"
+},
+"lal-bahadur-shastri": {
+"sec": 249,
+"hash": "b66fbe7f92b4"
+},
+"lal-ded": {
+"sec": 246,
+"hash": "141ed7eaaa29"
+},
+"lal-qila-aur-shahjahanabad": {
+"sec": 259,
+"hash": "944024ba7866"
+},
+"lala-lajpat-rai": {
+"sec": 262,
+"hash": "aa49b1d17e7f"
+},
+"lalitaditya-muktapid": {
+"sec": 248,
+"hash": "f209253a3186"
+},
+"lingaraj-mandir": {
+"sec": 241,
+"hash": "aaa501cb41d9"
+},
+"lodi-vansh": {
+"sec": 251,
+"hash": "d50149974c66"
+},
+"lokmanya-tilak": {
+"sec": 254,
+"hash": "8dbb01eb1fc7"
+},
+"lothal-bandargah": {
+"sec": 244,
+"hash": "8bfcc44e97d7"
+},
+"lucknow-samjhauta": {
+"sec": 256,
+"hash": "990ccce02d2b"
+},
+"macaulay-aur-angrezi-shiksha": {
+"sec": 262,
+"hash": "f8d7ea708334"
+},
+"madanlal-dhingra": {
+"sec": 251,
+"hash": "e9e7c17ba0df"
+},
+"madhav-aur-kerala-ganit": {
+"sec": 246,
+"hash": "081589544858"
+},
+"madurai-nayak": {
+"sec": 254,
+"hash": "2af170bbe3b6"
+},
+"mahabodhi-mandir": {
+"sec": 235,
+"hash": "7c1cf0cb55be"
+},
+"mahad-satyagraha-ambedkar": {
+"sec": 242,
+"hash": "feae8dc62603"
+},
+"mahadji-shinde": {
+"sec": 254,
+"hash": "969298908019"
+},
+"mahapashan-sanskriti": {
+"sec": 226,
+"hash": "13924b3b2c47"
+},
+"maharaja-ranjit-singh": {
+"sec": 236,
+"hash": "49a9891a04e3"
+},
+"maharaja-surajmal": {
+"sec": 246,
+"hash": "cb5be3c48697"
+},
+"maharana-pratap": {
+"sec": 249,
+"hash": "d22094967cdf"
+},
+"maharani-tarabai": {
+"sec": 233,
+"hash": "0bf58b3c64f0"
+},
+"mahatma-gandhi": {
+"sec": 255,
+"hash": "53cba3c6894b"
+},
+"mahavir-swami": {
+"sec": 237,
+"hash": "5b89e212e34f"
+},
+"mahmud-begada": {
+"sec": 237,
+"hash": "de8f48c946df"
+},
+"mahmud-ghazni-aur-somnath": {
+"sec": 238,
+"hash": "c3d8cd4be988"
+},
+"malabar-vidroh-1921": {
+"sec": 260,
+"hash": "51f5ec5cd4f2"
+},
+"malik-ambar": {
+"sec": 228,
+"hash": "6a009a0b1b4f"
+},
+"malik-kafur": {
+"sec": 253,
+"hash": "a8848b938938"
+},
+"mamallapuram-ke-smarak": {
+"sec": 233,
+"hash": "ed16025e40b1"
+},
+"mandu-aur-malwa-saltanat": {
+"sec": 255,
+"hash": "60f2daca283f"
+},
+"mangal-pandey": {
+"sec": 246,
+"hash": "58f31651dccc"
+},
+"mangol-akraman": {
+"sec": 231,
+"hash": "2407f079d19b"
+},
+"manimekalai": {
+"sec": 229,
+"hash": "4064104e119f"
+},
+"mansabdari": {
+"sec": 237,
+"hash": "54e5883d2ae6"
+},
+"maratha-samrajya-vistar": {
+"sec": 237,
+"hash": "f29719891087"
+},
+"maulana-azad": {
+"sec": 247,
+"hash": "6d952032c786"
+},
+"maurya-samrajya": {
+"sec": 207,
+"hash": "7b02532a1470"
+},
+"meenakshi-mandir": {
+"sec": 217,
+"hash": "9481e8594bc1"
+},
+"meerabai": {
+"sec": 225,
+"hash": "8e57fa1f0a79"
+},
+"megasthenes-aur-indica": {
+"sec": 230,
+"hash": "08f5fcd282d1"
+},
+"mehrauli-lauh-stambh": {
+"sec": 219,
+"hash": "fa620b182b71"
+},
+"mehrgarh": {
+"sec": 243,
+"hash": "3bb831bec2a1"
+},
+"menander-aur-milindpanh": {
+"sec": 239,
+"hash": "1c35af4703a6"
+},
+"mihir-bhoj-pratihar": {
+"sec": 237,
+"hash": "f7e4b1024378"
+},
+"modhera-surya-mandir": {
+"sec": 234,
+"hash": "d5a616c541fa"
+},
+"moinuddin-chishti": {
+"sec": 222,
+"hash": "ee9f817e9871"
+},
+"montford-sudhar-1919": {
+"sec": 247,
+"hash": "b8a8705e76f4"
+},
+"morley-minto-sudhar": {
+"sec": 239,
+"hash": "1d90cc297776"
+},
+"mughal-chitrakala": {
+"sec": 238,
+"hash": "d2b6cb0a64d6"
+},
+"mughal-samrajya": {
+"sec": 237,
+"hash": "befd1db98959"
+},
+"muhammad-bin-tughlaq": {
+"sec": 255,
+"hash": "737140995f00"
+},
+"muhammad-ghori": {
+"sec": 248,
+"hash": "694edb2791bf"
+},
+"muslim-league-sthapana": {
+"sec": 256,
+"hash": "556143e92ab8"
+},
+"nadir-shah-ka-akraman": {
+"sec": 249,
+"hash": "6bef904b0ea5"
+},
+"nagarjun-aur-shunyavad": {
+"sec": 249,
+"hash": "409e7f4b7988"
+},
+"nalanda-mahavihar": {
+"sec": 245,
+"hash": "143dfd5aa308"
+},
+"nana-phadnavis": {
+"sec": 253,
+"hash": "5e96b0b37e46"
+},
+"nanda-vansh": {
+"sec": 243,
+"hash": "fea972ce680b"
+},
+"narayan-guru": {
+"sec": 245,
+"hash": "db70a5524b5c"
+},
+"narsinh-mehta": {
+"sec": 244,
+"hash": "dd6afcf8da47"
+},
+"nath-panth": {
+"sec": 239,
+"hash": "b4c249370816"
+},
+"natyashastra": {
+"sec": 241,
+"hash": "44075e5b84eb"
+},
+"nausena-vidroh-1946": {
+"sec": 251,
+"hash": "c795380a9795"
+},
+"navpashan-burzahom": {
+"sec": 242,
+"hash": "44cfc3df08be"
+},
+"neel-vidroh": {
+"sec": 246,
+"hash": "7123c320f036"
+},
+"nehru-report": {
+"sec": 255,
+"hash": "0b359061cc0c"
+},
+"nizam-ul-mulk": {
+"sec": 253,
+"hash": "403d6c117f0c"
+},
+"nizamuddin-auliya": {
+"sec": 240,
+"hash": "e7a5f68b73a6"
+},
+"nurjahan": {
+"sec": 253,
+"hash": "e8310e2a7efc"
+},
+"operation-polo": {
+"sec": 244,
+"hash": "71bfcd5e36e7"
+},
+"paika-vidroh": {
+"sec": 243,
+"hash": "a2790b9cafb6"
+},
+"pal-vansh-aur-vikramshila": {
+"sec": 243,
+"hash": "5167bd7f3b30"
+},
+"pallava-vansh": {
+"sec": 237,
+"hash": "2ea78a20fd90"
+},
+"panchatantra": {
+"sec": 250,
+"hash": "7e82b3406f33"
+},
+"panchsheel-1954": {
+"sec": 256,
+"hash": "8e8b0796e7b1"
+},
+"panchvarshiya-yojana": {
+"sec": 258,
+"hash": "506044ce0fad"
+},
+"pandita-ramabai": {
+"sec": 264,
+"hash": "5862df4d6bc2"
+},
+"pandya-vansh": {
+"sec": 239,
+"hash": "1381a0c009e1"
+},
+"panini-aur-ashtadhyayi": {
+"sec": 240,
+"hash": "de1649b19c2c"
+},
+"panipat-ki-pehli-ladai": {
+"sec": 230,
+"hash": "098b4ae90e0c"
+},
+"panipat-ki-teesri-ladai": {
+"sec": 246,
+"hash": "ed1d72f541a8"
+},
+"pataliputra-nagar": {
+"sec": 241,
+"hash": "80bee33e1e75"
+},
+"patanjali-aur-yogsutra": {
+"sec": 254,
+"hash": "c704949f041b"
+},
+"pattadakal-mandir": {
+"sec": 241,
+"hash": "0fcf184144b1"
+},
+"pazhassi-raja": {
+"sec": 250,
+"hash": "5df1ca240179"
+},
+"pehla-aam-chunav": {
+"sec": 245,
+"hash": "8f2c20355ada"
+},
+"periyar-atmasamman-andolan": {
+"sec": 264,
+"hash": "5a77550e6d98"
+},
+"peshwa-madhavrao": {
+"sec": 251,
+"hash": "ad02d25e7418"
+},
+"plassey-ki-ladai": {
+"sec": 239,
+"hash": "573f8e9b5664"
+},
+"pokhran-parikshan": {
+"sec": 260,
+"hash": "b99cba44c012"
+},
+"poona-pact": {
+"sec": 249,
+"hash": "f9834d0f2ef9"
+},
+"prantiya-chunav-1937": {
+"sec": 255,
+"hash": "deb4181b09cf"
+},
+"pratapgarh-ka-yuddh": {
+"sec": 242,
+"hash": "918f073d4b50"
+},
+"pratham-vishwayuddh-aur-bharat": {
+"sec": 245,
+"hash": "4623b8db996c"
+},
+"prithviraj-chauhan": {
+"sec": 248,
+"hash": "73a2265f56e6"
+},
+"pulakeshin-dwitiya-chalukya": {
+"sec": 236,
+"hash": "a61274bd8f8e"
+},
+"purandar-ki-sandhi": {
+"sec": 245,
+"hash": "888ca6fb7fd3"
+},
+"purandaradasa": {
+"sec": 247,
+"hash": "803b3e40bd36"
+},
+"purna-swaraj-1929": {
+"sec": 249,
+"hash": "cc150f5a1483"
+},
+"purtgali-goa": {
+"sec": 247,
+"hash": "8e8bc5a15ddf"
+},
+"qutbuddin-aibak": {
+"sec": 252,
+"hash": "bd82656ea839"
+},
+"qutub-minar": {
+"sec": 232,
+"hash": "4d035cb444e4"
+},
+"rabindranath-tagore": {
+"sec": 242,
+"hash": "c3b3ddbd2bc6"
+},
+"raja-bhoj-parmar": {
+"sec": 246,
+"hash": "8266f29eb8f3"
+},
+"raja-mansingh": {
+"sec": 245,
+"hash": "240edc87281b"
+},
+"raja-todarmal": {
+"sec": 237,
+"hash": "0a825f0a2664"
+},
+"rajaram-aur-jinji": {
+"sec": 252,
+"hash": "13263aaf6f56"
+},
+"rajendra-chola-ke-abhiyan": {
+"sec": 245,
+"hash": "7ae7b8561c9e"
+},
+"rajendra-prasad": {
+"sec": 244,
+"hash": "bf1cbf9c825d"
+},
+"rajput-chitrakala": {
+"sec": 249,
+"hash": "dd15d361df8d"
+},
+"rajya-punargathan": {
+"sec": 255,
+"hash": "76b7e055ebcf"
+},
+"rakhigarhi": {
+"sec": 245,
+"hash": "14352ea21e4a"
+},
+"ramakrishna-mission": {
+"sec": 238,
+"hash": "8927587a257c"
+},
+"ramanand": {
+"sec": 231,
+"hash": "6a4e6f06c50d"
+},
+"ramanujacharya": {
+"sec": 235,
+"hash": "0986cf91f012"
+},
+"ramappa-mandir": {
+"sec": 228,
+"hash": "fa6b37cf4364"
+},
+"ramayan-mahabharat-mahakavya": {
+"sec": 227,
+"hash": "858dfd7b4c08"
+},
+"rana-kumbha": {
+"sec": 234,
+"hash": "aa8d8f9d35d7"
+},
+"rana-sanga": {
+"sec": 253,
+"hash": "b8168d8685e2"
+},
+"ranakpur-jain-mandir": {
+"sec": 212,
+"hash": "72e9d84d2320"
+},
+"rani-abbakka": {
+"sec": 227,
+"hash": "37038bf6644e"
+},
+"rani-didda": {
+"sec": 220,
+"hash": "b8a5d1df4ebb"
+},
+"rani-durgavati": {
+"sec": 211,
+"hash": "3171237e2cab"
+},
+"rani-gaidinliu": {
+"sec": 229,
+"hash": "49dc1e47e073"
+},
+"rani-lakshmibai": {
+"sec": 231,
+"hash": "6f77a6096323"
+},
+"rani-velu-nachiyar": {
+"sec": 248,
+"hash": "2031dee42e12"
+},
+"rao-jodha": {
+"sec": 242,
+"hash": "3f17c13fb2d2"
+},
+"rashbehari-bose": {
+"sec": 247,
+"hash": "9579e32f0dfb"
+},
+"razia-sultan": {
+"sec": 236,
+"hash": "287328cfc332"
+},
+"regulating-act-1773": {
+"sec": 241,
+"hash": "613dff906be5"
+},
+"riyasaton-ka-ekikaran": {
+"sec": 234,
+"hash": "f259580c6321"
+},
+"roman-vyapar-arikamedu": {
+"sec": 229,
+"hash": "ba137a9a6dee"
+},
+"rowlatt-satyagraha": {
+"sec": 222,
+"hash": "d12501a3197a"
+},
+"rudradaman-junagadh-abhilekh": {
+"sec": 218,
+"hash": "3e178fa7417a"
+},
+"rudrama-devi-kakatiya": {
+"sec": 219,
+"hash": "8f91f56f6f25"
+},
+"sahayak-sandhi": {
+"sec": 233,
+"hash": "a9b350b69074"
+},
+"samarth-ramdas": {
+"sec": 221,
+"hash": "5fe0eddac9c8"
+},
+"sambhaji-maharaj": {
+"sec": 232,
+"hash": "efde6e6ced5f"
+},
+"samrat-harshavardhan": {
+"sec": 213,
+"hash": "17a3fd5e9e5a"
+},
+"samudragupt-prayag-prashasti": {
+"sec": 221,
+"hash": "d4c33a0eb550"
+},
+"samvidhan-nirman": {
+"sec": 218,
+"hash": "ff6db1690a5d"
+},
+"sanchi-stup": {
+"sec": 231,
+"hash": "6ce4a49bdac5"
+},
+"sangam-kaal": {
+"sec": 215,
+"hash": "77b51e63a5bf"
+},
+"sant-eknath": {
+"sec": 234,
+"hash": "513b1a832781"
+},
+"sant-gyaneshwar": {
+"sec": 225,
+"hash": "93e1edc94e70"
+},
+"sant-kabir": {
+"sec": 235,
+"hash": "7457d5e1c49f"
+},
+"sant-namdev": {
+"sec": 231,
+"hash": "c023cc185b77"
+},
+"sant-ravidas": {
+"sec": 217,
+"hash": "5928ebc91670"
+},
+"sant-tukaram": {
+"sec": 223,
+"hash": "1df82de6991c"
+},
+"santhal-hul": {
+"sec": 228,
+"hash": "daf251514cbe"
+},
+"sanyasi-fakir-vidroh": {
+"sec": 245,
+"hash": "bb0cdb2f81b6"
+},
+"saragarhi-ka-yuddh": {
+"sec": 235,
+"hash": "0641ddb04817"
+},
+"saraighat-ka-yuddh": {
+"sec": 243,
+"hash": "a6a31f74e621"
+},
+"sardar-patel": {
+"sec": 243,
+"hash": "40b815a0cc61"
+},
+"sarnath-singhshirsh": {
+"sec": 219,
+"hash": "02647a0a0621"
+},
+"sarojini-naidu": {
+"sec": 238,
+"hash": "5f01a4171c69"
+},
+"satavahan-vansh": {
+"sec": 234,
+"hash": "97c61d72f5e2"
+},
+"sati-pratha-unmulan": {
+"sec": 245,
+"hash": "9b0863c18f72"
+},
+"savitribai-phule": {
+"sec": 235,
+"hash": "fefcf62e35a3"
+},
+"sayyid-bandhu": {
+"sec": 233,
+"hash": "2f5fcecf9ce8"
+},
+"sayyid-vansh": {
+"sec": 222,
+"hash": "73fe0ccf5e61"
+},
+"sena-vansh-bangal": {
+"sec": 230,
+"hash": "1ce31f3cf7eb"
+},
+"shahaji-bhonsle": {
+"sec": 234,
+"hash": "78cf9ea1e955"
+},
+"shahjahan": {
+"sec": 253,
+"hash": "7c9064c2afd5"
+},
+"sharqi-saltanat-jaunpur": {
+"sec": 229,
+"hash": "7624b8deb053"
+},
+"shershah-suri": {
+"sec": 215,
+"hash": "57efaac7d755"
+},
+"shilappadikaram": {
+"sec": 229,
+"hash": "3eef1ddd7dad"
+},
+"shimla-samjhauta-1972": {
+"sec": 249,
+"hash": "c6623698eff6"
+},
+"shimla-sammelan-1945": {
+"sec": 235,
+"hash": "b1c237769955"
+},
+"shishunag-vansh": {
+"sec": 224,
+"hash": "2073c2da7d75"
+},
+"shivaji-agra-se-palayan": {
+"sec": 257,
+"hash": "834ca51e320c"
+},
+"shivaji-ka-rajyabhishek": {
+"sec": 208,
+"hash": "e183ef6c8206"
+},
+"shravanabelagola-aur-chandragupt": {
+"sec": 219,
+"hash": "658cc24d32dd"
+},
+"shrimant-shankardev": {
+"sec": 221,
+"hash": "12b2a413ae93"
+},
+"shunga-vansh": {
+"sec": 230,
+"hash": "d2925fe3bcf9"
+},
+"shwet-kranti": {
+"sec": 242,
+"hash": "4d09c2c832fd"
+},
+"siddhraj-jaisingh": {
+"sec": 230,
+"hash": "c9c49eb1b7c9"
+},
+"sikandar-aur-porus": {
+"sec": 224,
+"hash": "e10559a6278c"
+},
+"sikh-misl": {
+"sec": 242,
+"hash": "b0d25dc06f22"
+},
+"sikkim-vilay-1975": {
+"sec": 247,
+"hash": "a22b657418e4"
+},
+"simon-commission-wapas-jao": {
+"sec": 233,
+"hash": "f26d5178fa15"
+},
+"sindh-par-arab-vijay": {
+"sec": 218,
+"hash": "f6ba78e6573c"
+},
+"sindhu-ghati-sabhyata": {
+"sec": 218,
+"hash": "682d4f005dc6"
+},
+"sindhu-lipi": {
+"sec": 231,
+"hash": "cd8daec6dcb0"
+},
+"sir-syed-aur-aligarh": {
+"sec": 262,
+"hash": "f6d7d9c785db"
+},
+"solah-mahajanapad": {
+"sec": 231,
+"hash": "617ed91ca407"
+},
+"srinivasa-ramanujan": {
+"sec": 245,
+"hash": "51990b6852ee"
+},
+"sthayi-bandobast": {
+"sec": 251,
+"hash": "9230b35d2f6b"
+},
+"subhas-chandra-bose": {
+"sec": 259,
+"hash": "1800d3ef97c1"
+},
+"sukaphaa-aur-ahom-rajya": {
+"sec": 247,
+"hash": "1e4b89c05d7a"
+},
+"surat-vibhajan-1907": {
+"sec": 250,
+"hash": "209736ef22a8"
+},
+"surdas": {
+"sec": 243,
+"hash": "92b4232c6094"
+},
+"swaraj-party": {
+"sec": 245,
+"hash": "14084c77d3e8"
+},
+"swatantrata-1947": {
+"sec": 232,
+"hash": "1b01dd58125f"
+},
+"taj-mahal-nirman": {
+"sec": 236,
+"hash": "e84da83d4576"
+},
+"takshashila": {
+"sec": 233,
+"hash": "f89082a5d550"
+},
+"talikota-ka-yuddh": {
+"sec": 244,
+"hash": "c29d1b436e8a"
+},
+"tamrapashan-sanskriti": {
+"sec": 246,
+"hash": "9a15a1105b73"
+},
+"tanaji-sinhagad": {
+"sec": 254,
+"hash": "7b2c584fbb49"
+},
+"tansen": {
+"sec": 241,
+"hash": "70d39e29da45"
+},
+"tarain-ka-yuddh": {
+"sec": 235,
+"hash": "963a289e9f68"
+},
 "tatya-tope": {
 "sec": 354,
 "hash": "2e021676db68"
+},
+"tebhaga-aur-telangana": {
+"sec": 256,
+"hash": "a36c543ec6f6"
+},
+"timur-ka-akraman": {
+"sec": 231,
+"hash": "63a2eb2193a4"
+},
+"tipu-sultan": {
+"sec": 246,
+"hash": "c34e3c7dd329"
+},
+"tirukkural": {
+"sec": 242,
+"hash": "7eccf22e0631"
+},
+"tripakshiya-sangharsh": {
+"sec": 248,
+"hash": "3d10c2085452"
+},
+"tulsidas-aur-ramcharitmanas": {
+"sec": 236,
+"hash": "21ba0c9e285d"
+},
+"u-tirot-sing-khasi-vidroh": {
+"sec": 246,
+"hash": "e087103e800b"
+},
+"udayagiri-gufayen-vidisha": {
+"sec": 243,
+"hash": "d90a166761fd"
+},
+"udham-singh": {
+"sec": 247,
+"hash": "3d99d65ffa74"
+},
+"upanishad-darshan": {
+"sec": 241,
+"hash": "5a150d16f66a"
+},
+"vaidik-kaal": {
+"sec": 234,
+"hash": "339204d5c9d5"
+},
+"vaidik-naariyan-gargi-maitreyi": {
+"sec": 247,
+"hash": "156499feab53"
+},
+"vaikom-satyagraha": {
+"sec": 255,
+"hash": "5df12cfc5e5b"
+},
+"vajji-gansangh-vaishali": {
+"sec": 230,
+"hash": "84c22385b871"
+},
+"vakataka-vansh": {
+"sec": 240,
+"hash": "262e69ed17f9"
+},
+"valabhi-vishwavidyalaya": {
+"sec": 244,
+"hash": "fab4f762627e"
+},
+"vallabhacharya": {
+"sec": 252,
+"hash": "553b95688f78"
+},
+"varahamihir-aur-brihatsamhita": {
+"sec": 230,
+"hash": "ba203a501fec"
+},
+"vasco-da-gama-ka-aagman": {
+"sec": 245,
+"hash": "ccab3ca3ac62"
+},
+"vasudev-balwant-phadke": {
+"sec": 250,
+"hash": "5177ccebcc7f"
+},
+"veerapandiya-kattabomman": {
+"sec": 252,
+"hash": "6ed98cc04794"
+},
+"vellore-vidroh": {
+"sec": 247,
+"hash": "758dfa7a6bc6"
+},
+"vidyapati": {
+"sec": 236,
+"hash": "a44b0efca336"
+},
+"vidyasagar-aur-vidhwa-punarvivah": {
+"sec": 241,
+"hash": "7183402f4b3d"
+},
+"vijayanagar-samrajya": {
+"sec": 222,
+"hash": "bedf31ccfb52"
+},
+"vikram-aur-shak-samvat": {
+"sec": 240,
+"hash": "b3d0e524997b"
+},
+"vivekanand-chicago-bhashan": {
+"sec": 257,
+"hash": "e407058a6f27"
+},
+"vyaktigat-satyagraha": {
+"sec": 255,
+"hash": "70ce9cdb0d60"
+},
+"xuanzang-ki-bharat-yatra": {
+"sec": 233,
+"hash": "3f251522c169"
+},
+"yashodharman": {
+"sec": 228,
+"hash": "334aa831e642"
+},
+"yashovarman-kannauj": {
+"sec": 240,
+"hash": "d806e4d20792"
+},
+"young-bengal": {
+"sec": 244,
+"hash": "fc826700a220"
+},
+"zainul-abidin-kashmir": {
+"sec": 233,
+"hash": "b5ba80f6f812"
+},
+"zamorin-calicut": {
+"sec": 253,
+"hash": "e35702045059"
 }
 }
