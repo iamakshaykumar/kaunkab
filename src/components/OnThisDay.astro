@@ -1,5 +1,9 @@
 ---
-import { t } from '../i18n/hi';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 ---
 <section class="otd" data-on-this-day aria-live="polite">
   <div class="head">
@@ -15,6 +19,9 @@ import { t } from '../i18n/hi';
 </section>
 
 <script>
+  const EN = document.documentElement.lang === 'en';
+  const S = (hi: string, en: string) => (EN ? en : hi);
+  const P = EN ? '/en' : '';
   import { pickOnThisDay, type DayEvent } from '../lib/onThisDay';
   import { formatDayMonth, formatYear } from '../lib/dates';
 
@@ -27,27 +34,27 @@ import { t } from '../i18n/hi';
     const heading = root.querySelector<HTMLElement>('[data-heading]')!;
     const dateEl = root.querySelector<HTMLElement>('[data-date]')!;
     try {
-      const events: DayEvent[] = await (await fetch('/data/aaj.json')).json();
+      const events: DayEvent[] = await (await fetch(`${P}/data/aaj.json`)).json();
       const r = pickOnThisDay(events, new Date());
       if (!r) {
-        body.innerHTML = '<p class="empty">अभी कोई तारीख़ वाली घटना नहीं है।</p>';
+        body.innerHTML = `<p class="empty">${S('अभी कोई तारीख़ वाली घटना नहीं है।', 'No dated events yet.')}</p>`;
         return;
       }
-      heading.textContent = r.exact ? 'आज के दिन' : 'आने वाली तारीख़';
-      dateEl.textContent = formatDayMonth(r.month, r.day);
+      heading.textContent = r.exact ? S('आज के दिन', 'On this day') : S('आने वाली तारीख़', 'Coming up');
+      dateEl.textContent = formatDayMonth(r.month, r.day, EN ? 'en' : 'hi');
       body.innerHTML = r.events
         .map(
-          (e) => `<a class="ev" href="/lekh/${esc(e.slug)}/">
+          (e) => `<a class="ev" href="${P}/lekh/${esc(e.slug)}/">
             ${e.img ? `<img src="${esc(e.img)}" alt="" width="640" height="360" loading="lazy" />` : ''}
             <span class="txt">
-              <span class="yr">${esc(formatYear(e.year))}</span>
+              <span class="yr">${esc(formatYear(e.year, EN ? 'en' : 'hi'))}</span>
               <strong>${esc(e.title)}</strong>
               <span class="saar">${esc(e.saar)}</span>
             </span></a>`,
         )
         .join('');
     } catch {
-      body.innerHTML = '<p class="empty">अभी जानकारी लोड नहीं हो सकी।</p>';
+      body.innerHTML = `<p class="empty">${S('अभी जानकारी लोड नहीं हो सकी।', 'Could not load right now.')}</p>`;
     }
   }
   load();

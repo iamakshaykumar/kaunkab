@@ -1,0 +1,6 @@
+---
+import View from '../../../views/kaal/era.astro';
+import { eraPaths } from '../../../lib/paths';
+export const getStaticPaths = () => eraPaths();
+---
+<View {...Astro.props} />

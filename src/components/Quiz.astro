@@ -1,5 +1,9 @@
 ---
-import { t } from '../i18n/hi';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 interface Props {
   quiz: { q: string; options: string[]; answer: number }[];
 }
@@ -7,9 +11,9 @@ const { quiz } = Astro.props;
 ---
 <section class="quiz" aria-labelledby="quiz-h" data-quiz>
   <div class="qhead">
-    <p class="kicker">अपनी समझ जाँचें</p>
+    <p class="kicker">{s("अपनी समझ जाँचें", "Test yourself")}</p>
     <h2 id="quiz-h">{t.quiz}</h2>
-    <p class="muted">{quiz.length} सवाल · सही विकल्प पर क्लिक करें</p>
+    <p class="muted">{s(`${quiz.length} सवाल · सही विकल्प पर क्लिक करें`, `${quiz.length} questions · click the right option`)}</p>
   </div>
   {quiz.map((item, qi) => (
     <fieldset class="q" data-answer={item.answer}>
@@ -17,7 +21,7 @@ const { quiz } = Astro.props;
       <div class="opts">
         {item.options.map((opt, oi) => (
           <button type="button" class="opt" data-index={oi}>
-            <span class="letter">{String.fromCharCode(2325 + oi * 1)}</span>{opt}
+            <span class="letter">{lang === "en" ? String.fromCharCode(65 + oi) : String.fromCharCode(2325 + oi * 1)}</span>{opt}
           </button>
         ))}
       </div>
@@ -27,6 +31,9 @@ const { quiz } = Astro.props;
 </section>
 
 <script>
+  const EN = document.documentElement.lang === 'en';
+  const S = (hi: string, en: string) => (EN ? en : hi);
+  const P = EN ? '/en' : '';
   document.querySelectorAll<HTMLElement>('[data-quiz]').forEach((quiz) => {
     const scoreEl = quiz.querySelector<HTMLElement>('.score')!;
     const total = Number(scoreEl.dataset.total);
@@ -47,8 +54,8 @@ const { quiz } = Astro.props;
           else btn.classList.add('wrong');
           answered++;
           if (answered === total) {
-            const msg = correct === total ? 'शानदार!' : correct >= total / 2 ? 'बहुत अच्छे!' : 'एक बार फिर पढ़कर देखें';
-            scoreEl.textContent = `आपका स्कोर: ${correct}/${total} — ${msg}`;
+            const msg = correct === total ? S('शानदार!', 'Excellent!') : correct >= total / 2 ? S('बहुत अच्छे!', 'Well done!') : S('एक बार फिर पढ़कर देखें', 'Give it another read');
+            scoreEl.textContent = `${S('आपका स्कोर', 'Your score')}: ${correct}/${total} — ${msg}`;
             scoreEl.hidden = false;
           }
         });

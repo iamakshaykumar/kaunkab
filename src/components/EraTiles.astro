@@ -1,5 +1,10 @@
 ---
-import { ERAS, eraRangeLabel } from '../lib/eras';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
+import { ERAS, eraBlurb, eraLabel, eraRangeLabel } from '../lib/eras';
 import { slugOf, type Article } from '../lib/content';
 import ProgressCount from './ProgressCount.astro';
 import { findImage } from '../lib/images';
@@ -14,15 +19,15 @@ const { articles } = Astro.props;
     const list = articles.filter((a) => a.data.era === e.id);
     const img = findImage(`kaal/${e.id}`);
     return (
-      <a class={`tile era-${e.id}`} href={`/kaal/${e.id}/`}>
+      <a class={`tile era-${e.id}`} href={L(`/kaal/${e.id}/`)}>
         {img && <img src={img} alt="" width="1200" height="800" loading="lazy" decoding="async" />}
         <div class="shade" />
         <div class="content">
-          <span class="range">{eraRangeLabel(e.id)}</span>
-          <strong>{e.label}</strong>
-          <span class="blurb">{e.blurb}</span>
+          <span class="range">{eraRangeLabel(e.id, lang)}</span>
+          <strong>{eraLabel(e.id, lang)}</strong>
+          <span class="blurb">{eraBlurb(e.id, lang)}</span>
           <span class="foot">
-            <span>{list.length} लेख</span>
+            <span>{list.length} {s("लेख", "articles")}</span>
             <ProgressCount slugs={list.map(slugOf)} />
             <span class="go" aria-hidden="true">→</span>
           </span>

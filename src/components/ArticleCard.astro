@@ -1,8 +1,13 @@
 ---
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 import type { Article } from '../lib/content';
 import { articleUrl, slugOf } from '../lib/content';
 import { formatKab, formatYear } from '../lib/dates';
-import { getEra } from '../lib/eras';
+import { eraLabel } from '../lib/eras';
 import { findImage } from '../lib/images';
 
 interface Props {
@@ -21,12 +26,12 @@ const img = featured
     {img ? (
       <img src={img} alt="" width={featured ? 1600 : 640} height={featured ? 900 : 360} loading="lazy" decoding="async" />
     ) : (
-      <div class="placeholder" aria-hidden="true"><span>{formatYear(d.kab.start)}</span></div>
+      <div class="placeholder" aria-hidden="true"><span>{formatYear(d.kab.start, lang)}</span></div>
     )}
-    <span class="read-badge">✓ पढ़ा</span>
+    <span class="read-badge">✓ {s("पढ़ा", "Read")}</span>
   </div>
   <div class="body">
-    <p class="meta"><span class="era-chip">{getEra(d.era).label}</span><span class="clamp-1 when" title={formatKab(d.kab)}>{formatKab(d.kab)}</span></p>
+    <p class="meta"><span class="era-chip">{eraLabel(d.era, lang)}</span><span class="clamp-1 when" title={formatKab(d.kab, lang)}>{formatKab(d.kab, lang)}</span></p>
     <h3 class="title">{d.title}</h3>
     <p class="saar">{d.saar}</p>
   </div>

@@ -21,10 +21,15 @@ export function findAudio(slug: string, root = join(process.cwd(), 'public')): S
   return { src: `/audio/${slug}.mp3`, seconds: m.sec };
 }
 
-export function formatDuration(sec: number): string {
-  const m = Math.round(sec / 60);
-  return `${Math.max(1, m)} मिनट`;
+export function formatDuration(sec: number, lang: 'hi' | 'en' = 'hi'): string {
+  const m = Math.max(1, Math.round(sec / 60));
+  return lang === 'en' ? `${m} min` : `${m} मिनट`;
 }
+
+export const MUSIC_CREDIT_EN = {
+  text: 'Background music: flute — MayankSingh33, CC BY-SA 4.0',
+  url: 'https://commons.wikimedia.org/wiki/File:Indian_Folk_Classical_Flute_Music_(1).wav',
+};
 
 export const MUSIC_CREDIT = {
   text: 'पृष्ठभूमि संगीत: बाँसुरी — MayankSingh33, CC BY-SA 4.0',

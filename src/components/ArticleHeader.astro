@@ -1,4 +1,9 @@
 ---
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 import type { Article } from '../lib/content';
 import { slugOf } from '../lib/content';
 import { formatDate, formatKab } from '../lib/dates';
@@ -22,32 +27,32 @@ const era = getEra(d.era);
 const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
 ---
 <header class={`article-header era-${d.era}`}>
-  <nav class="crumbs" aria-label="ब्रेडक्रम्ब">
-    <a href="/">मुखपृष्ठ</a><span aria-hidden="true">/</span>
-    <a href={`/kaal/${d.era}/`}>{eraTitle(d.era)}</a>
-    {series && <><span aria-hidden="true">/</span><a href={`/series/${series.id}/`}>{series.title}</a></>}
+  <nav class="crumbs" aria-label={s("ब्रेडक्रम्ब", "Breadcrumb")}>
+    <a href={L("/")}>{s("मुखपृष्ठ", "Home")}</a><span aria-hidden="true">/</span>
+    <a href={L(`/kaal/${d.era}/`)}>{eraTitle(d.era, lang)}</a>
+    {series && <><span aria-hidden="true">/</span><a href={L(`/series/${series.id}/`)}>{series.title}</a></>}
   </nav>
   <h1>{d.title}</h1>
   <Ornament align="left" />
   <p class="saar">{d.saar}</p>
   <p class="meta">
-    <span class="era-chip">{era.label}</span>
-    <span>{formatKab(d.kab)}</span>
+    <span class="era-chip">{lang === "en" ? era.labelEn : era.label}</span>
+    <span>{formatKab(d.kab, lang)}</span>
     <span aria-hidden="true">·</span>
-    <span>{readingMinutes} मिनट में पढ़ें</span>
+    <span>{s(`${readingMinutes} मिनट में पढ़ें`, `${readingMinutes} min read`)}</span>
     <span aria-hidden="true">·</span>
-    <span>{d.sources.length} स्रोत</span>
+    <span>{d.sources.length} {s("स्रोत", d.sources.length === 1 ? "source" : "sources")}</span>
     <button type="button" class="share" data-share data-title={d.title}>
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>
-      <span data-share-label>साझा करें</span>
+      <span data-share-label>{s("साझा करें", "Share")}</span>
     </button>
   </p>
   <p class="byline">
-    {d.author && <span>लेखक: <strong>{d.author}</strong></span>}
-    {d.reviewedBy && <span>तथ्य-जाँच: <strong>{d.reviewedBy}</strong></span>}
-    {!d.author && <span>लेखन: <a href="/parichay/#sampadan">कौन कब संपादकीय टीम</a></span>}
-    <span>प्रकाशित: <time datetime={isoDate(d.published)}>{formatDate(d.published)}</time></span>
-    {updated && <span>अद्यतन: <time datetime={isoDate(updated)}>{formatDate(updated)}</time></span>}
+    {d.author && <span>{s("लेखक", "Author")}: <strong>{d.author}</strong></span>}
+    {d.reviewedBy && <span>{s("तथ्य-जाँच", "Fact-checked by")}: <strong>{d.reviewedBy}</strong></span>}
+    {!d.author && <span>{s("लेखन", "Written by")}: <a href={L("/parichay/#sampadan")}>{s("कौन कब संपादकीय टीम", "the Kaun Kab editorial team")}</a></span>}
+    <span>{s("प्रकाशित", "Published")}: <time datetime={isoDate(d.published)}>{formatDate(d.published, lang)}</time></span>
+    {updated && <span>{s("अद्यतन", "Updated")}: <time datetime={isoDate(updated)}>{formatDate(updated, lang)}</time></span>}
   </p>
   <slot />
   {img && (
@@ -59,6 +64,9 @@ const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
 </header>
 
 <script>
+  const EN = document.documentElement.lang === 'en';
+  const S = (hi: string, en: string) => (EN ? en : hi);
+  const P = EN ? '/en' : '';
   document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((btn) => {
     const label = btn.querySelector<HTMLElement>('[data-share-label]')!;
     btn.addEventListener('click', async () => {
@@ -69,11 +77,11 @@ const img = d.image?.src ?? findImage(`lekh/${slugOf(article)}`);
       }
       try {
         await navigator.clipboard.writeText(url);
-        label.textContent = 'लिंक कॉपी हो गया';
+        label.textContent = S('लिंक कॉपी हो गया', 'Link copied');
       } catch {
-        label.textContent = 'कॉपी नहीं हो सका';
+        label.textContent = S('कॉपी नहीं हो सका', 'Could not copy');
       }
-      setTimeout(() => (label.textContent = 'साझा करें'), 2200);
+      setTimeout(() => (label.textContent = S('साझा करें', 'Share')), 2200);
     });
   });
 </script>

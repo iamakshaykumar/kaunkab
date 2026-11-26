@@ -32,6 +32,8 @@ export async function GET(context: APIContext) {
     `- [समयरेखा](${site}/timeline/): सभी लेख तारीख़ के क्रम में`,
     `- [परिचय और संपादकीय नीति](${site}/parichay/)`,
     `- [RSS फ़ीड](${site}/rss.xml)`,
+    `- [English edition](${site}/en/): the same articles translated into English, under /en/ (e.g. ${site}/en/timeline/)`,
+    `- [English RSS feed](${site}/en/rss.xml)`,
     '',
     '## Optional',
     '',

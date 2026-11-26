@@ -1,5 +1,9 @@
 ---
-import { t } from '../i18n/hi';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 interface Props {
   slug: string;
 }
@@ -7,13 +11,16 @@ const { slug } = Astro.props;
 ---
 <div class="mark-read" data-mark-read={slug}>
   <div>
-    <p class="q">लेख पूरा पढ़ लिया?</p>
-    <p class="muted s">इसे अपनी पढ़ी हुई सूची में जोड़ें — यह सिर्फ़ आपके ब्राउज़र में सेव होता है।</p>
+    <p class="q">{s("लेख पूरा पढ़ लिया?", "Finished reading?")}</p>
+    <p class="muted s">{s("इसे अपनी पढ़ी हुई सूची में जोड़ें — यह सिर्फ़ आपके ब्राउज़र में सेव होता है।", "Add it to your reading list — it is saved only in your browser.")}</p>
   </div>
   <button type="button" class="btn btn-primary">{t.markRead}</button>
 </div>
 
 <script>
+  const EN = document.documentElement.lang === 'en';
+  const S = (hi: string, en: string) => (EN ? en : hi);
+  const P = EN ? '/en' : '';
   import { browserProgress } from '../lib/progress';
   const box = document.querySelector<HTMLElement>('[data-mark-read]');
   if (box) {
@@ -21,7 +28,7 @@ const { slug } = Astro.props;
     const btn = box.querySelector('button')!;
     const progress = browserProgress();
     const done = () => {
-      btn.textContent = 'पढ़ लिया ✓';
+      btn.textContent = S('पढ़ लिया ✓', 'Read ✓');
       btn.disabled = true;
       box.classList.add('done');
     };

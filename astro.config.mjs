@@ -29,7 +29,7 @@ export default defineConfig({
   trailingSlash: 'always',
   i18n: {
     defaultLocale: 'hi',
-    locales: ['hi'],
+    locales: ['hi', 'en'],
     routing: { prefixDefaultLocale: false },
   },
   markdown: {
@@ -37,9 +37,11 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
+      // hreflang pairs in the sitemap: /x/ (Hindi) <-> /en/x/ (English)
+      i18n: { defaultLocale: 'hi', locales: { hi: 'hi-IN', en: 'en-IN' } },
       filter: (page) => !NOINDEX.some((p) => new URL(page).pathname === p),
       serialize(item) {
-        const m = new URL(item.url).pathname.match(/^\/lekh\/([^/]+)\/$/);
+        const m = new URL(item.url).pathname.match(/^(?:\/en)?\/lekh\/([^/]+)\/$/);
         const date = m && articleDates.get(m[1]);
         if (date) item.lastmod = new Date(`${date}T00:00:00Z`).toISOString();
         return item;

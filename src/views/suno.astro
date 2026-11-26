@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import AudioBook from '../components/AudioBook.astro';
+import { getArticles } from '../lib/content';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
+const articles = await getArticles(lang);
+---
+<Base title={t.audiobook} description={s("भारतीय इतिहास की सारी कहानियाँ सुनें — एक के बाद एक, लगातार। खोजें, काल चुनें और जहाँ छोड़ा था वहीं से फिर सुनें।", "Listen to every story of Indian history, one after another. Search, pick an era or a series, and resume where you left off.")}>
+  <PageHero
+    kicker={s("सुनें", "Listen")}
+    title={t.audiobook}
+    lead={s("सिंधु घाटी से आधुनिक भारत तक — समय-क्रम में सुनें या कोई शृंखला चुनें। एक कहानी ख़त्म होते ही अगली अपने-आप चलेगी; सूची में खोजकर कोई भी कहानी चुनें।", "From the Indus Valley to modern India — listen in time order or pick a series. When one story ends the next one starts; search the list to pick any story. The narration is in Hindi.")}
+  />
+  <div class="container">
+    <AudioBook articles={articles} />
+  </div>
+</Base>

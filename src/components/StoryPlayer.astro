@@ -1,25 +1,31 @@
 ---
-import { MUSIC_CREDIT, formatDuration, type StoryAudio } from '../lib/audio';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
+import { MUSIC_CREDIT, MUSIC_CREDIT_EN, formatDuration, type StoryAudio } from '../lib/audio';
 
 interface Props {
   audio: StoryAudio;
   title: string;
 }
 const { audio, title } = Astro.props;
+const credit = lang === 'en' ? MUSIC_CREDIT_EN : MUSIC_CREDIT;
 ---
-<section class="story" data-story aria-label="यह कहानी सुनें" data-pagefind-ignore>
-  <button type="button" class="play" data-play aria-label={`"${title}" की कहानी सुनें`}>
+<section class="story" data-story aria-label={s("यह कहानी सुनें", "Listen to this story")} data-pagefind-ignore>
+  <button type="button" class="play" data-play aria-label={s(`"${title}" की कहानी सुनें`, `Listen to "${title}"`)}>
     <svg class="i-play" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
     <svg class="i-pause" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
   </button>
   <div class="body">
     <p class="head">
-      <strong>कहानी सुनें</strong>
-      <span class="meta"><span data-time>0:00</span> / {formatDuration(audio.seconds)}</span>
-      <button type="button" class="speed" data-speed aria-label="गति बदलें">1×</button>
+      <strong>{s("कहानी सुनें", "Listen to the story")}</strong>
+      <span class="meta"><span data-time>0:00</span> / {formatDuration(audio.seconds, lang)}</span>
+      <button type="button" class="speed" data-speed aria-label={s("गति बदलें", "Change speed")}>1×</button>
     </p>
-    <input type="range" class="seek" data-seek min="0" max={audio.seconds} value="0" step="1" aria-label="कहानी में आगे-पीछे जाएँ" />
-    <p class="credit"><a class="ab" href={`/suno/?k=${audio.src.slice(7, -4)}`}>ऑडियोबुक में लगातार सुनें →</a> · आवाज़: कंप्यूटर-जनित (AI) · <a href={MUSIC_CREDIT.url} rel="noopener">{MUSIC_CREDIT.text}</a></p>
+    <input type="range" class="seek" data-seek min="0" max={audio.seconds} value="0" step="1" aria-label={s("कहानी में आगे-पीछे जाएँ", "Seek within the story")} />
+    <p class="credit"><a class="ab" href={L(`/suno/?k=${audio.src.slice(7, -4)}`)}>{s("ऑडियोबुक में लगातार सुनें →", "Keep listening in the audiobook →")}</a> · {s("आवाज़: कंप्यूटर-जनित (AI)", "Narration in Hindi, computer-generated (AI)")} · <a href={credit.url} rel="noopener">{credit.text}</a></p>
   </div>
   <audio preload="none" src={audio.src} data-audio></audio>
 </section>

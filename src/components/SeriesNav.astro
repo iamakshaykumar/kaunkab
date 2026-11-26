@@ -1,7 +1,11 @@
 ---
 import type { Article, Series } from '../lib/content';
 import { articleUrl } from '../lib/content';
-import { t } from '../i18n/hi';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 
 interface Props {
   series: Series;
@@ -15,8 +19,8 @@ const next = idx >= 0 && idx < articles.length - 1 ? articles[idx + 1] : undefin
 ---
 <nav class="series-nav" aria-label={t.series}>
   <div class="top">
-    <p class="kicker">{t.series} · भाग {idx + 1}/{articles.length}</p>
-    <a class="title" href={`/series/${series.id.replace(/^hi\//, '')}/`}>{series.data.title}</a>
+    <p class="kicker">{t.series} · {s("भाग", "Part")} {idx + 1}/{articles.length}</p>
+    <a class="title" href={L(`/series/${series.id.replace(/^[a-z]{2}\//, '')}/`)}>{series.data.title}</a>
   </div>
   <ol class="steps">
     {articles.map((a, i) => (

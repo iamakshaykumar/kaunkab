@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import Timeline from '../components/Timeline.astro';
+import { getArticles } from '../lib/content';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
+const articles = await getArticles(lang);
+---
+<Base title={t.timeline} description={s("सिंधु घाटी से स्वतंत्रता तक — भारतीय इतिहास की घटनाएँ एक ही समयरेखा पर।", "From the Indus Valley to independence — the events of Indian history on one timeline.")}>
+  <PageHero
+    kicker={s("कालक्रम", "Chronology")}
+    title={t.timeline}
+    lead={s("सिंधु घाटी से स्वतंत्रता तक — सभी लेख एक ही धारा में। किसी भी घटना पर क्लिक करके पूरा लेख पढ़ें।", "From the Indus Valley to independence — every article in one stream. Click any event to read the full article.")}
+  />
+  <div class="container">
+    <Timeline articles={articles} />
+  </div>
+</Base>

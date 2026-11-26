@@ -1,5 +1,10 @@
 ---
-import { ERAS, eraRangeLabel, eraTitle } from '../lib/eras';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
+import { ERAS, eraBlurb, eraLabel, eraRangeLabel, eraTitle } from '../lib/eras';
 import { articleUrl, slugOf, type Article } from '../lib/content';
 import { formatKab, formatYear } from '../lib/dates';
 import { findImage } from '../lib/images';
@@ -14,41 +19,41 @@ const groups = ERAS.map((e) => ({ era: e, items: articles.filter((a) => a.data.e
   (g) => g.items.length > 0,
 );
 const haystack = (a: Article) =>
-  [a.data.title, a.data.saar, ...(a.data.kaun ?? []), ...(a.data.kahan ?? []), formatYear(a.data.kab.start)]
+  [a.data.title, a.data.saar, ...(a.data.kaun ?? []), ...(a.data.kahan ?? []), formatYear(a.data.kab.start, lang)]
     .join(' ')
     .toLowerCase();
 ---
 <div class="tl-wrap" data-timeline>
   <div class="filters">
-    <div class="chips" role="group" aria-label="काल चुनें">
-      <button type="button" class="chip-btn active" data-filter="all" aria-pressed="true">सभी <span>{articles.length}</span></button>
+    <div class="chips" role="group" aria-label={s("काल चुनें", "Choose an era")}>
+      <button type="button" class="chip-btn active" data-filter="all" aria-pressed="true">{s("सभी", "All")} <span>{articles.length}</span></button>
       {groups.map((g) => (
         <button type="button" class={`chip-btn era-${g.era.id}`} data-filter={g.era.id} aria-pressed="false">
-          <span class="era-dot"></span>{g.era.label} <span>{g.items.length}</span>
+          <span class="era-dot"></span>{eraLabel(g.era.id, lang)} <span>{g.items.length}</span>
         </button>
       ))}
     </div>
     <label class="find">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <span class="sr-only">समयरेखा में ढूँढें</span>
-      <input type="search" placeholder="नाम, जगह या साल…" data-find autocomplete="off" />
+      <span class="sr-only">{s("समयरेखा में ढूँढें", "Search the timeline")}</span>
+      <input type="search" placeholder={s("नाम, जगह या साल…", "Name, place or year…")} data-find autocomplete="off" />
     </label>
-    <div class="view" role="group" aria-label="दिखाने का तरीका">
-      <button type="button" class="view-btn" data-view="list" aria-pressed="false" title="छोटी सूची — कम स्क्रॉल">
+    <div class="view" role="group" aria-label={s("दिखाने का तरीका", "View")}>
+      <button type="button" class="view-btn" data-view="list" aria-pressed="false" title={s("छोटी सूची — कम स्क्रॉल", "Compact list — less scrolling")}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
-        <span>सूची</span>
+        <span>{s("सूची", "List")}</span>
       </button>
-      <button type="button" class="view-btn active" data-view="cards" aria-pressed="true" title="चित्र सहित कार्ड">
+      <button type="button" class="view-btn active" data-view="cards" aria-pressed="true" title={s("चित्र सहित कार्ड", "Cards with pictures")}>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="4" width="18" height="7"/><rect x="3" y="14" width="18" height="7"/></svg>
-        <span>कार्ड</span>
+        <span>{s("कार्ड", "Cards")}</span>
       </button>
     </div>
     <p class="status" aria-live="polite" data-status></p>
   </div>
 
-  <a class="ab-link" href="/suno/">
+  <a class="ab-link" href={L("/suno/")}>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>
-    <span><strong>ऑडियोबुक</strong> — सारी कहानियाँ एक के बाद एक, लगातार सुनें</span>
+    <span><strong>{t.audiobook}</strong> — {s("सारी कहानियाँ एक के बाद एक, लगातार सुनें", "listen to every story, one after another")}</span>
     <span aria-hidden="true">→</span>
   </a>
 
@@ -56,10 +61,10 @@ const haystack = (a: Article) =>
     {groups.map((g) => (
       <section class={`band era-${g.era.id}`} data-era={g.era.id} id={`kaal-${g.era.id}`}>
         <header class="band-head">
-          <span class="band-pill">{eraRangeLabel(g.era.id)}</span>
-          <h2>{eraTitle(g.era.id)}</h2>
+          <span class="band-pill">{eraRangeLabel(g.era.id, lang)}</span>
+          <h2>{eraTitle(g.era.id, lang)}</h2>
           <Ornament />
-          <p>{g.era.blurb}</p>
+          <p>{eraBlurb(g.era.id, lang)}</p>
         </header>
         <ol class="events">
           {g.items.map((a, i) => {
@@ -67,21 +72,21 @@ const haystack = (a: Article) =>
             const audio = findAudio(slugOf(a));
             return (
               <li class={`event ${i % 2 ? 'right' : 'left'}${audio ? ' has-audio' : ''}`} data-slug={slugOf(a)} data-text={haystack(a)}>
-                <span class="year">{formatYear(a.data.kab.start)}</span>
+                <span class="year">{formatYear(a.data.kab.start, lang)}</span>
                 <span class="dot" aria-hidden="true"></span>
                 <div class="ev-cell">
                 <a href={articleUrl(a)} class="ev-card">
                   {img ? <img src={img} alt="" width="640" height="360" loading="lazy" decoding="async" /> : <span class="noimg" aria-hidden="true"></span>}
                   <span class="ev-body">
-                    <span class="when clamp-1" title={formatKab(a.data.kab)}>{formatKab(a.data.kab)}</span>
+                    <span class="when clamp-1" title={formatKab(a.data.kab, lang)}>{formatKab(a.data.kab, lang)}</span>
                     <strong>{a.data.title}</strong>
                     <span class="saar">{a.data.saar}</span>
-                    <span class="read">पढ़ा हुआ</span>
+                    <span class="read">{s("पढ़ा हुआ", "Read")}</span>
                   </span>
                 </a>
                 {audio && (
                   <button type="button" class="listen" data-listen={audio.src} data-title={a.data.title} data-href={articleUrl(a)}
-                    aria-label={`"${a.data.title}" की कहानी सुनें (${formatDuration(audio.seconds)})`} title={`कहानी सुनें · ${formatDuration(audio.seconds)}`}>
+                    aria-label={s(`"${a.data.title}" की कहानी सुनें (${formatDuration(audio.seconds)})`, `Listen to "${a.data.title}" (${formatDuration(audio.seconds, lang)})`)} title={s(`कहानी सुनें · ${formatDuration(audio.seconds)}`, `Listen · ${formatDuration(audio.seconds, lang)}`)}>
                     <svg class="i-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
                     <svg class="i-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
                   </button>
@@ -92,38 +97,40 @@ const haystack = (a: Article) =>
           })}
         </ol>
         <div class="more-row" data-more-row hidden>
-          <button type="button" class="more-btn" data-more>और <span data-more-n></span> घटनाएँ देखें</button>
+          <button type="button" class="more-btn" data-more>{s("और", "Show")} <span data-more-n></span> {s("घटनाएँ देखें", "more events")}</button>
         </div>
       </section>
     ))}
-    <p class="empty" hidden data-empty>कोई घटना नहीं मिली। कोई और शब्द आज़माएँ।</p>
+    <p class="empty" hidden data-empty>{s("कोई घटना नहीं मिली। कोई और शब्द आज़माएँ।", "No events found. Try another word.")}</p>
   </div>
 
-  <div class="mini" data-mini hidden role="region" aria-label="कहानी प्लेयर">
-    <button type="button" class="m-play" data-m-play aria-label="चलाएँ / रोकें">
+  <div class="mini" data-mini hidden role="region" aria-label={s("कहानी प्लेयर", "Story player")}>
+    <button type="button" class="m-play" data-m-play aria-label={s("चलाएँ / रोकें", "Play / pause")}>
       <svg class="i-play" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
       <svg class="i-pause" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
     </button>
     <div class="m-body">
       <a class="m-title clamp-1" data-m-title href="#"></a>
-      <input type="range" class="m-seek" data-m-seek min="0" max="100" value="0" step="0.1" aria-label="कहानी में आगे-पीछे जाएँ" />
+      <input type="range" class="m-seek" data-m-seek min="0" max="100" value="0" step="0.1" aria-label={s("कहानी में आगे-पीछे जाएँ", "Seek within the story")} />
     </div>
     <span class="m-time" data-m-time>0:00</span>
-    <button type="button" class="m-next" data-m-next aria-label="अगली कहानी" title="अगली कहानी">
+    <button type="button" class="m-next" data-m-next aria-label={s("अगली कहानी", "Next story")} title={s("अगली कहानी", "Next story")}>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16 5h2.5v14H16z"/></svg>
     </button>
-    <button type="button" class="m-close" data-m-close aria-label="प्लेयर बंद करें">
+    <button type="button" class="m-close" data-m-close aria-label={s("प्लेयर बंद करें", "Close player")}>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
     </button>
     <audio preload="none" data-m-audio></audio>
   </div>
 
-  <button type="button" class="to-top" data-to-top hidden aria-label="ऊपर जाएँ" title="ऊपर जाएँ">
+  <button type="button" class="to-top" data-to-top hidden aria-label={s("ऊपर जाएँ", "Back to top")} title={s("ऊपर जाएँ", "Back to top")}>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
 </div>
 
 <script>
+  const EN = document.documentElement.lang === 'en';
+  const S = (hi: string, en: string) => (EN ? en : hi);
   import { browserProgress } from '../lib/progress';
 
   // ---- story audio: one shared mini player for all timeline events ----
@@ -246,7 +253,7 @@ const haystack = (a: Article) =>
         row.querySelector('[data-more-n]')!.textContent = String(rest);
       });
       empty.hidden = shown > 0;
-      status.textContent = q || era !== 'all' ? `${shown} घटनाएँ` : '';
+      status.textContent = q || era !== 'all' ? `${shown} ${S('घटनाएँ', 'events')}` : '';
     };
 
     buttons.forEach((b) =>

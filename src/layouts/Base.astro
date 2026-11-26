@@ -9,7 +9,7 @@ import muktaFont from '@fontsource/mukta/files/mukta-devanagari-400-normal.woff2
 import serifFont from '@fontsource/noto-serif-devanagari/files/noto-serif-devanagari-devanagari-700-normal.woff2?url';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { t } from '../i18n/hi';
+import { LANG_META, LANGS, langFromUrl, pick, switchPath, ui } from '../i18n';
 
 import { findImage } from '../lib/images';
 import { metaDescription } from '../lib/seo';
@@ -30,18 +30,25 @@ interface Props {
   jsonLd?: object | object[];
   /** LCP image to preload */
   preload?: { src: string; srcset?: string; sizes?: string };
+  /** set false when this page has no version in the other language (no hreflang, no switcher target) */
+  translated?: boolean;
 }
-const { title, description = t.tagline, image, type = 'website', published, modified, noindex = false, jsonLd, preload } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const { title, description = t.tagline, image, type = 'website', published, modified, noindex = false, jsonLd, preload, translated = true } = Astro.props;
 const shareImage = image ?? findImage('og-default');
 const shareImageUrl = shareImage ? new URL(shareImage, Astro.site).href : undefined;
-const fullTitle = title === t.siteName ? `${t.siteName} | भारतीय इतिहास सरल हिंदी में` : `${title} | ${t.siteName}`;
+const fullTitle = title === t.siteName ? `${t.siteName} | ${s('भारतीय इतिहास सरल हिंदी में', 'Indian History in Simple English')}` : `${title} | ${t.siteName}`;
 const desc = metaDescription(description);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ldBlocks = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 const ld = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
+// hreflang: every page and its translation point at each other (like Wikipedia's language links)
+const alternates = translated && !noindex ? LANGS.map((l) => ({ l, href: new URL(switchPath(Astro.url.pathname, l), Astro.site).href })) : [];
 ---
 <!doctype html>
-<html lang="hi">
+<html lang={LANG_META[lang].html}>
   <head>
     <meta charset="utf-8" />
     <!-- Google Tag Manager: the container script loads once the page is idle so it does not compete with first paint -->
@@ -68,6 +75,8 @@ const ld = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
     {noindex ? <meta name="robots" content="noindex, follow" /> : <link rel="canonical" href={canonical} />}
+    {alternates.map((a) => <link rel="alternate" hreflang={LANG_META[a.l].html} href={a.href} />)}
+    {alternates.length > 0 && <link rel="alternate" hreflang="x-default" href={alternates[0].href} />}
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="preload" href={muktaFont} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={serifFont} as="font" type="font/woff2" crossorigin />
@@ -75,9 +84,10 @@ const ld = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
       <link rel="preload" as="image" href={preload.src} imagesrcset={preload.srcset} imagesizes={preload.sizes} fetchpriority="high" />
     )}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="alternate" type="application/rss+xml" title={t.siteName} href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title={t.siteName} href={lang === 'en' ? '/en/rss.xml' : '/rss.xml'} />
     <meta property="og:site_name" content={t.siteName} />
-    <meta property="og:locale" content="hi_IN" />
+    <meta property="og:locale" content={LANG_META[lang].og} />
+    {translated && <meta property="og:locale:alternate" content={LANG_META[lang === 'en' ? 'hi' : 'en'].og} />}
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:type" content={type} />
@@ -99,13 +109,13 @@ const ld = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
   </head>
   <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KH7FBJ3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <a class="skip-link" href="#main">मुख्य सामग्री पर जाएँ</a>
-    <Header />
+    <a class="skip-link" href="#main">{s('मुख्य सामग्री पर जाएँ', 'Skip to main content')}</a>
+    <Header translated={translated} />
     <main id="main" tabindex="-1">
       <slot />
     </main>
     <Footer />
-    <button type="button" class="to-top" aria-label="ऊपर जाएँ" title="ऊपर जाएँ">
+    <button type="button" class="to-top" aria-label={s('ऊपर जाएँ', 'Back to top')} title={s('ऊपर जाएँ', 'Back to top')}>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
     <script>

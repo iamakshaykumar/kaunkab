@@ -1,0 +1,552 @@
+---
+import Base from '../layouts/Base.astro';
+import OnThisDay from '../components/OnThisDay.astro';
+import DidYouKnow from '../components/DidYouKnow.astro';
+import EraTiles from '../components/EraTiles.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import ProgressCount from '../components/ProgressCount.astro';
+import Ornament from '../components/Ornament.astro';
+import { byPublishedDesc, getArticles, getSeriesArticles, getSeriesList, slugOf } from '../lib/content';
+import { formatYear } from '../lib/dates';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+import { findImage } from '../lib/images';
+import { findAudio } from '../lib/audio';
+import { ERAS, eraRangeLabel } from '../lib/eras';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const tr = pick(lang);
+const L = (p: string) => localize(p, lang);
+const P = lang === 'en' ? '/en' : '';
+import { LICENSE, ORG_NAME, siteBase } from '../lib/seo';
+
+const heroImg = findImage('hero');
+const articles = await getArticles(lang);
+const latest = [...articles].sort(byPublishedDesc).slice(0, 7);
+const [featured, ...rest] = latest;
+const seriesList = await Promise.all(
+  (await getSeriesList(lang)).map(async (s) => {
+    const id = s.id.replace(/^[a-z]{2}\//, '');
+    return { s, id, img: findImage(`series/${id}`), items: await getSeriesArticles(id, lang) };
+  }),
+);
+const span = articles.length
+  ? tr(`${formatYear(articles[0].data.kab.start)} से ${formatYear(articles[articles.length - 1].data.kab.start)} तक`, `${formatYear(articles[0].data.kab.start, 'en')} to ${formatYear(articles[articles.length - 1].data.kab.start, 'en')}`)
+  : '';
+const repo = 'https://github.com/iamakshaykumar/kaunkab';
+
+// hero: per-era counts for the timeline ribbon, total audio, and a pool of stories for "आज की कहानी"
+const eraStats = ERAS.map((e) => ({ ...e, n: articles.filter((a) => a.data.era === e.id).length }));
+const withAudio = articles.flatMap((a) => {
+  const slug = slugOf(a);
+  const audio = findAudio(slug);
+  const img = findImage(`lekh/${slug}-sm`) ?? findImage(`lekh/${slug}`);
+  return audio && img ? [{ a, slug, audio, img }] : [];
+});
+const audioHours = Math.round(articles.reduce((n, a) => n + (findAudio(slugOf(a))?.seconds ?? 0), 0) / 3600);
+const POOL = 60;
+const step = Math.max(1, Math.floor(withAudio.length / POOL));
+const heroPicks = withAudio
+  .filter((_, i) => i % step === 0)
+  .slice(0, POOL)
+  .map(({ a, slug, audio, img }) => ({
+    t: a.data.title,
+    s: a.data.saar,
+    y: formatYear(a.data.kab.start, lang),
+    e: a.data.era,
+    h: `${P}/lekh/${slug}/`,
+    i: img,
+    a: audio.src,
+    m: Math.max(1, Math.round(audio.seconds / 60)),
+    k: slug,
+  }));
+const pick0 = heroPicks[0];
+const eraLabel: Record<string, string> = Object.fromEntries(ERAS.map((e) => [e.id, lang === 'en' ? e.labelEn : e.label]));
+
+const heroSm = findImage('hero-sm');
+const heroSrcset = heroImg && heroSm ? `${heroSm} 800w, ${heroImg} 1672w` : undefined;
+const site = siteBase(Astro.site);
+const description = tr(`कौन कब: सिंधु घाटी से स्वतंत्रता तक भारतीय इतिहास के ${articles.length} लेख, ${seriesList.length} शृंखलाएँ और समयरेखा — सरल हिंदी में, स्रोतों के साथ, मुफ़्त।`, `Kaun Kab: ${articles.length} articles, ${seriesList.length} series and a timeline of Indian history from the Indus Valley to independence — in simple English, with sources, free.`);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${site}/#organization`,
+      name: ORG_NAME,
+      alternateName: 'Kaun Kab',
+      url: `${site}/`,
+      logo: { '@type': 'ImageObject', url: `${site}/logo.png`, width: 512, height: 512 },
+      description: t.tagline,
+      sameAs: [repo],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site}/#website`,
+      url: `${site}${P}/`,
+      name: ORG_NAME,
+      alternateName: 'Kaun Kab',
+      description: t.tagline,
+      inLanguage: lang,
+      publisher: { '@id': `${site}/#organization` },
+      license: LICENSE,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: { '@type': 'EntryPoint', urlTemplate: `${site}${P}/khoj/?q={search_term_string}` },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+  ],
+};
+---
+<Base
+  title={t.siteName}
+  description={description}
+  jsonLd={jsonLd}
+  preload={heroImg ? { src: heroImg, srcset: heroSrcset, sizes: '100vw' } : undefined}
+>
+  <section class={heroImg ? 'hero has-img' : 'hero'}>
+    {heroImg && <img class="hero-bg" src={heroImg} srcset={heroSrcset} sizes="100vw" alt="" width="1672" height="941" fetchpriority="high" />}
+    <div class="hero-shade"></div>
+    <svg class="chakra" viewBox="0 0 200 200" aria-hidden="true">
+      <g fill="none" stroke="currentColor">
+        <circle cx="100" cy="100" r="96" stroke-width="1.5" />
+        <circle cx="100" cy="100" r="88" stroke-width=".8" stroke-dasharray="2 5" />
+        <circle cx="100" cy="100" r="16" stroke-width="2" />
+        <circle cx="100" cy="100" r="6" fill="currentColor" />
+        {Array.from({ length: 24 }, (_, i) => (
+          <g transform={`rotate(${i * 15} 100 100)`}>
+            <path d="M100 84 L97 30 Q100 18 103 30 Z" stroke-width="1.1" />
+            <circle cx="100" cy="10" r="2.2" fill="currentColor" stroke="none" />
+          </g>
+        ))}
+      </g>
+    </svg>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow rise" style="--d: 0">{tr("ओपन सोर्स · मुफ़्त · स्रोतों के साथ", "Open source · Free · With sources")}</p>
+        <h1 class="rise" style="--d: 1">{tr("भारत का इतिहास,", "India's history —")}<br /><span>{tr("कौन, कब, कहाँ", "who, when, where")}</span></h1>
+        <div class="rise" style="--d: 2"><Ornament light align="left" /></div>
+        <p class="lead rise" style="--d: 3">{tr("सिंधु घाटी से स्वतंत्रता तक — सरल हिंदी में लिखी, समुदाय द्वारा जाँची गई कहानियाँ। पढ़ें, सुनें और हर लेख के अंत में छोटा क्विज़ खेलें।", "From the Indus Valley to independence — stories in simple English, checked by the community. Read, listen, and take a short quiz at the end of every article.")}</p>
+        <div class="cta rise" style="--d: 4">
+          <a class="btn btn-primary btn-lg" href={L("/timeline/")}>{tr(`${t.timeline} देखें →`, `Explore the ${t.timeline} →`)}</a>
+          <a class="btn btn-ghost-light btn-lg" href={L("/suno/")}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>
+            {t.audiobook}
+          </a>
+          <a class="btn btn-ghost-light btn-lg btn-icon" href={L("/khoj/")} aria-label={t.search} title={t.search}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="btn-icon-label">{t.search}</span>
+          </a>
+        </div>
+        <p class="hero-facts rise" style="--d: 5">
+          <span><b>{articles.length}</b> {tr("लेख", "articles")}</span>
+          <span><b>{seriesList.length}</b> {tr("शृंखलाएँ", "series")}</span>
+          {audioHours > 0 && <span><b>{audioHours}+</b> {tr("घंटे ऑडियो", "hours of audio")}</span>}
+          <span class="wide">{span}</span>
+        </p>
+      </div>
+
+      {pick0 && (
+        <aside class="story rise" style="--d: 3" aria-label={tr("आज की कहानी", "Story of the day")} data-hero-story>
+          <p class="st-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            {tr("आज की कहानी", "Story of the day")}
+          </p>
+          <a class="st-media" href={pick0.h} data-st-link tabindex="-1" aria-hidden="true">
+            <img src={pick0.i} alt="" width="640" height="360" data-st-img />
+            <span class="st-year" data-st-year>{pick0.y}</span>
+          </a>
+          <div class="st-body">
+            <p class={`st-era era-${pick0.e}`} data-st-era><span class="era-dot"></span><span data-st-era-l>{eraLabel[pick0.e]}</span></p>
+            <h2><a href={pick0.h} data-st-title>{pick0.t}</a></h2>
+            <p class="st-saar" data-st-saar>{pick0.s}</p>
+            <div class="st-actions">
+              <button type="button" class="st-play" data-st-play data-src={pick0.a} aria-label={tr("यह कहानी सुनें", "Listen to this story")}>
+                <svg class="i-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+                <svg class="i-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+                <span>{tr("सुनें", "Listen")} · <span data-st-min>{pick0.m}</span> {tr("मिनट", "min")}</span>
+              </button>
+              <a class="st-read" href={pick0.h} data-st-read>{tr("पूरा पढ़ें →", "Read more →")}</a>
+            </div>
+            <span class="st-prog" aria-hidden="true"><span data-st-prog></span></span>
+          </div>
+          <audio preload="none" data-st-audio></audio>
+          <script type="application/json" data-hero-picks set:html={JSON.stringify(heroPicks)} />
+        </aside>
+      )}
+    </div>
+
+    <nav class="container ribbon rise" style="--d: 6" aria-label={tr("काल के अनुसार", "By era")}>
+      <ol>
+        {eraStats.map((e) => (
+          <li class={`era-${e.id}`}>
+            <a href={L(`/kaal/${e.id}/`)}>
+              <span class="r-dot" aria-hidden="true"></span>
+              <span class="r-label">{lang === "en" ? e.labelEn : e.label}</span>
+              <span class="r-range">{eraRangeLabel(e.id, lang)}</span>
+              <span class="r-n">{e.n} {tr("लेख", "articles")} →</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+    <div class="jaali hero-jaali" aria-hidden="true"></div>
+  </section>
+
+  <div class="container">
+    <section class="section today">
+      <OnThisDay />
+      <DidYouKnow />
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">{tr("इतिहास के तीन दौर", "Three ages of history")}</p>
+          <h2>{tr("काल के अनुसार पढ़ें", "Read by era")}</h2>
+          <Ornament align="left" />
+        </div>
+        <a class="link-arrow" href={L("/timeline/")}>{tr("पूरी समयरेखा →", "Full timeline →")}</a>
+      </div>
+      <EraTiles articles={articles} />
+    </section>
+
+    {featured && (
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">{tr("ताज़ा", "Fresh")}</p>
+            <h2>{t.latest}</h2>
+            <Ornament align="left" />
+          </div>
+          <a class="link-arrow" href={L("/timeline/")}>{tr("सभी लेख →", "All articles →")}</a>
+        </div>
+        <div class="latest">
+          <ArticleCard article={featured} featured />
+          {rest.map((a) => <ArticleCard article={a} />)}
+        </div>
+      </section>
+    )}
+
+    {seriesList.length > 0 && (
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="kicker">{tr("क्रम से पढ़ें", "Read in order")}</p>
+            <h2>{t.series}</h2>
+            <Ornament align="left" />
+            <p>{tr("एक विषय को शुरू से अंत तक समझने के लिए चुने गए लेख।", "Articles chosen to understand one topic from start to finish.")}</p>
+          </div>
+          <a class="link-arrow" href={L("/series/")}>{t.allSeries} →</a>
+        </div>
+        <div class="series-grid">
+          {seriesList.slice(0, 6).map(({ s, id, img, items }) => (
+            <a class="series-card" href={L(`/series/${id}/`)}>
+              <div class="s-media">
+                {img && <img src={img} alt="" width="1200" height="675" loading="lazy" decoding="async" />}
+                <span class="parts">{items.length} {tr("भाग", "parts")}</span>
+              </div>
+              <div class="s-body">
+                <h3>{s.data.title}</h3>
+                <p>{s.data.description}</p>
+                <ol>
+                  {items.slice(0, 5).map((a) => <li>{a.data.title}</li>)}
+                  {items.length > 5 && <li class="more">{tr(`और ${items.length - 5} भाग…`, `and ${items.length - 5} more…`)}</li>}
+                </ol>
+                <span class="s-foot"><ProgressCount slugs={items.map(slugOf)} /><span class="link-arrow">{tr("शुरू करें →", "Start →")}</span></span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <section class="contribute">
+    <div class="jaali band-top"></div>
+    <div class="container contribute-inner">
+      <div>
+        <p class="kicker light">{tr("समुदाय से बनता है", "Built by the community")}</p>
+        <h2>{tr("इतिहास लिखने में हाथ बँटाइए", "Help write history")}</h2>
+        <Ornament light align="left" />
+        <p class="c-lead">{tr("कौन कब पूरी तरह ओपन सोर्स है। कोई गलती दिखे या कोई विषय छूटा हो — GitHub पर कुछ ही क्लिक में सुधार भेजें। प्रोग्रामिंग जानना ज़रूरी नहीं।", "Kaun Kab is fully open source. Spot a mistake or a missing topic? Send a fix on GitHub in a few clicks. No programming needed.")}</p>
+        <div class="cta">
+          <a class="btn btn-primary btn-lg" href={L("/yogdan/")}>{t.contribute} →</a>
+          <a class="btn btn-ghost-light btn-lg" href={repo}>{tr("GitHub पर देखें", "View on GitHub")}</a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><b class="diamond">1</b><span>{lang === "en" ? <><strong>Pick an article</strong> Click "Improve this page" at the bottom of any article.</> : <><strong>लेख चुनें</strong> किसी भी लेख के नीचे "इस पेज को सुधारें" पर क्लिक करें।</>}</span></li>
+        <li><b class="diamond">2</b><span>{lang === "en" ? <><strong>Make the change</strong> Edit right in the browser on GitHub and add sources.</> : <><strong>बदलाव करें</strong> GitHub पर सीधे ब्राउज़र में लिखें, स्रोत जोड़ें।</>}</span></li>
+        <li><b class="diamond">3</b><span>{lang === "en" ? <><strong>Send it</strong> After review your contribution goes live on the site.</> : <><strong>भेज दें</strong> समीक्षा के बाद आपका योगदान साइट पर आ जाएगा।</>}</span></li>
+      </ol>
+    </div>
+  </section>
+</Base>
+
+<script>
+  // "आज की कहानी": same story for everyone on a given day, rotating through the pool
+  const card = document.querySelector<HTMLElement>('[data-hero-story]');
+  if (card) {
+    type Pick = { t: string; s: string; y: string; e: string; h: string; i: string; a: string; m: number; k: string };
+    const picks: Pick[] = JSON.parse(card.querySelector('[data-hero-picks]')!.textContent || '[]');
+    const ERA: Record<string, string> = document.documentElement.lang === 'en'
+      ? { prachin: 'Ancient', madhyakaal: 'Medieval', adhunik: 'Modern' }
+      : { prachin: 'प्राचीन', madhyakaal: 'मध्यकाल', adhunik: 'आधुनिक' };
+    const q = <T extends HTMLElement = HTMLElement>(s: string) => card.querySelector<T>(s)!;
+    const now = new Date();
+    const day = Math.floor(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) / 864e5);
+    const p = picks[day % picks.length];
+    const au = q<HTMLAudioElement>('[data-st-audio]');
+    const play = q<HTMLButtonElement>('[data-st-play]');
+    if (p) {
+      q<HTMLImageElement>('[data-st-img]').src = p.i;
+      q('[data-st-year]').textContent = p.y;
+      const era = q('[data-st-era]');
+      era.className = `st-era era-${p.e}`;
+      q('[data-st-era-l]').textContent = ERA[p.e] ?? '';
+      const title = q<HTMLAnchorElement>('[data-st-title]');
+      title.textContent = p.t;
+      title.href = p.h;
+      q<HTMLAnchorElement>('[data-st-link]').href = p.h;
+      q<HTMLAnchorElement>('[data-st-read]').href = p.h;
+      q('[data-st-saar]').textContent = p.s;
+      q('[data-st-min]').textContent = String(p.m);
+      play.dataset.src = p.a;
+    }
+    const bar = q('[data-st-prog]');
+    play.addEventListener('click', () => {
+      if (!au.src) au.src = play.dataset.src!;
+      if (au.paused) au.play().catch(() => {});
+      else au.pause();
+    });
+    const sync = () => card.classList.toggle('playing', !au.paused);
+    au.addEventListener('play', sync);
+    au.addEventListener('pause', sync);
+    au.addEventListener('ended', sync);
+    au.addEventListener('timeupdate', () => {
+      if (au.duration) bar.style.width = `${(au.currentTime / au.duration) * 100}%`;
+    });
+  }
+</script>
+
+
+<style>
+  .hero {
+    position: relative; isolation: isolate; overflow: hidden;
+    padding: clamp(2rem, 4.5vw, 3.25rem) 0 0;
+    background: radial-gradient(900px 400px at 15% 0%, var(--accent-soft), transparent), var(--bg-alt);
+  }
+  .hero.has-img { color: #fff; background: var(--ink); }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -3; transform: scale(1.04); animation: drift 30s ease-in-out infinite alternate; }
+  @keyframes drift { to { transform: scale(1.1) translate(-1.5%, -1%); } }
+  .hero-shade { display: none; }
+  .has-img .hero-shade {
+    display: block; position: absolute; inset: 0; z-index: -2;
+    background:
+      radial-gradient(60% 70% at 78% 45%, rgba(161, 98, 7, .22), transparent 70%),
+      linear-gradient(90deg, rgba(12, 8, 5, .92) 0%, rgba(12, 8, 5, .72) 50%, rgba(12, 8, 5, .45) 100%),
+      linear-gradient(0deg, rgba(12, 8, 5, .85) 0%, transparent 40%);
+  }
+
+  /* slowly turning chakra behind the story card */
+  .chakra {
+    position: absolute; z-index: -1; right: max(-120px, calc(50% - 760px)); top: 50%; width: min(620px, 60vw); aspect-ratio: 1;
+    margin-top: -330px; color: #d4a24c; opacity: .16; animation: spin 140s linear infinite; pointer-events: none;
+  }
+  .hero:not(.has-img) .chakra { color: var(--gold); opacity: .12; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .hero-inner { position: relative; display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(300px, 400px); gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  .eyebrow {
+    display: inline-block; margin: 0 0 .9rem; font-size: .82rem; font-weight: 700; letter-spacing: .06em;
+    padding: .3rem .9rem; border-radius: 0; background: rgba(255,255,255,.12); border: 1px solid rgba(212, 162, 76, .55); color: #f6d9a8;
+  }
+  .hero:not(.has-img) .eyebrow { background: var(--card); border-color: var(--border); color: var(--accent); }
+  .hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.5rem); line-height: 1.2; margin: 0 0 .25rem; text-shadow: 0 2px 18px rgba(0, 0, 0, .35); }
+  .hero h1 span {
+    background: linear-gradient(90deg, #fdba74, #fcd34d 55%, #fdba74); -webkit-background-clip: text; background-clip: text; color: transparent;
+    background-size: 200% 100%; animation: shine 7s ease-in-out infinite;
+  }
+  @keyframes shine { 50% { background-position: 100% 0; } }
+  .hero:not(.has-img) h1 span { background: none; color: var(--accent); }
+  .lead { font-size: clamp(1rem, 1.5vw, 1.18rem); max-width: 54ch; opacity: .92; margin: .9rem 0 1.4rem; line-height: 1.7; }
+  .cta { display: flex; gap: .65rem; flex-wrap: wrap; }
+  .btn-lg { padding: .75rem 1.3rem; font-size: 1.02rem; }
+  .btn-icon-label { display: none; }
+  .hero-facts { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; margin: 1.4rem 0 0; font-size: .92rem; opacity: .85; }
+  .hero-facts b { font-family: var(--font-display); font-size: 1.15rem; color: #fcd34d; margin-right: .2rem; }
+  .hero:not(.has-img) .hero-facts b { color: var(--accent); }
+  .hero-facts span { position: relative; }
+  .hero-facts span + span::before { content: ''; position: absolute; left: -.8rem; top: 50%; width: 5px; height: 5px; background: #d4a24c; transform: translateY(-50%) rotate(45deg); }
+
+  /* ---- आज की कहानी card ---- */
+  .story {
+    position: relative; color: var(--fg); background: var(--card); padding: .75rem; box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
+    border: 1px solid rgba(212, 162, 76, .6);
+  }
+  .story::before {
+    --c: #d4a24c; --l: 26px; --w: 3px;
+    content: ''; position: absolute; inset: -9px; pointer-events: none;
+    background:
+      linear-gradient(var(--c), var(--c)) top left / var(--l) var(--w) no-repeat,
+      linear-gradient(var(--c), var(--c)) top left / var(--w) var(--l) no-repeat,
+      linear-gradient(var(--c), var(--c)) top right / var(--l) var(--w) no-repeat,
+      linear-gradient(var(--c), var(--c)) top right / var(--w) var(--l) no-repeat,
+      linear-gradient(var(--c), var(--c)) bottom left / var(--l) var(--w) no-repeat,
+      linear-gradient(var(--c), var(--c)) bottom left / var(--w) var(--l) no-repeat,
+      linear-gradient(var(--c), var(--c)) bottom right / var(--l) var(--w) no-repeat,
+      linear-gradient(var(--c), var(--c)) bottom right / var(--w) var(--l) no-repeat;
+  }
+  .st-kicker {
+    position: absolute; z-index: 2; top: -.85rem; left: 50%; transform: translateX(-50%); margin: 0; white-space: nowrap;
+    display: inline-flex; align-items: center; gap: .35rem; padding: .15rem .8rem; font-size: .8rem; font-weight: 800; letter-spacing: .04em;
+    color: #1a0f08; background: linear-gradient(90deg, #d4a24c, #fcd34d, #d4a24c);
+  }
+  .st-media { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; }
+  .st-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s var(--ease-out); }
+  .story:hover .st-media img { transform: scale(1.05); }
+  .st-year {
+    position: absolute; left: 0; bottom: 0; padding: .15rem .65rem; font-family: var(--font-display); font-weight: 700; font-size: .95rem;
+    color: #fff; background: rgba(12, 8, 5, .75);
+  }
+  .st-body { position: relative; padding: .8rem .35rem .3rem; }
+  .st-era { display: flex; align-items: center; margin: 0; font-size: .82rem; font-weight: 700; color: var(--era); }
+  .story h2 { margin: .15rem 0 .3rem; font-size: 1.15rem; line-height: 1.4; }
+  .story h2 a { color: var(--fg); text-decoration: none; }
+  .story h2 a:hover { color: var(--accent); }
+  .st-saar { margin: 0; font-size: .88rem; line-height: 1.55; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .st-actions { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: .8rem; }
+  .st-play {
+    display: inline-flex; align-items: center; gap: .45rem; min-height: 42px; padding: .4rem 1rem .4rem .75rem; cursor: pointer;
+    font: inherit; font-size: .92rem; font-weight: 700; border: 0; border-radius: 999px; color: #fff; background: var(--accent);
+    transition: transform .15s ease, filter .15s;
+  }
+  .st-play:hover { transform: scale(1.04); filter: brightness(1.08); }
+  .st-play:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .st-play .i-pause, .playing .st-play .i-play { display: none; }
+  .playing .st-play .i-pause { display: block; }
+  .st-read { font-size: .9rem; font-weight: 700; text-decoration: none; }
+  .st-prog { display: block; height: 3px; margin-top: .7rem; background: var(--border); }
+  .st-prog span { display: block; height: 100%; width: 0; background: var(--accent); }
+
+  /* ---- era ribbon: the site's timeline in one line ---- */
+  .ribbon { margin-top: clamp(1.75rem, 3.5vw, 2.5rem); }
+  .ribbon ol { position: relative; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
+  .ribbon ol::before {
+    content: ''; position: absolute; left: 0; right: 0; top: 9px; height: 2px;
+    background: linear-gradient(90deg, var(--prachin), var(--madhyakaal) 50%, var(--adhunik));
+  }
+  .ribbon a {
+    position: relative; display: grid; grid-template-columns: auto 1fr; column-gap: .55rem; padding: 0 1rem 1.1rem 0;
+    color: inherit; text-decoration: none;
+  }
+  .r-dot {
+    grid-row: span 3; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); border: 4px solid var(--era); box-shadow: 0 0 0 4px rgba(12, 8, 5, .35);
+    transition: transform .2s ease, background .2s;
+  }
+  .hero:not(.has-img) .r-dot { background: var(--bg-alt); box-shadow: none; }
+  .ribbon a:hover .r-dot { transform: scale(1.25); background: var(--era); }
+  .r-label { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; line-height: 1.2; padding-top: .1rem; }
+  .ribbon a:hover .r-label { color: var(--era); }
+  .has-img .ribbon li.era-prachin { --era: #f59e0b; }
+  .has-img .ribbon li.era-madhyakaal { --era: #2dd4bf; }
+  .has-img .ribbon li.era-adhunik { --era: #a5b4fc; }
+  .r-range { font-size: .82rem; opacity: .75; }
+  .r-n { font-size: .82rem; font-weight: 700; color: var(--era); }
+  .hero-jaali { opacity: .5; }
+
+  /* entrance: gentle rise, one after another */
+  .rise { animation: rise .7s var(--ease-out) both; animation-delay: calc(var(--d, 0) * 90ms + 80ms); }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+  @media (prefers-reduced-motion: reduce) {
+    .rise, .chakra, .hero-bg, .hero h1 span { animation: none; }
+  }
+
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+    .story { max-width: 560px; }
+    .chakra { width: 420px; right: -140px; top: 0; margin-top: -60px; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding-top: 1.5rem; }
+    .hero :global(.ornament) { display: none; }
+    .lead { margin: .6rem 0 1.1rem; font-size: .98rem; }
+    .cta { flex-wrap: nowrap; }
+    .cta .btn-lg { flex: 1; justify-content: center; padding: .7rem .8rem; font-size: .95rem; }
+    .cta .btn-icon { flex: none; width: 48px; padding: 0; }
+    .hero-facts { margin-top: 1rem; font-size: .85rem; }
+    .hero-facts .wide { display: none; }
+    /* compact horizontal story card */
+    .story { display: grid; grid-template-columns: 108px 1fr; gap: .75rem; padding: .6rem; margin-top: .4rem; }
+    .st-media { aspect-ratio: auto; height: 100%; min-height: 96px; }
+    .st-year { font-size: .8rem; padding: .1rem .45rem; }
+    .st-body { padding: .1rem 0 0; }
+    .story h2 { font-size: 1rem; margin: .1rem 0 .2rem; }
+    .st-saar { display: none; }
+    .st-actions { margin-top: .4rem; }
+    .st-play { min-height: 38px; padding: .3rem .8rem .3rem .6rem; font-size: .85rem; }
+    .st-read { font-size: .82rem; }
+    .st-prog { margin-top: .5rem; }
+    .ribbon a { grid-template-columns: 1fr; padding-right: .5rem; }
+    .r-dot { grid-row: auto; margin-bottom: .45rem; width: 18px; height: 18px; }
+    .r-label { font-size: 1rem; }
+    .r-range { font-size: .72rem; }
+    .r-n { font-size: .75rem; }
+  }
+
+  .today { display: grid; gap: 1.5rem; grid-template-columns: 1.35fr 1fr; }
+  @media (max-width: 900px) { .today { grid-template-columns: 1fr; } }
+
+  .latest { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 1000px) { .latest { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .latest { grid-template-columns: 1fr; } }
+
+  .series-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); }
+  .series-card {
+    display: flex; flex-direction: column; overflow: hidden; text-decoration: none; color: var(--fg);
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .series-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .s-media { position: relative; aspect-ratio: 21 / 9; background: var(--bg-alt); overflow: hidden; }
+  .s-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .parts { position: absolute; left: 1rem; top: 1rem; background: rgba(255,255,255,.92); color: #1a0f08; font-weight: 700; font-size: .875rem; padding: .2rem .7rem; border-radius: 0; }
+  .s-body { padding: 1.4rem 1.6rem 1.6rem; display: flex; flex-direction: column; gap: .5rem; flex: 1; }
+  .s-body h3 { margin: 0; font-size: 1.5rem; }
+  .s-body p { margin: 0; color: var(--muted); }
+  .s-body ol { margin: .5rem 0 0; padding-left: 1.2rem; color: var(--fg); font-weight: 500; display: grid; gap: .2rem; }
+  .s-body ol li.more { list-style: none; margin-left: -1.2rem; color: var(--muted); font-weight: 400; }
+  .s-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; }
+  .series-card:hover h3 { color: var(--accent); }
+  .s-body h3 { transition: color .2s; }
+  .s-media img { transition: transform .6s var(--ease-out); }
+  .series-card:hover .s-media img { transform: scale(1.04); }
+  @media (max-width: 640px) {
+    .s-media { aspect-ratio: 16 / 9; }
+    .s-body { padding: 1.1rem 1.2rem 1.25rem; }
+    .s-body h3 { font-size: 1.3rem; }
+    .s-body ol { display: none; }
+  }
+
+  .contribute { margin-top: 5rem; background: var(--ink); color: var(--on-ink); padding: 0 0 4.5rem; position: relative; overflow: hidden; }
+  .contribute::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(700px 300px at 90% 10%, color-mix(in srgb, var(--accent) 40%, transparent), transparent 70%);
+  }
+  .band-top { margin-bottom: 4rem; position: relative; z-index: 1; }
+  .contribute-inner { position: relative; display: grid; gap: 3rem; grid-template-columns: 1.2fr 1fr; align-items: center; }
+  .contribute h2 { margin: 0 0 1rem; font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+  .kicker.light { color: #fdba74; }
+  .c-lead { opacity: .8; font-size: 1.1rem; max-width: 52ch; margin: 0 0 2rem; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+  .steps li {
+    display: flex; gap: 1rem; align-items: flex-start; padding: 1.1rem 1.25rem; border-radius: var(--radius-sm);
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  }
+  .steps b { background: #fdba74; color: #1a0f08; }
+  .steps strong { display: block; font-size: 1.05rem; }
+  .steps span { opacity: .85; }
+  @media (max-width: 900px) { .contribute-inner { grid-template-columns: 1fr; } }
+</style>

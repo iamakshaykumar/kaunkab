@@ -1,8 +1,12 @@
 ---
 import type { Article } from '../lib/content';
 import { formatKab } from '../lib/dates';
-import { getEra } from '../lib/eras';
-import { t } from '../i18n/hi';
+import { eraLabel } from '../lib/eras';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 
 interface Props {
   article: Article;
@@ -15,10 +19,10 @@ const toc = headings.filter((h) => h.depth === 2);
 ---
 <aside class={`aside era-${d.era}`}>
   <div class="facts">
-    <p class="kicker">एक नज़र में</p>
+    <p class="kicker">{s("एक नज़र में", "At a glance")}</p>
     <dl>
-      <div><dt>{t.kab}</dt><dd>{formatKab(d.kab)}</dd></div>
-      <div><dt>काल</dt><dd><a href={`/kaal/${d.era}/`}>{getEra(d.era).label}</a></dd></div>
+      <div><dt>{t.kab}</dt><dd>{formatKab(d.kab, lang)}</dd></div>
+      <div><dt>{s("काल", "Era")}</dt><dd><a href={L(`/kaal/${d.era}/`)}>{eraLabel(d.era, lang)}</a></dd></div>
       {d.kaun?.length ? <div><dt>{t.kaun}</dt><dd>{d.kaun.join(', ')}</dd></div> : null}
       {d.kahan?.length ? <div><dt>{t.kahan}</dt><dd>{d.kahan.join(', ')}</dd></div> : null}
     </dl>
@@ -26,8 +30,8 @@ const toc = headings.filter((h) => h.depth === 2);
 
   {toc.length > 1 && (
     <details class="toc" open data-toc-details>
-      <summary><span class="kicker">इस लेख में</span><span class="count">{toc.length} भाग</span></summary>
-      <nav aria-label="इस लेख में">
+      <summary><span class="kicker">{s("इस लेख में", "In this article")}</span><span class="count">{toc.length} {s("भाग", "parts")}</span></summary>
+      <nav aria-label={s("इस लेख में", "In this article")}>
         <ol>
           {toc.map((h) => <li><a href={`#${h.slug}`} data-toc={h.slug}>{h.text}</a></li>)}
         </ol>

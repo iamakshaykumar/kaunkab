@@ -3,22 +3,27 @@ import { ERAS } from '../lib/eras';
 import { articleUrl, getSeriesList, slugOf, type Article } from '../lib/content';
 import { formatYear } from '../lib/dates';
 import { findImage } from '../lib/images';
-import { findAudio, MUSIC_CREDIT } from '../lib/audio';
+import { findAudio, MUSIC_CREDIT, MUSIC_CREDIT_EN } from '../lib/audio';
+import { langFromUrl, localize, pick } from '../i18n';
 
 interface Props {
   articles: Article[];
 }
 const { articles } = Astro.props;
+const lang = langFromUrl(Astro.url);
+const tr = pick(lang);
+const credit = lang === 'en' ? MUSIC_CREDIT_EN : MUSIC_CREDIT;
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 const hoursMin = (s: number) => {
   const h = Math.floor(s / 3600);
   const m = Math.round((s % 3600) / 60);
+  if (lang === 'en') return h ? `${h} hr ${m} min` : `${m} min`;
   return h ? `${h} घंटा ${m} मिनट` : `${m} मिनट`;
 };
 
-const seriesAll = (await getSeriesList()).map((s) => {
-  const id = s.id.replace(/^hi\//, '');
+const seriesAll = (await getSeriesList(lang)).map((s) => {
+  const id = s.id.replace(/^[a-z]{2}\//, '');
   return { id, title: s.data.title, description: s.data.description, img: findImage(`series/${id}`) };
 });
 const seriesById = new Map(seriesAll.map((s, i) => [s.id, { ...s, rank: i }]));
@@ -33,7 +38,7 @@ const tracks = articles.flatMap((a) => {
     title: a.data.title,
     saar: a.data.saar,
     era: a.data.era,
-    year: formatYear(a.data.kab.start),
+    year: formatYear(a.data.kab.start, lang),
     src: audio.src,
     sec: audio.seconds,
     href: articleUrl(a),
@@ -42,7 +47,7 @@ const tracks = articles.flatMap((a) => {
     stitle: s?.title ?? '',
     srank: s?.rank ?? 999,
     sorder: a.data.series?.order ?? 999,
-    text: [a.data.title, a.data.saar, s?.title ?? '', ...(a.data.kaun ?? []), ...(a.data.kahan ?? []), formatYear(a.data.kab.start)]
+    text: [a.data.title, a.data.saar, s?.title ?? '', ...(a.data.kaun ?? []), ...(a.data.kahan ?? []), formatYear(a.data.kab.start, lang)]
       .join(' ')
       .toLowerCase(),
   }];
@@ -59,16 +64,16 @@ const first = tracks[0];
 ---
 <div class="ab" data-ab>
   <p class="ab-stats">
-    <span><strong>{tracks.length}</strong> कहानियाँ</span>
-    <span><strong>{series.length}</strong> शृंखलाएँ</span>
-    <span><strong>{totalHours}</strong> घंटे</span>
-    <span>एक कहानी ख़त्म होते ही अगली अपने-आप शुरू</span>
+    <span><strong>{tracks.length}</strong> {tr("कहानियाँ", "stories")}</span>
+    <span><strong>{series.length}</strong> {tr("शृंखलाएँ", "series")}</span>
+    <span><strong>{totalHours}</strong> {tr("घंटे", "hours")}</span>
+    <span>{tr("एक कहानी ख़त्म होते ही अगली अपने-आप शुरू", "The next story starts on its own · narration in Hindi")}</span>
   </p>
 
   <div class="ab-grid">
     <!-- ===== now playing ===== -->
-    <aside class="player" data-player aria-label="ऑडियो प्लेयर">
-      <button type="button" class="p-expand" data-expand aria-label="प्लेयर बड़ा करें" aria-expanded="false">
+    <aside class="player" data-player aria-label={tr("ऑडियो प्लेयर", "Audio player")}>
+      <button type="button" class="p-expand" data-expand aria-label={tr("प्लेयर बड़ा करें", "Expand player")} aria-expanded="false">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
       </button>
       <div class="p-cover">
@@ -83,70 +88,70 @@ const first = tracks[0];
       </div>
 
       <div class="p-seek-wrap">
-        <input type="range" class="p-seek" data-p-seek min="0" max="100" value="0" step="0.1" aria-label="कहानी में आगे-पीछे जाएँ" />
+        <input type="range" class="p-seek" data-p-seek min="0" max="100" value="0" step="0.1" aria-label={tr("कहानी में आगे-पीछे जाएँ", "Seek within the story")} />
         <div class="p-times"><span data-p-cur>0:00</span><span data-p-dur>{first && fmt(first.sec)}</span></div>
       </div>
 
       <div class="p-controls">
-        <button type="button" class="c-btn c-sm" data-p-prev aria-label="पिछली कहानी" title="पिछली कहानी">
+        <button type="button" class="c-btn c-sm" data-p-prev aria-label={tr("पिछली कहानी", "Previous story")} title={tr("पिछली कहानी", "Previous story")}>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 5.5v13l-9-6.5zM5.5 5H8v14H5.5z"/></svg>
         </button>
-        <button type="button" class="c-btn c-sm c-skip" data-p-back aria-label="15 सेकंड पीछे" title="15 सेकंड पीछे">
+        <button type="button" class="c-btn c-sm c-skip" data-p-back aria-label={tr("15 सेकंड पीछे", "Back 15 seconds")} title={tr("15 सेकंड पीछे", "Back 15 seconds")}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
           <span>15</span>
         </button>
-        <button type="button" class="c-btn c-play" data-p-play aria-label="चलाएँ">
+        <button type="button" class="c-btn c-play" data-p-play aria-label={tr("चलाएँ", "Play")}>
           <svg class="i-play" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
           <svg class="i-pause" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
         </button>
-        <button type="button" class="c-btn c-sm c-skip" data-p-fwd aria-label="15 सेकंड आगे" title="15 सेकंड आगे">
+        <button type="button" class="c-btn c-sm c-skip" data-p-fwd aria-label={tr("15 सेकंड आगे", "Forward 15 seconds")} title={tr("15 सेकंड आगे", "Forward 15 seconds")}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
           <span>15</span>
         </button>
-        <button type="button" class="c-btn c-sm" data-p-next aria-label="अगली कहानी" title="अगली कहानी">
+        <button type="button" class="c-btn c-sm" data-p-next aria-label={tr("अगली कहानी", "Next story")} title={tr("अगली कहानी", "Next story")}>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16 5h2.5v14H16z"/></svg>
         </button>
       </div>
 
       <div class="p-opts">
-        <button type="button" class="o-btn" data-p-speed aria-label="गति बदलें" title="गति बदलें">1×</button>
-        <button type="button" class="o-btn on" data-p-auto aria-pressed="true" title="एक के बाद एक अपने-आप चलाएँ">
+        <button type="button" class="o-btn" data-p-speed aria-label={tr("गति बदलें", "Change speed")} title={tr("गति बदलें", "Change speed")}>1×</button>
+        <button type="button" class="o-btn on" data-p-auto aria-pressed="true" title={tr("एक के बाद एक अपने-आप चलाएँ", "Play one after another")}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg>
-          लगातार
+          {tr("लगातार", "Autoplay")}
         </button>
-        <a class="o-btn" data-p-href href={first?.href}>लेख पढ़ें →</a>
+        <a class="o-btn" data-p-href href={first?.href}>{tr("लेख पढ़ें →", "Read article →")}</a>
       </div>
-      <p class="p-credit">आवाज़: कंप्यूटर-जनित (AI) · <a href={MUSIC_CREDIT.url} rel="noopener">{MUSIC_CREDIT.text}</a></p>
+      <p class="p-credit">{tr("आवाज़: कंप्यूटर-जनित (AI)", "Narration in Hindi, computer-generated (AI)")} · <a href={credit.url} rel="noopener">{credit.text}</a></p>
       <audio preload="none" data-p-audio></audio>
     </aside>
 
     <!-- ===== playlist ===== -->
-    <section class="list" aria-label="कहानियों की सूची" data-list>
+    <section class="list" aria-label={tr("कहानियों की सूची", "Story list")} data-list>
       <div class="l-tools">
-        <div class="l-modes" role="group" aria-label="सूची का क्रम">
+        <div class="l-modes" role="group" aria-label={tr("सूची का क्रम", "List order")}>
           <button type="button" class="l-mode active" data-mode="time" aria-pressed="true">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            समय-क्रम में
+            {tr("समय-क्रम में", "By time")}
           </button>
           <button type="button" class="l-mode" data-mode="series" aria-pressed="false">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V5M9 19V5M14 19 18 5l3 1-4 14z"/></svg>
-            शृंखला के अनुसार
+            {tr("शृंखला के अनुसार", "By series")}
           </button>
         </div>
         <label class="l-find">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <span class="sr-only">कहानी खोजें</span>
-          <input type="search" data-l-find placeholder="कहानी, व्यक्ति, जगह या साल खोजें…" autocomplete="off" />
+          <span class="sr-only">{tr("कहानी खोजें", "Search stories")}</span>
+          <input type="search" data-l-find placeholder={tr("कहानी, व्यक्ति, जगह या साल खोजें…", "Search a story, person, place or year…")} autocomplete="off" />
         </label>
-        <div class="l-chips" role="group" aria-label="काल चुनें" data-l-chips>
-          <button type="button" class="l-chip active" data-l-era="all" aria-pressed="true">सभी <span>{tracks.length}</span></button>
+        <div class="l-chips" role="group" aria-label={tr("काल चुनें", "Choose an era")} data-l-chips>
+          <button type="button" class="l-chip active" data-l-era="all" aria-pressed="true">{tr("सभी", "All")} <span>{tracks.length}</span></button>
           {eraCounts.map((e) => (
-            <button type="button" class={`l-chip era-${e.id}`} data-l-era={e.id} aria-pressed="false"><span class="era-dot"></span>{e.label} <span>{e.n}</span></button>
+            <button type="button" class={`l-chip era-${e.id}`} data-l-era={e.id} aria-pressed="false"><span class="era-dot"></span>{lang === "en" ? e.labelEn : e.label} <span>{e.n}</span></button>
           ))}
         </div>
         <div class="l-bar">
           <p class="l-status" aria-live="polite" data-l-status></p>
-          <button type="button" class="l-jump" data-l-jump hidden>अभी चल रही कहानी पर जाएँ ↓</button>
+          <button type="button" class="l-jump" data-l-jump hidden>{tr("अभी चल रही कहानी पर जाएँ ↓", "Go to the story now playing ↓")}</button>
         </div>
       </div>
 
@@ -159,11 +164,11 @@ const first = tracks[0];
               <span class="sh-img" aria-hidden="true">
                 {s.img ? <img src={s.img} alt="" width="320" height="180" loading="lazy" decoding="async" /> : <span class="sh-noimg"></span>}
                 <span class="sh-num">{i + 1}</span>
-                <span class="sh-now">अभी चल रही</span>
+                <span class="sh-now">{tr("अभी चल रही", "Now playing")}</span>
               </span>
               <span class="sh-body">
                 <strong>{s.title}</strong>
-                <span class="sh-meta">{s.n} कहानियाँ · {hoursMin(s.sec)}</span>
+                <span class="sh-meta">{s.n} {tr("कहानियाँ", "stories")} · {hoursMin(s.sec)}</span>
                 <span class="sh-prog"><span class="sh-track"><span class="sh-bar" data-sh-bar></span></span><span data-sh-done></span></span>
               </span>
             </button>
@@ -175,21 +180,21 @@ const first = tracks[0];
       <div class="s-head" data-s-head hidden>
         <button type="button" class="s-back" data-s-back>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-          सभी शृंखलाएँ
+          {tr("सभी शृंखलाएँ", "All series")}
         </button>
         <div class="s-hero">
           <img data-s-img alt="" width="320" height="180" />
           <div class="s-text">
-            <p class="s-kicker">शृंखला <span data-s-pos></span></p>
+            <p class="s-kicker">{tr("शृंखला", "Series")} <span data-s-pos></span></p>
             <h3 data-s-title></h3>
             <p class="s-desc" data-s-desc></p>
             <p class="s-meta" data-s-meta></p>
             <div class="s-actions">
               <button type="button" class="s-play" data-s-play>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
-                शृंखला शुरू से सुनें
+                {tr("शृंखला शुरू से सुनें", "Play the series from the start")}
               </button>
-              <a class="s-link" data-s-link href="/series/">शृंखला पेज →</a>
+              <a class="s-link" data-s-link href={localize("/series/", lang)}>{tr("शृंखला पेज →", "Series page →")}</a>
             </div>
           </div>
         </div>
@@ -200,7 +205,7 @@ const first = tracks[0];
           <li class={`track era-${t.era}`} data-slug={t.slug} data-src={t.src} data-sec={t.sec} data-era={t.era}
             data-title={t.title} data-saar={t.saar} data-href={t.href} data-img={t.img ?? ''} data-year={t.year} data-text={t.text}
             data-series={t.series} data-stitle={t.stitle} data-srank={t.srank} data-sorder={t.sorder} data-tnum={i + 1}>
-            <button type="button" class="t-btn" aria-label={`"${t.title}" सुनें`}>
+            <button type="button" class="t-btn" aria-label={tr(`"${t.title}" सुनें`, `Listen to "${t.title}"`)}>
               <span class="t-num">{i + 1}</span>
               <span class="t-thumb" aria-hidden="true">
                 {t.img ? <img src={t.img} alt="" width="96" height="54" loading="lazy" decoding="async" /> : <span class="t-noimg"></span>}
@@ -211,7 +216,7 @@ const first = tracks[0];
               </span>
               <span class="t-body">
                 <strong class="clamp-1">{t.title}</strong>
-                <span class="t-sub"><span class="t-year">{t.year}</span><span class="t-series clamp-1">{t.stitle}</span><span class="t-done">सुन लिया</span></span>
+                <span class="t-sub"><span class="t-year">{t.year}</span><span class="t-series clamp-1">{t.stitle}</span><span class="t-done">{tr("सुन लिया", "Listened")}</span></span>
               </span>
               <span class="t-dur">{fmt(t.sec)}</span>
             </button>
@@ -219,7 +224,7 @@ const first = tracks[0];
           </li>
         ))}
       </ol>
-      <p class="l-empty" data-l-empty hidden>कोई कहानी नहीं मिली। कोई और शब्द आज़माएँ।</p>
+      <p class="l-empty" data-l-empty hidden>{tr("कोई कहानी नहीं मिली। कोई और शब्द आज़माएँ।", "No stories found. Try another word.")}</p>
     </section>
   </div>
 </div>
@@ -256,7 +261,12 @@ const first = tracks[0];
     const cards = [...root.querySelectorAll<HTMLButtonElement>('[data-pick]')];
     const sHead = $('[data-s-head]');
     const tracksEl = $('[data-tracks]');
-    const ERA_LABEL: Record<string, string> = { prachin: 'प्राचीन', madhyakaal: 'मध्यकाल', adhunik: 'आधुनिक' };
+    const EN = document.documentElement.lang === 'en';
+    const S = (hi: string, en: string) => (EN ? en : hi);
+    const P = EN ? '/en' : '';
+    const ERA_LABEL: Record<string, string> = EN
+      ? { prachin: 'Ancient', madhyakaal: 'Medieval', adhunik: 'Modern' }
+      : { prachin: 'प्राचीन', madhyakaal: 'मध्यकाल', adhunik: 'आधुनिक' };
 
     const byTime = [...root.querySelectorAll<HTMLLIElement>('.track')];
     const bySeries = [...byTime].sort(
@@ -277,7 +287,7 @@ const first = tracks[0];
         const all = byTime.filter((li) => li.dataset.series === c.dataset.pick);
         const n = all.filter((li) => done.has(li.dataset.slug!)).length;
         c.querySelector<HTMLElement>('[data-sh-bar]')!.style.width = `${(n / all.length) * 100}%`;
-        c.querySelector<HTMLElement>('[data-sh-done]')!.textContent = `${n}/${all.length} सुनी`;
+        c.querySelector<HTMLElement>('[data-sh-done]')!.textContent = `${n}/${all.length} ${S('सुनी', 'heard')}`;
         c.classList.toggle('started', n > 0);
       });
     };
@@ -317,7 +327,7 @@ const first = tracks[0];
       eraEl.textContent = `${ERA_LABEL[d.era!] ?? ''} · ${d.year}`;
       player.className = `player era-${d.era}${player.classList.contains('open') ? ' open' : ''}`;
       pSeries.hidden = !d.series;
-      pSeries.textContent = `शृंखला: ${d.stitle} · भाग ${d.sorder}`;
+      pSeries.textContent = `${S('शृंखला', 'Series')}: ${d.stitle} · ${S('भाग', 'part')} ${d.sorder}`;
       hrefEl.href = d.href!;
       if (d.img) { img.src = d.img; img.hidden = false; } else img.hidden = true;
       dur.textContent = fmt(+d.sec!);
@@ -328,7 +338,7 @@ const first = tracks[0];
       store.set('last', d.slug!);
       if ('mediaSession' in navigator) {
         navigator.mediaSession.metadata = new MediaMetadata({
-          title: d.title!, artist: 'कौन कब', album: d.stitle || 'ऑडियोबुक — भारतीय इतिहास',
+          title: d.title!, artist: S('कौन कब', 'Kaun Kab'), album: d.stitle || S('ऑडियोबुक — भारतीय इतिहास', 'Audiobook — Indian history'),
           artwork: d.img ? [{ src: new URL(d.img, location.href).href, sizes: '640x360' }] : [],
         });
       }
@@ -367,7 +377,7 @@ const first = tracks[0];
     function syncPlaying() {
       const on = !au.paused;
       root!.classList.toggle('playing', on);
-      playBtn.setAttribute('aria-label', on ? 'रोकें' : 'चलाएँ');
+      playBtn.setAttribute('aria-label', on ? S('रोकें', 'Pause') : S('चलाएँ', 'Play'));
       if ('mediaSession' in navigator) navigator.mediaSession.playbackState = on ? 'playing' : 'paused';
     }
     au.addEventListener('play', syncPlaying);
@@ -409,7 +419,7 @@ const first = tracks[0];
     const setOpen = (open: boolean) => {
       player.classList.toggle('open', open);
       expandBtn.setAttribute('aria-expanded', String(open));
-      expandBtn.setAttribute('aria-label', open ? 'प्लेयर छोटा करें' : 'प्लेयर बड़ा करें');
+      expandBtn.setAttribute('aria-label', open ? S('प्लेयर छोटा करें', 'Collapse player') : S('प्लेयर बड़ा करें', 'Expand player'));
     };
     expandBtn.addEventListener('click', () => setOpen(!player.classList.contains('open')));
     // tap the series name in the player to open that series' list
@@ -476,9 +486,9 @@ const first = tracks[0];
         if (ok) n++;
       });
       empty.hidden = showShelf || n > 0;
-      if (showShelf) status.textContent = `${cards.length} शृंखलाएँ — कोई भी चुनें, कहानियाँ उसी क्रम में चलेंगी`;
-      else if (mode === 'series' && series && !q) status.textContent = `${n} कहानियाँ · शृंखला के क्रम में`;
-      else status.textContent = q || era !== 'all' ? `${n} कहानियाँ मिलीं` : `${items.length} कहानियाँ · समय-क्रम में`;
+      if (showShelf) status.textContent = S(`${cards.length} शृंखलाएँ — कोई भी चुनें, कहानियाँ उसी क्रम में चलेंगी`, `${cards.length} series — pick one and its stories play in order`);
+      else if (mode === 'series' && series && !q) status.textContent = S(`${n} कहानियाँ · शृंखला के क्रम में`, `${n} stories · in series order`);
+      else status.textContent = q || era !== 'all' ? S(`${n} कहानियाँ मिलीं`, `${n} stories found`) : S(`${items.length} कहानियाँ · समय-क्रम में`, `${items.length} stories · in time order`);
       updatePos();
       updateJump();
     }
@@ -505,9 +515,9 @@ const first = tracks[0];
         if (d.img) { im.src = d.img; im.hidden = false; } else im.hidden = true;
         $('[data-s-title]').textContent = d.title!;
         $('[data-s-desc]').textContent = d.desc!;
-        $('[data-s-meta]').textContent = `${d.n} कहानियाँ · ${d.len}`;
+        $('[data-s-meta]').textContent = `${d.n} ${S('कहानियाँ', 'stories')} · ${d.len}`;
         $('[data-s-pos]').textContent = `${cards.indexOf(c) + 1} / ${cards.length}`;
-        $<HTMLAnchorElement>('[data-s-link]').href = `/series/${id}/`;
+        $<HTMLAnchorElement>('[data-s-link]').href = `${P}/series/${id}/`;
       }
       apply();
       if (scroll) scrollToList();

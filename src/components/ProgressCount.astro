@@ -13,7 +13,7 @@ const { slugs } = Astro.props;
     const slugs: string[] = JSON.parse(el.dataset.progressSlugs || '[]');
     const n = slugs.filter((s) => read.has(s)).length;
     if (slugs.length === 0) return;
-    el.textContent = `${n}/${slugs.length} पढ़े`;
+    el.textContent = `${n}/${slugs.length} ${document.documentElement.lang === 'en' ? 'read' : 'पढ़े'}`;
     el.hidden = false;
     if (n === slugs.length) el.classList.add('complete');
   });

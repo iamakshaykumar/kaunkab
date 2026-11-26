@@ -1,5 +1,9 @@
 ---
-import { t } from '../i18n/hi';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 ---
 <section class="dyk" data-did-you-know aria-live="polite">
   <div class="head">
@@ -8,13 +12,16 @@ import { t } from '../i18n/hi';
     </span>
     <div>
       <p class="kicker">{t.didYouKnow}</p>
-      <p class="sub">रोज़ एक नया तथ्य</p>
+      <p class="sub">{s("रोज़ एक नया तथ्य", "A new fact every day")}</p>
     </div>
   </div>
   <div data-body class="body"><div class="skeleton"></div></div>
 </section>
 
 <script>
+  const EN = document.documentElement.lang === 'en';
+  const S = (hi: string, en: string) => (EN ? en : hi);
+  const P = EN ? '/en' : '';
   import { pickDaily } from '../lib/daily';
 
   interface Fact { text: string; slug: string; title: string }
@@ -25,13 +32,13 @@ import { t } from '../i18n/hi';
     if (!root) return;
     const body = root.querySelector<HTMLElement>('[data-body]')!;
     try {
-      const facts: Fact[] = await (await fetch('/data/jaankari.json')).json();
+      const facts: Fact[] = await (await fetch(`${P}/data/jaankari.json`)).json();
       const f = pickDaily(facts, new Date());
       body.innerHTML = f
-        ? `<blockquote class="fact">${esc(f.text)}</blockquote><a class="more" href="/lekh/${esc(f.slug)}/">पढ़ें: ${esc(f.title)} →</a>`
-        : '<p class="empty">जल्द ही नए तथ्य आएँगे।</p>';
+        ? `<blockquote class="fact">${esc(f.text)}</blockquote><a class="more" href="${P}/lekh/${esc(f.slug)}/">${S('पढ़ें', 'Read')}: ${esc(f.title)} →</a>`
+        : `<p class="empty">${S('जल्द ही नए तथ्य आएँगे।', 'New facts coming soon.')}</p>`;
     } catch {
-      body.innerHTML = '<p class="empty">अभी जानकारी लोड नहीं हो सकी।</p>';
+      body.innerHTML = `<p class="empty">${S('अभी जानकारी लोड नहीं हो सकी।', 'Could not load right now.')}</p>`;
     }
   }
   load();

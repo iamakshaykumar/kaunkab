@@ -1,5 +1,9 @@
 ---
-import { t } from '../i18n/hi';
+import { langFromUrl, localize, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const L = (p: string) => localize(p, lang);
 interface Props {
   sources: { title: string; url?: string }[];
 }

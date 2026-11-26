@@ -1,0 +1,130 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import { langFromUrl, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+---
+<Base title={t.about} description={s("कौन कब क्या है और कैसे काम करता है।", "What Kaun Kab is and how it works.")}>
+  <PageHero kicker={s("हमारे बारे में", "About us")} title={t.about} lead={s("भारतीय इतिहास — सरल हिंदी में, स्रोतों के साथ, सबके लिए मुफ़्त।", "Indian history — in simple words, with sources, free for everyone.")} />
+  <div class="container prose">
+    {lang === 'en' ? (<>
+    <p>
+      <strong>Kaun Kab</strong> ("Who, When") is a free, open-source place to read Indian history in simple language, with sources.
+      Every article tells you <em>who</em> was involved, <em>when</em> it happened, <em>where</em> it happened, and why it still matters today.
+      The site was first written in Hindi; this English edition is a translation of the same articles.
+    </p>
+    <p><strong>Kaun Kab — An initiative of AMGR Foundation.</strong></p>
+    <h2>Our principles</h2>
+    <ul>
+      <li><strong>A source for everything:</strong> every article must cite at least one reliable source.</li>
+      <li><strong>Simple language:</strong> for everyone, from students to grandparents.</li>
+      <li><strong>Balance:</strong> where historians disagree, the different views are presented.</li>
+      <li><strong>Openness:</strong> anyone can fix a mistake or add a new article.</li>
+    </ul>
+    <h2>How does it work?</h2>
+    <p>
+      The whole site is on <a href="https://github.com/iamakshaykumar/kaunkab">GitHub</a>. Articles are plain-text (Markdown) files.
+      Every change comes in as a "Pull Request" and is added after review. The site is hosted for free on GitHub Pages —
+      no ads, no login. To understand which pages are read, the site collects anonymous usage statistics through Google Tag Manager.
+      Your reading progress stays only in your browser.
+    </p>
+
+    <h2 id="sampadan">Editorial policy</h2>
+    <p>
+      Every article is written or checked by the <strong>Kaun Kab editorial team</strong>. When a named person wrote or checked an article,
+      the author and fact-checker are shown at the top of it. English articles are translated from the Hindi originals and may lag behind
+      the Hindi edition after an update.
+    </p>
+    <ul>
+      <li><strong>Sources:</strong> every article ends with a list of sources. We prefer NCERT textbooks, the Archaeological Survey of India (ASI), UNESCO and published histories.</li>
+      <li><strong>Dates:</strong> every article shows its publication date and, after a major change, the date it was updated.</li>
+      <li><strong>Disagreements:</strong> where historians do not agree on a date or an event, both views are given with sources.</li>
+      <li><strong>Review:</strong> every change is proposed and reviewed publicly on GitHub, so the full history of every revision can be seen.</li>
+    </ul>
+
+    <h2 id="sudhar">Corrections policy</h2>
+    <p>
+      If a fact looks wrong, click "Improve this page" at the bottom of the article, or
+      <a href="https://github.com/iamakshaykumar/kaunkab/issues/new/choose">report a mistake on GitHub</a>. Reports that come with a source
+      are checked first, and when a correction is made the article's updated date changes.
+    </p>
+
+    <h2>Licence</h2>
+    <p>
+      Articles are under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — you may use and share them with credit.
+      The code is under the MIT licence.
+    </p>
+
+    <h3 id="shrey">How to give credit</h3>
+    <p>When you use an article, add a line like this:</p>
+    <blockquote>
+      Source: "Article title", Kaun Kab (https://kaunkab.com/en/lekh/…/), under CC BY-SA 4.0.
+    </blockquote>
+    <ul>
+      <li>If you use it on a website, always link to the article's page.</li>
+      <li>If you publish a changed or extended version, your version must also be shared under CC BY-SA 4.0.</li>
+      <li>Images may have a different licence — each image shows its credit and licence below it.</li>
+    </ul>
+    <p><a class="btn btn-primary" href="/en/yogdan/">{t.contribute} →</a></p>
+    </>) : (<>
+    <p>
+      <strong>कौन कब</strong> भारतीय इतिहास को सरल हिंदी में, स्रोतों के साथ पढ़ने की एक मुफ़्त और ओपन सोर्स जगह है।
+      यहाँ हर लेख बताता है — <em>कौन</em> थे, <em>कब</em> हुआ, <em>कहाँ</em> हुआ, और यह आज क्यों मायने रखता है।
+    </p>
+    <p><strong>कौन कब — An initiative of AMGR Foundation.</strong></p>
+    <h2>हमारे सिद्धांत</h2>
+    <ul>
+      <li><strong>हर बात का स्रोत:</strong> हर लेख में कम से कम एक विश्वसनीय स्रोत होना ज़रूरी है।</li>
+      <li><strong>सरल भाषा:</strong> छात्र से लेकर दादा-दादी तक, सबके लिए।</li>
+      <li><strong>संतुलन:</strong> जहाँ इतिहासकारों में मतभेद है, वहाँ अलग-अलग मत बताए जाते हैं।</li>
+      <li><strong>खुलापन:</strong> कोई भी गलती सुधार सकता है या नया लेख जोड़ सकता है।</li>
+    </ul>
+    <h2>यह कैसे चलता है?</h2>
+    <p>
+      पूरी साइट <a href="https://github.com/iamakshaykumar/kaunkab">GitHub</a> पर है। लेख साधारण टेक्स्ट (Markdown) फ़ाइलें हैं।
+      कोई भी बदलाव "Pull Request" के ज़रिए आता है, जिसे समीक्षा के बाद जोड़ा जाता है। साइट GitHub Pages पर मुफ़्त होस्ट होती है —
+      न कोई विज्ञापन, न कोई लॉगिन। कौन-से पन्ने पढ़े जाते हैं, यह समझने के लिए साइट Google Tag Manager से
+      गुमनाम उपयोग-आँकड़े जुटाती है। आपकी पढ़ने की प्रगति सिर्फ़ आपके ब्राउज़र में रहती है।
+    </p>
+
+    <h2 id="sampadan">संपादकीय नीति</h2>
+    <p>
+      हर लेख <strong>कौन कब संपादकीय टीम</strong> लिखती या जाँचती है। जिस लेख को किसी व्यक्ति ने लिखा या जाँचा है,
+      उसके ऊपर लेखक और तथ्य-जाँचकर्ता का नाम दिखता है।
+    </p>
+    <ul>
+      <li><strong>स्रोत:</strong> हर लेख के नीचे स्रोतों की सूची होती है। हम NCERT की पाठ्यपुस्तकें, भारतीय पुरातत्व सर्वेक्षण (ASI), UNESCO और प्रकाशित इतिहास-ग्रंथों को प्राथमिकता देते हैं।</li>
+      <li><strong>तारीख़ें:</strong> हर लेख पर प्रकाशन की तारीख़ और, बड़े बदलाव के बाद, अद्यतन की तारीख़ दिखती है।</li>
+      <li><strong>मतभेद:</strong> जहाँ तारीख़ या घटना पर इतिहासकार एकमत नहीं हैं, वहाँ दोनों मत स्रोत सहित लिखे जाते हैं।</li>
+      <li><strong>समीक्षा:</strong> हर बदलाव GitHub पर सार्वजनिक रूप से प्रस्तावित और जाँचा जाता है, इसलिए हर संशोधन का पूरा इतिहास देखा जा सकता है।</li>
+    </ul>
+
+    <h2 id="sudhar">सुधार नीति</h2>
+    <p>
+      कोई तथ्य गलत लगे तो लेख के नीचे "इस पेज को सुधारें" पर क्लिक करें, या
+      <a href="https://github.com/iamakshaykumar/kaunkab/issues/new/choose">GitHub पर गलती बताएँ</a>। स्रोत के साथ भेजी गई
+      सूचना को प्राथमिकता से जाँचा जाता है, और सुधार होने पर लेख की अद्यतन तारीख़ बदल दी जाती है।
+    </p>
+
+    <h2>लाइसेंस</h2>
+    <p>
+      लेख <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.hi">CC BY-SA 4.0</a> के तहत हैं — आप इन्हें श्रेय देकर
+      उपयोग और साझा कर सकते हैं। कोड MIT लाइसेंस के तहत है।
+    </p>
+
+    <h3 id="shrey">श्रेय कैसे दें</h3>
+    <p>किसी लेख का उपयोग करें तो उसके साथ ऐसी एक पंक्ति जोड़ें:</p>
+    <blockquote>
+      स्रोत: "लेख का शीर्षक", कौन कब (https://kaunkab.com/lekh/…/), CC BY-SA 4.0 के तहत।
+    </blockquote>
+    <ul>
+      <li>वेबसाइट पर उपयोग करें तो लेख के पन्ने का लिंक ज़रूर दें।</li>
+      <li>अगर आप लेख बदलकर या जोड़कर छापते हैं, तो आपका संस्करण भी CC BY-SA 4.0 के तहत ही साझा होना चाहिए।</li>
+      <li>चित्रों का लाइसेंस अलग हो सकता है — हर चित्र के नीचे उसका श्रेय और लाइसेंस लिखा है।</li>
+    </ul>
+    <p><a class="btn btn-primary" href="/yogdan/">{t.contribute} →</a></p>
+    </>)}
+  </div>
+</Base>

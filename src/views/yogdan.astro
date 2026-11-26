@@ -1,0 +1,97 @@
+---
+import Base from '../layouts/Base.astro';
+import { ERAS, eraRangeLabel } from '../lib/eras';
+import PageHero from '../components/PageHero.astro';
+import { langFromUrl, pick, ui } from '../i18n';
+const lang = langFromUrl(Astro.url);
+const t = ui(lang);
+const s = pick(lang);
+const repo = 'https://github.com/iamakshaykumar/kaunkab';
+---
+<Base title={t.contribute} description={s("कौन कब में गलती सुधारें या नया लेख जोड़ें — GitHub के ज़रिए।", "Fix a mistake or add a new article to Kaun Kab — through GitHub.")}>
+  <PageHero kicker={s("समुदाय", "Community")} title={t.contribute} lead={s("कौन कब समुदाय से बनता है। आपको प्रोग्रामिंग आने की ज़रूरत नहीं — बस एक मुफ़्त GitHub अकाउंट चाहिए।", "Kaun Kab is built by its community. You do not need to know programming — just a free GitHub account.")} />
+  <div class="container prose">
+    {lang === 'en' ? (<>
+    <p><a class="btn btn-primary" href="https://github.com/signup">Create a free GitHub account</a></p>
+
+    <h2>1. Fix a small mistake (2 minutes)</h2>
+    <ol>
+      <li>Click <strong>"{t.editPage}"</strong> at the bottom of any article.</li>
+      <li>The file opens on GitHub — make your change with the pencil (Edit) icon.</li>
+      <li>Write one line about your change below and press <strong>"Propose changes"</strong>.</li>
+      <li>Then press <strong>"Create pull request"</strong>. That's it! After review your change goes live on the site.</li>
+    </ol>
+    <p class="muted">English articles live in <code>src/content/articles/en/</code> and Hindi ones in <code>src/content/articles/hi/</code>, with the same file name.</p>
+
+    <h2>2. Write a new article</h2>
+    <ol>
+      <li>Open the <a href={`${repo}/blob/main/templates/article.md`}>article template</a> and copy its contents.</li>
+      <li><a href={`${repo}/new/main/src/content/articles/en`}>Create a new file here</a> — name it in Roman letters, like <code>vijaynagar-samrajya.md</code>.</li>
+      <li>Paste the template, fill in the details, and create a Pull Request.</li>
+    </ol>
+
+    <h2>Era boundaries</h2>
+    <ul>
+      {ERAS.map((e) => <li><code>{e.id}</code> — {e.labelEn}: {eraRangeLabel(e.id, 'en')}</li>)}
+    </ul>
+    <p class="muted">Write BCE years as negative numbers, e.g. 322 BCE = <code>-322</code>.</p>
+
+    <h2>Important rules</h2>
+    <ul>
+      <li>Give <strong>at least one source</strong> in every article — NCERT, reliable books or websites.</li>
+      <li><strong>Write in your own words</strong> — do not copy-paste from anywhere.</li>
+      <li>Where historians disagree, present the different views.</li>
+    </ul>
+
+    <h2>Automatic checks</h2>
+    <p>
+      As soon as a Pull Request is created an automatic check runs. If required information is missing (such as a source) or the era and
+      year do not match, a clear message appears there. Fix it and save the file again.
+    </p>
+    <p>
+      <a class="btn btn-primary" href={`${repo}/blob/main/CONTRIBUTING.md`}>Read the full guide</a>
+      <a class="btn" href={`${repo}/issues/new/choose`}>Suggest a topic / report a mistake</a>
+    </p>
+    </>) : (<>
+    <p><a class="btn btn-primary" href="https://github.com/signup">मुफ़्त GitHub अकाउंट बनाएँ</a></p>
+
+    <h2>1. छोटी गलती सुधारें (2 मिनट)</h2>
+    <ol>
+      <li>किसी भी लेख के नीचे <strong>"{t.editPage}"</strong> पर क्लिक करें।</li>
+      <li>GitHub पर फ़ाइल खुलेगी — पेंसिल (Edit) आइकन से बदलाव करें।</li>
+      <li>नीचे बदलाव के बारे में एक लाइन लिखें और <strong>"Propose changes"</strong> दबाएँ।</li>
+      <li>फिर <strong>"Create pull request"</strong> दबाएँ। बस! समीक्षा के बाद आपका बदलाव साइट पर आ जाएगा।</li>
+    </ol>
+
+    <h2>2. नया लेख लिखें</h2>
+    <ol>
+      <li><a href={`${repo}/blob/main/templates/article.md`}>लेख टेम्पलेट</a> खोलें और उसकी सामग्री कॉपी करें।</li>
+      <li><a href={`${repo}/new/main/src/content/articles/hi`}>यहाँ नई फ़ाइल बनाएँ</a> — नाम रोमन अक्षरों में, जैसे <code>vijaynagar-samrajya.md</code>।</li>
+      <li>टेम्पलेट चिपकाएँ, जानकारी भरें, और Pull Request बनाएँ।</li>
+    </ol>
+
+    <h2>काल की सीमाएँ</h2>
+    <ul>
+      {ERAS.map((e) => <li><code>{e.id}</code> — {e.label}: {eraRangeLabel(e.id)}</li>)}
+    </ul>
+    <p class="muted">ई.पू. (BCE) के साल ऋण संख्या में लिखें, जैसे 322 ई.पू. = <code>-322</code>।</p>
+
+    <h2>ज़रूरी नियम</h2>
+    <ul>
+      <li>हर लेख में <strong>कम से कम एक स्रोत</strong> दें — NCERT, विश्वसनीय किताबें या वेबसाइटें।</li>
+      <li><strong>अपने शब्दों में लिखें</strong> — कहीं से कॉपी-पेस्ट न करें।</li>
+      <li>जहाँ इतिहासकारों में मतभेद हो, वहाँ अलग-अलग मत बताएँ।</li>
+    </ul>
+
+    <h2>अपने आप जाँच</h2>
+    <p>
+      Pull Request बनते ही एक स्वचालित जाँच चलती है। अगर कोई ज़रूरी जानकारी छूट गई (जैसे स्रोत) या काल और साल मेल नहीं खाते,
+      तो वहाँ हिंदी में साफ़ संदेश दिखेगा। उसे ठीक करके फ़ाइल फिर से सेव करें।
+    </p>
+    <p>
+      <a class="btn btn-primary" href={`${repo}/blob/main/CONTRIBUTING.md`}>पूरी गाइड पढ़ें</a>
+      <a class="btn" href={`${repo}/issues/new/choose`}>विषय सुझाएँ / गलती बताएँ</a>
+    </p>
+    </>)}
+  </div>
+</Base>

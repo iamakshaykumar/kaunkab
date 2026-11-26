@@ -3,30 +3,32 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 export type Article = CollectionEntry<'articles'>;
 export type Series = CollectionEntry<'series'>;
 
-const LANG = 'hi';
+type Lang = 'hi' | 'en';
+const langOf = (entry: { id: string }): Lang => (entry.id.startsWith('en/') ? 'en' : 'hi');
 
 export const slugOf = (entry: { id: string }): string => entry.id.replace(/^[a-z]{2}\//, '');
 
-export const articleUrl = (entry: { id: string }): string => `/lekh/${slugOf(entry)}/`;
+export const articleUrl = (entry: { id: string }): string =>
+  `${langOf(entry) === 'en' ? '/en' : ''}/lekh/${slugOf(entry)}/`;
 
 export const editUrl = (entry: { id: string }): string =>
   `https://github.com/iamakshaykumar/kaunkab/edit/main/src/content/articles/${entry.id}.md`;
 
-/** All Hindi articles, chronological by kab.start. */
-export async function getArticles(): Promise<Article[]> {
-  const all = await getCollection('articles', (e) => e.id.startsWith(`${LANG}/`));
+/** All articles of a language (Hindi by default), chronological by kab.start. */
+export async function getArticles(lang: Lang = 'hi'): Promise<Article[]> {
+  const all = await getCollection('articles', (e) => e.id.startsWith(`${lang}/`));
   return all.sort((a, b) => a.data.kab.start - b.data.kab.start || a.id.localeCompare(b.id));
 }
 
-export async function getSeriesList(): Promise<Series[]> {
-  const all = await getCollection('series', (e) => e.id.startsWith(`${LANG}/`));
+export async function getSeriesList(lang: Lang = 'hi'): Promise<Series[]> {
+  const all = await getCollection('series', (e) => e.id.startsWith(`${lang}/`));
   return all.sort(
-    (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999) || a.data.title.localeCompare(b.data.title, 'hi'),
+    (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999) || a.data.title.localeCompare(b.data.title, lang),
   );
 }
 
-export async function getSeriesArticles(id: string): Promise<Article[]> {
-  return (await getArticles())
+export async function getSeriesArticles(id: string, lang: Lang = 'hi'): Promise<Article[]> {
+  return (await getArticles(lang))
     .filter((a) => a.data.series?.id === id)
     .sort((a, b) => a.data.series!.order - b.data.series!.order);
 }

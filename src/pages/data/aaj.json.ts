@@ -2,9 +2,10 @@ import type { APIRoute } from 'astro';
 import { getArticles, slugOf } from '../../lib/content';
 import type { DayEvent } from '../../lib/onThisDay';
 import { findImage } from '../../lib/images';
+import { langFromUrl } from '../../i18n';
 
-export const GET: APIRoute = async () => {
-  const events: DayEvent[] = (await getArticles())
+export const GET: APIRoute = async ({ url }) => {
+  const events: DayEvent[] = (await getArticles(langFromUrl(url)))
     .filter((a) => a.data.kab.month && a.data.kab.day)
     .map((a) => ({
       slug: slugOf(a),

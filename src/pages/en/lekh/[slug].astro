@@ -1,0 +1,6 @@
+---
+import View from '../../../views/lekh/article.astro';
+import { articlePaths } from '../../../lib/paths';
+export const getStaticPaths = () => articlePaths('en');
+---
+<View {...Astro.props} />
