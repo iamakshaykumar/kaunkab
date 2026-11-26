@@ -33,10 +33,26 @@ const haystack = (a: Article) =>
       <span class="sr-only">समयरेखा में ढूँढें</span>
       <input type="search" placeholder="नाम, जगह या साल…" data-find autocomplete="off" />
     </label>
+    <div class="view" role="group" aria-label="दिखाने का तरीका">
+      <button type="button" class="view-btn" data-view="list" aria-pressed="false" title="छोटी सूची — कम स्क्रॉल">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+        <span>सूची</span>
+      </button>
+      <button type="button" class="view-btn active" data-view="cards" aria-pressed="true" title="चित्र सहित कार्ड">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="4" width="18" height="7"/><rect x="3" y="14" width="18" height="7"/></svg>
+        <span>कार्ड</span>
+      </button>
+    </div>
     <p class="status" aria-live="polite" data-status></p>
   </div>
 
-  <div class="tl">
+  <a class="ab-link" href="/suno/">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg>
+    <span><strong>ऑडियोबुक</strong> — सारी कहानियाँ एक के बाद एक, लगातार सुनें</span>
+    <span aria-hidden="true">→</span>
+  </a>
+
+  <div class="tl" data-tl>
     {groups.map((g) => (
       <section class={`band era-${g.era.id}`} data-era={g.era.id} id={`kaal-${g.era.id}`}>
         <header class="band-head">
@@ -75,6 +91,9 @@ const haystack = (a: Article) =>
             );
           })}
         </ol>
+        <div class="more-row" data-more-row hidden>
+          <button type="button" class="more-btn" data-more>और <span data-more-n></span> घटनाएँ देखें</button>
+        </div>
       </section>
     ))}
     <p class="empty" hidden data-empty>कोई घटना नहीं मिली। कोई और शब्द आज़माएँ।</p>
@@ -90,11 +109,18 @@ const haystack = (a: Article) =>
       <input type="range" class="m-seek" data-m-seek min="0" max="100" value="0" step="0.1" aria-label="कहानी में आगे-पीछे जाएँ" />
     </div>
     <span class="m-time" data-m-time>0:00</span>
+    <button type="button" class="m-next" data-m-next aria-label="अगली कहानी" title="अगली कहानी">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16 5h2.5v14H16z"/></svg>
+    </button>
     <button type="button" class="m-close" data-m-close aria-label="प्लेयर बंद करें">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
     </button>
     <audio preload="none" data-m-audio></audio>
   </div>
+
+  <button type="button" class="to-top" data-to-top hidden aria-label="ऊपर जाएँ" title="ऊपर जाएँ">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 </div>
 
 <script>
@@ -109,6 +135,26 @@ const haystack = (a: Article) =>
     const time = mini.querySelector<HTMLElement>('[data-m-time]')!;
     const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
     let current: HTMLButtonElement | null = null;
+    const start = (btn: HTMLButtonElement) => {
+      current = btn;
+      au.src = btn.dataset.listen!;
+      title.textContent = btn.dataset.title!;
+      title.href = btn.dataset.href!;
+      mini.hidden = false;
+      au.play();
+    };
+    // next story = the next listen button after the current one that matches the active filter/search
+    const nextBtn = () => {
+      const all = [...document.querySelectorAll<HTMLButtonElement>('[data-listen]')].filter(
+        (b) => !b.closest('.band[hidden]') && !b.closest('.event[data-nomatch]'),
+      );
+      const i = current ? all.indexOf(current) : -1;
+      return all[i + 1];
+    };
+    const playNext = () => {
+      const n = nextBtn();
+      if (n) start(n); else sync();
+    };
     const sync = () => {
       const on = !au.paused;
       mini.classList.toggle('playing', on);
@@ -118,12 +164,7 @@ const haystack = (a: Article) =>
     document.querySelectorAll<HTMLButtonElement>('[data-listen]').forEach((btn) =>
       btn.addEventListener('click', () => {
         if (current === btn) { if (au.paused) au.play(); else au.pause(); return; }
-        current = btn;
-        au.src = btn.dataset.listen!;
-        title.textContent = btn.dataset.title!;
-        title.href = btn.dataset.href!;
-        mini.hidden = false;
-        au.play();
+        start(btn);
       }),
     );
     mini.querySelector('[data-m-play]')!.addEventListener('click', () => { if (au.paused) au.play(); else au.pause(); });
@@ -132,7 +173,8 @@ const haystack = (a: Article) =>
     });
     au.addEventListener('play', sync);
     au.addEventListener('pause', sync);
-    au.addEventListener('ended', sync);
+    au.addEventListener('ended', playNext);
+    mini.querySelector('[data-m-next]')!.addEventListener('click', playNext);
     au.addEventListener('timeupdate', () => {
       if (!au.duration) return;
       const p = (au.currentTime / au.duration) * 100;
@@ -154,7 +196,25 @@ const haystack = (a: Article) =>
     const find = root.querySelector<HTMLInputElement>('[data-find]')!;
     const status = root.querySelector<HTMLElement>('[data-status]')!;
     const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const tl = root.querySelector<HTMLElement>('[data-tl]')!;
+    const LIMIT = 6;
+    const expanded = new Set<string>();
     let era = 'all';
+
+    // view mode: compact list or cards (remembered per browser)
+    const viewBtns = root.querySelectorAll<HTMLButtonElement>('[data-view]');
+    const setView = (v: string, save = true) => {
+      tl.classList.toggle('compact', v === 'list');
+      viewBtns.forEach((b) => {
+        b.classList.toggle('active', b.dataset.view === v);
+        b.setAttribute('aria-pressed', String(b.dataset.view === v));
+      });
+      if (save) try { localStorage.setItem('kaunkab:tl-view', v); } catch {}
+    };
+    let saved: string | null = null;
+    try { saved = localStorage.getItem('kaunkab:tl-view'); } catch {}
+    setView(saved === 'cards' || saved === 'list' ? saved : matchMedia('(max-width: 860px)').matches ? 'list' : 'cards', false);
+    viewBtns.forEach((b) => b.addEventListener('click', () => setView(b.dataset.view!)));
 
     const apply = () => {
       const q = find.value.trim().toLowerCase();
@@ -162,8 +222,14 @@ const haystack = (a: Article) =>
       bands.forEach((band) => {
         const eraOk = era === 'all' || band.dataset.era === era;
         let side = 0;
+        let matches = 0;
+        // without a search, show only the first few events of each era until the reader asks for more
+        const cap = q || expanded.has(band.dataset.era!) ? Infinity : LIMIT;
         band.querySelectorAll<HTMLElement>('.event').forEach((ev) => {
-          const ok = eraOk && (!q || ev.dataset.text!.includes(q));
+          const match = eraOk && (!q || ev.dataset.text!.includes(q));
+          if (match) matches++;
+          ev.toggleAttribute('data-nomatch', !match);
+          const ok = match && matches <= cap;
           ev.hidden = !ok;
           if (ok) {
             // re-alternate sides so the interleaved desktop layout stays tidy after filtering
@@ -173,7 +239,11 @@ const haystack = (a: Article) =>
           }
         });
         band.hidden = side === 0;
-        shown += side;
+        shown += matches;
+        const rest = matches - side;
+        const row = band.querySelector<HTMLElement>('[data-more-row]')!;
+        row.hidden = rest <= 0;
+        row.querySelector('[data-more-n]')!.textContent = String(rest);
       });
       empty.hidden = shown > 0;
       status.textContent = q || era !== 'all' ? `${shown} घटनाएँ` : '';
@@ -192,6 +262,26 @@ const haystack = (a: Article) =>
         if (scrollY > top) scrollTo({ top });
       }),
     );
+    root.querySelectorAll<HTMLButtonElement>('[data-more]').forEach((b) =>
+      b.addEventListener('click', () => {
+        const band = b.closest<HTMLElement>('[data-era]')!;
+        const firstNew = band.querySelectorAll('.event:not([hidden])').length;
+        expanded.add(band.dataset.era!);
+        apply();
+        band.querySelectorAll<HTMLElement>('.event:not([hidden]) .ev-card')[firstNew]?.focus({ preventScroll: true });
+      }),
+    );
+    apply();
+
+    const toTop = root.querySelector<HTMLButtonElement>('[data-to-top]')!;
+    const onScroll = () => { toTop.hidden = scrollY < 900; };
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener('click', () => {
+      const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
+      scrollTo({ top: root.getBoundingClientRect().top + scrollY - headerH });
+    });
+
     let t: number | undefined;
     find.addEventListener('input', () => {
       clearTimeout(t);
@@ -226,8 +316,42 @@ const haystack = (a: Article) =>
   .status { margin: 0; font-size: .88rem; color: var(--muted); flex-basis: 100%; }
   .status:empty { display: none; }
 
+  .view { display: flex; border: 1px solid var(--border); background: var(--card); }
+  .view-btn {
+    display: inline-flex; align-items: center; gap: .35rem; font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer;
+    padding: .45rem .8rem; border: 0; background: transparent; color: var(--muted); min-height: 38px;
+  }
+  .view-btn + .view-btn { border-left: 1px solid var(--border); }
+  .view-btn:hover { color: var(--fg); }
+  .view-btn.active { background: var(--fg); color: var(--bg); }
+
+  .ab-link {
+    display: flex; align-items: center; gap: .75rem; margin: 0 0 .5rem; padding: .75rem 1rem; text-decoration: none; color: var(--fg);
+    background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--gold); font-size: .95rem;
+  }
+  .ab-link svg { flex: none; color: var(--gold); }
+  .ab-link span:nth-child(2) { flex: 1; }
+  .ab-link:hover { border-color: var(--accent); }
+  .ab-link:hover strong { color: var(--accent); }
+
+  .more-row { text-align: center; padding: 0 0 1.5rem; position: relative; z-index: 1; }
+  .more-row[hidden] { display: none; }
+  .more-btn {
+    font: inherit; font-weight: 700; font-size: .95rem; cursor: pointer; padding: .6rem 1.4rem; min-height: 44px;
+    color: var(--era); background: var(--card); border: 2px solid var(--era);
+  }
+  .more-btn:hover { background: var(--era); color: var(--card); }
+
+  .to-top {
+    position: fixed; right: 1rem; bottom: 1rem; z-index: 30; width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
+    display: grid; place-items: center; border: 1px solid var(--border); background: var(--card); color: var(--fg); box-shadow: var(--shadow-lg);
+  }
+  .to-top[hidden] { display: none; }
+  .to-top:hover { color: var(--accent); border-color: var(--accent); }
+  :global(body:has([data-mini]:not([hidden]))) .to-top { bottom: 5.5rem; }
+
   .band { padding: 2rem 0 1rem; }
-  .band[hidden], .event[hidden] { display: none; }
+  .band[hidden], .event[hidden], .compact .event[hidden] { display: none; }
   .band-head { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
   .band-pill { display: inline-block; font-size: .875rem; font-weight: 700; padding: .25rem .8rem; border-radius: 0; color: var(--era); background: color-mix(in srgb, var(--era) 12%, transparent); }
   .band-head h2 { margin: .6rem 0 .4rem; color: var(--era); font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
@@ -297,6 +421,8 @@ const haystack = (a: Article) =>
   .m-seek::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); }
   .m-seek::-moz-range-thumb { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 0; }
   .m-time { flex: none; font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .m-next { flex: none; width: 36px; height: 36px; border: 0; background: transparent; color: var(--fg); cursor: pointer; display: grid; place-items: center; }
+  .m-next:hover { color: var(--accent); }
   .m-close { flex: none; width: 36px; height: 36px; border: 0; background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
   .m-close:hover { color: var(--fg); }
 
@@ -316,5 +442,44 @@ const haystack = (a: Article) =>
     .when { display: none; }
     .ev-body strong { font-size: 1.05rem; }
     .saar { font-size: .86rem; }
+    .view-btn span { display: none; }
+    .ab-link { font-size: .9rem; }
+  }
+
+  /* ---- compact list view: one short row per event, far less scrolling ---- */
+  .compact .band { padding: 1rem 0 .5rem; }
+  .compact .band-head { margin-bottom: 1rem; text-align: left; max-width: none; display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .8rem; }
+  .compact .band-head h2 { margin: 0; font-size: 1.4rem; }
+  .compact .band-head p, .compact .band-head :global(.ornament) { display: none; }
+  .compact .events { padding-bottom: .75rem; border: 1px solid var(--border); background: var(--card); padding: 0; }
+  .compact .events::before { display: none; }
+  .compact .event {
+    display: grid; grid-template-columns: 5.5rem 1fr auto; align-items: center; column-gap: .75rem;
+    margin: 0 !important; padding: .1rem .5rem .1rem .75rem; border-top: 1px solid var(--border); contain-intrinsic-size: auto 52px;
+  }
+  .compact .event:first-child { border-top: 0; }
+  .compact .dot { display: none; }
+  .compact .year, .compact .left .year, .compact .right .year {
+    grid-column: 1; grid-row: 1; text-align: left; font-size: .95rem; margin: 0; font-family: var(--font-ui); font-variant-numeric: tabular-nums;
+  }
+  .compact .ev-cell, .compact .left .ev-cell, .compact .right .ev-cell { grid-column: 2 / 4; grid-row: 1; display: flex; align-items: center; gap: .5rem; }
+  .compact .ev-card {
+    flex: 1; min-width: 0; display: flex; align-items: center; gap: .6rem; padding: .55rem 0; min-height: 48px;
+    background: none; border: 0; box-shadow: none;
+  }
+  .compact .ev-card:hover { transform: none; box-shadow: none; }
+  .compact .ev-card::after { display: none; }
+  .compact .ev-card img, .compact .noimg, .compact .saar, .compact .when { display: none; }
+  .compact .ev-body { flex-direction: row; align-items: center; gap: .5rem; padding-right: 0 !important; }
+  .compact .ev-body strong { font-size: 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .compact .read { flex: none; }
+  .compact .listen { position: static; width: 34px; height: 34px; flex: none; box-shadow: none; }
+  .compact .event:hover { background: color-mix(in srgb, var(--era) 6%, transparent); }
+  .compact .more-row { padding: .75rem 0 1rem; }
+  @media (max-width: 860px) {
+    .compact .event { grid-template-columns: 4.2rem 1fr; padding-left: .6rem; }
+    .compact .ev-cell, .compact .left .ev-cell, .compact .right .ev-cell { grid-column: 2; }
+    .compact .year, .compact .left .year, .compact .right .year { font-size: .85rem; }
+    .compact .ev-body strong { font-size: .95rem; }
   }
 </style>

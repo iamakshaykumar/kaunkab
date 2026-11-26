@@ -19,7 +19,7 @@ const { audio, title } = Astro.props;
       <button type="button" class="speed" data-speed aria-label="गति बदलें">1×</button>
     </p>
     <input type="range" class="seek" data-seek min="0" max={audio.seconds} value="0" step="1" aria-label="कहानी में आगे-पीछे जाएँ" />
-    <p class="credit">आवाज़: कंप्यूटर-जनित (AI) · <a href={MUSIC_CREDIT.url} rel="noopener">{MUSIC_CREDIT.text}</a></p>
+    <p class="credit"><a class="ab" href={`/suno/?k=${audio.src.slice(7, -4)}`}>ऑडियोबुक में लगातार सुनें →</a> · आवाज़: कंप्यूटर-जनित (AI) · <a href={MUSIC_CREDIT.url} rel="noopener">{MUSIC_CREDIT.text}</a></p>
   </div>
   <audio preload="none" src={audio.src} data-audio></audio>
 </section>
@@ -85,6 +85,7 @@ const { audio, title } = Astro.props;
   .seek::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 2px solid var(--card); }
   .credit { margin: .2rem 0 0; font-size: .78rem; color: var(--muted); }
   .credit a { color: inherit; }
+  .credit a.ab { color: var(--accent); font-weight: 700; text-decoration: none; }
   @media (max-width: 600px) {
     .story { padding: .85rem; gap: .8rem; }
     .play { width: 48px; height: 48px; }

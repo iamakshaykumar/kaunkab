@@ -3,6 +3,7 @@ export const t = {
   tagline: 'भारतीय इतिहास — सरल भाषा में, स्रोतों के साथ',
   search: 'खोजें',
   timeline: 'समयरेखा',
+  audiobook: 'ऑडियोबुक',
   series: 'शृंखला',
   eras: 'काल',
   prachin: 'प्राचीन',

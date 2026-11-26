@@ -1,0 +1,810 @@
+---
+import { ERAS } from '../lib/eras';
+import { articleUrl, getSeriesList, slugOf, type Article } from '../lib/content';
+import { formatYear } from '../lib/dates';
+import { findImage } from '../lib/images';
+import { findAudio, MUSIC_CREDIT } from '../lib/audio';
+
+interface Props {
+  articles: Article[];
+}
+const { articles } = Astro.props;
+
+const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+const hoursMin = (s: number) => {
+  const h = Math.floor(s / 3600);
+  const m = Math.round((s % 3600) / 60);
+  return h ? `${h} घंटा ${m} मिनट` : `${m} मिनट`;
+};
+
+const seriesAll = (await getSeriesList()).map((s) => {
+  const id = s.id.replace(/^hi\//, '');
+  return { id, title: s.data.title, description: s.data.description, img: findImage(`series/${id}`) };
+});
+const seriesById = new Map(seriesAll.map((s, i) => [s.id, { ...s, rank: i }]));
+
+const tracks = articles.flatMap((a) => {
+  const slug = slugOf(a);
+  const audio = findAudio(slug);
+  if (!audio) return [];
+  const s = a.data.series ? seriesById.get(a.data.series.id) : undefined;
+  return [{
+    slug,
+    title: a.data.title,
+    saar: a.data.saar,
+    era: a.data.era,
+    year: formatYear(a.data.kab.start),
+    src: audio.src,
+    sec: audio.seconds,
+    href: articleUrl(a),
+    img: findImage(`lekh/${slug}-sm`) ?? findImage(`lekh/${slug}`),
+    series: s?.id ?? '',
+    stitle: s?.title ?? '',
+    srank: s?.rank ?? 999,
+    sorder: a.data.series?.order ?? 999,
+    text: [a.data.title, a.data.saar, s?.title ?? '', ...(a.data.kaun ?? []), ...(a.data.kahan ?? []), formatYear(a.data.kab.start)]
+      .join(' ')
+      .toLowerCase(),
+  }];
+});
+const series = seriesAll
+  .map((s) => {
+    const items = tracks.filter((t) => t.series === s.id);
+    return { ...s, n: items.length, sec: items.reduce((n, t) => n + t.sec, 0) };
+  })
+  .filter((s) => s.n > 0);
+const totalHours = Math.round(tracks.reduce((n, t) => n + t.sec, 0) / 360) / 10;
+const eraCounts = ERAS.map((e) => ({ ...e, n: tracks.filter((t) => t.era === e.id).length })).filter((e) => e.n > 0);
+const first = tracks[0];
+---
+<div class="ab" data-ab>
+  <p class="ab-stats">
+    <span><strong>{tracks.length}</strong> कहानियाँ</span>
+    <span><strong>{series.length}</strong> शृंखलाएँ</span>
+    <span><strong>{totalHours}</strong> घंटे</span>
+    <span>एक कहानी ख़त्म होते ही अगली अपने-आप शुरू</span>
+  </p>
+
+  <div class="ab-grid">
+    <!-- ===== now playing ===== -->
+    <aside class="player" data-player aria-label="ऑडियो प्लेयर">
+      <button type="button" class="p-expand" data-expand aria-label="प्लेयर बड़ा करें" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+      </button>
+      <div class="p-cover">
+        {first?.img ? <img data-p-img src={first.img} alt="" width="640" height="360" /> : <img data-p-img alt="" width="640" height="360" hidden />}
+        <span class="p-eq" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <div class="p-info">
+        <p class="p-meta"><span class="p-era" data-p-era></span><span data-p-pos></span></p>
+        <h2 class="p-title" data-p-title>{first?.title}</h2>
+        <button type="button" class="p-series" data-p-series hidden></button>
+        <p class="p-saar" data-p-saar>{first?.saar}</p>
+      </div>
+
+      <div class="p-seek-wrap">
+        <input type="range" class="p-seek" data-p-seek min="0" max="100" value="0" step="0.1" aria-label="कहानी में आगे-पीछे जाएँ" />
+        <div class="p-times"><span data-p-cur>0:00</span><span data-p-dur>{first && fmt(first.sec)}</span></div>
+      </div>
+
+      <div class="p-controls">
+        <button type="button" class="c-btn c-sm" data-p-prev aria-label="पिछली कहानी" title="पिछली कहानी">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 5.5v13l-9-6.5zM5.5 5H8v14H5.5z"/></svg>
+        </button>
+        <button type="button" class="c-btn c-sm c-skip" data-p-back aria-label="15 सेकंड पीछे" title="15 सेकंड पीछे">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+          <span>15</span>
+        </button>
+        <button type="button" class="c-btn c-play" data-p-play aria-label="चलाएँ">
+          <svg class="i-play" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+          <svg class="i-pause" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+        </button>
+        <button type="button" class="c-btn c-sm c-skip" data-p-fwd aria-label="15 सेकंड आगे" title="15 सेकंड आगे">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+          <span>15</span>
+        </button>
+        <button type="button" class="c-btn c-sm" data-p-next aria-label="अगली कहानी" title="अगली कहानी">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5.5v13l9-6.5zM16 5h2.5v14H16z"/></svg>
+        </button>
+      </div>
+
+      <div class="p-opts">
+        <button type="button" class="o-btn" data-p-speed aria-label="गति बदलें" title="गति बदलें">1×</button>
+        <button type="button" class="o-btn on" data-p-auto aria-pressed="true" title="एक के बाद एक अपने-आप चलाएँ">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg>
+          लगातार
+        </button>
+        <a class="o-btn" data-p-href href={first?.href}>लेख पढ़ें →</a>
+      </div>
+      <p class="p-credit">आवाज़: कंप्यूटर-जनित (AI) · <a href={MUSIC_CREDIT.url} rel="noopener">{MUSIC_CREDIT.text}</a></p>
+      <audio preload="none" data-p-audio></audio>
+    </aside>
+
+    <!-- ===== playlist ===== -->
+    <section class="list" aria-label="कहानियों की सूची" data-list>
+      <div class="l-tools">
+        <div class="l-modes" role="group" aria-label="सूची का क्रम">
+          <button type="button" class="l-mode active" data-mode="time" aria-pressed="true">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            समय-क्रम में
+          </button>
+          <button type="button" class="l-mode" data-mode="series" aria-pressed="false">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V5M9 19V5M14 19 18 5l3 1-4 14z"/></svg>
+            शृंखला के अनुसार
+          </button>
+        </div>
+        <label class="l-find">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="sr-only">कहानी खोजें</span>
+          <input type="search" data-l-find placeholder="कहानी, व्यक्ति, जगह या साल खोजें…" autocomplete="off" />
+        </label>
+        <div class="l-chips" role="group" aria-label="काल चुनें" data-l-chips>
+          <button type="button" class="l-chip active" data-l-era="all" aria-pressed="true">सभी <span>{tracks.length}</span></button>
+          {eraCounts.map((e) => (
+            <button type="button" class={`l-chip era-${e.id}`} data-l-era={e.id} aria-pressed="false"><span class="era-dot"></span>{e.label} <span>{e.n}</span></button>
+          ))}
+        </div>
+        <div class="l-bar">
+          <p class="l-status" aria-live="polite" data-l-status></p>
+          <button type="button" class="l-jump" data-l-jump hidden>अभी चल रही कहानी पर जाएँ ↓</button>
+        </div>
+      </div>
+
+      <!-- series shelf -->
+      <ul class="shelf" data-shelf hidden>
+        {series.map((s, i) => (
+          <li>
+            <button type="button" class="sh-card" data-pick={s.id} data-title={s.title} data-desc={s.description} data-img={s.img ?? ''}
+              data-n={s.n} data-len={hoursMin(s.sec)}>
+              <span class="sh-img" aria-hidden="true">
+                {s.img ? <img src={s.img} alt="" width="320" height="180" loading="lazy" decoding="async" /> : <span class="sh-noimg"></span>}
+                <span class="sh-num">{i + 1}</span>
+                <span class="sh-now">अभी चल रही</span>
+              </span>
+              <span class="sh-body">
+                <strong>{s.title}</strong>
+                <span class="sh-meta">{s.n} कहानियाँ · {hoursMin(s.sec)}</span>
+                <span class="sh-prog"><span class="sh-track"><span class="sh-bar" data-sh-bar></span></span><span data-sh-done></span></span>
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      <!-- selected series header -->
+      <div class="s-head" data-s-head hidden>
+        <button type="button" class="s-back" data-s-back>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          सभी शृंखलाएँ
+        </button>
+        <div class="s-hero">
+          <img data-s-img alt="" width="320" height="180" />
+          <div class="s-text">
+            <p class="s-kicker">शृंखला <span data-s-pos></span></p>
+            <h3 data-s-title></h3>
+            <p class="s-desc" data-s-desc></p>
+            <p class="s-meta" data-s-meta></p>
+            <div class="s-actions">
+              <button type="button" class="s-play" data-s-play>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+                शृंखला शुरू से सुनें
+              </button>
+              <a class="s-link" data-s-link href="/series/">शृंखला पेज →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ol class="tracks" data-tracks>
+        {tracks.map((t, i) => (
+          <li class={`track era-${t.era}`} data-slug={t.slug} data-src={t.src} data-sec={t.sec} data-era={t.era}
+            data-title={t.title} data-saar={t.saar} data-href={t.href} data-img={t.img ?? ''} data-year={t.year} data-text={t.text}
+            data-series={t.series} data-stitle={t.stitle} data-srank={t.srank} data-sorder={t.sorder} data-tnum={i + 1}>
+            <button type="button" class="t-btn" aria-label={`"${t.title}" सुनें`}>
+              <span class="t-num">{i + 1}</span>
+              <span class="t-thumb" aria-hidden="true">
+                {t.img ? <img src={t.img} alt="" width="96" height="54" loading="lazy" decoding="async" /> : <span class="t-noimg"></span>}
+                <span class="t-state">
+                  <svg class="i-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+                  <span class="t-eq"><i></i><i></i><i></i></span>
+                </span>
+              </span>
+              <span class="t-body">
+                <strong class="clamp-1">{t.title}</strong>
+                <span class="t-sub"><span class="t-year">{t.year}</span><span class="t-series clamp-1">{t.stitle}</span><span class="t-done">सुन लिया</span></span>
+              </span>
+              <span class="t-dur">{fmt(t.sec)}</span>
+            </button>
+            <span class="t-prog" aria-hidden="true"></span>
+          </li>
+        ))}
+      </ol>
+      <p class="l-empty" data-l-empty hidden>कोई कहानी नहीं मिली। कोई और शब्द आज़माएँ।</p>
+    </section>
+  </div>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-ab]');
+  if (root) {
+    const $ = <T extends Element = HTMLElement>(s: string) => root.querySelector<T>(s)!;
+    const au = $<HTMLAudioElement>('[data-p-audio]');
+    const player = $('[data-player]');
+    const img = $<HTMLImageElement>('[data-p-img]');
+    const titleEl = $('[data-p-title]');
+    const saarEl = $('[data-p-saar]');
+    const eraEl = $('[data-p-era]');
+    const posEl = $('[data-p-pos]');
+    const pSeries = $<HTMLButtonElement>('[data-p-series]');
+    const hrefEl = $<HTMLAnchorElement>('[data-p-href]');
+    const seek = $<HTMLInputElement>('[data-p-seek]');
+    const cur = $('[data-p-cur]');
+    const dur = $('[data-p-dur]');
+    const playBtn = $<HTMLButtonElement>('[data-p-play]');
+    const speedBtn = $<HTMLButtonElement>('[data-p-speed]');
+    const autoBtn = $<HTMLButtonElement>('[data-p-auto]');
+    const expandBtn = $<HTMLButtonElement>('[data-expand]');
+    const listEl = $('[data-list]');
+    const find = $<HTMLInputElement>('[data-l-find]');
+    const status = $('[data-l-status]');
+    const empty = $('[data-l-empty]');
+    const jump = $<HTMLButtonElement>('[data-l-jump]');
+    const chipsWrap = $('[data-l-chips]');
+    const chips = root.querySelectorAll<HTMLButtonElement>('[data-l-era]');
+    const modeBtns = root.querySelectorAll<HTMLButtonElement>('[data-mode]');
+    const shelf = $('[data-shelf]');
+    const cards = [...root.querySelectorAll<HTMLButtonElement>('[data-pick]')];
+    const sHead = $('[data-s-head]');
+    const tracksEl = $('[data-tracks]');
+    const ERA_LABEL: Record<string, string> = { prachin: 'प्राचीन', madhyakaal: 'मध्यकाल', adhunik: 'आधुनिक' };
+
+    const byTime = [...root.querySelectorAll<HTMLLIElement>('.track')];
+    const bySeries = [...byTime].sort(
+      (a, b) => +a.dataset.srank! - +b.dataset.srank! || +a.dataset.sorder! - +b.dataset.sorder!,
+    );
+    let items = byTime;
+
+    const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
+    const store = {
+      get: (k: string) => { try { return localStorage.getItem(`kaunkab:ab:${k}`); } catch { return null; } },
+      set: (k: string, v: string) => { try { localStorage.setItem(`kaunkab:ab:${k}`, v); } catch {} },
+    };
+    let done: Set<string>;
+    try { done = new Set(JSON.parse(store.get('done') || '[]')); } catch { done = new Set(); }
+    const markDone = () => {
+      byTime.forEach((li) => li.classList.toggle('is-done', done.has(li.dataset.slug!)));
+      cards.forEach((c) => {
+        const all = byTime.filter((li) => li.dataset.series === c.dataset.pick);
+        const n = all.filter((li) => done.has(li.dataset.slug!)).length;
+        c.querySelector<HTMLElement>('[data-sh-bar]')!.style.width = `${(n / all.length) * 100}%`;
+        c.querySelector<HTMLElement>('[data-sh-done]')!.textContent = `${n}/${all.length} सुनी`;
+        c.classList.toggle('started', n > 0);
+      });
+    };
+    markDone();
+
+    let current: HTMLLIElement | null = null;
+    let auto = store.get('auto') !== '0';
+    const rates = [1, 1.25, 1.5, 1.75, 0.75];
+    let rate = Math.max(0, rates.indexOf(Number(store.get('rate') || 1)));
+    let mode: 'time' | 'series' = 'time';
+    let era = 'all';
+    let series: string | null = null;
+
+    const visible = () => (tracksEl.hidden ? [] : items.filter((li) => !li.hidden));
+    const updatePos = () => {
+      if (!current) return;
+      const vis = visible();
+      const at = vis.indexOf(current);
+      posEl.textContent = at >= 0 ? `${at + 1} / ${vis.length}` : `${items.indexOf(current) + 1} / ${items.length}`;
+    };
+
+    function load(li: HTMLLIElement | undefined, play: boolean, at = 0) {
+      if (!li) return;
+      if (current) {
+        current.classList.remove('current');
+        current.querySelector('.t-btn')?.removeAttribute('aria-current');
+      }
+      current = li;
+      li.classList.add('current');
+      li.querySelector('.t-btn')!.setAttribute('aria-current', 'true');
+      const d = li.dataset;
+      au.src = d.src!;
+      au.playbackRate = rates[rate];
+      if (at > 0) au.addEventListener('loadedmetadata', () => { au.currentTime = at; }, { once: true });
+      titleEl.textContent = d.title!;
+      saarEl.textContent = d.saar!;
+      eraEl.textContent = `${ERA_LABEL[d.era!] ?? ''} · ${d.year}`;
+      player.className = `player era-${d.era}${player.classList.contains('open') ? ' open' : ''}`;
+      pSeries.hidden = !d.series;
+      pSeries.textContent = `शृंखला: ${d.stitle} · भाग ${d.sorder}`;
+      hrefEl.href = d.href!;
+      if (d.img) { img.src = d.img; img.hidden = false; } else img.hidden = true;
+      dur.textContent = fmt(+d.sec!);
+      cur.textContent = fmt(at);
+      seek.value = '0';
+      seek.style.setProperty('--p', '0%');
+      cards.forEach((c) => c.classList.toggle('now', c.dataset.pick === d.series));
+      store.set('last', d.slug!);
+      if ('mediaSession' in navigator) {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: d.title!, artist: 'कौन कब', album: d.stitle || 'ऑडियोबुक — भारतीय इतिहास',
+          artwork: d.img ? [{ src: new URL(d.img, location.href).href, sizes: '640x360' }] : [],
+        });
+      }
+      if (play) au.play().catch(() => {});
+      updatePos();
+      updateJump();
+    }
+
+    // next/previous follow the list on screen (mode + search + filter); at the end of a series, go on to the next series
+    function step(dir: 1 | -1) {
+      const vis = visible();
+      const inVis = !!current && vis.includes(current);
+      const pool = inVis ? vis : items;
+      const at = current ? pool.indexOf(current) : -1;
+      let target = pool[at + dir];
+      if (!target && dir === 1 && inVis && mode === 'series' && series) {
+        const i = cards.findIndex((c) => c.dataset.pick === series);
+        const nextCard = cards[i + 1];
+        if (nextCard) {
+          find.value = '';
+          pickSeries(nextCard.dataset.pick!, false);
+          target = visible()[0];
+        }
+      }
+      if (!target && at === -1) target = vis[0];
+      if (target) load(target, true);
+      else syncPlaying();
+    }
+    const toggle = () => {
+      if (!current) load(visible()[0] ?? items[0], true);
+      else if (au.paused) au.play().catch(() => {});
+      else au.pause();
+    };
+
+    // ---- player events ----
+    function syncPlaying() {
+      const on = !au.paused;
+      root!.classList.toggle('playing', on);
+      playBtn.setAttribute('aria-label', on ? 'रोकें' : 'चलाएँ');
+      if ('mediaSession' in navigator) navigator.mediaSession.playbackState = on ? 'playing' : 'paused';
+    }
+    au.addEventListener('play', syncPlaying);
+    au.addEventListener('pause', syncPlaying);
+    let lastSave = 0;
+    au.addEventListener('timeupdate', () => {
+      const d = au.duration || +(current?.dataset.sec ?? 0);
+      if (!d) return;
+      const p = (au.currentTime / d) * 100;
+      seek.value = String(p);
+      seek.style.setProperty('--p', `${p}%`);
+      current?.style.setProperty('--tp', `${p}%`);
+      cur.textContent = fmt(au.currentTime);
+      if (Date.now() - lastSave > 4000) { lastSave = Date.now(); store.set('pos', String(Math.floor(au.currentTime))); }
+    });
+    au.addEventListener('loadedmetadata', () => { dur.textContent = fmt(au.duration); });
+    au.addEventListener('ended', () => {
+      const slug = current?.dataset.slug;
+      if (slug) { done.add(slug); store.set('done', JSON.stringify([...done])); markDone(); }
+      store.set('pos', '0');
+      if (auto) step(1); else syncPlaying();
+    });
+    seek.addEventListener('input', () => {
+      if (!current) load(items[0], false);
+      const d = au.duration || +(current?.dataset.sec ?? 0);
+      if (d) au.currentTime = (+seek.value / 100) * d;
+    });
+    playBtn.addEventListener('click', toggle);
+    $('[data-p-next]').addEventListener('click', () => step(1));
+    $('[data-p-prev]').addEventListener('click', () => (au.currentTime > 5 ? (au.currentTime = 0) : step(-1)));
+    $('[data-p-back]').addEventListener('click', () => { au.currentTime = Math.max(0, au.currentTime - 15); });
+    $('[data-p-fwd]').addEventListener('click', () => { au.currentTime = Math.min(au.duration || 1e9, au.currentTime + 15); });
+    const showRate = () => { speedBtn.textContent = `${rates[rate]}×`; au.playbackRate = rates[rate]; };
+    showRate();
+    speedBtn.addEventListener('click', () => { rate = (rate + 1) % rates.length; store.set('rate', String(rates[rate])); showRate(); });
+    const showAuto = () => { autoBtn.classList.toggle('on', auto); autoBtn.setAttribute('aria-pressed', String(auto)); };
+    showAuto();
+    autoBtn.addEventListener('click', () => { auto = !auto; store.set('auto', auto ? '1' : '0'); showAuto(); });
+    const setOpen = (open: boolean) => {
+      player.classList.toggle('open', open);
+      expandBtn.setAttribute('aria-expanded', String(open));
+      expandBtn.setAttribute('aria-label', open ? 'प्लेयर छोटा करें' : 'प्लेयर बड़ा करें');
+    };
+    expandBtn.addEventListener('click', () => setOpen(!player.classList.contains('open')));
+    // tap the series name in the player to open that series' list
+    pSeries.addEventListener('click', () => {
+      if (!current?.dataset.series) return;
+      setOpen(false);
+      find.value = '';
+      setMode('series');
+      pickSeries(current.dataset.series);
+      current.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    });
+
+    if ('mediaSession' in navigator) {
+      const ms = navigator.mediaSession;
+      ms.setActionHandler('play', () => au.play());
+      ms.setActionHandler('pause', () => au.pause());
+      ms.setActionHandler('nexttrack', () => step(1));
+      ms.setActionHandler('previoustrack', () => step(-1));
+      try {
+        ms.setActionHandler('seekbackward', () => { au.currentTime = Math.max(0, au.currentTime - 15); });
+        ms.setActionHandler('seekforward', () => { au.currentTime += 15; });
+      } catch {}
+    }
+
+    // keyboard: space = play/pause, arrows = 15s, n/p = next/previous (ignored while typing)
+    addEventListener('keydown', (e) => {
+      const t = e.target as HTMLElement;
+      if (t.closest('input, textarea, select, button, a, [contenteditable]') || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.key === ' ' || e.key === 'k') { e.preventDefault(); toggle(); }
+      else if (e.key === 'ArrowRight') au.currentTime += 15;
+      else if (e.key === 'ArrowLeft') au.currentTime = Math.max(0, au.currentTime - 15);
+      else if (e.key === 'n') step(1);
+      else if (e.key === 'p') step(-1);
+    });
+
+    // ---- playlist ----
+    byTime.forEach((li) =>
+      li.querySelector('.t-btn')!.addEventListener('click', () => {
+        if (li === current) toggle();
+        else load(li, true);
+      }),
+    );
+
+    const scrollToList = () => {
+      const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
+      const top = listEl.getBoundingClientRect().top + scrollY - headerH;
+      if (scrollY > top) scrollTo({ top });
+    };
+
+    function apply() {
+      const q = find.value.trim().toLowerCase();
+      chipsWrap.hidden = mode === 'series';
+      const showShelf = mode === 'series' && !series && !q;
+      shelf.hidden = !showShelf;
+      sHead.hidden = !(mode === 'series' && series);
+      tracksEl.hidden = showShelf;
+      let n = 0;
+      items.forEach((li) => {
+        const ok =
+          mode === 'time'
+            ? (era === 'all' || li.dataset.era === era) && (!q || li.dataset.text!.includes(q))
+            : (!series || li.dataset.series === series) && (!q || li.dataset.text!.includes(q));
+        li.hidden = !ok;
+        if (ok) n++;
+      });
+      empty.hidden = showShelf || n > 0;
+      if (showShelf) status.textContent = `${cards.length} शृंखलाएँ — कोई भी चुनें, कहानियाँ उसी क्रम में चलेंगी`;
+      else if (mode === 'series' && series && !q) status.textContent = `${n} कहानियाँ · शृंखला के क्रम में`;
+      else status.textContent = q || era !== 'all' ? `${n} कहानियाँ मिलीं` : `${items.length} कहानियाँ · समय-क्रम में`;
+      updatePos();
+      updateJump();
+    }
+
+    function setMode(m: 'time' | 'series') {
+      if (m === mode && items === (m === 'series' ? bySeries : byTime)) return;
+      mode = m;
+      store.set('mode', m);
+      modeBtns.forEach((b) => { b.classList.toggle('active', b.dataset.mode === m); b.setAttribute('aria-pressed', String(b.dataset.mode === m)); });
+      items = m === 'series' ? bySeries : byTime;
+      tracksEl.append(...items); // reorder the one list in place
+      items.forEach((li) => { li.querySelector('.t-num')!.textContent = m === 'series' ? li.dataset.sorder! : li.dataset.tnum!; });
+      if (m === 'time') series = null;
+      apply();
+    }
+
+    function pickSeries(id: string | null, scroll = true) {
+      series = id;
+      store.set('series', id ?? '');
+      const c = cards.find((x) => x.dataset.pick === id);
+      if (c) {
+        const d = c.dataset;
+        const im = $<HTMLImageElement>('[data-s-img]');
+        if (d.img) { im.src = d.img; im.hidden = false; } else im.hidden = true;
+        $('[data-s-title]').textContent = d.title!;
+        $('[data-s-desc]').textContent = d.desc!;
+        $('[data-s-meta]').textContent = `${d.n} कहानियाँ · ${d.len}`;
+        $('[data-s-pos]').textContent = `${cards.indexOf(c) + 1} / ${cards.length}`;
+        $<HTMLAnchorElement>('[data-s-link]').href = `/series/${id}/`;
+      }
+      apply();
+      if (scroll) scrollToList();
+    }
+
+    modeBtns.forEach((b) => b.addEventListener('click', () => {
+      setMode(b.dataset.mode as 'time' | 'series');
+      if (b.dataset.mode === 'series' && series) pickSeries(null, false);
+      scrollToList();
+    }));
+    cards.forEach((c) => c.addEventListener('click', () => { find.value = ''; pickSeries(c.dataset.pick!); }));
+    $('[data-s-back]').addEventListener('click', () => {
+      const prev = series;
+      pickSeries(null);
+      cards.find((c) => c.dataset.pick === prev)?.focus({ preventScroll: true });
+    });
+    $('[data-s-play]').addEventListener('click', () => load(visible()[0], true));
+    chips.forEach((c) =>
+      c.addEventListener('click', () => {
+        era = c.dataset.lEra!;
+        chips.forEach((x) => { x.classList.toggle('active', x === c); x.setAttribute('aria-pressed', String(x === c)); });
+        apply();
+      }),
+    );
+    let tmr: number | undefined;
+    find.addEventListener('input', () => { clearTimeout(tmr); tmr = window.setTimeout(apply, 120); });
+
+    // "jump to now playing" when the current story is off screen
+    let onScreen = true;
+    let observed: Element | null = null;
+    const io = new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; updateJump(); });
+    function updateJump() {
+      if (current && observed !== current) { if (observed) io.unobserve(observed); io.observe(current); observed = current; }
+      jump.hidden = !current || current.hidden || tracksEl.hidden || onScreen;
+    }
+    jump.addEventListener('click', () => current?.scrollIntoView({ block: 'center', behavior: 'smooth' }));
+
+    // ---- restore ----
+    // ?s=<series> opens that series; ?k=<slug> cues that story; otherwise the last story + position (paused: browsers block autoplay)
+    const params = new URLSearchParams(location.search);
+    const wantSeries = params.get('s');
+    const wantStory = params.get('k');
+    const savedSeries = store.get('series');
+    if (wantSeries && cards.some((c) => c.dataset.pick === wantSeries)) {
+      setMode('series');
+      pickSeries(wantSeries, false);
+    } else if (store.get('mode') === 'series') {
+      setMode('series');
+      if (savedSeries && cards.some((c) => c.dataset.pick === savedSeries)) pickSeries(savedSeries, false);
+    } else apply();
+
+    const find1 = (slug: string | null) => (slug ? byTime.find((li) => li.dataset.slug === slug) : undefined);
+    const want = find1(wantStory);
+    const last = find1(store.get('last'));
+    if (wantSeries && !want) load(visible()[0], false);
+    else if (want) { load(want, false); if (!tracksEl.hidden) want.scrollIntoView({ block: 'center' }); }
+    else if (last) load(last, false, Number(store.get('pos') || 0));
+    else load(items[0], false);
+  }
+</script>
+
+<style>
+  .ab { font-family: var(--font-ui); padding-bottom: 3rem; }
+  .ab-stats { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; margin: 0 0 1.5rem; color: var(--muted); font-size: .95rem; }
+  .ab-stats strong { color: var(--fg); font-size: 1.15rem; }
+  .ab-grid { display: grid; grid-template-columns: minmax(300px, 380px) 1fr; gap: 2rem; align-items: start; }
+  [hidden] { display: none !important; }
+
+  /* ---------- player ---------- */
+  .player {
+    --era: var(--accent);
+    position: sticky; top: calc(var(--header-h) + 1rem); display: flex; flex-direction: column; gap: 1rem; padding: 1.25rem;
+    background: var(--card); border: 1px solid var(--border); border-top: 4px solid var(--gold); box-shadow: var(--shadow-lg);
+  }
+  .player.era-prachin { --era: var(--prachin); }
+  .player.era-madhyakaal { --era: var(--madhyakaal); }
+  .player.era-adhunik { --era: var(--adhunik); }
+  .p-expand { display: none; }
+  .p-cover { position: relative; aspect-ratio: 16 / 9; background: linear-gradient(135deg, color-mix(in srgb, var(--era) 35%, var(--card)), color-mix(in srgb, var(--era) 8%, var(--card))); overflow: hidden; }
+  .p-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .p-eq { position: absolute; right: .6rem; bottom: .6rem; display: none; gap: 3px; align-items: flex-end; height: 22px; padding: 5px 6px; background: rgba(0, 0, 0, .55); }
+  .playing .p-eq { display: flex; }
+  .p-eq i, .t-eq i { display: block; width: 3px; background: #fff; animation: eq 0.9s ease-in-out infinite; }
+  .p-eq i:nth-child(2), .t-eq i:nth-child(2) { animation-delay: -.3s; }
+  .p-eq i:nth-child(3), .t-eq i:nth-child(3) { animation-delay: -.6s; }
+  @keyframes eq { 0%, 100% { height: 25%; } 50% { height: 100%; } }
+  @media (prefers-reduced-motion: reduce) { .p-eq i, .t-eq i { animation: none; height: 70%; } }
+
+  .p-meta { display: flex; justify-content: space-between; gap: .5rem; margin: 0 0 .2rem; font-size: .85rem; font-weight: 700; color: var(--era); }
+  .p-meta span:last-child { color: var(--muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .p-title { margin: 0; font-size: 1.35rem; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .p-series {
+    display: inline-block; margin: .4rem 0 0; padding: 0; font: inherit; font-size: .85rem; font-weight: 600; text-align: left; cursor: pointer;
+    border: 0; background: none; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+  }
+  .p-series:hover { color: var(--fg); }
+  .p-saar { margin: .35rem 0 0; color: var(--muted); font-size: .92rem; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+  .p-seek {
+    --p: 0%; width: 100%; height: 6px; margin: 0; appearance: none; -webkit-appearance: none; cursor: pointer; border-radius: 3px;
+    background: linear-gradient(to right, var(--era) var(--p), var(--border) var(--p));
+  }
+  .p-seek::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; border-radius: 50%; background: var(--era); border: 2px solid var(--card); }
+  .p-seek::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--era); border: 2px solid var(--card); }
+  .p-times { display: flex; justify-content: space-between; font-size: .82rem; color: var(--muted); font-variant-numeric: tabular-nums; margin-top: .3rem; }
+
+  .p-controls { display: flex; align-items: center; justify-content: center; gap: .5rem; }
+  .c-btn { border: 0; cursor: pointer; display: grid; place-items: center; background: transparent; color: var(--fg); border-radius: 50%; transition: transform .15s ease, color .15s, background .15s; }
+  .c-sm { width: 44px; height: 44px; }
+  .c-sm:hover { color: var(--era); background: color-mix(in srgb, var(--era) 10%, transparent); }
+  .c-skip { position: relative; }
+  .c-skip span { position: absolute; font-size: .55rem; font-weight: 800; top: 52%; left: 50%; transform: translate(-50%, -50%); }
+  .c-play { width: 68px; height: 68px; background: var(--era); color: #fff; box-shadow: var(--shadow); }
+  .c-play:hover { transform: scale(1.06); }
+  .c-btn:focus-visible, .o-btn:focus-visible, .t-btn:focus-visible, .sh-card:focus-visible, .l-mode:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .i-pause, .playing .c-play .i-play { display: none; }
+  .playing .c-play .i-pause { display: block; }
+
+  .p-opts { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; }
+  .o-btn {
+    display: inline-flex; align-items: center; gap: .35rem; font: inherit; font-size: .88rem; font-weight: 700; cursor: pointer;
+    min-height: 36px; padding: .25rem .75rem; background: transparent; color: var(--muted); border: 1px solid var(--border); text-decoration: none;
+  }
+  .o-btn:hover { color: var(--fg); border-color: var(--era); }
+  .o-btn.on { color: var(--era); border-color: var(--era); background: color-mix(in srgb, var(--era) 10%, transparent); }
+  .p-credit { margin: 0; font-size: .75rem; color: var(--muted); text-align: center; }
+  .p-credit a { color: inherit; }
+
+  /* ---------- list tools ---------- */
+  .list { min-width: 0; }
+  .l-tools {
+    position: sticky; top: var(--header-h); z-index: 5; display: flex; flex-direction: column; gap: .6rem; padding: .75rem 0;
+    background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .l-modes { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); background: var(--card); }
+  .l-mode {
+    display: inline-flex; align-items: center; justify-content: center; gap: .45rem; font: inherit; font-size: .98rem; font-weight: 700; cursor: pointer;
+    min-height: 44px; padding: .4rem .8rem; border: 0; background: transparent; color: var(--muted);
+  }
+  .l-mode + .l-mode { border-left: 1px solid var(--border); }
+  .l-mode:hover { color: var(--fg); }
+  .l-mode.active { background: var(--fg); color: var(--bg); }
+  .l-find {
+    display: flex; align-items: center; gap: .55rem; padding: 0 .9rem; background: var(--card); border: 1px solid var(--border); color: var(--muted);
+  }
+  .l-find:focus-within { border-color: var(--accent); }
+  .l-find input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 1rem; color: var(--fg); padding: .7rem 0; }
+  .l-chips { display: flex; gap: .45rem; flex-wrap: wrap; }
+  .l-chip {
+    display: inline-flex; align-items: center; gap: .4rem; font: inherit; font-size: .92rem; font-weight: 600; cursor: pointer; white-space: nowrap;
+    padding: .35rem .85rem; border: 1px solid var(--border); background: var(--card); color: var(--fg);
+  }
+  .l-chip span:last-child { opacity: .6; font-size: .85rem; }
+  .l-chip:hover { border-color: var(--accent); }
+  .l-chip.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .l-bar { display: flex; align-items: center; justify-content: space-between; gap: .5rem; min-height: 1.6rem; }
+  .l-status { margin: 0; font-size: .88rem; color: var(--muted); }
+  .l-jump { font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; border: 0; background: none; color: var(--accent); padding: .2rem 0; white-space: nowrap; }
+
+  /* ---------- series shelf ---------- */
+  .shelf { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+  .sh-card {
+    width: 100%; height: 100%; display: flex; flex-direction: column; padding: 0; font: inherit; text-align: left; cursor: pointer;
+    background: var(--card); color: var(--fg); border: 1px solid var(--border); box-shadow: var(--shadow); transition: transform .2s ease, border-color .2s, box-shadow .2s;
+  }
+  .sh-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--shadow-lg); }
+  .sh-card.now { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+  .sh-img { position: relative; aspect-ratio: 16 / 9; overflow: hidden; display: block; }
+  .sh-img img, .sh-noimg { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sh-noimg { background: linear-gradient(135deg, color-mix(in srgb, var(--gold) 35%, var(--card)), color-mix(in srgb, var(--gold) 8%, var(--card))); }
+  .sh-num {
+    position: absolute; left: 0; top: 0; min-width: 2rem; padding: .1rem .5rem; text-align: center; font-weight: 800; font-size: .85rem;
+    color: #fff; background: rgba(0, 0, 0, .6);
+  }
+  .sh-now { position: absolute; right: 0; bottom: 0; display: none; padding: .1rem .55rem; font-size: .78rem; font-weight: 700; color: #fff; background: var(--gold); }
+  .now .sh-now { display: block; }
+  .sh-body { display: flex; flex-direction: column; gap: .2rem; padding: .7rem .85rem .85rem; flex: 1; }
+  .sh-body strong { font-family: var(--font-display); font-size: 1.05rem; line-height: 1.4; }
+  .sh-card:hover strong { color: var(--accent); }
+  .sh-meta { font-size: .85rem; color: var(--muted); }
+  .sh-prog { display: none; align-items: center; gap: .5rem; margin-top: auto; padding-top: .35rem; font-size: .78rem; font-weight: 700; color: #15803d; }
+  .started .sh-prog { display: flex; }
+  .sh-track { flex: 1; height: 4px; background: var(--border); }
+  .sh-bar { display: block; height: 100%; background: #15803d; }
+
+  /* ---------- selected series ---------- */
+  .s-head { margin-bottom: 1rem; }
+  .s-back {
+    display: inline-flex; align-items: center; gap: .4rem; margin-bottom: .75rem; padding: .35rem .2rem; min-height: 40px;
+    font: inherit; font-weight: 700; font-size: .95rem; cursor: pointer; border: 0; background: none; color: var(--accent);
+  }
+  .s-back:hover { color: var(--fg); }
+  .s-hero {
+    display: grid; grid-template-columns: 220px 1fr; gap: 1.25rem; padding: 1rem; align-items: start;
+    background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--gold);
+  }
+  .s-hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+  .s-kicker { margin: 0; font-size: .82rem; font-weight: 700; color: var(--gold); text-transform: none; }
+  .s-hero h3 { margin: .1rem 0 .35rem; font-size: 1.4rem; }
+  .s-desc { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.55; }
+  .s-meta { margin: .4rem 0 0; font-size: .88rem; font-weight: 700; }
+  .s-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: .75rem; }
+  .s-play {
+    display: inline-flex; align-items: center; gap: .45rem; min-height: 44px; padding: .45rem 1.1rem; cursor: pointer;
+    font: inherit; font-weight: 700; font-size: .95rem; border: 0; color: var(--on-accent); background: var(--accent);
+  }
+  .s-play:hover { filter: brightness(1.08); }
+  .s-link { font-weight: 700; font-size: .92rem; text-decoration: none; }
+
+  /* ---------- tracks ---------- */
+  .tracks { list-style: none; margin: 0; padding: 0; border: 1px solid var(--border); background: var(--card); }
+  .track { --era: var(--accent); position: relative; border-top: 1px solid var(--border); content-visibility: auto; contain-intrinsic-size: auto 70px; }
+  .track:first-child { border-top: 0; }
+  .track.era-prachin { --era: var(--prachin); }
+  .track.era-madhyakaal { --era: var(--madhyakaal); }
+  .track.era-adhunik { --era: var(--adhunik); }
+  .t-btn {
+    width: 100%; display: grid; grid-template-columns: 2.2rem 88px 1fr auto; align-items: center; gap: .8rem; padding: .55rem .9rem .55rem .5rem;
+    font: inherit; text-align: left; cursor: pointer; border: 0; background: transparent; color: var(--fg);
+  }
+  .t-btn:hover { background: color-mix(in srgb, var(--era) 6%, transparent); }
+  .t-num { font-size: .82rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+  .t-thumb { position: relative; width: 88px; aspect-ratio: 16 / 9; overflow: hidden; }
+  .t-thumb img, .t-noimg { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .t-noimg { background: linear-gradient(135deg, color-mix(in srgb, var(--era) 35%, var(--card)), color-mix(in srgb, var(--era) 8%, var(--card))); }
+  .t-state { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; background: rgba(0, 0, 0, .45); opacity: 0; transition: opacity .15s; }
+  .t-btn:hover .t-state, .current .t-state { opacity: 1; }
+  .t-eq { display: none; gap: 2px; align-items: flex-end; height: 16px; }
+  .playing .current .t-eq { display: flex; }
+  .playing .current .t-state .i-play { display: none; }
+  .t-body { display: flex; flex-direction: column; min-width: 0; }
+  .t-body strong { font-family: var(--font-display); font-size: 1rem; line-height: 1.4; }
+  .current .t-body strong { color: var(--era); }
+  .t-sub { display: flex; gap: .6rem; font-size: .82rem; color: var(--muted); min-width: 0; }
+  .t-year { color: var(--era); font-weight: 700; flex: none; }
+  .t-series { min-width: 0; }
+  .t-done { display: none; color: #15803d; font-weight: 700; flex: none; }
+  .is-done .t-done { display: inline; }
+  .t-dur { font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .t-prog { position: absolute; left: 0; bottom: 0; height: 3px; width: var(--tp, 0%); background: var(--era); display: none; }
+  .current .t-prog { display: block; }
+  .current { background: color-mix(in srgb, var(--era) 8%, transparent); box-shadow: inset 4px 0 0 var(--era); }
+  .l-empty { text-align: center; color: var(--muted); padding: 3rem 0; }
+
+  /* ---------- mobile: player docks at the bottom, tap the arrow for the full player ---------- */
+  @media (max-width: 900px) {
+    .ab { padding-bottom: 8rem; }
+    .ab-grid { grid-template-columns: 1fr; gap: 0; }
+    .player {
+      position: fixed; top: auto; left: 0; right: 0; bottom: 0; z-index: 50; gap: .5rem; padding: .6rem .8rem calc(.6rem + env(safe-area-inset-bottom));
+      display: grid; grid-template-columns: 56px 1fr auto auto; grid-template-areas: 'cover info play exp' 'seek seek seek seek';
+      align-items: center; column-gap: .7rem; border-top: 3px solid var(--era); max-height: 100dvh; overflow-y: auto;
+    }
+    .p-cover { grid-area: cover; width: 56px; aspect-ratio: 1; }
+    .p-info { grid-area: info; min-width: 0; }
+    .p-meta span:last-child, .p-saar, .p-series, .p-times, .p-opts, .p-credit, .p-eq { display: none; }
+    .p-meta { font-size: .75rem; margin: 0; }
+    .p-title { font-size: 1rem; display: block; white-space: nowrap; text-overflow: ellipsis; }
+    .p-seek-wrap { grid-area: seek; }
+    .p-seek { height: 4px; }
+    .p-controls { grid-area: play; gap: 0; }
+    .p-controls .c-sm { display: none; }
+    .p-controls [data-p-next] { display: grid; }
+    .c-play { width: 48px; height: 48px; }
+    .c-play svg { width: 24px; height: 24px; }
+    .p-expand { grid-area: exp; display: grid; place-items: center; width: 40px; height: 40px; border: 0; background: none; color: var(--fg); cursor: pointer; }
+
+    .player.open {
+      top: 0; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 1rem;
+      padding: 1rem 1.25rem calc(1.5rem + env(safe-area-inset-bottom)); border-top: 0;
+    }
+    .player.open .p-expand { align-self: flex-end; transform: rotate(180deg); }
+    .player.open .p-cover { width: 100%; aspect-ratio: 16 / 9; }
+    .player.open .p-meta span:last-child, .player.open .p-saar, .player.open .p-credit { display: block; }
+    .player.open .p-series { display: inline-block; }
+    .player.open .p-saar { display: -webkit-box; }
+    .player.open .p-meta { display: flex; font-size: .85rem; }
+    .player.open .p-opts { display: flex; }
+    .player.open .p-title { font-size: 1.35rem; display: -webkit-box; white-space: normal; }
+    .player.open .p-times { display: flex; }
+    .player.open .p-controls { gap: .5rem; }
+    .player.open .p-controls .c-sm { display: grid; }
+    .player.open .c-play { width: 68px; height: 68px; }
+    .player.open .c-play svg { width: 30px; height: 30px; }
+
+    .t-btn { grid-template-columns: 64px 1fr auto; gap: .7rem; padding: .55rem .7rem; }
+    .t-num { display: none; }
+    .t-thumb { width: 64px; }
+    .t-body strong { font-size: .95rem; }
+    .t-series { display: none; }
+    .l-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .l-chips::-webkit-scrollbar { display: none; }
+    .l-mode { font-size: .92rem; }
+    .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+    .sh-body { padding: .55rem .6rem .7rem; }
+    .sh-body strong { font-size: .95rem; }
+    .sh-meta { font-size: .78rem; }
+    .s-hero { grid-template-columns: 1fr; gap: .75rem; padding: .8rem; }
+  }
+</style>

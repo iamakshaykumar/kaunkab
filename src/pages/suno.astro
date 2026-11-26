@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import AudioBook from '../components/AudioBook.astro';
+import { getArticles } from '../lib/content';
+import { t } from '../i18n/hi';
+
+const articles = await getArticles();
+---
+<Base title={t.audiobook} description="भारतीय इतिहास की सारी कहानियाँ सुनें — एक के बाद एक, लगातार। खोजें, काल चुनें और जहाँ छोड़ा था वहीं से फिर सुनें।">
+  <PageHero
+    kicker="सुनें"
+    title={t.audiobook}
+    lead="सिंधु घाटी से आधुनिक भारत तक — समय-क्रम में सुनें या कोई शृंखला चुनें। एक कहानी ख़त्म होते ही अगली अपने-आप चलेगी; सूची में खोजकर कोई भी कहानी चुनें।"
+  />
+  <div class="container">
+    <AudioBook articles={articles} />
+  </div>
+</Base>

@@ -6,6 +6,7 @@ const links = [
   { href: '/kaal/madhyakaal/', label: t.madhyakaal },
   { href: '/kaal/adhunik/', label: t.adhunik },
   { href: '/timeline/', label: t.timeline },
+  { href: '/suno/', label: t.audiobook },
   { href: '/series/', label: t.series },
 ];
 const path = Astro.url.pathname;
@@ -83,6 +84,7 @@ const isCurrent = (href: string) => (path.startsWith(href) ? 'page' : undefined)
     <nav aria-label="पढ़ें">
       <ul class="menu-links">
         <li><a href="/timeline/" aria-current={isCurrent('/timeline/')}>{t.timeline}<span aria-hidden="true">→</span></a></li>
+        <li><a href="/suno/" aria-current={isCurrent('/suno/')}>{t.audiobook}<span aria-hidden="true">→</span></a></li>
         <li><a href="/series/" aria-current={isCurrent('/series/')}>{t.allSeries}<span aria-hidden="true">→</span></a></li>
         <li><a href="/parichay/" aria-current={isCurrent('/parichay/')}>{t.about}<span aria-hidden="true">→</span></a></li>
       </ul>
