@@ -7,7 +7,7 @@ kaun: ["Aliya Rama Raya", "Sadasiva Raya", "Tirumala Deva Raya", "Hussain Nizam 
 kahan: ["Rakkasagi-Tangadagi (near the Krishna River, Karnataka)", "Talikota", "Hampi (Vijayanagara)", "Penukonda"]
 saar: "In January 1565, at Rakkasagi-Tangadagi near the Krishna River, the combined army of four Deccan sultanates defeated the Vijayanagara army. Aliya Rama Raya, the real ruler of Vijayanagara, was killed and the capital Vijayanagara (Hampi) was plundered. The empire survived, but its centre shifted southward."
 tags: ["battle", "vijayanagara-empire", "deccan-sultanates", "south-india", "hampi"]
-series: { id: dakshin-ke-rajvansh, order: 13 }
+series: { id: dakshin-ke-rajvansh, order: 14 }
 sources:
   - title: "Battle of Talikota — Wikipedia"
     url: https://en.wikipedia.org/wiki/Battle_of_Talikota

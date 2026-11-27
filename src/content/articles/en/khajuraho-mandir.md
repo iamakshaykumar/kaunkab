@@ -7,7 +7,7 @@ kaun: ["Chandela dynasty", "Yashovarman", "Dhanga", "Vidyadhara", "T. S. Burt"]
 kahan: ["Khajuraho (Chhatarpur district, Madhya Pradesh)", "Bundelkhand"]
 saar: "In the tenth and eleventh centuries, the Chandela kings of Bundelkhand built a magnificent group of Hindu and Jain temples at Khajuraho. Famous for their tall Nagara-style spires and fine sculpture, these temples have been a UNESCO World Heritage Site since 1986."
 tags: ["temple", "architecture", "chandela-dynasty", "madhya-pradesh", "jainism", "world-heritage"]
-series: { id: mandir-sthapatya, order: 3 }
+series: { id: mandir-sthapatya, order: 4 }
 sources:
   - title: "Khajuraho Group of Monuments — Wikipedia"
     url: https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments

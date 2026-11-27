@@ -7,7 +7,7 @@ kaun: [वीरपांडिय कट्टबोम्मन, ऊमैद�
 kahan: ["पांचालंकुरिची (थूथुकुडि ज़िला)", रामनाथपुरम, तिरुनेलवेली, पुदुकोट्टई, कयत्तार]
 saar: तमिलनाडु के पांचालंकुरिची के पालयक्कारर (पोलिगार) वीरपांडिय कट्टबोम्मन ने ईस्ट इंडिया कंपनी को कर देने से इनकार किया और उसकी सत्ता को चुनौती दी। 1799 में मेजर बैनरमैन की सेना ने उनका क़िला घेरा; वे बच निकले, पर पुदुकोट्टई के राजा की मदद से पकड़ लिए गए और 16 अक्टूबर 1799 को कयत्तार में फाँसी दे दी गई। उनके बाद उनके भाई ऊमैदुरै ने दूसरा पोलिगार युद्ध लड़ा।
 tags: [tamilnadu, angrezi-shasan, east-india-company, vidroh, polygar, swatantrata-sangram]
-series: { id: angrezon-ke-viruddh-vidroh, order: 2 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 3 }
 sources:
   - title: "Veerapandiya Kattabomman — Wikipedia"
     url: https://en.wikipedia.org/wiki/Veerapandiya_Kattabomman

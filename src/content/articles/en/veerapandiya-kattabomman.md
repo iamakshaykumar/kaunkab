@@ -7,7 +7,7 @@ kaun: ["Veerapandiya Kattabomman", "Oomaidurai", "Jackson (Collector of Tirunelv
 kahan: ["Panchalankurichi (Thoothukudi district)", "Ramanathapuram", "Tirunelveli", "Pudukkottai", "Kayathar"]
 saar: "Veerapandiya Kattabomman, the palayakkarar (polygar) of Panchalankurichi in Tamil Nadu, refused to pay tax to the East India Company and challenged its authority. In 1799 the army of Major Bannerman besieged his fort; he escaped, but was captured with the help of the king of Pudukkottai and hanged at Kayathar on 16 October 1799. After him his brother Oomaidurai fought the Second Polygar War."
 tags: ["tamil-nadu", "british-rule", "east-india-company", "rebellion", "polygar", "freedom-struggle"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 2 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 3 }
 sources:
   - title: "Veerapandiya Kattabomman — Wikipedia"
     url: https://en.wikipedia.org/wiki/Veerapandiya_Kattabomman

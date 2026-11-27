@@ -7,7 +7,7 @@ kaun: [बेगम हज़रत महल, बिरजिस क़द्�
 kahan: [फ़ैज़ाबाद, लखनऊ, क़ैसरबाग़, बहराइच, काठमांडू (नेपाल)]
 saar: अवध के अपदस्थ नवाब वाजिद अली शाह की पत्नी बेगम हज़रत महल ने 1857 में अपने अल्पवयस्क पुत्र बिरजिस क़द्र को अवध का शासक घोषित कराया और उनकी संरक्षिका के रूप में लखनऊ में विद्रोही शासन चलाया। मार्च 1858 में लखनऊ छिन जाने के बाद भी वे अवध के देहात से संघर्ष करती रहीं और महारानी विक्टोरिया की घोषणा का खुलकर जवाब दिया। अंततः 1859 में उन्होंने नेपाल में शरण ली, जहाँ 7 अप्रैल 1879 को काठमांडू में उनकी मृत्यु हुई।
 tags: [sangram-1857, swatantrata-sangram, angrezi-shasan, awadh, lucknow, mahila]
-series: { id: angrezon-ke-viruddh-vidroh, order: 13 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 16 }
 sources:
   - title: "Begum Hazrat Mahal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Begum_Hazrat_Mahal

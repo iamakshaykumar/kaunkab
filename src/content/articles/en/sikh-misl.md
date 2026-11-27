@@ -7,7 +7,7 @@ kaun: ["Nawab Kapur Singh", "Jassa Singh Ahluwalia", "Jassa Singh Ramgarhia", "B
 kahan: ["Amritsar", "Lahore", "Kup (near Malerkotla)", "Delhi", "Punjab"]
 saar: "In 1748, at the Sarbat Khalsa in Amritsar, the Sikh bands were organised into eleven misls and their joint army, the 'Dal Khalsa', was formed. Amid the Afghan invasions and the decline of the Mughals, these misls took control of a large part of Punjab, which Ranjit Singh joined into one state after 1799."
 tags: ["sikh-history", "misl", "dal-khalsa", "punjab", "ahmad-shah-abdali", "amritsar"]
-series: { id: sikh-itihas, order: 10 }
+series: { id: sikh-itihas, order: 12 }
 sources:
   - title: "Sikh Confederacy (Misl) — Wikipedia"
     url: https://en.wikipedia.org/wiki/Misl

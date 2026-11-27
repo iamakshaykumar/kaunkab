@@ -7,7 +7,7 @@ kaun: ["Srinivasa Ramanujan", "G. H. Hardy", "J. E. Littlewood", "Janaki Ammal",
 kahan: ["Erode", "Kumbakonam", "Madras (Chennai)", "Trinity College, Cambridge", "London"]
 saar: "Srinivasa Ramanujan (1887–1920), who learned mathematics almost alone and without any degree, produced results in number theory, infinite series and partition functions that are still researched today. His 1913 letter to G. H. Hardy took him to Cambridge, where he became a Fellow of the Royal Society. He died on 26 April 1920 at the age of only 32."
 tags: ["mathematics", "science", "british-rule", "tamil-nadu", "cambridge"]
-series: { id: vigyan-kala-aur-khel, order: 3 }
+series: { id: vigyan-kala-aur-khel, order: 5 }
 sources:
   - title: "Srinivasa Ramanujan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Srinivasa_Ramanujan

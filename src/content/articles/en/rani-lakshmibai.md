@@ -7,7 +7,7 @@ kaun: ["Rani Lakshmibai", "Gangadhar Rao", "Damodar Rao", "Tatya Tope", "Hugh Ro
 kahan: ["Jhansi", "Varanasi", "Kalpi", "Gwalior"]
 saar: "Manikarnika, born in Varanasi, grew up to become Rani Lakshmibai of Jhansi. After her kingdom was taken away under the Doctrine of Lapse, she fought the British firmly in the revolt of 1857-58 and was martyred fighting near Gwalior on 18 June 1858."
 tags: ["heroine", "revolt-1857", "british-rule", "bundelkhand"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 11 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 14 }
 sources:
   - title: "NCERT, Our Pasts-III (Class 8), Chapter 5: When People Rebel — 1857 and After"
   - title: "Lakshmi Bai — Encyclopaedia Britannica"

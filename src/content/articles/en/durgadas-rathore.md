@@ -7,7 +7,7 @@ kaun: ["Durgadas Rathore", "Maharaja Ajit Singh", "Maharaja Jaswant Singh", "Aur
 kahan: ["Marwar", "Jodhpur", "Delhi", "Mewar", "Ujjain"]
 saar: "After the death of Maharaja Jaswant Singh of Marwar in 1678, Aurangzeb took Marwar under direct Mughal control. The commander Durgadas Rathore rescued the infant heir Ajit Singh from Delhi and carried on a guerrilla struggle for about three decades, after which Ajit Singh recovered Jodhpur in 1707."
 tags: ["rajput", "rajasthan", "marwar", "mughal-empire", "aurangzeb", "war"]
-series: { id: kshetriya-shaktiyan, order: 24 }
+series: { id: kshetriya-shaktiyan, order: 25 }
 sources:
   - title: "Durgadas Rathore — Wikipedia"
     url: https://en.wikipedia.org/wiki/Durgadas_Rathore

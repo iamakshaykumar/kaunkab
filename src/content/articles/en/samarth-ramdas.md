@@ -7,7 +7,7 @@ kaun: ["Samarth Ramdas (Narayan Suryajipant Thosar)", "Kalyan Swami", "Venabai",
 kahan: ["Jamb (Jalna district)", "Takali (Nashik)", "Chaphal", "Shivthar Ghal (Raigad district)", "Sajjangad (Satara)"]
 saar: "Samarth Ramdas, a Marathi saint of the seventeenth century, was a devotee of Rama and Hanuman. His works 'Dasbodh' and 'Manache Shlok' are still read in homes across Maharashtra. Along with devotion, he stressed physical strength, organisation and practical wisdom. Historians still debate the nature and timing of his relationship with Shivaji."
 tags: ["bhakti", "sant-poet", "marathi-literature", "maharashtra", "ramdasi-sect"]
-series: { id: bhakti-aur-sufi, order: 28 }
+series: { id: bhakti-aur-sufi, order: 31 }
 sources:
   - title: "Samarth Ramdas — Wikipedia"
     url: https://en.wikipedia.org/wiki/Samarth_Ramdas

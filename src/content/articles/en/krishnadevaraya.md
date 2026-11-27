@@ -7,7 +7,7 @@ kaun: ["Krishnadevaraya", "Tuluva Narasa Nayaka", "Timmarusu", "Prataparudra Gaj
 kahan: ["Hampi (Vijayanagara)", "Udayagiri", "Kondavidu", "Raichur", "Tirumala", "Srikakulam (Andhra Pradesh)"]
 saar: "Krishnadevaraya of the Tuluva dynasty ruled Vijayanagara from 1509 to 1529. He led successful campaigns against the Gajapatis of Odisha and the Deccan sultans, won Raichur in 1520 and wrote the Telugu poem 'Amuktamalyada'. Because of the 'Ashtadiggajas', the eight great poets of his court, his age is called the golden age of Telugu literature."
 tags: ["vijayanagara-empire", "south-india", "emperor", "telugu-literature", "hampi"]
-series: { id: dakshin-ke-rajvansh, order: 12 }
+series: { id: dakshin-ke-rajvansh, order: 13 }
 sources:
   - title: "Krishnadevaraya — Wikipedia"
     url: https://en.wikipedia.org/wiki/Krishnadevaraya

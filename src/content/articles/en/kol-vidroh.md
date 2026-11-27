@@ -7,7 +7,7 @@ kaun: ["Budhu Bhagat", "Joa Bhagat", "Sindrai Manki", "Bindrai Manki", "Surga Ma
 kahan: ["Chotanagpur", "Sonepur pargana", "Tamar", "Ranchi", "Singhbhum", "Palamau", "Hazaribagh", "Manbhum"]
 saar: "In late 1831 the Munda, Ho, Oraon and Bhumij communities of Chotanagpur took up arms against outside contractors, moneylenders and the Company's new administration, in what British records call the 'Kol Rebellion'. The army crushed it in 1832, but afterwards the British had to create a separate administrative arrangement for the region — the South-West Frontier Agency."
 tags: ["adivasi-movement", "munda", "ho", "jharkhand", "anti-british", "rebellion"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 6 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 9 }
 sources:
   - title: "Kol uprising — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kol_uprising

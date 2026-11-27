@@ -7,7 +7,7 @@ kaun: ["Ramakrishna Paramahamsa", "Swami Vivekananda", "Sarada Devi", "Swami Bra
 kahan: ["Kamarpukur (Hooghly district, Bengal)", "Dakshineswar", "Cossipore", "Baghbazar (Calcutta)", "Belur Math (Howrah)"]
 saar: "Swami Vivekananda, disciple of the Dakshineswar priest and saint Ramakrishna Paramahamsa, laid the foundation of the Ramakrishna Mission in Calcutta on 1 May 1897. This organisation, which joins renunciation with social service, has its headquarters at Belur Math on the Hooghly, and still carries out work in education, medicine and disaster relief."
 tags: ["ramakrishna-mission", "vivekananda", "ramakrishna-paramahamsa", "social-reform", "indian-renaissance", "bengal"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 20 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 28 }
 sources:
   - title: "Bipan Chandra — History of Modern India, Chapter: Religious and Social Reform Movements"
   - title: "Ramakrishna Mission — Wikipedia"

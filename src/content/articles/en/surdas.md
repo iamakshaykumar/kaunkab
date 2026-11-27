@@ -7,7 +7,7 @@ kaun: ["Surdas", "Vallabhacharya", "Vitthalanatha", "Akbar"]
 kahan: ["Braj", "Govardhan", "Sihi (Haryana)", "Mathura"]
 saar: "The sixteenth-century poet Surdas composed verses in Braj Bhasha on Krishna's childhood pastimes and the love of Radha and Krishna, which made Braj Bhasha a language of literature. His verses, compiled in the 'Sursagar', are still sung today in temples and music gatherings."
 tags: ["bhakti", "krishna-devotion", "saint-poet", "hindi-literature", "braj-bhasha"]
-series: { id: bhakti-aur-sufi, order: 19 }
+series: { id: bhakti-aur-sufi, order: 21 }
 sources:
   - title: "Kenneth E. Bryant and John Stratton Hawley — Sur's Ocean: Poems from the Early Tradition (Murty Classical Library of India, Harvard University Press, 2015)"
   - title: "John Stratton Hawley — Three Bhakti Voices: Mirabai, Surdas, and Kabir in Their Times and Ours (Oxford University Press, 2005)"

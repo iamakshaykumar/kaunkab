@@ -7,7 +7,7 @@ kaun: ["Viswanatha Nayak", "Ariyanatha Mudaliar", "Tirumala Nayak", "Rani Mangam
 kahan: ["Madurai", "Tiruchirappalli", "Ramanathapuram", "Tamil Nadu"]
 saar: "In 1529 the Vijayanagara emperor Krishnadevaraya made Viswanatha Nayak the governor of Madurai. His descendants ruled the southern Tamil country for about two centuries, created the palayam system and built grand structures such as the Meenakshi temple and the Tirumala Nayak Palace. Their independent rule ended in 1736 with Chanda Sahib's capture."
 tags: ["nayak-dynasty", "madurai", "south-india", "vijayanagara-empire", "tamil-nadu", "architecture"]
-series: { id: dakshin-ke-rajvansh, order: 14 }
+series: { id: dakshin-ke-rajvansh, order: 15 }
 sources:
   - title: "Madurai Nayak dynasty — Wikipedia"
     url: https://en.wikipedia.org/wiki/Madurai_Nayak_dynasty

@@ -7,7 +7,7 @@ kaun: ["Jagadish Chandra Bose", "Father Eugène Lafont", "Abala Bose", "Guglielm
 kahan: ["Mymensingh (Bangladesh)", "Presidency College, Calcutta", "Cambridge", "Royal Institution, London", "Bose Institute, Kolkata", "Giridih"]
 saar: "Between 1894 and 1896 Jagadish Chandra Bose (1858–1937) carried out pioneering experiments at Presidency College, Calcutta, sending wireless signals using millimetre waves (microwaves). He later built instruments such as the crescograph to show that plants too respond to stimuli. On 30 November 1917 he founded the Bose Institute in Calcutta."
 tags: ["science", "physics", "botany", "british-rule", "bengal"]
-series: { id: vigyan-kala-aur-khel, order: 2 }
+series: { id: vigyan-kala-aur-khel, order: 3 }
 sources:
   - title: "Jagadish Chandra Bose — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jagadish_Chandra_Bose

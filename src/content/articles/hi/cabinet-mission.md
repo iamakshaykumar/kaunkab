@@ -7,7 +7,7 @@ kaun: [लॉर्ड पेथिक-लॉरेंस, सर स्टै�
 kahan: [दिल्ली, शिमला, कलकत्ता]
 saar: 24 मार्च 1946 को ब्रिटिश मंत्रिमंडल के तीन सदस्य सत्ता हस्तांतरण का रास्ता निकालने दिल्ली पहुँचे। 16 मई 1946 की उनकी योजना ने कमज़ोर केंद्र, प्रांतों के तीन समूहों और संविधान सभा वाले संयुक्त भारत का ढाँचा रखा। योजना पर सहमति टूट गई, पर इसी से संविधान सभा बनी और सितंबर 1946 में नेहरू के नेतृत्व में अंतरिम सरकार बनी।
 tags: [cabinet-mission, swatantrata-sangram, samvidhan-sabha, antarim-sarkar, congress, muslim-league]
-series: { id: azadi-ki-raah, order: 32 }
+series: { id: azadi-ki-raah, order: 38 }
 sources:
   - title: "बिपन चंद्र व अन्य — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: स्वतंत्रता और विभाजन"
   - title: "1946 Cabinet Mission to India — Wikipedia"

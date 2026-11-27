@@ -7,7 +7,7 @@ kaun: ["Kabir", "Ramananda", "Niru", "Nima"]
 kahan: ["Varanasi (Kashi)", "Lahartara", "Maghar"]
 saar: "Kabir, brought up in a weaver family in Kashi around the fifteenth century, composed sakhis and verses in simple everyday language that questioned hypocrisy and caste distinctions and showed true love as the way to reach God. His utterances are collected in the Bijak, the Kabir Granthavali and the Guru Granth Sahib."
 tags: ["bhakti", "sant-poet", "literature", "varanasi", "nirguna-bhakti"]
-series: { id: bhakti-aur-sufi, order: 15 }
+series: { id: bhakti-aur-sufi, order: 17 }
 sources:
   - title: "NCERT, Themes in Indian History Part II (Class 12), Chapter 6: Bhakti-Sufi Traditions"
   - title: "Hazari Prasad Dwivedi — Kabir (1942)"

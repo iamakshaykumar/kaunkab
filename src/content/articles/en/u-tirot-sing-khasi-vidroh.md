@@ -7,7 +7,7 @@ kaun: ["U Tirot Sing", "David Scott", "Lieutenant Bedingfield", "Lieutenant Burl
 kahan: ["Nongkhlaw (West Khasi Hills, Meghalaya)", "Khasi Hills", "Guwahati", "Sylhet", "Sohra (Cherrapunji)", "Dhaka"]
 saar: "U Tirot Sing, the ruler (syiem) of Nongkhlaw in the Khasi Hills, had allowed the British to build a road through his territory, but angered by broken promises and growing British interference, he attacked the British post at Nongkhlaw on 4 April 1829. For about four years after that, Khasi warriors fought a guerrilla war. In January 1833 Tirot Sing was captured and sent to Dhaka, where he died on 17 July 1835."
 tags: ["meghalaya", "north-east", "british-rule", "east-india-company", "revolt", "freedom-struggle", "tribal"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 5 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 8 }
 sources:
   - title: "Tirot Sing — Wikipedia"
     url: https://en.wikipedia.org/wiki/Tirot_Sing

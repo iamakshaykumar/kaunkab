@@ -7,7 +7,7 @@ kaun: ["Chand Bibi", "Hussain Nizam Shah I", "Ali Adil Shah I", "Ibrahim Adil Sh
 kahan: ["Ahmednagar (Ahilyanagar)", "Bijapur", "Berar", "Deccan"]
 saar: Chand Bibi, princess of Ahmednagar and queen of Bijapur, acted as regent in two Deccan sultanates. In 1595–96 she successfully defended the fort of Ahmednagar against a Mughal siege, but she was killed by her own soldiers during the second siege in 1600.
 tags: ["warrior-queen", "deccan", "ahmadnagar", "nizamshahi", "mughal-empire", "maharashtra"]
-series: { id: kshetriya-shaktiyan, order: 21 }
+series: { id: kshetriya-shaktiyan, order: 22 }
 sources:
   - title: "Muhammad Qasim Firishta — Tarikh-i-Firishta (Gulshan-i-Ibrahimi)"
   - title: "Abul Fazl — Akbarnama, Volume 3 (the Mughal account of the Deccan campaign)"

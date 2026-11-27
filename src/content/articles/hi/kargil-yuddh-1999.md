@@ -7,7 +7,7 @@ kaun: [अटल बिहारी वाजपेयी, जनरल वी. 
 kahan: [कारगिल, द्रास, बटालिक, मुश्कोह घाटी, तोलोलिंग, टाइगर हिल, "राष्ट्रीय राजमार्ग 1 (श्रीनगर–लेह)", लद्दाख]
 saar: मई 1999 में पता चला कि पाकिस्तानी सैनिक और घुसपैठिए कारगिल ज़िले में नियंत्रण रेखा पार कर भारत की ओर की ऊँची चोटियों पर जम गए हैं। भारतीय सेना ने 'ऑपरेशन विजय' और वायुसेना ने 'ऑपरेशन सफ़ेद सागर' चलाकर तोलोलिंग, टाइगर हिल और प्वाइंट 4875 जैसी चोटियाँ वापस लीं। 26 जुलाई 1999 को लड़ाई समाप्त हुई, जिसे भारत 'कारगिल विजय दिवस' के रूप में मनाता है; इस युद्ध में 527 भारतीय सैनिकों ने प्राण गँवाए।
 tags: [kargil-yuddh, operation-vijay, bharat-pak-yuddh, niyantran-rekha, bhartiya-sena, ladakh, swatantra-bharat]
-series: { id: badalta-bharat, order: 16 }
+series: { id: badalta-bharat, order: 32 }
 sources:
   - title: "Kargil War — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kargil_War

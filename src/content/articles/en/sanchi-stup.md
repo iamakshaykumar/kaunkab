@@ -7,7 +7,7 @@ kaun: ["Ashoka", "Satakarni", "Henry Taylor", "Alexander Cunningham", "John Mars
 kahan: ["Sanchi (Raisen district, Madhya Pradesh)", "Vidisha"]
 saar: "The Great Stupa on the hill of Sanchi near Bhopal in Madhya Pradesh is among the oldest stone structures in India. Emperor Ashoka laid its foundation in the 3rd century BCE, it was enlarged in the Shunga period, and its four carved gateways were built in the Satavahana period. Today it is a UNESCO World Heritage Site."
 tags: ["buddhism", "madhya-pradesh", "maurya", "architecture", "world-heritage"]
-series: { id: prachin-gyan-aur-kala, order: 2 }
+series: { id: prachin-gyan-aur-kala, order: 3 }
 sources:
   - title: "Buddhist Monuments at Sanchi — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/524/

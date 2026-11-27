@@ -37,8 +37,8 @@ export const ERAS: EraInfo[] = [
     labelEn: 'Modern',
     from: 1757,
     to: null,
-    blurb: 'प्लासी से स्वतंत्रता तक — औपनिवेशिक शासन, संघर्ष और नए भारत का निर्माण।',
-    blurbEn: 'From Plassey to independence — colonial rule, the freedom struggle and the making of a new India.',
+    blurb: 'प्लासी से आज तक — औपनिवेशिक शासन, स्वतंत्रता संघर्ष और नए भारत का निर्माण।',
+    blurbEn: 'From Plassey to the present — colonial rule, the freedom struggle and the making of a new India.',
   },
 ];
 

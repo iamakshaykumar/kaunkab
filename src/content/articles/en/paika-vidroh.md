@@ -7,7 +7,7 @@ kaun: ["Bakshi Jagabandhu Vidyadhar", "Raja Mukunda Deva II", "Paika soldiers", 
 kahan: ["Khurda", "Banapur", "Puri", "Cuttack", "Ghumsur (Odisha)"]
 saar: After British occupation of Odisha in 1803, the Paikas, the traditional soldiers of the Khurda kingdom, lost their rent-free lands and their standing. In March 1817, under Bakshi Jagabandhu, the former commander of Khurda, they rose in revolt and drove Company officials out of Banapur, Khurda and Puri. The revolt was suppressed within a few months, but sporadic fighting went on for years; Jagabandhu surrendered in 1825.
 tags: ["odisha", "british-rule", "east-india-company", "revolt", "peasant-movement"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 3 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 4 }
 sources:
   - title: "Paika Rebellion — Wikipedia"
     url: https://en.wikipedia.org/wiki/Paika_Rebellion

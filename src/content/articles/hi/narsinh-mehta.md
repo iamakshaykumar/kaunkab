@@ -7,7 +7,7 @@ kaun: [नरसिंह मेहता, माणेकबाई, कुं�
 kahan: ["तलाजा (भावनगर)", जूनागढ़, गोपनाथ, मांगरोल, सौराष्ट्र]
 saar: नरसिंह मेहता (लगभग 1414–1481) गुजरात के 15वीं सदी के भक्त-कवि थे, जिन्हें गुजराती भाषा का 'आदि कवि' माना जाता है। जूनागढ़ में रहकर उन्होंने कृष्ण-भक्ति के पद और प्रभातियाँ रचीं और जाति-भेद का विरोध किया। उनका भजन 'वैष्णव जन तो तेने कहिए' महात्मा गांधी की प्रार्थना-सभाओं का प्रिय भजन बना और पूरे देश में प्रसिद्ध हुआ।
 tags: [bhakti, gujarat, sahitya, krishna-bhakti, gandhi]
-series: { id: bhakti-aur-sufi, order: 17 }
+series: { id: bhakti-aur-sufi, order: 19 }
 sources:
   - title: "Narsinh Mehta — Wikipedia"
     url: https://en.wikipedia.org/wiki/Narsinh_Mehta

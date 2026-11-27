@@ -7,7 +7,7 @@ kaun: ["Maharaja Subandhu", "Lieutenant F. Dangerfield"]
 kahan: ["Bagh (Dhar district, Madhya Pradesh)", "Baghini River", "Gujari Mahal Museum (Gwalior)"]
 saar: "The Bagh Caves, cut into sandstone on the southern slope of the Vindhya range in Dhar district of Madhya Pradesh, were monasteries (viharas) of Buddhist monks. Dating from about the fifth-sixth century, these caves are famous for their coloured murals, which are compared to Ajanta. To save them from damage, most of their paintings were moved in 1982 to the museum at Gwalior."
 tags: ["cave-temple", "painting", "buddhism", "architecture", "madhya-pradesh"]
-series: { id: prachin-gyan-aur-kala, order: 11 }
+series: { id: prachin-gyan-aur-kala, order: 12 }
 sources:
   - title: "Bagh Caves — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bagh_Caves

@@ -7,7 +7,7 @@ kaun: ["Dharna Shah (Dhanna Shah)", "Rana Kumbha", "Architect Depa (Depak)"]
 kahan: ["Ranakpur (Pali district, Rajasthan)", "Aravalli Range", "Mewar"]
 saar: "The four-faced Jain temple of Ranakpur, built in the Aravalli hills of Rajasthan, is dedicated to the first Tirthankara, Rishabhanatha (Adinatha). The Jain merchant Dharna Shah began its construction around 1437 CE under the patronage of Rana Kumbha of Mewar. About 1,444 carved columns of white marble are its hallmark."
 tags: ["temple", "jainism", "architecture", "rajasthan", "mewar", "rana-kumbha"]
-series: { id: mandir-sthapatya, order: 11 }
+series: { id: mandir-sthapatya, order: 12 }
 sources:
   - title: "Ranakpur Jain temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ranakpur_Jain_temple

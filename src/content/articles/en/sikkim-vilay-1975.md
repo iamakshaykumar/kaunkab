@@ -7,7 +7,7 @@ kaun: ["Palden Thondup Namgyal", "Kazi Lhendup Dorjee", "Indira Gandhi", "Fakhru
 kahan: ["Gangtok (Sikkim)", "New Delhi"]
 saar: "The Himalayan state of Sikkim, ruled for centuries by the Chogyals (kings) of the Namgyal dynasty, was a protectorate of India under the treaty of 1950. After the people's movement of 1973, the status of 'associate state' in 1974 and the referendum of 14 April 1975, Sikkim became the 22nd state of India on 16 May 1975 through the 36th Constitutional Amendment, and the monarchy came to an end."
 tags: ["independent-india", "sikkim", "chogyal", "state-merger", "constitutional-amendment", "northeast"]
-series: { id: badalta-bharat, order: 14 }
+series: { id: badalta-bharat, order: 17 }
 sources:
   - title: "Sunanda K. Datta-Ray — Smash and Grab: Annexation of Sikkim (1984)"
   - title: "Ranjan Gupta — Sikkim: The Merger with India, Asian Survey 15(9), 1975"

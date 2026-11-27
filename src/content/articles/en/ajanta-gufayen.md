@@ -7,7 +7,7 @@ kaun: ["Harishena (Vakataka emperor)", "Varahadeva", "John Smith"]
 kahan: ["Ajanta (Chhatrapati Sambhajinagar district, Maharashtra)", "Waghora river"]
 saar: "About 30 rock-cut Buddhist caves in the horseshoe-shaped valley of the Waghora river in Maharashtra are world famous for their wall paintings. They were made in two phases — in the Satavahana period and then in the fifth century under Vakataka rule."
 tags: ["art", "buddhism", "maharashtra", "world-heritage", "cave"]
-series: { id: prachin-gyan-aur-kala, order: 3 }
+series: { id: prachin-gyan-aur-kala, order: 4 }
 sources:
   - title: "Ajanta Caves — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/242/

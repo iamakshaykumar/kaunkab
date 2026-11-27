@@ -7,7 +7,7 @@ kaun: [संत तुकाराम, बहिणाबाई, मंबा�
 kahan: [देहू (पुणे के पास), इंद्रायणी नदी, पंढरपुर, महाराष्ट्र]
 saar: सत्रहवीं सदी के मराठी संत तुकाराम ने पंढरपुर के विट्ठल की भक्ति में हज़ारों अभंग रचे, जो सरल मराठी में पाखंड, जाति-भेद और दिखावटी धर्म पर चोट करते हैं। वारकरी परंपरा में उन्हें भक्ति-मंदिर का 'कलश' माना जाता है।
 tags: [bhakti, sant-kavi, marathi-sahitya, varkari, maharashtra]
-series: { id: bhakti-aur-sufi, order: 27 }
+series: { id: bhakti-aur-sufi, order: 30 }
 sources:
   - title: "Dilip Chitre — Says Tuka: Selected Poetry of Tukaram (Penguin, 1991)"
   - title: "महीपति — भक्तिलीलामृत (18वीं सदी, संत-चरित्र)"

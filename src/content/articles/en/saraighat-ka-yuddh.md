@@ -7,7 +7,7 @@ kaun: ["Lachit Borphukan", "Raja Ram Singh I", "Udayaditya Singha", "Atan Burago
 kahan: ["Saraighat (Guwahati)", "Brahmaputra river", "Alaboi", "Kaliabor"]
 saar: "In March 1671, at Saraighat on the Brahmaputra river near Guwahati, the Ahom army under the commander Lachit Borphukan defeated the Mughal army that had come under Raja Ram Singh of Amber. This victory, resting on knowledge of the river's geography and naval skill, saved Assam from coming under Mughal control at that time."
 tags: ["ahom", "assam", "north-east", "war", "navy", "mughal-empire"]
-series: { id: kshetriya-shaktiyan, order: 23 }
+series: { id: kshetriya-shaktiyan, order: 24 }
 sources:
   - title: "S. K. Bhuyan — Lachit Barphukan and His Times (Government of Assam, 1947)"
   - title: "Edward Gait — A History of Assam (1906)"

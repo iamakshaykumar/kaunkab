@@ -7,7 +7,7 @@ kaun: ["Lord Dalhousie", "Great Indian Peninsula Railway"]
 kahan: ["Bori Bunder (Mumbai)", "Thane"]
 saar: On 16 April 1853, India's first passenger train ran from Bori Bunder in Bombay to Thane, a distance of about 34 kilometres. The train, with 14 coaches and about 400 passengers, was pulled by three steam locomotives — Sahib, Sindh and Sultan.
 tags: ["british-rule", "railway", "mumbai", "technology", "dalhousie"]
-series: { id: company-raj, order: 18 }
+series: { id: company-raj, order: 21 }
 sources:
   - title: "History of rail transport in India — Wikipedia"
     url: https://en.wikipedia.org/wiki/History_of_rail_transport_in_India

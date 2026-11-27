@@ -7,7 +7,7 @@ kaun: [विद्यापति, कीर्तिसिंह, देवस
 kahan: ["बिसफी (मधुबनी, बिहार)", मिथिला, "राजबनौली (आज नेपाल में)", बंगाल, दरभंगा]
 saar: चौदहवीं-पंद्रहवीं सदी के कवि विद्यापति (लगभग 1352–1448) मिथिला के ओइनवार राजाओं के दरबार से जुड़े थे। उन्होंने संस्कृत, अवहट्ट और मैथिली में लिखा और मैथिली को साहित्य की भाषा बनाया। राधा-कृष्ण के प्रेम-गीतों और शिव-भक्ति के पदों के लिए प्रसिद्ध 'मैथिल कवि कोकिल' का प्रभाव बंगाल की वैष्णव पदावली और ब्रजबुलि भाषा तक पहुँचा।
 tags: [vidyapati, maithili, mithila, bhakti-andolan, bihar, kavita]
-series: { id: bhakti-aur-sufi, order: 13 }
+series: { id: bhakti-aur-sufi, order: 14 }
 sources:
   - title: "Vidyapati — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vidyapati

@@ -7,7 +7,7 @@ kaun: ["Mahatma Gandhi", "Vinoba Bhave", "Jawaharlal Nehru", "Brahmadatt", "Lord
 kahan: ["Paunar (Wardha, Maharashtra)", "Wardha", "Shimla", "Gorakhpur"]
 saar: "Dissatisfied that India had been dragged into the Second World War without being asked, and with the 'August Offer' (8 August 1940), the Congress under Gandhi chose, instead of a mass movement, an anti-war satyagraha by selected individuals. On 17 October 1940 Vinoba Bhave became the first satyagrahi, and about 20–25 thousand people went to jail."
 tags: ["satyagraha", "gandhi", "vinoba-bhave", "second-world-war", "congress", "freedom-struggle"]
-series: { id: azadi-ki-raah, order: 24 }
+series: { id: azadi-ki-raah, order: 29 }
 sources:
   - title: "Bipan Chandra and others — India's Struggle for Independence, Chapter: The War, the Cripps Mission and Quit India"
   - title: "Sumit Sarkar — Modern India (1885–1947)"

@@ -7,7 +7,7 @@ kaun: [शाहनवाज़ ख़ान, प्रेम कुमार �
 kahan: [लाल क़िला (दिल्ली), कलकत्ता]
 saar: द्वितीय विश्वयुद्ध के बाद अंग्रेज़ों ने सुभाष चंद्र बोस की आज़ाद हिंद फ़ौज (INA) के अफ़सरों पर दिल्ली के लाल क़िले में कोर्ट-मार्शल चलाया। 5 नवंबर 1945 से शुरू हुए पहले मुक़दमे में शाहनवाज़ ख़ान, प्रेम सहगल और गुरबख़्श सिंह ढिल्लों पर 'सम्राट के विरुद्ध युद्ध छेड़ने' का आरोप था। सज़ा तो हुई, पर जनता के भारी दबाव में जनवरी 1946 में तीनों रिहा कर दिए गए।
 tags: [ina-mukadma, azad-hind-fauj, lal-qila, swatantrata-sangram, subhas-chandra-bose]
-series: { id: azadi-ki-raah, order: 29 }
+series: { id: azadi-ki-raah, order: 35 }
 sources:
   - title: "बिपन चंद्र व अन्य — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: स्वतंत्रता की ओर — आज़ाद हिंद फ़ौज के मुक़दमे"
   - title: "Indian National Army trials — Wikipedia"

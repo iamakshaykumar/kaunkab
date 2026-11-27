@@ -7,7 +7,7 @@ kaun: [अरविंद घोष (श्री अरविंद), बार
 kahan: [कलकत्ता (कोलकाता), "किंग्स कॉलेज (कैम्ब्रिज)", बड़ौदा, अलीपुर जेल, उत्तरपाड़ा, चंदननगर, पांडिचेरी (पुदुच्चेरी)]
 saar: इंग्लैंड में पढ़े अरविंद घोष बड़ौदा की नौकरी छोड़कर बंगाल के गरम राष्ट्रवाद के प्रमुख विचारक बने। मई 1908 में अलीपुर बम केस में गिरफ़्तारी के बाद उन्होंने जेल में लगभग एक साल गहरी साधना की, 6 मई 1909 को बरी हुए और 1910 में पांडिचेरी जाकर राजनीति छोड़ योग और दर्शन को जीवन समर्पित कर दिया।
 tags: [swatantrata-sangram, garam-dal, alipore-bomb-case, bangal, darshan, yoga]
-series: { id: sudhar-aur-rashtriya-chetna, order: 24 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 34 }
 sources:
   - title: "Sri Aurobindo — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sri_Aurobindo

@@ -7,7 +7,7 @@ kaun: ["John Morley", "Lord Minto", "Satyendra Prasanna Sinha", "Gopal Krishna G
 kahan: ["London", "Shimla", "Calcutta"]
 saar: The Indian Councils Act of 1909, called the Morley-Minto Reforms after Secretary of State for India John Morley and Viceroy Lord Minto, enlarged the central and provincial legislative councils and added some elected members to them. But the same Act provided for separate electorates for Muslims, which was later regarded as a step that encouraged communal politics.
 tags: ["freedom-struggle", "british-rule", "constitution", "separate-electorates", "muslim-league", "congress", "moderates"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 25 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 35 }
 sources:
   - title: "Indian Councils Act 1909 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indian_Councils_Act_1909

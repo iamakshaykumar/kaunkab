@@ -7,7 +7,7 @@ kaun: ["Vidyapati", "Kirtisimha", "Devasimha", "Shivasimha", "Lakhima Devi", "Ch
 kahan: ["Bisfi (Madhubani, Bihar)", "Mithila", "Rajbanauli (now in Nepal)", "Bengal", "Darbhanga"]
 saar: "The 14th-15th century poet Vidyapati (c. 1352–1448) was associated with the court of the Oinwar kings of Mithila. He wrote in Sanskrit, Avahattha and Maithili and made Maithili a language of literature. Famous for his love songs of Radha and Krishna and his devotional verses to Shiva, the 'Maithili Kavi Kokil' influenced the Vaishnava padavali of Bengal and the Brajabuli language."
 tags: ["vidyapati", "maithili", "mithila", "bhakti-movement", "bihar", "poetry"]
-series: { id: bhakti-aur-sufi, order: 13 }
+series: { id: bhakti-aur-sufi, order: 14 }
 sources:
   - title: "Vidyapati — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vidyapati

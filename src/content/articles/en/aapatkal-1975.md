@@ -7,7 +7,7 @@ kaun: ["Indira Gandhi", "Fakhruddin Ali Ahmed", "Raj Narain", "Jagmohanlal Sinha
 kahan: ["New Delhi", "Allahabad (Prayagraj)", "Rae Bareli (Uttar Pradesh)"]
 saar: "On 25 June 1975, President Fakhruddin Ali Ahmed, on the advice of Prime Minister Indira Gandhi, declared a state of Emergency under Article 352 of the Constitution on grounds of 'internal disturbance'. For 21 months civil liberties were suspended and the press was censored. In the March 1977 election the Congress lost and, for the first time, a non-Congress government came to power at the Centre."
 tags: ["independent-india", "emergency", "indira-gandhi", "democracy", "constitution", "janata-party", "civil-rights"]
-series: { id: badalta-bharat, order: 13 }
+series: { id: badalta-bharat, order: 16 }
 sources:
   - title: "Bipan Chandra — In the Name of Democracy: JP Movement and the Emergency (2003)"
   - title: "Ramachandra Guha — India After Gandhi, Chapter: The Rise and Fall of Indira"

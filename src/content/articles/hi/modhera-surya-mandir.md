@@ -7,7 +7,7 @@ kaun: [भीम प्रथम, चौलुक्य (सोलंकी) व
 kahan: ["मोढेरा (मेहसाणा ज़िला, गुजरात)", पुष्पावती नदी, पाटन]
 saar: "गुजरात के मोढेरा में पुष्पावती नदी के किनारे बना सूर्य मंदिर चौलुक्य (सोलंकी) राजा भीम प्रथम के समय का है। गर्भगृह की दीवार पर वि.सं. 1083 (1026–27 ई.) का एक लेख है। मंदिर, सभामंडप और सीढ़ियों वाला सूर्यकुंड — तीनों मिलकर इसे मारू-गुर्जर शैली का अद्भुत उदाहरण बनाते हैं।"
 tags: [mandir, vastukala, gujarat, solanki-vansh, surya-upasana]
-series: { id: mandir-sthapatya, order: 5 }
+series: { id: mandir-sthapatya, order: 6 }
 sources:
   - title: "Sun Temple, Modhera — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sun_Temple,_Modhera

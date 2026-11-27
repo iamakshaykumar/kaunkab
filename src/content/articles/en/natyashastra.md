@@ -7,7 +7,7 @@ kaun: ["Bharata Muni", "Abhinavagupta"]
 kahan: ["Ancient India"]
 saar: "The Natyashastra is the oldest surviving Sanskrit treatise on drama, dance, music and acting, which tradition links to Bharata Muni. Its compilation is generally placed between about 200 BCE and 200 CE. This very text gave the theory of 'rasa', which later became the foundation of Indian thinking on art."
 tags: ["literature", "sanskrit", "drama", "dance", "music", "rasa-theory"]
-series: { id: prachin-gyan-aur-kala, order: 6 }
+series: { id: prachin-gyan-aur-kala, order: 7 }
 sources:
   - title: "Natya Shastra — Wikipedia"
     url: https://en.wikipedia.org/wiki/Natya_Shastra

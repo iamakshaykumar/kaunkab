@@ -7,7 +7,7 @@ kaun: ["Sultan Quli Qutb-ul-Mulk", "Ibrahim Quli Qutb Shah", "Muhammad Quli Qutb
 kahan: ["Golconda", "Hyderabad (Telangana)", "Kollur", "Machilipatnam"]
 saar: "When the Bahmani Sultanate broke up, Sultan Quli laid the foundation of the Qutb Shahi Sultanate at Golconda in 1518. Rich from the diamond trade and sea ports, this kingdom founded Hyderabad and built the Charminar in 1591. In 1687, after an eight-month siege, Aurangzeb conquered Golconda."
 tags: ["qutb-shahi", "deccan-sultanate", "golconda", "hyderabad", "architecture", "telangana"]
-series: { id: dakshin-ke-rajvansh, order: 15 }
+series: { id: dakshin-ke-rajvansh, order: 16 }
 sources:
   - title: "H. K. Sherwani — History of the Qutb Shahi Dynasty"
   - title: "Richard M. Eaton — A Social History of the Deccan, 1300–1761 (The New Cambridge History of India)"

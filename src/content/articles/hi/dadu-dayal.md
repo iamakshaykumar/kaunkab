@@ -7,7 +7,7 @@ kaun: [दादू दयाल, बाबा बुड्ढा (बुड्�
 kahan: [अहमदाबाद, सांभर, आमेर, नराणा (जयपुर), भैराणा, करड़ाला]
 saar: दादू दयाल (1544–1603) राजस्थान के निर्गुण संत-कवि थे। अहमदाबाद के एक धुनिया (रुई धुनने वाले) परिवार से आए दादू ने जाति, मूर्ति-पूजा, तीर्थ और कर्मकांड के बजाय भीतर के अनुभव और नाम-स्मरण पर ज़ोर दिया। उनकी लगभग पाँच हज़ार साखियाँ और पद 'दादू वाणी' में संकलित हैं। उनके अनुयायियों का 'दादू पंथ' आज भी जयपुर के पास नराणा में केंद्रित है।
 tags: [bhakti, sant-parampara, nirgun-bhakti, rajasthan, dadu-panth]
-series: { id: bhakti-aur-sufi, order: 24 }
+series: { id: bhakti-aur-sufi, order: 27 }
 sources:
   - title: "Dadu Dayal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dadu_Dayal

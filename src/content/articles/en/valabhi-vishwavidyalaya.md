@@ -7,7 +7,7 @@ kaun: ["Bhattarka", "Dhruvasena I", "Dhruvasena II", "Gunamati", "Sthiramati", "
 kahan: ["Valabhi (Vallabhipur, Bhavnagar district, Gujarat)", "Saurashtra", "Nalanda"]
 saar: "Around 475 CE, Bhattarka, a general of the Guptas, founded the Maitraka dynasty in Saurashtra, with Valabhi as its capital. During this kingdom, which lasted three centuries, Valabhi became a major port city and a famous centre of Buddhist learning, which the Chinese traveller Yijing compared to Nalanda."
 tags: ["education", "buddhism", "gujarat", "jainism", "maitraka", "gupta"]
-series: { id: prachin-gyan-aur-kala, order: 10 }
+series: { id: prachin-gyan-aur-kala, order: 11 }
 sources:
   - title: "Valabhi University — Wikipedia"
     url: https://en.wikipedia.org/wiki/Valabhi_University

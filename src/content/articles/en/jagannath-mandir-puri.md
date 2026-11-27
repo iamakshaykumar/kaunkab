@@ -7,7 +7,7 @@ kaun: ["Anantavarman Chodaganga", "Anangabhima Deva III", "Gajapati kings", "Cha
 kahan: ["Puri (Odisha)", "Gundicha Temple"]
 saar: "The Jagannath Temple of Puri on the coast of Odisha, whose present form began to be built in the twelfth century under the Eastern Ganga king Anantavarman Chodaganga, is among the most famous pilgrimage sites in India. Its wooden idols, huge kitchen and the Rath Yatra held every year make it unique."
 tags: ["temple", "odisha", "architecture", "eastern-india", "festival", "vaishnava"]
-series: { id: mandir-sthapatya, order: 8 }
+series: { id: mandir-sthapatya, order: 9 }
 sources:
   - title: "Jagannath Temple, Puri — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri

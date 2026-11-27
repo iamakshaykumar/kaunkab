@@ -7,7 +7,7 @@ kaun: ["Bhima I", "Chaulukya (Solanki) dynasty", "Karna I", "Queen Udayamati"]
 kahan: ["Modhera (Mehsana district, Gujarat)", "Pushpavati River", "Patan"]
 saar: "The Sun Temple on the bank of the Pushpavati River at Modhera in Gujarat dates from the time of the Chaulukya (Solanki) king Bhima I. An inscription of Vikram Samvat 1083 (1026-27 CE) is on the wall of the sanctum. The temple, the assembly hall and the stepped Surya Kund together make it a wonderful example of the Maru-Gurjara style."
 tags: ["temple", "architecture", "gujarat", "solanki-dynasty", "sun-worship"]
-series: { id: mandir-sthapatya, order: 5 }
+series: { id: mandir-sthapatya, order: 6 }
 sources:
   - title: "Sun Temple, Modhera — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sun_Temple,_Modhera

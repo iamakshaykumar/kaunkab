@@ -7,7 +7,7 @@ kaun: [महाराज सुबंधु, "लेफ़्टिनेंट
 kahan: ["बाघ (धार ज़िला, मध्य प्रदेश)", बाघिनी नदी, "गूजरी महल संग्रहालय (ग्वालियर)"]
 saar: "मध्य प्रदेश के धार ज़िले में विंध्य पर्वत की दक्षिणी ढलान पर बलुआ पत्थर काटकर बनाई गई बाघ की गुफाएँ बौद्ध भिक्षुओं के विहार थीं। लगभग पाँचवीं-छठी सदी की ये गुफाएँ अपने रंगीन भित्तिचित्रों के लिए प्रसिद्ध हैं, जिनकी तुलना अजंता से की जाती है। नुकसान से बचाने के लिए इनके ज़्यादातर चित्र 1982 में ग्वालियर के संग्रहालय में पहुँचा दिए गए।"
 tags: [guha-mandir, chitrakala, bauddh-dharm, vastukala, madhyapradesh]
-series: { id: prachin-gyan-aur-kala, order: 11 }
+series: { id: prachin-gyan-aur-kala, order: 12 }
 sources:
   - title: "Bagh Caves — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bagh_Caves

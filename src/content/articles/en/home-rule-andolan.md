@@ -7,7 +7,7 @@ kaun: ["Bal Gangadhar Tilak", "Annie Besant", "George Arundale", "B. P. Wadia", 
 kahan: ["Belgaum", "Madras (Adyar)", "Poona", "Ooty (Ootacamund)"]
 saar: In 1916 Bal Gangadhar Tilak and Annie Besant formed separate Home Rule Leagues and turned the demand for self-government for India within the British Empire into a mass movement. The slogan 'Swaraj is my birthright' rang out in this period.
 tags: ["freedom-struggle", "tilak", "annie-besant", "congress", "swaraj"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 28 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 38 }
 sources:
   - title: "Bipan Chandra — India's Struggle for Independence, Chapter: The National Movement during the First World War — Home Rule Leagues"
   - title: "All India Home Rule League — Wikipedia"

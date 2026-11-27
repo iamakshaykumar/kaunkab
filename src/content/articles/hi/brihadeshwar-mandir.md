@@ -7,7 +7,7 @@ kaun: [राजराज प्रथम, चोल वंश, तंजाव�
 kahan: ["तंजावुर (तमिलनाडु)", कावेरी डेल्टा]
 saar: "तंजावुर का बृहदीश्वर मंदिर, जिसे चोल सम्राट राजराज प्रथम ने 'राजराजेश्वरम' नाम से बनवाया, 1010 ई. में पूरा हुआ। ग्रेनाइट से बना इसका लगभग 60 मीटर से ऊँचा विमान अपने समय की सबसे ऊँची मंदिर-संरचनाओं में था। 1987 से यह यूनेस्को विश्व धरोहर है और आज भी यहाँ पूजा होती है।"
 tags: [mandir, vastukala, chola-vansh, tamil-nadu, dravid-shaili, vishva-dharohar]
-series: { id: mandir-sthapatya, order: 4 }
+series: { id: mandir-sthapatya, order: 5 }
 sources:
   - title: "Brihadisvara Temple, Thanjavur — Wikipedia"
     url: https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Thanjavur

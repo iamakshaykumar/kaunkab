@@ -7,7 +7,7 @@ kaun: [इंदिरा गांधी, राजा रमन्ना, ह�
 kahan: ["पोखरण परीक्षण रेंज (जैसलमेर, राजस्थान)", "ट्रॉम्बे (मुंबई)"]
 saar: 18 मई 1974 को भारत ने राजस्थान के पोखरण में अपना पहला परमाणु परीक्षण किया, जिसका कूट नाम 'स्माइलिंग बुद्धा' था और जिसे सरकार ने 'शांतिपूर्ण परमाणु विस्फोट' बताया। 11 और 13 मई 1998 को 'ऑपरेशन शक्ति' के तहत पाँच और परीक्षण करके भारत ने ख़ुद को परमाणु हथियार संपन्न देश घोषित किया, जिस पर दुनिया भर से तीखी प्रतिक्रियाएँ आईं।
 tags: [swatantra-bharat, pokhran, parmanu-parikshan, raksha, videsh-niti, barc]
-series: { id: badalta-bharat, order: 12 }
+series: { id: badalta-bharat, order: 14 }
 sources:
   - title: "George Perkovich — India's Nuclear Bomb: The Impact on Global Proliferation (1999)"
   - title: "Smiling Buddha — Wikipedia"

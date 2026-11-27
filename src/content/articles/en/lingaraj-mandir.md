@@ -7,7 +7,7 @@ kaun: ["Somavamshi king Yayati (Jajati Keshari)", "Eastern Ganga dynasty"]
 kahan: ["Bhubaneswar (Odisha)", "Bindusagar tank", "Ekamra Kshetra"]
 saar: "The Lingaraja Temple of Bhubaneswar is considered the most mature example of Odisha's Kalinga architectural style. This Shiva temple, with a spire about 55 metres high, was built in the 11th century under the Somavamshi rulers and was later expanded by the Ganga rulers. Here Shiva is also worshipped in the form of Harihara (Shiva-Vishnu)."
 tags: ["temple", "architecture", "odisha", "kalinga-style", "shiva-worship"]
-series: { id: mandir-sthapatya, order: 7 }
+series: { id: mandir-sthapatya, order: 8 }
 sources:
   - title: "Lingaraja Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Lingaraja_Temple

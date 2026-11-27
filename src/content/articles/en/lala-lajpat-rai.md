@@ -7,7 +7,7 @@ kaun: ["Lala Lajpat Rai", "Mahatma Hansraj", "Bal Gangadhar Tilak", "Bipin Chand
 kahan: ["Dhudike (Moga, Punjab)", "Hisar", "Lahore", "Mandalay (Burma)", "New York", "Calcutta"]
 saar: "Born on 28 January 1865 at Dhudike in Punjab, Lala Lajpat Rai was an Arya Samaj worker, lawyer, writer and a member of the extremist trio 'Lal-Bal-Pal'. In 1907 he was sent to Mandalay without trial, in 1920 he became president of the Congress special session, and after being beaten with batons on 30 October 1928 while protesting against the Simon Commission, he died on 17 November 1928."
 tags: ["freedom-struggle", "lal-bal-pal", "extremists", "arya-samaj", "punjab", "simon-commission"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 19 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 20 }
 sources:
   - title: "Lala Lajpat Rai — Wikipedia"
     url: https://en.wikipedia.org/wiki/Lala_Lajpat_Rai

@@ -7,7 +7,7 @@ kaun: ["Dadu Dayal", "Baba Buddha (Buddhan)", "Rajjab", "Jangopal", "Garibdas", 
 kahan: ["Ahmedabad", "Sambhar", "Amer", "Naraina (Jaipur)", "Bhairana", "Karadala"]
 saar: "Dadu Dayal (1544–1603) was a nirguna saint-poet of Rajasthan. Coming from a dhunia (cotton-carding) family of Ahmedabad, Dadu stressed inner experience and remembrance of the Name instead of caste, idol worship, pilgrimage and ritual. About five thousand of his sakhis and padas are compiled in the 'Dadu Vani'. The 'Dadu Panth' of his followers is still centred at Naraina near Jaipur."
 tags: ["bhakti", "sant-tradition", "nirguna-bhakti", "rajasthan", "dadu-panth"]
-series: { id: bhakti-aur-sufi, order: 24 }
+series: { id: bhakti-aur-sufi, order: 27 }
 sources:
   - title: "Dadu Dayal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dadu_Dayal

@@ -7,7 +7,7 @@ kaun: ["Birsa Munda", "Sugana Munda", "Karmi Hatu", "Jaipal Nag"]
 kahan: ["Ulihatu (Khunti, Jharkhand)", "Chaibasa", "Dombari Buru", "Khunti", "Ranchi", "Chotanagpur"]
 saar: "The Munda tribal leader Birsa Munda led the 'Ulgulan' (great rebellion) in Chotanagpur to protect land, forest and self-respect, which broke out around Christmas 1899. Birsa, arrested in February 1900, died in Ranchi jail on 9 June 1900."
 tags: ["adivasi-movement", "munda", "ulgulan", "jharkhand", "anti-british"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 16 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 25 }
 sources:
   - title: "Kumar Suresh Singh — Birsa Munda and His Movement 1874–1901 (The Dust-Storm and the Hanging Mist)"
   - title: "Sarat Chandra Roy — The Mundas and Their Country (1912)"

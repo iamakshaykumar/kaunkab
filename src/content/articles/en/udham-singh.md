@@ -7,7 +7,7 @@ kaun: ["Udham Singh", "Michael O'Dwyer", "Lord Zetland", "Louis Dane", "Lord Lam
 kahan: ["Sunam (Punjab)", "Amritsar", "Caxton Hall (London)", "Pentonville Prison (London)"]
 saar: "On 13 March 1940, Udham Singh shot Michael O'Dwyer, the former Lieutenant Governor of Punjab, at Caxton Hall in London, whom he held responsible for the Jallianwala Bagh massacre. He was hanged at Pentonville Prison on 31 July 1940."
 tags: ["freedom-struggle", "revolution", "punjab", "jallianwala-bagh", "udham-singh"]
-series: { id: krantikari-andolan, order: 17 }
+series: { id: krantikari-andolan, order: 18 }
 sources:
   - title: "Anita Anand — The Patient Assassin: A True Tale of Massacre, Revenge and the Raj"
   - title: "Bipan Chandra — India's Struggle for Independence"

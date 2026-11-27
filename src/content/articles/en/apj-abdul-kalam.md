@@ -7,7 +7,7 @@ kaun: ["A. P. J. Abdul Kalam", "Vikram Sarabhai", "Satish Dhawan", "V. S. Arunac
 kahan: ["Rameswaram", "Tiruchirappalli", "Madras", "Thumba", "Sriharikota", "Hyderabad", "Pokhran", "Rashtrapati Bhavan", "Shillong"]
 saar: "Born on 15 October 1931 into a humble family in Rameswaram, Avul Pakir Jainulabdeen Abdul Kalam led ISRO's project for SLV-3, India's first indigenous satellite launch vehicle, which put the Rohini satellite into orbit on 18 July 1980. His work at DRDO on missiles such as Agni and Prithvi earned him the name 'Missile Man'. He was President of India from 2002 to 2007 and died on 27 July 2015 while addressing students in Shillong."
 tags: ["apj-abdul-kalam", "president", "isro", "drdo", "missile", "space", "science", "biography"]
-series: { id: vigyan-kala-aur-khel, order: 7 }
+series: { id: vigyan-kala-aur-khel, order: 15 }
 sources:
   - title: "A. P. J. Abdul Kalam — Wikipedia"
     url: https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam

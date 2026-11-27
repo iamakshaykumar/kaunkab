@@ -7,7 +7,7 @@ kaun: ["Jawaharlal Nehru", "Mahatma Gandhi", "Sardar Vallabhbhai Patel", "Lord M
 kahan: ["Delhi", "Kolkata"]
 saar: "After a long struggle, India became independent on 15 August 1947. But along with independence the country was also partitioned, in which millions of people were made homeless and a large number of lives were lost."
 tags: ["freedom-struggle", "british-rule", "partition"]
-series: { id: azadi-ki-raah, order: 34 }
+series: { id: azadi-ki-raah, order: 42 }
 sources:
   - title: "NCERT, Themes in Indian History Part 3 (Class 12), Chapter: Understanding Partition"
   - title: "Indian Independence Act 1947 — Wikipedia"

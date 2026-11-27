@@ -7,7 +7,7 @@ kaun: ["Ram Manohar Lohia", "Julião Menezes", "Jawaharlal Nehru", "Manuel Antó
 kahan: ["Goa (Panaji, Margao, Mormugao)", "Daman", "Diu", "Dadra and Nagar Haveli"]
 saar: "India became independent in 1947, but Goa, Daman and Diu remained under Portuguese rule. After the mass movement that began in 1946 at Lohia's call, the satyagraha of 1955 and years of failed diplomacy, the Indian Army launched 'Operation Vijay' in December 1961, and on 19 December the nearly 450-year-old Portuguese rule came to an end."
 tags: ["goa", "operation-vijay", "portuguese-rule", "independent-india", "nehru"]
-series: { id: naye-bharat-ka-nirman, order: 13 }
+series: { id: naye-bharat-ka-nirman, order: 15 }
 sources:
   - title: "Annexation of Goa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Annexation_of_Goa

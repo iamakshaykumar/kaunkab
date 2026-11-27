@@ -7,7 +7,7 @@ kaun: [लाला लाजपत राय, महात्मा हंस�
 kahan: ["ढुडीके (मोगा, पंजाब)", हिसार, लाहौर, "मांडले (बर्मा)", न्यूयॉर्क, कलकत्ता]
 saar: 28 जनवरी 1865 को पंजाब के ढुडीके में जन्मे लाला लाजपत राय आर्य समाज के कार्यकर्ता, वकील, लेखक और 'लाल-बाल-पाल' की गरम दल तिकड़ी के सदस्य थे। 1907 में उन्हें बिना मुक़दमे मांडले भेजा गया, 1920 में वे कांग्रेस के विशेष अधिवेशन के अध्यक्ष बने, और 30 अक्टूबर 1928 को साइमन कमीशन के विरोध में लाठियाँ खाने के बाद 17 नवंबर 1928 को उनका निधन हुआ।
 tags: [swatantrata-sangram, lal-bal-pal, garam-dal, arya-samaj, punjab, simon-commission]
-series: { id: sudhar-aur-rashtriya-chetna, order: 19 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 20 }
 sources:
   - title: "Lala Lajpat Rai — Wikipedia"
     url: https://en.wikipedia.org/wiki/Lala_Lajpat_Rai

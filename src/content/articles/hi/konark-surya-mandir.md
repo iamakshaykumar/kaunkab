@@ -7,7 +7,7 @@ kaun: [नरसिंहदेव प्रथम, पूर्वी गंग
 kahan: ["कोणार्क (पुरी ज़िला, ओडिशा)", बंगाल की खाड़ी का तट]
 saar: "तेरहवीं शताब्दी में पूर्वी गंग वंश के राजा नरसिंहदेव प्रथम के समय बना कोणार्क का सूर्य मंदिर सूर्यदेव के विशाल पत्थर के रथ के रूप में रचा गया है। 24 नक्काशीदार पहियों वाला यह मंदिर कलिंग वास्तुकला का शिखर और यूनेस्को विश्व धरोहर है।"
 tags: [mandir, vastukala, odisha, ganga-vansh, vishwa-dharohar]
-series: { id: mandir-sthapatya, order: 10 }
+series: { id: mandir-sthapatya, order: 11 }
 sources:
   - title: "Sun Temple, Konârak — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/246/

@@ -7,7 +7,7 @@ kaun: ["Tatya Tope", "Nana Sahib", "Rani Lakshmibai", "Rao Sahib", "Colin Campbe
 kahan: ["Yeola (Nashik)", "Bithoor", "Kanpur", "Kalpi", "Gwalior", "Rajputana", "Paron forest", "Shivpuri"]
 saar: "Tatya Tope, an associate of Nana Sahib, was among the most determined commanders of the 1857 uprising. After the battles of Kanpur, Kalpi and Gwalior, he waged guerrilla war in Rajputana and central India for about ten months. Captured after a betrayal in April 1859, he was hanged at Shivpuri on 18 April 1859."
 tags: ["revolt-of-1857", "freedom-struggle", "british-rule", "maratha", "madhya-pradesh"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 14 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 17 }
 sources:
   - title: "Tatya Tope — Wikipedia"
     url: https://en.wikipedia.org/wiki/Tatya_Tope

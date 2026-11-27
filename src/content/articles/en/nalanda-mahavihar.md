@@ -7,7 +7,7 @@ kaun: ["Kumaragupta I", "Harshavardhana", "Xuanzang", "Shilabhadra", "Yijing", "
 kahan: ["Nalanda (Bihar)", "Rajgir", "Pataliputra"]
 saar: Founded around the 5th century CE in the Gupta period, the Nalanda Mahavihara remained Asia's most famous Buddhist centre of learning for about seven hundred years. Students came to study here from China, Korea, Tibet and Southeast Asia. Its ruins are today a UNESCO World Heritage Site.
 tags: ["education", "buddhism", "bihar", "gupta", "world-heritage"]
-series: { id: prachin-gyan-aur-kala, order: 9 }
+series: { id: prachin-gyan-aur-kala, order: 10 }
 sources:
   - title: "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/1502/

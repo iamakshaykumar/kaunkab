@@ -7,7 +7,7 @@ kaun: ["Kalachuri king Krishnaraja (probable)"]
 kahan: ["Gharapuri (Elephanta Island)", "Mumbai Harbour", "Maharashtra"]
 saar: "The rock-cut Elephanta Caves on Gharapuri island in the sea near Mumbai are dedicated to Shiva. Their most famous sculpture is that of the three-faced Sadashiva (Trimurti). Most scholars date them to the fifth-sixth century, and in 1987 they were declared a UNESCO World Heritage Site."
 tags: ["architecture", "temple", "world-heritage", "maharashtra", "cave-temple"]
-series: { id: prachin-gyan-aur-kala, order: 15 }
+series: { id: prachin-gyan-aur-kala, order: 16 }
 sources:
   - title: "Elephanta Caves — Wikipedia"
     url: https://en.wikipedia.org/wiki/Elephanta_Caves

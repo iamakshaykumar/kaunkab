@@ -7,7 +7,7 @@ kaun: ["Sant Namdev", "Sant Dnyaneshwar", "Janabai", "Visoba Khechar", "Rajai"]
 kahan: ["Narsi Bamani (Hingoli, Maharashtra)", "Pandharpur", "Ghuman (Gurdaspur, Punjab)"]
 saar: "The Marathi saint Namdev, who lived from 1270 to 1350 according to tradition, was a devotee of Vitthal of Pandharpur and a major pillar of the Warkari tradition. Along with Marathi abhangs he also composed verses in Hindi, and 61 of his hymns are included in the Sikh scripture, the Guru Granth Sahib."
 tags: ["bhakti", "sant-poet", "varkari", "marathi-literature", "maharashtra", "guru-granth-sahib"]
-series: { id: bhakti-aur-sufi, order: 11 }
+series: { id: bhakti-aur-sufi, order: 12 }
 sources:
   - title: "Namdev — Wikipedia"
     url: https://en.wikipedia.org/wiki/Namdev

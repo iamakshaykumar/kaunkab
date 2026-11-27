@@ -7,7 +7,7 @@ kaun: ["Lord Wavell", "Maulana Abul Kalam Azad", "Muhammad Ali Jinnah", "Mahatma
 kahan: ["Viceregal Lodge (Shimla)", "Delhi", "London"]
 saar: "On 14 June 1945 Viceroy Lord Wavell announced a plan to make his Executive Council almost entirely Indian, with caste Hindus and Muslims getting equal places. A conference on it was held at the Viceregal Lodge in Shimla from 25 June to 14 July 1945, and it broke down over the Muslim League's insistence that only the League should nominate all the Muslim members of the Council."
 tags: ["freedom-struggle", "british-rule", "congress", "muslim-league", "diplomacy", "himachal-pradesh"]
-series: { id: azadi-ki-raah, order: 28 }
+series: { id: azadi-ki-raah, order: 34 }
 sources:
   - title: "Simla Conference — Wikipedia"
     url: https://en.wikipedia.org/wiki/Simla_Conference

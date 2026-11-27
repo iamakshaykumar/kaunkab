@@ -7,7 +7,7 @@ kaun: ["Atal Bihari Vajpayee", "General V. P. Malik", "Nawaz Sharif", "General P
 kahan: ["Kargil", "Drass", "Batalik", "Mushkoh Valley", "Tololing", "Tiger Hill", "National Highway 1 (Srinagar–Leh)", "Ladakh"]
 saar: "In May 1999 it was discovered that Pakistani soldiers and infiltrators had crossed the Line of Control in Kargil district and occupied high peaks on the Indian side. The Indian Army launched 'Operation Vijay' and the Air Force 'Operation Safed Sagar', and recaptured peaks such as Tololing, Tiger Hill and Point 4875. The fighting ended on 26 July 1999, which India celebrates as 'Kargil Vijay Diwas'; 527 Indian soldiers lost their lives in this war."
 tags: ["kargil-war", "operation-vijay", "india-pakistan-war", "line-of-control", "indian-army", "ladakh", "independent-india"]
-series: { id: badalta-bharat, order: 16 }
+series: { id: badalta-bharat, order: 32 }
 sources:
   - title: "Kargil War — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kargil_War

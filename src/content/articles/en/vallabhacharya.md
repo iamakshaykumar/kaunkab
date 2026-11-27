@@ -7,7 +7,7 @@ kaun: ["Vallabhacharya", "Lakshmana Bhatta", "Gopinath", "Vitthalnath", "Surdas"
 kahan: ["Champaranya (Chhattisgarh)", "Varanasi", "Gokul, Braj", "Govardhan"]
 saar: "Vallabhacharya, a philosopher-teacher of the 15th and 16th centuries, founded the 'Shuddhadvaita' philosophy and the 'Pushtimarg', a path of Krishna devotion. He regarded the world not as illusion but as the true form of God himself, and showed a path of loving devotion that can be followed while living a householder's life. The service of Shrinathji in Braj and the tradition of the Ashtachhap poets are linked to him."
 tags: ["bhakti", "vaishnava", "pushtimarg", "shuddhadvaita", "krishna-devotion", "braj", "philosophy"]
-series: { id: bhakti-aur-sufi, order: 20 }
+series: { id: bhakti-aur-sufi, order: 22 }
 sources:
   - title: "Vallabha — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vallabhacharya

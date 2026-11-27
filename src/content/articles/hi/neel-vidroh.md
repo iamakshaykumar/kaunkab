@@ -7,7 +7,7 @@ kaun: [दिगंबर विश्वास, विष्णुचरण व
 kahan: [नदिया (बंगाल), चौगाछा, जेस्सोर, पबना, मुर्शिदाबाद]
 saar: 1859–60 में बंगाल के किसानों ने यूरोपीय बागान मालिकों के लिए ज़बरदस्ती नील उगाने से सामूहिक रूप से इनकार कर दिया। इस संगठित किसान विद्रोह ने सरकार को नील आयोग बैठाने पर मजबूर किया, और दीनबंधु मित्र के नाटक 'नील दर्पण' ने इसकी पीड़ा को अमर कर दिया।
 tags: [kisan-andolan, bangal, angrezi-shasan, sahitya, neel]
-series: { id: angrezon-ke-viruddh-vidroh, order: 15 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 21 }
 sources:
   - title: "बिपन चंद्र — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: किसान आंदोलन और विद्रोह"
   - title: "Indigo revolt — Wikipedia"

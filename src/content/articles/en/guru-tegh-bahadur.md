@@ -7,7 +7,7 @@ kaun: ["Guru Tegh Bahadur", "Bhai Mati Das", "Bhai Sati Das", "Bhai Dayala", "Bh
 kahan: ["Amritsar", "Bakala", "Anandpur Sahib", "Chandni Chowk (Delhi)"]
 saar: "Guru Tegh Bahadur, the ninth Guru of the Sikhs, was put to death in Chandni Chowk in Delhi on 11 November 1675 on the order of the Mughal emperor Aurangzeb. Sikh tradition remembers him as 'Hind di Chadar' (the Shield of India), who gave his life for freedom of religion."
 tags: ["sikh-history", "sikh-gurus", "mughal-empire", "anandpur-sahib", "delhi"]
-series: { id: sikh-itihas, order: 6 }
+series: { id: sikh-itihas, order: 7 }
 sources:
   - title: "Guru Tegh Bahadur — Wikipedia"
     url: https://en.wikipedia.org/wiki/Guru_Tegh_Bahadur

@@ -7,7 +7,7 @@ kaun: ["Satguru Ram Singh", "Baba Balak Singh", "John Lamb Cowan", "T. D. Forsyt
 kahan: ["Sri Bhaini Sahib (Ludhiana)", "Malaudh", "Malerkotla", "Rangoon (Burma)"]
 saar: "Led by Satguru Ram Singh, the Namdhari or 'Kuka' movement of Punjab began as religious reform and grew to include a boycott of foreign goods, courts and schools. After the attack on Malerkotla in January 1872, 65–66 Kukas were blown from cannons without trial."
 tags: ["kuka-movement", "namdhari", "punjab", "british-rule", "boycott", "swadeshi"]
-series: { id: sikh-itihas, order: 13 }
+series: { id: sikh-itihas, order: 15 }
 sources:
   - title: "Namdhari — Wikipedia"
     url: https://en.wikipedia.org/wiki/Namdhari

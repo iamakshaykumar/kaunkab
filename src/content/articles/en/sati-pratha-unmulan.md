@@ -7,7 +7,7 @@ kaun: ["Lord William Bentinck", "Raja Ram Mohan Roy", "William Carey", "Radhakan
 kahan: ["Calcutta", "Bengal Presidency", "Madras", "Bombay", "London"]
 saar: "On 4 December 1829 the council of Governor-General Lord William Bentinck passed Bengal Regulation XVII, declaring sati, the practice of burning or burying widows alive, illegal and punishable. Raja Ram Mohan Roy's years-long campaign prepared the ground; the appeal of orthodox groups was rejected by the Privy Council in 1832."
 tags: ["social-reform", "sati", "rammohun-roy", "british-rule", "women-rights", "bengal"]
-series: { id: company-raj, order: 15 }
+series: { id: company-raj, order: 18 }
 sources:
   - title: "Bengal Sati Regulation, 1829 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bengal_Sati_Regulation,_1829

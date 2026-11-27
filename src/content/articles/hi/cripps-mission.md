@@ -7,7 +7,7 @@ kaun: [सर स्टैफ़र्ड क्रिप्स, महात्
 kahan: [दिल्ली, लंदन]
 saar: मार्च 1942 में, जब जापानी सेना भारत की सीमा तक आ पहुँची थी, ब्रिटिश सरकार ने युद्ध मंत्रिमंडल के सदस्य सर स्टैफ़र्ड क्रिप्स को भारतीय नेताओं का सहयोग पाने के लिए भेजा। उनके प्रस्तावों में युद्ध के बाद डोमिनियन दर्जा और संविधान सभा का वादा था, पर तत्काल सत्ता नहीं थी। कांग्रेस और मुस्लिम लीग दोनों ने इन्हें ठुकरा दिया और अप्रैल 1942 में मिशन विफल हो गया।
 tags: [cripps-mission, swatantrata-sangram, dwitiya-vishwayuddh, congress, muslim-league]
-series: { id: azadi-ki-raah, order: 25 }
+series: { id: azadi-ki-raah, order: 30 }
 sources:
   - title: "बिपन चंद्र व अन्य — भारत का स्वतंत्रता संघर्ष (India's Struggle for Independence), अध्याय: युद्ध के वर्ष — क्रिप्स मिशन"
   - title: "Cripps Mission — Wikipedia"

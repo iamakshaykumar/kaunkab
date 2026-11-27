@@ -7,7 +7,7 @@ kaun: ["Guru Gobind Singh", "Bhai Daya Singh", "Bhai Dharam Singh", "Bhai Himmat
 kahan: ["Anandpur Sahib", "Chamkaur", "Nanded"]
 saar: "On 13 April 1699, on the day of Baisakhi at Anandpur Sahib, Guru Gobind Singh, the tenth Guru of the Sikhs, founded the Khalsa Panth. This revolutionary event, in which caste distinctions were erased and the 'Panj Pyare' were given amrit and he himself took amrit from them, laid the foundation of a fearless 'saint-soldier' community."
 tags: ["sikh-history", "khalsa", "baisakhi", "religious-movement"]
-series: { id: sikh-itihas, order: 7 }
+series: { id: sikh-itihas, order: 8 }
 sources:
   - title: "Guru Gobind Singh — Zafarnama (the historic letter of victory written in Persian to Aurangzeb)"
     url: https://archive.org/details/zafarnamah0000guru

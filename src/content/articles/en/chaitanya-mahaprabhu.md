@@ -7,7 +7,7 @@ kaun: ["Chaitanya Mahaprabhu (Vishvambhar Mishra, Nimai)", "Jagannath Mishra", "
 kahan: ["Navadvip (Bengal)", "Gaya", "Katwa", "Puri (Odisha)", "Vrindavan"]
 saar: "Born in Navadvip in 1486, Chaitanya Mahaprabhu made the collective singing of Krishna's name — sankirtan — the centre of devotion and laid the foundation of the Gaudiya Vaishnava tradition. After taking sannyasa he lived in Puri, where he died in 1534; his disciples made Vrindavan a major centre of Krishna devotion."
 tags: ["bhakti", "vaishnava", "gaudiya-vaishnava", "bengal", "kirtan", "odisha"]
-series: { id: bhakti-aur-sufi, order: 21 }
+series: { id: bhakti-aur-sufi, order: 23 }
 sources:
   - title: "Chaitanya Mahaprabhu — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu

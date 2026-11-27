@@ -7,7 +7,7 @@ kaun: ["Jayadeva", "Lakshmana Sena", "Rana Kumbha", "William Jones", "Manaku of 
 kahan: ["Kenduli Sasan (Odisha)", "Joydev Kenduli (Birbhum, West Bengal)", "Puri", "Nabadwip", "Kurmapataka (near Konark)"]
 saar: "The Gita Govinda of the twelfth-century Sanskrit poet Jayadeva is a lyric poem of the love, separation and union of Radha and Krishna. With twelve cantos and twenty-four songs (ashtapadis), it is among the early works that specify a raga and tala for every song. Its influence extends from the Jagannath Temple at Puri to Odissi dance, Pahari painting and the Guru Granth Sahib."
 tags: ["jayadeva", "gita-govinda", "bhakti-movement", "sanskrit-literature", "odisha", "bengal"]
-series: { id: harsh-se-tarain, order: 22 }
+series: { id: harsh-se-tarain, order: 23 }
 sources:
   - title: "Gita Govinda — Wikipedia"
     url: https://en.wikipedia.org/wiki/Gita_Govinda

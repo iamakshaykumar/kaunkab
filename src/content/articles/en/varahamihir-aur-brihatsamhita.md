@@ -7,7 +7,7 @@ kaun: ["Varahamihira", "Adityadasa", "Bhattotpala"]
 kahan: ["Ujjain", "Avanti (Malwa)"]
 saar: "The 6th-century astronomer and mathematician Varahamihira summarised the five astronomical systems of his time in the 'Panchasiddhantika', and in the 'Brihat Samhita' gathered countless subjects such as weather, farming, building, gems and sculpture in one place. This scholar, linked to the Avanti (Ujjain) region, was remembered with respect by later writers such as Al-Biruni."
 tags: ["science", "astronomy", "mathematics", "sanskrit", "malwa"]
-series: { id: prachin-gyan-aur-kala, order: 14 }
+series: { id: prachin-gyan-aur-kala, order: 15 }
 sources:
   - title: "Varāhamihira — Wikipedia"
     url: https://en.wikipedia.org/wiki/Var%C4%81hamihira

@@ -7,7 +7,7 @@ kaun: [लॉर्ड वेलेज़्ली, निज़ाम अली
 kahan: [हैदराबाद, मैसूर, तंजावुर, अवध, पुणे, बसई]
 saar: गवर्नर-जनरल लॉर्ड वेलेज़्ली (1798–1805) ने भारतीय शासकों को 'सहायक संधि' के जाल में बाँधा — शासक अपने राज्य में कंपनी की सेना रखे, उसका ख़र्च दे, अंग्रेज़ रेज़िडेंट स्वीकार करे और कंपनी की अनुमति के बिना किसी और से संबंध न रखे। 1 सितंबर 1798 को हैदराबाद का निज़ाम इस व्यवस्था में आने वाला पहला बड़ा शासक बना; इसके बाद मैसूर, अवध, पेशवा और अन्य मराठा सरदार भी इसमें बँधे।
 tags: [angrezi-shasan, east-india-company, riyasat, kootniti, hyderabad]
-series: { id: company-raj, order: 13 }
+series: { id: company-raj, order: 14 }
 sources:
   - title: "Subsidiary alliance — Wikipedia"
     url: https://en.wikipedia.org/wiki/Subsidiary_alliance

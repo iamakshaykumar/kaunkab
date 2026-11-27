@@ -7,7 +7,7 @@ kaun: ["समर्थ रामदास (नारायण सूर्य�
 kahan: ["जांब (जालना ज़िला)", "टाकळी (नासिक)", चाफळ, "शिवथर घळ (रायगढ़ ज़िला)", "सज्जनगढ़ (सातारा)"]
 saar: सत्रहवीं सदी के मराठी संत समर्थ रामदास राम और हनुमान के उपासक थे। उनकी रचनाएँ 'दासबोध' और 'मनाचे श्लोक' आज भी महाराष्ट्र में घर-घर पढ़ी जाती हैं। उन्होंने भक्ति के साथ शारीरिक बल, संगठन और व्यावहारिक विवेक पर ज़ोर दिया। शिवाजी से उनके संबंध की प्रकृति और समय पर इतिहासकारों में आज भी बहस है।
 tags: [bhakti, sant-kavi, marathi-sahitya, maharashtra, ramdasi-sampraday]
-series: { id: bhakti-aur-sufi, order: 28 }
+series: { id: bhakti-aur-sufi, order: 31 }
 sources:
   - title: "Samarth Ramdas — Wikipedia"
     url: https://en.wikipedia.org/wiki/Samarth_Ramdas

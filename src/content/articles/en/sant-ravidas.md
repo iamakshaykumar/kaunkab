@@ -7,7 +7,7 @@ kaun: ["Guru Ravidas (Raidas)", "Lona Devi", "Ramananda", "Kabir", "Mirabai", "A
 kahan: ["Seer Govardhanpur (Varanasi)", "Kashi", "Chittor"]
 saar: "Guru Ravidas, a saint-poet of the fifteenth-sixteenth century, was born in a cobbler family of Kashi and became a major voice of nirguna bhakti. Rejecting caste distinctions, he imagined 'Begumpura', a city free from sorrow and discrimination. About 40 of his hymns are included in the Guru Granth Sahib."
 tags: ["bhakti", "sant-poet", "nirguna-bhakti", "varanasi", "guru-granth-sahib", "social-reform"]
-series: { id: bhakti-aur-sufi, order: 16 }
+series: { id: bhakti-aur-sufi, order: 18 }
 sources:
   - title: "Ravidas — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ravidas

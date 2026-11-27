@@ -7,7 +7,7 @@ kaun: ["Rabindranath Tagore", "Debendranath Tagore", "W. B. Yeats", "William Rot
 kahan: ["Jorasanko, Calcutta", "Santiniketan", "Sriniketan", "London", "Stockholm"]
 saar: "Poet, composer, playwright, painter and educator Rabindranath Tagore (1861–1941) became the first non-European to win the Nobel Prize in Literature, in 1913. The honour came mainly for the English translation of his Gitanjali (1912). In 1901 he started an experimental school at Santiniketan, which later became Visva-Bharati University. The national anthems of both India and Bangladesh are his compositions."
 tags: ["literature", "nobel-prize", "education", "bengal", "indian-renaissance"]
-series: { id: vigyan-kala-aur-khel, order: 1 }
+series: { id: vigyan-kala-aur-khel, order: 2 }
 sources:
   - title: "Rabindranath Tagore — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rabindranath_Tagore

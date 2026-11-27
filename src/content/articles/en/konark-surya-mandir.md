@@ -7,7 +7,7 @@ kaun: ["Narasimhadeva I", "Eastern Ganga dynasty"]
 kahan: ["Konark (Puri district, Odisha)", "Coast of the Bay of Bengal"]
 saar: "Built in the thirteenth century under Narasimhadeva I of the Eastern Ganga dynasty, the Konark Sun Temple is designed as a huge stone chariot of the Sun God. With its 24 carved wheels, this temple is the pinnacle of Kalinga architecture and a UNESCO World Heritage Site."
 tags: ["temple", "architecture", "odisha", "ganga-dynasty", "world-heritage"]
-series: { id: mandir-sthapatya, order: 10 }
+series: { id: mandir-sthapatya, order: 11 }
 sources:
   - title: "Sun Temple, Konârak — UNESCO World Heritage Centre"
     url: https://whc.unesco.org/en/list/246/

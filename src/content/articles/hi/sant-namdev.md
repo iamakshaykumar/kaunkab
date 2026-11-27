@@ -7,7 +7,7 @@ kaun: [संत नामदेव, संत ज्ञानेश्वर, �
 kahan: ["नरसी बामणी (हिंगोली, महाराष्ट्र)", पंढरपुर, "घुमान (गुरदासपुर, पंजाब)"]
 saar: परंपरा के अनुसार 1270 से 1350 तक जीवित रहे मराठी संत नामदेव पंढरपुर के विट्ठल के भक्त और वारकरी परंपरा के प्रमुख स्तंभ थे। उन्होंने मराठी अभंगों के साथ हिंदी में भी पद रचे, और उनके 61 पद सिखों के गुरु ग्रंथ साहिब में शामिल हैं।
 tags: [bhakti, sant-kavi, varkari, marathi-sahitya, maharashtra, guru-granth-sahib]
-series: { id: bhakti-aur-sufi, order: 11 }
+series: { id: bhakti-aur-sufi, order: 12 }
 sources:
   - title: "Namdev — Wikipedia"
     url: https://en.wikipedia.org/wiki/Namdev

@@ -7,7 +7,7 @@ kaun: ["Charaka", "Agnivesha", "Atreya Punarvasu", "Dridhabala", "Sushruta", "Di
 kahan: ["Varanasi (Kashi)", "Taxila", "Kashmir"]
 saar: The Charaka Samhita and the Sushruta Samhita are the two most famous ancient texts of Ayurveda. The Charaka Samhita focuses mainly on the diagnosis of diseases, diet and treatment, while the Sushruta Samhita is known for its detailed description of surgery, its instruments and training. Both texts developed over several centuries before reaching their present form.
 tags: ["science", "ayurveda", "sanskrit", "ancient-india", "education"]
-series: { id: prachin-gyan-aur-kala, order: 5 }
+series: { id: prachin-gyan-aur-kala, order: 6 }
 sources:
   - title: "Charaka Samhita — Wikipedia"
     url: https://en.wikipedia.org/wiki/Charaka_Samhita

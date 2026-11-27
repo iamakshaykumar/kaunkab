@@ -7,7 +7,7 @@ kaun: ["Lord Pethick-Lawrence", "Sir Stafford Cripps", "A. V. Alexander", "Lord 
 kahan: ["Delhi", "Shimla", "Calcutta"]
 saar: "On 24 March 1946, three members of the British Cabinet arrived in Delhi to find a way to transfer power. Their plan of 16 May 1946 set out the framework of a united India with a weak Centre, three groups of provinces and a Constituent Assembly. Agreement on the plan broke down, but from it came the Constituent Assembly and, in September 1946, the interim government under Nehru."
 tags: ["cabinet-mission", "freedom-struggle", "constituent-assembly", "interim-government", "congress", "muslim-league"]
-series: { id: azadi-ki-raah, order: 32 }
+series: { id: azadi-ki-raah, order: 38 }
 sources:
   - title: "Bipan Chandra et al. — India's Struggle for Independence, Chapter: Independence and Partition"
   - title: "1946 Cabinet Mission to India — Wikipedia"

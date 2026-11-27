@@ -7,7 +7,7 @@ kaun: [बादामी के चालुक्य, विक्रमाद
 kahan: ["पट्टदकल (बागलकोट ज़िला, कर्नाटक)", मलप्रभा नदी, बादामी, ऐहोल]
 saar: "कर्नाटक में मलप्रभा नदी के किनारे पट्टदकल के मंदिर बादामी के चालुक्यों ने 7वीं–8वीं शताब्दी में बनवाए। यहाँ उत्तर भारतीय नागर और दक्षिण भारतीय द्रविड़ — दोनों शैलियों के मंदिर एक साथ खड़े हैं। सबसे बड़ा विरूपाक्ष मंदिर लगभग 740–745 ई. में रानी लोकमहादेवी ने बनवाया। 1987 में यह समूह यूनेस्को विश्व धरोहर बना।"
 tags: [mandir, vastukala, chalukya, karnataka, vishwa-dharohar, dravid-shaili, nagar-shaili]
-series: { id: mandir-sthapatya, order: 1 }
+series: { id: mandir-sthapatya, order: 2 }
 sources:
   - title: "Group of Monuments at Pattadakal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Group_of_Monuments_at_Pattadakal

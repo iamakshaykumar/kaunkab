@@ -7,7 +7,7 @@ kaun: ["Ramananda", "Raghavananda", "Kabir", "Raidas (Ravidas)", "Pipa", "Sain",
 kahan: ["Prayag (Prayagraj)", "Kashi (Varanasi)", "Panchganga Ghat", "Gangetic plain"]
 saar: "Ramananda was among the most influential teachers of the bhakti movement in north India. Born at Prayag and settled at Kashi, Ramananda preached in the language of the people, Hindi, instead of Sanskrit, and took disciples without distinction of caste. According to tradition Kabir, Raidas, Pipa, Sain and Dhanna were his disciples. His dates are disputed — roughly between the 14th and 15th centuries."
 tags: ["bhakti", "sant-tradition", "ramanandi", "uttar-pradesh", "varanasi"]
-series: { id: bhakti-aur-sufi, order: 14 }
+series: { id: bhakti-aur-sufi, order: 15 }
 sources:
   - title: "Ramananda — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ramananda

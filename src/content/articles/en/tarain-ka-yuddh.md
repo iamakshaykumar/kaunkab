@@ -7,7 +7,7 @@ kaun: ["Prithviraj Chauhan III", "Muhammad of Ghor", "Chand Bardai"]
 kahan: ["Tarain (Haryana)", "Ajmer", "Delhi"]
 saar: "The two battles of Tarain, fought in 1191 and 1192 CE, changed the political history of India. Muhammad of Ghor's victory in the second battle laid the foundation of the Turkish sultanate in northern India."
 tags: ["battle", "rajput", "delhi-sultanate"]
-series: { id: harsh-se-tarain, order: 25 }
+series: { id: harsh-se-tarain, order: 26 }
 sources:
   - title: "Minhaj-i-Siraj — Tabaqat-i-Nasiri (a contemporary 13th-century history)"
     url: https://archive.org/details/tabaqat-i-nasiri-english

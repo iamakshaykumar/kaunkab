@@ -7,7 +7,7 @@ kaun: ["Kerala Varma Pazhassi Raja", "Edachena Kunkan", "Thalakkal Chanthu", "Ar
 kahan: ["Kottayam (Malabar)", "Wayanad", "Periya Pass", "Panamaram", "Mavila Thodu (Pulpally)"]
 saar: "Kerala Varma, known as 'Pazhassi Raja', of the Kottayam royal family of northern Kerala, carried on a long guerrilla struggle against the East India Company from the forests of Wayanad from 1793 to 1805. He died on 30 November 1805 in an encounter with a Company detachment."
 tags: ["pazhassi-raja", "kerala", "wayanad", "east-india-company", "guerrilla-war", "adivasi-resistance"]
-series: { id: company-raj, order: 12 }
+series: { id: company-raj, order: 13 }
 sources:
   - title: "Pazhassi Raja — Wikipedia"
     url: https://en.wikipedia.org/wiki/Pazhassi_Raja

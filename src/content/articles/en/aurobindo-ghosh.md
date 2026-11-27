@@ -7,7 +7,7 @@ kaun: ["Aurobindo Ghose (Sri Aurobindo)", "Barindra Kumar Ghosh", "Bipin Chandra
 kahan: ["Calcutta (Kolkata)", "King's College (Cambridge)", "Baroda", "Alipore Jail", "Uttarpara", "Chandernagore", "Pondicherry (Puducherry)"]
 saar: "Educated in England, Aurobindo Ghose left his job in Baroda and became a leading thinker of Bengal's extremist nationalism. After his arrest in the Alipore Bomb Case in May 1908 he spent about a year in deep spiritual practice in jail, was acquitted on 6 May 1909, and in 1910 went to Pondicherry, where he gave up politics and devoted his life to yoga and philosophy."
 tags: ["freedom-struggle", "extremists", "alipore-bomb-case", "bengal", "philosophy", "yoga"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 24 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 34 }
 sources:
   - title: "Sri Aurobindo — Wikipedia"
     url: https://en.wikipedia.org/wiki/Sri_Aurobindo

@@ -7,7 +7,7 @@ kaun: ["Lord Curzon", "Rabindranath Tagore", "Surendranath Banerjee", "Bal Ganga
 kahan: ["Calcutta", "Dhaka", "Eastern Bengal and Assam"]
 saar: "On 16 October 1905, Viceroy Lord Curzon divided the province of Bengal into two parts. The Swadeshi and boycott movement that rose in protest turned the national movement into a mass movement, and in 1911 the partition finally had to be annulled."
 tags: ["freedom-struggle", "swadeshi", "bengal", "boycott"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 21 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 29 }
 sources:
   - title: "NCERT, History of Modern India / India and the Contemporary World — chapters on nationalism"
   - title: "Bipan Chandra — India's Struggle for Independence, Chapter: The Swadeshi Movement"

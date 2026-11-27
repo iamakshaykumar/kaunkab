@@ -7,7 +7,7 @@ kaun: [छत्रसाल, चंपतराय, सारंधा, और�
 kahan: [बुंदेलखंड, पन्ना, जैतपुर, धुबेला (छतरपुर), ओरछा]
 saar: बुंदेला राजपूत छत्रसाल ने 1671 में मुट्ठी भर साथियों के साथ मुग़लों के विरुद्ध विद्रोह शुरू किया और धीरे-धीरे पन्ना को राजधानी बनाकर बुंदेलखंड में स्वतंत्र राज्य खड़ा किया। बुढ़ापे में 1729 में पेशवा बाजीराव प्रथम की सहायता से उन्होंने मुहम्मद ख़ान बंगश के आक्रमण को विफल किया।
 tags: [bundelkhand, bundela, rajput, mughal-samrajya, maratha, bajirao]
-series: { id: kshetriya-shaktiyan, order: 22 }
+series: { id: kshetriya-shaktiyan, order: 23 }
 sources:
   - title: "Chhatrasal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chhatrasal

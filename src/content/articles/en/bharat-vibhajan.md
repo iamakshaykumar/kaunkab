@@ -7,7 +7,7 @@ kaun: ["Lord Mountbatten", "Cyril Radcliffe", "Jawaharlal Nehru", "Muhammad Ali 
 kahan: ["Punjab", "Bengal", "Delhi", "Lahore", "Amritsar", "Calcutta", "Kurukshetra"]
 saar: On 3 June 1947, the Mountbatten Plan decided that British India would be divided into two countries — India and Pakistan. On both sides of the Radcliffe Line, drawn through Punjab and Bengal, millions of people were forced to leave their homes and hundreds of thousands lost their lives in terrible violence. It was one of the largest and most painful displacements in modern history.
 tags: ["partition-of-india", "independence-1947", "refugees", "punjab", "bengal", "radcliffe-line"]
-series: { id: azadi-ki-raah, order: 33 }
+series: { id: azadi-ki-raah, order: 40 }
 sources:
   - title: "Bipan Chandra et al. — India's Struggle for Independence, Chapter: Independence and Partition"
   - title: "Partition of India — Wikipedia"

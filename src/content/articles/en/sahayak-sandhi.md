@@ -7,7 +7,7 @@ kaun: ["Lord Wellesley", "Nizam Ali Khan (Asaf Jah II)", "Tipu Sultan", "Nawab S
 kahan: ["Hyderabad", "Mysore", "Thanjavur", "Awadh", "Pune", "Bassein"]
 saar: "Governor-General Lord Wellesley (1798–1805) bound Indian rulers in the web of the 'Subsidiary Alliance' — the ruler had to keep the Company's army in his state, pay for it, accept a British Resident and have no relations with anyone else without the Company's permission. On 1 September 1798 the Nizam of Hyderabad became the first major ruler to enter this arrangement; after this Mysore, Awadh, the Peshwa and other Maratha chiefs were also bound by it."
 tags: ["british-rule", "east-india-company", "princely-states", "diplomacy", "hyderabad"]
-series: { id: company-raj, order: 13 }
+series: { id: company-raj, order: 14 }
 sources:
   - title: "Subsidiary alliance — Wikipedia"
     url: https://en.wikipedia.org/wiki/Subsidiary_alliance

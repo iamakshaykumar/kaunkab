@@ -7,7 +7,7 @@ kaun: ["Babu Kunwar Singh", "Babu Amar Singh", "Harekrishna Singh", "Major Vince
 kahan: ["Jagdishpur (Bhojpur, Bihar)", "Danapur", "Arrah", "Rewa", "Banda", "Lucknow", "Azamgarh", "Shivpur Ghat (Ganga)"]
 saar: "Babu Kunwar Singh, the zamindar of Jagdishpur in Bihar, joined the 1857 uprising at about eighty years of age. In July 1857 he led the rebel sepoys of Danapur and besieged Arrah, then for about nine months ran a guerrilla campaign in central India and Awadh. Although wounded while crossing the Ganga in April 1858, he returned to Jagdishpur and defeated a British detachment, and died on 26 April 1858."
 tags: ["revolt-1857", "freedom-struggle", "british-rule", "bihar"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 12 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 15 }
 sources:
   - title: "Kunwar Singh — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kunwar_Singh

@@ -7,7 +7,7 @@ kaun: [जगदीश चंद्र बोस, फ़ादर यूजी�
 kahan: [मैमनसिंह (बांग्लादेश), "प्रेसिडेंसी कॉलेज, कलकत्ता", कैम्ब्रिज, "रॉयल इंस्टीट्यूशन, लंदन", "बोस इंस्टीट्यूट, कोलकाता", गिरिडीह]
 saar: जगदीश चंद्र बोस (1858–1937) ने 1894–96 में कलकत्ता के प्रेसिडेंसी कॉलेज में मिलीमीटर-तरंगों (माइक्रोवेव) से बेतार संकेत भेजने के अग्रणी प्रयोग किए। बाद में उन्होंने क्रेस्कोग्राफ़ जैसे उपकरण बनाकर दिखाया कि पौधे भी उद्दीपनों पर प्रतिक्रिया करते हैं। 30 नवंबर 1917 को उन्होंने कलकत्ता में बोस इंस्टीट्यूट की स्थापना की।
 tags: [vigyan, bhautiki, vanaspati-vigyan, angrezi-shasan, bangal]
-series: { id: vigyan-kala-aur-khel, order: 2 }
+series: { id: vigyan-kala-aur-khel, order: 3 }
 sources:
   - title: "Jagadish Chandra Bose — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jagadish_Chandra_Bose

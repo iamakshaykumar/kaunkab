@@ -7,7 +7,7 @@ kaun: ["Muizzuddin Muhammad of Ghor", "Ghiyasuddin Muhammad", "Mularaja II", "Pr
 kahan: ["Ghor (central Afghanistan)", "Ghazni", "Multan", "Kasahrada (near Abu)", "Lahore", "Tarain", "Chandawar", "Dhamyak (Jhelum, Pakistan)"]
 saar: "The Sultan of Ghor, Muizzuddin Muhammad (Muhammad of Ghor), began his campaigns in India in 1175 from Multan. After defeat in Gujarat in 1178 and at Tarain in 1191, he defeated Prithviraj Chauhan in 1192 and Jaichand at Chandawar in 1194. He was assassinated on 15 March 1206, and his slave generals laid the foundation of the Delhi Sultanate in India."
 tags: ["ghurid", "invasion", "war", "rajput", "delhi-sultanate", "punjab", "afghanistan"]
-series: { id: harsh-se-tarain, order: 24 }
+series: { id: harsh-se-tarain, order: 25 }
 sources:
   - title: "Muhammad of Ghor — Wikipedia"
     url: https://en.wikipedia.org/wiki/Muhammad_of_Ghor

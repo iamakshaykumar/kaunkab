@@ -7,7 +7,7 @@ kaun: [अनंतवर्मन चोडगंग, अनंगभीमद�
 kahan: [पुरी (ओडिशा), गुंडिचा मंदिर]
 saar: ओडिशा के समुद्र-तट पर बसे पुरी का जगन्नाथ मंदिर, जिसका वर्तमान रूप बारहवीं सदी में पूर्वी गंग वंश के राजा अनंतवर्मन चोडगंग के समय बनना शुरू हुआ, भारत के सबसे प्रसिद्ध तीर्थों में है। यहाँ की लकड़ी की मूर्तियाँ, विशाल रसोई और हर साल निकलने वाली रथ यात्रा इसे अनोखा बनाती हैं।
 tags: [mandir, odisha, vastukala, purv-bharat, tyohar, vaishnav]
-series: { id: mandir-sthapatya, order: 8 }
+series: { id: mandir-sthapatya, order: 9 }
 sources:
   - title: "Jagannath Temple, Puri — Wikipedia"
     url: https://en.wikipedia.org/wiki/Jagannath_Temple,_Puri

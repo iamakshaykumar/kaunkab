@@ -7,7 +7,7 @@ kaun: ["Banda Singh Bahadur", "Guru Gobind Singh", "Wazir Khan", "Farrukhsiyar",
 kahan: ["Nanded", "Samana", "Chappar Chiri", "Sirhind", "Lohgarh", "Gurdas Nangal", "Delhi"]
 saar: "After meeting Guru Gobind Singh at Nanded in 1708, the Bairagi ascetic Madho Das became 'Banda Singh Bahadur', returned to Punjab and challenged Mughal power. Conquering Sirhind in 1710, he made Lohgarh his capital, issued his own coins and gave peasants rights to the land. In 1716 he was executed in Delhi."
 tags: ["sikh-history", "mughal-empire", "punjab", "peasants", "sirhind"]
-series: { id: sikh-itihas, order: 9 }
+series: { id: sikh-itihas, order: 11 }
 sources:
   - title: "Banda Singh Bahadur — Wikipedia"
     url: https://en.wikipedia.org/wiki/Banda_Singh_Bahadur

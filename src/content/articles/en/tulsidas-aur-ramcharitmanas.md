@@ -7,7 +7,7 @@ kaun: ["Goswami Tulsidas", "Narharidas"]
 kahan: ["Ayodhya", "Varanasi (Kashi)", "Chitrakoot", "Rajapur"]
 saar: "The sixteenth-century poet-saint Goswami Tulsidas began writing the 'Ramcharitmanas' in the Awadhi language on Ram Navami of Vikram Samvat 1631 (1574 CE). Written in a popular language instead of Sanskrit, this telling of the Ram story carried Ram's tale into every home of northern India and gave birth to the Ramlila tradition of Kashi."
 tags: ["bhakti", "ram-bhakti", "hindi-literature", "awadhi", "varanasi"]
-series: { id: bhakti-aur-sufi, order: 25 }
+series: { id: bhakti-aur-sufi, order: 28 }
 sources:
   - title: "Tulsidas — Wikipedia"
     url: https://en.wikipedia.org/wiki/Tulsidas

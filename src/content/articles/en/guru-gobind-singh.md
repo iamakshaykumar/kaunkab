@@ -7,7 +7,7 @@ kaun: ["Guru Gobind Singh", "Guru Tegh Bahadur", "Mata Gujri", "Sahibzada Ajit S
 kahan: ["Patna", "Anandpur Sahib", "Paonta Sahib", "Chamkaur", "Sirhind", "Muktsar", "Damdama Sahib (Talwandi Sabo)", "Nanded"]
 saar: "Born in Patna in 1666, Gobind Rai became the tenth Guru of the Sikhs at the age of nine after the martyrdom of his father Guru Tegh Bahadur. After struggles with the hill rajas and the Mughals, the founding of the Khalsa in 1699, the siege of Anandpur and the martyrdom of all four sons, he died at Nanded in 1708; he declared the Guru Granth Sahib itself to be the Guru thereafter."
 tags: ["sikh-history", "sikh-gurus", "guru-gobind-singh", "anandpur-sahib", "mughal-empire", "nanded"]
-series: { id: sikh-itihas, order: 8 }
+series: { id: sikh-itihas, order: 9 }
 sources:
   - title: "Guru Gobind Singh — Wikipedia"
     url: https://en.wikipedia.org/wiki/Guru_Gobind_Singh

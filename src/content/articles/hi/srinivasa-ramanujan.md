@@ -7,7 +7,7 @@ kaun: [श्रीनिवास रामानुजन, जी. एच. ह
 kahan: [इरोड, कुंभकोणम, मद्रास (चेन्नई), "ट्रिनिटी कॉलेज, कैम्ब्रिज", लंदन]
 saar: बिना किसी डिग्री के, लगभग अकेले गणित सीखने वाले श्रीनिवास रामानुजन (1887–1920) ने संख्या सिद्धांत, अनंत श्रेणियों और विभाजन-फलनों में ऐसे परिणाम दिए जिन पर आज भी शोध होता है। 1913 में जी. एच. हार्डी को लिखे पत्र ने उन्हें कैम्ब्रिज पहुँचाया, जहाँ वे रॉयल सोसाइटी के फ़ेलो बने। केवल 32 वर्ष की आयु में 26 अप्रैल 1920 को उनका निधन हो गया।
 tags: [ganit, vigyan, angrezi-shasan, tamilnadu, cambridge]
-series: { id: vigyan-kala-aur-khel, order: 3 }
+series: { id: vigyan-kala-aur-khel, order: 5 }
 sources:
   - title: "Srinivasa Ramanujan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Srinivasa_Ramanujan

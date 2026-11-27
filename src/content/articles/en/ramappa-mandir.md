@@ -7,7 +7,7 @@ kaun: ["Recherla Rudra", "Kakatiya king Ganapatideva", "Sculptor Ramappa (accord
 kahan: ["Palampet (Mulugu district, Telangana)", "Ramappa Lake", "Warangal"]
 saar: "The Rudreshwara temple at Palampet village in Telangana, famous as the 'Ramappa Temple', was built in 1213 CE by Recherla Rudra, general of the Kakatiya king Ganapatideva. Famous for its fine sculpture, lightweight bricks that float on water and earthquake-resistant foundation, the temple became a UNESCO World Heritage Site on 25 July 2021."
 tags: ["temple", "architecture", "kakatiya-dynasty", "telangana", "world-heritage"]
-series: { id: mandir-sthapatya, order: 9 }
+series: { id: mandir-sthapatya, order: 10 }
 sources:
   - title: "Ramappa Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ramappa_Temple

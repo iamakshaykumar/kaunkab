@@ -7,7 +7,7 @@ kaun: ["Thomas Babington Macaulay", "Lord William Bentinck", "Henry Thoby Prinse
 kahan: ["Calcutta", "Bombay", "Madras"]
 saar: "On 2 February 1835 Thomas Babington Macaulay argued in his famous 'Minute on Education' that government funds should be spent on Western knowledge through the English medium rather than on Sanskrit and Persian. Governor-General Bentinck put it into effect by his resolution of 7 March 1835. Later the Wood's Despatch of 1854 and the universities of Calcutta, Bombay and Madras in 1857 gave this policy an institutional form."
 tags: ["education", "british-rule", "east-india-company", "bengal", "administration"]
-series: { id: company-raj, order: 16 }
+series: { id: company-raj, order: 19 }
 sources:
   - title: "NCERT, Our Pasts-III (Class 8), Chapter: Civilising the Native, Educating the Nation"
   - title: "Thomas Babington Macaulay — Wikipedia"

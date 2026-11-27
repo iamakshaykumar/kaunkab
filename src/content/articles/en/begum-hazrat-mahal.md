@@ -7,7 +7,7 @@ kaun: ["Begum Hazrat Mahal", "Birjis Qadr", "Wajid Ali Shah", "Henry Lawrence", 
 kahan: ["Faizabad", "Lucknow", "Qaisar Bagh", "Bahraich", "Kathmandu (Nepal)"]
 saar: "Begum Hazrat Mahal, wife of the deposed Nawab of Awadh Wajid Ali Shah, had her minor son Birjis Qadr proclaimed ruler of Awadh in 1857 and ran a rebel government in Lucknow as his regent. Even after Lucknow was lost in March 1858 she kept fighting from the Awadh countryside and openly answered Queen Victoria's proclamation. Finally in 1859 she took refuge in Nepal, where she died at Kathmandu on 7 April 1879."
 tags: ["revolt-of-1857", "freedom-struggle", "british-rule", "awadh", "lucknow", "women"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 13 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 16 }
 sources:
   - title: "Begum Hazrat Mahal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Begum_Hazrat_Mahal

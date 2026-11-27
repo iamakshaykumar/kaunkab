@@ -7,7 +7,7 @@ kaun: ["Mahatma Gandhi", "Subhas Chandra Bose", "Aruna Asaf Ali", "Jayaprakash N
 kahan: ["Mumbai (August Kranti Maidan)", "Singapore", "Kohima", "Imphal"]
 saar: "In 1942 Mahatma Gandhi gave the call 'Do or Die' and launched the nationwide 'Quit India' mass revolution, while Netaji Subhas Chandra Bose struck militarily on the frontiers with the 'Indian National Army'. This double pressure started the countdown of British rule."
 tags: ["freedom-struggle", "netaji", "ina", "gandhi"]
-series: { id: azadi-ki-raah, order: 26 }
+series: { id: azadi-ki-raah, order: 31 }
 sources:
   - title: "NCERT, Themes in Indian History Part III (Class 12), Chapter: Mahatma Gandhi and the Nationalist Movement"
     url: https://ncert.nic.in/textbook/pdf/lehs302.pdf

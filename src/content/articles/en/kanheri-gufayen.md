@@ -7,7 +7,7 @@ kaun: ["Yajna Sri Satakarni", "Vasishthiputra Satakarni", "Atisha Dipankara"]
 kahan: ["Sanjay Gandhi National Park (Borivali, Mumbai)", "Salsette Island", "Sopara", "Kalyan"]
 saar: "The more than 100 caves of Kanheri, cut into a basalt hill in Mumbai's Sanjay Gandhi National Park, were a major Buddhist monastic centre for about a thousand years. Its huge chaitya hall, inscriptions of the Satavahana kings, rainwater cisterns and Pahlavi-script inscriptions make it one of the most interesting archaeological sites of western India."
 tags: ["cave-temples", "buddhism", "architecture", "maharashtra", "satavahana", "inscriptions"]
-series: { id: prachin-gyan-aur-kala, order: 4 }
+series: { id: prachin-gyan-aur-kala, order: 5 }
 sources:
   - title: "Kanheri Caves — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kanheri_Caves

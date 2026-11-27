@@ -7,7 +7,7 @@ kaun: ["Nizamuddin Auliya", "Baba Farid", "Amir Khusrau", "Nasiruddin Chiragh-e-
 kahan: ["Badaun (Uttar Pradesh)", "Ajodhan (Pakpattan)", "Ghiyaspur, Delhi"]
 saar: Born in Badaun in 1238, Nizamuddin Auliya is counted among the most famous saints of the Chishti Sufi tradition. His khanqah at Ghiyaspur in Delhi was open to rich and poor alike. His dargah, built after his death in 1325, is still a centre of qawwali and shared faith today.
 tags: ["sufi", "chishti-silsila", "delhi", "delhi-sultanate", "qawwali", "bhakti-and-sufi"]
-series: { id: bhakti-aur-sufi, order: 8 }
+series: { id: bhakti-aur-sufi, order: 9 }
 sources:
   - title: "Nizamuddin Auliya — Wikipedia"
     url: https://en.wikipedia.org/wiki/Nizamuddin_Auliya

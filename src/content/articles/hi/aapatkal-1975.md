@@ -7,7 +7,7 @@ kaun: [इंदिरा गांधी, फ़ख़रुद्दीन अ
 kahan: [नई दिल्ली, "इलाहाबाद (प्रयागराज)", "रायबरेली (उत्तर प्रदेश)"]
 saar: 25 जून 1975 को राष्ट्रपति फ़ख़रुद्दीन अली अहमद ने प्रधानमंत्री इंदिरा गांधी की सलाह पर संविधान के अनुच्छेद 352 के तहत 'आंतरिक अशांति' के आधार पर देश में आपातकाल घोषित किया। 21 महीनों तक नागरिक स्वतंत्रताएँ निलंबित रहीं और प्रेस पर सेंसरशिप लगी। मार्च 1977 के चुनाव में कांग्रेस हारी और पहली बार केंद्र में ग़ैर-कांग्रेसी सरकार बनी।
 tags: [swatantra-bharat, aapatkal, indira-gandhi, loktantra, samvidhan, janata-party, nagrik-adhikar]
-series: { id: badalta-bharat, order: 13 }
+series: { id: badalta-bharat, order: 16 }
 sources:
   - title: "बिपिन चंद्र — In the Name of Democracy: JP Movement and the Emergency (2003)"
   - title: "रामचंद्र गुहा — भारत: गांधी के बाद (India After Gandhi), अध्याय: The Rise and Fall of Indira"

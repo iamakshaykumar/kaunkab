@@ -7,7 +7,7 @@ kaun: ["Khwaja Moinuddin Chishti", "Khwaja Usman Harooni", "Qutbuddin Bakhtiyar 
 kahan: ["Ajmer (Rajasthan)", "Sistan", "Lahore", "Delhi"]
 saar: Khwaja Moinuddin Chishti, a Sufi saint who came and settled in Ajmer in the late 12th century, laid the firm foundation of the Chishti order in India. Because of his simplicity, service to the poor and doors open to all, he was called 'Gharib Nawaz', and since his death in 1236 the dargah at Ajmer has for centuries been a centre of faith for people of every religion.
 tags: ["sufi", "chishti-order", "ajmer", "religion", "bhakti-sufi"]
-series: { id: bhakti-aur-sufi, order: 7 }
+series: { id: bhakti-aur-sufi, order: 8 }
 sources:
   - title: "NCERT, Themes in Indian History Part 2 (Class 12), Chapter: Bhakti-Sufi Traditions"
   - title: "Satish Chandra — Medieval India: From Sultanat to the Mughals, Part 1"

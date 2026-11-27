@@ -7,7 +7,7 @@ kaun: ["Narsinh Mehta", "Manekbai", "Kunwarbai", "Shamaldas", "Bansidhar", "Ra M
 kahan: ["Talaja (Bhavnagar)", "Junagadh", "Gopnath", "Mangrol", "Saurashtra"]
 saar: Narsinh Mehta (c. 1414–1481) was a 15th-century devotional poet of Gujarat, regarded as the 'Adi Kavi' (first poet) of the Gujarati language. Living in Junagadh, he composed devotional songs to Krishna and prabhatiyas (morning songs) and opposed caste discrimination. His hymn 'Vaishnav Jan To Tene Kahiye' became a favourite in Mahatma Gandhi's prayer meetings and famous across the country.
 tags: ["bhakti", "gujarat", "literature", "krishna-bhakti", "gandhi"]
-series: { id: bhakti-aur-sufi, order: 17 }
+series: { id: bhakti-aur-sufi, order: 19 }
 sources:
   - title: "Narsinh Mehta — Wikipedia"
     url: https://en.wikipedia.org/wiki/Narsinh_Mehta

@@ -7,7 +7,7 @@ kaun: ["Ila Mitra", "Kansari Halder", "Doddi Komaraiah", "Chakali Ilamma", "P. S
 kahan: ["Dinajpur", "Rangpur", "Jalpaiguri", "Mymensingh", "Warangal, Nalgonda and Khammam (Telangana)", "Hyderabad State"]
 saar: "On the threshold of independence, two major peasant movements arose in two regions of India. In Bengal, sharecroppers in the 1946–47 Tebhaga movement demanded two-thirds of the crop, and in Telangana in Hyderabad State an armed peasant struggle led by Communists against deshmukhs and jagirdars lasted from 1946 to 1951. Both were suppressed, but they left a deep mark on the politics of land reform."
 tags: ["peasant-movement", "tebhaga", "telangana", "communist-party", "kisan-sabha", "bengal", "hyderabad", "independent-india"]
-series: { id: azadi-ki-raah, order: 31 }
+series: { id: azadi-ki-raah, order: 37 }
 sources:
   - title: "Bipan Chandra and others — India's Struggle for Independence, Chapter: Peasant Movements and Nationalism (1920–1947) — Tebhaga and Telangana"
   - title: "P. Sundarayya — Telangana People's Struggle and Its Lessons (1972)"

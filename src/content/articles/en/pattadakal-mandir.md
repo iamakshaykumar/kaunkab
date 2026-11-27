@@ -7,7 +7,7 @@ kaun: ["Chalukyas of Badami", "Vikramaditya II", "Queen Lokamahadevi", "Queen Tr
 kahan: ["Pattadakal (Bagalkot district, Karnataka)", "Malaprabha River", "Badami", "Aihole"]
 saar: "The temples of Pattadakal on the bank of the Malaprabha river in Karnataka were built by the Chalukyas of Badami in the 7th–8th century. Temples of both the North Indian Nagara and South Indian Dravida styles stand together here. The largest, the Virupaksha Temple, was built by Queen Lokamahadevi in about 740–745 CE. In 1987 this group became a UNESCO World Heritage Site."
 tags: ["temple", "architecture", "chalukya", "karnataka", "world-heritage", "dravida-style", "nagara-style"]
-series: { id: mandir-sthapatya, order: 1 }
+series: { id: mandir-sthapatya, order: 2 }
 sources:
   - title: "Group of Monuments at Pattadakal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Group_of_Monuments_at_Pattadakal

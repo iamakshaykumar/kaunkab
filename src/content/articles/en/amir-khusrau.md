@@ -7,7 +7,7 @@ kaun: ["Amir Khusrau", "Nizamuddin Auliya", "Alauddin Khilji", "Balban", "Ghiyas
 kahan: ["Patiali (Kasganj, Uttar Pradesh)", "Delhi", "Multan"]
 saar: "Born at Patiali in 1253, Amir Khusrau worked as a poet and historian in the courts of several Sultans of the Delhi Sultanate and was a beloved disciple of the Sufi saint Nizamuddin Auliya. Besides being a great Persian poet, he left a deep mark on the 'Hindavi' language and on the shared tradition of Indian music."
 tags: ["literature", "sufi", "music", "delhi-sultanate", "hindavi"]
-series: { id: bhakti-aur-sufi, order: 9 }
+series: { id: bhakti-aur-sufi, order: 10 }
 sources:
   - title: "NCERT, Themes in Indian History Part II (Class 12), Chapter 6: Bhakti-Sufi Traditions"
   - title: "Satish Chandra — Medieval India: From Sultanat to the Mughals, Part 1 (Cultural Developments)"

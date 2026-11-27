@@ -7,7 +7,7 @@ kaun: ["Lord Dalhousie", "Rani Lakshmibai", "Nana Sahib", "Wajid Ali Shah", "Rag
 kahan: ["Satara", "Jhansi", "Nagpur", "Sambalpur", "Jaitpur", "Awadh (Lucknow)"]
 saar: "Governor-General Lord Dalhousie (1848–1856) strictly enforced the rule that if the ruler of a dependent state had no son of his own, an adopted heir would not be recognised and the state would pass into the Company's control. Through this 'Doctrine of Lapse' states such as Satara, Jhansi and Nagpur were taken, and in 1856 Awadh was also annexed on a charge of 'misgovernment'. The discontent this caused became a major cause of the Uprising of 1857."
 tags: ["british-rule", "east-india-company", "princely-states", "revolt-of-1857", "administration"]
-series: { id: company-raj, order: 17 }
+series: { id: company-raj, order: 20 }
 sources:
   - title: "Doctrine of lapse — Wikipedia"
     url: https://en.wikipedia.org/wiki/Doctrine_of_lapse

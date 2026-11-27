@@ -7,7 +7,7 @@ kaun: ["Sant Dnyaneshwar (Dnyandev)", "Nivruttinath", "Sopandev", "Muktabai", "V
 kahan: ["Apegaon", "Paithan", "Nevasa", "Alandi", "Pandharpur (Maharashtra)"]
 saar: "In his teens, the thirteenth-century saint Dnyaneshwar composed a Marathi commentary on the Bhagavad Gita called the 'Dnyaneshwari', which brought deep philosophy to ordinary people in their own language. According to tradition, he took sanjeevan samadhi at Alandi at about the age of 21; he is regarded as a founding pillar of the Warkari tradition."
 tags: ["bhakti", "sant-poet", "marathi-literature", "varkari", "maharashtra"]
-series: { id: bhakti-aur-sufi, order: 10 }
+series: { id: bhakti-aur-sufi, order: 11 }
 sources:
   - title: "Dnyaneshwar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dnyaneshwar

@@ -7,7 +7,7 @@ kaun: [जयदेव, लक्ष्मणसेन, राणा कुं�
 kahan: ["केंदुली सासन (ओडिशा)", "जयदेव केंदुली (बीरभूम, पश्चिम बंगाल)", पुरी, नवद्वीप, कूर्मपाटक (कोणार्क के पास)]
 saar: बारहवीं सदी के संस्कृत कवि जयदेव का 'गीतगोविंद' राधा और कृष्ण के प्रेम, विरह और मिलन का गीतकाव्य है। बारह सर्गों और चौबीस गीतों (अष्टपदियों) वाली यह रचना हर गीत के लिए राग और ताल बताने वाले शुरुआती ग्रंथों में है। पुरी के जगन्नाथ मंदिर से लेकर ओडिसी नृत्य, पहाड़ी चित्रकला और गुरु ग्रंथ साहिब तक इसका प्रभाव फैला है।
 tags: [jayadev, gitagovind, bhakti-andolan, sanskrit-sahitya, odisha, bangal]
-series: { id: harsh-se-tarain, order: 22 }
+series: { id: harsh-se-tarain, order: 23 }
 sources:
   - title: "Gita Govinda — Wikipedia"
     url: https://en.wikipedia.org/wiki/Gita_Govinda

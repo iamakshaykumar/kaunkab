@@ -7,7 +7,7 @@ kaun: ["Digambar Biswas", "Bishnucharan Biswas", "Dinabandhu Mitra", "Harish Cha
 kahan: ["Nadia (Bengal)", "Chaugachha", "Jessore", "Pabna", "Murshidabad"]
 saar: In 1859–60, the peasants of Bengal collectively refused to grow indigo under compulsion for European planters. This organised peasant revolt forced the government to appoint the Indigo Commission, and Dinabandhu Mitra's play 'Nil Darpan' made its suffering immortal.
 tags: ["peasant-movement", "bengal", "british-rule", "literature", "indigo"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 15 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 21 }
 sources:
   - title: "Bipan Chandra — India's Struggle for Independence, Chapter: Peasant Movements and Revolts"
   - title: "Indigo revolt — Wikipedia"

@@ -7,7 +7,7 @@ kaun: ["Aryabhata", "Bhaskara I", "Brahmagupta"]
 kahan: ["Kusumapura (Pataliputra)"]
 saar: "The great fifth-century mathematician-astronomer Aryabhata wrote the 'Aryabhatiya' at just 23 years of age. It contains ideas such as place-value calculation, a nearly accurate value of pi, a table of sines, the rotation of the Earth on its axis, and the scientific causes of eclipses."
 tags: ["science", "mathematics", "astronomy", "gupta"]
-series: { id: prachin-gyan-aur-kala, order: 12 }
+series: { id: prachin-gyan-aur-kala, order: 13 }
 sources:
   - title: "Aryabhata — Encyclopaedia Britannica"
     url: https://www.britannica.com/biography/Aryabhata-I

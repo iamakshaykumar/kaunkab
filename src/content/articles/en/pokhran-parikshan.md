@@ -7,7 +7,7 @@ kaun: ["Indira Gandhi", "Raja Ramanna", "Homi Sethna", "Atal Bihari Vajpayee", "
 kahan: ["Pokhran Test Range (Jaisalmer, Rajasthan)", "Trombay (Mumbai)"]
 saar: "On 18 May 1974 India carried out its first nuclear test at Pokhran in Rajasthan, code-named 'Smiling Buddha', which the government described as a 'peaceful nuclear explosion'. On 11 and 13 May 1998, by carrying out five more tests under 'Operation Shakti', India declared itself a nuclear-weapon state, drawing sharp reactions from around the world."
 tags: ["independent-india", "pokhran", "nuclear-test", "defence", "foreign-policy", "barc"]
-series: { id: badalta-bharat, order: 12 }
+series: { id: badalta-bharat, order: 14 }
 sources:
   - title: "George Perkovich — India's Nuclear Bomb: The Impact on Global Proliferation (1999)"
   - title: "Smiling Buddha — Wikipedia"

@@ -7,7 +7,7 @@ kaun: ["Indira Gandhi", "Zulfikar Ali Bhutto", "Benazir Bhutto", "Sardar Swaran 
 kahan: ["Barnes Court (Raj Bhavan, Shimla)", "Shimla", "Jammu and Kashmir", "Line of Control", "New Delhi", "Dhaka"]
 saar: "Six months after the 1971 war, India's Prime Minister Indira Gandhi and Pakistan's President Zulfikar Ali Bhutto signed an agreement at Shimla, dated 2 July 1972. In it both countries agreed to settle disputes through bilateral talks, to treat the ceasefire line of 17 December 1971 as the 'Line of Control' in Jammu and Kashmir, and to return captured land."
 tags: ["simla-agreement", "india-pakistan-relations", "indira-gandhi", "line-of-control", "kashmir", "bangladesh", "independent-india"]
-series: { id: badalta-bharat, order: 10 }
+series: { id: badalta-bharat, order: 12 }
 sources:
   - title: "Simla Agreement — Wikipedia"
     url: https://en.wikipedia.org/wiki/Simla_Agreement

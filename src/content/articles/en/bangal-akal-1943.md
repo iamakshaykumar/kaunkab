@@ -7,7 +7,7 @@ kaun: ["Winston Churchill", "Lord Wavell", "Amartya Sen", "Ian Stephens", "Madhu
 kahan: ["Bengal", "Calcutta", "Midnapore", "Odisha"]
 saar: "A terrible famine struck Bengal in 1943 during the Second World War, in which an estimated 800,000 to 3.8 million people died of hunger and disease. The loss of Burma, a cyclone, wartime inflation, the 'denial policy' and the failure of government policies are considered its main causes, though historians and economists still debate its root causes."
 tags: ["famine", "bengal", "world-war-ii", "british-rule", "amartya-sen", "economy"]
-series: { id: azadi-ki-raah, order: 27 }
+series: { id: azadi-ki-raah, order: 33 }
 sources:
   - title: "Amartya Sen — Poverty and Famines: An Essay on Entitlement and Deprivation (Oxford, 1981)"
   - title: "Famine Inquiry Commission (Woodhead Commission) — Report on Bengal (1945)"

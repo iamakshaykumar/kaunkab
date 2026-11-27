@@ -7,7 +7,7 @@ kaun: ["Bal Gangadhar Tilak", "Gopal Krishna Gokhale", "Pherozeshah Mehta", "Ras
 kahan: ["Surat (Gujarat)", "Nagpur", "Allahabad", "Mandalay (Burma)"]
 saar: "The session of the Indian National Congress held at Surat in December 1907 broke up in a clash between the Moderates and the Extremists, and the Congress split into two factions. Deep differences over the presidency, the resolutions on swadeshi and boycott, and the methods of struggle lay at its root. The two factions came together again at the Lucknow session of 1916."
 tags: ["freedom-struggle", "congress", "moderates", "extremists", "tilak", "swadeshi", "gujarat"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 23 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 33 }
 sources:
   - title: "Surat Split — Wikipedia"
     url: https://en.wikipedia.org/wiki/Surat_Split

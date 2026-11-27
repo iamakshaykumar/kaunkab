@@ -7,7 +7,7 @@ kaun: ["Bahadur Shah Zafar", "Akbar Shah II", "Zinat Mahal", "William Hodson", "
 kahan: ["Delhi", "Red Fort", "Humayun's Tomb", "Rangoon (Yangon, Myanmar)"]
 saar: "Bahadur Shah Zafar, who came to the throne in 1837, was an emperor in name only, his authority confined to the Red Fort. In May 1857 the rebel sepoys declared him their leader. After the fall of Delhi he was captured on 20 September 1857, tried in the Red Fort in 1858 and exiled to Rangoon, where he died on 7 November 1862. He was also a sensitive Urdu poet."
 tags: ["mughal-empire", "revolt-of-1857", "freedom-struggle", "british-rule", "delhi", "literature"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 10 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 13 }
 sources:
   - title: "Bahadur Shah Zafar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Bahadur_Shah_Zafar

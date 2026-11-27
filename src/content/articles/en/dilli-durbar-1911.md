@@ -7,7 +7,7 @@ kaun: ["King George V", "Queen Mary", "Lord Hardinge", "Edwin Lutyens", "Herbert
 kahan: ["Coronation Park (Delhi)", "Calcutta", "Raisina Hill (New Delhi)"]
 saar: "At the imperial durbar held in Delhi on 12 December 1911, the British monarch George V was personally present. At this durbar the annulment of the Partition of Bengal and the shifting of India's capital from Calcutta to Delhi were announced. New Delhi, built to the plan of Lutyens and Baker, was formally inaugurated in February 1931."
 tags: ["british-rule", "delhi", "capital", "bengal", "new-delhi", "freedom-struggle"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 26 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 36 }
 sources:
   - title: "Delhi Durbar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Delhi_Durbar

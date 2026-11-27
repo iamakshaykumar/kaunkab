@@ -7,7 +7,7 @@ kaun: ["P. V. Narasimha Rao", "Manmohan Singh", "Chandra Shekhar", "M. Narasimha
 kahan: ["New Delhi", "Mumbai", "London"]
 saar: "In 1991 India's foreign exchange reserves fell so low that they barely covered a few weeks of imports. To get out of the crisis, gold was pledged and a loan was taken from the IMF. Then, in July 1991, Prime Minister P. V. Narasimha Rao and Finance Minister Manmohan Singh began ending the 'Licence Raj' and opening up the economy through a devaluation of the rupee, a new industrial policy and the budget of 24 July."
 tags: ["independent-india", "economy", "liberalisation", "license-raj", "manmohan-singh", "narasimha-rao", "imf"]
-series: { id: badalta-bharat, order: 15 }
+series: { id: badalta-bharat, order: 28 }
 sources:
   - title: "Sanjaya Baru — 1991: How P. V. Narasimha Rao Made History (2016)"
   - title: "Vinay Sitapati — Half-Lion: How P. V. Narasimha Rao Transformed India (2016)"

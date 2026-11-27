@@ -6,7 +6,7 @@ published: 2026-11-25
 kaun: ["Patanjali", "Vyasa (the commentator)", "Vachaspati Mishra", "Al-Biruni", "Swami Vivekananda"]
 saar: "The 'Yoga Sutras', famous under the name of Patanjali, is a collection of about 195-196 short Sanskrit sutras that defines yoga as 'the stilling of the fluctuations of the mind' and sets out the path of Ashtanga yoga. Its date is disputed; many modern scholars place it at about the 4th-5th century CE."
 tags: ["philosophy", "yoga", "sanskrit", "literature", "patanjali"]
-series: { id: prachin-gyan-aur-kala, order: 7 }
+series: { id: prachin-gyan-aur-kala, order: 8 }
 sources:
   - title: "Yoga Sutras of Patanjali — Wikipedia"
     url: https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali

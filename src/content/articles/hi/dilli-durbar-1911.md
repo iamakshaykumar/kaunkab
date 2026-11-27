@@ -7,7 +7,7 @@ kaun: [सम्राट जॉर्ज पंचम, महारानी �
 kahan: ["कोरोनेशन पार्क (दिल्ली)", कलकत्ता, "रायसीना पहाड़ी (नई दिल्ली)"]
 saar: 12 दिसंबर 1911 को दिल्ली में हुए शाही दरबार में ब्रिटिश सम्राट जॉर्ज पंचम स्वयं उपस्थित हुए। इसी दरबार में बंगाल विभाजन रद्द करने और भारत की राजधानी कलकत्ता से दिल्ली ले जाने की घोषणा हुई। लुटियंस और बेकर की योजना से बनी नई दिल्ली का औपचारिक उद्घाटन फ़रवरी 1931 में हुआ।
 tags: [angrezi-shasan, delhi, rajdhani, bangal, nayi-dilli, swatantrata-sangram]
-series: { id: sudhar-aur-rashtriya-chetna, order: 26 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 36 }
 sources:
   - title: "Delhi Durbar — Wikipedia"
     url: https://en.wikipedia.org/wiki/Delhi_Durbar

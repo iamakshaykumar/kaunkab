@@ -7,7 +7,7 @@ kaun: [पृथ्वीराज तृतीय, सोमेश्वर, �
 kahan: ["अजमेर (शाकंभरी राज्य की राजधानी)", दिल्ली, महोबा, तराइन]
 saar: "चाहमान (चौहान) वंश के पृथ्वीराज तृतीय लगभग 1177 से 1192 तक अजमेर के राजा रहे। उन्होंने चंदेलों और गुजरात के चालुक्यों से युद्ध किए और 1191 में तराइन में मुहम्मद ग़ोरी को हराया, पर 1192 में उसी मैदान पर पराजित हुए। उनकी लोकप्रिय छवि का बड़ा हिस्सा बाद में लिखे 'पृथ्वीराज रासो' से आता है, जिसमें इतिहास और किंवदंती घुली-मिली है।"
 tags: [rajput, chauhan-vansh, ajmer, tarain, prithviraj-raso]
-series: { id: harsh-se-tarain, order: 23 }
+series: { id: harsh-se-tarain, order: 24 }
 sources:
   - title: "Prithviraj Chauhan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Prithviraj_Chauhan

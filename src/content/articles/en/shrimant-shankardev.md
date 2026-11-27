@@ -7,7 +7,7 @@ kaun: ["Srimanta Sankardev", "Madhavdev", "Mahendra Kandali", "Naranarayan (Koch
 kahan: ["Bordowa (Nagaon, Assam)", "Majuli", "Koch kingdom", "Bhelamdonga (Cooch Behar)"]
 saar: "Srimanta Sankardev, a saint, poet, dramatist and musician of the 15th–16th centuries, preached the 'Ek Sarana Nama Dharma' in Assam, which placed at its centre surrender to one God, Krishna, and the chanting of his name. The namghars, sattras, Ankiya Nat, borgeets and Sattriya dance he established are still the backbone of Assamese society and culture."
 tags: ["bhakti", "vaishnava", "assam", "north-east-india", "saint-poet", "drama"]
-series: { id: bhakti-aur-sufi, order: 18 }
+series: { id: bhakti-aur-sufi, order: 20 }
 sources:
   - title: "Sankardev — Wikipedia"
     url: https://en.wikipedia.org/wiki/Srimanta_Sankardeva

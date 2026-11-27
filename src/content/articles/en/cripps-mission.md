@@ -7,7 +7,7 @@ kaun: ["Sir Stafford Cripps", "Mahatma Gandhi", "Jawaharlal Nehru", "Maulana Abu
 kahan: ["Delhi", "London"]
 saar: "In March 1942, when the Japanese army had reached the borders of India, the British government sent Sir Stafford Cripps, a member of the War Cabinet, to win the cooperation of Indian leaders. His proposals promised dominion status and a Constituent Assembly after the war, but no immediate transfer of power. Both the Congress and the Muslim League rejected them, and the mission failed in April 1942."
 tags: ["cripps-mission", "freedom-struggle", "second-world-war", "congress", "muslim-league"]
-series: { id: azadi-ki-raah, order: 25 }
+series: { id: azadi-ki-raah, order: 30 }
 sources:
   - title: "Bipan Chandra and others — India's Struggle for Independence, Chapter: The War Years — The Cripps Mission"
   - title: "Cripps Mission — Wikipedia"

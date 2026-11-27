@@ -7,7 +7,7 @@ kaun: [होमी जहाँगीर भाभा, जवाहरलाल
 kahan: [मुंबई (बंबई), "भारतीय विज्ञान संस्थान, बेंगलुरु", "TIFR, कोलाबा", ट्रॉम्बे, जिनेवा, मों ब्लां (आल्प्स)]
 saar: भौतिकविद होमी जहाँगीर भाभा (1909–1966) ने 1 जून 1945 को टाटा मूलभूत अनुसंधान संस्थान (TIFR) की स्थापना की, 1948 से परमाणु ऊर्जा आयोग की अध्यक्षता की और 1954 में ट्रॉम्बे में परमाणु ऊर्जा प्रतिष्ठान (आज BARC) शुरू किया। उन्होंने थोरियम पर आधारित तीन-चरणीय परमाणु कार्यक्रम की रूपरेखा दी। 24 जनवरी 1966 को एक विमान दुर्घटना में उनकी मृत्यु हो गई।
 tags: [vigyan, parmanu-urja, bhautiki, swatantra-bharat, mumbai]
-series: { id: vigyan-kala-aur-khel, order: 6 }
+series: { id: vigyan-kala-aur-khel, order: 14 }
 sources:
   - title: "Homi J. Bhabha — Wikipedia"
     url: https://en.wikipedia.org/wiki/Homi_J._Bhabha

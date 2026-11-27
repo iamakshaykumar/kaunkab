@@ -7,7 +7,7 @@ kaun: [मीनाक्षी (पार्वती) और सुंदर�
 kahan: [मदुरै (तमिलनाडु), वैगई नदी]
 saar: "मदुरै का मीनाक्षी-सुंदरेश्वर मंदिर देवी मीनाक्षी और शिव के सुंदरेश्वर रूप को समर्पित है। तमिल भक्ति-काव्य तेवारम में इसकी महिमा गाई गई है, पर आज का विशाल परिसर — 14 रंग-बिरंगे गोपुरम, हज़ार स्तंभों का मंडप और स्वर्ण कमल सरोवर — मुख्यतः 16वीं–17वीं शताब्दी में मदुरै के नायक शासकों के समय बना।"
 tags: [mandir, vastukala, tamilnadu, nayak-vansh, gopuram, dravid-shaili]
-series: { id: mandir-sthapatya, order: 12 }
+series: { id: mandir-sthapatya, order: 13 }
 sources:
   - title: "Meenakshi Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Meenakshi_Temple

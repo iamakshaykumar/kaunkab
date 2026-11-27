@@ -7,7 +7,7 @@ kaun: ["Sant Tukaram", "Bahinabai", "Mambaji Gosavi", "Shivaji"]
 kahan: ["Dehu (near Pune)", "Indrayani river", "Pandharpur", "Maharashtra"]
 saar: "The seventeenth-century Marathi saint Tukaram composed thousands of abhangs in devotion to Vitthal of Pandharpur, which in simple Marathi strike at hypocrisy, caste distinctions and showy religion. In the Warkari tradition he is regarded as the 'finial' (crowning pinnacle) of the temple of devotion."
 tags: ["bhakti", "sant-poet", "marathi-literature", "varkari", "maharashtra"]
-series: { id: bhakti-aur-sufi, order: 27 }
+series: { id: bhakti-aur-sufi, order: 30 }
 sources:
   - title: "Dilip Chitre — Says Tuka: Selected Poetry of Tukaram (Penguin, 1991)"
   - title: "Mahipati — Bhaktalilamrit (18th century, saint biographies)"

@@ -7,7 +7,7 @@ kaun: [रेचर्ला रुद्र, काकतीय राजा �
 kahan: ["पालमपेट (मुलुगु ज़िला, तेलंगाना)", रामप्पा झील, वारंगल]
 saar: "तेलंगाना के पालमपेट गाँव में स्थित रुद्रेश्वर मंदिर, जो 'रामप्पा मंदिर' के नाम से प्रसिद्ध है, 1213 ई. में काकतीय राजा गणपतिदेव के सेनापति रेचर्ला रुद्र ने बनवाया। अपनी बारीक मूर्तिकला, पानी पर तैरने वाली हल्की ईंटों और भूकंप-रोधी नींव के लिए प्रसिद्ध यह मंदिर 25 जुलाई 2021 को यूनेस्को विश्व धरोहर बना।"
 tags: [mandir, vastukala, kakatiya-vansh, telangana, vishva-dharohar]
-series: { id: mandir-sthapatya, order: 9 }
+series: { id: mandir-sthapatya, order: 10 }
 sources:
   - title: "Ramappa Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ramappa_Temple

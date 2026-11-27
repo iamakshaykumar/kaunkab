@@ -7,7 +7,7 @@ kaun: ["Basavanna (Basaveshwara)", "Bijjala II (Kalachuri)", "Allama Prabhu", "A
 kahan: ["Basavana Bagewadi", "Kalyana (present-day Basavakalyan, Karnataka)", "Kudalasangama"]
 saar: "Basavanna, a minister at the court of the Kalachuri king Bijjala in the 12th century, made the assembly called the 'Anubhava Mantapa' at Kalyana the centre of a movement of Shiva devotees that questioned caste distinctions, ritualism and high-low hierarchy. The Kannada 'vachanas' of him and his companions remain a heritage of the Lingayat tradition and of Kannada literature."
 tags: ["bhakti", "vachana-literature", "lingayat", "karnataka", "social-reform", "south-india"]
-series: { id: bhakti-aur-sufi, order: 6 }
+series: { id: bhakti-aur-sufi, order: 7 }
 sources:
   - title: "Basava — Wikipedia"
     url: https://en.wikipedia.org/wiki/Basava

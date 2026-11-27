@@ -7,7 +7,7 @@ kaun: ["Mirabai", "Bhojraj", "Rana Sanga", "Vikramaditya"]
 kahan: ["Kudki and Merta (Marwar)", "Chittor (Mewar)", "Vrindavan", "Dwarka"]
 saar: Born in the Rathore royal family of Marwar around 1498 CE, Mirabai regarded Krishna as her everything even within the constraints of the royal palace. Her Rajasthani-Braj verses are still part of devotional music, though many stories of her life belong more to folk tradition than to history.
 tags: ["bhakti", "krishna-devotion", "rajasthan", "mewar", "womens-history"]
-series: { id: bhakti-aur-sufi, order: 23 }
+series: { id: bhakti-aur-sufi, order: 25 }
 sources:
   - title: "Meera — Wikipedia"
     url: https://en.wikipedia.org/wiki/Meera

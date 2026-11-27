@@ -7,7 +7,7 @@ kaun: ["Kanishka", "Alfred Foucher", "Ananda Coomaraswamy"]
 kahan: ["Gandhara (Peshawar valley, Taxila, Swat; today's north-western Pakistan and eastern Afghanistan)", "Mathura (Uttar Pradesh)", "Sarnath"]
 saar: "In the Kushan period two great styles of sculpture flourished in the Indian subcontinent: Gandhara art with Greco-Roman influence in the north-west, and Mathura art in red sandstone on the banks of the Yamuna. In these two centres the Buddha was for the first time carved in human form on a large scale. Where the first Buddha image was made is still a subject of debate."
 tags: ["kushan", "art", "sculpture", "buddhism", "gandhara", "mathura"]
-series: { id: prachin-gyan-aur-kala, order: 8 }
+series: { id: prachin-gyan-aur-kala, order: 9 }
 sources:
   - title: "Greco-Buddhist art — Wikipedia"
     url: https://en.wikipedia.org/wiki/Greco-Buddhist_art

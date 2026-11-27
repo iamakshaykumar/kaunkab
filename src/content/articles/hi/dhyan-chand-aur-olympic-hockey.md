@@ -7,7 +7,7 @@ kaun: [ध्यानचंद, रूप सिंह, जयपाल सि�
 kahan: [प्रयागराज (इलाहाबाद), झाँसी, एम्सटर्डम, लॉस एंजेलिस, बर्लिन]
 saar: हॉकी के "जादूगर" ध्यानचंद (1905–1979) के रहते भारत ने 1928 एम्सटर्डम, 1932 लॉस एंजेलिस और 1936 बर्लिन ओलंपिक में लगातार तीन स्वर्ण पदक जीते। 1928 में वे टूर्नामेंट के सबसे बड़े गोल-स्कोरर रहे और 1936 में कप्तान के रूप में उन्होंने फ़ाइनल में मेज़बान जर्मनी को 8–1 से हराने में अगुवाई की। उनका जन्मदिन 29 अगस्त राष्ट्रीय खेल दिवस के रूप में मनाया जाता है।
 tags: [khel, hockey, olympic, angrezi-shasan, uttarpradesh]
-series: { id: vigyan-kala-aur-khel, order: 5 }
+series: { id: vigyan-kala-aur-khel, order: 13 }
 sources:
   - title: "Dhyan Chand — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dhyan_Chand

@@ -7,7 +7,7 @@ kaun: [मंगल पांडे, लेफ़्टिनेंट बॉ, �
 kahan: ["बैरकपुर (बंगाल)", "नगवा (बलिया, उत्तर प्रदेश)", कलकत्ता]
 saar: 29 मार्च 1857 को बैरकपुर छावनी में 34वीं बंगाल नेटिव इन्फ़ैंट्री के सिपाही मंगल पांडे ने साथियों से विद्रोह का आह्वान करते हुए अंग्रेज़ अफ़सरों पर हमला किया। कोर्ट-मार्शल के बाद 8 अप्रैल 1857 को उन्हें फाँसी दे दी गई। कुछ ही हफ़्तों बाद मेरठ से भड़के महाविद्रोह ने उन्हें 1857 के पहले शहीद के रूप में अमर कर दिया।
 tags: [sangram-1857, swatantrata-sangram, angrezi-shasan, east-india-company, bangal]
-series: { id: angrezon-ke-viruddh-vidroh, order: 8 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 11 }
 sources:
   - title: "Mangal Pandey — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mangal_Pandey

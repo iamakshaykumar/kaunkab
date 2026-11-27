@@ -7,7 +7,7 @@ kaun: ["Vishnu Sharma (traditional author)", "Burzoy", "Ibn al-Muqaffa"]
 kahan: ["Ancient India", "Sasanian Iran", "Baghdad"]
 saar: "The Panchatantra is a Sanskrit text that teaches statecraft and practical wisdom through stories of animals and birds, which tradition links to Vishnu Sharma. Its date is estimated at about 300 CE. A Pahlavi translation was made in the sixth century and the Arabic 'Kalila wa Dimna' in the eighth, by way of which these stories reached Europe."
 tags: ["literature", "sanskrit", "stories", "ethics", "translation"]
-series: { id: prachin-gyan-aur-kala, order: 13 }
+series: { id: prachin-gyan-aur-kala, order: 14 }
 sources:
   - title: "Panchatantra — Wikipedia"
     url: https://en.wikipedia.org/wiki/Panchatantra

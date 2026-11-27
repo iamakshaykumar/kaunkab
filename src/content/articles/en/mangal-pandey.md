@@ -7,7 +7,7 @@ kaun: ["Mangal Pandey", "Lieutenant Baugh", "Sergeant-Major Hewson", "Jemadar Is
 kahan: ["Barrackpore (Bengal)", "Nagwa (Ballia, Uttar Pradesh)", "Calcutta"]
 saar: "On 29 March 1857, at the Barrackpore cantonment, Mangal Pandey, a sepoy of the 34th Bengal Native Infantry, attacked British officers while calling on his comrades to revolt. After a court-martial he was hanged on 8 April 1857. The great revolt that flared up from Meerut a few weeks later made him immortal as the first martyr of 1857."
 tags: ["revolt-1857", "freedom-struggle", "british-rule", "east-india-company", "bengal"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 8 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 11 }
 sources:
   - title: "Mangal Pandey — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mangal_Pandey

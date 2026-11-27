@@ -7,7 +7,7 @@ kaun: ["Purandaradasa (Srinivasa Nayaka)", "Vyasatirtha (Vyasaraya)", "Kanakadas
 kahan: ["Arag (Thirthahalli, Shivamogga)", "Hampi", "Vijayanagara", "Tungabhadra River"]
 saar: "Purandaradasa (c. 1484–1564) was a Kannada devotional poet and musician of the Vijayanagara period. The wealthy merchant Srinivasa Nayaka gave up his riches, took initiation from Vyasatirtha and became a Haridasa. He created a graded method of teaching Carnatic music — the Mayamalavagowla raga, sarali-janti varisai, alankaras and pillari geethe — which is still the first lesson of every student today. For this he is called the 'Father of Carnatic music'."
 tags: ["music", "bhakti", "karnataka", "vijayanagara", "haridasa"]
-series: { id: bhakti-aur-sufi, order: 22 }
+series: { id: bhakti-aur-sufi, order: 24 }
 sources:
   - title: "Purandara Dasa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Purandara_Dasa

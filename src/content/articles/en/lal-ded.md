@@ -7,7 +7,7 @@ kaun: ["Lal Ded (Lalleshwari)", "Siddha Srikantha", "Nund Rishi (Sheikh Nooruddi
 kahan: ["Pandrethan (near Srinagar)", "Kashmir Valley"]
 saar: "The fourteenth-century Kashmiri saint-poetess Lal Ded composed short 'vakhs', which are considered the oldest surviving poetry in the Kashmiri language. Her verses, linked to Kashmir Shaivism, are still sung and heard with equal respect by both Hindus and Muslims."
 tags: ["bhakti", "saint-poet", "kashmir", "kashmiri-literature", "shaiva-philosophy", "women-history"]
-series: { id: bhakti-aur-sufi, order: 12 }
+series: { id: bhakti-aur-sufi, order: 13 }
 sources:
   - title: "George Grierson and Lionel D. Barnett — Lallā-Vākyāni, or The Wise Sayings of Lal Děd (Royal Asiatic Society Monographs, Volume 17, London, 1920)"
     url: https://catalog.hathitrust.org/Record/100324960

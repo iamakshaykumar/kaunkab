@@ -7,7 +7,7 @@ kaun: [बाल गंगाधर तिलक, गोपाल कृष्�
 kahan: ["सूरत (गुजरात)", नागपुर, इलाहाबाद, "मांडले (बर्मा)"]
 saar: दिसंबर 1907 में सूरत में हुआ भारतीय राष्ट्रीय कांग्रेस का अधिवेशन नरमपंथियों और गरमपंथियों के टकराव में भंग हो गया और कांग्रेस दो धड़ों में बँट गई। अध्यक्ष-पद, स्वदेशी-बहिष्कार के प्रस्तावों और संघर्ष के तरीक़ों पर गहरे मतभेद इसकी जड़ में थे। दोनों धड़े 1916 के लखनऊ अधिवेशन में फिर एक हुए।
 tags: [swatantrata-sangram, congress, naramdal, garamdal, tilak, swadeshi, gujarat]
-series: { id: sudhar-aur-rashtriya-chetna, order: 23 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 33 }
 sources:
   - title: "Surat Split — Wikipedia"
     url: https://en.wikipedia.org/wiki/Surat_Split

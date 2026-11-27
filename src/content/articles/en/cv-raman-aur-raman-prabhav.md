@@ -7,7 +7,7 @@ kaun: ["C. V. Raman", "K. S. Krishnan", "Lord Rayleigh"]
 kahan: ["Tiruchirappalli", "Indian Association for the Cultivation of Science, Calcutta", "Indian Institute of Science, Bengaluru", "Stockholm"]
 saar: "On 28 February 1928 in Calcutta, C. V. Raman and his colleague K. S. Krishnan observed that a small part of the light scattered by a transparent substance changes its wavelength. This came to be called the Raman Effect, and for it Raman received the 1930 Nobel Prize in Physics — he was the first Asian to receive this honour in science. National Science Day is celebrated on 28 February in memory of this discovery."
 tags: ["science", "physics", "nobel-prize", "british-rule", "kolkata"]
-series: { id: vigyan-kala-aur-khel, order: 4 }
+series: { id: vigyan-kala-aur-khel, order: 12 }
 sources:
   - title: "C. V. Raman — Wikipedia"
     url: https://en.wikipedia.org/wiki/C._V._Raman

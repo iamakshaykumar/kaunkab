@@ -7,7 +7,7 @@ kaun: [निज़ामुद्दीन औलिया, बाबा फ़
 kahan: [बदायूँ (उत्तर प्रदेश), अजोधन (पाकपट्टन), "ग़यासपुर, दिल्ली"]
 saar: 1238 में बदायूँ में जन्मे निज़ामुद्दीन औलिया चिश्ती सूफ़ी परंपरा के सबसे प्रसिद्ध संतों में गिने जाते हैं। दिल्ली के ग़यासपुर में उनकी ख़ानक़ाह अमीर-ग़रीब सबके लिए खुली थी। 1325 में उनके देहांत के बाद बनी उनकी दरगाह आज भी क़व्वाली और साझी आस्था का केंद्र है।
 tags: [sufi, chishti-silsila, dilli, dilli-saltanat, qawwali, bhakti-aur-sufi]
-series: { id: bhakti-aur-sufi, order: 8 }
+series: { id: bhakti-aur-sufi, order: 9 }
 sources:
   - title: "Nizamuddin Auliya — Wikipedia"
     url: https://en.wikipedia.org/wiki/Nizamuddin_Auliya

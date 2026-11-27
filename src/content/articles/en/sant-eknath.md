@@ -7,7 +7,7 @@ kaun: ["Sant Eknath", "Janardan Swami", "Bhanudas", "Sant Dnyaneshwar"]
 kahan: ["Paithan (Maharashtra)", "Godavari river", "Devagiri (Daulatabad)", "Varanasi", "Pandharpur"]
 saar: "Eknath, a sixteenth-century Marathi saint, lived at Paithan, composed the 'Eknathi Bhagavat' on the eleventh book of the Bhagavata Purana, prepared a corrected text of the Dnyaneshwari, and carried devotion to ordinary people through about 300 folk songs called bharuds. In the Warkari tradition he is regarded as the link between Dnyaneshwar-Namdev and Tukaram."
 tags: ["bhakti", "sant-poet", "marathi-literature", "varkari", "maharashtra"]
-series: { id: bhakti-aur-sufi, order: 26 }
+series: { id: bhakti-aur-sufi, order: 29 }
 sources:
   - title: "Eknath — Wikipedia"
     url: https://en.wikipedia.org/wiki/Eknath

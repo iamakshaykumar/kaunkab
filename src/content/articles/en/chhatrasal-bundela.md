@@ -7,7 +7,7 @@ kaun: ["Chhatrasal", "Champat Rai", "Sarandha", "Aurangzeb", "Muhammad Khan Bang
 kahan: ["Bundelkhand", "Panna", "Jaitpur", "Dhubela (Chhatarpur)", "Orchha"]
 saar: The Bundela Rajput Chhatrasal began a revolt against the Mughals in 1671 with a handful of companions, and gradually made Panna his capital and built an independent kingdom in Bundelkhand. In old age, in 1729, with the help of Peshwa Baji Rao I he defeated the attack of Muhammad Khan Bangash.
 tags: ["bundelkhand", "bundela", "rajput", "mughal-empire", "maratha", "bajirao"]
-series: { id: kshetriya-shaktiyan, order: 22 }
+series: { id: kshetriya-shaktiyan, order: 23 }
 sources:
   - title: "Chhatrasal — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chhatrasal

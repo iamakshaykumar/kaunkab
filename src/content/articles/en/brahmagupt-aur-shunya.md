@@ -7,7 +7,7 @@ kaun: ["Brahmagupta", "Vyaghramukha", "Bhaskara II", "Al-Fazari"]
 kahan: ["Bhillamala (Bhinmal, Rajasthan)", "Ujjain"]
 saar: "In 628 CE, Brahmagupta, a mathematician and astronomer of Bhillamala (today's Bhinmal), wrote the 'Brahmasphutasiddhanta'. It is the first known text that treats zero as an independent number, giving rules for adding, subtracting and multiplying with it, and also sets out a systematic mathematics of negative numbers."
 tags: ["science", "mathematics", "astronomy", "sanskrit", "rajasthan"]
-series: { id: prachin-gyan-aur-kala, order: 16 }
+series: { id: prachin-gyan-aur-kala, order: 17 }
 sources:
   - title: "Brahmagupta — Wikipedia"
     url: https://en.wikipedia.org/wiki/Brahmagupta

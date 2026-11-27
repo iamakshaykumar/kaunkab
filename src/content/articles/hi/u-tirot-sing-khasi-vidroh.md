@@ -7,7 +7,7 @@ kaun: [यू तिरोत सिंग, डेविड स्कॉट, ल
 kahan: ["नोंगख्लाव (पश्चिम खासी हिल्स, मेघालय)", खासी पहाड़ियाँ, गुवाहाटी, सिलहट, "सोहरा (चेरापूँजी)", ढाका]
 saar: खासी पहाड़ियों में नोंगख्लाव के शासक (सियेम) यू तिरोत सिंग ने अंग्रेज़ों को अपने इलाक़े से सड़क बनाने की अनुमति दी थी, पर वादे टूटने और अंग्रेज़ों के बढ़ते दख़ल से नाराज़ होकर 4 अप्रैल 1829 को नोंगख्लाव की अंग्रेज़ चौकी पर हमला कर दिया। इसके बाद लगभग चार वर्ष तक खासी योद्धाओं ने छापामार युद्ध लड़ा। जनवरी 1833 में तिरोत सिंग को पकड़ लिया गया और ढाका भेजा गया, जहाँ 17 जुलाई 1835 को उनकी मृत्यु हुई।
 tags: [meghalaya, purvottar, angrezi-shasan, east-india-company, vidroh, swatantrata-sangram, janjati]
-series: { id: angrezon-ke-viruddh-vidroh, order: 5 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 8 }
 sources:
   - title: "Tirot Sing — Wikipedia"
     url: https://en.wikipedia.org/wiki/Tirot_Sing

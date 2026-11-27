@@ -7,7 +7,7 @@ kaun: ["Vimala Shah", "Bhima I", "Vastupala", "Tejapala", "Viradhavala Vaghela"]
 kahan: ["Dilwara (Mount Abu, Sirohi district, Rajasthan)", "Anahilavada Patan"]
 saar: "The five Shvetambara Jain temples of Dilwara at Mount Abu in Rajasthan are famous for their fine carving in white marble. The oldest of them, the Vimala Vasahi (c. 1031 CE), was built by Vimala Shah, minister of the Chaulukya king Bhima I, and the Luna Vasahi (1230 CE) by the minister brothers Vastupala and Tejapala of the Vaghela ruler."
 tags: ["temple", "architecture", "jainism", "rajasthan", "solanki-dynasty"]
-series: { id: mandir-sthapatya, order: 6 }
+series: { id: mandir-sthapatya, order: 7 }
 sources:
   - title: "Dilwara Temples — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dilwara_Temples

@@ -7,7 +7,7 @@ kaun: ["Mangal Pandey", "Bahadur Shah Zafar", "Rani Lakshmibai", "Nana Sahib", "
 kahan: ["Meerut", "Delhi", "Jhansi", "Kanpur", "Lucknow"]
 saar: "The revolt that began on 10 May 1857 with the mutiny of sepoys at Meerut spread across north and central India. It ended East India Company rule and brought India directly under the British Crown."
 tags: ["freedom-struggle", "british-rule", "war"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 9 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 12 }
 sources:
   - title: "NCERT, Themes in Indian History Part III (Class 12), Chapter: Rebels and the Raj"
   - title: "Indian Rebellion of 1857 — Wikipedia"

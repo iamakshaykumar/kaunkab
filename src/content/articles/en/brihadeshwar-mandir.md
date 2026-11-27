@@ -7,7 +7,7 @@ kaun: ["Rajaraja I", "Chola dynasty", "Maratha rulers of Thanjavur"]
 kahan: ["Thanjavur (Tamil Nadu)", "Kaveri delta"]
 saar: "The Brihadeeswarar Temple of Thanjavur, built by the Chola emperor Rajaraja I under the name 'Rajarajeswaram', was completed in 1010 CE. Its granite vimana, more than 60 metres high, was among the tallest temple structures of its time. It has been a UNESCO World Heritage Site since 1987 and worship is still held here today."
 tags: ["temple", "architecture", "chola-dynasty", "tamil-nadu", "dravidian-style", "world-heritage"]
-series: { id: mandir-sthapatya, order: 4 }
+series: { id: mandir-sthapatya, order: 5 }
 sources:
   - title: "Brihadisvara Temple, Thanjavur — Wikipedia"
     url: https://en.wikipedia.org/wiki/Brihadisvara_Temple,_Thanjavur

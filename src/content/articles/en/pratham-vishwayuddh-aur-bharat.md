@@ -7,7 +7,7 @@ kaun: ["Khudadad Khan", "Darwan Singh Negi", "Gabbar Singh Negi", "Mahatma Gandh
 kahan: ["France and Belgium (Western Front)", "Gallipoli (Turkey)", "Mesopotamia (present-day Iraq)", "Egypt and Palestine", "East Africa", "India Gate (New Delhi)"]
 saar: "As soon as Britain entered the war in August 1914, India too was automatically drawn into the First World War. More than a million Indian soldiers and labourers were sent to the fronts of France, Gallipoli, Mesopotamia, Egypt and East Africa, of whom more than 74,000 were killed. The economic burden of the war and shattered hopes gave a new direction to the national movement in India."
 tags: ["world-war", "british-rule", "army", "freedom-struggle", "india-gate", "home-rule"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 27 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 37 }
 sources:
   - title: "Indian Army during World War I — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indian_Army_during_World_War_I

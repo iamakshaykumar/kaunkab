@@ -7,7 +7,7 @@ kaun: ["Gautama Buddha", "Ashoka", "Faxian", "Alexander Cunningham", "Joseph Dav
 kahan: ["Bodh Gaya (Gaya district, Bihar)"]
 saar: "The Mahabodhi Temple at Bodh Gaya in Bihar stands on the spot where, according to tradition, Siddhartha Gautama attained enlightenment under the Bodhi tree. The first temple here was built by Emperor Ashoka; today's brick temple, about 55 metres high, is considered to date from the Gupta period. In 2002 it became a UNESCO World Heritage Site."
 tags: ["buddhism", "bihar", "maurya", "gupta", "architecture", "world-heritage"]
-series: { id: prachin-gyan-aur-kala, order: 1 }
+series: { id: prachin-gyan-aur-kala, order: 2 }
 sources:
   - title: "Mahabodhi Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Mahabodhi_Temple

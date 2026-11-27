@@ -7,7 +7,7 @@ kaun: ["Rani Chennamma", "Mallasarja", "Shivalingappa", "Sangolli Rayanna", "St 
 kahan: ["Kittur (Belagavi, Karnataka)", "Dharwad", "Bailhongal", "Nandagad"]
 saar: "In October 1824, Rani Chennamma of Kittur took up arms against the East India Company, which had refused to recognise the succession of her adopted son. In the first clash on 23 October, Thackeray, the Collector of Dharwad, was killed. The fort fell in December, but her commander Sangolli Rayanna continued the struggle for years."
 tags: ["heroine", "karnataka", "british-rule", "east-india-company", "resistance"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 4 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 7 }
 sources:
   - title: "Kittur Chennamma — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kittur_Chennamma

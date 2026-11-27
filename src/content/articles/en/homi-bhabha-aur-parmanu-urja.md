@@ -7,7 +7,7 @@ kaun: ["Homi Jehangir Bhabha", "Jawaharlal Nehru", "J. R. D. Tata", "C. V. Raman
 kahan: ["Mumbai (Bombay)", "Indian Institute of Science, Bengaluru", "TIFR, Colaba", "Trombay", "Geneva", "Mont Blanc (Alps)"]
 saar: The physicist Homi Jehangir Bhabha (1909–1966) founded the Tata Institute of Fundamental Research (TIFR) on 1 June 1945, chaired the Atomic Energy Commission from 1948, and in 1954 started the Atomic Energy Establishment at Trombay (today's BARC). He outlined a three-stage nuclear programme based on thorium. He died in an air crash on 24 January 1966.
 tags: ["science", "atomic-energy", "physics", "independent-india", "mumbai"]
-series: { id: vigyan-kala-aur-khel, order: 6 }
+series: { id: vigyan-kala-aur-khel, order: 14 }
 sources:
   - title: "Homi J. Bhabha — Wikipedia"
     url: https://en.wikipedia.org/wiki/Homi_J._Bhabha

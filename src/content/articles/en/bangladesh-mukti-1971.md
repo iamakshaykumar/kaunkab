@@ -7,7 +7,7 @@ kaun: ["Indira Gandhi", "Sheikh Mujibur Rahman", "Yahya Khan", "Zulfikar Ali Bhu
 kahan: ["Dhaka (Ramna Race Course, now Suhrawardy Udyan)", "East Pakistan", "West Bengal", "Tripura", "Assam", "Shimla"]
 saar: "After the Awami League's victory in the 1970 election, power was not handed over, and the military crackdown in East Pakistan from 25 March 1971 sent millions of refugees to India. After Pakistan's air strikes on 3 December the India-Pakistan war broke out, and on 16 December 1971 Pakistan's Eastern Command surrendered in Dhaka to the joint command of India and Bangladesh. The Shimla Agreement of July 1972 set the framework for post-war relations."
 tags: ["bangladesh", "india-pakistan-war", "indira-gandhi", "mukti-bahini", "shimla-agreement", "independent-india"]
-series: { id: badalta-bharat, order: 9 }
+series: { id: badalta-bharat, order: 11 }
 sources:
   - title: "Indo-Pakistani war of 1971 — Wikipedia"
     url: https://en.wikipedia.org/wiki/Indo-Pakistani_war_of_1971

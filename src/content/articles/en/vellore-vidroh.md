@@ -7,7 +7,7 @@ kaun: ["Sir John Craddock", "Lord William Bentinck", "Robert Rollo Gillespie", "
 kahan: ["Vellore Fort (Tamil Nadu)", "Arcot", "Madras Presidency"]
 saar: "After midnight on 10 July 1806, Indian soldiers of the Madras Army at Vellore Fort rose in revolt against new dress regulations. The mutiny was crushed within a single day, but it is regarded as the first major mutiny of Indian soldiers, half a century before 1857."
 tags: ["sepoy-mutiny", "tamil-nadu", "british-rule", "east-india-company", "tipu-sultan"]
-series: { id: company-raj, order: 14 }
+series: { id: company-raj, order: 15 }
 sources:
   - title: "Vellore mutiny — Wikipedia"
     url: https://en.wikipedia.org/wiki/Vellore_mutiny

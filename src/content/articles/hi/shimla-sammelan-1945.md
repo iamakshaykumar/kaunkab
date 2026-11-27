@@ -7,7 +7,7 @@ kaun: [लॉर्ड वेवेल, मौलाना अबुल कल�
 kahan: ["वायसरीगल लॉज (शिमला)", दिल्ली, लंदन]
 saar: 14 जून 1945 को वायसराय लॉर्ड वेवेल ने अपनी कार्यकारी परिषद को लगभग पूरी तरह भारतीय बनाने की योजना घोषित की, जिसमें सवर्ण हिंदुओं और मुसलमानों को बराबर स्थान मिलना था। इस पर बात करने के लिए 25 जून से 14 जुलाई 1945 तक शिमला के वायसरीगल लॉज में सम्मेलन हुआ, जो मुस्लिम लीग के इस आग्रह पर टूट गया कि परिषद के सभी मुस्लिम सदस्य केवल लीग ही नामित करेगी।
 tags: [swatantrata-sangram, angrezi-shasan, congress, muslim-league, kootniti, himachal-pradesh]
-series: { id: azadi-ki-raah, order: 28 }
+series: { id: azadi-ki-raah, order: 34 }
 sources:
   - title: "Simla Conference — Wikipedia"
     url: https://en.wikipedia.org/wiki/Simla_Conference

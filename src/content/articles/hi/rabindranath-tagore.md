@@ -7,7 +7,7 @@ kaun: [रवींद्रनाथ टैगोर, देवेंद्र�
 kahan: ["जोड़ासाँको, कलकत्ता", शांतिनिकेतन, श्रीनिकेतन, लंदन, स्टॉकहोम]
 saar: कवि, संगीतकार, नाटककार, चित्रकार और शिक्षाविद रवींद्रनाथ टैगोर (1861–1941) 1913 में साहित्य का नोबेल पुरस्कार पाने वाले पहले ग़ैर-यूरोपीय बने। यह सम्मान मुख्यतः उनकी गीतांजलि के अंग्रेज़ी अनुवाद (1912) पर मिला। 1901 में उन्होंने शांतिनिकेतन में एक प्रयोगधर्मी विद्यालय शुरू किया, जो आगे चलकर विश्वभारती विश्वविद्यालय बना। भारत और बांग्लादेश, दोनों के राष्ट्रगान उनकी रचनाएँ हैं।
 tags: [sahitya, nobel-puraskar, shiksha, bangal, bharatiya-punarjagaran]
-series: { id: vigyan-kala-aur-khel, order: 1 }
+series: { id: vigyan-kala-aur-khel, order: 2 }
 sources:
   - title: "Rabindranath Tagore — Wikipedia"
     url: https://en.wikipedia.org/wiki/Rabindranath_Tagore

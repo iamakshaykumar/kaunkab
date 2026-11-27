@@ -7,7 +7,7 @@ kaun: ["Yusuf Adil Khan", "Ibrahim Adil Shah II", "Muhammad Adil Shah", "Malik Y
 kahan: ["Bijapur (Vijayapura, Karnataka)", "Naurasapur"]
 saar: "The Gol Gumbaz of Bijapur is the tomb of the Adil Shahi sultan Muhammad Adil Shah (reigned 1627–1656). Its dome, with an outer diameter of about 44 metres, was among the largest of its time, and in its 'whispering gallery' even a soft sound carries far."
 tags: ["adil-shahi", "deccan-sultanate", "bijapur", "karnataka", "architecture", "tomb"]
-series: { id: dakshin-ke-rajvansh, order: 16 }
+series: { id: dakshin-ke-rajvansh, order: 17 }
 sources:
   - title: "Richard M. Eaton — A Social History of the Deccan, 1300–1761 (The New Cambridge History of India)"
   - title: "George Michell and Mark Zebrowski — Architecture and Art of the Deccan Sultanates (The New Cambridge History of India)"

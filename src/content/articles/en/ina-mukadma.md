@@ -7,7 +7,7 @@ kaun: ["Shah Nawaz Khan", "Prem Kumar Sahgal", "Gurbaksh Singh Dhillon", "Bhulab
 kahan: ["Red Fort (Delhi)", "Calcutta"]
 saar: "After the Second World War the British held courts-martial in the Red Fort in Delhi against the officers of Subhas Chandra Bose's Indian National Army (INA). In the first trial, which began on 5 November 1945, Shah Nawaz Khan, Prem Sahgal and Gurbaksh Singh Dhillon were charged with 'waging war against the King'. They were sentenced, but under heavy public pressure all three were released in January 1946."
 tags: ["ina-trials", "azad-hind-fauj", "red-fort", "freedom-struggle", "subhas-chandra-bose"]
-series: { id: azadi-ki-raah, order: 29 }
+series: { id: azadi-ki-raah, order: 35 }
 sources:
   - title: "Bipan Chandra and others — India's Struggle for Independence, Chapter: Towards Freedom — The INA Trials"
   - title: "Indian National Army trials — Wikipedia"

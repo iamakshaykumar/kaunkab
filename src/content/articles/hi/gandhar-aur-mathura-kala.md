@@ -7,7 +7,7 @@ kaun: [कनिष्क, अल्फ़्रेड फ़ूशे, आन�
 kahan: ["गांधार (पेशावर घाटी, तक्षशिला, स्वात — आज का उत्तर-पश्चिमी पाकिस्तान और पूर्वी अफ़ग़ानिस्तान)", मथुरा (उत्तर प्रदेश), सारनाथ]
 saar: कुषाण काल में भारतीय उपमहाद्वीप में मूर्तिकला की दो बड़ी शैलियाँ फली-फूलीं — उत्तर-पश्चिम में यूनानी-रोमन प्रभाव वाली गांधार कला और यमुना किनारे लाल बलुआ पत्थर वाली मथुरा कला। इन्हीं दोनों केंद्रों में बुद्ध को पहली बार बड़े पैमाने पर मानव रूप में गढ़ा गया। पहली बुद्ध-प्रतिमा कहाँ बनी, यह आज भी बहस का विषय है।
 tags: [kushan, kala, murtikala, bauddh-dharm, gandhar, mathura]
-series: { id: prachin-gyan-aur-kala, order: 8 }
+series: { id: prachin-gyan-aur-kala, order: 9 }
 sources:
   - title: "Greco-Buddhist art — Wikipedia"
     url: https://en.wikipedia.org/wiki/Greco-Buddhist_art

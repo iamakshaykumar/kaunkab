@@ -7,7 +7,7 @@ kaun: ["चैतन्य महाप्रभु (विश्वंभर �
 kahan: [नवद्वीप (बंगाल), गया, कटवा, पुरी (ओडिशा), वृंदावन]
 saar: 1486 में नवद्वीप में जन्मे चैतन्य महाप्रभु ने कृष्ण-नाम के सामूहिक गायन — संकीर्तन — को भक्ति का केंद्र बनाया और गौड़ीय वैष्णव परंपरा की नींव रखी। संन्यास के बाद वे पुरी में रहे, जहाँ 1534 में उनका देहांत हुआ; उनके शिष्यों ने वृंदावन को कृष्ण-भक्ति का बड़ा केंद्र बनाया।
 tags: [bhakti, vaishnav, gaudiya-vaishnav, bangal, kirtan, odisha]
-series: { id: bhakti-aur-sufi, order: 21 }
+series: { id: bhakti-aur-sufi, order: 23 }
 sources:
   - title: "Chaitanya Mahaprabhu — Wikipedia"
     url: https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu

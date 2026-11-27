@@ -7,7 +7,7 @@ kaun: [भरत मुनि, अभिनवगुप्त]
 kahan: [प्राचीन भारत]
 saar: "नाट्यशास्त्र नाटक, नृत्य, संगीत और अभिनय पर संस्कृत का सबसे पुराना उपलब्ध ग्रंथ है, जिसे परंपरा भरत मुनि से जोड़ती है। इसका संकलन सामान्यतः लगभग 200 ई.पू. से 200 ई. के बीच माना जाता है। इसी ग्रंथ ने 'रस' का सिद्धांत दिया, जो आगे चलकर भारतीय कला-चिंतन की नींव बना।"
 tags: [sahitya, sanskrit, natak, nritya, sangeet, ras-siddhant]
-series: { id: prachin-gyan-aur-kala, order: 6 }
+series: { id: prachin-gyan-aur-kala, order: 7 }
 sources:
   - title: "Natya Shastra — Wikipedia"
     url: https://en.wikipedia.org/wiki/Natya_Shastra

@@ -7,7 +7,7 @@ kaun: ["Maharaja Duleep Singh", "Maharani Jind Kaur", "Lal Singh", "Tej Singh", 
 kahan: ["Lahore", "Mudki", "Ferozeshah", "Sobraon", "Multan", "Chillianwala", "Gujrat (Punjab)"]
 saar: "Two wars were fought, in 1845–46 and 1848–49, between the Sikh kingdom, weakened after Maharaja Ranjit Singh's death, and the East India Company. After the second war, in 1849, Punjab was annexed to the Company's dominions and the child Maharaja Duleep Singh was removed from the throne."
 tags: ["sikh-empire", "punjab", "british-rule", "east-india-company", "war", "ranjit-singh"]
-series: { id: sikh-itihas, order: 12 }
+series: { id: sikh-itihas, order: 14 }
 sources:
   - title: "First Anglo-Sikh War — Wikipedia"
     url: https://en.wikipedia.org/wiki/First_Anglo-Sikh_War

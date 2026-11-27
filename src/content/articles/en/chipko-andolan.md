@@ -7,7 +7,7 @@ kaun: ["Gaura Devi", "Chandi Prasad Bhatt", "Sunderlal Bahuguna", "Hemwati Nanda
 kahan: ["Gopeshwar (Chamoli)", "Mandal (Chamoli)", "Reni (Chamoli)", "Uttarakhand (then Uttar Pradesh)"]
 saar: In the 1970s villagers of the Garhwal Himalaya hugged trees in nonviolent protest to stop commercial felling. In March 1974 Gaura Devi of Reni village and her fellow women forced the contractors' labourers to turn back, and Chipko became a symbol of environmental movements across the world.
 tags: ["independent-india", "chipko", "environment", "forest-conservation", "uttarakhand", "gaura-devi", "womens-movement"]
-series: { id: badalta-bharat, order: 11 }
+series: { id: badalta-bharat, order: 13 }
 sources:
   - title: "Ramachandra Guha — The Unquiet Woods: Ecological Change and Peasant Resistance in the Himalaya (1989)"
   - title: "NCERT, Politics in India since Independence (Class 12), Chapter: Rise of Popular Movements"

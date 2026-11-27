@@ -7,7 +7,7 @@ kaun: [रामकृष्ण परमहंस, स्वामी विव
 kahan: ["कामारपुकुर (हुगली ज़िला, बंगाल)", दक्षिणेश्वर, काशीपुर (कोसीपुर), बागबाज़ार (कलकत्ता), बेलूर मठ (हावड़ा)]
 saar: दक्षिणेश्वर के पुजारी और संत रामकृष्ण परमहंस के शिष्य स्वामी विवेकानंद ने 1 मई 1897 को कलकत्ता में रामकृष्ण मिशन की नींव रखी। संन्यास और समाज-सेवा को जोड़ने वाली इस संस्था का मुख्यालय हुगली के किनारे बेलूर मठ है, और यह आज भी शिक्षा, चिकित्सा और आपदा-राहत के काम करती है।
 tags: [ramakrishna-mission, vivekanand, ramakrishna-paramahamsa, samaj-sudhar, bharatiya-punarjagaran, bangal]
-series: { id: sudhar-aur-rashtriya-chetna, order: 20 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 28 }
 sources:
   - title: "बिपन चंद्र — आधुनिक भारत का इतिहास, अध्याय: धार्मिक और सामाजिक सुधार आंदोलन"
   - title: "Ramakrishna Mission — Wikipedia"

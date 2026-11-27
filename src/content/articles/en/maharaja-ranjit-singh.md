@@ -7,7 +7,7 @@ kaun: ["Maharaja Ranjit Singh", "Maha Singh", "Hari Singh Nalwa", "Zaman Shah"]
 kahan: ["Lahore", "Gujranwala", "Amritsar", "Multan", "Kashmir", "Peshawar"]
 saar: "On 7 July 1799, the nineteen-year-old Ranjit Singh took Lahore and in 1801 became Maharaja of the Punjab. Over the next four decades he joined the scattered Sikh misls and built a powerful Sikh empire stretching from the Sutlej to the Khyber."
 tags: ["empire", "sikhism", "punjab"]
-series: { id: sikh-itihas, order: 11 }
+series: { id: sikh-itihas, order: 13 }
 sources:
   - title: "Ranjit Singh — Encyclopaedia Britannica"
     url: https://www.britannica.com/biography/Ranjit-Singh-Sikh-maharaja

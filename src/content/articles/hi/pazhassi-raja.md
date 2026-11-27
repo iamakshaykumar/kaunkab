@@ -7,7 +7,7 @@ kaun: [केरल वर्मा पझस्सी राजा, एडच�
 kahan: [कोट्टयम (मालाबार), वायनाड, पेरिया दर्रा, पनमरम, मावीला तोड़ (पुलपल्ली)]
 saar: उत्तरी केरल के कोट्टयम राजवंश के केरल वर्मा 'पझस्सी राजा' ने 1793 से 1805 तक वायनाड के जंगलों से ईस्ट इंडिया कंपनी के विरुद्ध लंबा छापामार संघर्ष चलाया। 30 नवंबर 1805 को कंपनी की टुकड़ी से मुठभेड़ में उनकी मृत्यु हुई।
 tags: [pazhassi-raja, kerala, wayanad, east-india-company, chhapamar-yuddh, adivasi-pratirodh]
-series: { id: company-raj, order: 12 }
+series: { id: company-raj, order: 13 }
 sources:
   - title: "Pazhassi Raja — Wikipedia"
     url: https://en.wikipedia.org/wiki/Pazhassi_Raja

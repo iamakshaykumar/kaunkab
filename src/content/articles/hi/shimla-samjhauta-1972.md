@@ -7,7 +7,7 @@ kaun: [इंदिरा गांधी, ज़ुल्फ़िकार अ
 kahan: ["बार्न्स कोर्ट (राजभवन, शिमला)", शिमला, जम्मू और कश्मीर, नियंत्रण रेखा, नई दिल्ली, ढाका]
 saar: 1971 के युद्ध के छह महीने बाद भारत की प्रधानमंत्री इंदिरा गांधी और पाकिस्तान के राष्ट्रपति ज़ुल्फ़िकार अली भुट्टो ने शिमला में एक समझौते पर हस्ताक्षर किए, जिस पर 2 जुलाई 1972 की तिथि है। इसमें दोनों देशों ने विवादों को आपसी बातचीत से सुलझाने, 17 दिसंबर 1971 की युद्धविराम रेखा को जम्मू-कश्मीर में 'नियंत्रण रेखा' मानने और जीती गई ज़मीन लौटाने की बात मानी।
 tags: [shimla-samjhauta, bharat-pak-sambandh, indira-gandhi, niyantran-rekha, kashmir, bangladesh, swatantra-bharat]
-series: { id: badalta-bharat, order: 10 }
+series: { id: badalta-bharat, order: 12 }
 sources:
   - title: "Simla Agreement — Wikipedia"
     url: https://en.wikipedia.org/wiki/Simla_Agreement

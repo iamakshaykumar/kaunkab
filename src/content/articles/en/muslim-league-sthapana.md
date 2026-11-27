@@ -7,7 +7,7 @@ kaun: ["Aga Khan III", "Nawab Salimullah", "Nawab Viqar-ul-Mulk", "Nawab Mohsin-
 kahan: ["Dhaka (today Bangladesh)", "Shimla", "Aligarh", "Lucknow"]
 saar: In October 1906 a delegation of Muslim representatives led by the Aga Khan met the Viceroy Lord Minto at Shimla and demanded separate representation for Muslims. A few weeks later, on 30 December 1906, the All-India Muslim League was founded at Dhaka on the occasion of the All-India Muhammadan Educational Conference, and went on to become a major force in Indian politics.
 tags: ["freedom-struggle", "muslim-league", "british-rule", "separate-electorates", "bengal", "dhaka"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 22 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 32 }
 sources:
   - title: "All-India Muslim League — Wikipedia"
     url: https://en.wikipedia.org/wiki/All-India_Muslim_League

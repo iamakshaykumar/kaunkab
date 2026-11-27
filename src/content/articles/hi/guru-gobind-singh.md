@@ -7,7 +7,7 @@ kaun: [गुरु गोबिंद सिंह, गुरु तेग ब�
 kahan: [पटना, आनंदपुर साहिब, पाओंटा साहिब, चमकौर, सरहिंद, मुक्तसर, दमदमा साहिब (तलवंडी साबो), नांदेड़]
 saar: 1666 में पटना में जन्मे गोबिंद राय नौ वर्ष की आयु में पिता गुरु तेग बहादुर की शहादत के बाद सिखों के दसवें गुरु बने। पहाड़ी राजाओं और मुग़लों से संघर्ष, 1699 में ख़ालसा की स्थापना, आनंदपुर का घेरा और चारों पुत्रों की शहादत झेलने के बाद 1708 में नांदेड़ में उनका देहांत हुआ; उन्होंने गुरु ग्रंथ साहिब को ही आगे का गुरु घोषित किया।
 tags: [sikh-itihas, sikh-guru, guru-gobind-singh, anandpur-sahib, mughal-samrajya, nanded]
-series: { id: sikh-itihas, order: 8 }
+series: { id: sikh-itihas, order: 9 }
 sources:
   - title: "Guru Gobind Singh — Wikipedia"
     url: https://en.wikipedia.org/wiki/Guru_Gobind_Singh

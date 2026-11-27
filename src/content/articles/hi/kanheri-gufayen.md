@@ -7,7 +7,7 @@ kaun: [यज्ञश्री सातकर्णी, "वाशिष्ठ
 kahan: ["संजय गांधी राष्ट्रीय उद्यान (बोरीवली, मुंबई)", साष्टी द्वीप, सोपारा, कल्याण]
 saar: "मुंबई के संजय गांधी राष्ट्रीय उद्यान की बेसाल्ट पहाड़ी में काटी गई कान्हेरी की 100 से अधिक गुफाएँ लगभग एक हज़ार साल तक एक बड़ा बौद्ध मठ-केंद्र रहीं। यहाँ का विशाल चैत्य, सातवाहन राजाओं के अभिलेख, वर्षा-जल की टंकियाँ और पहलवी लिपि के लेख इसे पश्चिमी भारत के सबसे रोचक पुरातात्विक स्थलों में रखते हैं।"
 tags: [guha-mandir, bauddh-dharm, vastukala, maharashtra, satavahan, abhilekh]
-series: { id: prachin-gyan-aur-kala, order: 4 }
+series: { id: prachin-gyan-aur-kala, order: 5 }
 sources:
   - title: "Kanheri Caves — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kanheri_Caves

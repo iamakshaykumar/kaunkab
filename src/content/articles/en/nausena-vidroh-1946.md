@@ -7,7 +7,7 @@ kaun: ["M. S. Khan", "Madan Singh", "Balai Chandra Dutt", "Sardar Vallabhbhai Pa
 kahan: ["Bombay (Mumbai)", "Karachi", "Calcutta", "Madras"]
 saar: On 18 February 1946, a strike by sailors began at HMIS Talwar, the naval training establishment in Bombay, in protest against bad food and racial insults. Within a few days it spread to dozens of ships and shore establishments of the Royal Indian Navy. On 23 February the sailors surrendered, but the mutiny showed that the British Raj could no longer trust the loyalty of Indian soldiers.
 tags: ["mutiny-1946", "freedom-struggle", "navy", "bombay", "british-rule"]
-series: { id: azadi-ki-raah, order: 30 }
+series: { id: azadi-ki-raah, order: 36 }
 sources:
   - title: "Royal Indian Navy mutiny — Wikipedia"
     url: https://en.wikipedia.org/wiki/Royal_Indian_Navy_mutiny

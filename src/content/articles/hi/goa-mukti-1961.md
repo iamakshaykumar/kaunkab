@@ -7,7 +7,7 @@ kaun: [राम मनोहर लोहिया, जूलियाओ म�
 kahan: ["गोवा (पणजी, मडगाँव, मुरगाँव)", दमन, दीव, दादरा और नगर हवेली]
 saar: 1947 में भारत आज़ाद हुआ, पर गोवा, दमन और दीव पर पुर्तगाल का शासन बना रहा। 1946 में लोहिया के आह्वान से शुरू हुए जन-आंदोलन, 1955 के सत्याग्रह और वर्षों की असफल कूटनीति के बाद दिसंबर 1961 में भारतीय सेना ने 'ऑपरेशन विजय' चलाया और 19 दिसंबर को लगभग 450 साल पुराना पुर्तगाली शासन समाप्त हो गया।
 tags: [goa, operation-vijay, purtgali-shasan, swatantra-bharat, nehru]
-series: { id: naye-bharat-ka-nirman, order: 13 }
+series: { id: naye-bharat-ka-nirman, order: 15 }
 sources:
   - title: "Annexation of Goa — Wikipedia"
     url: https://en.wikipedia.org/wiki/Annexation_of_Goa

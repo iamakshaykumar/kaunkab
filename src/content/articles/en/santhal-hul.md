@@ -7,7 +7,7 @@ kaun: ["Sido Murmu", "Kanhu Murmu", "Chand Murmu", "Bhairav Murmu", "Phulo Murmu
 kahan: ["Bhognadih (Sahibganj, Jharkhand)", "Damin-i-Koh", "Rajmahal Hills", "Pakur", "Birbhum"]
 saar: "On 30 June 1855, thousands of Santhals gathered at Bhognadih under the leadership of Sido and Kanhu Murmu and declared the 'Hul' (rebellion) against the exploitation of moneylenders, zamindars and the British administration. The Company government crushed it harshly under martial law, but afterwards the Santhal Parganas district was created."
 tags: ["adivasi-movement", "santhal", "rebellion", "jharkhand", "anti-british"]
-series: { id: angrezon-ke-viruddh-vidroh, order: 7 }
+series: { id: angrezon-ke-viruddh-vidroh, order: 10 }
 sources:
   - title: "Ranajit Guha — Elementary Aspects of Peasant Insurgency in Colonial India"
   - title: "K. K. Datta — The Santal Insurrection of 1855–57"

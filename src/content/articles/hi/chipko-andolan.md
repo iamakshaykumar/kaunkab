@@ -7,7 +7,7 @@ kaun: [गौरा देवी, चंडी प्रसाद भट्ट, 
 kahan: ["गोपेश्वर (चमोली)", "मंडल (चमोली)", "रैणी (चमोली)", "उत्तराखंड (तब उत्तर प्रदेश)"]
 saar: 1970 के दशक में गढ़वाल हिमालय के गाँववालों ने व्यावसायिक कटान रोकने के लिए पेड़ों से चिपककर अहिंसक विरोध किया। मार्च 1974 में रैणी गाँव की गौरा देवी और उनकी साथी महिलाओं ने ठेकेदारों के मज़दूरों को लौटने पर मजबूर किया, और चिपको दुनिया भर में पर्यावरण आंदोलनों का प्रतीक बन गया।
 tags: [swatantra-bharat, chipko, paryavaran, van-sanrakshan, uttarakhand, gaura-devi, mahila-andolan]
-series: { id: badalta-bharat, order: 11 }
+series: { id: badalta-bharat, order: 13 }
 sources:
   - title: "रामचंद्र गुहा — The Unquiet Woods: Ecological Change and Peasant Resistance in the Himalaya (1989)"
   - title: "NCERT, स्वतंत्र भारत में राजनीति (कक्षा 12), अध्याय: जन आंदोलनों का उदय"

@@ -7,7 +7,7 @@ kaun: ["Krishna I", "Dantidurga", "Rashtrakuta dynasty"]
 kahan: ["Ellora (Elapura)", "Chhatrapati Sambhajinagar (Aurangabad)", "Maharashtra"]
 saar: "The Kailasa Temple in Cave 16 at Ellora is a huge Shiva temple carved from a single rock, cut from the top downwards. Its construction is generally linked to the time of the Rashtrakuta king Krishna I (c. 756–773 CE)."
 tags: ["rashtrakuta", "temple", "architecture", "maharashtra", "deccan"]
-series: { id: mandir-sthapatya, order: 2 }
+series: { id: mandir-sthapatya, order: 3 }
 sources:
   - title: "Kailasa temple, Ellora — Wikipedia"
     url: https://en.wikipedia.org/wiki/Kailasa_temple,_Ellora

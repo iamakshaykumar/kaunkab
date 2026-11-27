@@ -7,7 +7,7 @@ kaun: ["Dhyan Chand", "Roop Singh", "Jaipal Singh", "Lal Shah Bokhari", "Tito Wa
 kahan: ["Prayagraj (Allahabad)", "Jhansi", "Amsterdam", "Los Angeles", "Berlin"]
 saar: "With the hockey 'wizard' Dhyan Chand (1905–1979) in the team, India won three consecutive Olympic gold medals, at Amsterdam 1928, Los Angeles 1932 and Berlin 1936. In 1928 he was the top goal-scorer of the tournament, and in 1936, as captain, he led the team in defeating host Germany 8–1 in the final. His birthday, 29 August, is celebrated as National Sports Day."
 tags: ["sports", "hockey", "olympics", "british-rule", "uttar-pradesh"]
-series: { id: vigyan-kala-aur-khel, order: 5 }
+series: { id: vigyan-kala-aur-khel, order: 13 }
 sources:
   - title: "Dhyan Chand — Wikipedia"
     url: https://en.wikipedia.org/wiki/Dhyan_Chand

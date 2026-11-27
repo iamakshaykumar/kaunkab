@@ -7,7 +7,7 @@ kaun: ["Meenakshi (Parvati) and Sundareshwarar (Shiva)", "Viswanatha Nayak", "Ar
 kahan: ["Madurai (Tamil Nadu)", "Vaigai River"]
 saar: "The Meenakshi-Sundareshwarar Temple of Madurai is dedicated to the goddess Meenakshi and Sundareshwarar, a form of Shiva. Its glory is sung in the Tamil devotional poetry Tevaram, but today's vast complex — 14 colourful gopurams, a hall of a thousand pillars and the Golden Lotus Tank — was built mainly in the 16th-17th century under the Nayak rulers of Madurai."
 tags: ["temple", "architecture", "tamilnadu", "nayak-dynasty", "gopuram", "dravidian-style"]
-series: { id: mandir-sthapatya, order: 12 }
+series: { id: mandir-sthapatya, order: 13 }
 sources:
   - title: "Meenakshi Temple — Wikipedia"
     url: https://en.wikipedia.org/wiki/Meenakshi_Temple

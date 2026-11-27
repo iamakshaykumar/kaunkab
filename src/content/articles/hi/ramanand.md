@@ -7,7 +7,7 @@ kaun: [रामानंद, राघवानंद, कबीर, रैद�
 kahan: ["प्रयाग (प्रयागराज)", "काशी (वाराणसी)", पंचगंगा घाट, गंगा का मैदान]
 saar: रामानंद उत्तर भारत के भक्ति आंदोलन के सबसे प्रभावशाली आचार्यों में थे। प्रयाग में जन्मे और काशी में बसे रामानंद ने संस्कृत की जगह जनभाषा हिंदी में उपदेश दिया और जाति-भेद के बिना शिष्य बनाए। परंपरा के अनुसार कबीर, रैदास, पीपा, सेन और धन्ना उनके शिष्य थे। उनकी तिथियाँ विवादित हैं — लगभग 14वीं से 15वीं सदी के बीच।
 tags: [bhakti, sant-parampara, ramanandi, uttarpradesh, varanasi]
-series: { id: bhakti-aur-sufi, order: 14 }
+series: { id: bhakti-aur-sufi, order: 15 }
 sources:
   - title: "Ramananda — Wikipedia"
     url: https://en.wikipedia.org/wiki/Ramananda

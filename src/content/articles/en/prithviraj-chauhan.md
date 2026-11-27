@@ -7,7 +7,7 @@ kaun: ["Prithviraj III", "Someshvara", "Karpuradevi", "Paramardi Chandela", "Jay
 kahan: ["Ajmer (capital of the Shakambhari kingdom)", "Delhi", "Mahoba", "Tarain"]
 saar: "Prithviraj III of the Chahamana (Chauhan) dynasty was king of Ajmer from about 1177 to 1192. He fought the Chandelas and the Chaulukyas of Gujarat and defeated Muhammad of Ghor at Tarain in 1191, but was defeated on the same field in 1192. A large part of his popular image comes from the later-written 'Prithviraj Raso', in which history and legend are mixed together."
 tags: ["rajput", "chauhan-dynasty", "ajmer", "tarain", "prithviraj-raso"]
-series: { id: harsh-se-tarain, order: 23 }
+series: { id: harsh-se-tarain, order: 24 }
 sources:
   - title: "Prithviraj Chauhan — Wikipedia"
     url: https://en.wikipedia.org/wiki/Prithviraj_Chauhan

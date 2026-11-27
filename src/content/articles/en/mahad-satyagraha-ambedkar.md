@@ -7,7 +7,7 @@ kaun: ["Dr. Bhimrao Ambedkar", "Surendranath Tipnis", "Gangadhar Neelkanth Sahas
 kahan: ["Mahad (Raigad, Maharashtra)", "Chavdar Tank"]
 saar: "On 20 March 1927, Dr. Bhimrao Ambedkar drank water from the public Chavdar Tank at Mahad and claimed equal rights for the communities regarded as untouchable. On 25 December 1927 the Manusmriti was symbolically burned during the same movement."
 tags: ["social-reform", "ambedkar", "satyagraha", "dalit-movement"]
-series: { id: sudhar-aur-rashtriya-chetna, order: 29 }
+series: { id: sudhar-aur-rashtriya-chetna, order: 39 }
 sources:
   - title: "Dr. Babasaheb Ambedkar: Writings and Speeches, Government of Maharashtra"
   - title: "Dhananjay Keer — Dr. Ambedkar: Life and Mission"
